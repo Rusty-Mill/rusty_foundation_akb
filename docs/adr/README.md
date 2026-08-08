@@ -73,5 +73,7 @@
 | [0069](0069-decoded-images-are-bounded-immutable-resources.md) | Decoded images are bounded immutable resources | Accepted |
 | [0070](0070-media-time-is-exact-domain-tagged-and-discontinuous.md) | Media time is exact, domain-tagged, and discontinuous | Accepted |
 | [0071](0071-media-seek-is-a-negotiated-discontinuity.md) | Media seek is a negotiated discontinuity | Accepted |
+| [0072](0072-activation-is-untrusted-intent-not-authority.md) | Activation is untrusted intent, not authority | Accepted |
+| [0073](0073-activation-acceptance-is-not-handler-completion.md) | Activation acceptance is not handler completion | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

@@ -6,6 +6,7 @@ This is an inventory for domain analysis, not an API or crate list.
 |---|---|
 | Runtime | initialization, execution context, task scheduling, cancellation, shutdown |
 | Process | spawn, identity, environment, stdio, signals/control, isolation |
+| Activation | typed intents, handlers, associations, file/URI handoff, instance routing |
 | Threading | threads, synchronization, affinity, priorities, thread-local state |
 | Async I/O | reactors/completion, readiness, timers, cancellation, backpressure |
 | IPC | anonymous/named channels, byte streams, messages, handle transfer, shared memory |
@@ -40,6 +41,7 @@ Each domain will be decomposed into common, optional/advanced, and platform-spec
 - [Filesystem foundations vertical slice](filesystem/README.md) — Draft
 - [Security and authority foundations vertical slice](security/README.md) — Draft
 - [Process foundations vertical slice](process/README.md) — Draft
+- [Application activation and association foundations vertical slice](activation/README.md) — Draft
 - [IPC foundations vertical slice](ipc/README.md) — Draft
 - [Terminal foundations vertical slice](terminal/README.md) — Draft
 - [Windowing foundations vertical slice](windowing/README.md) — Draft

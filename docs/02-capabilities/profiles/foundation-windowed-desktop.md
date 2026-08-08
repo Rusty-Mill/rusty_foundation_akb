@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.25.0 |
+| Version | 0.26.0 |
 | Extends | [`rm.profile.foundation.desktop` 1.0.0](foundation-desktop.md) |
 | Purpose | Add native top-level window and graphics-presentation infrastructure without claiming a complete GUI toolkit |
 
@@ -209,6 +209,14 @@
 
 **RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0100:** Evidence covers hostile/malformed container/codec/text corpora, timestamp/edit/index/reorder/discontinuity cases, exact raw video/audio output, drain/flush/reset/provider loss, startup/rebuffer/live/seek, long-run clock drift and A/V sync, captions/audio description/accessible controls, metadata/history privacy, protected-path nonclaims, encode/mux finalization, and bounded sustained resources.
 
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0101:** Application activation is conditional on products that open external files/URIs/apps or register handlers. When selected, handler/association observation and brokered activation `>=0.1.0,<0.2.0` use typed immutable intents, exact role/verb, current user/system policy, explicit file/object authority or untrusted URI, foreground/interaction context, and provider-scoped milestones.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0102:** Handler registration is eligibility, not default consent; registered/eligible/recommended/default/enforced states remain distinct and revisioned. Setting defaults uses supported accessible OS settings/chooser flows. Activation never silently invokes a shell, executable search, interpreter, installer, elevation, or direct spawn.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0103:** Incoming file/URI/reopen/notification/share/custom activation is untrusted, at-least-once lifecycle input. It revalidates schema, freshness, target generation, content/scheme policy, authority, replay/idempotency, state, and domain preconditions; startup/instance routing, readiness, foreground, open, and handled milestones remain separate.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0104:** Evidence covers layered/default association changes, install/update/uninstall, file handle/path/token/bookmark and access scope, dangerous/cloud/network/quarantine targets, hostile URI grammars/custom/web links, chooser/default/exact modes, sandbox/foreground/headless, duplicate/concurrent/new/existing instances, cancellation/unknown/retry, privacy redaction, and accessible localized chooser/status/focus/recovery.
+
 ## Whole-product gaps
 
 This profile does not supply a rendering command model, widget/UI framework, text editing model, image/audio codecs, media containers/graphs, gestures, or translated product resources. Product-specific semantic roles/actions/content, accepted transfer formats/importers, locale coverage, audio policy/content, and accessible UX still belong to the product/framework. It cannot claim desktop-application completeness.
@@ -221,6 +229,7 @@ Input evidence additionally covers layout/IME diversity, keyboard-only operation
 
 ## History
 
+- **0.26.0:** Adds conditional typed activation, revisioned handler/default policy, safe file/URI handoff, incoming instance routing, registration, boundary-scoped completion, security/accessibility, conformance, and benchmarks.
 - **0.25.0:** Adds conditional time-based source/container/track, exact timeline, codec/raw-resource, playback/sync/seek/buffer, timed-text/accessibility, encode/mux, protection, conformance, and benchmark requirements.
 - **0.24.0:** Adds conditional bounded image probe/decode, exact immutable pixels, progressive/region/animation/metadata boundaries, explicit encode/transcode, provider isolation, accessibility, conformance, and benchmarks.
 - **0.23.0:** Adds conditional semantic image descriptions, display color evidence, compositor negotiation, transforms/HDR/profile boundaries, dynamic lifecycle, privacy/accessibility, and measurement-qualified evidence requirements.

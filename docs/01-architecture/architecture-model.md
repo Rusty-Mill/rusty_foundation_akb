@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.34.0
+**Version:** 1.35.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -477,6 +477,8 @@ The [display and color-management foundations vertical slice](../02-capabilities
 The [still-image and image-codec foundations vertical slice](../02-capabilities/still-image/README.md) defines bounded format probing, container/item inspection, multidimensional decode limits, exact immutable pixel resources, provisional progressive output, region/tile decoding, separate animation composition, metadata projection, and explicit encode/transcode plans. Detection is evidence rather than trust, and decoded images are bounded immutable resources rather than generic mutable RGBA buffers ([ADR-0068](../adr/0068-image-format-detection-is-evidence-not-trust.md), [ADR-0069](../adr/0069-decoded-images-are-bounded-immutable-resources.md)). Editing, media graphs, document semantics, and format-specific public APIs remain separate. Its specifications remain Draft and cannot amend this model.
 
 The [time-based media foundations vertical slice](../02-capabilities/time-media/README.md) defines bounded source/container/track inspection, exact multi-domain timelines, generation-scoped codec sessions and raw resources, playback clock/synchronization, negotiated seek/buffering discontinuities, timed text/accessibility, encode/mux/recording boundaries, and protected-content separation. Media time is exact, domain-tagged, and discontinuous, while seek is a negotiated generation change rather than an instantaneous cursor assignment ([ADR-0070](../adr/0070-media-time-is-exact-domain-tagged-and-discontinuous.md), [ADR-0071](../adr/0071-media-seek-is-a-negotiated-discontinuity.md)). Adaptive streaming, license acquisition, editing, conferencing, and application UX remain separate. Its specifications remain Draft and cannot amend this model.
+
+The [application activation and association foundations vertical slice](../02-capabilities/activation/README.md) defines typed outgoing intents, revisioned handler/default observations, user-controlled broker resolution, file capability and URI safety, incoming instance routing, registration/update rules, and boundary-scoped milestones. Activation is untrusted intent rather than authority, and broker acceptance is not application receipt, readiness, content open, or domain completion ([ADR-0072](../adr/0072-activation-is-untrusted-intent-not-authority.md), [ADR-0073](../adr/0073-activation-acceptance-is-not-handler-completion.md)). Shells, executable launch/search, default-setting, and cooperative workflow protocols remain separate. Its specifications remain Draft and cannot amend this model.
 
 ## 18. Deliberately unresolved choices
 
