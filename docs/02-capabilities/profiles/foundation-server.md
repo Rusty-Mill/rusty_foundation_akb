@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 1.0.0 |
+| Version | 1.1.0 |
 | Purpose | Long-running non-interactive service foundation with bounded shutdown and protected credentials |
 
 ## Workload assumptions
@@ -25,6 +25,10 @@ No interactive desktop session, unattended restart, concurrent I/O, explicit ser
 - **RM-PROFILE-FOUNDATION-SERVER-0007:** Restricted execution is optional for workers/helpers and must meet the manifest without interactive degradation.
 - **RM-PROFILE-FOUNDATION-SERVER-0008:** Process supervision `>=0.1.0,<0.2.0` is conditionally required when the workload launches managed workers; minimum containment level and breakaway/orphan policy are request inputs.
 - **RM-PROFILE-FOUNDATION-SERVER-0009:** Worker stdio capture conditionally requires `rm.ipc.byte-pipe` `>=0.1.0,<0.2.0` at Q2 or Q3 unless a bounded Q1 worker/saturation budget is accepted explicitly.
+- **RM-PROFILE-FOUNDATION-SERVER-0010:** Native service registration and demand activation `>=0.1.0,<0.2.0` are conditional when the deployment is installed or activated by an OS service manager. Definitions bind immutable package generation, machine/user/container scope, service principal, structured launch, endpoint/interface identity, readiness, restart/backoff, budgets, update, and removal.
+- **RM-PROFILE-FOUNDATION-SERVER-0011:** Durable scheduling `>=0.1.0,<0.2.0` is conditional when work survives process or host restart. Schedules preserve temporal domain, civil-zone/rule policy where applicable, eligibility window, missed/overlap/retry policy, authority, and generation; registration is not exact execution or application-result evidence.
+- **RM-PROFILE-FOUNDATION-SERVER-0012:** Background triggers are untrusted at-least-once invalidation hints. Attempts revalidate authoritative state, principal/policy/resources, acquire idempotent or transactional work claims, checkpoint explicitly, and report cancellation/crash/timeout/effect ambiguity without claiming exactly once.
+- **RM-PROFILE-FOUNDATION-SERVER-0013:** Evidence covers system/user/container managers, demand/persistent/timed/event workloads, noninteractive credential access, namespace collision, partial registration, duplicate/lost triggers, clock/sleep/reboot/downtime, quotas/dependency loss, overlap/retry/crash loops, update/coexist/drain/rollback/removal, service-manager restart, and activation/schedule/recovery benchmarks.
 
 ## Operational constraints
 
@@ -32,5 +36,6 @@ Deadline timers and cancellation support bounded multi-phase shutdown. Sync path
 
 ## History
 
+- **1.1.0:** Adds conditional OS-managed service registration/demand activation and durable scheduling with exact scope/principal, trigger reconciliation, attempt/checkpoint/retry, budget, update, conformance, and benchmark requirements.
 - **1.0.0:** Adds direct process launch/control through CLI 1.0.0 and conditional supervision/pipe requirements for managed workers.
 - **0.1.0:** Initial non-interactive runtime, filesystem, secret-store, and shutdown trial.

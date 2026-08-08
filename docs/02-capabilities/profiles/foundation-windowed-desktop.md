@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.28.0 |
+| Version | 0.29.0 |
 | Extends | [`rm.profile.foundation.desktop` 1.0.0](foundation-desktop.md) |
 | Purpose | Add native top-level window and graphics-presentation infrastructure without claiming a complete GUI toolkit |
 
@@ -233,6 +233,14 @@
 
 **RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0112:** Evidence covers view/control transitions, participant/channel replacement, multi-controller arbitration, transport loss/reorder/replay, local-input/focus races, mixed-scale/resize mapping, keyboard/layout/IME, touch/pen state, integrity/sandbox/compositor restrictions, lock/switch/secure/elevated boundaries, accessible consent/indication/emergency stop, state cleanup, and input-to-remotely-presented-response latency.
 
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0113:** Application services and durable schedules are conditional on product workload. When selected, registration, demand activation, and scheduler service `>=0.1.0,<0.2.0` bind immutable package/definition generation, user/system/session scope, principal/security context, structured launch, trigger/schedule policy, budgets, attempts, checkpoints, updates, and removal.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0114:** Installed, registered, enabled, trigger-armed, launch-requested, running, ready, work-claimed, checkpointed, completed, broker-acknowledged, and removed are distinct. Demand endpoints bind service/interface identity and generation; background contexts cannot prompt, steal focus, present arbitrary UI, or inherit an ambient desktop/profile/environment.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0115:** Durable schedules persist intent with time domain, civil-zone/rule and ambiguity policy, earliest/deadline window, flexibility, missed/overlap/retry policy, and authority—not exact execution. Trigger payloads are untrusted at-least-once reconciliation hints; domain effects use explicit durable claims, idempotency, and effect-ambiguity recovery.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0116:** Evidence covers demand/persistent/session/task workloads, register/update/rollback/remove transactions, multiple users/sessions, restricted principals, trigger duplicate/loss/storms, DST/clock/time-zone changes, sleep/reboot/downtime, quotas/dependencies, overlaps/checkpoints/crashes, accessible background controls/status, secret redaction, and activation/schedule/recovery benchmarks.
+
 ## Whole-product gaps
 
 This profile does not supply a rendering command model, widget/UI framework, text editing model, image/audio codecs, media containers/graphs, gestures, or translated product resources. Product-specific semantic roles/actions/content, accepted transfer formats/importers, locale coverage, audio policy/content, and accessible UX still belong to the product/framework. It cannot claim desktop-application completeness.
@@ -245,6 +253,7 @@ Input evidence additionally covers layout/IME diversity, keyboard-only operation
 
 ## History
 
+- **0.29.0:** Adds conditional immutable service/job registration, execution scopes, demand activation/readiness, durable schedules and trigger reconciliation, attempts/checkpoints/retries, budgets, generation updates, accessibility, conformance, and benchmarks.
 - **0.28.0:** Adds conditional participant/session/action-scoped remote presentation and controlled input, exact mappings/state/order, secure-boundary and local-override rules, emergency stop, accessibility, conformance, and end-to-end latency evidence.
 - **0.27.0:** Adds conditional trusted screen/window/application/region selection, revocable generation-scoped capture, exact frame/color/geometry/timing, cursor/audio separation, protection nonclaims, bounded delivery, privacy/accessibility, conformance, and benchmarks.
 - **0.26.0:** Adds conditional typed activation, revisioned handler/default policy, safe file/URI handoff, incoming instance routing, registration, boundary-scoped completion, security/accessibility, conformance, and benchmarks.

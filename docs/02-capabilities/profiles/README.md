@@ -1,6 +1,6 @@
 # Foundation profile comparison
 
-**Status:** Draft profiles at version 1.0.0
+**Status:** Draft foundation profiles
 
 These manifests validate profile resolution against the currently specified vertical slices. `R` is required, `C` conditional, `O` optional, and `—` not selected by the profile.
 
@@ -24,6 +24,8 @@ These manifests validate profile resolution against the currently specified vert
 | Orderly shutdown service | O | O | R | O |
 | Process supervision service | O | O | C | O |
 | Restricted execution service | O | O | O | O |
+| Background service registration/activation | — | C | C | O |
+| Durable scheduling service | — | C | C | O |
 
 The table is only a view. Each manifest defines exact contract ranges, predicates, and quality constraints.
 
@@ -33,7 +35,9 @@ The table is only a view. Each manifest defines exact contract ranges, predicate
 
 ## Windowed desktop extension
 
-[`rm.profile.foundation.windowed-desktop` 0.28.0](foundation-windowed-desktop.md) extends Desktop 1.0.0 with negotiated top-level windowing, graphics/color-managed presentation, focused input/text composition, exact text infrastructure, semantic accessibility/native adapters, data transfer, explicit localization/formatting, typed snapshot-based configuration, bounded structured observability, application lifecycle/session integration, conditional networking/audio/camera/screen-capture/remote-interaction/notifications/power/general device/identity-session/printing/still-image/time-media/activation observation and completion-oriented async I/O/storage-volume workflows, optional scoped reauthentication and delegated credential operations, optional explicit memory/mapping, optional isolated plugins, and explicit native-thread/synchronization foundations. It remains intentionally incomplete until renderer/UI, editing and accessible-document authoring, adaptive streaming/license/application media policy, signaling/NAT traversal/unattended-access policy, remote push/application protocols and workflow acknowledgments, account/federation protocols, privileged display/system-power control, translated product resources/semantics/importers, plugin interfaces, and product-specific restoration/audio/capture/remote-control/notification/power/device/storage/identity/printing/color/image/media/activation policy are selected.
+[`rm.profile.foundation.windowed-desktop` 0.29.0](foundation-windowed-desktop.md) extends Desktop 1.0.0 with negotiated top-level windowing, graphics/color-managed presentation, focused input/text composition, exact text infrastructure, semantic accessibility/native adapters, data transfer, explicit localization/formatting, typed snapshot-based configuration, bounded structured observability, application lifecycle/session integration, conditional networking/audio/camera/screen-capture/remote-interaction/background-service/notifications/power/general device/identity-session/printing/still-image/time-media/activation observation and completion-oriented async I/O/storage-volume workflows, optional scoped reauthentication and delegated credential operations, optional explicit memory/mapping, optional isolated plugins, and explicit native-thread/synchronization foundations. It remains intentionally incomplete until renderer/UI, editing and accessible-document authoring, adaptive streaming/license/application media policy, signaling/NAT traversal/unattended-access policy, remote push/application protocols and workflow acknowledgments, account/federation protocols, privileged display/system-power control, translated product resources/semantics/importers, plugin interfaces, and product-specific restoration/audio/capture/remote-control/background-work/notification/power/device/storage/identity/printing/color/image/media/activation policy are selected.
+
+[`rm.profile.foundation.server` 1.1.0](foundation-server.md) conditionally selects OS-managed service registration/demand activation and durable scheduling when deployment or work-survival requirements need them. It preserves explicit application protocol, database/queue, distributed coordination, deployment topology, exactly-once domain effect, and operational policy gaps.
 
 ## Version transition
 

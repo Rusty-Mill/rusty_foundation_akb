@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.37.0
+**Version:** 1.38.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -483,6 +483,8 @@ The [application activation and association foundations vertical slice](../02-ca
 The [screen and window capture foundations vertical slice](../02-capabilities/screen-capture/README.md) defines trusted source selection, source-generation grants, revocable session authority, exact frame/color/geometry/time semantics, explicit cursor and audio streams, bounded delivery, protection nonclaims, privacy/accessibility, conformance, and benchmarks. Capture authority binds the exact user-selected source generation, while frames are provider observations rather than proof of what the user saw, semantic completeness, or confidentiality ([ADR-0074](../adr/0074-capture-authority-binds-an-exact-selected-source-generation.md), [ADR-0075](../adr/0075-capture-frames-are-provider-observations-not-content-proof.md)). Encoding, recording, persistence, transmission, analysis, camera/microphone capture, and remote input remain separate. Its specifications remain Draft and cannot amend this model.
 
 The [remote presentation and controlled input foundations vertical slice](../02-capabilities/remote-interaction/README.md) composes selected screen observation with separately secured transport, participant evidence, role/action grants, generation-bound coordinate/keymap mappings, untrusted remote input intent, bounded native injection, explicit state cleanup, local consent/indication/stop, accessibility, conformance, and latency evidence. Remote-control authority is participant-, session-, and action-scoped, while injected input is a privileged attributed side effect rather than replay or domain-success proof ([ADR-0076](../adr/0076-remote-control-authority-is-participant-session-and-action-scoped.md), [ADR-0077](../adr/0077-injected-input-is-a-privileged-attributed-side-effect.md)). Codecs/signaling, unattended access, clipboard/files, elevation, secure attention, credentials, and domain commands remain separate. Its specifications remain Draft and cannot amend this model.
+
+The [application services, background execution, and durable scheduling foundations vertical slice](../02-capabilities/background-services/README.md) defines immutable service/job definitions, transactional registration, user/system execution scopes, demand activation and readiness, civil/monotonic schedules, trigger reconciliation, attempts/checkpoints/retries, resource policy, generation updates, accessibility, conformance, and benchmarks. Durable schedules persist intent rather than execution guarantees, and triggers are at-least-once reconciliation hints rather than work authority ([ADR-0078](../adr/0078-durable-schedules-persist-intent-not-execution-guarantees.md), [ADR-0079](../adr/0079-background-triggers-are-reconciliation-hints-not-work-authority.md)). Exactly-once domain effects, interactive UI, elevation, credentials, package distribution, application protocols, and product work policy remain separate. Its specifications remain Draft and cannot amend this model.
 
 ## 18. Deliberately unresolved choices
 
