@@ -59,3 +59,4 @@ Each domain will be decomposed into common, optional/advanced, and platform-spec
 - [Camera and media-capture foundations vertical slice](capture/README.md) — Draft
 - [Notifications and user-attention foundations vertical slice](notifications/README.md) — Draft
 - [Power and energy-management foundations vertical slice](power/README.md) — Draft
+- [Credential and identity-session foundations vertical slice](identity-session/README.md) — Draft

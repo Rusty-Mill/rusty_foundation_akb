@@ -63,5 +63,7 @@
 | [0059](0059-notification-actions-are-untrusted-activation.md) | Notification actions are untrusted activation | Accepted |
 | [0060](0060-power-observations-are-estimates-not-budgets.md) | Power observations are estimates, not budgets | Accepted |
 | [0061](0061-power-assertions-are-scoped-leases-not-guarantees.md) | Power assertions are scoped leases, not guarantees | Accepted |
+| [0062](0062-authentication-results-are-scoped-evidence.md) | Authentication results are scoped evidence | Accepted |
+| [0063](0063-impersonation-is-a-restricted-operation-boundary.md) | Impersonation is a restricted operation boundary | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.
