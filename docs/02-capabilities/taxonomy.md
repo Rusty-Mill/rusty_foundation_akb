@@ -22,3 +22,7 @@ This is an inventory for domain analysis, not an API or crate list.
 | Observability | logs, traces, metrics, diagnostics, crash/error reporting |
 
 Each domain will be decomposed into common, optional/advanced, and platform-specific capabilities. Platform-specific features may remain explicit extensions when a truthful common contract is impossible.
+
+## Active domain analyses
+
+- [Runtime and time vertical slice](runtime-time/README.md) — Draft

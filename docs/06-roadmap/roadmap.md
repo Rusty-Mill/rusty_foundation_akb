@@ -38,6 +38,7 @@ Dates are intentionally absent until scope and capacity are known. Progress is c
 ## Immediate next decisions
 
 1. Review [RFC-0001](../rfc/0001-capability-specification-system.md) and exercise its templates.
-2. Select the first domain-analysis slice.
-3. Define measurable criteria for the reference vertical slice.
-4. Choose a machine-readable graph format only after two real capability specifications expose the requirements.
+2. Review the [runtime and time vertical slice](../02-capabilities/runtime-time/README.md), including its four candidate specifications and open questions.
+3. Decide whether orderly shutdown is a capability or a platform service.
+4. Define measurable acceptance criteria and prototype experiments for timer scale, timing behavior, cancellation races, and shutdown ordering.
+5. Choose a machine-readable graph format only after at least two reviewed capability specifications expose the requirements.

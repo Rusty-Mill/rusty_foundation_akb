@@ -100,3 +100,7 @@ Rejected because cross-domain review, graph validation, and conformance traceabi
 3. Revise based on friction and missing information.
 4. Accept the RFC before creating stable capability specifications.
 5. Propose serialization and validation tooling separately after two real specifications exist.
+
+## Trial application
+
+The model is now being exercised by the [runtime and time vertical slice](../02-capabilities/runtime-time/README.md). Its documents remain Draft and provide feedback to this RFC; they do not imply that RFC-0001 has been accepted.
