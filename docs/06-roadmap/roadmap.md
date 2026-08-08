@@ -59,3 +59,7 @@ The four [foundation profiles](../02-capabilities/profiles/README.md) now exerci
 ## Active fourth slice
 
 The [process foundations analysis](../02-capabilities/process/README.md) defines direct launch, native arguments/environment, explicit inheritance, standard-stream binding, child lifecycle/control, executable resolution, containment-aware supervision, shell-free pipelines, and startup milestones. The [IPC foundations analysis](../02-capabilities/ipc/README.md) supplies reusable anonymous byte pipes. Profile integration is at foundation version 1.0.0; next gates are terminal/PTY boundaries and measured process-control/pipe quality evidence.
+
+## Active fifth slice
+
+The [terminal foundations analysis](../02-capabilities/terminal/README.md) separates PTY session/attachment/transport from byte pipes and from emulator, renderer, input, Unicode-layout, and accessibility layers. Its next gates are terminal-emulator state semantics, input-event encoding, recording/replay policy, and profile integration.

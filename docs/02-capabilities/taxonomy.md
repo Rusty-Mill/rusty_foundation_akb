@@ -9,6 +9,7 @@ This is an inventory for domain analysis, not an API or crate list.
 | Threading | threads, synchronization, affinity, priorities, thread-local state |
 | Async I/O | reactors/completion, readiness, timers, cancellation, backpressure |
 | IPC | anonymous/named channels, byte streams, messages, handle transfer, shared memory |
+| Terminal | pseudoterminals, modes, terminal protocol, sessions, emulation, accessible presentation |
 | Memory | allocation, mapping, protection, shared memory, locking, large pages |
 | Filesystem | paths, files, directories, metadata, watching, atomicity, permissions |
 | Networking | resolution, sockets, transports, interfaces, routing awareness, security |
@@ -31,3 +32,4 @@ Each domain will be decomposed into common, optional/advanced, and platform-spec
 - [Security and authority foundations vertical slice](security/README.md) — Draft
 - [Process foundations vertical slice](process/README.md) — Draft
 - [IPC foundations vertical slice](ipc/README.md) — Draft
+- [Terminal foundations vertical slice](terminal/README.md) — Draft

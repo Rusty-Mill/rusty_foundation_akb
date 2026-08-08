@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.6.0
+**Version:** 1.7.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -217,6 +217,8 @@ Portable process creation begins with direct launch of an explicit executable, s
 Executable resolution is separate from launch and consumes explicit ordered directory authority; ambient path/current-directory search is not a base behavior ([ADR-0016](../adr/0016-executable-search-uses-explicit-authority.md)). Control of one owned child is a capability. Supervision of a dynamic process set is a platform service with scoped containment evidence; observed ancestry cannot be represented as a universally contained process tree ([ADR-0015](../adr/0015-process-set-supervision-is-a-service.md)).
 
 Anonymous byte pipes are independent IPC capabilities with directional ownership, EOF, broken-peer, backpressure, atomicity, and async quality semantics. Process spawning only binds compatible endpoints; multi-process pipeline lifecycle is a service/framework composition ([ADR-0017](../adr/0017-byte-pipes-are-independent-ipc-capabilities.md)).
+
+Pseudoterminals are stateful protocol-bearing terminal resources, not byte pipes. Their capability owns attachment, character-cell size, wire profile, terminal state, transport, resize, and hangup. A terminal session service composes process launch/supervision; emulation, rendering, structured input, Unicode layout, and accessible presentation remain higher layers with separate evidence ([ADR-0018](../adr/0018-pseudoterminals-are-not-byte-pipes.md)).
 
 ## 9. Execution and concurrency model
 
