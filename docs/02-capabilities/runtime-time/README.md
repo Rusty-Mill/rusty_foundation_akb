@@ -13,8 +13,8 @@ Time and cancellation appear simple but expose difficult cross-platform question
 flowchart TD
     Clock["rm.time.monotonic-clock"] -->|"required by"| Timer["rm.time.deadline-timer"]
     Cancel["rm.runtime.cancellation"] -. "optionally observed by" .-> Timer
-    Timer -->|"required by"| Shutdown["rm.runtime.shutdown"]
-    Cancel -->|"required by"| Shutdown
+    Timer -->|"composed by"| Shutdown["Orderly shutdown service"]
+    Cancel -->|"composed by"| Shutdown
 ```
 
 The diagram is conceptual. The accepted edge direction is defined in each specification:
@@ -22,7 +22,7 @@ The diagram is conceptual. The accepted edge direction is defined in each specif
 - [`rm.time.monotonic-clock`](monotonic-clock.md) has no required capability dependency.
 - [`rm.time.deadline-timer`](deadline-timer.md) requires a compatible monotonic-clock domain and optionally observes cancellation.
 - [`rm.runtime.cancellation`](cancellation.md) has no required OS capability; operation-specific providers may bridge it to native cancellation.
-- [`rm.runtime.shutdown`](shutdown.md) requires cancellation and uses deadlines to bound graceful phases.
+- The [orderly shutdown platform service](shutdown.md) composes cancellation and deadlines to bound graceful phases. [ADR-0005](../../adr/0005-orderly-shutdown-is-a-platform-service.md) excludes it from the capability graph.
 
 ## Scenarios
 
@@ -46,6 +46,7 @@ The diagram is conceptual. The accepted edge direction is defined in each specif
 - Cancellation is cooperative state propagation, not forced thread termination.
 - Native operation cancellation belongs to each operation's contract because guarantees differ by mechanism.
 - Shutdown is coordinated policy over owned work; it is not equivalent to process termination.
+- Orchestration and escalation make orderly shutdown a platform service rather than a capability.
 - Wake-from-suspend is an optional authority-bearing extension, not part of the base timer guarantee.
 
 ## Research status

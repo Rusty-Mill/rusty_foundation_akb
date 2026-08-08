@@ -1,14 +1,19 @@
-# `rm.runtime.shutdown` — Orderly shutdown
+# Orderly shutdown platform service
 
-**Status:** Draft  
-**Contract version:** 0.1.0  
-**Domain:** Runtime  
-**Owner:** Unassigned  
-**Profiles:** CLI, Desktop, Server (candidate required); Embedded/headless (candidate optional)
+| Field | Value |
+|---|---|
+| Status | Draft |
+| Service specification version | 0.1.0 |
+| Domain | Runtime |
+| Owner | Unassigned |
+| Decision | [ADR-0005](../../adr/0005-orderly-shutdown-is-a-platform-service.md) |
+| Suggested workloads | CLI, Desktop, Server; optional for Embedded/headless |
 
 ## Purpose
 
 Coordinate a bounded transition from accepting work to a stopped state while preserving dependency order, cleanup obligations, diagnostics, and explicit escalation policy.
+
+This is a platform-service specification. It composes capabilities and policy; it is not a capability, provider, or member of the capability dependency graph.
 
 ## Non-goals
 
@@ -63,6 +68,5 @@ Test normal drain, dependency ordering, concurrent initiation, reentrancy, late 
 
 ## Open questions
 
-- Is shutdown best classified as a capability or a platform service composed from cancellation and timers?
 - How are dynamically changing dependency graphs frozen for shutdown?
 - Which escalation policies belong in common contracts versus application frameworks?

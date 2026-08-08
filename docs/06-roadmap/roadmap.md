@@ -39,6 +39,7 @@ Dates are intentionally absent until scope and capacity are known. Progress is c
 
 1. Review [RFC-0001](../rfc/0001-capability-specification-system.md) and exercise its templates.
 2. Review the [runtime and time vertical slice](../02-capabilities/runtime-time/README.md), including its four candidate specifications and open questions.
-3. Decide whether orderly shutdown is a capability or a platform service.
-4. Define measurable acceptance criteria and prototype experiments for timer scale, timing behavior, cancellation races, and shutdown ordering.
-5. Choose a machine-readable graph format only after at least two reviewed capability specifications expose the requirements.
+3. ~~Decide whether orderly shutdown is a capability or a platform service.~~ Resolved as a platform service by [ADR-0005](../adr/0005-orderly-shutdown-is-a-platform-service.md).
+4. Review the runtime/time [conformance specification](../02-capabilities/runtime-time/conformance.md) and [benchmark specification](../02-capabilities/runtime-time/benchmarks.md).
+5. Define prototype experiments for timer scale, timing behavior, cancellation races, and shutdown ordering.
+6. Choose a machine-readable graph format only after at least two reviewed capability specifications expose the requirements.

@@ -370,7 +370,7 @@ CI and release inputs are pinned; third-party dependencies are minimized and rev
 
 ## 17. Current application of the model
 
-The [runtime and time vertical slice](../02-capabilities/runtime-time/README.md) is the first trial. Its monotonic-clock, deadline-timer, cancellation, and shutdown documents exercise the entity, dependency, contract, quality, and evidence rules. They remain Draft and cannot amend this model.
+The [runtime and time vertical slice](../02-capabilities/runtime-time/README.md) is the first trial. Its monotonic-clock, deadline-timer, cancellation, and orderly-shutdown documents exercise the entity, dependency, service, contract, quality, and evidence rules. [ADR-0005](../adr/0005-orderly-shutdown-is-a-platform-service.md) classifies orderly shutdown as a platform service rather than a capability. The specifications remain Draft and cannot amend this model.
 
 ## 18. Deliberately unresolved choices
 
