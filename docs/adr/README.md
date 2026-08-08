@@ -113,5 +113,7 @@
 | [0109](0109-ranking-scores-are-policy-scoped-ordering-evidence.md) | Ranking scores are policy-scoped ordering evidence | Accepted |
 | [0110](0110-watermarks-are-progress-assertions-not-completeness-proof.md) | Watermarks are progress assertions, not completeness proof | Accepted |
 | [0111](0111-exactly-once-is-scoped-to-named-state-and-effect-boundaries.md) | Exactly-once is scoped to named state and effect boundaries | Accepted |
+| [0112](0112-logical-schema-identity-is-distinct-from-wire-encoding.md) | Logical schema identity is distinct from wire encoding | Accepted |
+| [0113](0113-canonicalization-is-an-explicit-signed-view-profile.md) | Canonicalization is an explicit signed-view profile | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

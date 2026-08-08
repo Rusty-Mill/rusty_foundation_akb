@@ -3,8 +3,8 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.12.0 |
-| Extends | [`rm.profile.foundation.server` 1.16.0](foundation-server.md) |
+| Version | 0.13.0 |
+| Extends | [`rm.profile.foundation.server` 1.17.0](foundation-server.md) |
 | Purpose | Operate software publication, authenticated repository metadata, mirrors, advisories, and emergency response without claiming a complete hosted registry product |
 
 ## Required composition
@@ -53,8 +53,11 @@
 
 **RM-PROFILE-REPOSITORY-OPERATOR-0021:** When a repository selects analytics, it composes Server 1.16.0 with immutable release/download/advisory/mirror/source frontiers, purpose-scoped schemas/functions/materializations, privacy-preserving tenant/user analysis, late/corrected events, resource and retention budgets, reproducible reports, fenced publication effects, and no inference that analytical or checkpoint results authorize release, advisory, revocation, or consumer action.
 
+**RM-PROFILE-REPOSITORY-OPERATOR-0022:** Repository interchange composes Server 1.17.0 with immutable versioned release/channel/advisory/metadata schemas, exact wire and canonical signed views, reserved identifiers and unknown preservation, bounded mirror/client parsing, loss-aware OSV/CSAF/TUF/OCI/native transcoding, authenticated registry/toolchain provenance, and no inference that parse, compatibility, or signature alone authorizes publication or installation.
+
 ## History
 
+- **0.13.0:** Rebases on Server 1.17.0 and constrains repository interchange to immutable schemas, exact signed views, bounded parsing, unknown preservation, loss-aware security-format conversion, and provenance.
 - **0.12.0:** Rebases on Server 1.16.0 and constrains optional analytics to immutable repository frontiers, privacy-preserving metrics, late corrections, reproducible reports, and separated publication authority.
 - **0.11.0:** Rebases on Server 1.15.0 and constrains optional search to immutable release/advisory identity, authenticated capture, private-artifact isolation, explicit visibility, stable traversal, and source revalidation.
 - **0.10.0:** Rebases on Server 1.14.0 and constrains optional caching/edge delivery to immutable releases, authenticated metadata freshness, privacy partitions, bounded purge, and propagation evidence.

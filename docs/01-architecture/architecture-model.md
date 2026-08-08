@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.54.0
+**Version:** 1.55.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -517,6 +517,8 @@ The [caching and content-delivery foundations](../02-capabilities/caching/README
 The [search, indexing, and retrieval foundations](../02-capabilities/search/README.md) compose source-versioned document projections, schemas/mappings/analyzers/models, ingestion and ordered change capture, explicit durability/visibility milestones, lexical/structured/vector/spatial/hybrid retrieval, versioned query/ranking and stable-view pagination, facets/highlighting, tenant security/privacy, migration/rebuild/recovery, relevance evaluation, conformance, and benchmarks. Search visibility is a versioned projection milestone rather than source truth, and ranking scores are policy-scoped ordering evidence rather than portable confidence ([ADR-0108](../adr/0108-search-visibility-is-a-versioned-projection-milestone.md), [ADR-0109](../adr/0109-ranking-scores-are-policy-scoped-ordering-evidence.md)). Exact documents/schemas/analyzers/models, engines/topology, query DSLs, ranking/relevance policy, tenancy, freshness, recovery, objectives, and legal policy remain product RFC choices. Its specifications remain Draft and cannot amend this model.
 
 The [analytical data processing and query foundations](../02-capabilities/analytics/README.md) compose typed row/columnar data, catalog/source/format snapshots, immutable logical and realized physical plans, batch/stream operators, distributed partitioning/shuffle/spill, event time/watermarks/late-data correction, state/checkpoints/effect boundaries, incremental materialization, resource governance, lineage/security/privacy, migration/recovery/reproducibility, conformance, and benchmarks. Watermarks are scoped progress assertions rather than completeness proof, and exactly-once claims name precise state and external-effect boundaries ([ADR-0110](../adr/0110-watermarks-are-progress-assertions-not-completeness-proof.md), [ADR-0111](../adr/0111-exactly-once-is-scoped-to-named-state-and-effect-boundaries.md)). Exact schemas/catalogs/functions, engines/topology, sources/sinks/formats, time/late-data/effect policy, workloads/materializations, resources/objectives, and governance remain product RFC choices. Its specifications remain Draft and cannot amend this model.
+
+The [structured data interchange and serialization foundations](../02-capabilities/interchange/README.md) compose logical schemas and directional evolution, exact wire-format mappings, explicit canonical signed/hash views, framing/streaming/negotiation, staged bounded parsing and validation, unknown/union/extension behavior, safe lazy/borrowed/zero-copy representations, transcoding loss, authenticated registry lifecycle, conformance vectors, and benchmarks. Logical schema identity remains distinct from wire encoding, while canonicalization is a named immutable signed-view profile rather than generic deterministic output ([ADR-0112](../adr/0112-logical-schema-identity-is-distinct-from-wire-encoding.md), [ADR-0113](../adr/0113-canonicalization-is-an-explicit-signed-view-profile.md)). Exact product schemas, JSON/CBOR/MessagePack/ASN.1/field-tagged profiles, media/framing, registries, compatibility, canonicalization, validation, limits, and implementation crates remain product RFC choices. Its specifications remain Draft and cannot amend this model.
 
 ## 18. Deliberately unresolved choices
 

@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.44.0 |
+| Version | 0.45.0 |
 | Extends | [`rm.profile.foundation.desktop` 1.0.0](foundation-desktop.md) |
 | Purpose | Add native top-level window and graphics-presentation infrastructure without claiming a complete GUI toolkit |
 
@@ -335,6 +335,12 @@
 
 **RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0163:** Evidence covers typed/columnar conversion, local files/databases and remote sources, deterministic expressions/operators, cancellation/spill/pressure, offline replay/watermarks, checkpoint/sink failures, accessible progress/results, locale/time semantics, privacy, recovery, and staged latency/energy/cost benchmarks.
 
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0164:** Structured interchange `>=0.1.0,<0.2.0` is conditional for product configuration, documents, persistence, IPC/network messages, import/export, or signed views. It binds logical schema, format/mapping/canonical/framing, registry, limits, validation, privacy, and implementation generations.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0165:** Decoded, defaulted, unknown, redacted, lossy, noncanonical, stale-schema, and partially imported state remains distinguishable and accessible. Hostile input is bounded before allocation/construction; imports do not gain filesystem/network/domain authority; signed bytes bind exact schema and canonical profile.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0166:** Evidence covers schema evolution/offline data, every selected format and canonical vector, chunked/cancelled parsing, lazy/borrowed lifetime, hostile limits/fuzzing, unknown round trips, transcoding loss, localized accessible diagnostics, registry outage/rollback, privacy, and staged latency/memory/energy benchmarks.
+
 ## Whole-product gaps
 
 This profile does not supply a rendering command model, widget/UI framework, text editing model, image/audio codecs, media containers/graphs, gestures, or translated product resources. Product-specific semantic roles/actions/content, accepted transfer formats/importers, locale coverage, audio policy/content, and accessible UX still belong to the product/framework. It cannot claim desktop-application completeness.
@@ -347,6 +353,7 @@ Input evidence additionally covers layout/IME diversity, keyboard-only operation
 
 ## History
 
+- **0.45.0:** Adds conditional schema-first interchange, exact format mappings, canonical signed views, bounded streaming parsers, unknown/loss handling, accessible validation, registry lifecycle, conformance, and benchmarks.
 - **0.44.0:** Adds conditional typed batch/stream analytics, versioned plans, event-time/state/effects, resource governance, accessible results, lineage/privacy, recovery/reproducibility, conformance, and benchmarks.
 - **0.43.0:** Adds conditional source-versioned search/indexing, explicit visibility, lexical/vector/hybrid retrieval, stable pagination, accessible results, migration/recovery, relevance evaluation, conformance, and benchmarks.
 - **0.42.0:** Adds conditional policy-qualified caching, privacy partitions, freshness/validation, tiering/eviction, stampede control, invalidation/edge delivery, accessibility, conformance, and benchmarks.

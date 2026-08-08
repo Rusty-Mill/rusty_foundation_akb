@@ -3,8 +3,8 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.11.0 |
-| Extends | [`rm.profile.foundation.server` 1.16.0](foundation-server.md) |
+| Version | 0.12.0 |
+| Extends | [`rm.profile.foundation.server` 1.17.0](foundation-server.md) |
 | Purpose | Operate registration, certificate issuance, renewal, status, and CA lifecycle without claiming a complete public or enterprise CA product |
 
 ## Required composition
@@ -45,8 +45,11 @@
 
 **RM-PROFILE-CA-OPERATOR-0017:** When a CA selects analytics, it composes Server 1.16.0 with exact ledger/status/transparency/audit source frontiers, approved schemas/functions/materializations, strict tenant and sensitive-field controls, event-time/late correction, disclosure-resistant aggregates, reproducible compliance evidence, checkpoint-to-HSM/status/transparency effect separation, and no inference that analytical state authorizes issuance, revocation, key use, or relying-party trust.
 
+**RM-PROFILE-CA-OPERATOR-0018:** CA interchange composes Server 1.17.0 with exact versioned certificate/request/status/protocol/audit schemas and ASN.1/DER plus selected protocol mappings, canonical signed regions, strict hostile-input constraints, unknown critical-extension rejection, preserved noncritical evidence, loss-aware conversion, authenticated schema/OID registries, and no inference that parsing or canonicality proves trust, issuance authority, possession, or status.
+
 ## History
 
+- **0.12.0:** Rebases on Server 1.17.0 and constrains CA interchange to exact ASN.1/DER and protocol schemas, canonical signed regions, hostile parsing, critical extensions, registries, and loss-aware conversion.
 - **0.11.0:** Rebases on Server 1.16.0 and constrains optional analytics to exact CA frontiers, disclosure-resistant aggregates, reproducible evidence, late corrections, and separated key/status effects.
 - **0.10.0:** Rebases on Server 1.15.0 and constrains optional search to exact CA source generations, strict isolation, ordered status capture, explicit visibility, audited traversal, and source revalidation.
 - **0.9.0:** Rebases on Server 1.14.0 and constrains optional caching/edge delivery to strict identity partitions, bounded status freshness, storm control, and propagation evidence.
