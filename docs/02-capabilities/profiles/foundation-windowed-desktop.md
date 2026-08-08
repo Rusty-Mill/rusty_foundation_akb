@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.24.0 |
+| Version | 0.25.0 |
 | Extends | [`rm.profile.foundation.desktop` 1.0.0](foundation-desktop.md) |
 | Purpose | Add native top-level window and graphics-presentation infrastructure without claiming a complete GUI toolkit |
 
@@ -201,6 +201,14 @@
 
 **RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0096:** Evidence covers valid/malformed/truncated/fuzz/bomb corpora, overflow and frame/reference storms, exact color/alpha/range/orientation, progressive final equivalence, region cost, animation timing/disposal, metadata privacy/conflicts, encode settings/determinism/finalization, provider crashes, bounded concurrency, accessible alternatives/status, reduced motion, and flash safety.
 
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0097:** Time-based media is conditional on product workload. When selected, source/container/track inspection, demux, codec sessions, playback, and seek/buffer services `>=0.1.0,<0.2.0` preserve exact domain-tagged timestamps/generations, typed tracks/configurations, bounded queues/resources, explicit clock/sink selection, and provider provenance/isolation.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0098:** Container/media/DTS/PTS/running/device/wall time, decode/presentation/arrival order, duration/end/live edge, and sink milestones remain distinct. Seek creates a new discontinuity generation with target/tolerance/accuracy, attainable start, flush/preroll/trim, actual result, presentation-ready evidence, and stale-output rejection.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0099:** A/V/text synchronization declares time source, mappings, skew tolerances, buffer/latency policy, video drop/repeat, audio stretch/resample, cue adjustment, rate, track/config changes, and correction evidence. Hardware/software/protected paths, encode/mux/recording, adaptive streaming, and license acquisition are separately selected.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0100:** Evidence covers hostile/malformed container/codec/text corpora, timestamp/edit/index/reorder/discontinuity cases, exact raw video/audio output, drain/flush/reset/provider loss, startup/rebuffer/live/seek, long-run clock drift and A/V sync, captions/audio description/accessible controls, metadata/history privacy, protected-path nonclaims, encode/mux finalization, and bounded sustained resources.
+
 ## Whole-product gaps
 
 This profile does not supply a rendering command model, widget/UI framework, text editing model, image/audio codecs, media containers/graphs, gestures, or translated product resources. Product-specific semantic roles/actions/content, accepted transfer formats/importers, locale coverage, audio policy/content, and accessible UX still belong to the product/framework. It cannot claim desktop-application completeness.
@@ -213,6 +221,7 @@ Input evidence additionally covers layout/IME diversity, keyboard-only operation
 
 ## History
 
+- **0.25.0:** Adds conditional time-based source/container/track, exact timeline, codec/raw-resource, playback/sync/seek/buffer, timed-text/accessibility, encode/mux, protection, conformance, and benchmark requirements.
 - **0.24.0:** Adds conditional bounded image probe/decode, exact immutable pixels, progressive/region/animation/metadata boundaries, explicit encode/transcode, provider isolation, accessibility, conformance, and benchmarks.
 - **0.23.0:** Adds conditional semantic image descriptions, display color evidence, compositor negotiation, transforms/HDR/profile boundaries, dynamic lifecycle, privacy/accessibility, and measurement-qualified evidence requirements.
 - **0.22.0:** Adds conditional destination discovery, format-bound whole-ticket negotiation, bounded paginated output, boundary-scoped job evidence, artifact output, security, accessibility, and benchmark requirements.

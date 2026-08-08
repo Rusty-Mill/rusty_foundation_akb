@@ -71,5 +71,7 @@
 | [0067](0067-display-color-is-compositor-negotiation-not-appearance-proof.md) | Display color is compositor negotiation, not appearance proof | Accepted |
 | [0068](0068-image-format-detection-is-evidence-not-trust.md) | Image format detection is evidence, not trust | Accepted |
 | [0069](0069-decoded-images-are-bounded-immutable-resources.md) | Decoded images are bounded immutable resources | Accepted |
+| [0070](0070-media-time-is-exact-domain-tagged-and-discontinuous.md) | Media time is exact, domain-tagged, and discontinuous | Accepted |
+| [0071](0071-media-seek-is-a-negotiated-discontinuity.md) | Media seek is a negotiated discontinuity | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

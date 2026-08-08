@@ -19,6 +19,7 @@ This is an inventory for domain analysis, not an API or crate list.
 | Graphics | devices, presentation, synchronization, resource transfer, compute |
 | Display color | image descriptions, display evidence, transforms, HDR, profiles, calibration |
 | Still image | probing, containers, decode/encode, pixels, metadata, animation, transforms |
+| Time media | containers, tracks, codecs, timelines, playback, synchronization, muxing |
 | Input | keyboard, pointer, touch, pen, game controllers, IME |
 | Audio | devices, streams, routing, timing, formats, real-time constraints |
 | Capture | cameras, authorization, raw frames, controls, timing, privacy, backpressure |
@@ -45,6 +46,7 @@ Each domain will be decomposed into common, optional/advanced, and platform-spec
 - [Graphics and presentation vertical slice](graphics/README.md) — Draft
 - [Display and color-management foundations vertical slice](display-color/README.md) — Draft
 - [Still-image and image-codec foundations vertical slice](still-image/README.md) — Draft
+- [Time-based media foundations vertical slice](time-media/README.md) — Draft
 - [Input foundations vertical slice](input/README.md) — Draft
 - [Text, fonts, and layout vertical slice](text/README.md) — Draft
 - [Accessibility foundations vertical slice](accessibility/README.md) — Draft
