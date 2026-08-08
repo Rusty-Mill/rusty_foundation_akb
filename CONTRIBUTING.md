@@ -2,6 +2,8 @@
 
 The AKB is specification-first. A contribution should make intent, semantics, boundaries, or verification clearer.
 
+The [authoritative architecture model](docs/01-architecture/architecture-model.md) governs current architecture. Changes to architectural rules must update the model and their ADR/RFC in the same contribution.
+
 ## Change paths
 
 - Editorial clarification: ordinary pull request.

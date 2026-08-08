@@ -2,6 +2,8 @@
 
 **Status:** Draft
 
+> This document elaborates the dependency-graph rules in the [authoritative architecture model](../01-architecture/architecture-model.md). The authoritative model governs if wording conflicts.
+
 The graph is a versioned architectural artifact derived from capability specifications. It supports review, profile resolution, impact analysis, documentation generation, and verification planning. It is not a runtime service design.
 
 ## Nodes

@@ -9,8 +9,8 @@ This repository is the canonical architecture knowledge base (AKB). It records i
 ## Start here
 
 1. [Project charter](docs/00-foundation/project-charter.md)
-2. [Architecture principles](docs/00-foundation/principles.md)
-3. [Architecture overview](docs/01-architecture/overview.md)
+2. [Authoritative architecture model](docs/01-architecture/architecture-model.md)
+3. [Architecture principles](docs/00-foundation/principles.md)
 4. [Capability model](docs/02-capabilities/model.md)
 5. [Ecosystem architecture](docs/04-ecosystem/repository-strategy.md)
 6. [Governance](docs/05-governance/governance.md)

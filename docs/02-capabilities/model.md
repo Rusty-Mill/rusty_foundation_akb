@@ -1,5 +1,7 @@
 # Capability meta-model
 
+> This document elaborates the capability portion of the [authoritative architecture model](../01-architecture/architecture-model.md). The authoritative model governs if wording conflicts.
+
 A capability is the smallest independently describable and testable unit of platform behavior. Capabilities are identified by stable names and versions, not by operating-system symbols.
 
 ## Capability record

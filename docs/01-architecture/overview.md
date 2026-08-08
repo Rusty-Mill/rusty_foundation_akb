@@ -1,5 +1,7 @@
 # Architecture overview
 
+> This is a concise orientation. The [authoritative architecture model](architecture-model.md) is the normative source of truth.
+
 ## Architecture pyramid
 
 ```text

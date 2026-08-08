@@ -1,5 +1,7 @@
 # Governance
 
+The [authoritative architecture model](../01-architecture/architecture-model.md) defines the current normative architecture. ADRs preserve why it changes; RFCs propose changes; supporting documents elaborate it.
+
 ## Roles
 
 - **Maintainers:** steward repositories and merge changes within accepted architecture.
@@ -28,3 +30,5 @@ Use an RFC for new stable capabilities, public contracts, cross-repository chang
 ## Change control
 
 Every normative document names its status and owner. Pull requests link affected contracts, ADRs/RFCs, profiles, tests, benchmarks, and migration notes. Scheduled reviews identify stale or contradictory guidance.
+
+When architecture changes, the accepted decision and the authoritative model are updated together. A draft or lower-level document cannot override the model implicitly.

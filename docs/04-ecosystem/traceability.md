@@ -2,6 +2,8 @@
 
 **Status:** Draft
 
+> This document elaborates the evidence chain in the [authoritative architecture model](../01-architecture/architecture-model.md). The authoritative model governs if wording conflicts.
+
 Traceability ensures that architecture promises survive implementation and release.
 
 ```text

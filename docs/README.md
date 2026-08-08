@@ -5,7 +5,7 @@ The AKB is organized from stable intent to evolving detail.
 | Area | Purpose |
 |---|---|
 | [00 Foundation](00-foundation/project-charter.md) | Charter, scope, principles, glossary |
-| [01 Architecture](01-architecture/overview.md) | Layering, contracts, cross-cutting qualities |
+| [01 Architecture](01-architecture/architecture-model.md) | Authoritative model, layering, contracts, and cross-cutting qualities |
 | [02 Capabilities](02-capabilities/taxonomy.md) | Taxonomy, dependency graphs, profiles |
 | [03 Delivery](03-delivery/strategy.md) | Versioning, packaging, updates, supply chain |
 | [04 Ecosystem](04-ecosystem/repository-strategy.md) | Organization, repository, crate, and workspace boundaries |
@@ -31,3 +31,7 @@ Each volume progresses independently from inventory to semantics, contracts, ver
 - [Capability specification template](02-capabilities/capability-template.md)
 - [Traceability model](04-ecosystem/traceability.md)
 - [RFC-0001: Capability specification system](rfc/0001-capability-specification-system.md)
+
+## Document authority
+
+The [Rusty Mill authoritative architecture model](01-architecture/architecture-model.md) is the normative source of truth. Supporting documents elaborate it. Accepted ADRs record why it changes; draft documents cannot override it.
