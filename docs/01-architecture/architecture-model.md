@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.30.0
+**Version:** 1.31.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -469,6 +469,8 @@ The [notifications and user-attention foundations vertical slice](../02-capabili
 The [power and energy-management foundations vertical slice](../02-capabilities/power/README.md) defines qualified battery/power/saver/thermal observations, workload adaptation intent, scoped sleep/display assertion leases, lifecycle reconciliation, energy measurement, privacy/accessibility, conformance, and benchmarks. Power observations are estimates rather than budgets, and assertions are bounded requests rather than continued-execution guarantees ([ADR-0060](../adr/0060-power-observations-are-estimates-not-budgets.md), [ADR-0061](../adr/0061-power-assertions-are-scoped-leases-not-guarantees.md)). Privileged system power transitions and device power controls remain separate. Its specifications remain Draft and cannot amend this model.
 
 The [credential and identity-session foundations vertical slice](../02-capabilities/identity-session/README.md) defines provider-scoped principal evidence, generation-bound login sessions and security-context snapshots, explicit authentication ceremonies, opaque credential handles, change reconciliation, and restricted delegated execution. Authentication results are scoped evidence rather than credentials or authority, and impersonation is a bounded operation boundary that never flows implicitly through asynchronous execution ([ADR-0062](../adr/0062-authentication-results-are-scoped-evidence.md), [ADR-0063](../adr/0063-impersonation-is-a-restricted-operation-boundary.md)). Federation, account lifecycle, and protocol-specific credentials remain separate. Its specifications remain Draft and cannot amend this model.
+
+The [printing and document-output foundations vertical slice](../02-capabilities/printing/README.md) defines revisioned destination/capability discovery, immutable paginated document sources, whole-ticket negotiation, bounded rendering/color, job lifecycle evidence, and separate durable artifact output. Resolved plans bind destination generation and document format, while completion is evidence scoped to the reporting boundary rather than proof of physical output or collection ([ADR-0064](../adr/0064-print-plans-bind-destination-generation-and-format.md), [ADR-0065](../adr/0065-print-completion-is-boundary-scoped-evidence.md)). Editing, accessible-document authoring, protocol delivery, and physical attestation remain separate. Its specifications remain Draft and cannot amend this model.
 
 ## 18. Deliberately unresolved choices
 

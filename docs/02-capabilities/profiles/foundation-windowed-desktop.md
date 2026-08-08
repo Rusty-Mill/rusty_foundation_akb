@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.21.0 |
+| Version | 0.22.0 |
 | Extends | [`rm.profile.foundation.desktop` 1.0.0](foundation-desktop.md) |
 | Purpose | Add native top-level window and graphics-presentation infrastructure without claiming a complete GUI toolkit |
 
@@ -177,6 +177,14 @@
 
 **RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0084:** Evidence covers realm/name collision and reuse, group/privilege/label change, lock/switch/remote/headless sessions, cached/fresh/cancelled/denied authentication, prompt spoof/rate resistance, credential expiry/revocation/extraction denial, stale-generation rejection, policy races, context-leak fault injection, privacy redaction, localization/bidi, and keyboard/screen-reader operation.
 
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0085:** Printing is conditional on product workload. When selected, `rm.print.destination-observer`, document source, ticket resolver, and submit service `>=0.1.0,<0.2.0` distinguish queue/device/destination generations, format-sensitive capability snapshots, immutable pages, whole-ticket constraints, and explicit submission authority.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0086:** Resolved plans bind exact document representation and destination generation and report every default, substitution, conflict, unsupported value, and deferred decision. Stale plans are renegotiated; required media, duplex, color, quality, finishings, privacy/release, or fidelity constraints never degrade silently.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0087:** Rendering is bounded and declares geometry, pagination/imposition owner, font/resource embedding, vector/raster/transparency fallback, and color conversion evidence. Render, transfer, spool/destination acceptance, job processing/completion, physical output, collection, and artifact durability remain separate milestones; retry exposes duplicate risk.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0088:** Evidence covers local/network/virtual/offline destinations, hostile documents/tickets/device data, capability and service changes, mixed pages/ranges/copies/duplex/color, slow spool backpressure, hold/cancel/restart/ambiguous submission, artifact atomicity/durability, spool privacy, accessible localized UI/status/recovery, and accessible-output nonclaims.
+
 ## Whole-product gaps
 
 This profile does not supply a rendering command model, widget/UI framework, text editing model, image/audio codecs, media containers/graphs, gestures, or translated product resources. Product-specific semantic roles/actions/content, accepted transfer formats/importers, locale coverage, audio policy/content, and accessible UX still belong to the product/framework. It cannot claim desktop-application completeness.
@@ -189,6 +197,7 @@ Input evidence additionally covers layout/IME diversity, keyboard-only operation
 
 ## History
 
+- **0.22.0:** Adds conditional destination discovery, format-bound whole-ticket negotiation, bounded paginated output, boundary-scoped job evidence, artifact output, security, accessibility, and benchmark requirements.
 - **0.21.0:** Adds conditional principal/session observation, scoped authentication evidence, opaque credential/delegation boundaries, async-safe impersonation prohibition, privacy, accessibility, and evidence requirements.
 - **0.20.0:** Adds conditional qualified power/battery/thermal observation, explicit workload adaptation, optional scoped assertion leases, energy evidence, privacy, accessibility, and lifecycle requirements.
 - **0.19.0:** Adds conditional typed notification submission, attention/privacy policy, untrusted action activation, optional state/scheduling features, accessibility, and evidence requirements.

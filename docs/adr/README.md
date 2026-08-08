@@ -65,5 +65,7 @@
 | [0061](0061-power-assertions-are-scoped-leases-not-guarantees.md) | Power assertions are scoped leases, not guarantees | Accepted |
 | [0062](0062-authentication-results-are-scoped-evidence.md) | Authentication results are scoped evidence | Accepted |
 | [0063](0063-impersonation-is-a-restricted-operation-boundary.md) | Impersonation is a restricted operation boundary | Accepted |
+| [0064](0064-print-plans-bind-destination-generation-and-format.md) | Print plans bind destination generation and document format | Accepted |
+| [0065](0065-print-completion-is-boundary-scoped-evidence.md) | Print completion is boundary-scoped evidence | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.
