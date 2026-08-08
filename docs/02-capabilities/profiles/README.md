@@ -27,6 +27,10 @@ These manifests validate profile resolution against the currently specified vert
 
 The table is only a view. Each manifest defines exact contract ranges, predicates, and quality constraints.
 
+## Interactive CLI extension
+
+[`rm.profile.foundation.interactive-cli` 0.1.0](foundation-interactive-cli.md) extends CLI 1.0.0 with `rm.terminal.pseudoterminal` and the terminal session service. It is a separate identity because terminal hosting is not required by redirected/batch CLI workloads and still has emulator, input, Unicode-layout, rendering, and accessibility gaps.
+
 ## Version transition
 
 Version 1.0.0 adds direct process launch/control to CLI, Desktop, and Server. This is deliberately a profile-major change from 0.1.0 because it can invalidate a previously satisfied provider set. Byte pipes and executable resolution remain optional. Server supervision is conditional on launching managed workers.

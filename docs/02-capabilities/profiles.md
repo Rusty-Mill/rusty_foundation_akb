@@ -13,6 +13,7 @@ The current profiles are deliberately **foundation profiles**. They exercise onl
 ## Seed manifests
 
 - [`rm.profile.foundation.cli`](profiles/foundation-cli.md)
+- [`rm.profile.foundation.interactive-cli`](profiles/foundation-interactive-cli.md)
 - [`rm.profile.foundation.desktop`](profiles/foundation-desktop.md)
 - [`rm.profile.foundation.server`](profiles/foundation-server.md)
 - [`rm.profile.foundation.headless`](profiles/foundation-headless.md)
