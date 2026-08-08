@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 1.1.0 |
+| Version | 1.2.0 |
 | Purpose | Long-running non-interactive service foundation with bounded shutdown and protected credentials |
 
 ## Workload assumptions
@@ -29,6 +29,9 @@ No interactive desktop session, unattended restart, concurrent I/O, explicit ser
 - **RM-PROFILE-FOUNDATION-SERVER-0011:** Durable scheduling `>=0.1.0,<0.2.0` is conditional when work survives process or host restart. Schedules preserve temporal domain, civil-zone/rule policy where applicable, eligibility window, missed/overlap/retry policy, authority, and generation; registration is not exact execution or application-result evidence.
 - **RM-PROFILE-FOUNDATION-SERVER-0012:** Background triggers are untrusted at-least-once invalidation hints. Attempts revalidate authoritative state, principal/policy/resources, acquire idempotent or transactional work claims, checkpoint explicitly, and report cancellation/crash/timeout/effect ambiguity without claiming exactly once.
 - **RM-PROFILE-FOUNDATION-SERVER-0013:** Evidence covers system/user/container managers, demand/persistent/timed/event workloads, noninteractive credential access, namespace collision, partial registration, duplicate/lost triggers, clock/sleep/reboot/downtime, quotas/dependency loss, overlap/retry/crash loops, update/coexist/drain/rollback/removal, service-manager restart, and activation/schedule/recovery benchmarks.
+- **RM-PROFILE-FOUNDATION-SERVER-0014:** Cryptographic operations/key management `>=0.1.0,<0.2.0` are conditional when protecting data, authenticating messages, deriving keys, signing/verifying, or establishing shared keys. Resolution binds versioned workload policy, exact suite/parameters/encoding, provider/module/protection/certification evidence, opaque key generation/usage/export/lifetime, service principal, and noninteractive authority.
+- **RM-PROFILE-FOUNDATION-SERVER-0015:** Private/symmetric keys are non-exportable operation capabilities by default. Noninteractive access, remote/HSM outage, rate limits, provider loss, rotation/overlap/rollback, backup/migration, revocation/destruction, and algorithm transition are explicit; software fallback cannot weaken hardware/export/certification policy.
+- **RM-PROFILE-FOUNDATION-SERVER-0016:** Evidence includes official/adversarial vectors, nonce allocation across processes/restarts/snapshots, malformed encodings and oracle behavior, concurrency/cancellation, key usage/exhaustion/rotation, provider/hardware/remote failure, policy transition, certification/attestation scope, secret exposure/zeroization mapping, timing review, and sustained throughput/latency/fairness benchmarks.
 
 ## Operational constraints
 
@@ -36,6 +39,7 @@ Deadline timers and cancellation support bounded multi-phase shutdown. Sync path
 
 ## History
 
+- **1.2.0:** Adds conditional versioned cryptographic policy, opaque operation-scoped keys, exact primitive/composition/transfer contracts, noninteractive provider/hardware evidence, lifecycle, conformance, and benchmarks.
 - **1.1.0:** Adds conditional OS-managed service registration/demand activation and durable scheduling with exact scope/principal, trigger reconciliation, attempt/checkpoint/retry, budget, update, conformance, and benchmark requirements.
 - **1.0.0:** Adds direct process launch/control through CLI 1.0.0 and conditional supervision/pipe requirements for managed workers.
 - **0.1.0:** Initial non-interactive runtime, filesystem, secret-store, and shutdown trial.

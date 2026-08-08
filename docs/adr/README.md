@@ -81,5 +81,7 @@
 | [0077](0077-injected-input-is-a-privileged-attributed-side-effect.md) | Injected input is a privileged attributed side effect | Accepted |
 | [0078](0078-durable-schedules-persist-intent-not-execution-guarantees.md) | Durable schedules persist intent, not execution guarantees | Accepted |
 | [0079](0079-background-triggers-are-reconciliation-hints-not-work-authority.md) | Background triggers are reconciliation hints, not work authority | Accepted |
+| [0080](0080-key-handles-authorize-operations-not-key-material.md) | Key handles authorize operations, not key material | Accepted |
+| [0081](0081-cryptographic-policy-precedes-provider-selection.md) | Cryptographic policy precedes provider selection | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

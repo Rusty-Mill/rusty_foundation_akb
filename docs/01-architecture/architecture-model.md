@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.38.0
+**Version:** 1.39.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -485,6 +485,8 @@ The [screen and window capture foundations vertical slice](../02-capabilities/sc
 The [remote presentation and controlled input foundations vertical slice](../02-capabilities/remote-interaction/README.md) composes selected screen observation with separately secured transport, participant evidence, role/action grants, generation-bound coordinate/keymap mappings, untrusted remote input intent, bounded native injection, explicit state cleanup, local consent/indication/stop, accessibility, conformance, and latency evidence. Remote-control authority is participant-, session-, and action-scoped, while injected input is a privileged attributed side effect rather than replay or domain-success proof ([ADR-0076](../adr/0076-remote-control-authority-is-participant-session-and-action-scoped.md), [ADR-0077](../adr/0077-injected-input-is-a-privileged-attributed-side-effect.md)). Codecs/signaling, unattended access, clipboard/files, elevation, secure attention, credentials, and domain commands remain separate. Its specifications remain Draft and cannot amend this model.
 
 The [application services, background execution, and durable scheduling foundations vertical slice](../02-capabilities/background-services/README.md) defines immutable service/job definitions, transactional registration, user/system execution scopes, demand activation and readiness, civil/monotonic schedules, trigger reconciliation, attempts/checkpoints/retries, resource policy, generation updates, accessibility, conformance, and benchmarks. Durable schedules persist intent rather than execution guarantees, and triggers are at-least-once reconciliation hints rather than work authority ([ADR-0078](../adr/0078-durable-schedules-persist-intent-not-execution-guarantees.md), [ADR-0079](../adr/0079-background-triggers-are-reconciliation-hints-not-work-authority.md)). Exactly-once domain effects, interactive UI, elevation, credentials, package distribution, application protocols, and product work policy remain separate. Its specifications remain Draft and cannot amend this model.
+
+The [cryptographic operations and key-management foundations](../02-capabilities/security/crypto-README.md) extend the security slice with versioned workload policy, exact algorithm suites/parameters/encodings, opaque generation-scoped keys, separately attenuated key operations, hash/MAC/KDF/password derivation, authenticated encryption, signatures/verification/agreement, bounded transfer formats, provider/hardware/attestation/certification evidence, operation lifecycle, conformance vectors, and benchmarks. Key handles authorize operations rather than material, and cryptographic policy precedes provider selection ([ADR-0080](../adr/0080-key-handles-authorize-operations-not-key-material.md), [ADR-0081](../adr/0081-cryptographic-policy-precedes-provider-selection.md)). PKI/certificate lifecycle, protocol negotiation, code/document signing workflows, remote vault/HSM protocols, backup/escrow, and product policy remain separate. Its specifications remain Draft and cannot amend this model.
 
 ## 18. Deliberately unresolved choices
 

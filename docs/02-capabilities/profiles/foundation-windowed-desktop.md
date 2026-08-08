@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.29.0 |
+| Version | 0.30.0 |
 | Extends | [`rm.profile.foundation.desktop` 1.0.0](foundation-desktop.md) |
 | Purpose | Add native top-level window and graphics-presentation infrastructure without claiming a complete GUI toolkit |
 
@@ -241,6 +241,14 @@
 
 **RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0116:** Evidence covers demand/persistent/session/task workloads, register/update/rollback/remove transactions, multiple users/sessions, restricted principals, trigger duplicate/loss/storms, DST/clock/time-zone changes, sleep/reboot/downtime, quotas/dependencies, overlaps/checkpoints/crashes, accessible background controls/status, secret redaction, and activation/schedule/recovery benchmarks.
 
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0117:** Cryptographic operations/key management are conditional on product workload. When selected, policy resolution and opaque key-operation service `>=0.1.0,<0.2.0` bind purpose, exact suite/parameters/encoding, strength/horizon, provider/protection/certification constraints, key generation/origin/usage/export/lifetime, principal, authority, and policy/provider generations before use.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0118:** Hash, MAC, KDF/password derivation, AEAD, signature/verification, agreement/KEM, wrapping, import/export, attestation, rotation, revocation, and destruction are separately selected. Private/symmetric keys are non-exportable opaque operation capabilities by default; hardware/provider fallback cannot broaden export or weaken policy.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0119:** Exact nonce/salt/context/AAD/domain/encoding, authenticated-plaintext release, signature mode/canonicality, peer-key validation/KDF, bounded transfer parsing, buffer/copy/zeroization exposure, async/cancellation, interaction, and error-oracle policy are evidence-bearing. Provider defaults and blanket hardware/FIPS/constant-time/destruction claims are prohibited.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0120:** Evidence covers published and adversarial vectors, malformed/noncanonical inputs, invalid tags/signatures/keys/points, nonce concurrency/crash/snapshot, key usage/export/rotation/destruction, provider/hardware/remote loss and rate limits, prompting/session/lock, policy/algorithm transition, certification/attestation boundaries, secret-copy/timing review, and lifecycle/throughput benchmarks.
+
 ## Whole-product gaps
 
 This profile does not supply a rendering command model, widget/UI framework, text editing model, image/audio codecs, media containers/graphs, gestures, or translated product resources. Product-specific semantic roles/actions/content, accepted transfer formats/importers, locale coverage, audio policy/content, and accessible UX still belong to the product/framework. It cannot claim desktop-application completeness.
@@ -253,6 +261,7 @@ Input evidence additionally covers layout/IME diversity, keyboard-only operation
 
 ## History
 
+- **0.30.0:** Adds conditional versioned cryptographic policy, opaque operation-scoped keys, exact hash/MAC/KDF/AEAD/public-key/transfer contracts, provider/hardware/attestation evidence, lifecycle, conformance, and benchmarks.
 - **0.29.0:** Adds conditional immutable service/job registration, execution scopes, demand activation/readiness, durable schedules and trigger reconciliation, attempts/checkpoints/retries, budgets, generation updates, accessibility, conformance, and benchmarks.
 - **0.28.0:** Adds conditional participant/session/action-scoped remote presentation and controlled input, exact mappings/state/order, secure-boundary and local-override rules, emergency stop, accessibility, conformance, and end-to-end latency evidence.
 - **0.27.0:** Adds conditional trusted screen/window/application/region selection, revocable generation-scoped capture, exact frame/color/geometry/timing, cursor/audio separation, protection nonclaims, bounded delivery, privacy/accessibility, conformance, and benchmarks.

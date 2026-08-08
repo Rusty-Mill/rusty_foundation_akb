@@ -9,7 +9,7 @@
 
 The security domain supplies semantic building blocks for least-authority operation. It does not replace Windows access checks, Linux credentials and security modules, macOS sandbox enforcement, application authorization policy, or specialist cryptographic protocols.
 
-This slice establishes the authority vocabulary, authority attenuation, restricted-execution composition, secure random bytes, and protected secret storage. User authentication, credential brokers, signing, and general cryptographic primitives remain later analyses.
+This slice establishes the authority vocabulary, authority attenuation, restricted-execution composition, secure random bytes, protected secret storage, and cryptographic operation/key-management foundations. User authentication and credential brokering are specified in the identity-session slice; protocol PKI, certificate lifecycle, remote vault/HSM protocols, and product cryptographic policy remain separate compositions.
 
 ## Model
 
@@ -49,7 +49,8 @@ flowchart TD
     Attenuate --> Isolation["Restricted execution service"]
     Random["rm.security.random"]
     Cancel["rm.runtime.cancellation"] -.->|"optional for readiness wait"| Random
-    Random --> FutureCrypto["Future cryptographic protocols"]
+    Random --> Crypto["Cryptographic operation + key service"]
+    Crypto --> FutureCrypto["Protocol · PKI · signing workflows"]
     Random --> Store["rm.security.secret-store"]
     SecretValue["Secret value resource model"] --> Store
     Claims["Protection claim vector"] --> Store
@@ -72,3 +73,15 @@ flowchart TD
 - [Conformance specification](conformance.md)
 - [Benchmark specification](benchmarks.md)
 - [Cross-domain security review checklist](review-checklist.md)
+- [Cryptographic operations and key-management foundations](crypto-README.md)
+- [Cryptographic algorithm suites and policy](crypto-policy.md)
+- [Cryptographic key resources and lifecycle](crypto-keys.md)
+- [Hash, MAC, and derivation](crypto-hash-mac-kdf.md)
+- [Authenticated encryption](crypto-aead.md)
+- [Signatures, verification, and agreement](crypto-public-key.md)
+- [Key import, export, wrapping, and serialization](crypto-import-export.md)
+- [Providers, hardware, attestation, and certification](crypto-providers-attestation.md)
+- [Cryptographic operation lifecycle and quality](crypto-operations.md)
+- [Cryptographic platform research](crypto-platform-research.md)
+- [Cryptographic conformance](crypto-conformance.md)
+- [Cryptographic benchmarks](crypto-benchmarks.md)
