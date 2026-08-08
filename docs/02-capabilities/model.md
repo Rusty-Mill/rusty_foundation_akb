@@ -32,3 +32,19 @@ Availability is negotiated from requested requirements and provider evidence. It
 - Required dependencies are minimal; convenience composition belongs in services or frameworks.
 - Cycles indicate an incorrect boundary or a service-level composition that must be refactored.
 - Graph changes require profile, conformance, security, and release-impact analysis.
+
+## Stable identifiers
+
+Capability identifiers use the form `rm.<domain>.<capability>`, written in lowercase ASCII with dot-separated segments. Identity describes behavior, not a crate, trait, backend, or OS facility. Examples in draft documents are illustrative until accepted through RFC review.
+
+Versions attach to the capability contract rather than the identifier. A compatible clarification or additive optional behavior does not create a new identity. A semantically distinct behavior does.
+
+## Requirement identifiers
+
+Every normative statement receives a stable identifier:
+
+`RM-<DOMAIN>-<CAPABILITY>-<NNNN>`
+
+The identifier survives editorial movement. It connects specification text to conformance assertions, benchmarks, security evidence, compatibility notes, and implementation claims. Removed requirements are retired rather than reused.
+
+See the [capability template](capability-template.md), [domain-analysis method](domain-analysis.md), and [traceability model](../04-ecosystem/traceability.md).

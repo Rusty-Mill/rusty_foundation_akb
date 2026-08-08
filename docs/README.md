@@ -24,3 +24,10 @@ The AKB is organized from stable intent to evolving detail.
 6. Tooling, delivery, conformance, benchmarks, and governance
 
 Each volume progresses independently from inventory to semantics, contracts, verification, and only then implementation.
+
+## Authoring specifications
+
+- [Domain-analysis method](02-capabilities/domain-analysis.md)
+- [Capability specification template](02-capabilities/capability-template.md)
+- [Traceability model](04-ecosystem/traceability.md)
+- [RFC-0001: Capability specification system](rfc/0001-capability-specification-system.md)

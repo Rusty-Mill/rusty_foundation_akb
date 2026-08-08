@@ -37,7 +37,7 @@ Dates are intentionally absent until scope and capacity are known. Progress is c
 
 ## Immediate next decisions
 
-1. Accept or amend the foundational ADRs.
-2. Define the capability specification and graph schemas.
-3. Select the first domain-analysis slice.
-4. Define measurable criteria for the reference vertical slice.
+1. Review [RFC-0001](../rfc/0001-capability-specification-system.md) and exercise its templates.
+2. Select the first domain-analysis slice.
+3. Define measurable criteria for the reference vertical slice.
+4. Choose a machine-readable graph format only after two real capability specifications expose the requirements.

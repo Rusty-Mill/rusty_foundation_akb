@@ -1,5 +1,7 @@
 # Requests for Comments
 
-No RFCs have been submitted. Use the [RFC template](../05-governance/rfc-template.md).
+| RFC | Title | Status |
+|---|---|---|
+| [0001](0001-capability-specification-system.md) | Capability specification system | Draft |
 
-The first RFC should define the capability specification and dependency-graph schemas before selecting implementation crates.
+Use the [RFC template](../05-governance/rfc-template.md) for new proposals.
