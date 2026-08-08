@@ -4,15 +4,7 @@
 
 ## Architecture pyramid
 
-```text
-                         Applications
-                    Domain frameworks
-                    Platform services
-                       Common APIs
-                  Capability framework
-                    Backend contracts
-          Windows / Linux / macOS OS backends
-```
+![Seven-layer Rusty Mill architecture pyramid](../assets/architecture-pyramid.svg)
 
 | Layer | Responsibility |
 |---|---|

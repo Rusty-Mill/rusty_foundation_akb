@@ -9,14 +9,12 @@ Time and cancellation appear simple but expose difficult cross-platform question
 
 ## Candidate model
 
-```text
-rm.time.monotonic-clock
-           |
-           v
-rm.time.deadline-timer ---- optionally-uses ----> rm.runtime.cancellation
-                                                       |
-                                                       v
-                                              rm.runtime.shutdown
+```mermaid
+flowchart TD
+    Clock["rm.time.monotonic-clock"] -->|"required by"| Timer["rm.time.deadline-timer"]
+    Cancel["rm.runtime.cancellation"] -. "optionally observed by" .-> Timer
+    Timer -->|"required by"| Shutdown["rm.runtime.shutdown"]
+    Cancel -->|"required by"| Shutdown
 ```
 
 The diagram is conceptual. The accepted edge direction is defined in each specification:

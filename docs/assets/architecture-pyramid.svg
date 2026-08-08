@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title description">
+  <title id="title">Rusty Mill seven-layer architecture pyramid</title>
+  <desc id="description">Seven stacked layers grow from operating-system backends at the base through backend contracts, capability framework, common APIs, platform services, domain frameworks, and applications at the top. Dependency arrows point downward one adjacent layer at a time. Policy is separated from backend mechanism.</desc>
+  <style>
+    :root { color-scheme: light dark; }
+    .bg { fill: #f8fafc; }
+    .layer { stroke: #334155; stroke-width: 2; }
+    .l1 { fill: #dbeafe; } .l2 { fill: #e0e7ff; } .l3 { fill: #ede9fe; }
+    .l4 { fill: #f3e8ff; } .l5 { fill: #fae8ff; } .l6 { fill: #fce7f3; }
+    .l7 { fill: #ffe4e6; }
+    .label { fill: #0f172a; font: 600 24px system-ui, sans-serif; text-anchor: middle; }
+    .detail { fill: #334155; font: 400 16px system-ui, sans-serif; text-anchor: middle; }
+    .side { fill: #475569; font: 500 17px system-ui, sans-serif; }
+    .arrow { stroke: #475569; stroke-width: 3; fill: none; marker-end: url(#arrowhead); }
+    .rule { stroke: #94a3b8; stroke-width: 2; stroke-dasharray: 7 7; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #0f172a; }
+      .layer { stroke: #cbd5e1; }
+      .l1 { fill: #172554; } .l2 { fill: #1e1b4b; } .l3 { fill: #2e1065; }
+      .l4 { fill: #3b0764; } .l5 { fill: #4a044e; } .l6 { fill: #500724; }
+      .l7 { fill: #4c0519; }
+      .label { fill: #f8fafc; } .detail, .side { fill: #cbd5e1; }
+      .arrow { stroke: #cbd5e1; } .rule { stroke: #64748b; }
+    }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="context-stroke"/>
+    </marker>
+  </defs>
+  <rect class="bg" width="1200" height="760" rx="16"/>
+
+  <polygon class="layer l7" points="500,60 700,60 745,140 455,140"/>
+  <text class="label" x="600" y="98">Applications</text>
+  <text class="detail" x="600" y="124">Product behavior and policy</text>
+
+  <polygon class="layer l6" points="455,150 745,150 790,230 410,230"/>
+  <text class="label" x="600" y="188">Domain frameworks</text>
+  <text class="detail" x="600" y="214">Application-oriented composition</text>
+
+  <polygon class="layer l5" points="410,240 790,240 835,320 365,320"/>
+  <text class="label" x="600" y="278">Platform services</text>
+  <text class="detail" x="600" y="304">Coordination and cross-capability policy</text>
+
+  <polygon class="layer l4" points="365,330 835,330 880,410 320,410"/>
+  <text class="label" x="600" y="368">Common APIs</text>
+  <text class="detail" x="600" y="394">Stable Rust-native interfaces</text>
+
+  <polygon class="layer l3" points="320,420 880,420 925,500 275,500"/>
+  <text class="label" x="600" y="458">Capability framework</text>
+  <text class="detail" x="600" y="484">Discovery, authority, selection, lifecycle</text>
+
+  <polygon class="layer l2" points="275,510 925,510 970,590 230,590"/>
+  <text class="label" x="600" y="548">Backend contracts</text>
+  <text class="detail" x="600" y="574">Provider obligations and evidence</text>
+
+  <polygon class="layer l1" points="230,600 970,600 1020,690 180,690"/>
+  <text class="label" x="600" y="642">OS backends</text>
+  <text class="detail" x="600" y="671">Windows · Linux · macOS native mechanisms</text>
+
+  <path class="arrow" d="M1055 110 L1055 650"/>
+  <text class="side" x="1080" y="355" transform="rotate(90 1080 355)">Dependencies flow downward through adjacent layers</text>
+
+  <line class="rule" x1="80" y1="395" x2="275" y2="395"/>
+  <text class="side" x="80" y="365">Policy and composition</text>
+  <text class="side" x="80" y="388">stay above mechanisms</text>
+  <line class="rule" x1="925" y1="545" x2="1120" y2="545"/>
+  <text class="side" x="970" y="520">Native/unsafe boundary</text>
+</svg>

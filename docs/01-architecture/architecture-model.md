@@ -38,29 +38,20 @@ The working maxim is:
 
 ## 3. System context
 
-```text
- Application authors                  Platform maintainers
-         |                                     |
-         v                                     v
-  requirements/profiles ---> Rusty Mill <--- native OS mechanisms
-                                 |
-                                 v
-                 contracts, evidence, release claims
+```mermaid
+flowchart LR
+    Authors["Application authors"] -->|"requirements and profiles"| Mill["Rusty Mill semantic boundary"]
+    Maintainers["Platform maintainers"] -->|"provider implementations"| Mill
+    OS["Windows · Linux · macOS mechanisms"] -->|"native facilities"| Maintainers
+    Mill -->|"Rust-native capabilities and services"| Apps["Native applications"]
+    Mill -->|"contracts, conformance, benchmarks, provenance"| Evidence["Evidence and release claims"]
 ```
 
 Application authors consume Rust-native capabilities, services, and frameworks. Platform maintainers implement backend contracts against operating-system mechanisms. Rusty Mill owns the semantic boundary between them and the evidence that the boundary is honored.
 
 ## 4. Architecture pyramid
 
-```text
-                         Applications
-                    Domain frameworks
-                    Platform services
-                       Common APIs
-                  Capability framework
-                    Backend contracts
-          Windows / Linux / macOS OS backends
-```
+![Seven-layer Rusty Mill architecture pyramid](../assets/architecture-pyramid.svg)
 
 ### 4.1 Layers
 
@@ -87,16 +78,19 @@ The default deployment architecture is a modular monolith. A separate process or
 
 ## 5. Architectural entity model
 
-```text
-Profile ---> requires ---> Capability ---> defined by ---> Behavioral contract
-                              |
-                              +-- exposed through --> Interface
-                              +-- realized by -----> Provider/Backend
-                              +-- governs ---------> Resource and Event
-                              +-- selected under --> Policy and Authority
-                              +-- proven by -------> Conformance evidence
-
-Service/Framework ---> composes multiple Capabilities
+```mermaid
+flowchart LR
+    Profile["Profile"] -->|"requires"| Capability["Capability"]
+    Capability -->|"defined by"| Contract["Behavioral contract"]
+    Capability -->|"exposed through"| Interface["Rust-native interface"]
+    Provider["Provider / backend"] -->|"realizes"| Capability
+    Provider -->|"proves with"| Evidence["Conformance evidence"]
+    Policy["Policy"] -->|"selects under"| Authority["Authority"]
+    Authority --> Provider
+    Capability -->|"governs"| Resource["Resource"]
+    Capability -->|"emits or observes"| Event["Event"]
+    Service["Platform service"] -->|"composes"| Capability
+    Framework["Domain framework"] -->|"composes services and"| Capability
 ```
 
 ### 5.1 Capability
@@ -190,6 +184,18 @@ Unknown is a research/specification state, not a runtime availability claim.
 
 Resolution consumes a profile or explicit requirements plus policy and authority. It returns selected providers, exact versions and quality levels, emulation/degradation disclosures, and diagnostics for unsatisfied constraints. Silent fallback or silent weakening is prohibited.
 
+```mermaid
+flowchart TD
+    Request["Profile or explicit requirements"] --> Expand["Expand transitive required capabilities"]
+    Expand --> Discover["Discover eligible providers and evidence"]
+    Discover --> Authority["Apply authority and security policy"]
+    Authority --> Quality["Match contract versions and quality levels"]
+    Quality --> Satisfiable{"All constraints satisfied?"}
+    Satisfiable -->|"yes"| Selection["Selected providers + exact versions"]
+    Selection --> Disclosure["Native, emulated, and degraded disclosures"]
+    Satisfiable -->|"no"| Diagnostic["Structured unsatisfied-constraint report"]
+```
+
 ## 8. Portability and platform variance
 
 Portability means stable promised semantics, explicit discovery, typed failures, declared variance, and testable behavior—not identical implementation.
@@ -248,7 +254,16 @@ Diagnostics use stable structured events, correlation, and causal context. Instr
 
 Capabilities progress through:
 
-`Draft -> Experimental -> Stable -> Deprecated -> Retired`
+```mermaid
+stateDiagram-v2
+    [*] --> Draft
+    Draft --> Experimental: "contract trial and evidence plan"
+    Experimental --> Draft: "semantic revision"
+    Experimental --> Stable: "all promotion gates pass"
+    Stable --> Deprecated: "replacement and migration accepted"
+    Deprecated --> Retired: "support window closes"
+    Stable --> Stable: "compatible evolution"
+```
 
 - **Draft:** semantics are being discovered; no compatibility promise.
 - **Experimental:** implementation may exist for learning; interfaces can change.
@@ -284,18 +299,20 @@ Accepted ADRs preserve why the model changed. This document preserves what the a
 
 ## 13. Evidence and traceability
 
-```text
-Charter / Principle
-        |
-Architecture model <---- ADR / accepted RFC
-        |
-Capability requirement ---- Profile requirement
-        |                           |
-Conformance assertion        Profile conformance
-        |
-Provider evidence ---- Benchmark ---- Security evidence
-        |
-Release claim: artifact digest + provenance + SBOM
+```mermaid
+flowchart TD
+    Charter["Charter and principles"] --> Model["Authoritative architecture model"]
+    Decision["Accepted ADR / RFC"] -->|"amends with rationale"| Model
+    Model --> Capability["Capability requirement"]
+    Model --> Profile["Profile requirement"]
+    Capability --> Assertion["Conformance assertion"]
+    Profile --> ProfileConformance["Profile conformance"]
+    Assertion --> ProviderEvidence["Provider evidence"]
+    ProfileConformance --> ProviderEvidence
+    ProviderEvidence --> Release["Release claim"]
+    Benchmark["Benchmark result"] --> Release
+    Security["Security evidence"] --> Release
+    Provenance["Artifact digest · provenance · SBOM"] --> Release
 ```
 
 ### 13.1 Rules
@@ -318,6 +335,24 @@ Stable release gates include required-profile conformance, security and compatib
 ## 15. Ecosystem and repository architecture
 
 Repository boundaries follow cohesion, ownership, release cadence, native toolchain boundaries, security isolation, and independent lifecycle—not one repository per concept.
+
+```mermaid
+flowchart TB
+    AKB["Foundation AKB"] --> Specs["Versioned specifications"]
+    Specs --> Core["Core platform workspace"]
+    Specs --> Verification["Conformance and benchmarks"]
+    Core --> Windows["Windows backend"]
+    Core --> Linux["Linux backend"]
+    Core --> MacOS["macOS backend"]
+    Core --> Services["Platform services"]
+    Services --> Frameworks["Domain frameworks"]
+    Frameworks --> Apps["Applications"]
+    Verification -.->|"validates"| Windows
+    Verification -.->|"validates"| Linux
+    Verification -.->|"validates"| MacOS
+    Tooling["Build, release, and diagnostic tooling"] -.->|"supports"| Core
+    Tooling -.->|"publishes evidence"| Verification
+```
 
 Repository classes may include the foundation AKB, specifications, core platform, backends, frameworks, verification, and tooling. Start cohesive work as a modular monolith. Extract only when a concrete forcing function appears.
 

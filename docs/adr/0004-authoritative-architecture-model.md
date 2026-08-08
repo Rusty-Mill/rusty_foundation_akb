@@ -52,3 +52,5 @@ Use one reviewed Markdown model with linked elaborations.
 - Supporting model documents carry authority notices.
 - Internal-link and contradiction checks are part of documentation review.
 - Future architecture changes identify the exact model sections affected.
+
+The model uses a combination of a reusable SVG for the stable architecture pyramid and Mermaid for evolving relationships, flows, and lifecycles. Normative prose and tables remain the accessible source when a renderer is unavailable.
