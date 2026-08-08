@@ -4,6 +4,7 @@
 |---|---|
 | Status | Draft semantic model |
 | Kind | Common value model, not a capability |
+| Decision | [ADR-0006](../../adr/0006-paths-are-lossless-native-values.md) |
 
 ## Purpose
 

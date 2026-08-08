@@ -7,6 +7,7 @@
 | Domain | Filesystem |
 | Owner | Unassigned |
 | Candidate profiles | CLI, Desktop, Server, Embedded/headless |
+| Decision | [ADR-0007](../../adr/0007-directory-relative-resolution-is-the-security-boundary.md) |
 
 ## Purpose
 

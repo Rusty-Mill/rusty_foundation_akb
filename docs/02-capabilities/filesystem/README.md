@@ -61,4 +61,7 @@ The path model is a semantic type model, not a capability. Resolution is a capab
 - [`rm.filesystem.file`](file.md)
 - [`rm.filesystem.metadata`](metadata.md)
 - [`rm.filesystem.atomic-replace`](atomic-replace.md)
+- [Filesystem error model](error-model.md)
+- [Conformance specification](conformance.md)
+- [Benchmark specification](benchmarks.md)
 - [Open questions](open-questions.md)

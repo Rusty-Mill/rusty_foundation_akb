@@ -204,6 +204,8 @@ Each capability classifies its expected Windows, Linux, and macOS realization an
 
 Escape hatches must preserve ownership and safety, declare lost portability, and avoid making common paths depend on native handles.
 
+Filesystem paths are lossless platform-native semantic values, not necessarily Unicode strings. Display conversion, normalization, case behavior, and object identity are separate concerns ([ADR-0006](../adr/0006-paths-are-lossless-native-values.md)). Security-sensitive filesystem lookup begins from explicit directory authority and uses declared handle-relative resolution strength; lexical canonicalization alone cannot prove containment ([ADR-0007](../adr/0007-directory-relative-resolution-is-the-security-boundary.md)).
+
 ## 9. Execution and concurrency model
 
 Rusty Mill is **async-first and sync-complete**.
