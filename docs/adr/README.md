@@ -39,5 +39,7 @@
 | [0035](0035-configuration-notifications-trigger-reconciliation.md) | Configuration notifications trigger reconciliation | Accepted |
 | [0036](0036-observability-producers-are-exporter-independent.md) | Observability producers are exporter independent | Accepted |
 | [0037](0037-fatal-capture-is-a-minimal-separated-path.md) | Fatal capture is a minimal separated path | Accepted |
+| [0038](0038-lifecycle-events-do-not-guarantee-cleanup.md) | Lifecycle events do not guarantee cleanup opportunity | Accepted |
+| [0039](0039-restoration-state-is-disposable-continuity-metadata.md) | Restoration state is disposable continuity metadata | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

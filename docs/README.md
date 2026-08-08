@@ -31,6 +31,7 @@ The AKB is organized from stable intent to evolving detail.
 - [Internationalization and localization](02-capabilities/internationalization/README.md)
 - [Configuration and change notification](02-capabilities/configuration/README.md)
 - [Observability, diagnostics, and crash reporting](02-capabilities/observability/README.md)
+- [Application lifecycle and session integration](02-capabilities/lifecycle/README.md)
 
 ## Planned volumes
 

@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.8.0 |
+| Version | 0.9.0 |
 | Extends | [`rm.profile.foundation.desktop` 1.0.0](foundation-desktop.md) |
 | Purpose | Add native top-level window and graphics-presentation infrastructure without claiming a complete GUI toolkit |
 
@@ -73,6 +73,14 @@
 
 **RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0032:** Crash evidence uses a platform-proven minimal fatal path with bounded recursion and out-of-process symbolication/redaction. Profile evidence covers handler coexistence, missing/corrupt symbols, dump restrictions, abrupt termination, exporter outage, queue saturation, and bounded shutdown flush.
 
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0033:** Requires `rm.lifecycle.instance`, `rm.lifecycle.activation`, `rm.lifecycle.session-observer`, and `rm.lifecycle.power-observer` `>=0.1.0,<0.2.0` plus application lifecycle and restoration services `>=0.1.0,<0.2.0`; termination inhibition is optional and separately authorized.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0034:** Launch, readiness, activation, application activity, window focus, session state, and power state remain distinct revisioned observations. Activation payloads are untrusted and do not imply authority, focus, foregrounding, or successful completion.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0035:** Cooperative termination may invoke orderly shutdown within the observed deadline, but product correctness assumes callbacks may be absent. Durable domain data is committed continuously; restoration archives are disposable versioned continuity metadata.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0036:** Lifecycle evidence covers concurrent/running-instance activation, duplicate delivery, lock/disconnect, suspend/resume reconciliation, allowed/cancelled/deferred/forced termination, missing callbacks, inhibition expiry, corrupt/stale restoration, changed displays/locales/accessibility settings, and accessible localized recovery.
+
 ## Whole-product gaps
 
 This profile does not supply a rendering command model, widget/UI framework, text editing model, image codecs, gestures, translated product resources, or application lifecycle/session integration. Product-specific semantic roles/actions/content, accepted transfer formats/importers, locale coverage, and accessible UX still belong to the product/framework. It cannot claim desktop-application completeness.
@@ -85,6 +93,7 @@ Input evidence additionally covers layout/IME diversity, keyboard-only operation
 
 ## History
 
+- **0.9.0:** Adds application-instance, activation, session/power observation, cooperative termination/inhibition, readiness, and safe restoration requirements.
 - **0.8.0:** Adds structured observability, explicit causal context, bounded exporter-independent pipelines, privacy governance, diagnostic bundles, and separated crash capture/analysis requirements.
 - **0.7.0:** Adds typed configuration schema/source/resolution, immutable snapshots, provenance, reload classes, secret boundaries, and loss-aware change reconciliation.
 - **0.6.0:** Adds locale preferences/contexts, typed resources/messages, formatting, calendar/time-zone, collation, data-version, pseudolocale, and live-change requirements.
