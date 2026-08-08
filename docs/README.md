@@ -39,6 +39,7 @@ The AKB is organized from stable intent to evolving detail.
 - [Audio foundations](02-capabilities/audio/README.md)
 - [Device discovery and hardware change](02-capabilities/devices/README.md)
 - [Asynchronous I/O foundations](02-capabilities/async-io/README.md)
+- [Storage volumes and removable media](02-capabilities/storage/README.md)
 
 ## Planned volumes
 

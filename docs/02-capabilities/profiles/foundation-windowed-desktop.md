@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.16.0 |
+| Version | 0.17.0 |
 | Extends | [`rm.profile.foundation.desktop` 1.0.0](foundation-desktop.md) |
 | Purpose | Add native top-level window and graphics-presentation infrastructure without claiming a complete GUI toolkit |
 
@@ -137,6 +137,14 @@
 
 **RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0064:** The I/O engine and executor are separately selected. No hidden runtime, nested UI loop, indefinite executor-worker blocking, or unbounded operation/completion/wake queue is permitted; evidence covers readiness/completion races, generation reuse, saturation, fairness, shutdown drain, and timing boundaries.
 
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0065:** `rm.storage.volume-observer` and mount observer `>=0.1.0,<0.2.0` are conditional on products that expose volume selection, capacity, mount state, or removable-media workflows. Device, media, region, filesystem, mount, namespace, and path identities remain distinct.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0066:** Mount/unmount and removable-media coordination are optional privileged services with explicit target generation, namespace, interaction, force, and degradation policy. Observation never mounts, unlocks, repairs, executes content, or wakes media solely for optional metadata.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0067:** Safe removal reports quiesce, durability, unmount, eject/removal-request, veto, and current-observation milestones. It cannot prevent surprise removal or strengthen filesystem/device/bridge durability; force requires explicit authority and accessible data-loss acknowledgment.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0068:** Storage evidence covers namespaces/multiple mounts, duplicate/ambiguous identifiers, locked/read-only/network/virtual media, hostile metadata, capacity boundaries, permission/policy denial, busy/veto, dirty data, surprise unplug, stale-generation rejection, privacy redaction, and keyboard/assistive-technology operation.
+
 ## Whole-product gaps
 
 This profile does not supply a rendering command model, widget/UI framework, text editing model, image/audio codecs, media containers/graphs, gestures, or translated product resources. Product-specific semantic roles/actions/content, accepted transfer formats/importers, locale coverage, audio policy/content, and accessible UX still belong to the product/framework. It cannot claim desktop-application completeness.
@@ -149,6 +157,7 @@ Input evidence additionally covers layout/IME diversity, keyboard-only operation
 
 ## History
 
+- **0.17.0:** Adds conditional storage-volume/mount observation, privileged mount/removal services, staged safe-removal/durability, identity, security, accessibility, and evidence requirements.
 - **0.16.0:** Adds conditional completion-oriented async-I/O infrastructure, readiness translation, cancellation lifetime, engine/executor separation, bounded-load, and shutdown evidence requirements.
 - **0.15.0:** Adds conditional general device observation, generation-scoped identity evidence, snapshot reconciliation, privacy, class handoff, and hardware-change evidence requirements.
 - **0.14.0:** Adds conditional device/route observation, exact PCM render/capture, sample-clock correlation, restricted realtime processing, capture authority, accessibility, and latency/reliability evidence requirements.

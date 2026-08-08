@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.25.0
+**Version:** 1.26.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -459,6 +459,8 @@ The [audio foundations vertical slice](../02-capabilities/audio/README.md) defin
 The [device discovery and hardware-change foundations vertical slice](../02-capabilities/devices/README.md) defines scoped queries, coherent revisioned snapshots, generation-bound references, typed/provenanced properties and topology, change reconciliation, privacy, and class-specific handoff. Native identifiers are identity evidence rather than universal physical identity, and device notifications trigger reconciliation rather than forming a portable lossless journal ([ADR-0050](../adr/0050-device-identity-is-generation-scoped-evidence.md), [ADR-0051](../adr/0051-device-notifications-trigger-reconciliation.md)). Device-class protocols and authority remain separate. Its specifications remain Draft and cannot amend this model.
 
 The [asynchronous I/O foundations vertical slice](../02-capabilities/async-io/README.md) defines completion-oriented operations over native completion engines, readiness translation, and disclosed blocking adapters; exact terminal progress; registration/resource generations; bounded load; runtime separation; cancellation lifetime; observability; conformance; and benchmarks. Readiness remains a backend hint rather than portable completion, and cancellation does not release operation-owned state before terminal acknowledgement ([ADR-0052](../adr/0052-portable-asynchronous-io-is-completion-oriented.md), [ADR-0053](../adr/0053-cancellation-does-not-end-operation-lifetime.md)). Domain capabilities retain their own I/O semantics. Its specifications remain Draft and cannot amend this model.
+
+The [storage volumes and removable-media foundations vertical slice](../02-capabilities/storage/README.md) defines distinct device/media/region/filesystem/mount entities, namespace-scoped observation, capacity/properties, mount arbitration, staged removal, durability evidence, authority, accessibility, conformance, and benchmarks. A mount is a namespace relationship rather than volume identity, and safe removal is observable coordination rather than a stronger durability or continued-presence guarantee ([ADR-0054](../adr/0054-a-mount-is-a-namespace-relationship-not-volume-identity.md), [ADR-0055](../adr/0055-safe-removal-is-coordination-not-a-durability-guarantee.md)). Destructive storage management remains separate. Its specifications remain Draft and cannot amend this model.
 
 ## 18. Deliberately unresolved choices
 

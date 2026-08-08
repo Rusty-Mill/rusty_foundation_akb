@@ -55,5 +55,7 @@
 | [0051](0051-device-notifications-trigger-reconciliation.md) | Device notifications trigger reconciliation | Accepted |
 | [0052](0052-portable-asynchronous-io-is-completion-oriented.md) | Portable asynchronous I/O is completion-oriented | Accepted |
 | [0053](0053-cancellation-does-not-end-operation-lifetime.md) | Cancellation does not end operation lifetime | Accepted |
+| [0054](0054-a-mount-is-a-namespace-relationship-not-volume-identity.md) | A mount is a namespace relationship, not volume identity | Accepted |
+| [0055](0055-safe-removal-is-coordination-not-a-durability-guarantee.md) | Safe removal is coordination, not a durability guarantee | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

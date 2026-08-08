@@ -12,6 +12,7 @@ This is an inventory for domain analysis, not an API or crate list.
 | Terminal | pseudoterminals, modes, terminal protocol, sessions, emulation, accessible presentation |
 | Memory | allocation, mapping, protection, shared memory, locking, large pages |
 | Filesystem | paths, files, directories, metadata, watching, atomicity, permissions |
+| Storage | media, regions, filesystems, volumes, mounts, capacity, removable-media coordination |
 | Networking | resolution, sockets, transports, interfaces, routing awareness, security |
 | Security | identity, credentials, authorization, secrets, sandboxing, cryptographic services |
 | Windowing | surfaces, lifecycle, display topology, DPI, accessibility integration |
@@ -51,3 +52,4 @@ Each domain will be decomposed into common, optional/advanced, and platform-spec
 - [Audio foundations vertical slice](audio/README.md) — Draft
 - [Device discovery and hardware-change foundations vertical slice](devices/README.md) — Draft
 - [Asynchronous I/O foundations vertical slice](async-io/README.md) — Draft
+- [Storage volumes and removable-media foundations vertical slice](storage/README.md) — Draft
