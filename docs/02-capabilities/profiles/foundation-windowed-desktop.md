@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.23.0 |
+| Version | 0.24.0 |
 | Extends | [`rm.profile.foundation.desktop` 1.0.0](foundation-desktop.md) |
 | Purpose | Add native top-level window and graphics-presentation infrastructure without claiming a complete GUI toolkit |
 
@@ -193,6 +193,14 @@
 
 **RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0092:** Evidence covers named/parametric/ICC descriptions, SDR/PQ/HLG/linear and RGB/YUV/range vectors, heterogeneous/remote/virtual displays, CPU/GPU numerical transforms, tone/gamut mapping, hostile profiles/metadata, change storms, privacy minimization, user color/contrast filters, semantic alternatives, and bounded luminance/flash transitions.
 
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0093:** Still-image support is conditional on product workload. When selected, `rm.image.probe`, container inspection, and decode `>=0.1.0,<0.2.0` preserve conflicting format evidence/provider provenance, item/frame/container structure, multidimensional resource budgets, and immutable exact pixel/color/alpha/orientation/memory semantics.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0094:** Progressive, region/tile, animation composition, metadata projection, encode, and transcode are independently selected qualities. Provisional revisions replace rather than mutate; animation timing/blend/disposal and reduced-motion policy are explicit; sensitive/unknown metadata is not preserved or disclosed by default.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0095:** Native/third-party/hardware codec selection binds exact operation/format/profile subset, isolation, provenance, limits, output semantics, conversions, cancellation, and fallback. Installed codec presence, extension/MIME/magic, successful probe, or hardware decode never establishes trust or fidelity.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0096:** Evidence covers valid/malformed/truncated/fuzz/bomb corpora, overflow and frame/reference storms, exact color/alpha/range/orientation, progressive final equivalence, region cost, animation timing/disposal, metadata privacy/conflicts, encode settings/determinism/finalization, provider crashes, bounded concurrency, accessible alternatives/status, reduced motion, and flash safety.
+
 ## Whole-product gaps
 
 This profile does not supply a rendering command model, widget/UI framework, text editing model, image/audio codecs, media containers/graphs, gestures, or translated product resources. Product-specific semantic roles/actions/content, accepted transfer formats/importers, locale coverage, audio policy/content, and accessible UX still belong to the product/framework. It cannot claim desktop-application completeness.
@@ -205,6 +213,7 @@ Input evidence additionally covers layout/IME diversity, keyboard-only operation
 
 ## History
 
+- **0.24.0:** Adds conditional bounded image probe/decode, exact immutable pixels, progressive/region/animation/metadata boundaries, explicit encode/transcode, provider isolation, accessibility, conformance, and benchmarks.
 - **0.23.0:** Adds conditional semantic image descriptions, display color evidence, compositor negotiation, transforms/HDR/profile boundaries, dynamic lifecycle, privacy/accessibility, and measurement-qualified evidence requirements.
 - **0.22.0:** Adds conditional destination discovery, format-bound whole-ticket negotiation, bounded paginated output, boundary-scoped job evidence, artifact output, security, accessibility, and benchmark requirements.
 - **0.21.0:** Adds conditional principal/session observation, scoped authentication evidence, opaque credential/delegation boundaries, async-safe impersonation prohibition, privacy, accessibility, and evidence requirements.

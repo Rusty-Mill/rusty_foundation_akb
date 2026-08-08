@@ -69,5 +69,7 @@
 | [0065](0065-print-completion-is-boundary-scoped-evidence.md) | Print completion is boundary-scoped evidence | Accepted |
 | [0066](0066-color-is-an-immutable-semantic-description.md) | Color is an immutable semantic description | Accepted |
 | [0067](0067-display-color-is-compositor-negotiation-not-appearance-proof.md) | Display color is compositor negotiation, not appearance proof | Accepted |
+| [0068](0068-image-format-detection-is-evidence-not-trust.md) | Image format detection is evidence, not trust | Accepted |
+| [0069](0069-decoded-images-are-bounded-immutable-resources.md) | Decoded images are bounded immutable resources | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.32.0
+**Version:** 1.33.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -473,6 +473,8 @@ The [credential and identity-session foundations vertical slice](../02-capabilit
 The [printing and document-output foundations vertical slice](../02-capabilities/printing/README.md) defines revisioned destination/capability discovery, immutable paginated document sources, whole-ticket negotiation, bounded rendering/color, job lifecycle evidence, and separate durable artifact output. Resolved plans bind destination generation and document format, while completion is evidence scoped to the reporting boundary rather than proof of physical output or collection ([ADR-0064](../adr/0064-print-plans-bind-destination-generation-and-format.md), [ADR-0065](../adr/0065-print-completion-is-boundary-scoped-evidence.md)). Editing, accessible-document authoring, protocol delivery, and physical attestation remain separate. Its specifications remain Draft and cannot amend this model.
 
 The [display and color-management foundations vertical slice](../02-capabilities/display-color/README.md) defines immutable semantic image descriptions, revisioned display color evidence, generation-scoped surface negotiation, conversion/gamut/tone mapping, profile/calibration boundaries, lifecycle reconciliation, and measurement-qualified conformance. ICC is one representation rather than the color model, and compositor acceptance is not proof of calibrated physical appearance ([ADR-0066](../adr/0066-color-is-an-immutable-semantic-description.md), [ADR-0067](../adr/0067-display-color-is-compositor-negotiation-not-appearance-proof.md)). Direct display ownership and privileged calibration/configuration remain separate. Its specifications remain Draft and cannot amend this model.
+
+The [still-image and image-codec foundations vertical slice](../02-capabilities/still-image/README.md) defines bounded format probing, container/item inspection, multidimensional decode limits, exact immutable pixel resources, provisional progressive output, region/tile decoding, separate animation composition, metadata projection, and explicit encode/transcode plans. Detection is evidence rather than trust, and decoded images are bounded immutable resources rather than generic mutable RGBA buffers ([ADR-0068](../adr/0068-image-format-detection-is-evidence-not-trust.md), [ADR-0069](../adr/0069-decoded-images-are-bounded-immutable-resources.md)). Editing, media graphs, document semantics, and format-specific public APIs remain separate. Its specifications remain Draft and cannot amend this model.
 
 ## 18. Deliberately unresolved choices
 
