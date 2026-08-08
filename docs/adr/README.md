@@ -33,5 +33,7 @@
 | [0029](0029-accessibility-actions-use-domain-command-path.md) | Accessibility actions use the ordinary domain command path | Accepted |
 | [0030](0030-data-transfer-uses-lazy-typed-offers.md) | Data transfer uses immutable lazy typed offers | Accepted |
 | [0031](0031-move-is-a-committed-transfer.md) | Move is a committed transfer, not a pointer gesture | Accepted |
+| [0032](0032-locale-sensitive-operations-use-explicit-context.md) | Locale-sensitive operations use immutable explicit context | Accepted |
+| [0033](0033-localized-output-is-not-canonical-data.md) | Localized output is not canonical data | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

@@ -20,6 +20,8 @@ The normative [accessibility foundation](../02-capabilities/accessibility/README
 
 Text, locale, time, collation, input, and layout capabilities must avoid implicit host-locale assumptions. Encoding and normalization behavior must be explicit.
 
+The normative [internationalization foundation](../02-capabilities/internationalization/README.md) elaborates immutable locale contexts, typed messages, explicit data versions/fallback, formatting versus canonical data, civil-time ambiguity, collation scope, pseudolocales, and product evidence.
+
 ## Observability
 
 Use stable, structured events with correlation and causal context. Instrumentation must be low overhead, optional where appropriate, privacy-aware, and independent of a single exporter.

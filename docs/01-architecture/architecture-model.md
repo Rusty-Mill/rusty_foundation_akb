@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.14.0
+**Version:** 1.15.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -246,6 +246,10 @@ Clipboard and drag-and-drop compose immutable typed data offers whose metadata c
 
 Cross-application move is a committed transfer, not a gesture result. The target selects, materializes, validates, and commits content before acknowledging success; only then may the source apply declared deletion/mutation. Target commit and source cleanup failures remain separate outcomes, and global atomicity is not implied ([ADR-0031](../adr/0031-move-is-a-committed-transfer.md)).
 
+Locale-sensitive operations consume an immutable explicit locale context resolved from versioned user-preference snapshots, application policy/resources, and exact Unicode/CLDR/time-zone/provider data. Requested resource language, formatting region, script, calendar, numbering, collation, measurement, and time zone remain distinct, and preference/data changes create new coordinated contexts rather than mutating ambient process behavior ([ADR-0032](../adr/0032-locale-sensitive-operations-use-explicit-context.md)).
+
+Localized formatting is human presentation, not canonical serialization, identity, database/protocol data, signature input, filesystem semantics, or a guaranteed parse round trip. Parsing and collation are explicit versioned contracts with ambiguity and scope; collation equivalence never establishes security or object identity ([ADR-0033](../adr/0033-localized-output-is-not-canonical-data.md)).
+
 ## 9. Execution and concurrency model
 
 Rusty Mill is **async-first and sync-complete**.
@@ -433,6 +437,8 @@ The [text, fonts, and layout vertical slice](../02-capabilities/text/README.md) 
 The [accessibility foundations vertical slice](../02-capabilities/accessibility/README.md) defines application-owned semantic trees, accessible text ranges, focus/actions/events/live updates, user preferences, virtualization, and native adapter services. It requires end-to-end assistive-technology evidence in addition to headless semantic tests. Its specifications remain Draft and cannot amend this model.
 
 The [clipboard and drag-and-drop data-transfer vertical slice](../02-capabilities/data-transfer/README.md) defines typed lazy offers, clipboard ownership/generations, drag negotiation and commit, file/content promises, streaming, authority, privacy, accessibility, interoperability, and failure recovery. Data remains untrusted at every cross-process boundary. Its specifications remain Draft and cannot amend this model.
+
+The [internationalization and localization vertical slice](../02-capabilities/internationalization/README.md) defines locale preference snapshots/contexts, resource and typed-message resolution, formatting/parsing, calendar/time-zone behavior, collation/search, data-version evidence, pseudolocalization, and live preference/resource changes. Its specifications remain Draft and cannot amend this model.
 
 ## 18. Deliberately unresolved choices
 

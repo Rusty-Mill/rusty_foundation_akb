@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.5.0 |
+| Version | 0.6.0 |
 | Extends | [`rm.profile.foundation.desktop` 1.0.0](foundation-desktop.md) |
 | Purpose | Add native top-level window and graphics-presentation infrastructure without claiming a complete GUI toolkit |
 
@@ -49,9 +49,17 @@
 
 **RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0020:** Copy, paste, drag, operation/target selection, progress, cancellation, and result have keyboard and assistive-technology paths with equivalent domain outcomes. Move follows target-commit/source-cleanup semantics.
 
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0021:** Requires `rm.i18n.locale-preferences` `>=0.1.0,<0.2.0` plus locale-context, resource/typed-message, formatting, calendar/time-zone, and collation services `>=0.1.0,<0.2.0` when the product exposes corresponding localized behavior.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0022:** Locale-sensitive operations use explicit immutable contexts binding user preference, bundle, Unicode/CLDR/tzdb/provider versions, actual service locales, overrides, and fallback trace. Ambient process locale is prohibited.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0023:** Product-visible messages are complete typed translatable units; localized output is not reused as canonical data; civil-time gaps/overlaps and parsing ambiguity require explicit policy.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0024:** Every shipped UI locale passes bundle/schema/plural coverage, pseudolocalization, layout/font/input/accessibility integration, bidi isolation, and live context-change evidence under product policy.
+
 ## Whole-product gaps
 
-This profile does not supply a rendering command model, widget/UI framework, text editing model, image codecs, gestures, localization resources/formatting, or application lifecycle/session integration. Product-specific semantic roles/actions/content, accepted transfer formats/importers, and accessible UX still belong to the product/framework. It cannot claim desktop-application completeness.
+This profile does not supply a rendering command model, widget/UI framework, text editing model, image codecs, gestures, translated product resources, or application lifecycle/session integration. Product-specific semantic roles/actions/content, accepted transfer formats/importers, locale coverage, and accessible UX still belong to the product/framework. It cannot claim desktop-application completeness.
 
 ## Evidence gates
 
@@ -61,6 +69,7 @@ Input evidence additionally covers layout/IME diversity, keyboard-only operation
 
 ## History
 
+- **0.6.0:** Adds locale preferences/contexts, typed resources/messages, formatting, calendar/time-zone, collation, data-version, pseudolocale, and live-change requirements.
 - **0.5.0:** Adds typed lazy data offers, clipboard, drag-and-drop, conditional file promises, transfer authority, and accessible-operation requirements.
 - **0.4.0:** Adds semantic-tree, accessible text/action/event, preference, native adapter, and assistive-technology evidence requirements.
 - **0.3.0:** Adds exact font resolution, shaping, layout, rasterization, Unicode-version, and semantic-mapping requirements.

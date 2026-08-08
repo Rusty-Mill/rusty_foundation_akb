@@ -41,7 +41,7 @@ The diagram is conceptual. The accepted edge direction is defined in each specif
 
 ## Boundary conclusions
 
-- Wall/calendar time is a separate domain and cannot be used for elapsed-time contracts.
+- Wall/calendar time is a separate domain and cannot be used for elapsed-time contracts. Calendar/time-zone conversion and localized presentation are now elaborated by the [internationalization foundation](../internationalization/README.md); a future civil/wall-clock capability must preserve that boundary.
 - Clock reading and deadline delivery are distinct capabilities: a consumer may need measurements without scheduling.
 - Cancellation is cooperative state propagation, not forced thread termination.
 - Native operation cancellation belongs to each operation's contract because guarantees differ by mechanism.

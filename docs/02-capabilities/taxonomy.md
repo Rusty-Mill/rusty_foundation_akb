@@ -39,3 +39,4 @@ Each domain will be decomposed into common, optional/advanced, and platform-spec
 - [Text, fonts, and layout vertical slice](text/README.md) — Draft
 - [Accessibility foundations vertical slice](accessibility/README.md) — Draft
 - [Clipboard and drag-and-drop data-transfer vertical slice](data-transfer/README.md) — Draft
+- [Internationalization and localization vertical slice](internationalization/README.md) — Draft
