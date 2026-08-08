@@ -15,5 +15,6 @@
 | [0011](0011-restricted-execution-is-a-platform-service.md) | Restricted execution is a platform service | Accepted |
 | [0012](0012-secret-protection-is-a-vector.md) | Secret protection is a vector, not a level | Accepted |
 | [0013](0013-profiles-select-contracts-not-domains.md) | Profiles select exact contracts, not domains | Accepted |
+| [0014](0014-direct-process-launch-is-the-base-contract.md) | Direct process launch is the base contract | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

@@ -55,3 +55,7 @@ The [security and authority foundations analysis](../02-capabilities/security/RE
 ## Active profile trial
 
 The four [foundation profiles](../02-capabilities/profiles/README.md) now exercise exact contract selection, conditional requirements, interaction policy, explicit workload gaps, deterministic resolution, and evidence-bound reports. They expand only as new domain contracts mature; they are not complete application-platform profiles yet.
+
+## Active fourth slice
+
+The [process foundations analysis](../02-capabilities/process/README.md) defines direct executable launch, native argument/environment semantics, explicit resource inheritance, child identity/lifecycle, and startup milestones. Its next gates are process control/group semantics, stdio and pipeline composition, executable search policy, and integration into revised profile versions.
