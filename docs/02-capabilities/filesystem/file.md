@@ -52,3 +52,5 @@ Disjoint positioned I/O may proceed concurrently. Atomicity of overlapping reads
 ## Conformance direction
 
 Test short I/O, EOF, sparse/extended size behavior, large offsets, close races, buffer ownership, overlapping operations, cancellation races, sync/async parity, storage exhaustion, read-only media, and durability claims on representative local and network filesystems.
+
+Synchronization claims use the [filesystem durability model](durability-model.md).

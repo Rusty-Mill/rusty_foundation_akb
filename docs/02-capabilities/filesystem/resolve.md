@@ -48,6 +48,8 @@ Resolution consumes a directory resource, a relative path value, requested acces
 - Access: read data, write data, append, metadata, namespace mutation, synchronization.
 - Sharing: portable cooperative default plus explicit platform extension where meaningful.
 
+Providers declare containment through the [resolution quality levels](resolution-quality.md). The base contract requires truthful negotiation; profiles choose the minimum acceptable level.
+
 ## Platform realization
 
 | Platform | Candidate path | Key issue |

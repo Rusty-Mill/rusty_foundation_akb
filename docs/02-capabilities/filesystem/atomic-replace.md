@@ -7,6 +7,7 @@
 | Domain | Filesystem |
 | Owner | Unassigned |
 | Candidate profiles | CLI, Desktop, Server |
+| Decision | [ADR-0008](../../adr/0008-atomic-replacement-is-a-capability.md) |
 
 ## Purpose
 
@@ -52,3 +53,5 @@ Replace one destination namespace binding with a prepared regular-file resource 
 ## Conformance direction
 
 Test concurrent observers, source/destination open handles, same/different filesystem, metadata policies, backup behavior, injected failures, cancellation around commit, post-crash inspection, and durability sequences on each claimed filesystem.
+
+Durability levels are defined separately in the [filesystem durability model](durability-model.md). A future durable-publication service may compose this capability with file and directory synchronization.

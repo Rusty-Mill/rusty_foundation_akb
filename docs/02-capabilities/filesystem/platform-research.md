@@ -57,6 +57,8 @@ Apple's FSEvents documentation explicitly exposes dropped-event and must-rescan 
 - [WriteFile](https://learn.microsoft.com/en-us/windows/win32/api/fileapi/nf-fileapi-writefile)
 - [ReplaceFileW](https://learn.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-replacefilew)
 - [CancelIoEx](https://learn.microsoft.com/en-us/windows/win32/fileio/cancelioex-func)
+- [FlushFileBuffers](https://learn.microsoft.com/en-us/windows/win32/api/fileapi/nf-fileapi-flushfilebuffers)
+- [File caching](https://learn.microsoft.com/en-us/windows/win32/fileio/file-caching)
 
 ### Linux man-pages project
 
@@ -66,9 +68,12 @@ Apple's FSEvents documentation explicitly exposes dropped-event and must-rescan 
 - [statx](https://man7.org/linux/man-pages/man2/statx.2.html)
 - [rename, renameat, and renameat2](https://man7.org/linux/man-pages/man2/renameat2.2.html)
 - [inotify](https://man7.org/linux/man-pages/man7/inotify.7.html)
+- [fsync](https://man7.org/linux/man-pages/man2/fsync.2.html)
 
 ### Apple
 
 - [rename manual page](https://developer.apple.com/library/archive/documentation/System/Conceptual/ManPages_iPhoneOS/man2/rename.2.html)
 - [File System Events](https://developer.apple.com/documentation/coreservices/file_system_events)
 - [FSEventStream event flags](https://developer.apple.com/documentation/coreservices/file_system_events/1455361-fseventstreameventflags)
+- [fsync](https://developer.apple.com/library/archive/documentation/System/Conceptual/ManPages_iPhoneOS/man2/fsync.2.html)
+- [fcntl and F_FULLFSYNC](https://developer.apple.com/library/archive/documentation/System/Conceptual/ManPages_iPhoneOS/man2/fcntl.2.html)

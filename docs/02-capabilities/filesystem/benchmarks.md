@@ -16,12 +16,15 @@ Compare equivalent guarantees, separate warm-cache and cold-cache behavior, reco
 | BM-FS-PATH-001 | Path parsing and join | latency, allocations, bytes/s | component count, native encoding, grammar |
 | BM-FS-RESOLVE-001 | Directory-relative open | latency, syscalls/native calls, allocations | depth, link policy, existing/create |
 | BM-FS-RESOLVE-002 | Adversarial containment | throughput, retries, failure cost | concurrent rename/link mutation |
+| BM-FS-DIRECTORY-001 | Directory enumeration | entries/s, allocations, native calls | directory sizes 0–1M; mutation/no mutation |
 | BM-FS-FILE-001 | Positioned sequential I/O | throughput, CPU, allocations | sizes 4 KiB–16 MiB; sync/async |
 | BM-FS-FILE-002 | Positioned random I/O | IOPS, latency distribution, queue depth | read/write mix and working set |
 | BM-FS-FILE-003 | Async concurrency | throughput, tail latency, memory/op | queue depth 1–65K |
 | BM-FS-FILE-004 | Cancel/complete race | cancel latency, retained memory, terminal mix | queue depth and device latency |
 | BM-FS-META-001 | Handle metadata snapshot | latency, native calls, allocations | base and extended fields |
 | BM-FS-REPLACE-001 | Atomic replacement | latency, sync cost, metadata cost | file size, backup, durability level |
+| BM-FS-DURABILITY-001 | File synchronization | latency distribution, throughput impact | D1/D3 where supported; file sizes |
+| BM-FS-DURABILITY-002 | Namespace synchronization | latency distribution, batching benefit | D2 create/rename/replace workloads |
 | BM-FS-ERROR-001 | Error construction | latency, allocations, redaction cost | shallow/deep cause chains |
 
 ## Baselines
@@ -44,5 +47,6 @@ Record storage medium/controller, filesystem and options, free space, encryption
 - Metadata base queries avoid fetching unrequested expensive extensions.
 - Atomic replacement does not copy file contents as a hidden fallback.
 - Error construction cost is bounded and provider messages are captured lazily where practical.
+- Resolution quality and durability level are mandatory benchmark dimensions; lower levels are not equivalent faster baselines.
 
 Numeric regression budgets follow at least three representative baseline runs per platform/filesystem class and require an RFC.

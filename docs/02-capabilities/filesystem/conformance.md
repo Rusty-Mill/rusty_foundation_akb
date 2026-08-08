@@ -41,6 +41,21 @@ Results identify suite/provider/contract versions, OS and filesystem, mount/volu
 | CT-FS-RESOLVE-009 | 0012 | D/R | Diagnostics redact components beyond granted diagnostic authority. |
 | CT-FS-RESOLVE-010 | ADR-0007 | E | Provider claim is tested across supported local, removable, and network filesystem classes. |
 
+Resolution results additionally record and verify the provider's [R0–R3 resolution quality](resolution-quality.md). R1+ assertions use adversarial concurrent mutation; a static no-link fixture is insufficient evidence.
+
+## Directory-resource assertions
+
+| Assertion | Requirements | Class | Pass condition |
+|---|---|---|---|
+| CT-FS-DIRECTORY-001 | 0001, 0009 | D/R | Lookup, enumeration, mutation, metadata, and sync authority are distinct; relative authority does not grant absolute namespace access. |
+| CT-FS-DIRECTORY-002 | 0002 | C | Rename/move of the external binding does not retarget operations on the opened directory resource. |
+| CT-FS-DIRECTORY-003 | 0003 | C | Explicit close/drop is safe under concurrent use and double close is unrepresentable. |
+| CT-FS-DIRECTORY-004 | 0004, 0010 | E/D | Enumeration round-trips native names, applies disclosure policy, and claims no ordering unless selected. |
+| CT-FS-DIRECTORY-005 | 0005 | C/E | Concurrent create/remove/rename behavior matches the declared non-snapshot or snapshot quality. |
+| CT-FS-DIRECTORY-006 | 0006 | D/C | Namespace mutations require authority and satisfy exclusive/idempotent semantics under races. |
+| CT-FS-DIRECTORY-007 | 0007 | E | Directory synchronization reports achieved D-level or explicit unsupported status. |
+| CT-FS-DIRECTORY-008 | 0008 | E | Identity scope and reuse match the metadata contract. |
+
 ## File-resource assertions
 
 | Assertion | Requirements | Class | Pass condition |
@@ -82,6 +97,18 @@ Results identify suite/provider/contract versions, OS and filesystem, mount/volu
 | CT-FS-REPLACE-007 | 0010 | C | Cancellation around commit never reports canceled after replacement became visible. |
 | CT-FS-REPLACE-008 | 0012 | D/R | Required namespace and metadata authority is checked without silent escalation. |
 
+## Durability assertions
+
+| Assertion | Requirements | Class | Pass condition |
+|---|---|---|---|
+| CT-FS-DURABILITY-001 | 0001, 0002 | D/R | Every sync outcome declares D-level/failure model; buffered completion alone never claims D1. |
+| CT-FS-DURABILITY-002 | 0003 | E | D1 survives the declared crash/restart experiment with content and retrieval-critical metadata intact. |
+| CT-FS-DURABILITY-003 | 0004, 0009 | E | D2 survives namespace crash experiments; unsupported directory sync cannot pass. |
+| CT-FS-DURABILITY-004 | 0005 | E/R | D3 maps to documented cache flush/ordering and passes supported fault-injection or power-cut evidence. |
+| CT-FS-DURABILITY-005 | 0006, 0007 | C/E | Sync failures and cancellation races report visible state and known/indeterminate durability truthfully. |
+| CT-FS-DURABILITY-006 | 0008 | E/R | Remote claims identify client, server, protocol, and stable acknowledgement boundary. |
+| CT-FS-DURABILITY-007 | 0010 | R | Benchmarks and comparisons use equivalent D-levels. |
+
 ## Error-model assertions
 
 Use generated and injected failures to cover every base category. Verify context-dependent retry metadata, redaction, preservation of provider code/domain, partial progress, causal chaining, unknown-code fallback, and prohibition on message parsing. Mapping coverage is reported per operation/provider rather than as one global table.
@@ -96,3 +123,5 @@ The initial matrix should include at least:
 - Cross-platform: one network share protocol and one constrained/sandboxed environment.
 
 Stable claims enumerate exact tested families and options; untested filesystems are not implied conforming merely because the OS is supported.
+
+Each published report conforms to the [provider support matrix](support-matrix.md) and links R-level, D-level, filesystem tier, assertion results, and benchmark digest.

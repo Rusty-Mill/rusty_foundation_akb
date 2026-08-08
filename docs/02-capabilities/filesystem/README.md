@@ -16,6 +16,7 @@ Directory enumeration, links, watching, permissions/ACL mutation, memory mapping
 ```mermaid
 flowchart TD
     Path["Portable path value model"] --> Resolve["rm.filesystem.resolve"]
+    Directory["rm.filesystem.directory"] --> Resolve
     Resolve --> File["rm.filesystem.file"]
     Resolve --> Metadata["rm.filesystem.metadata"]
     File --> Metadata
@@ -58,10 +59,14 @@ The path model is a semantic type model, not a capability. Resolution is a capab
 - [Path value model](path-model.md)
 - [Platform research](platform-research.md)
 - [`rm.filesystem.resolve`](resolve.md)
+- [`rm.filesystem.directory`](directory.md)
 - [`rm.filesystem.file`](file.md)
 - [`rm.filesystem.metadata`](metadata.md)
 - [`rm.filesystem.atomic-replace`](atomic-replace.md)
 - [Filesystem error model](error-model.md)
+- [Resolution quality levels](resolution-quality.md)
+- [Filesystem durability model](durability-model.md)
+- [Provider support matrix](support-matrix.md)
 - [Conformance specification](conformance.md)
 - [Benchmark specification](benchmarks.md)
 - [Open questions](open-questions.md)
