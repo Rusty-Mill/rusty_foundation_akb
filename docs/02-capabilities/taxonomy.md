@@ -26,3 +26,4 @@ Each domain will be decomposed into common, optional/advanced, and platform-spec
 ## Active domain analyses
 
 - [Runtime and time vertical slice](runtime-time/README.md) — Draft
+- [Filesystem foundations vertical slice](filesystem/README.md) — Draft

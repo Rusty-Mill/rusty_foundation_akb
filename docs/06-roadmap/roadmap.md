@@ -43,3 +43,7 @@ Dates are intentionally absent until scope and capacity are known. Progress is c
 4. Review the runtime/time [conformance specification](../02-capabilities/runtime-time/conformance.md) and [benchmark specification](../02-capabilities/runtime-time/benchmarks.md).
 5. Define prototype experiments for timer scale, timing behavior, cancellation races, and shutdown ordering.
 6. Choose a machine-readable graph format only after at least two reviewed capability specifications expose the requirements.
+
+## Active second slice
+
+The [filesystem foundations analysis](../02-capabilities/filesystem/README.md) now tests the model against path representation, directory-relative authority, file resources, metadata variance, and atomic replacement. Its next gates are conformance design, error-taxonomy analysis, durability research, and resolution-strength decisions.
