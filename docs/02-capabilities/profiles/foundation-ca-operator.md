@@ -3,8 +3,8 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.10.0 |
-| Extends | [`rm.profile.foundation.server` 1.15.0](foundation-server.md) |
+| Version | 0.11.0 |
+| Extends | [`rm.profile.foundation.server` 1.16.0](foundation-server.md) |
 | Purpose | Operate registration, certificate issuance, renewal, status, and CA lifecycle without claiming a complete public or enterprise CA product |
 
 ## Required composition
@@ -43,8 +43,11 @@
 
 **RM-PROFILE-CA-OPERATOR-0016:** When a CA selects search, it composes Server 1.15.0 with exact account/request/serial/certificate/status/audit source generations, purpose-scoped schemas and analyzers, strict tenant/field/document isolation, ordered ledger-to-index capture including revocation/erasure, explicit visibility/partial state, stable audited traversal, bounded diagnostics, rebuild/recovery, and no inference that a result proves issuance validity, current status, or relying-party trust.
 
+**RM-PROFILE-CA-OPERATOR-0017:** When a CA selects analytics, it composes Server 1.16.0 with exact ledger/status/transparency/audit source frontiers, approved schemas/functions/materializations, strict tenant and sensitive-field controls, event-time/late correction, disclosure-resistant aggregates, reproducible compliance evidence, checkpoint-to-HSM/status/transparency effect separation, and no inference that analytical state authorizes issuance, revocation, key use, or relying-party trust.
+
 ## History
 
+- **0.11.0:** Rebases on Server 1.16.0 and constrains optional analytics to exact CA frontiers, disclosure-resistant aggregates, reproducible evidence, late corrections, and separated key/status effects.
 - **0.10.0:** Rebases on Server 1.15.0 and constrains optional search to exact CA source generations, strict isolation, ordered status capture, explicit visibility, audited traversal, and source revalidation.
 - **0.9.0:** Rebases on Server 1.14.0 and constrains optional caching/edge delivery to strict identity partitions, bounded status freshness, storm control, and propagation evidence.
 - **0.8.0:** Rebases on Server 1.13.0 and constrains optional object storage to generation-bound encrypted evidence, verified content, conditional publication, retention, and recovery.

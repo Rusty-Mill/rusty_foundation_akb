@@ -111,5 +111,7 @@
 | [0107](0107-invalidation-completion-is-boundary-scoped-evidence.md) | Invalidation completion is boundary-scoped evidence | Accepted |
 | [0108](0108-search-visibility-is-a-versioned-projection-milestone.md) | Search visibility is a versioned projection milestone | Accepted |
 | [0109](0109-ranking-scores-are-policy-scoped-ordering-evidence.md) | Ranking scores are policy-scoped ordering evidence | Accepted |
+| [0110](0110-watermarks-are-progress-assertions-not-completeness-proof.md) | Watermarks are progress assertions, not completeness proof | Accepted |
+| [0111](0111-exactly-once-is-scoped-to-named-state-and-effect-boundaries.md) | Exactly-once is scoped to named state and effect boundaries | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

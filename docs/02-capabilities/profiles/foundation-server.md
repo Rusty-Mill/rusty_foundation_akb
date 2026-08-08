@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 1.15.0 |
+| Version | 1.16.0 |
 | Purpose | Long-running non-interactive service foundation with bounded shutdown and protected credentials |
 
 ## Workload assumptions
@@ -71,6 +71,9 @@ No interactive desktop session, unattended restart, concurrent I/O, explicit ser
 - **RM-PROFILE-FOUNDATION-SERVER-0053:** Search/indexing `>=0.1.0,<0.2.0` is conditional for derived document retrieval. It binds source/document/index/view, schema/analyzer/model/ranking, tenant/security, ingestion watermark, durability/visibility, topology, approximation, migration/recovery, objectives, and provider generations.
 - **RM-PROFILE-FOUNDATION-SERVER-0054:** Source commit, change capture, indexing, durability, replication, refresh visibility, and convergence are separate. Queries bind point-in-time views and deterministic ordering where stable traversal is claimed; scores are scoped ordering evidence, partial results are explicit, and consequential uses revalidate source authority.
 - **RM-PROFILE-FOUNDATION-SERVER-0055:** Evidence covers ordered ingestion/tombstones, multilingual analysis, typed queries and expense limits, visibility/partition histories, point-in-time cursors, lexical/vector/spatial/hybrid relevance and approximation, facets/highlights, tenant leakage, rebuild/migration/snapshot/failover, provider differentials, and staged relevance/fault/cost benchmarks.
+- **RM-PROFILE-FOUNDATION-SERVER-0056:** Analytical processing `>=0.1.0,<0.2.0` is conditional for typed batch or streaming analysis. It binds catalog/source/schema/function/logical/physical plan, provider/topology, principal/tenant, event-time/state/checkpoint/effect, resource, lineage, materialization, recovery, and reproducibility generations.
+- **RM-PROFILE-FOUNDATION-SERVER-0057:** Watermarks are scoped progress assertions, not completeness proof. Exactly-once claims distinguish replayed execution, operator state, and every external effect; results expose source frontiers, partial/approximate/late/corrected state, realized plans, and reproducibility class.
+- **RM-PROFILE-FOUNDATION-SERVER-0058:** Evidence covers types/formats/catalog snapshots, expression/operator equivalence, pushdown, partition/shuffle/spill/speculation, event-time/watermarks/windows/late data, state/checkpoint/sink fault histories, materialization, resource isolation, lineage/privacy, migration/recovery, provider differentials, and staged fault/cost benchmarks.
 
 ## Operational constraints
 
@@ -78,6 +81,7 @@ Deadline timers and cancellation support bounded multi-phase shutdown. Sync path
 
 ## History
 
+- **1.16.0:** Adds conditional typed batch/stream analytics, logical/physical plans, event-time/state/effects, distributed resources, materialization, lineage/privacy, recovery/reproducibility, conformance, and benchmarks.
 - **1.15.0:** Adds conditional source-versioned search/indexing, explicit visibility, lexical/vector/spatial/hybrid retrieval, stable pagination, tenant security, migration/recovery, relevance evaluation, conformance, and benchmarks.
 - **1.14.0:** Adds conditional policy-qualified caching and content delivery, privacy partitions, freshness/validation, tiers, stampede control, invalidation/coherence, edge behavior, conformance, and benchmarks.
 - **1.13.0:** Adds conditional generation-bound object/blob storage, verified content addressing, multipart commit, delegated access, lifecycle/retention, replication/recovery, conformance, and benchmarks.

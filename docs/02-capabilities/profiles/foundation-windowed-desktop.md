@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.43.0 |
+| Version | 0.44.0 |
 | Extends | [`rm.profile.foundation.desktop` 1.0.0](foundation-desktop.md) |
 | Purpose | Add native top-level window and graphics-presentation infrastructure without claiming a complete GUI toolkit |
 
@@ -329,6 +329,12 @@
 
 **RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0160:** Evidence covers multilingual tokenization/ranking, assistive navigation/highlights, ordered offline capture, refresh/read-your-write, deterministic cursors, ANN/hybrid evaluation, tenant privacy, suspend/network/power changes, rebuild/upgrade/recovery, and staged relevance/latency/energy benchmarks.
 
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0161:** Analytical processing `>=0.1.0,<0.2.0` is conditional for embedded or service-backed product analysis. It binds catalog/source/schema/function/plan/provider generations, user/tenant authority, batch/stream mode, event-time/effect policy, resources/energy, offline/background lifecycle, lineage, and recovery.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0162:** Results expose source snapshot/frontier, partial/approximate/late/corrected state and reproducibility class; background work respects lifecycle, metering, storage, thermal and power policy. Analytics does not authorize product action, and exactly-once state does not imply external effects.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0163:** Evidence covers typed/columnar conversion, local files/databases and remote sources, deterministic expressions/operators, cancellation/spill/pressure, offline replay/watermarks, checkpoint/sink failures, accessible progress/results, locale/time semantics, privacy, recovery, and staged latency/energy/cost benchmarks.
+
 ## Whole-product gaps
 
 This profile does not supply a rendering command model, widget/UI framework, text editing model, image/audio codecs, media containers/graphs, gestures, or translated product resources. Product-specific semantic roles/actions/content, accepted transfer formats/importers, locale coverage, audio policy/content, and accessible UX still belong to the product/framework. It cannot claim desktop-application completeness.
@@ -341,6 +347,7 @@ Input evidence additionally covers layout/IME diversity, keyboard-only operation
 
 ## History
 
+- **0.44.0:** Adds conditional typed batch/stream analytics, versioned plans, event-time/state/effects, resource governance, accessible results, lineage/privacy, recovery/reproducibility, conformance, and benchmarks.
 - **0.43.0:** Adds conditional source-versioned search/indexing, explicit visibility, lexical/vector/hybrid retrieval, stable pagination, accessible results, migration/recovery, relevance evaluation, conformance, and benchmarks.
 - **0.42.0:** Adds conditional policy-qualified caching, privacy partitions, freshness/validation, tiering/eviction, stampede control, invalidation/edge delivery, accessibility, conformance, and benchmarks.
 - **0.41.0:** Adds conditional generation-bound object/blob storage, verified content addressing, multipart commit, delegated access, retention/recovery, accessibility, conformance, and benchmarks.

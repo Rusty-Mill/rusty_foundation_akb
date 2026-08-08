@@ -3,8 +3,8 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.11.0 |
-| Extends | [`rm.profile.foundation.server` 1.15.0](foundation-server.md) |
+| Version | 0.12.0 |
+| Extends | [`rm.profile.foundation.server` 1.16.0](foundation-server.md) |
 | Purpose | Operate software publication, authenticated repository metadata, mirrors, advisories, and emergency response without claiming a complete hosted registry product |
 
 ## Required composition
@@ -51,8 +51,11 @@
 
 **RM-PROFILE-REPOSITORY-OPERATOR-0020:** When a repository selects search, it composes Server 1.15.0 with immutable release/advisory/source generations, exact ecosystem/package/version/platform schemas and analyzers, authenticated publication-to-index capture, tenant/private-artifact isolation, explicit visibility/partial state, stable cursors, bounded lexical/vector/hybrid ranking, rebuild/rollback, and no inference that a result authorizes installation or proves current signed metadata.
 
+**RM-PROFILE-REPOSITORY-OPERATOR-0021:** When a repository selects analytics, it composes Server 1.16.0 with immutable release/download/advisory/mirror/source frontiers, purpose-scoped schemas/functions/materializations, privacy-preserving tenant/user analysis, late/corrected events, resource and retention budgets, reproducible reports, fenced publication effects, and no inference that analytical or checkpoint results authorize release, advisory, revocation, or consumer action.
+
 ## History
 
+- **0.12.0:** Rebases on Server 1.16.0 and constrains optional analytics to immutable repository frontiers, privacy-preserving metrics, late corrections, reproducible reports, and separated publication authority.
 - **0.11.0:** Rebases on Server 1.15.0 and constrains optional search to immutable release/advisory identity, authenticated capture, private-artifact isolation, explicit visibility, stable traversal, and source revalidation.
 - **0.10.0:** Rebases on Server 1.14.0 and constrains optional caching/edge delivery to immutable releases, authenticated metadata freshness, privacy partitions, bounded purge, and propagation evidence.
 - **0.9.0:** Rebases on Server 1.13.0 and constrains optional object storage to verified immutable artifacts, conditional publication, bounded delegation, retention/GC, and mirror recovery.
