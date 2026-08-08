@@ -34,6 +34,8 @@ The [signed-artifact and provenance foundation](../02-capabilities/signed-artifa
 
 The [package installation and update-orchestration foundation](../02-capabilities/package-management/README.md) defines coherent authenticated update snapshots, package/installed state, native dependency resolution, immutable deployment plans, journaled staging/commit/reconciliation, bounded hooks and migrations, accessible rollout/health, compensating rollback, recovery, conformance, and benchmarks. Repository publication and operations remain a separate delivery responsibility.
 
+The [repository publication and security-response foundation](../04-ecosystem/repository-operations/README.md) closes that delivery boundary with immutable release records, digest-preserving channel promotion, authenticated repository snapshots, untrusted mirrors, revisioned advisories, coordinated disclosure, revocation/emergency response, retention/backup, conformance, and operational objectives. Concrete providers and wire profiles remain RFC choices.
+
 ## Compatibility channels
 
 `experimental`, `preview`, and `stable` channels communicate contract maturity. Channel promotion is evidence-based and never inferred from elapsed time.

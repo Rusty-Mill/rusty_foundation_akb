@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.42.0
+**Version:** 1.43.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -494,6 +494,8 @@ The [signed-artifact and provenance foundations](../02-capabilities/signed-artif
 
 The [package installation and update-orchestration foundations](../02-capabilities/package-management/README.md) compose authenticated coherent repository snapshots, exact package and installed-state generations, dependency/conflict resolution, immutable authority-bound plans, journaled native staging/transactions, bounded hooks, service/configuration/data coordination, fleet rollout and health, compensating rollback, recovery, conformance, and benchmarks. Deployment plans are immutable generation-bound authority, and rollback is a newly resolved compensating deployment rather than an inverse ([ADR-0086](../adr/0086-deployment-plans-are-immutable-generation-bound-authority.md), [ADR-0087](../adr/0087-rollback-is-a-compensating-deployment-not-an-inverse.md)). Repository publication/operations, vulnerability/advisory policy, arbitrary installer synthesis, product health definitions, and application data migrations remain separate. Its specifications remain Draft and cannot amend this model.
 
+The [repository publication and security-response foundations](../04-ecosystem/repository-operations/README.md) define separated publication authority, immutable release records, namespace succession, digest-preserving channel promotion, yank/deprecation/revocation overlays, authenticated coherent metadata, untrusted mirrors, retention/backup, revisioned advisories, coordinated disclosure, emergency response, conformance, and operational benchmarks. Published release identity and bytes are immutable, and promotion moves an authenticated reference to the same digest ([ADR-0088](../adr/0088-published-release-identity-and-bytes-are-immutable.md), [ADR-0089](../adr/0089-channel-promotion-moves-an-authenticated-reference-to-the-same-digest.md)). The [repository-operator foundation profile](../02-capabilities/profiles/foundation-repository-operator.md) composes these responsibilities without selecting hosted-service protocols, storage, interchange formats, providers, legal policy, staffing, or service objectives. Its specifications remain Draft and cannot amend this model.
+
 ## 18. Deliberately unresolved choices
 
 This model does not yet choose:
@@ -517,6 +519,7 @@ Those choices require domain evidence and the ADR/RFC process. Deferring them is
 - [Capability graph model](../02-capabilities/graph-model.md)
 - [Capability profiles](../02-capabilities/profiles.md)
 - [Repository strategy](../04-ecosystem/repository-strategy.md)
+- [Repository publication and security response](../04-ecosystem/repository-operations/README.md)
 - [Verification architecture](../04-ecosystem/verification.md)
 - [Traceability model](../04-ecosystem/traceability.md)
 - [Delivery strategy](../03-delivery/strategy.md)

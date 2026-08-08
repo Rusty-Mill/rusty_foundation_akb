@@ -89,5 +89,7 @@
 | [0085](0085-artifact-acceptance-composes-independent-evidence.md) | Artifact acceptance composes independent evidence | Accepted |
 | [0086](0086-deployment-plans-are-immutable-generation-bound-authority.md) | Deployment plans are immutable generation-bound authority | Accepted |
 | [0087](0087-rollback-is-a-compensating-deployment-not-an-inverse.md) | Rollback is a compensating deployment, not an inverse | Accepted |
+| [0088](0088-published-release-identity-and-bytes-are-immutable.md) | Published release identity and bytes are immutable | Accepted |
+| [0089](0089-channel-promotion-moves-an-authenticated-reference-to-the-same-digest.md) | Channel promotion moves an authenticated reference to the same digest | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

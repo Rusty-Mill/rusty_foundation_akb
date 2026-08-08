@@ -34,3 +34,7 @@ Names should communicate layer and responsibility. Final crate and repository na
 Organization policy -> foundation AKB -> volume/domain specifications -> capability contracts -> repository architecture guides -> crate/API documentation -> operational runbooks.
 
 Higher levels define intent and invariants. Lower levels link upward and may add detail but must not silently contradict them.
+
+## Publication and operations
+
+The [repository publication and security-response foundation](repository-operations/README.md) governs namespace authority, immutable releases, authenticated metadata, promotion, mirrors, retention, advisories, coordinated disclosure, revocation, and emergencies across the organization. Individual repositories and registries may add stricter controls but cannot replace bytes under a published identity or promote a rebuilt artifact as though it were the tested digest.

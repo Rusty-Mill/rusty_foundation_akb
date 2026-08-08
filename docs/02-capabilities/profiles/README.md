@@ -41,6 +41,10 @@ The table is only a view. Each manifest defines exact contract ranges, predicate
 
 [`rm.profile.foundation.server` 1.5.0](foundation-server.md) conditionally selects OS-managed service registration/demand activation, durable scheduling, cryptographic policy/key operations, certificate trust/path validation, signed-artifact verification/production, and package deployment/update orchestration when deployment, work-survival, data protection, peer authentication, artifact publication/acceptance, or managed servicing requirements need them. It preserves explicit issuance/enrollment, application protocol/proof-of-possession, repository publication/operations, vulnerability/advisory policy, database/queue, distributed coordination, deployment topology, remote vault/HSM protocol, exactly-once domain effect, and operational policy gaps.
 
+## Repository operator extension
+
+[`rm.profile.foundation.repository-operator` 0.1.0](foundation-repository-operator.md) extends Server 1.5.0 with conditional release publication, authenticated repository metadata, channels, mirrors, advisory/disclosure, revocation/emergency, retention/backup, conformance, and operational evidence. It intentionally leaves network APIs, storage/coordination topology, concrete interchange profiles/providers, service objectives, legal workflow, and staffing to product RFCs.
+
 ## Version transition
 
 Version 1.0.0 adds direct process launch/control to CLI, Desktop, and Server. This is deliberately a profile-major change from 0.1.0 because it can invalidate a previously satisfied provider set. Byte pipes and executable resolution remain optional. Server supervision is conditional on launching managed workers.
