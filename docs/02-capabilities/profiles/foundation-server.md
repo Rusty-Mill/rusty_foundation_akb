@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 1.4.0 |
+| Version | 1.5.0 |
 | Purpose | Long-running non-interactive service foundation with bounded shutdown and protected credentials |
 
 ## Workload assumptions
@@ -38,6 +38,9 @@ No interactive desktop session, unattended restart, concurrent I/O, explicit ser
 - **RM-PROFILE-FOUNDATION-SERVER-0020:** Signed-artifact verification `>=0.1.0,<0.2.0` is conditional for executable, package, document, configuration, plugin, firmware, model, or release artifacts. Policy binds signed-view/envelope profile, artifact identity/digest/purpose/target/channel, signer roles/thresholds, trust and algorithm generations, timestamp, transparency, provenance/SBOM/reproducibility, freshness/network mode, and bounds.
 - **RM-PROFILE-FOUNDATION-SERVER-0021:** Automated signing is separately conditional and requires immutable requests, noninteractive signer authority, least-privilege opaque key operations, approval policy, digest-substitution prevention, timestamp/log policy, auditable lifecycle, and reconciliation of ambiguous remote outcomes. Verification does not authorize publication, installation, loading, or execution.
 - **RM-PROFILE-FOUNDATION-SERVER-0022:** Evidence covers native/portable views, hostile envelopes/artifacts/provenance, covered-byte mutation, signer/role/threshold/trust/time/log/provenance failures, offline/cache/emergency policy, TOCTOU substitution, rotations/compromise, accessible diagnostics, bounded concurrency, and staged benchmarks.
+- **RM-PROFILE-FOUNDATION-SERVER-0023:** Package deployment/update orchestration `>=0.1.0,<0.2.0` is conditional for self-update, managed installation, runtime/dependency servicing, or fleet rollout. It binds authenticated repository and installed-state generations, exact artifacts, native version/dependency semantics, immutable authority-bound plans, scope/principal, hooks/services/data, restart/reboot, recovery, and product health policy.
+- **RM-PROFILE-FOUNDATION-SERVER-0024:** Noninteractive execution revalidates every plan precondition, uses least-privilege native managers, journals points of no return, distinguishes commit/activation/readiness/health, bounds locks/hooks/network/disk, and reconciles crash/power/reboot/partial states. Rollback is a newly resolved compensating deployment and cannot imply data rollback.
+- **RM-PROFILE-FOUNDATION-SERVER-0025:** Evidence covers repository rollback/freeze/mix-and-match, dependency conflicts, stale-plan/authority substitution, native partial states, hooks/services/config/data, concurrency/fault injection, rollout missing/late health, emergency response, repair/removal/recovery, privacy, and staged benchmarks.
 
 ## Operational constraints
 
@@ -45,6 +48,7 @@ Deadline timers and cancellation support bounded multi-phase shutdown. Sync path
 
 ## History
 
+- **1.5.0:** Adds conditional authenticated repository snapshots, package state/resolution/plans, journaled native deployment, hooks/services/data, rollout/health, compensating rollback, recovery, conformance, and benchmarks.
 - **1.4.0:** Adds conditional exact signed-artifact views, authority-bearing signing, timestamps, transparency, provenance/reproducibility, evidence-composing verification, lifecycle, conformance, and benchmarks.
 - **1.3.0:** Adds conditional bounded certificate parsing, trust-store/path evidence, policy/time/identity-bound validation, revocation/network/cache modes, lifecycle, conformance, and benchmarks.
 - **1.2.0:** Adds conditional versioned cryptographic policy, opaque operation-scoped keys, exact primitive/composition/transfer contracts, noninteractive provider/hardware evidence, lifecycle, conformance, and benchmarks.

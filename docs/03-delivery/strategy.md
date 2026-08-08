@@ -30,7 +30,9 @@
 - Generate SBOMs and provenance attestations; sign releases and verify them before installation.
 - Define maintainer recovery and key-rotation procedures before the first production release.
 
-The [signed-artifact and provenance foundation](../02-capabilities/signed-artifacts/README.md) defines the exact signed-view, ceremony, trusted-time, transparency, provenance, verification-policy, lifecycle, conformance, and benchmark evidence required to make these commitments testable. Package installation, dependency solving, rollout, rollback, and recovery remain the next delivery layer.
+The [signed-artifact and provenance foundation](../02-capabilities/signed-artifacts/README.md) defines the exact signed-view, ceremony, trusted-time, transparency, provenance, verification-policy, lifecycle, conformance, and benchmark evidence required to make these commitments testable.
+
+The [package installation and update-orchestration foundation](../02-capabilities/package-management/README.md) defines coherent authenticated update snapshots, package/installed state, native dependency resolution, immutable deployment plans, journaled staging/commit/reconciliation, bounded hooks and migrations, accessible rollout/health, compensating rollback, recovery, conformance, and benchmarks. Repository publication and operations remain a separate delivery responsibility.
 
 ## Compatibility channels
 

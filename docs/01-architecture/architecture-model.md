@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.41.0
+**Version:** 1.42.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -491,6 +491,8 @@ The [cryptographic operations and key-management foundations](../02-capabilities
 The [certificate, trust-store, and PKI-validation foundations](../02-capabilities/security/pki-README.md) extend the security slice with bounded certificate evidence parsing, generation-scoped anchors/distrust/purpose policy, bounded candidate path construction, exact path validation, typed reference-identity matching, revocation/status freshness, privacy-constrained network/cache behavior, evidence-rich results and lifecycle, platform mappings, conformance corpora, and benchmarks. Presented certificates are candidates rather than a chain, and trust results are context-bound evidence rather than identity or authority ([ADR-0082](../adr/0082-presented-certificates-are-candidates-not-a-chain.md), [ADR-0083](../adr/0083-trust-results-are-context-bound-evidence-not-identity-or-authority.md)). Issuance/enrollment, certificate/private-key renewal, transparency operation, protocol proof-of-possession, code/document/package signing, and authorization remain separate. Its specifications remain Draft and cannot amend this model.
 
 The [signed-artifact and provenance foundations](../02-capabilities/signed-artifacts/README.md) compose exact versioned signed views, declared intent, authority-bearing signing ceremonies, native and portable envelopes, trusted timestamps, transparency evidence, provenance/SBOM/reproducibility, evidence-rich acceptance policy, lifecycle, conformance, and benchmarks. Signatures bind versioned signed views and intent, while artifact acceptance composes independent evidence ([ADR-0084](../adr/0084-signatures-bind-versioned-signed-views-and-declared-intent.md), [ADR-0085](../adr/0085-artifact-acceptance-composes-independent-evidence.md)). Installation, execution, package dependency resolution, update rollout/rollback, malware analysis, certificate issuance, and product publishing authority remain separate. Its specifications remain Draft and cannot amend this model.
+
+The [package installation and update-orchestration foundations](../02-capabilities/package-management/README.md) compose authenticated coherent repository snapshots, exact package and installed-state generations, dependency/conflict resolution, immutable authority-bound plans, journaled native staging/transactions, bounded hooks, service/configuration/data coordination, fleet rollout and health, compensating rollback, recovery, conformance, and benchmarks. Deployment plans are immutable generation-bound authority, and rollback is a newly resolved compensating deployment rather than an inverse ([ADR-0086](../adr/0086-deployment-plans-are-immutable-generation-bound-authority.md), [ADR-0087](../adr/0087-rollback-is-a-compensating-deployment-not-an-inverse.md)). Repository publication/operations, vulnerability/advisory policy, arbitrary installer synthesis, product health definitions, and application data migrations remain separate. Its specifications remain Draft and cannot amend this model.
 
 ## 18. Deliberately unresolved choices
 

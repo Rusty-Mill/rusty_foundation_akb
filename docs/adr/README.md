@@ -87,5 +87,7 @@
 | [0083](0083-trust-results-are-context-bound-evidence-not-identity-or-authority.md) | Trust results are context-bound evidence, not identity or authority | Accepted |
 | [0084](0084-signatures-bind-versioned-signed-views-and-declared-intent.md) | Signatures bind versioned signed views and declared intent | Accepted |
 | [0085](0085-artifact-acceptance-composes-independent-evidence.md) | Artifact acceptance composes independent evidence | Accepted |
+| [0086](0086-deployment-plans-are-immutable-generation-bound-authority.md) | Deployment plans are immutable generation-bound authority | Accepted |
+| [0087](0087-rollback-is-a-compensating-deployment-not-an-inverse.md) | Rollback is a compensating deployment, not an inverse | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.
