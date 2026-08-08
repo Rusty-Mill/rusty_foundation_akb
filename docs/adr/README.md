@@ -10,5 +10,7 @@
 | [0006](0006-paths-are-lossless-native-values.md) | Paths are lossless native values | Accepted |
 | [0007](0007-directory-relative-resolution-is-the-security-boundary.md) | Directory-relative resolution is the filesystem security boundary | Accepted |
 | [0008](0008-atomic-replacement-is-a-capability.md) | Atomic namespace replacement is a capability | Accepted |
+| [0009](0009-identity-is-not-authority.md) | Identity is not authority | Accepted |
+| [0010](0010-native-operation-is-the-authorization-point.md) | The native operation is the authorization point | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

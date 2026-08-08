@@ -46,4 +46,8 @@ Dates are intentionally absent until scope and capacity are known. Progress is c
 
 ## Active second slice
 
-The [filesystem foundations analysis](../02-capabilities/filesystem/README.md) now tests the model against path representation, directory-relative authority, file resources, metadata variance, and atomic replacement. Its next gates are conformance design, error-taxonomy analysis, durability research, and resolution-strength decisions.
+The [filesystem foundations analysis](../02-capabilities/filesystem/README.md) now tests the model against path representation, directory-relative authority, file resources, metadata variance, atomic replacement, resolution quality, durability, conformance, and benchmarks. Its next gates are permissions/ACL inspection, directory enumeration, link semantics, and adversarial platform evidence.
+
+## Active third slice
+
+The [security and authority foundations analysis](../02-capabilities/security/README.md) separates identity, security context, explicit authority, policy advice, and native enforcement. It establishes attenuation and fail-closed rules and exercises them through `rm.security.random`. Its next gates are restricted-execution boundary analysis, authority delegation lifecycle, and cross-domain security review criteria.

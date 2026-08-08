@@ -27,3 +27,4 @@ Each domain will be decomposed into common, optional/advanced, and platform-spec
 
 - [Runtime and time vertical slice](runtime-time/README.md) — Draft
 - [Filesystem foundations vertical slice](filesystem/README.md) — Draft
+- [Security and authority foundations vertical slice](security/README.md) — Draft
