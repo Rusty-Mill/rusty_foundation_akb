@@ -33,7 +33,7 @@ The table is only a view. Each manifest defines exact contract ranges, predicate
 
 ## Windowed desktop extension
 
-[`rm.profile.foundation.windowed-desktop` 0.13.0](foundation-windowed-desktop.md) extends Desktop 1.0.0 with negotiated top-level windowing, graphics presentation, focused input/text composition, exact text infrastructure, semantic accessibility/native adapters, data transfer, explicit localization/formatting, typed snapshot-based configuration, bounded structured observability, application lifecycle/session integration, conditional networking, optional explicit memory/mapping, optional isolated plugins, and explicit native-thread/synchronization foundations. It remains intentionally incomplete until renderer/UI, editing, translated product resources/semantics/importers, application protocols, plugin interfaces, and product-specific restoration policy are selected.
+[`rm.profile.foundation.windowed-desktop` 0.14.0](foundation-windowed-desktop.md) extends Desktop 1.0.0 with negotiated top-level windowing, graphics presentation, focused input/text composition, exact text infrastructure, semantic accessibility/native adapters, data transfer, explicit localization/formatting, typed snapshot-based configuration, bounded structured observability, application lifecycle/session integration, conditional networking and audio, optional explicit memory/mapping, optional isolated plugins, and explicit native-thread/synchronization foundations. It remains intentionally incomplete until renderer/UI, editing, codecs/media graphs, translated product resources/semantics/importers, application protocols, plugin interfaces, and product-specific restoration/audio policy are selected.
 
 ## Version transition
 
@@ -41,7 +41,7 @@ Version 1.0.0 adds direct process launch/control to CLI, Desktop, and Server. Th
 
 ## Explicit gaps
 
-These profiles are incomplete for real applications because terminal, application protocols, rendering/UI, editing, product-specific accessible semantics/data importers/translations/restoration, and audio contracts are not yet all specified. The windowed extension supplies window/presentation/input/text/accessibility/transfer/i18n/configuration/observability/lifecycle and conditional networking infrastructure but not those product layers. Resolution reports must preserve the gaps; the foundation profile name prevents a false completeness claim.
+These profiles are incomplete for real applications because terminal, application protocols, rendering/UI, editing, codecs/media graphs, and product-specific accessible semantics/data importers/translations/restoration/audio policy are not yet all specified. The windowed extension supplies window/presentation/input/text/accessibility/transfer/i18n/configuration/observability/lifecycle plus conditional networking/audio infrastructure but not those product layers. Resolution reports must preserve the gaps; the foundation profile name prevents a false completeness claim.
 
 ## Shared prohibitions
 

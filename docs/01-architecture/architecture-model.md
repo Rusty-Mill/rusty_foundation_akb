@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.22.0
+**Version:** 1.23.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -453,6 +453,8 @@ The [memory and mapping foundations vertical slice](../02-capabilities/memory/RE
 The [plugin and module lifecycle vertical slice](../02-capabilities/plugins/README.md) defines immutable package identity/provenance, metadata-only discovery, interface and dependency resolution, trust/isolation classes, attenuated authority, lifecycle generations, staged updates, rollback, and supply-chain evidence. In-process native plugins are fully trusted host components rather than a sandbox, and updates use immutable generation replacement rather than assuming unload safety ([ADR-0044](../adr/0044-in-process-native-plugins-are-fully-trusted.md), [ADR-0045](../adr/0045-plugin-updates-use-generation-replacement.md)). Its specifications remain Draft and cannot amend this model.
 
 The [threading and synchronization foundations vertical slice](../02-capabilities/threading/README.md) defines native thread lifecycle, mutex/reader-writer lock semantics, condition/semaphore/event waiting, Rust-model atomics, scheduling/affinity/realtime requests, and thread-local lifecycle. Scheduling controls are scoped requests rather than execution guarantees, and poisoning is optional application consistency policy rather than base lock semantics ([ADR-0046](../adr/0046-scheduling-controls-are-scoped-requests.md), [ADR-0047](../adr/0047-poisoning-is-consistency-policy-not-lock-semantics.md)). Its specifications remain Draft and cannot amend this model.
+
+The [audio foundations vertical slice](../02-capabilities/audio/README.md) defines generation-scoped endpoints, exact PCM formats, render/capture streams, explicit routing, device-sample clocks, monotonic correlation, XRUN/discontinuity evidence, and restricted realtime processing. Stream progress follows the device sample clock rather than inferred wall time, and realtime callbacks use a bounded data plane separated from control-plane work ([ADR-0048](../adr/0048-audio-stream-time-follows-the-device-sample-clock.md), [ADR-0049](../adr/0049-realtime-audio-callbacks-are-a-restricted-execution-domain.md)). Codecs, containers, MIDI, speech, and general media graphs remain separate. Its specifications remain Draft and cannot amend this model.
 
 ## 18. Deliberately unresolved choices
 

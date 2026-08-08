@@ -49,5 +49,7 @@
 | [0045](0045-plugin-updates-use-generation-replacement.md) | Plugin updates use immutable generation replacement | Accepted |
 | [0046](0046-scheduling-controls-are-scoped-requests.md) | Scheduling controls are scoped requests, not execution guarantees | Accepted |
 | [0047](0047-poisoning-is-consistency-policy-not-lock-semantics.md) | Poisoning is consistency policy, not lock semantics | Accepted |
+| [0048](0048-audio-stream-time-follows-the-device-sample-clock.md) | Audio stream time follows the device sample clock | Accepted |
+| [0049](0049-realtime-audio-callbacks-are-a-restricted-execution-domain.md) | Realtime audio callbacks are a restricted execution domain | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

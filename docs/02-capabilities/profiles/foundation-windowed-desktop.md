@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.13.0 |
+| Version | 0.14.0 |
 | Extends | [`rm.profile.foundation.desktop` 1.0.0](foundation-desktop.md) |
 | Purpose | Add native top-level window and graphics-presentation infrastructure without claiming a complete GUI toolkit |
 
@@ -113,9 +113,17 @@
 
 **RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0052:** Conformance covers happens-before, spurious/obsolete wakeups, cancellation/timeouts, panic/owner failure, starvation/fairness nonclaims, atomic ordering/widths, topology invalidation, TLS destruction variance, UI/apartment deadlocks, plugin retirement, and shutdown.
 
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0053:** Audio is conditional on product workload. When selected, `rm.audio.device-observer` and either `rm.audio.render-stream` or `rm.audio.capture-stream` `>=0.1.0,<0.2.0` are required with exact format/layout, endpoint generation, clock, period/buffer, route, and discontinuity evidence.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0054:** Capture, loopback capture, exclusive/direct access, route override, and background monitoring are separately selected and authorized. Device enumeration does not activate capture or imply consent; sensitive buffers, diagnostics, retention, and delegation follow explicit privacy policy.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0055:** Realtime audio callbacks use a preallocated bounded data plane and MUST NOT allocate, block, perform I/O, acquire ordinary contended locks, schedule through a general executor, call UI APIs, or synchronously log. Product evidence measures deadline misses, XRUNs, callback distributions, page faults, scheduling state, and representative interference.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0056:** Product route/device controls are keyboard and assistive-technology operable, expose effective state and failures non-auditorily, and observe applicable mono, balance, hearing-device, and loudness preferences. Codecs, media containers, MIDI, speech, and spatial scene behavior require separate contracts.
+
 ## Whole-product gaps
 
-This profile does not supply a rendering command model, widget/UI framework, text editing model, image codecs, gestures, translated product resources, or application lifecycle/session integration. Product-specific semantic roles/actions/content, accepted transfer formats/importers, locale coverage, and accessible UX still belong to the product/framework. It cannot claim desktop-application completeness.
+This profile does not supply a rendering command model, widget/UI framework, text editing model, image/audio codecs, media containers/graphs, gestures, or translated product resources. Product-specific semantic roles/actions/content, accepted transfer formats/importers, locale coverage, audio policy/content, and accessible UX still belong to the product/framework. It cannot claim desktop-application completeness.
 
 ## Evidence gates
 
@@ -125,6 +133,7 @@ Input evidence additionally covers layout/IME diversity, keyboard-only operation
 
 ## History
 
+- **0.14.0:** Adds conditional device/route observation, exact PCM render/capture, sample-clock correlation, restricted realtime processing, capture authority, accessibility, and latency/reliability evidence requirements.
 - **0.13.0:** Adds native-thread lifecycle, synchronization/wait, atomics, UI-affinity, scheduling-quality, realtime prohibition, TLS, and evidence requirements.
 - **0.12.0:** Adds optional plugin catalog, resolution, trust/isolation, lifecycle, immutable generation update, supply-chain, and evidence requirements.
 - **0.11.0:** Adds optional explicit virtual-memory, mapping, sharing, residency, allocator, typed-view, and executable-memory prohibition/evidence requirements.

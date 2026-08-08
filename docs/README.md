@@ -36,6 +36,7 @@ The AKB is organized from stable intent to evolving detail.
 - [Memory and mapping foundations](02-capabilities/memory/README.md)
 - [Plugin and module lifecycle](02-capabilities/plugins/README.md)
 - [Threading and synchronization foundations](02-capabilities/threading/README.md)
+- [Audio foundations](02-capabilities/audio/README.md)
 
 ## Planned volumes
 
