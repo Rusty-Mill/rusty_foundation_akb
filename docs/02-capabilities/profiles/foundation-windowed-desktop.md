@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.6.0 |
+| Version | 0.7.0 |
 | Extends | [`rm.profile.foundation.desktop` 1.0.0](foundation-desktop.md) |
 | Purpose | Add native top-level window and graphics-presentation infrastructure without claiming a complete GUI toolkit |
 
@@ -57,6 +57,14 @@
 
 **RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0024:** Every shipped UI locale passes bundle/schema/plural coverage, pseudolocalization, layout/font/input/accessibility integration, bidi isolation, and live context-change evidence under product policy.
 
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0025:** Requires `rm.config.schema`, `rm.config.source`, and `rm.config.change-observer` `>=0.1.0,<0.2.0` plus configuration resolution service `>=0.1.0,<0.2.0` when the product consumes mutable preferences or administrator policy.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0026:** Configuration uses an explicit versioned schema and source plan. Consumers receive immutable validated snapshots with value provenance; ambient registry, preferences, environment, or file reads after construction are prohibited.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0027:** Native change notifications trigger bounded re-read and reconciliation. Snapshot replacement is atomic; invalid, restart-required, coordinated, overflowed, and unavailable states are reported without partial live mutation.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0028:** Secret material is prohibited in ordinary configuration values and diagnostics. Secret references resolve through the selected secret-store capability under separate authority, and product evidence covers external writers, replacement, loss/resynchronization, policy locks, and accessible restart/error communication.
+
 ## Whole-product gaps
 
 This profile does not supply a rendering command model, widget/UI framework, text editing model, image codecs, gestures, translated product resources, or application lifecycle/session integration. Product-specific semantic roles/actions/content, accepted transfer formats/importers, locale coverage, and accessible UX still belong to the product/framework. It cannot claim desktop-application completeness.
@@ -69,6 +77,7 @@ Input evidence additionally covers layout/IME diversity, keyboard-only operation
 
 ## History
 
+- **0.7.0:** Adds typed configuration schema/source/resolution, immutable snapshots, provenance, reload classes, secret boundaries, and loss-aware change reconciliation.
 - **0.6.0:** Adds locale preferences/contexts, typed resources/messages, formatting, calendar/time-zone, collation, data-version, pseudolocale, and live-change requirements.
 - **0.5.0:** Adds typed lazy data offers, clipboard, drag-and-drop, conditional file promises, transfer authority, and accessible-operation requirements.
 - **0.4.0:** Adds semantic-tree, accessible text/action/event, preference, native adapter, and assistive-technology evidence requirements.

@@ -40,3 +40,4 @@ Each domain will be decomposed into common, optional/advanced, and platform-spec
 - [Accessibility foundations vertical slice](accessibility/README.md) — Draft
 - [Clipboard and drag-and-drop data-transfer vertical slice](data-transfer/README.md) — Draft
 - [Internationalization and localization vertical slice](internationalization/README.md) — Draft
+- [Configuration and change-notification vertical slice](configuration/README.md) — Draft

@@ -35,5 +35,7 @@
 | [0031](0031-move-is-a-committed-transfer.md) | Move is a committed transfer, not a pointer gesture | Accepted |
 | [0032](0032-locale-sensitive-operations-use-explicit-context.md) | Locale-sensitive operations use immutable explicit context | Accepted |
 | [0033](0033-localized-output-is-not-canonical-data.md) | Localized output is not canonical data | Accepted |
+| [0034](0034-configuration-publishes-validated-snapshots.md) | Configuration publishes validated immutable snapshots | Accepted |
+| [0035](0035-configuration-notifications-trigger-reconciliation.md) | Configuration notifications trigger reconciliation | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.
