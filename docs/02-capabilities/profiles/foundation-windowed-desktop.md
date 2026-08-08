@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.30.0 |
+| Version | 0.31.0 |
 | Extends | [`rm.profile.foundation.desktop` 1.0.0](foundation-desktop.md) |
 | Purpose | Add native top-level window and graphics-presentation infrastructure without claiming a complete GUI toolkit |
 
@@ -249,6 +249,14 @@
 
 **RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0120:** Evidence covers published and adversarial vectors, malformed/noncanonical inputs, invalid tags/signatures/keys/points, nonce concurrency/crash/snapshot, key usage/export/rotation/destruction, provider/hardware/remote loss and rate limits, prompting/session/lock, policy/algorithm transition, certification/attestation boundaries, secret-copy/timing review, and lifecycle/throughput benchmarks.
 
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0121:** Certificate trust is conditional on product protocol/signing workload. When selected, certificate parse, trust observation, path construction/validation, identity matching, and status service `>=0.1.0,<0.2.0` bind exact input bytes, purpose/profile, typed reference identity, verification time/clock, trust/algorithm-policy generations, revocation/network/cache mode, provider, and bounds.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0122:** Peer-provided intermediates are an unordered untrusted candidate bag; bounded construction proves relationships and may yield multiple paths. Anchors/intermediates/trusted leaves/distrust/purpose constraints and system/enterprise/user/application sources retain provenance and precedence. Store membership, self-signing, subject/issuer text, and presentation order do not establish trust.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0123:** Trust results preserve selected path/anchor, per-certificate checks, exact identity match, status source/freshness, network/cache, overrides/pins, warnings/unknowns, expiry/dependencies, and nonclaims. Signature/path/name validity does not prove possession, account identity, authorization, issuance legitimacy, or semantic content validity.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0124:** Evidence covers adversarial DER, critical extensions, alternate/cross-signed paths, loops/ambiguity/resource bounds, basic/name/policy/KU/EKU/algorithm constraints, DNS/IP/URI/email/application identities and IDN/wildcards, CRL/OCSP/stapled/unknown/stale status, offline/proxy/redirect/SSRF/cache, trust updates/overrides/pins, privacy redaction, and staged path/status benchmarks.
+
 ## Whole-product gaps
 
 This profile does not supply a rendering command model, widget/UI framework, text editing model, image/audio codecs, media containers/graphs, gestures, or translated product resources. Product-specific semantic roles/actions/content, accepted transfer formats/importers, locale coverage, audio policy/content, and accessible UX still belong to the product/framework. It cannot claim desktop-application completeness.
@@ -261,6 +269,7 @@ Input evidence additionally covers layout/IME diversity, keyboard-only operation
 
 ## History
 
+- **0.31.0:** Adds conditional bounded certificate parsing, trust-store evidence, candidate path construction, policy/time/identity-bound validation, revocation/network/cache quality, result lifecycle, conformance, and benchmarks.
 - **0.30.0:** Adds conditional versioned cryptographic policy, opaque operation-scoped keys, exact hash/MAC/KDF/AEAD/public-key/transfer contracts, provider/hardware/attestation evidence, lifecycle, conformance, and benchmarks.
 - **0.29.0:** Adds conditional immutable service/job registration, execution scopes, demand activation/readiness, durable schedules and trigger reconciliation, attempts/checkpoints/retries, budgets, generation updates, accessibility, conformance, and benchmarks.
 - **0.28.0:** Adds conditional participant/session/action-scoped remote presentation and controlled input, exact mappings/state/order, secure-boundary and local-override rules, emergency stop, accessibility, conformance, and end-to-end latency evidence.

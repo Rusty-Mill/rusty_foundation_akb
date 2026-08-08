@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.39.0
+**Version:** 1.40.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -487,6 +487,8 @@ The [remote presentation and controlled input foundations vertical slice](../02-
 The [application services, background execution, and durable scheduling foundations vertical slice](../02-capabilities/background-services/README.md) defines immutable service/job definitions, transactional registration, user/system execution scopes, demand activation and readiness, civil/monotonic schedules, trigger reconciliation, attempts/checkpoints/retries, resource policy, generation updates, accessibility, conformance, and benchmarks. Durable schedules persist intent rather than execution guarantees, and triggers are at-least-once reconciliation hints rather than work authority ([ADR-0078](../adr/0078-durable-schedules-persist-intent-not-execution-guarantees.md), [ADR-0079](../adr/0079-background-triggers-are-reconciliation-hints-not-work-authority.md)). Exactly-once domain effects, interactive UI, elevation, credentials, package distribution, application protocols, and product work policy remain separate. Its specifications remain Draft and cannot amend this model.
 
 The [cryptographic operations and key-management foundations](../02-capabilities/security/crypto-README.md) extend the security slice with versioned workload policy, exact algorithm suites/parameters/encodings, opaque generation-scoped keys, separately attenuated key operations, hash/MAC/KDF/password derivation, authenticated encryption, signatures/verification/agreement, bounded transfer formats, provider/hardware/attestation/certification evidence, operation lifecycle, conformance vectors, and benchmarks. Key handles authorize operations rather than material, and cryptographic policy precedes provider selection ([ADR-0080](../adr/0080-key-handles-authorize-operations-not-key-material.md), [ADR-0081](../adr/0081-cryptographic-policy-precedes-provider-selection.md)). PKI/certificate lifecycle, protocol negotiation, code/document signing workflows, remote vault/HSM protocols, backup/escrow, and product policy remain separate. Its specifications remain Draft and cannot amend this model.
+
+The [certificate, trust-store, and PKI-validation foundations](../02-capabilities/security/pki-README.md) extend the security slice with bounded certificate evidence parsing, generation-scoped anchors/distrust/purpose policy, bounded candidate path construction, exact path validation, typed reference-identity matching, revocation/status freshness, privacy-constrained network/cache behavior, evidence-rich results and lifecycle, platform mappings, conformance corpora, and benchmarks. Presented certificates are candidates rather than a chain, and trust results are context-bound evidence rather than identity or authority ([ADR-0082](../adr/0082-presented-certificates-are-candidates-not-a-chain.md), [ADR-0083](../adr/0083-trust-results-are-context-bound-evidence-not-identity-or-authority.md)). Issuance/enrollment, certificate/private-key renewal, transparency operation, protocol proof-of-possession, code/document/package signing, and authorization remain separate. Its specifications remain Draft and cannot amend this model.
 
 ## 18. Deliberately unresolved choices
 

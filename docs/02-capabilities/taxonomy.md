@@ -44,6 +44,7 @@ Each domain will be decomposed into common, optional/advanced, and platform-spec
 - [Filesystem foundations vertical slice](filesystem/README.md) — Draft
 - [Security and authority foundations vertical slice](security/README.md) — Draft
 - [Cryptographic operations and key-management foundations](security/crypto-README.md) — Draft
+- [Certificate, trust-store, and PKI-validation foundations](security/pki-README.md) — Draft
 - [Process foundations vertical slice](process/README.md) — Draft
 - [Application activation and association foundations vertical slice](activation/README.md) — Draft
 - [IPC foundations vertical slice](ipc/README.md) — Draft

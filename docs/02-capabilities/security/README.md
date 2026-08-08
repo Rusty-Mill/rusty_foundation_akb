@@ -9,7 +9,7 @@
 
 The security domain supplies semantic building blocks for least-authority operation. It does not replace Windows access checks, Linux credentials and security modules, macOS sandbox enforcement, application authorization policy, or specialist cryptographic protocols.
 
-This slice establishes the authority vocabulary, authority attenuation, restricted-execution composition, secure random bytes, protected secret storage, and cryptographic operation/key-management foundations. User authentication and credential brokering are specified in the identity-session slice; protocol PKI, certificate lifecycle, remote vault/HSM protocols, and product cryptographic policy remain separate compositions.
+This slice establishes the authority vocabulary, authority attenuation, restricted-execution composition, secure random bytes, protected secret storage, cryptographic operation/key-management foundations, and certificate/trust-store/path-validation foundations. User authentication and credential brokering are specified in the identity-session slice; certificate issuance/lifecycle, protocol authentication, code/document signing, remote vault/HSM protocols, and product security policy remain separate compositions.
 
 ## Model
 
@@ -51,6 +51,7 @@ flowchart TD
     Cancel["rm.runtime.cancellation"] -.->|"optional for readiness wait"| Random
     Random --> Crypto["Cryptographic operation + key service"]
     Crypto --> FutureCrypto["Protocol · PKI · signing workflows"]
+    Crypto --> PKI["Certificate parse · path · trust policy"]
     Random --> Store["rm.security.secret-store"]
     SecretValue["Secret value resource model"] --> Store
     Claims["Protection claim vector"] --> Store
@@ -85,3 +86,15 @@ flowchart TD
 - [Cryptographic platform research](crypto-platform-research.md)
 - [Cryptographic conformance](crypto-conformance.md)
 - [Cryptographic benchmarks](crypto-benchmarks.md)
+- [Certificate, trust-store, and PKI-validation foundations](pki-README.md)
+- [Certificate parsing and evidence](pki-certificates.md)
+- [Trust stores, anchors, and distrust](pki-trust-stores.md)
+- [Path construction](pki-path-construction.md)
+- [Path validation and policy](pki-path-validation.md)
+- [Reference identity and name matching](pki-identity-matching.md)
+- [Revocation, status, and freshness](pki-revocation.md)
+- [PKI network retrieval and caching](pki-network-cache.md)
+- [Trust results, overrides, and lifecycle](pki-results-lifecycle.md)
+- [PKI platform research](pki-platform-research.md)
+- [PKI conformance](pki-conformance.md)
+- [PKI benchmarks](pki-benchmarks.md)

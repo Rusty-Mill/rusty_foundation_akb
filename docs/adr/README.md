@@ -83,5 +83,7 @@
 | [0079](0079-background-triggers-are-reconciliation-hints-not-work-authority.md) | Background triggers are reconciliation hints, not work authority | Accepted |
 | [0080](0080-key-handles-authorize-operations-not-key-material.md) | Key handles authorize operations, not key material | Accepted |
 | [0081](0081-cryptographic-policy-precedes-provider-selection.md) | Cryptographic policy precedes provider selection | Accepted |
+| [0082](0082-presented-certificates-are-candidates-not-a-chain.md) | Presented certificates are candidates, not a chain | Accepted |
+| [0083](0083-trust-results-are-context-bound-evidence-not-identity-or-authority.md) | Trust results are context-bound evidence, not identity or authority | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.
