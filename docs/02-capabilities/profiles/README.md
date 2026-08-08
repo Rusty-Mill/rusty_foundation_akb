@@ -33,7 +33,7 @@ The table is only a view. Each manifest defines exact contract ranges, predicate
 
 ## Windowed desktop extension
 
-[`rm.profile.foundation.windowed-desktop` 0.4.0](foundation-windowed-desktop.md) extends Desktop 1.0.0 with negotiated top-level windowing, graphics presentation, focused input/text composition, exact font/shaping/layout/raster infrastructure, semantic accessibility, user preferences, and native accessibility adapters. It remains intentionally incomplete until renderer/UI, editing, product semantics, and lifecycle contracts are selected.
+[`rm.profile.foundation.windowed-desktop` 0.5.0](foundation-windowed-desktop.md) extends Desktop 1.0.0 with negotiated top-level windowing, graphics presentation, focused input/text composition, exact text infrastructure, semantic accessibility/native adapters, and clipboard/drag-and-drop data transfer. It remains intentionally incomplete until renderer/UI, editing, product semantics/importers, and lifecycle contracts are selected.
 
 ## Version transition
 
@@ -41,7 +41,7 @@ Version 1.0.0 adds direct process launch/control to CLI, Desktop, and Server. Th
 
 ## Explicit gaps
 
-These profiles are incomplete for real applications because terminal, networking, configuration, observability, wall/calendar time, rendering/UI, editing, product-specific accessible semantics, localization/formatting, and audio contracts are not yet all specified. The windowed extension supplies window/presentation/input/text/accessibility infrastructure but not those product layers. Resolution reports must preserve the gaps; the foundation profile name prevents a false completeness claim.
+These profiles are incomplete for real applications because terminal, networking, configuration, observability, wall/calendar time, rendering/UI, editing, product-specific accessible semantics and data importers, localization/formatting, and audio contracts are not yet all specified. The windowed extension supplies window/presentation/input/text/accessibility/transfer infrastructure but not those product layers. Resolution reports must preserve the gaps; the foundation profile name prevents a false completeness claim.
 
 ## Shared prohibitions
 

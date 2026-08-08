@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.13.0
+**Version:** 1.14.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -242,6 +242,10 @@ Accessibility semantics are application/domain state independent of renderer out
 
 Accessibility invocations become versioned semantic action requests through the ordinary domain command path. They retain provenance but do not grant authority or bypass state, confirmation, sandbox, destructive-operation, or audit policy. Request acceptance, command completion, state commitment, and native notification are separate milestones ([ADR-0029](../adr/0029-accessibility-actions-use-domain-command-path.md)).
 
+Clipboard and drag-and-drop compose immutable typed data offers whose metadata can be inspected without rendering payloads. Materialization requests one exact representation under explicit size, time, resource, destination, authority, and conversion policy and returns a bounded async stream. Conversion provenance and source/offer lifetime remain explicit ([ADR-0030](../adr/0030-data-transfer-uses-lazy-typed-offers.md)).
+
+Cross-application move is a committed transfer, not a gesture result. The target selects, materializes, validates, and commits content before acknowledging success; only then may the source apply declared deletion/mutation. Target commit and source cleanup failures remain separate outcomes, and global atomicity is not implied ([ADR-0031](../adr/0031-move-is-a-committed-transfer.md)).
+
 ## 9. Execution and concurrency model
 
 Rusty Mill is **async-first and sync-complete**.
@@ -427,6 +431,8 @@ The [input foundations vertical slice](../02-capabilities/input/README.md) defin
 The [text, fonts, and layout vertical slice](../02-capabilities/text/README.md) defines typed Unicode positions, exact font resolution, shaping/cluster maps, bidi/line layout, caret/hit-test geometry, and rasterization boundaries. Editing models, widget semantics, application localization content, and platform accessibility adapters remain separate concerns. Its specifications remain Draft and cannot amend this model.
 
 The [accessibility foundations vertical slice](../02-capabilities/accessibility/README.md) defines application-owned semantic trees, accessible text ranges, focus/actions/events/live updates, user preferences, virtualization, and native adapter services. It requires end-to-end assistive-technology evidence in addition to headless semantic tests. Its specifications remain Draft and cannot amend this model.
+
+The [clipboard and drag-and-drop data-transfer vertical slice](../02-capabilities/data-transfer/README.md) defines typed lazy offers, clipboard ownership/generations, drag negotiation and commit, file/content promises, streaming, authority, privacy, accessibility, interoperability, and failure recovery. Data remains untrusted at every cross-process boundary. Its specifications remain Draft and cannot amend this model.
 
 ## 18. Deliberately unresolved choices
 

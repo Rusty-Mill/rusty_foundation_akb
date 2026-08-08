@@ -4,6 +4,8 @@
 
 This component consumes the platform [input foundation](../input/README.md). It does not observe native devices or run an IME itself; it translates already structured key, committed-text, pointer, paste, focus, and protocol-reply events into the negotiated terminal wire dialect.
 
+Paste payloads originate from the shared [data-transfer offer and clipboard service](../data-transfer/README.md). The terminal host chooses and materializes an exact text representation under size, encoding, control/newline, sensitivity, confirmation, and cancellation policy before this component applies terminal-mode encoding.
+
 ## Event classes
 
 | Event | Meaning |

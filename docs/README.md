@@ -27,6 +27,7 @@ The AKB is organized from stable intent to evolving detail.
 - [Input](02-capabilities/input/README.md)
 - [Text, fonts, and layout](02-capabilities/text/README.md)
 - [Accessibility](02-capabilities/accessibility/README.md)
+- [Clipboard and drag-and-drop data transfer](02-capabilities/data-transfer/README.md)
 
 ## Planned volumes
 

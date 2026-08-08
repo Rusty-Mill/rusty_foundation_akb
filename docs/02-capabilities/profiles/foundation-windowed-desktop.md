@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.4.0 |
+| Version | 0.5.0 |
 | Extends | [`rm.profile.foundation.desktop` 1.0.0](foundation-desktop.md) |
 | Purpose | Add native top-level window and graphics-presentation infrastructure without claiming a complete GUI toolkit |
 
@@ -41,9 +41,17 @@
 
 **RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0016:** Profile evidence includes representative native assistive technologies, user preference changes, virtualization, update storms, adapter restart, text/IME, secure content, and end-to-end action/focus/state convergence—not only automated tree inspection.
 
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0017:** Requires `rm.transfer.data-offer` `>=0.1.0,<0.2.0` plus clipboard and drag-and-drop services `>=0.1.0,<0.2.0`; file/content promises are conditional on products that export or import deferred files.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0018:** Clipboard reads/writes and drag sessions are user-action scoped by default. Background monitoring/history, remote synchronization, privileged data-control, and sensitive-content persistence are prohibited unless explicitly selected with authority and evidence.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0019:** Data enumeration is side-effect free; materialization is async, bounded, cancellable, and validates untrusted representation content. Paths/URLs do not convey ambient authority.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0020:** Copy, paste, drag, operation/target selection, progress, cancellation, and result have keyboard and assistive-technology paths with equivalent domain outcomes. Move follows target-commit/source-cleanup semantics.
+
 ## Whole-product gaps
 
-This profile does not supply a rendering command model, widget/UI framework, text editing model, images, gestures, clipboard/drag-and-drop, localization resources/formatting, or application lifecycle/session integration. Product-specific semantic roles/actions/content and accessible UX still belong to the product/framework. It cannot claim desktop-application completeness.
+This profile does not supply a rendering command model, widget/UI framework, text editing model, image codecs, gestures, localization resources/formatting, or application lifecycle/session integration. Product-specific semantic roles/actions/content, accepted transfer formats/importers, and accessible UX still belong to the product/framework. It cannot claim desktop-application completeness.
 
 ## Evidence gates
 
@@ -53,6 +61,7 @@ Input evidence additionally covers layout/IME diversity, keyboard-only operation
 
 ## History
 
+- **0.5.0:** Adds typed lazy data offers, clipboard, drag-and-drop, conditional file promises, transfer authority, and accessible-operation requirements.
 - **0.4.0:** Adds semantic-tree, accessible text/action/event, preference, native adapter, and assistive-technology evidence requirements.
 - **0.3.0:** Adds exact font resolution, shaping, layout, rasterization, Unicode-version, and semantic-mapping requirements.
 - **0.2.0:** Adds keyboard, pointer, conditional touch, text input/composition, provenance, and authority constraints.
