@@ -3,8 +3,8 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.8.0 |
-| Extends | [`rm.profile.foundation.server` 1.12.0](foundation-server.md) |
+| Version | 0.9.0 |
+| Extends | [`rm.profile.foundation.server` 1.13.0](foundation-server.md) |
 | Purpose | Operate software publication, authenticated repository metadata, mirrors, advisories, and emergency response without claiming a complete hosted registry product |
 
 ## Required composition
@@ -45,8 +45,11 @@
 
 **RM-PROFILE-REPOSITORY-OPERATOR-0017:** When a repository selects a database, it composes Server 1.12.0 with exact release/channel/advisory/namespace schemas and constraints, publication transaction/idempotency boundaries, staged migrations, immutable audit/change evidence, backup/PITR and failover policy, semantic restore verification, and no inference that database commit proves signed metadata, mirror, or client visibility.
 
+**RM-PROFILE-REPOSITORY-OPERATOR-0018:** When a repository selects object storage, it composes Server 1.13.0 with digest-verified immutable artifact descriptors, exact namespace/key/generation and metadata authority, conditional publication and channel-reference updates, quarantined multipart upload, delegated-download limits, inventory/retention/legal-hold/garbage-collection policy, mirror/replication recovery, and no inference that object commit proves authenticated metadata publication or client adoption.
+
 ## History
 
+- **0.9.0:** Rebases on Server 1.13.0 and constrains optional object storage to verified immutable artifacts, conditional publication, bounded delegation, retention/GC, and mirror recovery.
 - **0.8.0:** Rebases on Server 1.12.0 and constrains optional databases to repository invariants, staged migrations, boundary-scoped publication, and verified recovery.
 - **0.7.0:** Rebases on Server 1.11.0 and constrains optional coordination to fenced repository actors, precise consistency, quorum policy, and recovery evidence.
 - **0.6.0:** Rebases on Server 1.10.0 and constrains optional messaging/RPC to exact repository schemas, command/event authority, staged receipts, and publication reconciliation.

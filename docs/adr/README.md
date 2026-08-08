@@ -105,5 +105,7 @@
 | [0101](0101-consistency-is-a-history-property-not-a-strength-label.md) | Consistency is a history property, not a strength label | Accepted |
 | [0102](0102-database-commit-is-boundary-scoped-evidence.md) | Database commit is boundary-scoped evidence | Accepted |
 | [0103](0103-schema-migration-is-a-compatibility-rollout.md) | Schema migration is a compatibility rollout | Accepted |
+| [0104](0104-content-addresses-bind-exact-bytes-not-provider-object-identity.md) | Content addresses bind exact bytes, not provider object identity | Accepted |
+| [0105](0105-multipart-completion-is-a-conditional-object-commit.md) | Multipart completion is a conditional object commit | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

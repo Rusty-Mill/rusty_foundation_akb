@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.40.0 |
+| Version | 0.41.0 |
 | Extends | [`rm.profile.foundation.desktop` 1.0.0](foundation-desktop.md) |
 | Purpose | Add native top-level window and graphics-presentation infrastructure without claiming a complete GUI toolkit |
 
@@ -311,6 +311,12 @@
 
 **RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0151:** Evidence covers embedded filesystem/process faults and service databases, types/query binding, session/pool identity, transaction histories/durability, mixed-version migrations/offline clients, change/sync reconciliation, encrypted backup/restore/PITR, replication/failover, privacy/i18n/accessibility, and staged latency/energy benchmarks.
 
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0152:** Object/blob storage `>=0.1.0,<0.2.0` is conditional for remote assets, backups, collaboration payloads, or content-addressed caches. It binds namespace/key/provider generation separately from verified content descriptors, exact user/tenant authority, transfer limits, offline/background policy, encryption/retention, and lifecycle.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0153:** Downloads bind exact generations and verify declared length and digest before trusted use. Uploads, including multipart staging, become visible only through conditional completion; conflicts, archive retrieval, quota/storage pressure, interrupted transfer, recovery, retention, and deletion state remain accessible and user-controllable.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0154:** Evidence covers range/resumed and parallel transfer, local-cache corruption and privacy partitioning, multipart crash/abort/complete races, conditional conflicts, delegated URL expiry/revocation, version restore, lifecycle/legal hold, replication/failover, accessibility/i18n, and staged network/energy benchmarks.
+
 ## Whole-product gaps
 
 This profile does not supply a rendering command model, widget/UI framework, text editing model, image/audio codecs, media containers/graphs, gestures, or translated product resources. Product-specific semantic roles/actions/content, accepted transfer formats/importers, locale coverage, audio policy/content, and accessible UX still belong to the product/framework. It cannot claim desktop-application completeness.
@@ -323,6 +329,7 @@ Input evidence additionally covers layout/IME diversity, keyboard-only operation
 
 ## History
 
+- **0.41.0:** Adds conditional generation-bound object/blob storage, verified content addressing, multipart commit, delegated access, retention/recovery, accessibility, conformance, and benchmarks.
 - **0.40.0:** Adds conditional typed persistence/databases, transaction/durability evidence, staged migrations, offline/change reconciliation, backup/restore, replication, accessibility, conformance, and benchmarks.
 - **0.39.0:** Adds conditional distributed coordination, resource-enforced fencing, precise consistency, offline/conflict evidence, transactions/recovery, accessibility, conformance, and benchmarks.
 - **0.38.0:** Adds conditional messaging/RPC, schema evolution, streaming, broker delivery/settlement, explicit replay/idempotency/reconciliation, accessible state, conformance, and benchmarks.

@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 1.12.0 |
+| Version | 1.13.0 |
 | Purpose | Long-running non-interactive service foundation with bounded shutdown and protected credentials |
 
 ## Workload assumptions
@@ -62,6 +62,9 @@ No interactive desktop session, unattended restart, concurrent I/O, explicit ser
 - **RM-PROFILE-FOUNDATION-SERVER-0044:** Application persistence/database service `>=0.1.0,<0.2.0` is conditional for durable typed application state. It binds logical schema/query, database/provider/topology generations, principal/tenant, sessions/pools, transaction/isolation/durability, constraints/indexes, migration/change, backup/recovery/replication, limits, and authority.
 - **RM-PROFILE-FOUNDATION-SERVER-0045:** Commit proves only the selected database boundary; durability, replica visibility, archive/PITR, change publication, caller observation, and external effect remain separate. Schema changes use staged compatible expand/deploy/backfill/validate/switch/contract plans with explicit destructive and recovery gates.
 - **RM-PROFILE-FOUNDATION-SERVER-0046:** Evidence covers logical/provider types and query binding, session/pool isolation, transaction histories/durability/unknown commits, constraints/indexes/concurrency, mixed-version migrations, change/outbox gaps, backup/semantic restore/PITR, replication/failover/divergence, privacy/accessibility, provider differentials, and staged fault benchmarks.
+- **RM-PROFILE-FOUNDATION-SERVER-0047:** Object/blob storage `>=0.1.0,<0.2.0` is conditional for durable byte objects, backups, artifacts, large payloads, or content-addressed graphs. It binds namespace/key/provider generation separately from verified content descriptor, principal/tenant, transfer and cost limits, encryption/retention, replication, and authority.
+- **RM-PROFILE-FOUNDATION-SERVER-0048:** Reads, copies, metadata changes, deletes, and restores bind exact generations. Multipart/resumable parts are staging state; only conditional completion commits a new object generation. Provider validators are not portable content addresses, and storage acceptance does not prove digest verification, replication, retention, downstream visibility, or domain effect.
+- **RM-PROFILE-FOUNDATION-SERVER-0049:** Evidence covers conditional histories, ranges/resume/parallel transfer, multipart crash/abort/complete races, checksums and independent digest verification, listing/inventory/event gaps, delegated access, lifecycle/legal hold, version restore, replication/failover, privacy/accessibility, provider differentials, and staged fault/cost benchmarks.
 
 ## Operational constraints
 
@@ -69,6 +72,7 @@ Deadline timers and cancellation support bounded multi-phase shutdown. Sync path
 
 ## History
 
+- **1.13.0:** Adds conditional generation-bound object/blob storage, verified content addressing, multipart commit, delegated access, lifecycle/retention, replication/recovery, conformance, and benchmarks.
 - **1.12.0:** Adds conditional typed persistence/databases, transaction/durability boundaries, constraints/indexes, staged migrations, change streams, backup/PITR, replication/failover, conformance, and benchmarks.
 - **1.11.0:** Adds conditional distributed membership, leases/fencing, election/locks, consensus, precise consistency histories, transactions/workflows, recovery, conformance, and benchmarks.
 - **1.10.0:** Adds conditional typed messaging/RPC, schema evolution, streaming, broker delivery/settlement, explicit retry/idempotency/reconciliation, effect-boundary conformance, and benchmarks.

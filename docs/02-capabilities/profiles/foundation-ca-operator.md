@@ -3,8 +3,8 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.7.0 |
-| Extends | [`rm.profile.foundation.server` 1.12.0](foundation-server.md) |
+| Version | 0.8.0 |
+| Extends | [`rm.profile.foundation.server` 1.13.0](foundation-server.md) |
 | Purpose | Operate registration, certificate issuance, renewal, status, and CA lifecycle without claiming a complete public or enterprise CA product |
 
 ## Required composition
@@ -37,8 +37,11 @@
 
 **RM-PROFILE-CA-OPERATOR-0013:** When a CA selects a database, it composes Server 1.12.0 with exact account/request/serial/issuance/status/audit schemas and constraints, transaction-to-key-operation/release reconciliation, staged migrations, append-safe change evidence, encrypted backup/PITR and failover, semantic restore verification, and no inference that database commit proves certificate release, revocation propagation, or relying-party observation.
 
+**RM-PROFILE-CA-OPERATOR-0014:** When a CA selects object storage, it composes Server 1.13.0 with exact generation-bound encrypted objects and independently verified content descriptors for certificates, CRLs, audit evidence, ceremony records, and backups; least-privilege delegated access; conditional publication; retention/legal hold/erasure policy; replicated recovery; and no inference that object commit proves ledger consistency, status publication, transparency inclusion, or relying-party observation.
+
 ## History
 
+- **0.8.0:** Rebases on Server 1.13.0 and constrains optional object storage to generation-bound encrypted evidence, verified content, conditional publication, retention, and recovery.
 - **0.7.0:** Rebases on Server 1.12.0 and constrains optional databases to CA ledger invariants, staged migrations, key/effect reconciliation, and verified recovery.
 - **0.6.0:** Rebases on Server 1.11.0 and constrains optional coordination to fenced CA actors, precise ledger/status consistency, quorum policy, and disaster recovery.
 - **0.5.0:** Rebases on Server 1.10.0 and constrains optional messaging/RPC to exact CA schemas, separated authority, staged effects, durable idempotency, and reconciliation.
