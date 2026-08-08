@@ -16,6 +16,8 @@ Every report identifies capability/contract version, provider and artifact diges
 | SEC-AUTH-004 | Missing evidence and indeterminate policy fail closed at enforcement boundaries |
 | SEC-AUTH-005 | Advisory permit never suppresses a later native denial |
 | SEC-AUTH-006 | Audit output excludes configured secret and credential canaries |
+| SEC-AUTH-007 | Transfer cancellation and receiver rejection preserve unambiguous ownership |
+| SEC-AUTH-008 | Each claimed attenuation enforcement level survives its documented bypass probes |
 
 ## `rm.security.random` assertions
 
@@ -37,3 +39,13 @@ Statistical batteries may detect gross provider or integration failures but cann
 
 Run supported tests in ordinary and sandboxed contexts, under resource pressure, during high concurrency, and across process lifecycle events. Platform-specific probes must confirm the actual native source rather than inferring it from the OS name.
 
+## Restricted execution assertions
+
+| ID | Assertion |
+|---|---|
+| SEC-RESTRICT-001 | Child-controlled code cannot execute before required restrictions are verified |
+| SEC-RESTRICT-002 | Only allowlisted handles/descriptors, environment, working directory, and IPC are present |
+| SEC-RESTRICT-003 | Filesystem, network, process-control, and descendant attempts match the manifest and disclosed enforcement levels |
+| SEC-RESTRICT-004 | Setup cancellation and every injected launch failure leave no running unrestricted child or leaked prepared authority |
+| SEC-RESTRICT-005 | Required unsupported controls fail construction; permitted degradation is disclosed before release |
+| SEC-RESTRICT-006 | Supervisor failure and termination obey declared descendant and cleanup policy |

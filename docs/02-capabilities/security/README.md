@@ -9,7 +9,7 @@
 
 The security domain supplies semantic building blocks for least-authority operation. It does not replace Windows access checks, Linux credentials and security modules, macOS sandbox enforcement, application authorization policy, or specialist cryptographic protocols.
 
-This slice establishes the authority vocabulary and one narrow, independently testable capability: cryptographically secure random bytes. Restricted-process construction, secret storage, user authentication, credential brokers, signing, and general cryptographic primitives remain later analyses.
+This slice establishes the authority vocabulary, authority attenuation, restricted-execution composition, and one independent cryptographic service: secure random bytes. Secret storage, user authentication, credential brokers, signing, and general cryptographic primitives remain later analyses.
 
 ## Model
 
@@ -45,7 +45,8 @@ The protected operation—not a prior policy query—is the enforcement point. A
 ```mermaid
 flowchart TD
     Model["Authority semantic model"] --> Resolve["rm.filesystem.resolve"]
-    Model --> FutureIsolation["Future restricted execution service"]
+    Model --> Attenuate["rm.security.attenuate"]
+    Attenuate --> Isolation["Restricted execution service"]
     Random["rm.security.random"]
     Cancel["rm.runtime.cancellation"] -.->|"optional for readiness wait"| Random
     Random --> FutureSecrets["Future secret generation and storage"]
@@ -55,10 +56,13 @@ flowchart TD
 ## Documents
 
 - [Authority model](authority-model.md)
+- [`rm.security.attenuate`](attenuation.md)
+- [Authority delegation model](delegation-model.md)
 - [Policy and decision model](policy-model.md)
 - [Threat model](threat-model.md)
 - [Platform research](platform-research.md)
 - [`rm.security.random`](random.md)
+- [Restricted execution platform service](restricted-execution.md)
 - [Conformance specification](conformance.md)
 - [Benchmark specification](benchmarks.md)
-
+- [Cross-domain security review checklist](review-checklist.md)
