@@ -58,4 +58,4 @@ The four [foundation profiles](../02-capabilities/profiles/README.md) now exerci
 
 ## Active fourth slice
 
-The [process foundations analysis](../02-capabilities/process/README.md) defines direct executable launch, native argument/environment semantics, explicit resource inheritance, child identity/lifecycle, and startup milestones. Its next gates are process control/group semantics, stdio and pipeline composition, executable search policy, and integration into revised profile versions.
+The [process foundations analysis](../02-capabilities/process/README.md) defines direct launch, native arguments/environment, explicit inheritance, child lifecycle/control, executable resolution, containment-aware supervision, and startup milestones. Its next gates are stdio and pipe composition, process-control quality evidence, and integration into revised profile versions.

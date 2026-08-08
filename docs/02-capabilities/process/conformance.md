@@ -21,7 +21,27 @@ Reports bind contract/provider/artifact versions to OS/kernel, architecture, run
 | PROC-SPAWN-009 | 0014, 0015 | Validate error mapping and scan logs/traces/metrics/crash/report sinks for canaries |
 | PROC-SPAWN-010 | 0016 | Verify base spawn does not claim sandbox, descendant, service, or restricted-identity guarantees |
 
+## Control and supervision assertions
+
+| ID | Assertion |
+|---|---|
+| PROC-CONTROL-001 | PID reuse and stale numeric identifiers cannot redirect an action from the owned child object |
+| PROC-CONTROL-002 | Accepted control dispatch is never reported as terminal completion without wait/status evidence |
+| PROC-CONTROL-003 | Cooperative and interrupt actions never silently become forced termination |
+| PROC-SUPERVISE-001 | Descendant creation/exit races match the declared dynamic membership semantics |
+| PROC-SUPERVISE-002 | Breakaway, nesting, supervisor failure, and child-created groups/jobs match the claimed P0–P3 level |
+| PROC-SUPERVISE-003 | Root exit, known-set exit, and contained-set empty are distinguished |
+| PROC-SUPERVISE-004 | Phased shutdown reports each dispatch, timeout, escalation, and terminal reconciliation outcome |
+
+## Executable-resolution assertions
+
+| ID | Assertion |
+|---|---|
+| PROC-RESOLVE-001 | Changing ambient current directory, `PATH`, or platform search settings cannot affect a fixed explicit request |
+| PROC-RESOLVE-002 | Root order, suffix order, case policy, and rejection reasons deterministically select the expected candidate |
+| PROC-RESOLVE-003 | Traversal, separator, absolute, device, link/reparse, inaccessible, and insufficient-quality cases fail as specified |
+| PROC-RESOLVE-004 | Concurrent candidate replacement is prevented by the claimed mechanism or disclosed and detected by identity policy |
+
 ## Cross-platform vectors
 
 The same logical child probe prints length-delimited argument/environment observations to an explicitly inherited channel. Expected vectors are generated without shell syntax. Platform-specific tests cover Windows command-line conventions and handle lists, Linux pidfds/fd closing and post-spawn failure, and macOS spawn attributes, sandbox context, and lifecycle guidance.
-

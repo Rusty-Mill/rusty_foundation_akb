@@ -20,7 +20,10 @@ flowchart TD
     File["rm.filesystem.file resources"] -.->|"optional stdio/inheritance"| Spawn
     Cancel["rm.runtime.cancellation"] -.->|"optional startup/wait observation"| Spawn
     Clock["rm.time.monotonic-clock"] -.->|"optional timestamps"| Spawn
+    Resolve["rm.process.executable-resolve"] --> Spawn
     Spawn --> Child["Owned child resource"]
+    Child --> Control["rm.process.control"]
+    Control --> Supervision["Process supervision service"]
     Attenuate["rm.security.attenuate"] -.-> Restricted["Restricted execution service"]
     Spawn --> Restricted
 ```
@@ -41,7 +44,9 @@ flowchart TD
 - [Launch and argument model](launch-model.md)
 - [Environment model](environment-model.md)
 - [Platform research](platform-research.md)
+- [`rm.process.executable-resolve`](executable-resolve.md)
 - [`rm.process.spawn`](spawn.md)
+- [`rm.process.control`](control.md)
+- [Process supervision platform service](supervision.md)
 - [Conformance specification](conformance.md)
 - [Benchmark specification](benchmarks.md)
-
