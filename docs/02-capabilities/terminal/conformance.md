@@ -45,3 +45,16 @@ An emulator/accessibility provider adds separate evidence for logical text prese
 | TERM-RECORD-002 | Password/secure input, redaction, loss/gap, truncation, corruption, partial-finalization, and delete scenarios match claims |
 | TERM-RECORD-003 | R1/R2 replay reproduces checkpoint/state and reports first divergence across artifact/configuration mutations |
 | TERM-RECORD-004 | Ordinary playback cannot deliver recorded input to a live process |
+
+## Renderer assertions
+
+| ID | Assertion |
+|---|---|
+| TERM-RENDER-001 | Every delta/chunking/coalescing path produces the same final pixels and hit-test mapping as full redraw at the same revision |
+| TERM-RENDER-002 | Versioned Unicode/font corpus covers combining, wide/ambiguous, emoji, variation, fallback, bidi/control, ligature, and missing-glyph policies |
+| TERM-RENDER-003 | Fractional scale, resize, display migration, padding, and long pointer round trips show no cumulative cell drift |
+| TERM-RENDER-004 | Attribute/color precedence, forced colors, high contrast, reduced motion, blink, bell, selection, cursor, and hyperlink cases match policy |
+| TERM-RENDER-005 | Surface/device loss at every frame phase reconstructs from logical state without emulator mutation or stale-frame claim |
+| TERM-RENDER-006 | Capture canaries remain absent from unauthorized screenshots, thumbnails, GPU diagnostics, crash artifacts, and telemetry |
+
+Golden images are scoped to exact renderer, font artifacts, rasterizer, scale, color space, platform, and driver class. Semantic cell/run comparisons remain the cross-provider oracle; pixel equality is not claimed across unrelated text stacks.

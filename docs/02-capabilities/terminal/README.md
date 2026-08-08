@@ -39,6 +39,7 @@ flowchart TD
 - [Terminal host domain framework](host-framework.md)
 - [Terminal emulator state model](emulator-model.md)
 - [Structured input and IME model](input-model.md)
+- [Terminal renderer adapter model](renderer-model.md)
 - [Accessibility and semantic presentation](accessibility-model.md)
 - [Recording and replay service](recording-replay.md)
 - [`rm.terminal.pseudoterminal`](pseudoterminal.md)

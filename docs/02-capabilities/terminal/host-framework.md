@@ -33,6 +33,7 @@ flowchart LR
 - The parser/emulator is a deterministic state transition over ordered bytes, resize/control events, and an explicit dialect/version.
 - Protocol replies are generated on a separately typed path from user input and remain causally linked to the triggering query.
 - Renderer and accessibility adapters consume logical deltas/snapshots; they never parse raw untrusted terminal bytes independently.
+- The [renderer adapter](renderer-model.md) preserves logical grid truth while owning fonts, shaping, scale, color, damage, frame scheduling, user visual preferences, and device/surface recovery.
 - Input encoding consumes structured events plus the exact emulator mode revision, avoiding races between mode changes and keystrokes.
 - Clipboard, hyperlinks, notifications, file transfer, images, and host commands are privileged protocol effects mediated by explicit policy.
 - Recording is off by default and cannot be enabled merely because observability is enabled.
@@ -41,4 +42,3 @@ flowchart LR
 ## Completion boundary
 
 An end-user terminal product is conformant only when session, parser/emulator, input, rendering, accessibility, i18n, security-policy, and lifecycle evidence all satisfy its product profile. Individual component conformance never implies whole-host conformance.
-
