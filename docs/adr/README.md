@@ -29,5 +29,7 @@
 | [0025](0025-input-provenance-is-not-authority.md) | Input provenance is not authority | Accepted |
 | [0026](0026-semantic-text-is-not-glyph-output.md) | Semantic text is not glyph output | Accepted |
 | [0027](0027-font-resolution-precedes-shaping.md) | Font resolution precedes reproducible shaping | Accepted |
+| [0028](0028-accessibility-semantics-are-domain-state.md) | Accessibility semantics are domain state, not adapter output | Accepted |
+| [0029](0029-accessibility-actions-use-domain-command-path.md) | Accessibility actions use the ordinary domain command path | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

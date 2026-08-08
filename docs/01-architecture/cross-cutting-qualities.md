@@ -14,6 +14,8 @@ Specify latency, throughput, memory, allocation, startup, and binary-size expect
 
 User-facing capabilities must preserve semantic roles, focus and input behavior, assistive-technology interoperability, user preferences, and accessible fallback paths.
 
+The normative [accessibility foundation](../02-capabilities/accessibility/README.md) elaborates application-owned semantic state, revisioned text/geometry, actions through domain commands, live updates, virtualization, preferences, platform adapters, conformance, and performance evidence. A native adapter or automated checker alone does not establish accessible user outcomes.
+
 ## Internationalization
 
 Text, locale, time, collation, input, and layout capabilities must avoid implicit host-locale assumptions. Encoding and normalization behavior must be explicit.

@@ -37,3 +37,4 @@ Each domain will be decomposed into common, optional/advanced, and platform-spec
 - [Graphics and presentation vertical slice](graphics/README.md) — Draft
 - [Input foundations vertical slice](input/README.md) — Draft
 - [Text, fonts, and layout vertical slice](text/README.md) — Draft
+- [Accessibility foundations vertical slice](accessibility/README.md) — Draft

@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.3.0 |
+| Version | 0.4.0 |
 | Extends | [`rm.profile.foundation.desktop` 1.0.0](foundation-desktop.md) |
 | Purpose | Add native top-level window and graphics-presentation infrastructure without claiming a complete GUI toolkit |
 
@@ -33,9 +33,17 @@
 
 **RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0012:** User-facing text supports semantic copy/accessibility mappings, mixed-direction layout, IME caret geometry, scale changes, zoom, high contrast/forced colors, and missing-font disclosure under the selected workload.
 
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0013:** Requires `rm.accessibility.semantic-tree` and `rm.accessibility.user-preferences` `>=0.1.0,<0.2.0` plus platform accessibility adapter service `>=0.1.0,<0.2.0` for every supported desktop platform.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0014:** Semantic snapshots, text ranges, geometry, focus, actions, and events bind exact domain/text/layout/window revisions. Pixels, glyphs, and native adapter state are not the semantic source of truth.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0015:** Every user action and product state is keyboard/assistive-technology reachable with equivalent domain outcome; accessibility requests use ordinary validation/authorization and cannot bypass confirmation or destructive-operation policy.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0016:** Profile evidence includes representative native assistive technologies, user preference changes, virtualization, update storms, adapter restart, text/IME, secure content, and end-to-end action/focus/state convergence—not only automated tree inspection.
+
 ## Whole-product gaps
 
-This profile does not supply a rendering command model, widget/UI framework, text editing model, images, gestures, clipboard/drag-and-drop, accessibility content tree/platform adapter, localization resources/formatting, or application lifecycle/session integration. It cannot claim desktop-application completeness.
+This profile does not supply a rendering command model, widget/UI framework, text editing model, images, gestures, clipboard/drag-and-drop, localization resources/formatting, or application lifecycle/session integration. Product-specific semantic roles/actions/content and accessible UX still belong to the product/framework. It cannot claim desktop-application completeness.
 
 ## Evidence gates
 
@@ -45,6 +53,7 @@ Input evidence additionally covers layout/IME diversity, keyboard-only operation
 
 ## History
 
+- **0.4.0:** Adds semantic-tree, accessible text/action/event, preference, native adapter, and assistive-technology evidence requirements.
 - **0.3.0:** Adds exact font resolution, shaping, layout, rasterization, Unicode-version, and semantic-mapping requirements.
 - **0.2.0:** Adds keyboard, pointer, conditional touch, text input/composition, provenance, and authority constraints.
 - **0.1.0:** Initial windowing and graphics-presentation infrastructure profile.

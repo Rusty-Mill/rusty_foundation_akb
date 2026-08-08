@@ -33,7 +33,7 @@ The table is only a view. Each manifest defines exact contract ranges, predicate
 
 ## Windowed desktop extension
 
-[`rm.profile.foundation.windowed-desktop` 0.3.0](foundation-windowed-desktop.md) extends Desktop 1.0.0 with negotiated top-level windowing, graphics presentation infrastructure, focused keyboard/pointer/conditional-touch input, text composition, and exact font/shaping/layout/raster infrastructure. It remains intentionally incomplete until renderer/UI, editing, accessibility adapters, and lifecycle contracts are selected.
+[`rm.profile.foundation.windowed-desktop` 0.4.0](foundation-windowed-desktop.md) extends Desktop 1.0.0 with negotiated top-level windowing, graphics presentation, focused input/text composition, exact font/shaping/layout/raster infrastructure, semantic accessibility, user preferences, and native accessibility adapters. It remains intentionally incomplete until renderer/UI, editing, product semantics, and lifecycle contracts are selected.
 
 ## Version transition
 
@@ -41,7 +41,7 @@ Version 1.0.0 adds direct process launch/control to CLI, Desktop, and Server. Th
 
 ## Explicit gaps
 
-These profiles are incomplete for real applications because terminal, networking, configuration, observability, wall/calendar time, rendering/UI, editing, accessibility, localization/formatting, and audio contracts are not yet all specified. The windowed extension supplies window/presentation/input/text infrastructure but not those product layers. Resolution reports must preserve the gaps; the foundation profile name prevents a false completeness claim.
+These profiles are incomplete for real applications because terminal, networking, configuration, observability, wall/calendar time, rendering/UI, editing, product-specific accessible semantics, localization/formatting, and audio contracts are not yet all specified. The windowed extension supplies window/presentation/input/text/accessibility infrastructure but not those product layers. Resolution reports must preserve the gaps; the foundation profile name prevents a false completeness claim.
 
 ## Shared prohibitions
 

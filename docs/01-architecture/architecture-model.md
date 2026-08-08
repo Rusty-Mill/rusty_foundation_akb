@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.12.0
+**Version:** 1.13.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -238,6 +238,10 @@ Semantic Unicode text remains authoritative across editing, text services, layou
 
 Font discovery/resolution precedes reproducible shaping. It converts policy plus a versioned collection snapshot into an immutable ordered plan of exact artifact, face, variation, fallback, trust, and license identities. Shaping consumes that plan without ambient discovery or network access ([ADR-0027](../adr/0027-font-resolution-precedes-shaping.md)). Segmentation, bidi, shaping, line layout, and rasterization remain separately versioned stages.
 
+Accessibility semantics are application/domain state independent of renderer output and native API vocabularies. Applications publish immutable revisioned roles, states, relationships, focus, text/ranges, geometry, actions, and live-update intent; UI Automation, AT-SPI, and macOS Accessibility are adapter mappings with declared variance ([ADR-0028](../adr/0028-accessibility-semantics-are-domain-state.md)). Pixels, glyphs, and untrusted content cannot establish privileged semantic truth.
+
+Accessibility invocations become versioned semantic action requests through the ordinary domain command path. They retain provenance but do not grant authority or bypass state, confirmation, sandbox, destructive-operation, or audit policy. Request acceptance, command completion, state commitment, and native notification are separate milestones ([ADR-0029](../adr/0029-accessibility-actions-use-domain-command-path.md)).
+
 ## 9. Execution and concurrency model
 
 Rusty Mill is **async-first and sync-complete**.
@@ -421,6 +425,8 @@ The [graphics and presentation vertical slice](../02-capabilities/graphics/READM
 The [input foundations vertical slice](../02-capabilities/input/README.md) defines keyboard, pointer, touch, focus/capture routing, provenance, and a revision-bound text composition service. Shortcut resolution, widget focus, editing behavior, gestures, terminal encoding, and input injection remain higher-layer or separate capability concerns. Its specifications remain Draft and cannot amend this model.
 
 The [text, fonts, and layout vertical slice](../02-capabilities/text/README.md) defines typed Unicode positions, exact font resolution, shaping/cluster maps, bidi/line layout, caret/hit-test geometry, and rasterization boundaries. Editing models, widget semantics, application localization content, and platform accessibility adapters remain separate concerns. Its specifications remain Draft and cannot amend this model.
+
+The [accessibility foundations vertical slice](../02-capabilities/accessibility/README.md) defines application-owned semantic trees, accessible text ranges, focus/actions/events/live updates, user preferences, virtualization, and native adapter services. It requires end-to-end assistive-technology evidence in addition to headless semantic tests. Its specifications remain Draft and cannot amend this model.
 
 ## 18. Deliberately unresolved choices
 

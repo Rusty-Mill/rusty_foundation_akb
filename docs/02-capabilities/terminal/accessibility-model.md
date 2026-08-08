@@ -2,6 +2,8 @@
 
 **Status:** Draft cross-cutting contract 0.1.0
 
+This terminal-specific semantic view is a domain producer for the shared [accessibility foundation](../accessibility/README.md). The terminal framework owns viewport/history/cursor/selection meaning; the shared semantic-tree and platform-adapter contracts carry it to UI Automation, AT-SPI, and macOS Accessibility without reparsing bytes or pixels.
+
 ## Principle
 
 The accessibility surface is derived from the emulator's logical state and trusted semantic annotations, not pixels and not reparsing raw escape sequences. A terminal is highly dynamic and two-dimensional; naïvely announcing every cell mutation is unusable.
@@ -26,4 +28,3 @@ The accessibility surface is derived from the emulator's logical state and trust
 - **RM-TERMINAL-ACCESS-0009:** Platform accessibility adapters **MUST** expose equivalent semantic outcomes while documenting API-specific variance; a web ARIA mapping is not the universal model.
 
 WAI-ARIA's `log` and live-region concepts are useful mappings for web hosts, while Windows UI Automation and macOS Accessibility require native adapters. The semantic contract above them remains platform-neutral.
-
