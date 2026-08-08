@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.2.0 |
+| Version | 0.3.0 |
 | Extends | [`rm.profile.foundation.desktop` 1.0.0](foundation-desktop.md) |
 | Purpose | Add native top-level window and graphics-presentation infrastructure without claiming a complete GUI toolkit |
 
@@ -27,9 +27,15 @@
 
 **RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0009:** Editable text targets use the text-input service for committed/provisional text and surrounding context. Mapping key events independently to text is prohibited where it can duplicate native text service output.
 
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0010:** Requires `rm.text.font-resolution` and `rm.text.shaping` `>=0.1.0,<0.2.0`, text layout service `>=0.1.0,<0.2.0`, and a compatible glyph-rasterization adapter for user-visible text.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0011:** Text/font resolution binds exact Unicode/CLDR, font artifact/face/variation, shaping/layout, and raster provider evidence. Ambient font substitution inside shaping is prohibited.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0012:** User-facing text supports semantic copy/accessibility mappings, mixed-direction layout, IME caret geometry, scale changes, zoom, high contrast/forced colors, and missing-font disclosure under the selected workload.
+
 ## Whole-product gaps
 
-This profile does not supply a rendering command model, widget/UI framework, text editing model, text shaping/fonts, images, gestures, clipboard/drag-and-drop, accessibility content tree, localization, or application lifecycle/session integration. It cannot claim desktop-application completeness.
+This profile does not supply a rendering command model, widget/UI framework, text editing model, images, gestures, clipboard/drag-and-drop, accessibility content tree/platform adapter, localization resources/formatting, or application lifecycle/session integration. It cannot claim desktop-application completeness.
 
 ## Evidence gates
 
@@ -39,5 +45,6 @@ Input evidence additionally covers layout/IME diversity, keyboard-only operation
 
 ## History
 
+- **0.3.0:** Adds exact font resolution, shaping, layout, rasterization, Unicode-version, and semantic-mapping requirements.
 - **0.2.0:** Adds keyboard, pointer, conditional touch, text input/composition, provenance, and authority constraints.
 - **0.1.0:** Initial windowing and graphics-presentation infrastructure profile.

@@ -27,5 +27,7 @@
 | [0023](0023-presentation-is-a-graphics-service.md) | Presentation is a graphics service over a window surface | Accepted |
 | [0024](0024-text-input-is-not-keyboard-input.md) | Text input is not keyboard input | Accepted |
 | [0025](0025-input-provenance-is-not-authority.md) | Input provenance is not authority | Accepted |
+| [0026](0026-semantic-text-is-not-glyph-output.md) | Semantic text is not glyph output | Accepted |
+| [0027](0027-font-resolution-precedes-shaping.md) | Font resolution precedes reproducible shaping | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

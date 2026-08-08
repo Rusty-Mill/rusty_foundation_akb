@@ -35,3 +35,4 @@ Renderer claims form a vector: supported scripts/emoji, font fallback fidelity, 
 
 The adapter consumes a surface/presentation capability and display metrics from future windowing/graphics domains. It may have software, GPU, or remote implementations. Native handles and graphics APIs remain behind those providers; the terminal framework sees surface generation, size/scale/color properties, frame timing, damage, and loss/recovery outcomes.
 
+The adapter uses the shared [text/font/shaping/rasterization foundation](../text/README.md) but retains terminal-specific cell allocation and width policy. Font resolution produces exact artifact identities, shaping produces cluster maps constrained to cells, and rasterization produces visual glyph data; none may redefine emulator text, cell occupancy, cursor position, selection, or accessibility reading order.
