@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.9.0
+**Version:** 1.10.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -226,6 +226,10 @@ Portable window state is negotiated rather than synchronously assigned. Requests
 
 Window logical, surface-pixel, display-logical, and backend-native coordinates are distinct spaces. Conversion uses an explicit revision-bound transform and declared rounding; physical DPI and global placement are optional observations rather than universal truths ([ADR-0021](../adr/0021-coordinate-spaces-are-typed.md)). Windowing owns presentation-surface lifetime and generation, while graphics owns rendering and presentation mechanics.
 
+Graphics providers are selected against exact versioned workload vectors rather than API names or a scalar acceleration label. The base architecture does not standardize a universal rendering command interface before multiple concrete renderers establish shared semantics ([ADR-0022](../adr/0022-graphics-selection-uses-workload-contracts.md)). Devices, queues, resources, synchronization, and evidence are scoped to immutable device epochs; loss requires explicit terminal classification and re-resolution.
+
+Windowing owns the presentation-surface generation. A graphics presentation service composes that surface with device, queue, image-pool, synchronization, color, and frame policy. Frame leases are bounded; submission, presentation acceptance, and observed display are distinct milestones; reconfiguration creates a new session generation ([ADR-0023](../adr/0023-presentation-is-a-graphics-service.md)).
+
 ## 9. Execution and concurrency model
 
 Rusty Mill is **async-first and sync-complete**.
@@ -403,6 +407,8 @@ The [runtime and time vertical slice](../02-capabilities/runtime-time/README.md)
 The [filesystem foundations vertical slice](../02-capabilities/filesystem/README.md) is the second trial. It exercises lossless semantic values, directory authority, race-resistant resolution, resource identity and lifetime, partial asynchronous I/O, metadata availability, namespace atomicity, and durability boundaries. Its specifications remain Draft and cannot amend this model.
 
 The [windowing foundations vertical slice](../02-capabilities/windowing/README.md) defines negotiated top-level window state, display topology, typed coordinate spaces, event delivery, and generation-scoped presentation surfaces. Graphics, input interpretation, widget layout, and application accessibility content remain separate domains. Its specifications remain Draft and cannot amend this model.
+
+The [graphics and presentation vertical slice](../02-capabilities/graphics/README.md) defines workload-vector resolution, device epochs, resource memory, explicit submission/synchronization, bounded frame scheduling, and a presentation service over window surfaces. Rendering command models, shaders, text, UI scenes, and codecs remain unresolved pending concrete workload evidence. Its specifications remain Draft and cannot amend this model.
 
 ## 18. Deliberately unresolved choices
 

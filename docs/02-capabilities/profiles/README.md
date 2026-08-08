@@ -31,13 +31,17 @@ The table is only a view. Each manifest defines exact contract ranges, predicate
 
 [`rm.profile.foundation.interactive-cli` 0.1.0](foundation-interactive-cli.md) extends CLI 1.0.0 with `rm.terminal.pseudoterminal` and the terminal session service. It is a separate identity because terminal hosting is not required by redirected/batch CLI workloads and still has emulator, input, Unicode-layout, rendering, and accessibility gaps.
 
+## Windowed desktop extension
+
+[`rm.profile.foundation.windowed-desktop` 0.1.0](foundation-windowed-desktop.md) extends Desktop 1.0.0 with negotiated top-level windowing and graphics presentation infrastructure. It remains intentionally incomplete until renderer/UI, text, input, accessibility, and lifecycle contracts are selected.
+
 ## Version transition
 
 Version 1.0.0 adds direct process launch/control to CLI, Desktop, and Server. This is deliberately a profile-major change from 0.1.0 because it can invalidate a previously satisfied provider set. Byte pipes and executable resolution remain optional. Server supervision is conditional on launching managed workers.
 
 ## Explicit gaps
 
-These profiles are incomplete for real applications because terminal, networking, configuration, observability, wall/calendar time, windowing, graphics, input, accessibility, i18n, and audio contracts are not yet all specified. Resolution reports must preserve those gaps; the foundation profile name prevents a false completeness claim.
+These profiles are incomplete for real applications because terminal, networking, configuration, observability, wall/calendar time, rendering/UI, input, accessibility, i18n, and audio contracts are not yet all specified. The windowed extension supplies window/presentation infrastructure but not those product layers. Resolution reports must preserve the gaps; the foundation profile name prevents a false completeness claim.
 
 ## Shared prohibitions
 

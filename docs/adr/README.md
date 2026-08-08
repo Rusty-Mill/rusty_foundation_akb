@@ -23,5 +23,7 @@
 | [0019](0019-terminal-emulation-is-a-domain-framework.md) | Terminal emulation is a domain framework | Accepted |
 | [0020](0020-window-state-is-negotiated.md) | Window state is negotiated and revisioned | Accepted |
 | [0021](0021-coordinate-spaces-are-typed.md) | Window coordinate spaces are typed and revision-bound | Accepted |
+| [0022](0022-graphics-selection-uses-workload-contracts.md) | Graphics selection uses workload contracts, not API names | Accepted |
+| [0023](0023-presentation-is-a-graphics-service.md) | Presentation is a graphics service over a window surface | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.
