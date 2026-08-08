@@ -1,0 +1,35 @@
+# Versioning, packaging, distribution, and updates
+
+**Status:** Directional; details require RFCs before implementation.
+
+## Versioning
+
+- SemVer for independently published crates and specification packages.
+- Explicit compatibility policy for behavioral contracts, not only Rust signatures.
+- Capability and profile versions are recorded in conformance evidence.
+- Coordinated releases may use a release-train label without forcing every repository to share a version.
+
+## Packaging and distribution
+
+- Rust libraries: crates.io where public distribution is appropriate, with signed/tagged source releases on GitHub.
+- Tools and applications: native packages/installers per platform plus checksummed archives when useful.
+- Specifications and schemas: immutable versioned artifacts suitable for offline verification.
+- Debug symbols, SBOMs, licenses, provenance attestations, and checksums accompany release artifacts.
+
+## Updates
+
+- Libraries update through normal dependency resolution and lockfile review.
+- Applications use signed manifests, authenticated transport, staged rollout, rollback, and downgrade protection where required.
+- Update policy is separate from update mechanism so products can select cadence and trust roots.
+- No silent weakening of capability, security, or profile requirements during update.
+
+## Supply chain
+
+- Pin CI actions and release tooling; minimize third-party dependencies.
+- Require reproducible builds where feasible, hermetic release inputs, dependency review, license policy, vulnerability response, and least-privilege publishing credentials.
+- Generate SBOMs and provenance attestations; sign releases and verify them before installation.
+- Define maintainer recovery and key-rotation procedures before the first production release.
+
+## Compatibility channels
+
+`experimental`, `preview`, and `stable` channels communicate contract maturity. Channel promotion is evidence-based and never inferred from elapsed time.

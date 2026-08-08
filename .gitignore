@@ -1,0 +1,7 @@
+# Editor and operating-system noise
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+.idea/
+.vscode/
