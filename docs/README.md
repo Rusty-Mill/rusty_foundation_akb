@@ -14,6 +14,16 @@ The AKB is organized from stable intent to evolving detail.
 | [ADRs](adr/README.md) | Accepted architecture decisions |
 | [RFCs](rfc/README.md) | Proposals under review |
 
+## Active vertical slices
+
+- [Runtime and time](02-capabilities/runtime-time/README.md)
+- [Filesystem](02-capabilities/filesystem/README.md)
+- [Security](02-capabilities/security/README.md)
+- [Process](02-capabilities/process/README.md)
+- [IPC](02-capabilities/ipc/README.md)
+- [Terminal](02-capabilities/terminal/README.md)
+- [Windowing](02-capabilities/windowing/README.md)
+
 ## Planned volumes
 
 1. Foundation and meta-model

@@ -21,5 +21,7 @@
 | [0017](0017-byte-pipes-are-independent-ipc-capabilities.md) | Byte pipes are independent IPC capabilities | Accepted |
 | [0018](0018-pseudoterminals-are-not-byte-pipes.md) | Pseudoterminals are not byte pipes | Accepted |
 | [0019](0019-terminal-emulation-is-a-domain-framework.md) | Terminal emulation is a domain framework | Accepted |
+| [0020](0020-window-state-is-negotiated.md) | Window state is negotiated and revisioned | Accepted |
+| [0021](0021-coordinate-spaces-are-typed.md) | Window coordinate spaces are typed and revision-bound | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

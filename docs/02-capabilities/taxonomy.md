@@ -33,3 +33,4 @@ Each domain will be decomposed into common, optional/advanced, and platform-spec
 - [Process foundations vertical slice](process/README.md) — Draft
 - [IPC foundations vertical slice](ipc/README.md) — Draft
 - [Terminal foundations vertical slice](terminal/README.md) — Draft
+- [Windowing foundations vertical slice](windowing/README.md) — Draft

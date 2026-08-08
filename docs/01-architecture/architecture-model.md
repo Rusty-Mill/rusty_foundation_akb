@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.8.0
+**Version:** 1.9.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -222,6 +222,10 @@ Pseudoterminals are stateful protocol-bearing terminal resources, not byte pipes
 
 Terminal emulation is a domain framework above the terminal session boundary. Portable parser/state, structured input, renderer and accessibility adapters, privileged-effect policy, and recording remain narrow framework/service contracts. OS backends cannot redefine emulator semantics, and no component's conformance implies whole-terminal-product conformance ([ADR-0019](../adr/0019-terminal-emulation-is-a-domain-framework.md)).
 
+Portable window state is negotiated rather than synchronously assigned. Requests and effective native state are distinct; logical extent, scale/transform, surface extent, display association, and presentation-surface generation are committed atomically in revisioned snapshots. Native callback reentrancy is contained behind ordered portable delivery, and exact placement/global coordinates remain optional provider claims ([ADR-0020](../adr/0020-window-state-is-negotiated.md)).
+
+Window logical, surface-pixel, display-logical, and backend-native coordinates are distinct spaces. Conversion uses an explicit revision-bound transform and declared rounding; physical DPI and global placement are optional observations rather than universal truths ([ADR-0021](../adr/0021-coordinate-spaces-are-typed.md)). Windowing owns presentation-surface lifetime and generation, while graphics owns rendering and presentation mechanics.
+
 ## 9. Execution and concurrency model
 
 Rusty Mill is **async-first and sync-complete**.
@@ -397,6 +401,8 @@ CI and release inputs are pinned; third-party dependencies are minimized and rev
 The [runtime and time vertical slice](../02-capabilities/runtime-time/README.md) is the first trial. Its monotonic-clock, deadline-timer, cancellation, and orderly-shutdown documents exercise the entity, dependency, service, contract, quality, and evidence rules. [ADR-0005](../adr/0005-orderly-shutdown-is-a-platform-service.md) classifies orderly shutdown as a platform service rather than a capability. The specifications remain Draft and cannot amend this model.
 
 The [filesystem foundations vertical slice](../02-capabilities/filesystem/README.md) is the second trial. It exercises lossless semantic values, directory authority, race-resistant resolution, resource identity and lifetime, partial asynchronous I/O, metadata availability, namespace atomicity, and durability boundaries. Its specifications remain Draft and cannot amend this model.
+
+The [windowing foundations vertical slice](../02-capabilities/windowing/README.md) defines negotiated top-level window state, display topology, typed coordinate spaces, event delivery, and generation-scoped presentation surfaces. Graphics, input interpretation, widget layout, and application accessibility content remain separate domains. Its specifications remain Draft and cannot amend this model.
 
 ## 18. Deliberately unresolved choices
 
