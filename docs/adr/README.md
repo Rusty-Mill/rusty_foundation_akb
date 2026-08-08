@@ -53,5 +53,7 @@
 | [0049](0049-realtime-audio-callbacks-are-a-restricted-execution-domain.md) | Realtime audio callbacks are a restricted execution domain | Accepted |
 | [0050](0050-device-identity-is-generation-scoped-evidence.md) | Device identity is generation-scoped evidence | Accepted |
 | [0051](0051-device-notifications-trigger-reconciliation.md) | Device notifications trigger reconciliation | Accepted |
+| [0052](0052-portable-asynchronous-io-is-completion-oriented.md) | Portable asynchronous I/O is completion-oriented | Accepted |
+| [0053](0053-cancellation-does-not-end-operation-lifetime.md) | Cancellation does not end operation lifetime | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

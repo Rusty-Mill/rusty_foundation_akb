@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.15.0 |
+| Version | 0.16.0 |
 | Extends | [`rm.profile.foundation.desktop` 1.0.0](foundation-desktop.md) |
 | Purpose | Add native top-level window and graphics-presentation infrastructure without claiming a complete GUI toolkit |
 
@@ -129,6 +129,14 @@
 
 **RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0060:** General enumeration does not open protocols, mount media, request capture consent, or wake hardware solely for optional metadata. Sensitive identifiers/topology are explicitly projected and redacted from ordinary telemetry; class handoff revalidates generation and authority at open.
 
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0061:** `rm.io.operation` `>=0.1.0,<0.2.0` infrastructure is required when selected filesystem, network, IPC, device, or audio contracts promise native asynchronous progress. Domain contracts remain authoritative for EOF, message boundaries, partial progress, ordering, and cancellation safety.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0062:** Portable async operations are completion-oriented. Readiness providers translate stale/duplicate/coalesced hints through bounded retries; blocking fallback is disclosed with thread, saturation, cancellation, shutdown, and quality evidence.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0063:** Cancellation and timeout race with ordinary completion. Buffers, control blocks, registrations, and resource generations remain valid until exactly one terminal result; dropped futures follow declared cancel-or-detach supervision and cannot orphan untracked work.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0064:** The I/O engine and executor are separately selected. No hidden runtime, nested UI loop, indefinite executor-worker blocking, or unbounded operation/completion/wake queue is permitted; evidence covers readiness/completion races, generation reuse, saturation, fairness, shutdown drain, and timing boundaries.
+
 ## Whole-product gaps
 
 This profile does not supply a rendering command model, widget/UI framework, text editing model, image/audio codecs, media containers/graphs, gestures, or translated product resources. Product-specific semantic roles/actions/content, accepted transfer formats/importers, locale coverage, audio policy/content, and accessible UX still belong to the product/framework. It cannot claim desktop-application completeness.
@@ -141,6 +149,7 @@ Input evidence additionally covers layout/IME diversity, keyboard-only operation
 
 ## History
 
+- **0.16.0:** Adds conditional completion-oriented async-I/O infrastructure, readiness translation, cancellation lifetime, engine/executor separation, bounded-load, and shutdown evidence requirements.
 - **0.15.0:** Adds conditional general device observation, generation-scoped identity evidence, snapshot reconciliation, privacy, class handoff, and hardware-change evidence requirements.
 - **0.14.0:** Adds conditional device/route observation, exact PCM render/capture, sample-clock correlation, restricted realtime processing, capture authority, accessibility, and latency/reliability evidence requirements.
 - **0.13.0:** Adds native-thread lifecycle, synchronization/wait, atomics, UI-affinity, scheduling-quality, realtime prohibition, TLS, and evidence requirements.

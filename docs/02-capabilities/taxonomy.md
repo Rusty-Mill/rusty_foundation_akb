@@ -50,3 +50,4 @@ Each domain will be decomposed into common, optional/advanced, and platform-spec
 - [Threading and synchronization foundations vertical slice](threading/README.md) — Draft
 - [Audio foundations vertical slice](audio/README.md) — Draft
 - [Device discovery and hardware-change foundations vertical slice](devices/README.md) — Draft
+- [Asynchronous I/O foundations vertical slice](async-io/README.md) — Draft

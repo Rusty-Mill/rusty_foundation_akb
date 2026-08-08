@@ -38,6 +38,7 @@ The AKB is organized from stable intent to evolving detail.
 - [Threading and synchronization foundations](02-capabilities/threading/README.md)
 - [Audio foundations](02-capabilities/audio/README.md)
 - [Device discovery and hardware change](02-capabilities/devices/README.md)
+- [Asynchronous I/O foundations](02-capabilities/async-io/README.md)
 
 ## Planned volumes
 
