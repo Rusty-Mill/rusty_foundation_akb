@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 1.14.0 |
+| Version | 1.15.0 |
 | Purpose | Long-running non-interactive service foundation with bounded shutdown and protected credentials |
 
 ## Workload assumptions
@@ -68,6 +68,9 @@ No interactive desktop session, unattended restart, concurrent I/O, explicit ser
 - **RM-PROFILE-FOUNDATION-SERVER-0050:** Caching/content delivery `>=0.1.0,<0.2.0` is conditional for reusable local, distributed, origin-shield, or edge representations. It binds canonical key/privacy partition, representation/origin/configuration generations, freshness/validation/staleness, tier topology, capacity/cost, invalidation authority, and provider behavior.
 - **RM-PROFILE-FOUNDATION-SERVER-0051:** Cache presence is not reuse authority; policy and current authorization gate every reuse. Request collapse cannot leak credentials or cancellation across callers, old fills cannot overwrite newer entries/epochs, and invalidation completion names its measured boundary rather than implying global recall.
 - **RM-PROFILE-FOUNDATION-SERVER-0052:** Evidence covers keys/partitions, clocks/freshness/validators/ranges, admission/eviction/negative caches, tier corruption/partition/failover, stampedes/hot keys, mutation/invalidation histories, edge routing/transformation/signed access/propagation, privacy/accessibility, provider differentials, and staged fault/cost benchmarks.
+- **RM-PROFILE-FOUNDATION-SERVER-0053:** Search/indexing `>=0.1.0,<0.2.0` is conditional for derived document retrieval. It binds source/document/index/view, schema/analyzer/model/ranking, tenant/security, ingestion watermark, durability/visibility, topology, approximation, migration/recovery, objectives, and provider generations.
+- **RM-PROFILE-FOUNDATION-SERVER-0054:** Source commit, change capture, indexing, durability, replication, refresh visibility, and convergence are separate. Queries bind point-in-time views and deterministic ordering where stable traversal is claimed; scores are scoped ordering evidence, partial results are explicit, and consequential uses revalidate source authority.
+- **RM-PROFILE-FOUNDATION-SERVER-0055:** Evidence covers ordered ingestion/tombstones, multilingual analysis, typed queries and expense limits, visibility/partition histories, point-in-time cursors, lexical/vector/spatial/hybrid relevance and approximation, facets/highlights, tenant leakage, rebuild/migration/snapshot/failover, provider differentials, and staged relevance/fault/cost benchmarks.
 
 ## Operational constraints
 
@@ -75,6 +78,7 @@ Deadline timers and cancellation support bounded multi-phase shutdown. Sync path
 
 ## History
 
+- **1.15.0:** Adds conditional source-versioned search/indexing, explicit visibility, lexical/vector/spatial/hybrid retrieval, stable pagination, tenant security, migration/recovery, relevance evaluation, conformance, and benchmarks.
 - **1.14.0:** Adds conditional policy-qualified caching and content delivery, privacy partitions, freshness/validation, tiers, stampede control, invalidation/coherence, edge behavior, conformance, and benchmarks.
 - **1.13.0:** Adds conditional generation-bound object/blob storage, verified content addressing, multipart commit, delegated access, lifecycle/retention, replication/recovery, conformance, and benchmarks.
 - **1.12.0:** Adds conditional typed persistence/databases, transaction/durability boundaries, constraints/indexes, staged migrations, change streams, backup/PITR, replication/failover, conformance, and benchmarks.

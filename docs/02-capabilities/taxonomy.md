@@ -20,6 +20,7 @@ This is an inventory for domain analysis, not an API or crate list.
 | Persistence | logical data/query models, sessions/pools, transactions, constraints/indexes, migrations, change streams, backup/restore, replication |
 | Object storage | namespaces/keys/versions, streaming/multipart, conditions, content addressing, delegation, lifecycle/retention, replication/recovery |
 | Caching and delivery | canonical keys/partitions, freshness/validation, tiers/eviction, collapse, invalidation/coherence, CDN/edge behavior |
+| Search and retrieval | document projections, schemas/analyzers, lexical/vector/spatial indexes, query/ranking, pagination/facets, migration/recovery |
 | Security | identity, credentials, authorization, secrets, sandboxing, cryptographic policy/operations/keys/providers |
 | Signed artifacts | signed views, code/package/document signatures, timestamps, transparency, provenance, reproducibility, acceptance policy |
 | Package management | package identity, repositories, dependency resolution, install/update transactions, rollout, rollback, removal, recovery |
@@ -81,6 +82,7 @@ Each domain will be decomposed into common, optional/advanced, and platform-spec
 - [Application data persistence and database foundations](persistence/README.md) — Draft
 - [Object, blob, and content-addressed storage foundations](object-storage/README.md) — Draft
 - [Caching and content-delivery foundations](caching/README.md) — Draft
+- [Search, indexing, and retrieval foundations](search/README.md) — Draft
 - [Memory and mapping foundations vertical slice](memory/README.md) — Draft
 - [Plugin and module lifecycle vertical slice](plugins/README.md) — Draft
 - [Threading and synchronization foundations vertical slice](threading/README.md) — Draft

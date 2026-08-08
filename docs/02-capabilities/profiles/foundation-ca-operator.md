@@ -3,8 +3,8 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.9.0 |
-| Extends | [`rm.profile.foundation.server` 1.14.0](foundation-server.md) |
+| Version | 0.10.0 |
+| Extends | [`rm.profile.foundation.server` 1.15.0](foundation-server.md) |
 | Purpose | Operate registration, certificate issuance, renewal, status, and CA lifecycle without claiming a complete public or enterprise CA product |
 
 ## Required composition
@@ -41,8 +41,11 @@
 
 **RM-PROFILE-CA-OPERATOR-0015:** When a CA selects caching or edge delivery, it composes Server 1.14.0 with strict account/credential/privacy partitions, profile-qualified certificate/status/CRL keys, bounded freshness and validation, revocation/status invalidation and propagation evidence, origin shielding and storm control, signed access where selected, and no inference that a hit, miss, or purge proves current ledger truth or relying-party observation.
 
+**RM-PROFILE-CA-OPERATOR-0016:** When a CA selects search, it composes Server 1.15.0 with exact account/request/serial/certificate/status/audit source generations, purpose-scoped schemas and analyzers, strict tenant/field/document isolation, ordered ledger-to-index capture including revocation/erasure, explicit visibility/partial state, stable audited traversal, bounded diagnostics, rebuild/recovery, and no inference that a result proves issuance validity, current status, or relying-party trust.
+
 ## History
 
+- **0.10.0:** Rebases on Server 1.15.0 and constrains optional search to exact CA source generations, strict isolation, ordered status capture, explicit visibility, audited traversal, and source revalidation.
 - **0.9.0:** Rebases on Server 1.14.0 and constrains optional caching/edge delivery to strict identity partitions, bounded status freshness, storm control, and propagation evidence.
 - **0.8.0:** Rebases on Server 1.13.0 and constrains optional object storage to generation-bound encrypted evidence, verified content, conditional publication, retention, and recovery.
 - **0.7.0:** Rebases on Server 1.12.0 and constrains optional databases to CA ledger invariants, staged migrations, key/effect reconciliation, and verified recovery.
