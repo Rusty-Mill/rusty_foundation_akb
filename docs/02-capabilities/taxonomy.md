@@ -15,6 +15,7 @@ This is an inventory for domain analysis, not an API or crate list.
 | Filesystem | paths, files, directories, metadata, watching, atomicity, permissions |
 | Storage | media, regions, filesystems, volumes, mounts, capacity, removable-media coordination |
 | Networking | resolution, sockets, transports, interfaces, routing awareness, secure channels, HTTP semantics/mechanics, real-time sessions |
+| Messaging | schemas/envelopes, RPC, streams, publish/subscribe, broker settlement, retry/deduplication, reconciliation |
 | Security | identity, credentials, authorization, secrets, sandboxing, cryptographic policy/operations/keys/providers |
 | Signed artifacts | signed views, code/package/document signatures, timestamps, transparency, provenance, reproducibility, acceptance policy |
 | Package management | package identity, repositories, dependency resolution, install/update transactions, rollout, rollback, removal, recovery |
@@ -71,6 +72,7 @@ Each domain will be decomposed into common, optional/advanced, and platform-spec
 - [TLS/QUIC secure transport and channel foundations](networking/secure-transport-README.md) — Draft
 - [HTTP client and server foundations](networking/http-README.md) — Draft
 - [Real-time application transport foundations](networking/realtime-README.md) — Draft
+- [Application messaging and RPC foundations](messaging/README.md) — Draft
 - [Memory and mapping foundations vertical slice](memory/README.md) — Draft
 - [Plugin and module lifecycle vertical slice](plugins/README.md) — Draft
 - [Threading and synchronization foundations vertical slice](threading/README.md) — Draft

@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 1.9.0 |
+| Version | 1.10.0 |
 | Purpose | Long-running non-interactive service foundation with bounded shutdown and protected credentials |
 
 ## Workload assumptions
@@ -53,6 +53,9 @@ No interactive desktop session, unattended restart, concurrent I/O, explicit ser
 - **RM-PROFILE-FOUNDATION-SERVER-0035:** Real-time transport service `>=0.1.0,<0.2.0` is conditional for WebSocket, SSE, or WebTransport workloads. It binds protocol/profile revision, original service/resource/origin, secure HTTP route, credentials/application authority, subprotocol/extensions, session generation, native data primitives, flow/queue/resource limits, liveness, close, and reconnect policy.
 - **RM-PROFILE-FOUNDATION-SERVER-0036:** WebSocket messages, SSE events/cursors, and WebTransport streams/datagrams retain different delivery and failure semantics. Reconnect creates a new authenticated/authorized session; resume and acknowledgments are application evidence; gaps, duplicates, state loss, and ambiguous effects require explicit reconciliation and no queued operation replays automatically.
 - **RM-PROFILE-FOUNDATION-SERVER-0037:** Evidence covers protocol establishment and origin/auth, hostile frames/events/capsules, compression and bounds, slow peers/fairness, stream/datagram loss/reset, liveness, sleep/network/proxy change, drain/shutdown, reconnect/resume/gap/duplicate/storm behavior, privacy/accessibility, provider/draft variance, and staged benchmarks.
+- **RM-PROFILE-FOUNDATION-SERVER-0038:** Messaging/RPC service `>=0.1.0,<0.2.0` is conditional for typed remote calls, streams, events, pub/sub, or brokered work. It binds interaction and schema revisions, original service/topic, principal/authority/tenant, deadline/cancellation, resource/delivery/ordering/settlement, replay/idempotency/reconciliation, transport/broker profile, and evidence boundaries.
+- **RM-PROFILE-FOUNDATION-SERVER-0039:** Calls remain distributed asynchronous interactions; transport/broker/consumer acknowledgment does not prove domain effect. Exactly-once claims are prohibited unless a product precisely specifies and proves the effect boundary, participating durable state, transactions/fencing/deduplication, retention/recovery, reconciliation, and exclusions.
+- **RM-PROFILE-FOUNDATION-SERVER-0040:** Evidence covers directional schema evolution, unary/all streaming forms, deadline/cancellation/partial progress, broker routing/order/durability/settlement/rebalance/transactions, faults at every domain/ack boundary, retry/hedge/redelivery/dedup/inbox/outbox/reconciliation, security/privacy/accessibility, provider differentials, and staged benchmarks.
 
 ## Operational constraints
 
@@ -60,6 +63,7 @@ Deadline timers and cancellation support bounded multi-phase shutdown. Sync path
 
 ## History
 
+- **1.10.0:** Adds conditional typed messaging/RPC, schema evolution, streaming, broker delivery/settlement, explicit retry/idempotency/reconciliation, effect-boundary conformance, and benchmarks.
 - **1.9.0:** Adds conditional WebSocket, SSE, and versioned WebTransport sessions with native data semantics, bounded flow/lifecycle, explicit reconnect/resume/replay, conformance, and benchmarks.
 - **1.8.0:** Adds conditional HTTP/1.1-/2-/3 semantic exchange, protocol mechanics, streaming, pooling, proxy/cache, redirect/auth/replay policy, server lifecycle, conformance, and benchmarks.
 - **1.7.0:** Adds conditional exact TLS/QUIC channel policy, authentication/readiness, resumption/early-data replay authority, exporters/bindings, data/closure, migration, conformance, and benchmarks.

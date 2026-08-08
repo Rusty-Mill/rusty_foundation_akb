@@ -3,8 +3,8 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.4.0 |
-| Extends | [`rm.profile.foundation.server` 1.9.0](foundation-server.md) |
+| Version | 0.5.0 |
+| Extends | [`rm.profile.foundation.server` 1.10.0](foundation-server.md) |
 | Purpose | Operate registration, certificate issuance, renewal, status, and CA lifecycle without claiming a complete public or enterprise CA product |
 
 ## Required composition
@@ -31,8 +31,11 @@
 
 **RM-PROFILE-CA-OPERATOR-0010:** When a product selects real-time status, audit, approval, or ceremony observation, it composes Server 1.9.0 with authenticated least-privilege subscriptions, exact ledger/status revision, bounded fanout, reconnect as a new session, gap/duplicate/snapshot reconciliation, and an explicit nonclaim that observing or acknowledging an event grants approval or issuance authority.
 
+**RM-PROFILE-CA-OPERATOR-0011:** When a product selects messaging/RPC for enrollment, validation, approval, issuance, status, audit, or ceremony workflows, it composes Server 1.10.0 with exact request/ledger/credential schemas, separated command/event authority, immutable attempts, deadline/cancellation nonrollback, durable idempotency/reconciliation, and no claim that broker settlement or handler return proves issuance, activation, revocation, or relying-party observation.
+
 ## History
 
+- **0.5.0:** Rebases on Server 1.10.0 and constrains optional messaging/RPC to exact CA schemas, separated authority, staged effects, durable idempotency, and reconciliation.
 - **0.4.0:** Rebases on Server 1.9.0 and constrains optional real-time observation to authenticated revisioned events, bounded fanout, new-session reconnect, and no authority from observation.
 - **0.3.0:** Rebases on Server 1.8.0 and constrains optional HTTP mappings with exact transaction, replay/polling, credential/cache/proxy, overload, and ambiguous-result evidence.
 - **0.2.0:** Rebases on Server 1.7.0 so enrollment, status, audit, and administration endpoints compose exact TLS/QUIC identity, mutual-authentication, ALPN, resumption/early-data, channel-binding, overload, and closure policy.

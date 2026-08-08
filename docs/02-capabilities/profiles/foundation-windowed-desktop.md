@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.37.0 |
+| Version | 0.38.0 |
 | Extends | [`rm.profile.foundation.desktop` 1.0.0](foundation-desktop.md) |
 | Purpose | Add native top-level window and graphics-presentation infrastructure without claiming a complete GUI toolkit |
 
@@ -293,6 +293,12 @@
 
 **RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0142:** Evidence covers browser/native mediation, origins/auth, hostile WebSocket/SSE/WebTransport input, compression/bounds, flow/fairness, background/suspend/network/proxy change, liveness, drain/close, reconnect/resume/storms, privacy/i18n/accessibility, provider/draft variance, and staged latency/energy benchmarks.
 
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0143:** Messaging/RPC service `>=0.1.0,<0.2.0` is conditional for typed calls, streams, events, pub/sub, or brokered work. It binds interaction/schema revisions, service/topic, principal/authority/tenant, deadline/cancellation, resource/delivery/order/settlement, replay/idempotency/reconciliation, transport/broker profile, session/background state, and evidence boundaries.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0144:** Remote calls stay asynchronous distributed interactions and acknowledgments do not prove domain effect. User-visible send/sync/subscription/duplicate/conflict/recovery state names the reporting boundary accessibly; cancel/offline/reconnect never silently rolls back, retries, or declares success.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0145:** Evidence covers schema evolution, unary/streaming calls, deadline/cancel/partial progress, broker delivery/order/settlement/rebalance, suspend/offline/background behavior, retry/redelivery/dedup/inbox/outbox/reconciliation, security/privacy/i18n/accessibility, provider differentials, and staged latency/energy benchmarks.
+
 ## Whole-product gaps
 
 This profile does not supply a rendering command model, widget/UI framework, text editing model, image/audio codecs, media containers/graphs, gestures, or translated product resources. Product-specific semantic roles/actions/content, accepted transfer formats/importers, locale coverage, audio policy/content, and accessible UX still belong to the product/framework. It cannot claim desktop-application completeness.
@@ -305,6 +311,7 @@ Input evidence additionally covers layout/IME diversity, keyboard-only operation
 
 ## History
 
+- **0.38.0:** Adds conditional messaging/RPC, schema evolution, streaming, broker delivery/settlement, explicit replay/idempotency/reconciliation, accessible state, conformance, and benchmarks.
 - **0.37.0:** Adds conditional WebSocket, SSE, and versioned WebTransport sessions, native data semantics, background-aware reconnect/resume evidence, accessibility, conformance, and benchmarks.
 - **0.36.0:** Adds conditional HTTP/1.1-/2-/3 semantics, streaming, connection/proxy/cache behavior, explicit redirect/auth/replay policy, accessible interaction, conformance, and benchmarks.
 - **0.35.0:** Adds conditional exact TLS/QUIC channel policy, authentication/readiness, resumption/early-data replay authority, exporters/bindings, data/closure, migration, accessibility, conformance, and benchmarks.

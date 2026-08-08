@@ -99,5 +99,7 @@
 | [0095](0095-http-replay-is-an-explicit-domain-authority.md) | HTTP replay is an explicit domain authority | Accepted |
 | [0096](0096-real-time-transports-share-session-policy-not-a-data-abstraction.md) | Real-time transports share session policy, not a data abstraction | Accepted |
 | [0097](0097-reconnect-creates-a-new-session-and-resume-is-application-evidence.md) | Reconnect creates a new session and resume is application evidence | Accepted |
+| [0098](0098-a-remote-call-is-an-asynchronous-interaction-not-a-local-procedure.md) | A remote call is an asynchronous interaction, not a local procedure | Accepted |
+| [0099](0099-delivery-acknowledgment-is-not-domain-effect.md) | Delivery acknowledgment is not domain effect | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.
