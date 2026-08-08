@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.27.0 |
+| Version | 0.28.0 |
 | Extends | [`rm.profile.foundation.desktop` 1.0.0](foundation-desktop.md) |
 | Purpose | Add native top-level window and graphics-presentation infrastructure without claiming a complete GUI toolkit |
 
@@ -225,6 +225,14 @@
 
 **RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0108:** Evidence covers trusted picker cancel/deny/restrict/revoke, indicators, source identity reuse, display/window/application/region boundaries, decorations/popups/occlusion/minimize/overlays, mixed-scale/HDR/remote/virtual displays, cursor/audio timing, protected/secure/excluded content nonclaims, slow consumers, lifecycle races, telemetry redaction, and localized keyboard/screen-reader selection and stop/change controls.
 
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0109:** Remote presentation/control is conditional on product workload. When selected, session coordination and controlled input `>=0.1.0,<0.2.0` bind local login/security context, exact capture-source generation, authenticated participant/channel evidence, purpose, role, device/action allowlist, visibility, lifetime, and revocation. View, control, clipboard, file transfer, elevation, and unattended access remain independent.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0110:** Remote events are untrusted intent revalidated at admission and injection against participant/device/session/mapping generations, order, age, rate, focus/boundary, and local override. Native acceptance is not delivery, focus, handling, or domain success; internal attribution is retained even when target applications cannot observe origin.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0111:** Coordinate/crop/scale/rotation, keymap/layout/IME, key/button/contact state, batching/order, and reconnect are explicit. Stale events retire on incompatible changes; revocation closes admission before bounded release/cancel and reports residual ambiguity. Secure input/desktop, lock/login, permission/elevation/credential UI, and emergency stop cannot be controlled remotely.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0112:** Evidence covers view/control transitions, participant/channel replacement, multi-controller arbitration, transport loss/reorder/replay, local-input/focus races, mixed-scale/resize mapping, keyboard/layout/IME, touch/pen state, integrity/sandbox/compositor restrictions, lock/switch/secure/elevated boundaries, accessible consent/indication/emergency stop, state cleanup, and input-to-remotely-presented-response latency.
+
 ## Whole-product gaps
 
 This profile does not supply a rendering command model, widget/UI framework, text editing model, image/audio codecs, media containers/graphs, gestures, or translated product resources. Product-specific semantic roles/actions/content, accepted transfer formats/importers, locale coverage, audio policy/content, and accessible UX still belong to the product/framework. It cannot claim desktop-application completeness.
@@ -237,6 +245,7 @@ Input evidence additionally covers layout/IME diversity, keyboard-only operation
 
 ## History
 
+- **0.28.0:** Adds conditional participant/session/action-scoped remote presentation and controlled input, exact mappings/state/order, secure-boundary and local-override rules, emergency stop, accessibility, conformance, and end-to-end latency evidence.
 - **0.27.0:** Adds conditional trusted screen/window/application/region selection, revocable generation-scoped capture, exact frame/color/geometry/timing, cursor/audio separation, protection nonclaims, bounded delivery, privacy/accessibility, conformance, and benchmarks.
 - **0.26.0:** Adds conditional typed activation, revisioned handler/default policy, safe file/URI handoff, incoming instance routing, registration, boundary-scoped completion, security/accessibility, conformance, and benchmarks.
 - **0.25.0:** Adds conditional time-based source/container/track, exact timeline, codec/raw-resource, playback/sync/seek/buffer, timed-text/accessibility, encode/mux, protection, conformance, and benchmark requirements.

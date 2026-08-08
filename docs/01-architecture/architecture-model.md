@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.36.0
+**Version:** 1.37.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -481,6 +481,8 @@ The [time-based media foundations vertical slice](../02-capabilities/time-media/
 The [application activation and association foundations vertical slice](../02-capabilities/activation/README.md) defines typed outgoing intents, revisioned handler/default observations, user-controlled broker resolution, file capability and URI safety, incoming instance routing, registration/update rules, and boundary-scoped milestones. Activation is untrusted intent rather than authority, and broker acceptance is not application receipt, readiness, content open, or domain completion ([ADR-0072](../adr/0072-activation-is-untrusted-intent-not-authority.md), [ADR-0073](../adr/0073-activation-acceptance-is-not-handler-completion.md)). Shells, executable launch/search, default-setting, and cooperative workflow protocols remain separate. Its specifications remain Draft and cannot amend this model.
 
 The [screen and window capture foundations vertical slice](../02-capabilities/screen-capture/README.md) defines trusted source selection, source-generation grants, revocable session authority, exact frame/color/geometry/time semantics, explicit cursor and audio streams, bounded delivery, protection nonclaims, privacy/accessibility, conformance, and benchmarks. Capture authority binds the exact user-selected source generation, while frames are provider observations rather than proof of what the user saw, semantic completeness, or confidentiality ([ADR-0074](../adr/0074-capture-authority-binds-an-exact-selected-source-generation.md), [ADR-0075](../adr/0075-capture-frames-are-provider-observations-not-content-proof.md)). Encoding, recording, persistence, transmission, analysis, camera/microphone capture, and remote input remain separate. Its specifications remain Draft and cannot amend this model.
+
+The [remote presentation and controlled input foundations vertical slice](../02-capabilities/remote-interaction/README.md) composes selected screen observation with separately secured transport, participant evidence, role/action grants, generation-bound coordinate/keymap mappings, untrusted remote input intent, bounded native injection, explicit state cleanup, local consent/indication/stop, accessibility, conformance, and latency evidence. Remote-control authority is participant-, session-, and action-scoped, while injected input is a privileged attributed side effect rather than replay or domain-success proof ([ADR-0076](../adr/0076-remote-control-authority-is-participant-session-and-action-scoped.md), [ADR-0077](../adr/0077-injected-input-is-a-privileged-attributed-side-effect.md)). Codecs/signaling, unattended access, clipboard/files, elevation, secure attention, credentials, and domain commands remain separate. Its specifications remain Draft and cannot amend this model.
 
 ## 18. Deliberately unresolved choices
 

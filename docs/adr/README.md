@@ -77,5 +77,7 @@
 | [0073](0073-activation-acceptance-is-not-handler-completion.md) | Activation acceptance is not handler completion | Accepted |
 | [0074](0074-capture-authority-binds-an-exact-selected-source-generation.md) | Capture authority binds an exact selected source generation | Accepted |
 | [0075](0075-capture-frames-are-provider-observations-not-content-proof.md) | Capture frames are provider observations, not content proof | Accepted |
+| [0076](0076-remote-control-authority-is-participant-session-and-action-scoped.md) | Remote-control authority is participant-, session-, and action-scoped | Accepted |
+| [0077](0077-injected-input-is-a-privileged-attributed-side-effect.md) | Injected input is a privileged attributed side effect | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.
