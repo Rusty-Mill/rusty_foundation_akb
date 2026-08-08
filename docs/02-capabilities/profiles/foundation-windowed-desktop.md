@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.26.0 |
+| Version | 0.27.0 |
 | Extends | [`rm.profile.foundation.desktop` 1.0.0](foundation-desktop.md) |
 | Purpose | Add native top-level window and graphics-presentation infrastructure without claiming a complete GUI toolkit |
 
@@ -217,6 +217,14 @@
 
 **RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0104:** Evidence covers layered/default association changes, install/update/uninstall, file handle/path/token/bookmark and access scope, dangerous/cloud/network/quarantine targets, hostile URI grammars/custom/web links, chooser/default/exact modes, sandbox/foreground/headless, duplicate/concurrent/new/existing instances, cancellation/unknown/retry, privacy redaction, and accessible localized chooser/status/focus/recovery.
 
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0105:** Screen/window capture is conditional on product workload. When selected, trusted source selection and raw capture session `>=0.1.0,<0.2.0` bind a revocable purpose/application/source-generation grant to an exact display, window, application group, region, or virtual display; enumeration, labels, handles, coordinates, and restore hints are not authority.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0106:** Captured frames preserve exact plane/memory/color/alpha/content-geometry, timestamp clock/boundary/quality, sequence/discontinuity, damage, source/configuration generations, and provider transformations. They do not prove what the user saw, semantic completeness, physical appearance, secure redaction, or confidentiality.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0107:** Cursor and system/application audio are independently negotiated and authorized; microphone, camera, preview, encode, record, persist, transmit, analyze, and remote-input features remain separate. Delivery and held buffers are bounded, and source/topology/resize/color/policy/device changes visibly reconcile or invalidate rather than silently retarget.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0108:** Evidence covers trusted picker cancel/deny/restrict/revoke, indicators, source identity reuse, display/window/application/region boundaries, decorations/popups/occlusion/minimize/overlays, mixed-scale/HDR/remote/virtual displays, cursor/audio timing, protected/secure/excluded content nonclaims, slow consumers, lifecycle races, telemetry redaction, and localized keyboard/screen-reader selection and stop/change controls.
+
 ## Whole-product gaps
 
 This profile does not supply a rendering command model, widget/UI framework, text editing model, image/audio codecs, media containers/graphs, gestures, or translated product resources. Product-specific semantic roles/actions/content, accepted transfer formats/importers, locale coverage, audio policy/content, and accessible UX still belong to the product/framework. It cannot claim desktop-application completeness.
@@ -229,6 +237,7 @@ Input evidence additionally covers layout/IME diversity, keyboard-only operation
 
 ## History
 
+- **0.27.0:** Adds conditional trusted screen/window/application/region selection, revocable generation-scoped capture, exact frame/color/geometry/timing, cursor/audio separation, protection nonclaims, bounded delivery, privacy/accessibility, conformance, and benchmarks.
 - **0.26.0:** Adds conditional typed activation, revisioned handler/default policy, safe file/URI handoff, incoming instance routing, registration, boundary-scoped completion, security/accessibility, conformance, and benchmarks.
 - **0.25.0:** Adds conditional time-based source/container/track, exact timeline, codec/raw-resource, playback/sync/seek/buffer, timed-text/accessibility, encode/mux, protection, conformance, and benchmark requirements.
 - **0.24.0:** Adds conditional bounded image probe/decode, exact immutable pixels, progressive/region/animation/metadata boundaries, explicit encode/transcode, provider isolation, accessibility, conformance, and benchmarks.

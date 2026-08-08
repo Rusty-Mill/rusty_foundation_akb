@@ -24,6 +24,7 @@ This is an inventory for domain analysis, not an API or crate list.
 | Input | keyboard, pointer, touch, pen, game controllers, IME |
 | Audio | devices, streams, routing, timing, formats, real-time constraints |
 | Capture | cameras, authorization, raw frames, controls, timing, privacy, backpressure |
+| Screen capture | trusted display/window/application/region selection, revocable sessions, compositor observations, cursor/audio, protection boundaries |
 | Notifications | content, attention policy, presentation requests, actions, scheduling, badges |
 | Power | sources, batteries, saver policy, thermal pressure, sleep assertions, energy evidence |
 | Printing | destinations, capability negotiation, pagination, job tickets, spooling, document artifacts |
@@ -70,3 +71,4 @@ Each domain will be decomposed into common, optional/advanced, and platform-spec
 - [Power and energy-management foundations vertical slice](power/README.md) — Draft
 - [Credential and identity-session foundations vertical slice](identity-session/README.md) — Draft
 - [Printing and document-output foundations vertical slice](printing/README.md) — Draft
+- [Screen and window capture foundations vertical slice](screen-capture/README.md) — Draft

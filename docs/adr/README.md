@@ -75,5 +75,7 @@
 | [0071](0071-media-seek-is-a-negotiated-discontinuity.md) | Media seek is a negotiated discontinuity | Accepted |
 | [0072](0072-activation-is-untrusted-intent-not-authority.md) | Activation is untrusted intent, not authority | Accepted |
 | [0073](0073-activation-acceptance-is-not-handler-completion.md) | Activation acceptance is not handler completion | Accepted |
+| [0074](0074-capture-authority-binds-an-exact-selected-source-generation.md) | Capture authority binds an exact selected source generation | Accepted |
+| [0075](0075-capture-frames-are-provider-observations-not-content-proof.md) | Capture frames are provider observations, not content proof | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

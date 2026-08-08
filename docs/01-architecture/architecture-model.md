@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.35.0
+**Version:** 1.36.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -479,6 +479,8 @@ The [still-image and image-codec foundations vertical slice](../02-capabilities/
 The [time-based media foundations vertical slice](../02-capabilities/time-media/README.md) defines bounded source/container/track inspection, exact multi-domain timelines, generation-scoped codec sessions and raw resources, playback clock/synchronization, negotiated seek/buffering discontinuities, timed text/accessibility, encode/mux/recording boundaries, and protected-content separation. Media time is exact, domain-tagged, and discontinuous, while seek is a negotiated generation change rather than an instantaneous cursor assignment ([ADR-0070](../adr/0070-media-time-is-exact-domain-tagged-and-discontinuous.md), [ADR-0071](../adr/0071-media-seek-is-a-negotiated-discontinuity.md)). Adaptive streaming, license acquisition, editing, conferencing, and application UX remain separate. Its specifications remain Draft and cannot amend this model.
 
 The [application activation and association foundations vertical slice](../02-capabilities/activation/README.md) defines typed outgoing intents, revisioned handler/default observations, user-controlled broker resolution, file capability and URI safety, incoming instance routing, registration/update rules, and boundary-scoped milestones. Activation is untrusted intent rather than authority, and broker acceptance is not application receipt, readiness, content open, or domain completion ([ADR-0072](../adr/0072-activation-is-untrusted-intent-not-authority.md), [ADR-0073](../adr/0073-activation-acceptance-is-not-handler-completion.md)). Shells, executable launch/search, default-setting, and cooperative workflow protocols remain separate. Its specifications remain Draft and cannot amend this model.
+
+The [screen and window capture foundations vertical slice](../02-capabilities/screen-capture/README.md) defines trusted source selection, source-generation grants, revocable session authority, exact frame/color/geometry/time semantics, explicit cursor and audio streams, bounded delivery, protection nonclaims, privacy/accessibility, conformance, and benchmarks. Capture authority binds the exact user-selected source generation, while frames are provider observations rather than proof of what the user saw, semantic completeness, or confidentiality ([ADR-0074](../adr/0074-capture-authority-binds-an-exact-selected-source-generation.md), [ADR-0075](../adr/0075-capture-frames-are-provider-observations-not-content-proof.md)). Encoding, recording, persistence, transmission, analysis, camera/microphone capture, and remote input remain separate. Its specifications remain Draft and cannot amend this model.
 
 ## 18. Deliberately unresolved choices
 
