@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.9.0 |
+| Version | 0.10.0 |
 | Extends | [`rm.profile.foundation.desktop` 1.0.0](foundation-desktop.md) |
 | Purpose | Add native top-level window and graphics-presentation infrastructure without claiming a complete GUI toolkit |
 
@@ -81,6 +81,14 @@
 
 **RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0036:** Lifecycle evidence covers concurrent/running-instance activation, duplicate delivery, lock/disconnect, suspend/resume reconciliation, allowed/cancelled/deferred/forced termination, missing callbacks, inhibition expiry, corrupt/stale restoration, changed displays/locales/accessibility settings, and accessible localized recovery.
 
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0037:** Networking is conditional on product workload. When selected, `rm.network.resolve`, `rm.network.byte-stream`, and `rm.network.connectivity-observer` `>=0.1.0,<0.2.0` plus connection-establishment service `>=0.1.0,<0.2.0` are required; datagram, listener, and secure-channel services are selected independently by need.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0038:** Network operations receive explicit service intent and authority. Resolution candidates, IP endpoints, path viability, transport establishment, cryptographic security, peer authentication, and application readiness remain distinguishable and evidence bound.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0039:** Internet-facing or otherwise untrusted remote communication requires an application-appropriate secure-channel/protocol contract. Peer validation binds the original service identity; insecure fallback, early data, trust override, proxy bypass, and unrestricted wildcard listening are prohibited unless explicitly selected and evidenced.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0040:** Networking evidence covers IPv4/IPv6/DNS64, candidate racing and loser cleanup, constrained/expensive/unknown paths, proxy/VPN/network changes, partial I/O/backpressure/cancellation, suspend/resume reconciliation, certificate/name/revocation-quality failures, exporter-safe diagnostics, and accessible localized connectivity/retry states.
+
 ## Whole-product gaps
 
 This profile does not supply a rendering command model, widget/UI framework, text editing model, image codecs, gestures, translated product resources, or application lifecycle/session integration. Product-specific semantic roles/actions/content, accepted transfer formats/importers, locale coverage, and accessible UX still belong to the product/framework. It cannot claim desktop-application completeness.
@@ -93,6 +101,7 @@ Input evidence additionally covers layout/IME diversity, keyboard-only operation
 
 ## History
 
+- **0.10.0:** Adds conditional resolution, connection racing, stream/path observation, optional datagram/listener/secure channel, authority, security, and network-change evidence requirements.
 - **0.9.0:** Adds application-instance, activation, session/power observation, cooperative termination/inhibition, readiness, and safe restoration requirements.
 - **0.8.0:** Adds structured observability, explicit causal context, bounded exporter-independent pipelines, privacy governance, diagnostic bundles, and separated crash capture/analysis requirements.
 - **0.7.0:** Adds typed configuration schema/source/resolution, immutable snapshots, provenance, reload classes, secret boundaries, and loss-aware change reconciliation.

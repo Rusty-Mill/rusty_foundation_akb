@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.18.0
+**Version:** 1.19.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -445,6 +445,8 @@ The [configuration and change-notification vertical slice](../02-capabilities/co
 The [observability, diagnostics, and crash-reporting vertical slice](../02-capabilities/observability/README.md) defines stable structured event schemas, explicit causal context and clock quality, bounded metrics/tracing pipelines, exporter-independent production, diagnostic bundles, privacy governance, loss accounting, and a minimal separated fatal-capture path. Telemetry is evidence rather than authority, exporter acceptance is not backend durability, and raw crash memory is restricted diagnostic data ([ADR-0036](../adr/0036-observability-producers-are-exporter-independent.md), [ADR-0037](../adr/0037-fatal-capture-is-a-minimal-separated-path.md)). Its specifications remain Draft and cannot amend this model.
 
 The [application lifecycle and session-integration vertical slice](../02-capabilities/lifecycle/README.md) defines application-instance epochs, typed activation, session/power observations, cooperative termination and scoped inhibition, readiness milestones, and disposable restoration metadata. No lifecycle callback is a portable cleanup guarantee; durable state is committed during ordinary operation and orderly shutdown runs only when the observed native request permits it ([ADR-0038](../adr/0038-lifecycle-events-do-not-guarantee-cleanup.md), [ADR-0039](../adr/0039-restoration-state-is-disposable-continuity-metadata.md)). Its specifications remain Draft and cannot amend this model.
+
+The [networking foundations vertical slice](../02-capabilities/networking/README.md) defines service intent and endpoint types, expiring resolution candidates, bounded connection racing, full-duplex byte streams, datagrams, listeners, path observations, and secure-channel composition. Resolution is neither identity nor authority; transport establishment, cryptographic security, peer authentication, and application readiness are separate milestones ([ADR-0040](../adr/0040-resolution-results-are-candidates-not-authority.md), [ADR-0041](../adr/0041-secure-channels-compose-over-transports.md)). Its specifications remain Draft and cannot amend this model.
 
 ## 18. Deliberately unresolved choices
 
