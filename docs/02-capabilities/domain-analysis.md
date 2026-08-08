@@ -1,6 +1,7 @@
 # Domain-analysis method
 
-**Status:** Draft
+**Status:** Accepted foundation method  
+**Authority:** [RFC-0001](../rfc/0001-capability-specification-system.md)
 
 Domain analysis discovers durable behavior before API or repository design. Its output is a reviewed map of user needs, capabilities, boundaries, dependencies, variance, and unknowns.
 
@@ -55,7 +56,7 @@ A candidate capability should have affirmative answers to most of these question
 
 ## Analysis deliverables
 
-Each domain produces a domain overview, scenario catalog, platform research matrix, candidate capability list, dependency graph, open-question register, and capability specifications. These artifacts remain Draft until an RFC accepts their model.
+Each domain produces a domain overview, scenario catalog, platform research matrix, candidate capability list, dependency graph, open-question register, capability specifications, and planned conformance/benchmark evidence. Domain artifacts remain Draft until their governing RFC accepts them.
 
 ## Exit criteria
 

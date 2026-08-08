@@ -1,6 +1,7 @@
 # Capability dependency graph model
 
-**Status:** Draft
+**Status:** Accepted foundation model  
+**Authority:** [Authoritative architecture model](../01-architecture/architecture-model.md) and [RFC-0001](../rfc/0001-capability-specification-system.md)
 
 > This document elaborates the dependency-graph rules in the [authoritative architecture model](../01-architecture/architecture-model.md). The authoritative model governs if wording conflicts.
 

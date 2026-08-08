@@ -37,7 +37,7 @@ Dates are intentionally absent until scope and capacity are known. Progress is c
 
 ## Immediate next decisions
 
-1. Review [RFC-0001](../rfc/0001-capability-specification-system.md) and exercise its templates.
+1. ~~Review RFC-0001 and exercise its templates.~~ Completed: [RFC-0001](../rfc/0001-capability-specification-system.md) is Accepted after the runtime/time trial.
 2. Review the [runtime and time vertical slice](../02-capabilities/runtime-time/README.md), including its four candidate specifications and open questions.
 3. ~~Decide whether orderly shutdown is a capability or a platform service.~~ Resolved as a platform service by [ADR-0005](../adr/0005-orderly-shutdown-is-a-platform-service.md).
 4. Review the runtime/time [conformance specification](../02-capabilities/runtime-time/conformance.md) and [benchmark specification](../02-capabilities/runtime-time/benchmarks.md).

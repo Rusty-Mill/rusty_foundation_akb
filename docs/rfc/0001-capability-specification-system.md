@@ -1,6 +1,6 @@
 # RFC-0001: Capability specification system
 
-**Status:** Draft  
+**Status:** Accepted  
 **Authors:** Rusty Mill founders  
 **Reviewers:** Unassigned  
 **Created:** 2026-08-08
@@ -88,7 +88,6 @@ Rejected because cross-domain review, graph validation, and conformance traceabi
 
 ## Unresolved questions
 
-- Which domain should supply the reference vertical slice?
 - When should the metadata schema become machine-readable?
 - Should requirement identifiers encode domain aliases permanently or use opaque numbers?
 - What minimum evidence is necessary for Experimental maturity?
@@ -103,4 +102,14 @@ Rejected because cross-domain review, graph validation, and conformance traceabi
 
 ## Trial application
 
-The model is now being exercised by the [runtime and time vertical slice](../02-capabilities/runtime-time/README.md). Its documents remain Draft and provide feedback to this RFC; they do not imply that RFC-0001 has been accepted.
+The model was exercised by the [runtime and time vertical slice](../02-capabilities/runtime-time/README.md). The trial produced three concrete refinements:
+
+1. Capability analysis must be able to promote orchestration into a platform service rather than force every candidate into the capability graph. [ADR-0005](../adr/0005-orderly-shutdown-is-a-platform-service.md) records the first instance.
+2. Conformance and benchmark identities must be designed with the contract rather than deferred to implementation.
+3. The authoritative architecture model defines current rules, while this RFC records adoption of the authoring system.
+
+The capability specifications remain Draft independently of this RFC. Their draft status no longer blocks accepting the specification system that produced and corrected them.
+
+## Disposition
+
+Accepted after the runtime/time trial. The Markdown authoring system, identity conventions, graph semantics, template sections, and traceability obligations are now the foundation standard. Machine-readable serialization and automated validation remain separate future decisions.
