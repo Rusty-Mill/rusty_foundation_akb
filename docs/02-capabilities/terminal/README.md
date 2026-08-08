@@ -9,7 +9,7 @@
 
 The initial domain creates and controls a pseudoterminal-like session with host input/output channels, child attachment, character-cell size, lifecycle, and declared wire/terminal semantics.
 
-Terminal emulation/rendering, escape-sequence parsing, keyboard/mouse/IME encoding, scrollback, fonts, Unicode width, shell integration, remote transport, login sessions, and accessibility presentation remain higher capabilities, services, or frameworks.
+The slice now also specifies the portable terminal-host framework boundary: emulator state, structured input/IME, semantic accessibility, and recording/replay. Concrete graphics/window rendering, fonts, shell integration, remote transport, and login sessions remain future capabilities or adapters.
 
 ```mermaid
 flowchart TD
@@ -19,8 +19,8 @@ flowchart TD
     Spawn["rm.process.spawn"] --> Session["Terminal session service"]
     Attach --> Session
     Session --> Process["Attached child / supervision"]
-    HostOut --> Emulator["Future terminal emulator model"]
-    Input["Future input encoder"] --> HostIn
+    HostOut --> Emulator["Terminal host framework"]
+    Input["Structured input encoder"] --> HostIn
     Emulator --> Accessible["Accessible semantic presentation"]
 ```
 
@@ -36,9 +36,14 @@ flowchart TD
 ## Documents
 
 - [Terminal semantic model](terminal-model.md)
+- [Terminal host domain framework](host-framework.md)
+- [Terminal emulator state model](emulator-model.md)
+- [Structured input and IME model](input-model.md)
+- [Accessibility and semantic presentation](accessibility-model.md)
+- [Recording and replay service](recording-replay.md)
 - [`rm.terminal.pseudoterminal`](pseudoterminal.md)
 - [Terminal session platform service](session-service.md)
 - [Platform research](platform-research.md)
+- [Host standards and platform research](host-research.md)
 - [Conformance specification](conformance.md)
 - [Benchmark specification](benchmarks.md)
-

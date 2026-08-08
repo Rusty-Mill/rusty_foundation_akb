@@ -62,4 +62,4 @@ The [process foundations analysis](../02-capabilities/process/README.md) defines
 
 ## Active fifth slice
 
-The [terminal foundations analysis](../02-capabilities/terminal/README.md) separates PTY session/attachment/transport from byte pipes and from emulator, renderer, input, Unicode-layout, and accessibility layers. The [interactive CLI foundation profile](../02-capabilities/profiles/foundation-interactive-cli.md) integrates the lower terminal layer without claiming the missing host layers. Next gates are terminal-emulator state semantics, input-event encoding, and recording/replay policy.
+The [terminal foundations analysis](../02-capabilities/terminal/README.md) now separates and specifies PTY/session, emulator state, structured input/IME, accessibility semantics, privileged effects, and recording/replay. The [interactive CLI foundation profile](../02-capabilities/profiles/foundation-interactive-cli.md) integrates the lower terminal layer while product completion still awaits a concrete renderer/windowing adapter and whole-host evidence. Next gates are rendering/window-system boundaries, shell integration trust, and remote terminal transport.

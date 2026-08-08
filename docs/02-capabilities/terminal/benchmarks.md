@@ -11,6 +11,10 @@
 | TERM-BENCH-005 | Protocol translation | Wire profile, corpus, bytes/code points/sequences, throughput, allocation, malformed-input cost |
 | TERM-BENCH-006 | Concurrent sessions | Session/process count, pending I/O, worker threads, memory, handles/descriptors, wakeups |
 | TERM-BENCH-007 | Shutdown and output drain | Stop policy, buffered output, child/descendant count, p95/p99 terminal completion |
+| TERM-BENCH-008 | Incremental parser/emulator | Dialect corpus, chunk distribution, bytes/sequences/cells per second, allocations, peak bounded state |
+| TERM-BENCH-009 | State delta/checkpoint | Dirty-cell/line ratio, revision rate, serialization size/time, consumer fanout |
+| TERM-BENCH-010 | Input/IME encoding | Event class, mode revision contention, p50/p95/p99, allocation, queue/backpressure |
+| TERM-BENCH-011 | Accessibility updates | Mutation/announcement rate, coalescing delay, history size, platform adapter CPU/memory |
+| TERM-BENCH-012 | Recording/replay | Data classes, encryption/integrity, event rate, storage throughput, compression, replay speed/divergence cost |
 
 ConPTY measurements report synchronous transport threads/queues separately. POSIX measurements report readiness registration and termios mode. Protocol/emulator benchmarks do not mix glyph rendering or accessibility-tree update cost into raw session overhead; higher-layer benchmarks measure those explicitly.
-

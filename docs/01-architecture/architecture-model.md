@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.7.0
+**Version:** 1.8.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -219,6 +219,8 @@ Executable resolution is separate from launch and consumes explicit ordered dire
 Anonymous byte pipes are independent IPC capabilities with directional ownership, EOF, broken-peer, backpressure, atomicity, and async quality semantics. Process spawning only binds compatible endpoints; multi-process pipeline lifecycle is a service/framework composition ([ADR-0017](../adr/0017-byte-pipes-are-independent-ipc-capabilities.md)).
 
 Pseudoterminals are stateful protocol-bearing terminal resources, not byte pipes. Their capability owns attachment, character-cell size, wire profile, terminal state, transport, resize, and hangup. A terminal session service composes process launch/supervision; emulation, rendering, structured input, Unicode layout, and accessible presentation remain higher layers with separate evidence ([ADR-0018](../adr/0018-pseudoterminals-are-not-byte-pipes.md)).
+
+Terminal emulation is a domain framework above the terminal session boundary. Portable parser/state, structured input, renderer and accessibility adapters, privileged-effect policy, and recording remain narrow framework/service contracts. OS backends cannot redefine emulator semantics, and no component's conformance implies whole-terminal-product conformance ([ADR-0019](../adr/0019-terminal-emulation-is-a-domain-framework.md)).
 
 ## 9. Execution and concurrency model
 

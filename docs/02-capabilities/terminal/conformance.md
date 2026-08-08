@@ -22,3 +22,26 @@ Protocol vectors include ASCII, combining sequences, emoji/variation selectors, 
 
 An emulator/accessibility provider adds separate evidence for logical text preservation, focus/cursor mapping, reading order, update announcements, selection, high contrast, reduced motion, screen-reader interaction, and keyboard-only operation.
 
+## Emulator and input assertions
+
+| ID | Assertion |
+|---|---|
+| TERM-EMU-001 | Every split of each corpus byte stream yields identical state revisions, replies, effects, and final checkpoint |
+| TERM-EMU-002 | Malformed/oversized/unterminated sequences remain bounded and recover at the exact declared boundary |
+| TERM-EMU-003 | Resize, reset, alternate-screen, wide/combining/orphan cell, history, and mode vectors preserve invariants |
+| TERM-EMU-004 | Privileged sequences produce policy requests only and cannot execute clipboard/link/host effects directly |
+| TERM-INPUT-001 | Text/key/IME vectors avoid duplicate text and never send preedit without negotiated support |
+| TERM-INPUT-002 | Mode/geometry revision races reject, serialize, or re-evaluate exactly as declared |
+| TERM-INPUT-003 | Paste, mouse, focus, extended keys, replies, and backpressure follow negotiated modes and policy |
+
+## Accessibility and recording assertions
+
+| ID | Assertion |
+|---|---|
+| TERM-ACCESS-001 | Logical state revision, reading order, cursor/focus, selection, viewport, and history map consistently to each platform adapter |
+| TERM-ACCESS-002 | Output storms coalesce announcements without losing navigable history or omission disclosure |
+| TERM-ACCESS-003 | Keyboard-only, zoom/contrast/reduced-motion, secure-input, and screen-reader scenarios satisfy host policy |
+| TERM-RECORD-001 | Capture cannot start without complete authority/purpose/destination policy and independent data-class choices |
+| TERM-RECORD-002 | Password/secure input, redaction, loss/gap, truncation, corruption, partial-finalization, and delete scenarios match claims |
+| TERM-RECORD-003 | R1/R2 replay reproduces checkpoint/state and reports first divergence across artifact/configuration mutations |
+| TERM-RECORD-004 | Ordinary playback cannot deliver recorded input to a live process |
