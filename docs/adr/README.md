@@ -101,5 +101,7 @@
 | [0097](0097-reconnect-creates-a-new-session-and-resume-is-application-evidence.md) | Reconnect creates a new session and resume is application evidence | Accepted |
 | [0098](0098-a-remote-call-is-an-asynchronous-interaction-not-a-local-procedure.md) | A remote call is an asynchronous interaction, not a local procedure | Accepted |
 | [0099](0099-delivery-acknowledgment-is-not-domain-effect.md) | Delivery acknowledgment is not domain effect | Accepted |
+| [0100](0100-exclusive-coordination-requires-resource-enforced-fencing.md) | Exclusive coordination requires resource-enforced fencing | Accepted |
+| [0101](0101-consistency-is-a-history-property-not-a-strength-label.md) | Consistency is a history property, not a strength label | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

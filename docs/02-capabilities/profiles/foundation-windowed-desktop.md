@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.38.0 |
+| Version | 0.39.0 |
 | Extends | [`rm.profile.foundation.desktop` 1.0.0](foundation-desktop.md) |
 | Purpose | Add native top-level window and graphics-presentation infrastructure without claiming a complete GUI toolkit |
 
@@ -299,6 +299,12 @@
 
 **RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0145:** Evidence covers schema evolution, unary/streaming calls, deadline/cancel/partial progress, broker delivery/order/settlement/rebalance, suspend/offline/background behavior, retry/redelivery/dedup/inbox/outbox/reconciliation, security/privacy/i18n/accessibility, provider differentials, and staged latency/energy benchmarks.
 
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0146:** Distributed coordination `>=0.1.0,<0.2.0` is conditional only when a desktop product participates directly in replicated state, exclusive distributed work, elections/locks, or cross-node consistency/transactions. It binds exact domain/configuration/instance generations, failure model, quorum/clocks, consistency/durability, authority, fencing, offline/background policy, and recovery.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0147:** Suspend, sleep, offline operation, network change, process restart, and stale caches invalidate local membership/lease/leadership confidence. Side effects require resource-enforced fencing; conflict/staleness/uncertain transaction and recovery state remains accessible and user-controllable rather than silently merged.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0148:** Evidence covers membership/failure suspicion, paused lease holders and fencing, election/lock cancellation races, consistency histories/caches/session loss, offline convergence/conflicts, distributed transactions/compensation, restore/identity clone, upgrades, privacy/i18n/accessibility, and staged network/energy benchmarks.
+
 ## Whole-product gaps
 
 This profile does not supply a rendering command model, widget/UI framework, text editing model, image/audio codecs, media containers/graphs, gestures, or translated product resources. Product-specific semantic roles/actions/content, accepted transfer formats/importers, locale coverage, audio policy/content, and accessible UX still belong to the product/framework. It cannot claim desktop-application completeness.
@@ -311,6 +317,7 @@ Input evidence additionally covers layout/IME diversity, keyboard-only operation
 
 ## History
 
+- **0.39.0:** Adds conditional distributed coordination, resource-enforced fencing, precise consistency, offline/conflict evidence, transactions/recovery, accessibility, conformance, and benchmarks.
 - **0.38.0:** Adds conditional messaging/RPC, schema evolution, streaming, broker delivery/settlement, explicit replay/idempotency/reconciliation, accessible state, conformance, and benchmarks.
 - **0.37.0:** Adds conditional WebSocket, SSE, and versioned WebTransport sessions, native data semantics, background-aware reconnect/resume evidence, accessibility, conformance, and benchmarks.
 - **0.36.0:** Adds conditional HTTP/1.1-/2-/3 semantics, streaming, connection/proxy/cache behavior, explicit redirect/auth/replay policy, accessible interaction, conformance, and benchmarks.

@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 1.10.0 |
+| Version | 1.11.0 |
 | Purpose | Long-running non-interactive service foundation with bounded shutdown and protected credentials |
 
 ## Workload assumptions
@@ -56,6 +56,9 @@ No interactive desktop session, unattended restart, concurrent I/O, explicit ser
 - **RM-PROFILE-FOUNDATION-SERVER-0038:** Messaging/RPC service `>=0.1.0,<0.2.0` is conditional for typed remote calls, streams, events, pub/sub, or brokered work. It binds interaction and schema revisions, original service/topic, principal/authority/tenant, deadline/cancellation, resource/delivery/ordering/settlement, replay/idempotency/reconciliation, transport/broker profile, and evidence boundaries.
 - **RM-PROFILE-FOUNDATION-SERVER-0039:** Calls remain distributed asynchronous interactions; transport/broker/consumer acknowledgment does not prove domain effect. Exactly-once claims are prohibited unless a product precisely specifies and proves the effect boundary, participating durable state, transactions/fencing/deduplication, retention/recovery, reconciliation, and exclusions.
 - **RM-PROFILE-FOUNDATION-SERVER-0040:** Evidence covers directional schema evolution, unary/all streaming forms, deadline/cancellation/partial progress, broker routing/order/durability/settlement/rebalance/transactions, faults at every domain/ack boundary, retry/hedge/redelivery/dedup/inbox/outbox/reconciliation, security/privacy/accessibility, provider differentials, and staged benchmarks.
+- **RM-PROFILE-FOUNDATION-SERVER-0041:** Distributed coordination `>=0.1.0,<0.2.0` is conditional for replicated membership/state, exclusive distributed work, leader election, distributed locks, cross-node transactions, or consistency-sensitive reads/writes. It binds exact domain/configuration/participant generations, failure model, quorum, clocks, consistency/durability, authority, fencing, recovery, and provider/topology.
+- **RM-PROFILE-FOUNDATION-SERVER-0042:** Timeout or suspicion never proves absence. Lease/election/lock authority gates side effects only when every protected resource atomically rejects stale monotonic fencing tokens. Consistency claims name checked histories and anomalies; consensus does not imply valid domain semantics or external atomicity.
+- **RM-PROFILE-FOUNDATION-SERVER-0043:** Evidence covers membership/reconfiguration, asymmetric partitions and failure suspicion, lease pause/expiry/fencing, elections/locks/barriers, consensus logs/reads/snapshots, history-model checking, distributed transactions/sagas, corruption/restore/quorum disaster/region return, upgrade, security/privacy/accessibility, and staged fault benchmarks.
 
 ## Operational constraints
 
@@ -63,6 +66,7 @@ Deadline timers and cancellation support bounded multi-phase shutdown. Sync path
 
 ## History
 
+- **1.11.0:** Adds conditional distributed membership, leases/fencing, election/locks, consensus, precise consistency histories, transactions/workflows, recovery, conformance, and benchmarks.
 - **1.10.0:** Adds conditional typed messaging/RPC, schema evolution, streaming, broker delivery/settlement, explicit retry/idempotency/reconciliation, effect-boundary conformance, and benchmarks.
 - **1.9.0:** Adds conditional WebSocket, SSE, and versioned WebTransport sessions with native data semantics, bounded flow/lifecycle, explicit reconnect/resume/replay, conformance, and benchmarks.
 - **1.8.0:** Adds conditional HTTP/1.1-/2-/3 semantic exchange, protocol mechanics, streaming, pooling, proxy/cache, redirect/auth/replay policy, server lifecycle, conformance, and benchmarks.

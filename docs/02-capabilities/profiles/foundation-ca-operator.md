@@ -3,8 +3,8 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.5.0 |
-| Extends | [`rm.profile.foundation.server` 1.10.0](foundation-server.md) |
+| Version | 0.6.0 |
+| Extends | [`rm.profile.foundation.server` 1.11.0](foundation-server.md) |
 | Purpose | Operate registration, certificate issuance, renewal, status, and CA lifecycle without claiming a complete public or enterprise CA product |
 
 ## Required composition
@@ -33,8 +33,11 @@
 
 **RM-PROFILE-CA-OPERATOR-0011:** When a product selects messaging/RPC for enrollment, validation, approval, issuance, status, audit, or ceremony workflows, it composes Server 1.10.0 with exact request/ledger/credential schemas, separated command/event authority, immutable attempts, deadline/cancellation nonrollback, durable idempotency/reconciliation, and no claim that broker settlement or handler return proves issuance, activation, revocation, or relying-party observation.
 
+**RM-PROFILE-CA-OPERATOR-0012:** When a CA deployment selects distributed coordination, it composes Server 1.11.0 with exact issuer/ledger/serial/status configuration, fault-domain/quorum policy, resource-enforced fencing for signing/serial/status actors, precisely checked consistency, key/ledger external-effect reconciliation, immutable disaster recovery, and no inference that election alone authorizes CA key use.
+
 ## History
 
+- **0.6.0:** Rebases on Server 1.11.0 and constrains optional coordination to fenced CA actors, precise ledger/status consistency, quorum policy, and disaster recovery.
 - **0.5.0:** Rebases on Server 1.10.0 and constrains optional messaging/RPC to exact CA schemas, separated authority, staged effects, durable idempotency, and reconciliation.
 - **0.4.0:** Rebases on Server 1.9.0 and constrains optional real-time observation to authenticated revisioned events, bounded fanout, new-session reconnect, and no authority from observation.
 - **0.3.0:** Rebases on Server 1.8.0 and constrains optional HTTP mappings with exact transaction, replay/polling, credential/cache/proxy, overload, and ambiguous-result evidence.

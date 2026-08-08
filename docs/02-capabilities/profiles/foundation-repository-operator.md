@@ -3,8 +3,8 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.6.0 |
-| Extends | [`rm.profile.foundation.server` 1.10.0](foundation-server.md) |
+| Version | 0.7.0 |
+| Extends | [`rm.profile.foundation.server` 1.11.0](foundation-server.md) |
 | Purpose | Operate software publication, authenticated repository metadata, mirrors, advisories, and emergency response without claiming a complete hosted registry product |
 
 ## Required composition
@@ -41,8 +41,11 @@
 
 **RM-PROFILE-REPOSITORY-OPERATOR-0015:** When a product selects messaging/RPC for publication, mirroring, advisory, rollout, or administration workflows, it composes Server 1.10.0 with exact artifact/release/advisory/operation schemas, separated command/event authority, immutable attempt lineage, staged receipts, idempotent reconciliation, and no claim that queue settlement or handler return proves repository publication or consumer adoption.
 
+**RM-PROFILE-REPOSITORY-OPERATOR-0016:** When a repository deployment selects distributed coordination, it composes Server 1.11.0 with exact publication/channel/advisory namespace state, configuration/quorum/fault-domain policy, fenced publishers/garbage collectors/mirror coordinators, testable read/write consistency, immutable recovery plans, and no inference that consensus commit proves external mirror or client adoption.
+
 ## History
 
+- **0.7.0:** Rebases on Server 1.11.0 and constrains optional coordination to fenced repository actors, precise consistency, quorum policy, and recovery evidence.
 - **0.6.0:** Rebases on Server 1.10.0 and constrains optional messaging/RPC to exact repository schemas, command/event authority, staged receipts, and publication reconciliation.
 - **0.5.0:** Rebases on Server 1.9.0 and constrains optional real-time observation to revisioned events, bounded fanout, new-session reconnect, and explicit gap/duplicate reconciliation.
 - **0.4.0:** Rebases on Server 1.8.0 and constrains optional HTTP endpoints to preserve repository generations, publication replay authority, cache/proxy partitions, overload, and receipt evidence.
