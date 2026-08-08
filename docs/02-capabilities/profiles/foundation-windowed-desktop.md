@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.17.0 |
+| Version | 0.18.0 |
 | Extends | [`rm.profile.foundation.desktop` 1.0.0](foundation-desktop.md) |
 | Purpose | Add native top-level window and graphics-presentation infrastructure without claiming a complete GUI toolkit |
 
@@ -145,6 +145,14 @@
 
 **RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0068:** Storage evidence covers namespaces/multiple mounts, duplicate/ambiguous identifiers, locked/read-only/network/virtual media, hostile metadata, capacity boundaries, permission/policy denial, busy/veto, dirty data, surprise unplug, stale-generation rejection, privacy redaction, and keyboard/assistive-technology operation.
 
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0069:** Camera capture is conditional on product workload. When selected, `rm.capture.device-observer` and raw-frame stream `>=0.1.0,<0.2.0` are required with explicit revocable capture authority, device/session generation, exact format/color/orientation, frame timing, controls, and bounded buffer policy.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0070:** Device observation never prompts or activates capture. Permission requests are explicit accessible foreground interactions; session start revalidates native authority, privacy switch/shutter, and device generation. Revocation, interruption, competing use, and indicator inconsistency suspend or invalidate capture.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0071:** Raw frames expose self-describing planes, memory domain/lifetime, sequence/discontinuity, timestamp boundary/clock/quality, control revision, and metadata provenance. Slow consumers follow an explicit bounded drop/block/copy/degrade policy; native callbacks cannot execute arbitrary product, UI, encoding, I/O, or exporter work.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0072:** Preview, still-photo processing, encoded samples, codecs, containers, recording, transport, and storage/photo-library output are separately selected. Evidence covers permission states, hostile/malformed frames, color/orientation, timestamp drift, held buffers, drops, reconfiguration, device/privacy loss, virtual provenance, telemetry redaction, and keyboard/assistive-technology operation.
+
 ## Whole-product gaps
 
 This profile does not supply a rendering command model, widget/UI framework, text editing model, image/audio codecs, media containers/graphs, gestures, or translated product resources. Product-specific semantic roles/actions/content, accepted transfer formats/importers, locale coverage, audio policy/content, and accessible UX still belong to the product/framework. It cannot claim desktop-application completeness.
@@ -157,6 +165,7 @@ Input evidence additionally covers layout/IME diversity, keyboard-only operation
 
 ## History
 
+- **0.18.0:** Adds conditional consent-bound camera discovery/raw capture, exact frame/color/timing/control semantics, bounded delivery, privacy/accessibility, and evidence requirements.
 - **0.17.0:** Adds conditional storage-volume/mount observation, privileged mount/removal services, staged safe-removal/durability, identity, security, accessibility, and evidence requirements.
 - **0.16.0:** Adds conditional completion-oriented async-I/O infrastructure, readiness translation, cancellation lifetime, engine/executor separation, bounded-load, and shutdown evidence requirements.
 - **0.15.0:** Adds conditional general device observation, generation-scoped identity evidence, snapshot reconciliation, privacy, class handoff, and hardware-change evidence requirements.

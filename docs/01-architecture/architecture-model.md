@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.26.0
+**Version:** 1.27.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -461,6 +461,8 @@ The [device discovery and hardware-change foundations vertical slice](../02-capa
 The [asynchronous I/O foundations vertical slice](../02-capabilities/async-io/README.md) defines completion-oriented operations over native completion engines, readiness translation, and disclosed blocking adapters; exact terminal progress; registration/resource generations; bounded load; runtime separation; cancellation lifetime; observability; conformance; and benchmarks. Readiness remains a backend hint rather than portable completion, and cancellation does not release operation-owned state before terminal acknowledgement ([ADR-0052](../adr/0052-portable-asynchronous-io-is-completion-oriented.md), [ADR-0053](../adr/0053-cancellation-does-not-end-operation-lifetime.md)). Domain capabilities retain their own I/O semantics. Its specifications remain Draft and cannot amend this model.
 
 The [storage volumes and removable-media foundations vertical slice](../02-capabilities/storage/README.md) defines distinct device/media/region/filesystem/mount entities, namespace-scoped observation, capacity/properties, mount arbitration, staged removal, durability evidence, authority, accessibility, conformance, and benchmarks. A mount is a namespace relationship rather than volume identity, and safe removal is observable coordination rather than a stronger durability or continued-presence guarantee ([ADR-0054](../adr/0054-a-mount-is-a-namespace-relationship-not-volume-identity.md), [ADR-0055](../adr/0055-safe-removal-is-coordination-not-a-durability-guarantee.md)). Destructive storage management remains separate. Its specifications remain Draft and cannot amend this model.
+
+The [camera and media-capture foundations vertical slice](../02-capabilities/capture/README.md) defines side-effect-free camera observation, explicit revocable capture authority, negotiated session generations, exact raw frame/color/orientation layouts, capture clocks, controls, bounded delivery, privacy/accessibility, conformance, and benchmarks. Capture authority is revalidated per session, while raw capture remains distinct from preview, still processing, encoding, recording, transport, and storage ([ADR-0056](../adr/0056-capture-authority-is-session-scoped-and-revocable.md), [ADR-0057](../adr/0057-raw-capture-is-not-recording-or-encoding.md)). Its specifications remain Draft and cannot amend this model.
 
 ## 18. Deliberately unresolved choices
 

@@ -57,5 +57,7 @@
 | [0053](0053-cancellation-does-not-end-operation-lifetime.md) | Cancellation does not end operation lifetime | Accepted |
 | [0054](0054-a-mount-is-a-namespace-relationship-not-volume-identity.md) | A mount is a namespace relationship, not volume identity | Accepted |
 | [0055](0055-safe-removal-is-coordination-not-a-durability-guarantee.md) | Safe removal is coordination, not a durability guarantee | Accepted |
+| [0056](0056-capture-authority-is-session-scoped-and-revocable.md) | Capture authority is session-scoped and revocable | Accepted |
+| [0057](0057-raw-capture-is-not-recording-or-encoding.md) | Raw capture is not recording or encoding | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.
