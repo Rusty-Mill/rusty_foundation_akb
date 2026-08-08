@@ -21,6 +21,7 @@ This is an inventory for domain analysis, not an API or crate list.
 | Audio | devices, streams, routing, timing, formats, real-time constraints |
 | Capture | cameras, authorization, raw frames, controls, timing, privacy, backpressure |
 | Notifications | content, attention policy, presentation requests, actions, scheduling, badges |
+| Power | sources, batteries, saver policy, thermal pressure, sleep assertions, energy evidence |
 | Devices | enumeration, identity evidence, properties, topology, hotplug, class handoff |
 | Time | clocks, instants, duration, calendar, timezone, timers |
 | Plugins | discovery, compatibility, isolation, authority, lifecycle |
@@ -57,3 +58,4 @@ Each domain will be decomposed into common, optional/advanced, and platform-spec
 - [Storage volumes and removable-media foundations vertical slice](storage/README.md) — Draft
 - [Camera and media-capture foundations vertical slice](capture/README.md) — Draft
 - [Notifications and user-attention foundations vertical slice](notifications/README.md) — Draft
+- [Power and energy-management foundations vertical slice](power/README.md) — Draft

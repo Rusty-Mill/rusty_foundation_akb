@@ -61,5 +61,7 @@
 | [0057](0057-raw-capture-is-not-recording-or-encoding.md) | Raw capture is not recording or encoding | Accepted |
 | [0058](0058-notification-submission-is-not-presentation.md) | Notification submission is not presentation | Accepted |
 | [0059](0059-notification-actions-are-untrusted-activation.md) | Notification actions are untrusted activation | Accepted |
+| [0060](0060-power-observations-are-estimates-not-budgets.md) | Power observations are estimates, not budgets | Accepted |
+| [0061](0061-power-assertions-are-scoped-leases-not-guarantees.md) | Power assertions are scoped leases, not guarantees | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

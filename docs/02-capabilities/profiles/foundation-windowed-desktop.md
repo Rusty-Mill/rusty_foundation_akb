@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.19.0 |
+| Version | 0.20.0 |
 | Extends | [`rm.profile.foundation.desktop` 1.0.0](foundation-desktop.md) |
 | Purpose | Add native top-level window and graphics-presentation infrastructure without claiming a complete GUI toolkit |
 
@@ -161,6 +161,14 @@
 
 **RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0076:** Replacement, progress, badge, withdrawal, history, and scheduling are independently selected qualities. Evidence covers truncation/localization/bidi, unsupported features, policy denial, unknown outcomes, duplicate/late activation, stale updates, service/process/reboot/clock changes, sensitive-content redaction, and keyboard/assistive-technology interaction.
 
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0077:** `rm.power.observer` `>=0.1.0,<0.2.0` is conditional on products that adapt behavior or expose battery/power state. Snapshots preserve source, multiple-device aggregation, units, validity/age/uncertainty, saver, warning, thermal, and unknown state; estimates are not budgets or deadlines.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0078:** Workload adaptation explicitly defines deferrability, latency/quality floors, rate/concurrency/batching changes, hysteresis, checkpoint/cancellation, and recovery. Energy or thermal policy cannot weaken security, integrity, durability, accessibility, or required user feedback.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0079:** Sleep/display assertion support is optional and uses narrow attributed purpose-bound leases with maximum duration, effective state, renewal validation, automatic owner release, and denial/override/expiry handling. Correctness tolerates suspend, shutdown, lid close, critical battery, and failure despite a granted lease.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0080:** Evidence covers desktops/multi-battery/docks/UPS, source and saver transitions, volatile estimates, thermal throttling, lease leak/override, suspend/resume resource reconciliation, sustained energy/performance measurement, privacy minimization, and accessible localized degradation/blocker UX.
+
 ## Whole-product gaps
 
 This profile does not supply a rendering command model, widget/UI framework, text editing model, image/audio codecs, media containers/graphs, gestures, or translated product resources. Product-specific semantic roles/actions/content, accepted transfer formats/importers, locale coverage, audio policy/content, and accessible UX still belong to the product/framework. It cannot claim desktop-application completeness.
@@ -173,6 +181,7 @@ Input evidence additionally covers layout/IME diversity, keyboard-only operation
 
 ## History
 
+- **0.20.0:** Adds conditional qualified power/battery/thermal observation, explicit workload adaptation, optional scoped assertion leases, energy evidence, privacy, accessibility, and lifecycle requirements.
 - **0.19.0:** Adds conditional typed notification submission, attention/privacy policy, untrusted action activation, optional state/scheduling features, accessibility, and evidence requirements.
 - **0.18.0:** Adds conditional consent-bound camera discovery/raw capture, exact frame/color/timing/control semantics, bounded delivery, privacy/accessibility, and evidence requirements.
 - **0.17.0:** Adds conditional storage-volume/mount observation, privileged mount/removal services, staged safe-removal/durability, identity, security, accessibility, and evidence requirements.

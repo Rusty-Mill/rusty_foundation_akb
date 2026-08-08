@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.28.0
+**Version:** 1.29.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -465,6 +465,8 @@ The [storage volumes and removable-media foundations vertical slice](../02-capab
 The [camera and media-capture foundations vertical slice](../02-capabilities/capture/README.md) defines side-effect-free camera observation, explicit revocable capture authority, negotiated session generations, exact raw frame/color/orientation layouts, capture clocks, controls, bounded delivery, privacy/accessibility, conformance, and benchmarks. Capture authority is revalidated per session, while raw capture remains distinct from preview, still processing, encoding, recording, transport, and storage ([ADR-0056](../adr/0056-capture-authority-is-session-scoped-and-revocable.md), [ADR-0057](../adr/0057-raw-capture-is-not-recording-or-encoding.md)). Its specifications remain Draft and cannot amend this model.
 
 The [notifications and user-attention foundations vertical slice](../02-capabilities/notifications/README.md) defines typed localized content, acceptance/presentation evidence, user-controlled attention policy, untrusted action activation, replacement/progress/badges, scheduling, privacy/accessibility, conformance, and benchmarks. Submission acceptance is not a presentation or delivery guarantee, and every response re-enters through ordinary lifecycle activation and domain authorization ([ADR-0058](../adr/0058-notification-submission-is-not-presentation.md), [ADR-0059](../adr/0059-notification-actions-are-untrusted-activation.md)). Remote push transport and exceptional alert classes remain separate. Its specifications remain Draft and cannot amend this model.
+
+The [power and energy-management foundations vertical slice](../02-capabilities/power/README.md) defines qualified battery/power/saver/thermal observations, workload adaptation intent, scoped sleep/display assertion leases, lifecycle reconciliation, energy measurement, privacy/accessibility, conformance, and benchmarks. Power observations are estimates rather than budgets, and assertions are bounded requests rather than continued-execution guarantees ([ADR-0060](../adr/0060-power-observations-are-estimates-not-budgets.md), [ADR-0061](../adr/0061-power-assertions-are-scoped-leases-not-guarantees.md)). Privileged system power transitions and device power controls remain separate. Its specifications remain Draft and cannot amend this model.
 
 ## 18. Deliberately unresolved choices
 
