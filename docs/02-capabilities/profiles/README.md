@@ -33,7 +33,7 @@ The table is only a view. Each manifest defines exact contract ranges, predicate
 
 ## Windowed desktop extension
 
-[`rm.profile.foundation.windowed-desktop` 0.10.0](foundation-windowed-desktop.md) extends Desktop 1.0.0 with negotiated top-level windowing, graphics presentation, focused input/text composition, exact text infrastructure, semantic accessibility/native adapters, data transfer, explicit localization/formatting, typed snapshot-based configuration, bounded structured observability, application lifecycle/session integration, and conditional networking. It remains intentionally incomplete until renderer/UI, editing, translated product resources/semantics/importers, application protocols, and product-specific restoration policy are selected.
+[`rm.profile.foundation.windowed-desktop` 0.11.0](foundation-windowed-desktop.md) extends Desktop 1.0.0 with negotiated top-level windowing, graphics presentation, focused input/text composition, exact text infrastructure, semantic accessibility/native adapters, data transfer, explicit localization/formatting, typed snapshot-based configuration, bounded structured observability, application lifecycle/session integration, conditional networking, and optional explicit memory/mapping infrastructure. It remains intentionally incomplete until renderer/UI, editing, translated product resources/semantics/importers, application protocols, and product-specific restoration policy are selected.
 
 ## Version transition
 

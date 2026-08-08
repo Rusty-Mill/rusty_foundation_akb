@@ -33,6 +33,7 @@ The AKB is organized from stable intent to evolving detail.
 - [Observability, diagnostics, and crash reporting](02-capabilities/observability/README.md)
 - [Application lifecycle and session integration](02-capabilities/lifecycle/README.md)
 - [Networking foundations](02-capabilities/networking/README.md)
+- [Memory and mapping foundations](02-capabilities/memory/README.md)
 
 ## Planned volumes
 

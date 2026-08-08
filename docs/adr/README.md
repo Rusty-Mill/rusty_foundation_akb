@@ -43,5 +43,7 @@
 | [0039](0039-restoration-state-is-disposable-continuity-metadata.md) | Restoration state is disposable continuity metadata | Accepted |
 | [0040](0040-resolution-results-are-candidates-not-authority.md) | Resolution results are candidates, not authority or identity | Accepted |
 | [0041](0041-secure-channels-compose-over-transports.md) | Secure channels compose over transports | Accepted |
+| [0042](0042-address-reservation-is-not-memory-commitment.md) | Address reservation is not memory commitment | Accepted |
+| [0043](0043-executable-memory-is-a-separate-authorized-service.md) | Executable memory is a separate authorized service | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

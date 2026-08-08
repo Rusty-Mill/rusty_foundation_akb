@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.19.0
+**Version:** 1.20.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -447,6 +447,8 @@ The [observability, diagnostics, and crash-reporting vertical slice](../02-capab
 The [application lifecycle and session-integration vertical slice](../02-capabilities/lifecycle/README.md) defines application-instance epochs, typed activation, session/power observations, cooperative termination and scoped inhibition, readiness milestones, and disposable restoration metadata. No lifecycle callback is a portable cleanup guarantee; durable state is committed during ordinary operation and orderly shutdown runs only when the observed native request permits it ([ADR-0038](../adr/0038-lifecycle-events-do-not-guarantee-cleanup.md), [ADR-0039](../adr/0039-restoration-state-is-disposable-continuity-metadata.md)). Its specifications remain Draft and cannot amend this model.
 
 The [networking foundations vertical slice](../02-capabilities/networking/README.md) defines service intent and endpoint types, expiring resolution candidates, bounded connection racing, full-duplex byte streams, datagrams, listeners, path observations, and secure-channel composition. Resolution is neither identity nor authority; transport establishment, cryptographic security, peer authentication, and application readiness are separate milestones ([ADR-0040](../adr/0040-resolution-results-are-candidates-not-authority.md), [ADR-0041](../adr/0041-secure-channels-compose-over-transports.md)). Its specifications remain Draft and cannot amend this model.
+
+The [memory and mapping foundations vertical slice](../02-capabilities/memory/README.md) defines virtual-region state, file and shared mappings, protection, residency/discard controls, allocation-service boundaries, and separately authorized executable-memory publication. Address reservation, backing commitment, residency, locking, and durability are independent claims; mapped bytes do not automatically form safe typed Rust objects ([ADR-0042](../adr/0042-address-reservation-is-not-memory-commitment.md), [ADR-0043](../adr/0043-executable-memory-is-a-separate-authorized-service.md)). Its specifications remain Draft and cannot amend this model.
 
 ## 18. Deliberately unresolved choices
 

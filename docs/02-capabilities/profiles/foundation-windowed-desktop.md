@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.10.0 |
+| Version | 0.11.0 |
 | Extends | [`rm.profile.foundation.desktop` 1.0.0](foundation-desktop.md) |
 | Purpose | Add native top-level window and graphics-presentation infrastructure without claiming a complete GUI toolkit |
 
@@ -89,6 +89,14 @@
 
 **RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0040:** Networking evidence covers IPv4/IPv6/DNS64, candidate racing and loser cleanup, constrained/expensive/unknown paths, proxy/VPN/network changes, partial I/O/backpressure/cancellation, suspend/resume reconciliation, certificate/name/revocation-quality failures, exporter-safe diagnostics, and accessible localized connectivity/retry states.
 
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0041:** `rm.memory.virtual-region` is optional infrastructure selected only for workloads requiring explicit virtual-memory control. File mappings, shared regions, residency/locking, large pages, and allocator services are independent optional members; executable-memory service is prohibited unless explicitly selected by a specialized profile extension.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0042:** Memory requirements distinguish reserved address space, backing/commit, accessibility, residency, locking, shared/private dirty state, and durability. A mapping cannot be exposed as a typed safe view until bounds, alignment, initialization, representation, aliasing, mutability, and concurrency invariants are proven.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0043:** Shared-memory transfer attenuates access and uses versioned offset-based layouts with separately proven synchronization. Native pointers, Rust references, secrets-by-default, implicit inheritance, and named global discovery are prohibited.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0044:** Memory evidence covers overflow/alignment, guard/protection faults in subprocesses, file truncate/replace, flush-stage nonclaims, shared lifetime/transfer, pressure/discard, lock/no-dump limitations, OOM categories, suspend/crash diagnostics, and any executable-memory entitlement/W^X claim.
+
 ## Whole-product gaps
 
 This profile does not supply a rendering command model, widget/UI framework, text editing model, image codecs, gestures, translated product resources, or application lifecycle/session integration. Product-specific semantic roles/actions/content, accepted transfer formats/importers, locale coverage, and accessible UX still belong to the product/framework. It cannot claim desktop-application completeness.
@@ -101,6 +109,7 @@ Input evidence additionally covers layout/IME diversity, keyboard-only operation
 
 ## History
 
+- **0.11.0:** Adds optional explicit virtual-memory, mapping, sharing, residency, allocator, typed-view, and executable-memory prohibition/evidence requirements.
 - **0.10.0:** Adds conditional resolution, connection racing, stream/path observation, optional datagram/listener/secure channel, authority, security, and network-change evidence requirements.
 - **0.9.0:** Adds application-instance, activation, session/power observation, cooperative termination/inhibition, readiness, and safe restoration requirements.
 - **0.8.0:** Adds structured observability, explicit causal context, bounded exporter-independent pipelines, privacy governance, diagnostic bundles, and separated crash capture/analysis requirements.
