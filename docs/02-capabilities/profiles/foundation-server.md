@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 1.18.0 |
+| Version | 1.19.0 |
 | Purpose | Long-running non-interactive service foundation with bounded shutdown and protected credentials |
 
 ## Workload assumptions
@@ -80,6 +80,9 @@ No interactive desktop session, unattended restart, concurrent I/O, explicit ser
 - **RM-PROFILE-FOUNDATION-SERVER-0062:** Service traffic `>=0.1.0,<0.2.0` is conditional for replicated or multi-endpoint services. It binds service/endpoint/registration/discovery/route/balancer/security generations, locality/fault model, health/drain/outlier, affinity, attempt/admission/effect, failover, control propagation, and provider topology.
 - **RM-PROFILE-FOUNDATION-SERVER-0063:** Health is expiring evidence, not success authority; routes bind immutable endpoint snapshots and policy generations. Retries/hedges/races/failover share deadlines and amplification/effect budgets; secure identity and domain authorization remain separate; configuration application and observed traffic convergence are distinct.
 - **RM-PROFILE-FOUNDATION-SERVER-0064:** Evidence covers registration leases, DNS/native/control discovery reconciliation, health/outlier/drain histories, routes/subsets/progressive delivery, balancing/affinity/multiplexing, retry/hedge/admission/circuits, locality/failover/failback, control-plane mixed generations/revocation, privacy/accessibility, provider differentials, and staged fault/cost benchmarks.
+- **RM-PROFILE-FOUNDATION-SERVER-0065:** Policy evaluation `>=0.1.0,<0.2.0` is conditional for authorization, admission/routing, validation, configuration, or product rules. It binds typed decision entry points, immutable policy/schema/input/data/function/evaluator generations, combination/default, obligations/enforcement, cache/freshness, distribution, audit/privacy, and provider.
+- **RM-PROFILE-FOUNDATION-SERVER-0066:** Decisions are evidence, not credentials/effects; enforcement revalidates applicability and current authority. Security defaults fail closed on malformed/missing/stale/unknown/indeterminate/error/unsupported obligations. Evaluation is pure and bounded; external data/nondeterminism is explicit; caches include every semantic dependency.
+- **RM-PROFILE-FOUNDATION-SERVER-0067:** Evidence covers language/type/function semantics, decision truth/error tables and conflicts, data/entity graphs, partial/cache invalidation, enforcement/obligation fault histories, coherent signed distribution and mixed generations, simulation/change analysis, explanation/audit redaction, isolation/side channels, provider differentials, and staged benchmarks.
 
 ## Operational constraints
 
@@ -87,6 +90,7 @@ Deadline timers and cancellation support bounded multi-phase shutdown. Sync path
 
 ## History
 
+- **1.19.0:** Adds conditional typed policy evaluation, immutable contexts, explicit unknown/default/composition, obligation enforcement, partial/cache semantics, signed distribution, simulation/audit, conformance, and benchmarks.
 - **1.18.0:** Adds conditional service discovery, generation-bound routing/balancing, expiring health, affinity, attempt/admission budgets, locality/failover, control propagation, conformance, and benchmarks.
 - **1.17.0:** Adds conditional schema-first interchange, directional evolution, format mappings, canonical signed views, framing/negotiation, bounded parsing, unknown/loss handling, registries, conformance vectors, and benchmarks.
 - **1.16.0:** Adds conditional typed batch/stream analytics, logical/physical plans, event-time/state/effects, distributed resources, materialization, lineage/privacy, recovery/reproducibility, conformance, and benchmarks.

@@ -3,8 +3,8 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.14.0 |
-| Extends | [`rm.profile.foundation.server` 1.18.0](foundation-server.md) |
+| Version | 0.15.0 |
+| Extends | [`rm.profile.foundation.server` 1.19.0](foundation-server.md) |
 | Purpose | Operate software publication, authenticated repository metadata, mirrors, advisories, and emergency response without claiming a complete hosted registry product |
 
 ## Required composition
@@ -57,8 +57,11 @@
 
 **RM-PROFILE-REPOSITORY-OPERATOR-0023:** Repository traffic composes Server 1.18.0 with authenticated repository/mirror/metadata/advisory service identity, digest- and generation-aware routes, mirror health and freshness separation, region/data readiness, immutable release canaries, bounded download/publication retries, drain/failover propagation, and no inference that endpoint health or traffic shift proves coherent signed metadata, artifact availability, or consumer adoption.
 
+**RM-PROFILE-REPOSITORY-OPERATOR-0024:** Repository policy composes Server 1.19.0 with typed namespace/upload/sign/approve/publish/promote/yank/advisory/revoke/mirror/retention decisions, immutable release/evidence and principal/tenant generations, mandatory security-policy precedence, quorum/break-glass obligations, fail-closed enforcement, simulation/audit, and no inference that a permit or completed obligation proves publication, mirror propagation, installation, or consumer adoption.
+
 ## History
 
+- **0.15.0:** Rebases on Server 1.19.0 and constrains repository policy to typed publication decisions, immutable release/principal evidence, mandatory security precedence, quorum obligations, fail-closed enforcement, and simulation/audit.
 - **0.14.0:** Rebases on Server 1.18.0 and constrains repository traffic to authenticated service identity, metadata/artifact generations, mirror freshness, region readiness, bounded attempts, and coherent failover.
 - **0.13.0:** Rebases on Server 1.17.0 and constrains repository interchange to immutable schemas, exact signed views, bounded parsing, unknown preservation, loss-aware security-format conversion, and provenance.
 - **0.12.0:** Rebases on Server 1.16.0 and constrains optional analytics to immutable repository frontiers, privacy-preserving metrics, late corrections, reproducible reports, and separated publication authority.

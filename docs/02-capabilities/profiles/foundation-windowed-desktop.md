@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.46.0 |
+| Version | 0.47.0 |
 | Extends | [`rm.profile.foundation.desktop` 1.0.0](foundation-desktop.md) |
 | Purpose | Add native top-level window and graphics-presentation infrastructure without claiming a complete GUI toolkit |
 
@@ -347,6 +347,12 @@
 
 **RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0169:** Evidence covers DNS/native/control discovery, dual-stack/network changes, endpoint churn/readiness/drain, policy/subset/affinity, multiplexed pools, retry/hedge/admission, proxy/privacy, locality/failover, suspend/background/power, accessible recovery, and staged latency/energy/network/cost benchmarks.
 
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0170:** Policy evaluation `>=0.1.0,<0.2.0` is conditional for authorization, validation, configuration, features, routing/admission, or product rules. It binds typed entry point/request/result, policy/schema/data/function/evaluator generations, user/tenant/context, obligations/enforcement, cache/freshness, distribution, privacy, and provider.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0171:** Policy decisions are evidence, not credentials or effects. Missing/unknown/error/deny/requirements remain accessible with localized safe reasons and recovery; offline/cached permits are bounded by identity/resource/policy/data validity; obligations require explicit product capabilities and cannot execute ambient callbacks.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0172:** Evidence covers schema/type and language semantics, every result/default/conflict, entity/data freshness, cache/partial evaluation, offline/revocation, enforcement races/obligations, policy rollout/rollback, simulation, redacted accessible explanation, hostile limits, privacy, and staged latency/memory/energy benchmarks.
+
 ## Whole-product gaps
 
 This profile does not supply a rendering command model, widget/UI framework, text editing model, image/audio codecs, media containers/graphs, gestures, or translated product resources. Product-specific semantic roles/actions/content, accepted transfer formats/importers, locale coverage, audio policy/content, and accessible UX still belong to the product/framework. It cannot claim desktop-application completeness.
@@ -359,6 +365,7 @@ Input evidence additionally covers layout/IME diversity, keyboard-only operation
 
 ## History
 
+- **0.47.0:** Adds conditional typed policy evaluation, immutable contexts, explicit unknown/default/composition, obligation enforcement, cached/offline validity, accessible reasons, distribution/simulation, conformance, and benchmarks.
 - **0.46.0:** Adds conditional service discovery/routing/balancing, expiring health evidence, affinity, unified attempt/admission budgets, network-aware failover, accessible recovery, conformance, and benchmarks.
 - **0.45.0:** Adds conditional schema-first interchange, exact format mappings, canonical signed views, bounded streaming parsers, unknown/loss handling, accessible validation, registry lifecycle, conformance, and benchmarks.
 - **0.44.0:** Adds conditional typed batch/stream analytics, versioned plans, event-time/state/effects, resource governance, accessible results, lineage/privacy, recovery/reproducibility, conformance, and benchmarks.

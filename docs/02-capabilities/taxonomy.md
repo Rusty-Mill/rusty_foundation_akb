@@ -24,6 +24,7 @@ This is an inventory for domain analysis, not an API or crate list.
 | Search and retrieval | document projections, schemas/analyzers, lexical/vector/spatial indexes, query/ranking, pagination/facets, migration/recovery |
 | Analytical processing | typed tabular/columnar data, logical/physical plans, batch/stream operators, watermarks/state/checkpoints, materialization/recovery |
 | Data interchange | logical schemas/evolution, wire mappings, canonical views, framing/negotiation, bounded parsing, unknowns/transcoding, registries |
+| Policy evaluation | typed requests/decisions, immutable policies/data, composition, obligations/enforcement, partial evaluation/cache, distribution/simulation |
 | Security | identity, credentials, authorization, secrets, sandboxing, cryptographic policy/operations/keys/providers |
 | Signed artifacts | signed views, code/package/document signatures, timestamps, transparency, provenance, reproducibility, acceptance policy |
 | Package management | package identity, repositories, dependency resolution, install/update transactions, rollout, rollback, removal, recovery |
@@ -89,6 +90,7 @@ Each domain will be decomposed into common, optional/advanced, and platform-spec
 - [Search, indexing, and retrieval foundations](search/README.md) — Draft
 - [Analytical data processing and query foundations](analytics/README.md) — Draft
 - [Structured data interchange and serialization foundations](interchange/README.md) — Draft
+- [Application policy and rules-evaluation foundations](policy/README.md) — Draft
 - [Memory and mapping foundations vertical slice](memory/README.md) — Draft
 - [Plugin and module lifecycle vertical slice](plugins/README.md) — Draft
 - [Threading and synchronization foundations vertical slice](threading/README.md) — Draft

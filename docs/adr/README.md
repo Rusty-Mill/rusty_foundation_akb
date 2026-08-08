@@ -117,5 +117,7 @@
 | [0113](0113-canonicalization-is-an-explicit-signed-view-profile.md) | Canonicalization is an explicit signed-view profile | Accepted |
 | [0114](0114-health-is-expiring-evidence-not-success-authority.md) | Health is expiring evidence, not success authority | Accepted |
 | [0115](0115-routing-binds-a-policy-generation-and-endpoint-snapshot.md) | Routing binds a policy generation and endpoint snapshot | Accepted |
+| [0116](0116-policy-decisions-are-evidence-not-effect-authority.md) | Policy decisions are evidence, not effect authority | Accepted |
+| [0117](0117-policy-evaluation-binds-immutable-policy-and-input-snapshots.md) | Policy evaluation binds immutable policy and input snapshots | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

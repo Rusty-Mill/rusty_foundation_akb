@@ -3,8 +3,8 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.13.0 |
-| Extends | [`rm.profile.foundation.server` 1.18.0](foundation-server.md) |
+| Version | 0.14.0 |
+| Extends | [`rm.profile.foundation.server` 1.19.0](foundation-server.md) |
 | Purpose | Operate registration, certificate issuance, renewal, status, and CA lifecycle without claiming a complete public or enterprise CA product |
 
 ## Required composition
@@ -49,8 +49,11 @@
 
 **RM-PROFILE-CA-OPERATOR-0019:** CA traffic composes Server 1.18.0 with authenticated enrollment/status/transparency/administration service identities and endpoint generations, profile/tenant routes, readiness separated from key/ledger/status/data health, bounded replay-safe attempts, fenced issuer effects, region/ceremony capacity, controlled failover/failback, emergency revocation propagation, and no inference that health or routing grants signing/issuance authority or proves relying-party status.
 
+**RM-PROFILE-CA-OPERATOR-0020:** CA policy composes Server 1.19.0 with typed enrollment/validation/approval/profile/issuance/status/revocation/key/ceremony decisions, immutable request/identity/POP/attestation/ledger/time generations, mandatory cryptographic/trust/legal-policy precedence, quorum/HSM/transparency/status obligations, fail-closed enforcement, simulation/audit, and no inference that a permit grants key authority or proves issuance, status propagation, or relying-party trust.
+
 ## History
 
+- **0.14.0:** Rebases on Server 1.19.0 and constrains CA policy to typed issuance decisions, immutable request/identity/ledger evidence, mandatory trust precedence, quorum/HSM obligations, fail-closed enforcement, and simulation/audit.
 - **0.13.0:** Rebases on Server 1.18.0 and constrains CA traffic to authenticated service identity, separated key/ledger/status health, replay-safe attempts, fenced effects, controlled failover, and emergency revocation.
 - **0.12.0:** Rebases on Server 1.17.0 and constrains CA interchange to exact ASN.1/DER and protocol schemas, canonical signed regions, hostile parsing, critical extensions, registries, and loss-aware conversion.
 - **0.11.0:** Rebases on Server 1.16.0 and constrains optional analytics to exact CA frontiers, disclosure-resistant aggregates, reproducible evidence, late corrections, and separated key/status effects.
