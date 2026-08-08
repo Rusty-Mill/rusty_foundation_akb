@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.41.0 |
+| Version | 0.42.0 |
 | Extends | [`rm.profile.foundation.desktop` 1.0.0](foundation-desktop.md) |
 | Purpose | Add native top-level window and graphics-presentation infrastructure without claiming a complete GUI toolkit |
 
@@ -317,6 +317,12 @@
 
 **RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0154:** Evidence covers range/resumed and parallel transfer, local-cache corruption and privacy partitioning, multipart crash/abort/complete races, conditional conflicts, delegated URL expiry/revocation, version restore, lifecycle/legal hold, replication/failover, accessibility/i18n, and staged network/energy benchmarks.
 
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0155:** Caching `>=0.1.0,<0.2.0` is conditional for reusable local, shared, distributed, offline, or edge representations. It binds canonical keys, user/tenant/privacy partition, representation and configuration generations, freshness/validation/invalidation policy, tiers, capacity/cost, and authority.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0156:** Entry presence does not authorize reuse. Offline and stale states, refresh conflicts, storage pressure, privacy changes, corruption, eviction, and recovery remain observable and accessible; background fill respects lifecycle, connectivity, energy, metering, and user policy.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0157:** Evidence covers key/locale/identity partitions, clock/suspend freshness, validation/ranges, cancellation-safe collapse, pressure/eviction/corruption, invalidation races, offline convergence, edge propagation, accessibility/i18n, privacy, and staged latency/energy/network benchmarks.
+
 ## Whole-product gaps
 
 This profile does not supply a rendering command model, widget/UI framework, text editing model, image/audio codecs, media containers/graphs, gestures, or translated product resources. Product-specific semantic roles/actions/content, accepted transfer formats/importers, locale coverage, audio policy/content, and accessible UX still belong to the product/framework. It cannot claim desktop-application completeness.
@@ -329,6 +335,7 @@ Input evidence additionally covers layout/IME diversity, keyboard-only operation
 
 ## History
 
+- **0.42.0:** Adds conditional policy-qualified caching, privacy partitions, freshness/validation, tiering/eviction, stampede control, invalidation/edge delivery, accessibility, conformance, and benchmarks.
 - **0.41.0:** Adds conditional generation-bound object/blob storage, verified content addressing, multipart commit, delegated access, retention/recovery, accessibility, conformance, and benchmarks.
 - **0.40.0:** Adds conditional typed persistence/databases, transaction/durability evidence, staged migrations, offline/change reconciliation, backup/restore, replication, accessibility, conformance, and benchmarks.
 - **0.39.0:** Adds conditional distributed coordination, resource-enforced fencing, precise consistency, offline/conflict evidence, transactions/recovery, accessibility, conformance, and benchmarks.

@@ -107,5 +107,7 @@
 | [0103](0103-schema-migration-is-a-compatibility-rollout.md) | Schema migration is a compatibility rollout | Accepted |
 | [0104](0104-content-addresses-bind-exact-bytes-not-provider-object-identity.md) | Content addresses bind exact bytes, not provider object identity | Accepted |
 | [0105](0105-multipart-completion-is-a-conditional-object-commit.md) | Multipart completion is a conditional object commit | Accepted |
+| [0106](0106-cache-presence-is-not-reuse-authority.md) | Cache presence is not reuse authority | Accepted |
+| [0107](0107-invalidation-completion-is-boundary-scoped-evidence.md) | Invalidation completion is boundary-scoped evidence | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

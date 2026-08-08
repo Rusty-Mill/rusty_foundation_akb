@@ -3,8 +3,8 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.9.0 |
-| Extends | [`rm.profile.foundation.server` 1.13.0](foundation-server.md) |
+| Version | 0.10.0 |
+| Extends | [`rm.profile.foundation.server` 1.14.0](foundation-server.md) |
 | Purpose | Operate software publication, authenticated repository metadata, mirrors, advisories, and emergency response without claiming a complete hosted registry product |
 
 ## Required composition
@@ -47,8 +47,11 @@
 
 **RM-PROFILE-REPOSITORY-OPERATOR-0018:** When a repository selects object storage, it composes Server 1.13.0 with digest-verified immutable artifact descriptors, exact namespace/key/generation and metadata authority, conditional publication and channel-reference updates, quarantined multipart upload, delegated-download limits, inventory/retention/legal-hold/garbage-collection policy, mirror/replication recovery, and no inference that object commit proves authenticated metadata publication or client adoption.
 
+**RM-PROFILE-REPOSITORY-OPERATOR-0019:** When a repository selects caching or edge delivery, it composes Server 1.14.0 with immutable digest-bearing release keys, credential/private-metadata partitions, bounded freshness for authenticated metadata and advisories, conditional validation, origin shielding, stampede control, revision-scoped purge, signed-download authority, propagation evidence, and no inference that a cache hit or purge proves repository truth or consumer adoption.
+
 ## History
 
+- **0.10.0:** Rebases on Server 1.14.0 and constrains optional caching/edge delivery to immutable releases, authenticated metadata freshness, privacy partitions, bounded purge, and propagation evidence.
 - **0.9.0:** Rebases on Server 1.13.0 and constrains optional object storage to verified immutable artifacts, conditional publication, bounded delegation, retention/GC, and mirror recovery.
 - **0.8.0:** Rebases on Server 1.12.0 and constrains optional databases to repository invariants, staged migrations, boundary-scoped publication, and verified recovery.
 - **0.7.0:** Rebases on Server 1.11.0 and constrains optional coordination to fenced repository actors, precise consistency, quorum policy, and recovery evidence.

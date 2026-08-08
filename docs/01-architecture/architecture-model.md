@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.51.0
+**Version:** 1.52.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -511,6 +511,8 @@ The [distributed coordination and consistency foundations](../02-capabilities/co
 The [application data persistence and database foundations](../02-capabilities/persistence/README.md) compose logical data/query models, typed connections/sessions/pools/statements, transaction/isolation/durability evidence, constraints/indexes/concurrency, staged schema migrations, change streams/outbox integration, backup/restore/PITR, replication/failover, cross-cutting qualities, conformance, and benchmarks across embedded and service providers. Database commit is boundary-scoped evidence distinct from durability/visibility/archive/change/external effect, and schema migration is a compatibility rollout rather than a one-shot script ([ADR-0102](../adr/0102-database-commit-is-boundary-scoped-evidence.md), [ADR-0103](../adr/0103-schema-migration-is-a-compatibility-rollout.md)). Exact engines/services/drivers/dialects, logical/product schemas, topology, migration tooling, queries/indexes, domain transactions, retention/privacy/legal policy, managed-service controls, and operational objectives remain product RFC choices. Its specifications remain Draft and cannot amend this model.
 
 The [object, blob, and content-addressed storage foundations](../02-capabilities/object-storage/README.md) compose namespace authority, exact object generations, conditional reads and mutations, bounded streaming and multipart transfer, metadata/listing/events, independent content-digest verification, delegated access, lifecycle/retention/legal hold, replication/recovery, cross-cutting qualities, conformance, and benchmarks. Content addresses bind exact bytes rather than provider object identity, and multipart completion is a conditional object-generation commit rather than an inference from staged parts ([ADR-0104](../adr/0104-content-addresses-bind-exact-bytes-not-provider-object-identity.md), [ADR-0105](../adr/0105-multipart-completion-is-a-conditional-object-commit.md)). Exact providers/accounts/regions/buckets/keys, metadata schemas, retention/legal policy, encryption/key policy, billing, replication topology, repository artifact graphs, and service objectives remain product RFC choices. Its specifications remain Draft and cannot amend this model.
+
+The [caching and content-delivery foundations](../02-capabilities/caching/README.md) compose canonical keys and privacy partitions, freshness/validation, admission/eviction and tiering, bounded fill collapse, invalidation/coherence, edge delivery, cross-cutting qualities, conformance, and benchmarks. Physical entry presence does not authorize reuse, and distributed invalidation completion is evidence scoped to an explicitly measured boundary ([ADR-0106](../adr/0106-cache-presence-is-not-reuse-authority.md), [ADR-0107](../adr/0107-invalidation-completion-is-boundary-scoped-evidence.md)). Exact cached representations, providers/topology/capacity, keys/partitions, freshness/staleness, invalidation authority, CDN routing/transformation, origin behavior, objectives, and cost policy remain product RFC choices. Its specifications remain Draft and cannot amend this model.
 
 ## 18. Deliberately unresolved choices
 
