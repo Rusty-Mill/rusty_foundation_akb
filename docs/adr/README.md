@@ -67,5 +67,7 @@
 | [0063](0063-impersonation-is-a-restricted-operation-boundary.md) | Impersonation is a restricted operation boundary | Accepted |
 | [0064](0064-print-plans-bind-destination-generation-and-format.md) | Print plans bind destination generation and document format | Accepted |
 | [0065](0065-print-completion-is-boundary-scoped-evidence.md) | Print completion is boundary-scoped evidence | Accepted |
+| [0066](0066-color-is-an-immutable-semantic-description.md) | Color is an immutable semantic description | Accepted |
+| [0067](0067-display-color-is-compositor-negotiation-not-appearance-proof.md) | Display color is compositor negotiation, not appearance proof | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

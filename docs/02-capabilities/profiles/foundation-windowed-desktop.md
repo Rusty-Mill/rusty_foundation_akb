@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.22.0 |
+| Version | 0.23.0 |
 | Extends | [`rm.profile.foundation.desktop` 1.0.0](foundation-desktop.md) |
 | Purpose | Add native top-level window and graphics-presentation infrastructure without claiming a complete GUI toolkit |
 
@@ -185,6 +185,14 @@
 
 **RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0088:** Evidence covers local/network/virtual/offline destinations, hostile documents/tickets/device data, capability and service changes, mixed pages/ranges/copies/duplex/color, slow spool backpressure, hold/cancel/restart/ambiguous submission, artifact atomicity/durability, spool privacy, accessible localized UI/status/recovery, and accessible-output nonclaims.
 
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0089:** Color-managed presentation is conditional on product fidelity/HDR/WCG workload. When selected, immutable image descriptions, display color observation, transform planning, and surface negotiation `>=0.1.0,<0.2.0` bind exact component encoding, colorimetry/luminance/metadata, rendering intent, destination/surface/compositor generation, and unknowns.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0090:** `HDR`, gamut, precision, headroom, peak/reference white, profile, automatic management, calibration, and observed appearance remain independent claims. ICC is one validated representation; untagged data stays unknown unless product policy explicitly assigns semantics with provenance.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0091:** Display migration and mode/profile/reference-white/headroom/compositor changes trigger coherent re-observation, renegotiation, cache retirement, and redraw. SDR/precision/gamut/metadata/software fallbacks are explicit; presentation acceptance never claims calibrated physical appearance.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0092:** Evidence covers named/parametric/ICC descriptions, SDR/PQ/HLG/linear and RGB/YUV/range vectors, heterogeneous/remote/virtual displays, CPU/GPU numerical transforms, tone/gamut mapping, hostile profiles/metadata, change storms, privacy minimization, user color/contrast filters, semantic alternatives, and bounded luminance/flash transitions.
+
 ## Whole-product gaps
 
 This profile does not supply a rendering command model, widget/UI framework, text editing model, image/audio codecs, media containers/graphs, gestures, or translated product resources. Product-specific semantic roles/actions/content, accepted transfer formats/importers, locale coverage, audio policy/content, and accessible UX still belong to the product/framework. It cannot claim desktop-application completeness.
@@ -197,6 +205,7 @@ Input evidence additionally covers layout/IME diversity, keyboard-only operation
 
 ## History
 
+- **0.23.0:** Adds conditional semantic image descriptions, display color evidence, compositor negotiation, transforms/HDR/profile boundaries, dynamic lifecycle, privacy/accessibility, and measurement-qualified evidence requirements.
 - **0.22.0:** Adds conditional destination discovery, format-bound whole-ticket negotiation, bounded paginated output, boundary-scoped job evidence, artifact output, security, accessibility, and benchmark requirements.
 - **0.21.0:** Adds conditional principal/session observation, scoped authentication evidence, opaque credential/delegation boundaries, async-safe impersonation prohibition, privacy, accessibility, and evidence requirements.
 - **0.20.0:** Adds conditional qualified power/battery/thermal observation, explicit workload adaptation, optional scoped assertion leases, energy evidence, privacy, accessibility, and lifecycle requirements.
