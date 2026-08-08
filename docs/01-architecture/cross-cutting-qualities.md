@@ -26,6 +26,8 @@ The normative [internationalization foundation](../02-capabilities/international
 
 Use stable, structured events with correlation and causal context. Instrumentation must be low overhead, optional where appropriate, privacy-aware, and independent of a single exporter.
 
+The normative [observability and diagnostics foundation](../02-capabilities/observability/README.md) elaborates typed schemas, explicit context/time quality, bounded pipelines and loss, metrics/tracing semantics, diagnostic bundles, crash-safe capture, separated symbolication, privacy governance, conformance, and performance evidence.
+
 ## Review gate
 
 A proposal must state either its requirements in each dimension or why a dimension is not applicable. “Not applicable” is reviewable, not assumed.

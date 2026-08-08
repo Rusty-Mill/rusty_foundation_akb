@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.16.0
+**Version:** 1.17.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -441,6 +441,8 @@ The [clipboard and drag-and-drop data-transfer vertical slice](../02-capabilitie
 The [internationalization and localization vertical slice](../02-capabilities/internationalization/README.md) defines locale preference snapshots/contexts, resource and typed-message resolution, formatting/parsing, calendar/time-zone behavior, collation/search, data-version evidence, pseudolocalization, and live preference/resource changes. Its specifications remain Draft and cannot amend this model.
 
 The [configuration and change-notification vertical slice](../02-capabilities/configuration/README.md) defines typed versioned schemas, explicit source plans and provenance, coherent immutable snapshots, validation and reload policy, secret-reference boundaries, and reconciliation after native invalidation or loss. Native notifications trigger re-read and convergence; they are not represented as a lossless cross-platform write journal ([ADR-0034](../adr/0034-configuration-publishes-validated-snapshots.md), [ADR-0035](../adr/0035-configuration-notifications-trigger-reconciliation.md)). Its specifications remain Draft and cannot amend this model.
+
+The [observability, diagnostics, and crash-reporting vertical slice](../02-capabilities/observability/README.md) defines stable structured event schemas, explicit causal context and clock quality, bounded metrics/tracing pipelines, exporter-independent production, diagnostic bundles, privacy governance, loss accounting, and a minimal separated fatal-capture path. Telemetry is evidence rather than authority, exporter acceptance is not backend durability, and raw crash memory is restricted diagnostic data ([ADR-0036](../adr/0036-observability-producers-are-exporter-independent.md), [ADR-0037](../adr/0037-fatal-capture-is-a-minimal-separated-path.md)). Its specifications remain Draft and cannot amend this model.
 
 ## 18. Deliberately unresolved choices
 

@@ -37,5 +37,7 @@
 | [0033](0033-localized-output-is-not-canonical-data.md) | Localized output is not canonical data | Accepted |
 | [0034](0034-configuration-publishes-validated-snapshots.md) | Configuration publishes validated immutable snapshots | Accepted |
 | [0035](0035-configuration-notifications-trigger-reconciliation.md) | Configuration notifications trigger reconciliation | Accepted |
+| [0036](0036-observability-producers-are-exporter-independent.md) | Observability producers are exporter independent | Accepted |
+| [0037](0037-fatal-capture-is-a-minimal-separated-path.md) | Fatal capture is a minimal separated path | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

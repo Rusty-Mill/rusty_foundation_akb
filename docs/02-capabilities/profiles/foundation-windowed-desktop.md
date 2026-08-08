@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.7.0 |
+| Version | 0.8.0 |
 | Extends | [`rm.profile.foundation.desktop` 1.0.0](foundation-desktop.md) |
 | Purpose | Add native top-level window and graphics-presentation infrastructure without claiming a complete GUI toolkit |
 
@@ -65,6 +65,14 @@
 
 **RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0028:** Secret material is prohibited in ordinary configuration values and diagnostics. Secret references resolve through the selected secret-store capability under separate authority, and product evidence covers external writers, replacement, loss/resynchronization, policy locks, and accessible restart/error communication.
 
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0029:** Requires `rm.observe.event` and `rm.observe.context` `>=0.1.0,<0.2.0` plus telemetry pipeline service `>=0.1.0,<0.2.0`. Metrics, tracing, diagnostic bundles, and `rm.diagnostics.crash-capture` are conditional on declared product operational requirements.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0030:** Instrumentation uses stable typed schemas, explicit correlation, clock-domain/quality evidence, bounded cardinality and queues, aggregate loss accounting, and exporter-independent producer paths. Export failure cannot indefinitely block the UI or ordinary product work.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0031:** Product-visible diagnostic collection, dynamic tracing, bundle export, and crash upload follow explicit authority, privacy classification, retention, consent, and accessible disclosure policy. Secrets, secure text, and unrestricted user content are prohibited from ordinary telemetry.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0032:** Crash evidence uses a platform-proven minimal fatal path with bounded recursion and out-of-process symbolication/redaction. Profile evidence covers handler coexistence, missing/corrupt symbols, dump restrictions, abrupt termination, exporter outage, queue saturation, and bounded shutdown flush.
+
 ## Whole-product gaps
 
 This profile does not supply a rendering command model, widget/UI framework, text editing model, image codecs, gestures, translated product resources, or application lifecycle/session integration. Product-specific semantic roles/actions/content, accepted transfer formats/importers, locale coverage, and accessible UX still belong to the product/framework. It cannot claim desktop-application completeness.
@@ -77,6 +85,7 @@ Input evidence additionally covers layout/IME diversity, keyboard-only operation
 
 ## History
 
+- **0.8.0:** Adds structured observability, explicit causal context, bounded exporter-independent pipelines, privacy governance, diagnostic bundles, and separated crash capture/analysis requirements.
 - **0.7.0:** Adds typed configuration schema/source/resolution, immutable snapshots, provenance, reload classes, secret boundaries, and loss-aware change reconciliation.
 - **0.6.0:** Adds locale preferences/contexts, typed resources/messages, formatting, calendar/time-zone, collation, data-version, pseudolocale, and live-change requirements.
 - **0.5.0:** Adds typed lazy data offers, clipboard, drag-and-drop, conditional file promises, transfer authority, and accessible-operation requirements.

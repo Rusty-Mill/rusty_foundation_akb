@@ -33,7 +33,7 @@ The table is only a view. Each manifest defines exact contract ranges, predicate
 
 ## Windowed desktop extension
 
-[`rm.profile.foundation.windowed-desktop` 0.7.0](foundation-windowed-desktop.md) extends Desktop 1.0.0 with negotiated top-level windowing, graphics presentation, focused input/text composition, exact text infrastructure, semantic accessibility/native adapters, data transfer, explicit localization/formatting, and typed snapshot-based configuration services. It remains intentionally incomplete until renderer/UI, editing, translated product resources/semantics/importers, observability, and lifecycle contracts are selected.
+[`rm.profile.foundation.windowed-desktop` 0.8.0](foundation-windowed-desktop.md) extends Desktop 1.0.0 with negotiated top-level windowing, graphics presentation, focused input/text composition, exact text infrastructure, semantic accessibility/native adapters, data transfer, explicit localization/formatting, typed snapshot-based configuration, and bounded structured observability. It remains intentionally incomplete until renderer/UI, editing, translated product resources/semantics/importers, and lifecycle contracts are selected.
 
 ## Version transition
 
@@ -41,7 +41,7 @@ Version 1.0.0 adds direct process launch/control to CLI, Desktop, and Server. Th
 
 ## Explicit gaps
 
-These profiles are incomplete for real applications because terminal, networking, observability, rendering/UI, editing, product-specific accessible semantics/data importers/translations, and audio contracts are not yet all specified. The windowed extension supplies window/presentation/input/text/accessibility/transfer/i18n/configuration infrastructure but not those product layers. Resolution reports must preserve the gaps; the foundation profile name prevents a false completeness claim.
+These profiles are incomplete for real applications because terminal, networking, rendering/UI, editing, product-specific accessible semantics/data importers/translations, application lifecycle, and audio contracts are not yet all specified. The windowed extension supplies window/presentation/input/text/accessibility/transfer/i18n/configuration/observability infrastructure but not those product layers. Resolution reports must preserve the gaps; the foundation profile name prevents a false completeness claim.
 
 ## Shared prohibitions
 

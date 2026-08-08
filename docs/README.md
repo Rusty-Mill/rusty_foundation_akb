@@ -30,6 +30,7 @@ The AKB is organized from stable intent to evolving detail.
 - [Clipboard and drag-and-drop data transfer](02-capabilities/data-transfer/README.md)
 - [Internationalization and localization](02-capabilities/internationalization/README.md)
 - [Configuration and change notification](02-capabilities/configuration/README.md)
+- [Observability, diagnostics, and crash reporting](02-capabilities/observability/README.md)
 
 ## Planned volumes
 
