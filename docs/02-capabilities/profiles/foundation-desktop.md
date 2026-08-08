@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.1.0 |
+| Version | 1.0.0 |
 | Purpose | Interactive user-session foundation with durable files and user-protected secrets |
 
 ## Workload assumptions
@@ -29,3 +29,8 @@ Orderly shutdown may coordinate document/state flush. Restricted execution and a
 ## Evidence gates
 
 Tests cover locked/unlocked session transitions, prompt cancellation, logout/login, app sandbox/container context, backup/sync policy, filesystem durability context, suspend/resume timing, and UI-thread nonblocking behavior. Accessibility of native prompts remains a provider evidence obligation when prompting is enabled.
+
+## History
+
+- **1.0.0:** Incorporates CLI foundation 1.0.0 process launch/control and optional pipe/resolution contracts.
+- **0.1.0:** Initial interactive runtime, filesystem, and secret-store trial.

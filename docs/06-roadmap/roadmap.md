@@ -54,8 +54,8 @@ The [security and authority foundations analysis](../02-capabilities/security/RE
 
 ## Active profile trial
 
-The four [foundation profiles](../02-capabilities/profiles/README.md) now exercise exact contract selection, conditional requirements, interaction policy, explicit workload gaps, deterministic resolution, and evidence-bound reports. They expand only as new domain contracts mature; they are not complete application-platform profiles yet.
+The four [foundation profiles](../02-capabilities/profiles/README.md) now exercise exact contract selection, conditional requirements, interaction policy, explicit workload gaps, deterministic resolution, evidence-bound reports, and profile-major evolution. Version 1.0.0 integrates direct process launch/control plus optional or conditional resolution, IPC, and supervision. They remain foundation—not complete application-platform—profiles.
 
 ## Active fourth slice
 
-The [process foundations analysis](../02-capabilities/process/README.md) defines direct launch, native arguments/environment, explicit inheritance, child lifecycle/control, executable resolution, containment-aware supervision, and startup milestones. Its next gates are stdio and pipe composition, process-control quality evidence, and integration into revised profile versions.
+The [process foundations analysis](../02-capabilities/process/README.md) defines direct launch, native arguments/environment, explicit inheritance, standard-stream binding, child lifecycle/control, executable resolution, containment-aware supervision, and startup milestones. The [IPC foundations analysis](../02-capabilities/ipc/README.md) supplies reusable anonymous byte pipes. Their next gates are profile integration, pipeline service semantics, and measured process-control/pipe quality evidence.

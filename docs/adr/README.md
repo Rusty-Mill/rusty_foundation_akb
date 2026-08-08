@@ -18,5 +18,6 @@
 | [0014](0014-direct-process-launch-is-the-base-contract.md) | Direct process launch is the base contract | Accepted |
 | [0015](0015-process-set-supervision-is-a-service.md) | Process-set supervision is a platform service | Accepted |
 | [0016](0016-executable-search-uses-explicit-authority.md) | Executable search uses explicit directory authority | Accepted |
+| [0017](0017-byte-pipes-are-independent-ipc-capabilities.md) | Byte pipes are independent IPC capabilities | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

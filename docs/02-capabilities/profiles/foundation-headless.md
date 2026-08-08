@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.1.0 |
+| Version | 1.0.0 |
 | Purpose | Minimal non-interactive foundation for constrained or appliance-style deployments |
 
 ## Workload assumptions
@@ -24,7 +24,13 @@ Memory, binary-size, startup, thread, allocation, and power budgets are supplied
 - **RM-PROFILE-FOUNDATION-HEADLESS-0005:** Filesystem capabilities are selected as a coherent conditional group beginning with directory authority and resolution; presence of a filesystem is never inferred.
 - **RM-PROFILE-FOUNDATION-HEADLESS-0006:** Secret storage is optional and must be non-interactive.
 - **RM-PROFILE-FOUNDATION-HEADLESS-0007:** Atomic replacement requires a writable filesystem with declared support; platform services are optional and individually budgeted.
+- **RM-PROFILE-FOUNDATION-HEADLESS-0008:** Process launch/control, executable resolution, byte pipes, and supervision are optional as one explicitly budgeted workload feature set; no process support is inferred from OS identity.
 
 ## Prohibitions and evidence
 
 Interactive prompts, desktop-service dependencies, hidden background threads, hidden async runtimes, unbounded allocation, network fallback, and silent persistent writes are prohibited. Evidence reports code/data size contribution, allocations, threads, handles/descriptors, timer overhead, entropy readiness, power-sensitive wakeups, and all optional members included in the resolved graph.
+
+## History
+
+- **1.0.0:** Adds an optional explicitly budgeted process/IPC feature set without changing the minimal required core.
+- **0.1.0:** Initial minimal runtime and random trial.

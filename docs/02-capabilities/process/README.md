@@ -18,6 +18,7 @@ flowchart TD
     Native["Native string + executable identity models"] --> Spawn["rm.process.spawn"]
     Env["Environment snapshot/builder"] --> Spawn
     File["rm.filesystem.file resources"] -.->|"optional stdio/inheritance"| Spawn
+    Pipe["rm.ipc.byte-pipe"] -.->|"optional stdio binding"| Spawn
     Cancel["rm.runtime.cancellation"] -.->|"optional startup/wait observation"| Spawn
     Clock["rm.time.monotonic-clock"] -.->|"optional timestamps"| Spawn
     Resolve["rm.process.executable-resolve"] --> Spawn
@@ -43,6 +44,7 @@ flowchart TD
 
 - [Launch and argument model](launch-model.md)
 - [Environment model](environment-model.md)
+- [Standard-stream binding model](stdio-model.md)
 - [Platform research](platform-research.md)
 - [`rm.process.executable-resolve`](executable-resolve.md)
 - [`rm.process.spawn`](spawn.md)
