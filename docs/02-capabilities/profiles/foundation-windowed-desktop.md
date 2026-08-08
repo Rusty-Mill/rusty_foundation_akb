@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.11.0 |
+| Version | 0.12.0 |
 | Extends | [`rm.profile.foundation.desktop` 1.0.0](foundation-desktop.md) |
 | Purpose | Add native top-level window and graphics-presentation infrastructure without claiming a complete GUI toolkit |
 
@@ -97,6 +97,14 @@
 
 **RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0044:** Memory evidence covers overflow/alignment, guard/protection faults in subprocesses, file truncate/replace, flush-stage nonclaims, shared lifetime/transfer, pressure/discard, lock/no-dump limitations, OOM categories, suspend/crash diagnostics, and any executable-memory entitlement/W^X claim.
 
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0045:** Plugin support is optional. When selected, `rm.plugin.catalog` plus plugin resolution/lifecycle/update services `>=0.1.0,<0.2.0` are required with an explicit allowed isolation-class set; arbitrary ambient native-library loading is prohibited.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0046:** In-process native plugins are restricted to fully trusted host-compatible packages under exact ABI/build/loader/signing policy. Third-party or independently recoverable plugins use restricted process or pinned portable-component isolation with attenuated capability grants and quotas.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0047:** Discovery never executes plugin code. Selection binds package digest/provenance, interface versions, platform/runtime, isolation, authority, resource budgets, and conformance evidence; duplicate identity/version with different content is rejected.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0048:** Updates install immutable generations, activate only after readiness, atomically switch routing, quiesce old work, and preserve rollback/state-migration distinctions. Evidence covers malicious packages, ABI/protocol faults, crash/restart, resource exhaustion, revocation, key rotation, safe search paths, weakened platform protection, and accessible localized plugin/recovery UI.
+
 ## Whole-product gaps
 
 This profile does not supply a rendering command model, widget/UI framework, text editing model, image codecs, gestures, translated product resources, or application lifecycle/session integration. Product-specific semantic roles/actions/content, accepted transfer formats/importers, locale coverage, and accessible UX still belong to the product/framework. It cannot claim desktop-application completeness.
@@ -109,6 +117,7 @@ Input evidence additionally covers layout/IME diversity, keyboard-only operation
 
 ## History
 
+- **0.12.0:** Adds optional plugin catalog, resolution, trust/isolation, lifecycle, immutable generation update, supply-chain, and evidence requirements.
 - **0.11.0:** Adds optional explicit virtual-memory, mapping, sharing, residency, allocator, typed-view, and executable-memory prohibition/evidence requirements.
 - **0.10.0:** Adds conditional resolution, connection racing, stream/path observation, optional datagram/listener/secure channel, authority, security, and network-change evidence requirements.
 - **0.9.0:** Adds application-instance, activation, session/power observation, cooperative termination/inhibition, readiness, and safe restoration requirements.

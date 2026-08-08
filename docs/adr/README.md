@@ -45,5 +45,7 @@
 | [0041](0041-secure-channels-compose-over-transports.md) | Secure channels compose over transports | Accepted |
 | [0042](0042-address-reservation-is-not-memory-commitment.md) | Address reservation is not memory commitment | Accepted |
 | [0043](0043-executable-memory-is-a-separate-authorized-service.md) | Executable memory is a separate authorized service | Accepted |
+| [0044](0044-in-process-native-plugins-are-fully-trusted.md) | In-process native plugins are fully trusted components | Accepted |
+| [0045](0045-plugin-updates-use-generation-replacement.md) | Plugin updates use immutable generation replacement | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

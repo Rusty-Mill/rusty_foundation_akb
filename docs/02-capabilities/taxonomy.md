@@ -45,3 +45,4 @@ Each domain will be decomposed into common, optional/advanced, and platform-spec
 - [Application lifecycle and session-integration vertical slice](lifecycle/README.md) — Draft
 - [Networking foundations vertical slice](networking/README.md) — Draft
 - [Memory and mapping foundations vertical slice](memory/README.md) — Draft
+- [Plugin and module lifecycle vertical slice](plugins/README.md) — Draft
