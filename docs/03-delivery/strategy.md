@@ -30,6 +30,8 @@
 - Generate SBOMs and provenance attestations; sign releases and verify them before installation.
 - Define maintainer recovery and key-rotation procedures before the first production release.
 
+The [signed-artifact and provenance foundation](../02-capabilities/signed-artifacts/README.md) defines the exact signed-view, ceremony, trusted-time, transparency, provenance, verification-policy, lifecycle, conformance, and benchmark evidence required to make these commitments testable. Package installation, dependency solving, rollout, rollback, and recovery remain the next delivery layer.
+
 ## Compatibility channels
 
 `experimental`, `preview`, and `stable` channels communicate contract maturity. Channel promotion is evidence-based and never inferred from elapsed time.

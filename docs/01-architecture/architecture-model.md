@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.40.0
+**Version:** 1.41.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -489,6 +489,8 @@ The [application services, background execution, and durable scheduling foundati
 The [cryptographic operations and key-management foundations](../02-capabilities/security/crypto-README.md) extend the security slice with versioned workload policy, exact algorithm suites/parameters/encodings, opaque generation-scoped keys, separately attenuated key operations, hash/MAC/KDF/password derivation, authenticated encryption, signatures/verification/agreement, bounded transfer formats, provider/hardware/attestation/certification evidence, operation lifecycle, conformance vectors, and benchmarks. Key handles authorize operations rather than material, and cryptographic policy precedes provider selection ([ADR-0080](../adr/0080-key-handles-authorize-operations-not-key-material.md), [ADR-0081](../adr/0081-cryptographic-policy-precedes-provider-selection.md)). PKI/certificate lifecycle, protocol negotiation, code/document signing workflows, remote vault/HSM protocols, backup/escrow, and product policy remain separate. Its specifications remain Draft and cannot amend this model.
 
 The [certificate, trust-store, and PKI-validation foundations](../02-capabilities/security/pki-README.md) extend the security slice with bounded certificate evidence parsing, generation-scoped anchors/distrust/purpose policy, bounded candidate path construction, exact path validation, typed reference-identity matching, revocation/status freshness, privacy-constrained network/cache behavior, evidence-rich results and lifecycle, platform mappings, conformance corpora, and benchmarks. Presented certificates are candidates rather than a chain, and trust results are context-bound evidence rather than identity or authority ([ADR-0082](../adr/0082-presented-certificates-are-candidates-not-a-chain.md), [ADR-0083](../adr/0083-trust-results-are-context-bound-evidence-not-identity-or-authority.md)). Issuance/enrollment, certificate/private-key renewal, transparency operation, protocol proof-of-possession, code/document/package signing, and authorization remain separate. Its specifications remain Draft and cannot amend this model.
+
+The [signed-artifact and provenance foundations](../02-capabilities/signed-artifacts/README.md) compose exact versioned signed views, declared intent, authority-bearing signing ceremonies, native and portable envelopes, trusted timestamps, transparency evidence, provenance/SBOM/reproducibility, evidence-rich acceptance policy, lifecycle, conformance, and benchmarks. Signatures bind versioned signed views and intent, while artifact acceptance composes independent evidence ([ADR-0084](../adr/0084-signatures-bind-versioned-signed-views-and-declared-intent.md), [ADR-0085](../adr/0085-artifact-acceptance-composes-independent-evidence.md)). Installation, execution, package dependency resolution, update rollout/rollback, malware analysis, certificate issuance, and product publishing authority remain separate. Its specifications remain Draft and cannot amend this model.
 
 ## 18. Deliberately unresolved choices
 

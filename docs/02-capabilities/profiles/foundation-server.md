@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 1.3.0 |
+| Version | 1.4.0 |
 | Purpose | Long-running non-interactive service foundation with bounded shutdown and protected credentials |
 
 ## Workload assumptions
@@ -35,6 +35,9 @@ No interactive desktop session, unattended restart, concurrent I/O, explicit ser
 - **RM-PROFILE-FOUNDATION-SERVER-0017:** Certificate trust `>=0.1.0,<0.2.0` is conditional when authenticating peers, validating signed objects, or consuming PKI evidence. Policy binds purpose/profile, typed reference identity, verification time/clock, exact trust/algorithm-policy generations, revocation/network/cache behavior, provider, and construction/resource bounds.
 - **RM-PROFILE-FOUNDATION-SERVER-0018:** Supplied certificates are untrusted candidates, not a chain. System/enterprise/container/application anchors, distrust, purpose constraints, intermediate caches, pins, and overrides retain provenance. Results preserve selected path/anchor, identity/status freshness, unknowns, expiry/dependencies, and proof-of-possession/identity/authorization nonclaims.
 - **RM-PROFILE-FOUNDATION-SERVER-0019:** Evidence covers adversarial parsing, alternate/cross-signed/ambiguous paths, constraints/purpose/algorithms, DNS/IP/URI/service identities, CRL/OCSP/stapled/unknown status, offline/proxy/redirect/SSRF/network/cache policy, trust rotation/distrust/pins, provider/store restart/update, concurrency/cancellation/bounds, privacy redaction, and staged path/status benchmarks.
+- **RM-PROFILE-FOUNDATION-SERVER-0020:** Signed-artifact verification `>=0.1.0,<0.2.0` is conditional for executable, package, document, configuration, plugin, firmware, model, or release artifacts. Policy binds signed-view/envelope profile, artifact identity/digest/purpose/target/channel, signer roles/thresholds, trust and algorithm generations, timestamp, transparency, provenance/SBOM/reproducibility, freshness/network mode, and bounds.
+- **RM-PROFILE-FOUNDATION-SERVER-0021:** Automated signing is separately conditional and requires immutable requests, noninteractive signer authority, least-privilege opaque key operations, approval policy, digest-substitution prevention, timestamp/log policy, auditable lifecycle, and reconciliation of ambiguous remote outcomes. Verification does not authorize publication, installation, loading, or execution.
+- **RM-PROFILE-FOUNDATION-SERVER-0022:** Evidence covers native/portable views, hostile envelopes/artifacts/provenance, covered-byte mutation, signer/role/threshold/trust/time/log/provenance failures, offline/cache/emergency policy, TOCTOU substitution, rotations/compromise, accessible diagnostics, bounded concurrency, and staged benchmarks.
 
 ## Operational constraints
 
@@ -42,6 +45,7 @@ Deadline timers and cancellation support bounded multi-phase shutdown. Sync path
 
 ## History
 
+- **1.4.0:** Adds conditional exact signed-artifact views, authority-bearing signing, timestamps, transparency, provenance/reproducibility, evidence-composing verification, lifecycle, conformance, and benchmarks.
 - **1.3.0:** Adds conditional bounded certificate parsing, trust-store/path evidence, policy/time/identity-bound validation, revocation/network/cache modes, lifecycle, conformance, and benchmarks.
 - **1.2.0:** Adds conditional versioned cryptographic policy, opaque operation-scoped keys, exact primitive/composition/transfer contracts, noninteractive provider/hardware evidence, lifecycle, conformance, and benchmarks.
 - **1.1.0:** Adds conditional OS-managed service registration/demand activation and durable scheduling with exact scope/principal, trigger reconciliation, attempt/checkpoint/retry, budget, update, conformance, and benchmark requirements.

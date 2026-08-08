@@ -85,5 +85,7 @@
 | [0081](0081-cryptographic-policy-precedes-provider-selection.md) | Cryptographic policy precedes provider selection | Accepted |
 | [0082](0082-presented-certificates-are-candidates-not-a-chain.md) | Presented certificates are candidates, not a chain | Accepted |
 | [0083](0083-trust-results-are-context-bound-evidence-not-identity-or-authority.md) | Trust results are context-bound evidence, not identity or authority | Accepted |
+| [0084](0084-signatures-bind-versioned-signed-views-and-declared-intent.md) | Signatures bind versioned signed views and declared intent | Accepted |
+| [0085](0085-artifact-acceptance-composes-independent-evidence.md) | Artifact acceptance composes independent evidence | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

@@ -21,3 +21,5 @@ Verification is a first-class product, not backend-local test code.
 ## Release gates
 
 Stable releases require required-profile conformance, security checks, compatibility checks, and benchmark results within accepted budgets. Exceptions require a time-bounded ADR with owner and remediation plan.
+
+Release artifacts and their conformance/benchmark reports use the [signed-artifact and provenance evidence model](../02-capabilities/signed-artifacts/README.md). Signature validity, signer trust, trusted time, transparency, provenance, reproducibility, and release authorization remain separately reportable gates.

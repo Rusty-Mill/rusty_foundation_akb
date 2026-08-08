@@ -16,6 +16,7 @@ This is an inventory for domain analysis, not an API or crate list.
 | Storage | media, regions, filesystems, volumes, mounts, capacity, removable-media coordination |
 | Networking | resolution, sockets, transports, interfaces, routing awareness, security |
 | Security | identity, credentials, authorization, secrets, sandboxing, cryptographic policy/operations/keys/providers |
+| Signed artifacts | signed views, code/package/document signatures, timestamps, transparency, provenance, reproducibility, acceptance policy |
 | Windowing | surfaces, lifecycle, display topology, DPI, accessibility integration |
 | Graphics | devices, presentation, synchronization, resource transfer, compute |
 | Display color | image descriptions, display evidence, transforms, HDR, profiles, calibration |
@@ -45,6 +46,7 @@ Each domain will be decomposed into common, optional/advanced, and platform-spec
 - [Security and authority foundations vertical slice](security/README.md) — Draft
 - [Cryptographic operations and key-management foundations](security/crypto-README.md) — Draft
 - [Certificate, trust-store, and PKI-validation foundations](security/pki-README.md) — Draft
+- [Signed-artifact and provenance foundations](signed-artifacts/README.md) — Draft
 - [Process foundations vertical slice](process/README.md) — Draft
 - [Application activation and association foundations vertical slice](activation/README.md) — Draft
 - [IPC foundations vertical slice](ipc/README.md) — Draft

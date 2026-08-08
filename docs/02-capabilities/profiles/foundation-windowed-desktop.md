@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.31.0 |
+| Version | 0.32.0 |
 | Extends | [`rm.profile.foundation.desktop` 1.0.0](foundation-desktop.md) |
 | Purpose | Add native top-level window and graphics-presentation infrastructure without claiming a complete GUI toolkit |
 
@@ -257,6 +257,12 @@
 
 **RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0124:** Evidence covers adversarial DER, critical extensions, alternate/cross-signed paths, loops/ambiguity/resource bounds, basic/name/policy/KU/EKU/algorithm constraints, DNS/IP/URI/email/application identities and IDN/wildcards, CRL/OCSP/stapled/unknown/stale status, offline/proxy/redirect/SSRF/cache, trust updates/overrides/pins, privacy redaction, and staged path/status benchmarks.
 
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0125:** Signed-artifact verification is conditional on accepting code, packages, documents, plugins, configuration, or release artifacts. It binds exact signed views and identity/intent to independently evaluated signer trust/role, timestamp, transparency, provenance/SBOM/reproducibility, platform assessment, target/channel/version, freshness, and product policy.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0126:** Interactive signing is separately conditional, authority-bearing, accessible, and auditable. Verification status distinguishes cryptographic validity from trusted signer role, trusted time, transparency, provenance, platform assessment, safety nonclaims, and action authorization; the verified bytes exactly match any later load/install/display subject.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0127:** Evidence covers native/portable signed views, code/package/document mutation and ambiguity, hostile envelopes/provenance, signer/time/log/policy lifecycle, offline/cache/emergency behavior, TOCTOU, accessible localized ceremony/status, resource bounds, and staged benchmarks.
+
 ## Whole-product gaps
 
 This profile does not supply a rendering command model, widget/UI framework, text editing model, image/audio codecs, media containers/graphs, gestures, or translated product resources. Product-specific semantic roles/actions/content, accepted transfer formats/importers, locale coverage, audio policy/content, and accessible UX still belong to the product/framework. It cannot claim desktop-application completeness.
@@ -269,6 +275,7 @@ Input evidence additionally covers layout/IME diversity, keyboard-only operation
 
 ## History
 
+- **0.32.0:** Adds conditional exact signed code/package/document/artifact views, authority-bearing signing, timestamps, transparency, provenance/reproducibility, evidence-composing verification, lifecycle, accessibility, conformance, and benchmarks.
 - **0.31.0:** Adds conditional bounded certificate parsing, trust-store evidence, candidate path construction, policy/time/identity-bound validation, revocation/network/cache quality, result lifecycle, conformance, and benchmarks.
 - **0.30.0:** Adds conditional versioned cryptographic policy, opaque operation-scoped keys, exact hash/MAC/KDF/AEAD/public-key/transfer contracts, provider/hardware/attestation evidence, lifecycle, conformance, and benchmarks.
 - **0.29.0:** Adds conditional immutable service/job registration, execution scopes, demand activation/readiness, durable schedules and trigger reconciliation, attempts/checkpoints/retries, budgets, generation updates, accessibility, conformance, and benchmarks.
