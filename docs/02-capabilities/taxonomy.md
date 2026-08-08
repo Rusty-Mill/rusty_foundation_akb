@@ -68,6 +68,7 @@ Each domain will be decomposed into common, optional/advanced, and platform-spec
 - [Observability, diagnostics, and crash-reporting vertical slice](observability/README.md) — Draft
 - [Application lifecycle and session-integration vertical slice](lifecycle/README.md) — Draft
 - [Networking foundations vertical slice](networking/README.md) — Draft
+- [TLS/QUIC secure transport and channel foundations](networking/secure-transport-README.md) — Draft
 - [Memory and mapping foundations vertical slice](memory/README.md) — Draft
 - [Plugin and module lifecycle vertical slice](plugins/README.md) — Draft
 - [Threading and synchronization foundations vertical slice](threading/README.md) — Draft

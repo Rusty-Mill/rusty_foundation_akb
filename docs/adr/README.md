@@ -93,5 +93,7 @@
 | [0089](0089-channel-promotion-moves-an-authenticated-reference-to-the-same-digest.md) | Channel promotion moves an authenticated reference to the same digest | Accepted |
 | [0090](0090-certificate-requests-prove-key-possession-not-issuance-authority.md) | Certificate requests prove key possession, not issuance authority | Accepted |
 | [0091](0091-renewal-creates-a-new-credential-generation-with-explicit-continuity.md) | Renewal creates a new credential generation with explicit continuity | Accepted |
+| [0092](0092-secure-channels-become-ready-only-after-authentication-and-protocol-negotiation.md) | Secure channels become ready only after authentication and protocol negotiation | Accepted |
+| [0093](0093-resumption-creates-a-new-channel-and-early-data-is-separate-replay-authority.md) | Resumption creates a new channel and early data is separate replay authority | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

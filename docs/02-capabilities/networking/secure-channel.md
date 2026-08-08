@@ -16,3 +16,4 @@ A secure-channel service composes a connected transport with cryptographic proto
 
 **RM-NETWORK-SECURE-0007:** Secure close, transport EOF, truncation suspicion, peer alert, local policy failure, and abort remain distinct. Encryption does not supply application message framing or durable delivery.
 
+The detailed TLS/QUIC handshake, negotiation, authentication, resumption/early-data, exporter/channel-binding, protected-data, closure, migration, conformance, and benchmark contracts are in the [secure transport and channel foundation](secure-transport-README.md). This boundary summary does not override those requirements.

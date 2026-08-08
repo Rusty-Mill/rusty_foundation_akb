@@ -14,3 +14,4 @@
 
 Testing uses isolated namespaces/VMs and controllable DNS, proxy, TCP/UDP, and TLS peers. Fault injection covers delay, blackhole, reset, half-open, packet loss/reorder/duplication, MTU constraints, certificate rotations, clock changes, full buffers, port exhaustion, and interface removal. Reports include OS/build, network topology, resolver and trust configuration, address families, proxy/VPN/container state, async provider, protocol versions, and every unsupported quality.
 
+Detailed TLS/QUIC handshake, negotiation, authentication, resumption/early-data, exporter, protected-data/closure, migration, and provider matrices are specified in [secure-transport conformance](secure-transport-conformance.md).

@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 1.6.0 |
+| Version | 1.7.0 |
 | Purpose | Long-running non-interactive service foundation with bounded shutdown and protected credentials |
 
 ## Workload assumptions
@@ -44,6 +44,9 @@ No interactive desktop session, unattended restart, concurrent I/O, explicit ser
 - **RM-PROFILE-FOUNDATION-SERVER-0026:** Certificate enrollment/renewal `>=0.1.0,<0.2.0` is conditional when services or workloads require managed certificate generations. It binds operation kind, opaque key/protection, request/POP/attestation, subject/identifier authority, issuer/profile/policy, protocol/account/server trust, delivery/store/scope, activation, renewal/rekey/replacement, and revocation.
 - **RM-PROFILE-FOUNDATION-SERVER-0027:** Noninteractive renewal uses explicit workload authority and authenticated issuer guidance, spreads fleet load, preserves retry/outage margin, reconciles ambiguous issuance, distinguishes issued/installed/active/healthy/retired, and never treats old-key possession as authority for arbitrary claim changes.
 - **RM-PROFILE-FOUNDATION-SERVER-0028:** Evidence covers hostile requests/protocols, authority/POP/attestation, requested-versus-issued policy, pending/retry/cancel, store/key association, provider/network/clock failure, service generation overlap, mass renewal/revocation, privacy, and staged benchmarks. CA operation requires the separate CA-operator profile.
+- **RM-PROFILE-FOUNDATION-SERVER-0029:** Secure transport/channel service `>=0.2.0,<0.3.0` is conditional for network services and clients requiring TLS or QUIC. Policy binds original service/listener, versions/suites/groups/signatures, credentials/trust/reference identity, client authentication, ALPN, SNI/ECH/privacy, resumption/early data, exporters, limits, provider, and closure.
+- **RM-PROFILE-FOUNDATION-SERVER-0030:** Application readiness follows handshake/confirmation, required peer/client authentication, original identity, compatible ALPN, and authenticated QUIC parameters. Resumption creates a new policy-validated channel; tickets are secret scoped credentials; early data requires separate replay-safe operation authority and distributed anti-replay/deduplication evidence.
+- **RM-PROFILE-FOUNDATION-SERVER-0031:** Evidence covers malicious handshakes/negotiation, identity/client credentials, policy downgrade, resumption/ticket isolation, replay/early-data outcomes, exporters/channel binding, partial I/O/key limits/updates, truncation/closure, QUIC streams/datagrams/migration/loss, overload, provider variance, privacy, and benchmarks.
 
 ## Operational constraints
 
@@ -51,6 +54,7 @@ Deadline timers and cancellation support bounded multi-phase shutdown. Sync path
 
 ## History
 
+- **1.7.0:** Adds conditional exact TLS/QUIC channel policy, authentication/readiness, resumption/early-data replay authority, exporters/bindings, data/closure, migration, conformance, and benchmarks.
 - **1.6.0:** Adds conditional certificate enrollment, opaque-key requests/POP, identity authority, protocol delivery/install, renewal/rekey/replacement/revocation, activation, conformance, and benchmarks.
 - **1.5.0:** Adds conditional authenticated repository snapshots, package state/resolution/plans, journaled native deployment, hooks/services/data, rollout/health, compensating rollback, recovery, conformance, and benchmarks.
 - **1.4.0:** Adds conditional exact signed-artifact views, authority-bearing signing, timestamps, transparency, provenance/reproducibility, evidence-composing verification, lifecycle, conformance, and benchmarks.

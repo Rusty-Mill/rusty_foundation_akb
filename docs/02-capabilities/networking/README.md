@@ -40,7 +40,7 @@ flowchart LR
 - [Listeners and accepted connections](listener.md)
 - [Connectivity and path observation](connectivity.md)
 - [Secure-channel boundary](secure-channel.md)
+- [Secure transport and channel foundations](secure-transport-README.md)
 - [Platform research](platform-research.md)
 - [Conformance specification](conformance.md)
 - [Benchmark specification](benchmarks.md)
-

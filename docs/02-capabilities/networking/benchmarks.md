@@ -13,3 +13,4 @@
 
 Compare portable paths with idiomatic native baselines under identical protocol, payload, socket options, security policy, and network impairment. Record hardware, OS/build, runtime/compiler, topology, MTU, link speed/latency/loss, DNS and trust providers, TLS version/cipher/group, address family, proxy/VPN, buffer/batch sizes, concurrency, warm/cold state, and statistical variance. Loopback results cannot substantiate wide-area or encrypted-production claims.
 
+Detailed TLS/QUIC handshake, credential/trust, ticket/early-data, exporter, protected-data, overload, closure, and migration measurements are specified in [secure-transport benchmarks](secure-transport-benchmarks.md).
