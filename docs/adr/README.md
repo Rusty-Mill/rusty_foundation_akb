@@ -115,5 +115,7 @@
 | [0111](0111-exactly-once-is-scoped-to-named-state-and-effect-boundaries.md) | Exactly-once is scoped to named state and effect boundaries | Accepted |
 | [0112](0112-logical-schema-identity-is-distinct-from-wire-encoding.md) | Logical schema identity is distinct from wire encoding | Accepted |
 | [0113](0113-canonicalization-is-an-explicit-signed-view-profile.md) | Canonicalization is an explicit signed-view profile | Accepted |
+| [0114](0114-health-is-expiring-evidence-not-success-authority.md) | Health is expiring evidence, not success authority | Accepted |
+| [0115](0115-routing-binds-a-policy-generation-and-endpoint-snapshot.md) | Routing binds a policy generation and endpoint snapshot | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

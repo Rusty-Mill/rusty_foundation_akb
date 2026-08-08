@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.55.0
+**Version:** 1.56.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -519,6 +519,8 @@ The [search, indexing, and retrieval foundations](../02-capabilities/search/READ
 The [analytical data processing and query foundations](../02-capabilities/analytics/README.md) compose typed row/columnar data, catalog/source/format snapshots, immutable logical and realized physical plans, batch/stream operators, distributed partitioning/shuffle/spill, event time/watermarks/late-data correction, state/checkpoints/effect boundaries, incremental materialization, resource governance, lineage/security/privacy, migration/recovery/reproducibility, conformance, and benchmarks. Watermarks are scoped progress assertions rather than completeness proof, and exactly-once claims name precise state and external-effect boundaries ([ADR-0110](../adr/0110-watermarks-are-progress-assertions-not-completeness-proof.md), [ADR-0111](../adr/0111-exactly-once-is-scoped-to-named-state-and-effect-boundaries.md)). Exact schemas/catalogs/functions, engines/topology, sources/sinks/formats, time/late-data/effect policy, workloads/materializations, resources/objectives, and governance remain product RFC choices. Its specifications remain Draft and cannot amend this model.
 
 The [structured data interchange and serialization foundations](../02-capabilities/interchange/README.md) compose logical schemas and directional evolution, exact wire-format mappings, explicit canonical signed/hash views, framing/streaming/negotiation, staged bounded parsing and validation, unknown/union/extension behavior, safe lazy/borrowed/zero-copy representations, transcoding loss, authenticated registry lifecycle, conformance vectors, and benchmarks. Logical schema identity remains distinct from wire encoding, while canonicalization is a named immutable signed-view profile rather than generic deterministic output ([ADR-0112](../adr/0112-logical-schema-identity-is-distinct-from-wire-encoding.md), [ADR-0113](../adr/0113-canonicalization-is-an-explicit-signed-view-profile.md)). Exact product schemas, JSON/CBOR/MessagePack/ASN.1/field-tagged profiles, media/framing, registries, compatibility, canonicalization, validation, limits, and implementation crates remain product RFC choices. Its specifications remain Draft and cannot amend this model.
+
+The [service discovery, traffic routing, and load-balancing foundations](../02-capabilities/service-traffic/README.md) compose service/endpoint generations, registration/leases and DNS/native/control-plane discovery, readiness/health/drain/outlier evidence, immutable routing/subset policies, load balancing and affinity, unified retry/hedge/admission budgets, locality/failover/failback, control-plane propagation, security/privacy, conformance, and benchmarks. Health is expiring boundary-scoped evidence rather than success authority, while each route binds an immutable policy generation and endpoint snapshot ([ADR-0114](../adr/0114-health-is-expiring-evidence-not-success-authority.md), [ADR-0115](../adr/0115-routing-binds-a-policy-generation-and-endpoint-snapshot.md)). Exact services/identities/protocols, discovery/control providers, route/balancer/health/affinity algorithms, topology, rollout/failover, objectives, and retry/effect policy remain product RFC choices. Its specifications remain Draft and cannot amend this model.
 
 ## 18. Deliberately unresolved choices
 

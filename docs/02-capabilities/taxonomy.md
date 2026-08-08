@@ -15,6 +15,7 @@ This is an inventory for domain analysis, not an API or crate list.
 | Filesystem | paths, files, directories, metadata, watching, atomicity, permissions |
 | Storage | media, regions, filesystems, volumes, mounts, capacity, removable-media coordination |
 | Networking | resolution, sockets, transports, interfaces, routing awareness, secure channels, HTTP semantics/mechanics, real-time sessions |
+| Service traffic | registration/discovery, endpoint health, routing/subsets, load balancing/affinity, attempts/admission, locality/failover, control propagation |
 | Messaging | schemas/envelopes, RPC, streams, publish/subscribe, broker settlement, retry/deduplication, reconciliation |
 | Coordination | membership, failure evidence, leases/fencing, election/locks, consensus, consistency, distributed transactions |
 | Persistence | logical data/query models, sessions/pools, transactions, constraints/indexes, migrations, change streams, backup/restore, replication |
@@ -76,6 +77,7 @@ Each domain will be decomposed into common, optional/advanced, and platform-spec
 - [Observability, diagnostics, and crash-reporting vertical slice](observability/README.md) — Draft
 - [Application lifecycle and session-integration vertical slice](lifecycle/README.md) — Draft
 - [Networking foundations vertical slice](networking/README.md) — Draft
+- [Service discovery, traffic routing, and load-balancing foundations](service-traffic/README.md) — Draft
 - [TLS/QUIC secure transport and channel foundations](networking/secure-transport-README.md) — Draft
 - [HTTP client and server foundations](networking/http-README.md) — Draft
 - [Real-time application transport foundations](networking/realtime-README.md) — Draft

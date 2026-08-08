@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 1.17.0 |
+| Version | 1.18.0 |
 | Purpose | Long-running non-interactive service foundation with bounded shutdown and protected credentials |
 
 ## Workload assumptions
@@ -77,6 +77,9 @@ No interactive desktop session, unattended restart, concurrent I/O, explicit ser
 - **RM-PROFILE-FOUNDATION-SERVER-0059:** Structured interchange `>=0.1.0,<0.2.0` is conditional for persistence, messaging/RPC, protocols, artifacts, configuration, import/export, or signed views. It binds logical schema, directional compatibility, exact format/mapping/canonical/framing/negotiation, registry, validation/limits, authority, and implementation generations.
 - **RM-PROFILE-FOUNDATION-SERVER-0060:** Logical values, schemas, ordinary wire bytes, canonical views, frames, and host objects remain distinct. Strict bounded parsing precedes construction; unknown forwarding is policy-bound; transcoding reports loss; deterministic output cannot claim canonicality; decode never implies integrity, provenance, safety, or authority.
 - **RM-PROFILE-FOUNDATION-SERVER-0061:** Evidence covers old/new writer-reader matrices, all selected formats and exact canonical vectors, chunk/framing/negotiation, hostile limits/fuzzing, unknown/union/extension round trips, lazy/zero-copy lifetime, signed/transcoded views, registry equivocation/outage/recovery, privacy/accessibility, provider differentials, and staged benchmarks.
+- **RM-PROFILE-FOUNDATION-SERVER-0062:** Service traffic `>=0.1.0,<0.2.0` is conditional for replicated or multi-endpoint services. It binds service/endpoint/registration/discovery/route/balancer/security generations, locality/fault model, health/drain/outlier, affinity, attempt/admission/effect, failover, control propagation, and provider topology.
+- **RM-PROFILE-FOUNDATION-SERVER-0063:** Health is expiring evidence, not success authority; routes bind immutable endpoint snapshots and policy generations. Retries/hedges/races/failover share deadlines and amplification/effect budgets; secure identity and domain authorization remain separate; configuration application and observed traffic convergence are distinct.
+- **RM-PROFILE-FOUNDATION-SERVER-0064:** Evidence covers registration leases, DNS/native/control discovery reconciliation, health/outlier/drain histories, routes/subsets/progressive delivery, balancing/affinity/multiplexing, retry/hedge/admission/circuits, locality/failover/failback, control-plane mixed generations/revocation, privacy/accessibility, provider differentials, and staged fault/cost benchmarks.
 
 ## Operational constraints
 
@@ -84,6 +87,7 @@ Deadline timers and cancellation support bounded multi-phase shutdown. Sync path
 
 ## History
 
+- **1.18.0:** Adds conditional service discovery, generation-bound routing/balancing, expiring health, affinity, attempt/admission budgets, locality/failover, control propagation, conformance, and benchmarks.
 - **1.17.0:** Adds conditional schema-first interchange, directional evolution, format mappings, canonical signed views, framing/negotiation, bounded parsing, unknown/loss handling, registries, conformance vectors, and benchmarks.
 - **1.16.0:** Adds conditional typed batch/stream analytics, logical/physical plans, event-time/state/effects, distributed resources, materialization, lineage/privacy, recovery/reproducibility, conformance, and benchmarks.
 - **1.15.0:** Adds conditional source-versioned search/indexing, explicit visibility, lexical/vector/spatial/hybrid retrieval, stable pagination, tenant security, migration/recovery, relevance evaluation, conformance, and benchmarks.

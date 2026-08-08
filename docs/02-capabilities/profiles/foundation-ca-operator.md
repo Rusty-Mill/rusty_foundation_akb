@@ -3,8 +3,8 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.12.0 |
-| Extends | [`rm.profile.foundation.server` 1.17.0](foundation-server.md) |
+| Version | 0.13.0 |
+| Extends | [`rm.profile.foundation.server` 1.18.0](foundation-server.md) |
 | Purpose | Operate registration, certificate issuance, renewal, status, and CA lifecycle without claiming a complete public or enterprise CA product |
 
 ## Required composition
@@ -47,8 +47,11 @@
 
 **RM-PROFILE-CA-OPERATOR-0018:** CA interchange composes Server 1.17.0 with exact versioned certificate/request/status/protocol/audit schemas and ASN.1/DER plus selected protocol mappings, canonical signed regions, strict hostile-input constraints, unknown critical-extension rejection, preserved noncritical evidence, loss-aware conversion, authenticated schema/OID registries, and no inference that parsing or canonicality proves trust, issuance authority, possession, or status.
 
+**RM-PROFILE-CA-OPERATOR-0019:** CA traffic composes Server 1.18.0 with authenticated enrollment/status/transparency/administration service identities and endpoint generations, profile/tenant routes, readiness separated from key/ledger/status/data health, bounded replay-safe attempts, fenced issuer effects, region/ceremony capacity, controlled failover/failback, emergency revocation propagation, and no inference that health or routing grants signing/issuance authority or proves relying-party status.
+
 ## History
 
+- **0.13.0:** Rebases on Server 1.18.0 and constrains CA traffic to authenticated service identity, separated key/ledger/status health, replay-safe attempts, fenced effects, controlled failover, and emergency revocation.
 - **0.12.0:** Rebases on Server 1.17.0 and constrains CA interchange to exact ASN.1/DER and protocol schemas, canonical signed regions, hostile parsing, critical extensions, registries, and loss-aware conversion.
 - **0.11.0:** Rebases on Server 1.16.0 and constrains optional analytics to exact CA frontiers, disclosure-resistant aggregates, reproducible evidence, late corrections, and separated key/status effects.
 - **0.10.0:** Rebases on Server 1.15.0 and constrains optional search to exact CA source generations, strict isolation, ordered status capture, explicit visibility, audited traversal, and source revalidation.
