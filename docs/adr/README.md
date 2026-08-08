@@ -47,5 +47,7 @@
 | [0043](0043-executable-memory-is-a-separate-authorized-service.md) | Executable memory is a separate authorized service | Accepted |
 | [0044](0044-in-process-native-plugins-are-fully-trusted.md) | In-process native plugins are fully trusted components | Accepted |
 | [0045](0045-plugin-updates-use-generation-replacement.md) | Plugin updates use immutable generation replacement | Accepted |
+| [0046](0046-scheduling-controls-are-scoped-requests.md) | Scheduling controls are scoped requests, not execution guarantees | Accepted |
+| [0047](0047-poisoning-is-consistency-policy-not-lock-semantics.md) | Poisoning is consistency policy, not lock semantics | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.12.0 |
+| Version | 0.13.0 |
 | Extends | [`rm.profile.foundation.desktop` 1.0.0](foundation-desktop.md) |
 | Purpose | Add native top-level window and graphics-presentation infrastructure without claiming a complete GUI toolkit |
 
@@ -105,6 +105,14 @@
 
 **RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0048:** Updates install immutable generations, activate only after readiness, atomically switch routing, quiesce old work, and preserve rollback/state-migration distinctions. Evidence covers malicious packages, ABI/protocol faults, crash/restart, resource exhaustion, revocation, key rotation, safe search paths, weakened platform protection, and accessible localized plugin/recovery UI.
 
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0049:** Requires `rm.thread.spawn` plus mutex, condition/wait, and supported Rust-atomic contracts `>=0.1.0,<0.2.0` for components that own native threads; reader/writer locks, semaphores/events, affinity/QoS, realtime, and native TLS are optional exact requirements.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0050:** UI dispatch affinity, runtime tasks, worker native threads, apartment/run-loop constraints, and blocking waits remain distinct. Generic waits never silently pump UI messages, execute callbacks, or occupy async workers without disclosed policy.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0051:** Scheduling/QoS/affinity are scoped requests with effective-state evidence, not deadline or isolation guarantees. Realtime scheduling and hard affinity are prohibited unless a specialized profile supplies privilege, bounded-code, inversion, memory, watchdog, and interference evidence.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0052:** Conformance covers happens-before, spurious/obsolete wakeups, cancellation/timeouts, panic/owner failure, starvation/fairness nonclaims, atomic ordering/widths, topology invalidation, TLS destruction variance, UI/apartment deadlocks, plugin retirement, and shutdown.
+
 ## Whole-product gaps
 
 This profile does not supply a rendering command model, widget/UI framework, text editing model, image codecs, gestures, translated product resources, or application lifecycle/session integration. Product-specific semantic roles/actions/content, accepted transfer formats/importers, locale coverage, and accessible UX still belong to the product/framework. It cannot claim desktop-application completeness.
@@ -117,6 +125,7 @@ Input evidence additionally covers layout/IME diversity, keyboard-only operation
 
 ## History
 
+- **0.13.0:** Adds native-thread lifecycle, synchronization/wait, atomics, UI-affinity, scheduling-quality, realtime prohibition, TLS, and evidence requirements.
 - **0.12.0:** Adds optional plugin catalog, resolution, trust/isolation, lifecycle, immutable generation update, supply-chain, and evidence requirements.
 - **0.11.0:** Adds optional explicit virtual-memory, mapping, sharing, residency, allocator, typed-view, and executable-memory prohibition/evidence requirements.
 - **0.10.0:** Adds conditional resolution, connection racing, stream/path observation, optional datagram/listener/secure channel, authority, security, and network-change evidence requirements.

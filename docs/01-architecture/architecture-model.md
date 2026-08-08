@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.21.0
+**Version:** 1.22.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -451,6 +451,8 @@ The [networking foundations vertical slice](../02-capabilities/networking/README
 The [memory and mapping foundations vertical slice](../02-capabilities/memory/README.md) defines virtual-region state, file and shared mappings, protection, residency/discard controls, allocation-service boundaries, and separately authorized executable-memory publication. Address reservation, backing commitment, residency, locking, and durability are independent claims; mapped bytes do not automatically form safe typed Rust objects ([ADR-0042](../adr/0042-address-reservation-is-not-memory-commitment.md), [ADR-0043](../adr/0043-executable-memory-is-a-separate-authorized-service.md)). Its specifications remain Draft and cannot amend this model.
 
 The [plugin and module lifecycle vertical slice](../02-capabilities/plugins/README.md) defines immutable package identity/provenance, metadata-only discovery, interface and dependency resolution, trust/isolation classes, attenuated authority, lifecycle generations, staged updates, rollback, and supply-chain evidence. In-process native plugins are fully trusted host components rather than a sandbox, and updates use immutable generation replacement rather than assuming unload safety ([ADR-0044](../adr/0044-in-process-native-plugins-are-fully-trusted.md), [ADR-0045](../adr/0045-plugin-updates-use-generation-replacement.md)). Its specifications remain Draft and cannot amend this model.
+
+The [threading and synchronization foundations vertical slice](../02-capabilities/threading/README.md) defines native thread lifecycle, mutex/reader-writer lock semantics, condition/semaphore/event waiting, Rust-model atomics, scheduling/affinity/realtime requests, and thread-local lifecycle. Scheduling controls are scoped requests rather than execution guarantees, and poisoning is optional application consistency policy rather than base lock semantics ([ADR-0046](../adr/0046-scheduling-controls-are-scoped-requests.md), [ADR-0047](../adr/0047-poisoning-is-consistency-policy-not-lock-semantics.md)). Its specifications remain Draft and cannot amend this model.
 
 ## 18. Deliberately unresolved choices
 

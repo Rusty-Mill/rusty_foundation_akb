@@ -35,6 +35,7 @@ The AKB is organized from stable intent to evolving detail.
 - [Networking foundations](02-capabilities/networking/README.md)
 - [Memory and mapping foundations](02-capabilities/memory/README.md)
 - [Plugin and module lifecycle](02-capabilities/plugins/README.md)
+- [Threading and synchronization foundations](02-capabilities/threading/README.md)
 
 ## Planned volumes
 
