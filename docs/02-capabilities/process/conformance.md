@@ -42,6 +42,19 @@ Reports bind contract/provider/artifact versions to OS/kernel, architecture, run
 | PROC-RESOLVE-003 | Traversal, separator, absolute, device, link/reparse, inaccessible, and insufficient-quality cases fail as specified |
 | PROC-RESOLVE-004 | Concurrent candidate replacement is prevented by the claimed mechanism or disclosed and detected by identity policy |
 
+## Pipeline assertions
+
+| ID | Assertion |
+|---|---|
+| PROC-PIPELINE-001 | Fault every construction step; no case leaves an unknown running child or leaked endpoint |
+| PROC-PIPELINE-002 | Endpoint inventories prove unused copies close before release and EOF arrives after the final intended writer closes |
+| PROC-PIPELINE-003 | Simultaneously saturate stdout and stderr captures; bounded concurrent drainage follows policy without deadlock |
+| PROC-PIPELINE-004 | Capture overflow exercises fail, truncate, spill, and backpressure policies with exact disclosure and authority checks |
+| PROC-PIPELINE-005 | Each node failure position exercises upstream/downstream continuation, stop, termination, EOF, and broken-peer policy |
+| PROC-PIPELINE-006 | Cancellation at every lifecycle milestone reconciles all children, endpoints, captures, and terminal statuses |
+| PROC-PIPELINE-007 | Aggregate policies preserve the complete node result map and never misreport partial success as all-success |
+| PROC-PIPELINE-008 | Sensitive topology canaries are absent from unauthorized diagnostic and evidence fields |
+
 ## Cross-platform vectors
 
 The same logical child probe prints length-delimited argument/environment observations to an explicitly inherited channel. Expected vectors are generated without shell syntax. Platform-specific tests cover Windows command-line conventions and handle lists, Linux pidfds/fd closing and post-spawn failure, and macOS spawn attributes, sandbox context, and lifecycle guidance.

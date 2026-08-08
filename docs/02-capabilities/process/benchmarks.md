@@ -14,6 +14,9 @@
 | PROC-BENCH-008 | Single-child control dispatch | Action class, dispatch/terminal latency separated, native baseline |
 | PROC-BENCH-009 | Supervised set lifecycle | Containment level, member count/churn, control and empty-set latency, accounting overhead |
 | PROC-BENCH-010 | Executable resolution | Root/candidate count, cache state, resolution quality, identity-policy cost |
+| PROC-BENCH-011 | Pipeline construction | Node/edge count, preparation/release latency, allocations, endpoint peak, native shell-free baseline |
+| PROC-BENCH-012 | Pipeline throughput/backpressure | Topology, transfer size, slowest stage, capture policy, CPU/copies/context switches |
+| PROC-BENCH-013 | Pipeline failure/cancellation | Failure position, stop/escalation policy, reconciliation and full-drain latency |
 
 ## Controls
 

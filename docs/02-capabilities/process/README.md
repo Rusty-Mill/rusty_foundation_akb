@@ -25,6 +25,9 @@ flowchart TD
     Spawn --> Child["Owned child resource"]
     Child --> Control["rm.process.control"]
     Control --> Supervision["Process supervision service"]
+    Pipe --> Pipeline["Process pipeline service"]
+    Spawn --> Pipeline
+    Supervision -.-> Pipeline
     Attenuate["rm.security.attenuate"] -.-> Restricted["Restricted execution service"]
     Spawn --> Restricted
 ```
@@ -50,5 +53,6 @@ flowchart TD
 - [`rm.process.spawn`](spawn.md)
 - [`rm.process.control`](control.md)
 - [Process supervision platform service](supervision.md)
+- [Process pipeline platform service](pipeline.md)
 - [Conformance specification](conformance.md)
 - [Benchmark specification](benchmarks.md)
