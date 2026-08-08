@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.23.0
+**Version:** 1.24.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -455,6 +455,8 @@ The [plugin and module lifecycle vertical slice](../02-capabilities/plugins/READ
 The [threading and synchronization foundations vertical slice](../02-capabilities/threading/README.md) defines native thread lifecycle, mutex/reader-writer lock semantics, condition/semaphore/event waiting, Rust-model atomics, scheduling/affinity/realtime requests, and thread-local lifecycle. Scheduling controls are scoped requests rather than execution guarantees, and poisoning is optional application consistency policy rather than base lock semantics ([ADR-0046](../adr/0046-scheduling-controls-are-scoped-requests.md), [ADR-0047](../adr/0047-poisoning-is-consistency-policy-not-lock-semantics.md)). Its specifications remain Draft and cannot amend this model.
 
 The [audio foundations vertical slice](../02-capabilities/audio/README.md) defines generation-scoped endpoints, exact PCM formats, render/capture streams, explicit routing, device-sample clocks, monotonic correlation, XRUN/discontinuity evidence, and restricted realtime processing. Stream progress follows the device sample clock rather than inferred wall time, and realtime callbacks use a bounded data plane separated from control-plane work ([ADR-0048](../adr/0048-audio-stream-time-follows-the-device-sample-clock.md), [ADR-0049](../adr/0049-realtime-audio-callbacks-are-a-restricted-execution-domain.md)). Codecs, containers, MIDI, speech, and general media graphs remain separate. Its specifications remain Draft and cannot amend this model.
+
+The [device discovery and hardware-change foundations vertical slice](../02-capabilities/devices/README.md) defines scoped queries, coherent revisioned snapshots, generation-bound references, typed/provenanced properties and topology, change reconciliation, privacy, and class-specific handoff. Native identifiers are identity evidence rather than universal physical identity, and device notifications trigger reconciliation rather than forming a portable lossless journal ([ADR-0050](../adr/0050-device-identity-is-generation-scoped-evidence.md), [ADR-0051](../adr/0051-device-notifications-trigger-reconciliation.md)). Device-class protocols and authority remain separate. Its specifications remain Draft and cannot amend this model.
 
 ## 18. Deliberately unresolved choices
 

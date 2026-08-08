@@ -51,5 +51,7 @@
 | [0047](0047-poisoning-is-consistency-policy-not-lock-semantics.md) | Poisoning is consistency policy, not lock semantics | Accepted |
 | [0048](0048-audio-stream-time-follows-the-device-sample-clock.md) | Audio stream time follows the device sample clock | Accepted |
 | [0049](0049-realtime-audio-callbacks-are-a-restricted-execution-domain.md) | Realtime audio callbacks are a restricted execution domain | Accepted |
+| [0050](0050-device-identity-is-generation-scoped-evidence.md) | Device identity is generation-scoped evidence | Accepted |
+| [0051](0051-device-notifications-trigger-reconciliation.md) | Device notifications trigger reconciliation | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

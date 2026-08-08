@@ -18,6 +18,7 @@ This is an inventory for domain analysis, not an API or crate list.
 | Graphics | devices, presentation, synchronization, resource transfer, compute |
 | Input | keyboard, pointer, touch, pen, game controllers, IME |
 | Audio | devices, streams, routing, timing, formats, real-time constraints |
+| Devices | enumeration, identity evidence, properties, topology, hotplug, class handoff |
 | Time | clocks, instants, duration, calendar, timezone, timers |
 | Plugins | discovery, compatibility, isolation, authority, lifecycle |
 | Configuration | sources, precedence, schema, change notification, secrets separation |
@@ -48,3 +49,4 @@ Each domain will be decomposed into common, optional/advanced, and platform-spec
 - [Plugin and module lifecycle vertical slice](plugins/README.md) — Draft
 - [Threading and synchronization foundations vertical slice](threading/README.md) — Draft
 - [Audio foundations vertical slice](audio/README.md) — Draft
+- [Device discovery and hardware-change foundations vertical slice](devices/README.md) — Draft

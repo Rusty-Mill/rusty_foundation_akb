@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.14.0 |
+| Version | 0.15.0 |
 | Extends | [`rm.profile.foundation.desktop` 1.0.0](foundation-desktop.md) |
 | Purpose | Add native top-level window and graphics-presentation infrastructure without claiming a complete GUI toolkit |
 
@@ -121,6 +121,14 @@
 
 **RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0056:** Product route/device controls are keyboard and assistive-technology operable, expose effective state and failures non-auditorily, and observe applicable mono, balance, hearing-device, and loudness preferences. Codecs, media containers, MIDI, speech, and spatial scene behavior require separate contracts.
 
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0057:** `rm.device.observer` `>=0.1.0,<0.2.0` is conditional on products that expose general device selection, diagnostics, or cross-class hardware-change behavior. Class-specific endpoint observation remains sufficient when no general device model is required.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0058:** Device references are provider/scope/generation bound and convey no authority. Saved-device matching exposes evidence, confidence, ambiguity, and confirmation policy; it never silently substitutes a similar or default device where security, privacy, or data integrity could change.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0059:** Device changes publish coherent snapshot revisions after bounded reconciliation. Notification loss, overflow, source restart, suspend/resume, or incomplete enumeration forces a full rescan; native callback payloads are not treated as a complete journal.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0060:** General enumeration does not open protocols, mount media, request capture consent, or wake hardware solely for optional metadata. Sensitive identifiers/topology are explicitly projected and redacted from ordinary telemetry; class handoff revalidates generation and authority at open.
+
 ## Whole-product gaps
 
 This profile does not supply a rendering command model, widget/UI framework, text editing model, image/audio codecs, media containers/graphs, gestures, or translated product resources. Product-specific semantic roles/actions/content, accepted transfer formats/importers, locale coverage, audio policy/content, and accessible UX still belong to the product/framework. It cannot claim desktop-application completeness.
@@ -133,6 +141,7 @@ Input evidence additionally covers layout/IME diversity, keyboard-only operation
 
 ## History
 
+- **0.15.0:** Adds conditional general device observation, generation-scoped identity evidence, snapshot reconciliation, privacy, class handoff, and hardware-change evidence requirements.
 - **0.14.0:** Adds conditional device/route observation, exact PCM render/capture, sample-clock correlation, restricted realtime processing, capture authority, accessibility, and latency/reliability evidence requirements.
 - **0.13.0:** Adds native-thread lifecycle, synchronization/wait, atomics, UI-affinity, scheduling-quality, realtime prohibition, TLS, and evidence requirements.
 - **0.12.0:** Adds optional plugin catalog, resolution, trust/isolation, lifecycle, immutable generation update, supply-chain, and evidence requirements.
