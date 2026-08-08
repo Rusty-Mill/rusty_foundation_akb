@@ -20,6 +20,7 @@ This is an inventory for domain analysis, not an API or crate list.
 | Input | keyboard, pointer, touch, pen, game controllers, IME |
 | Audio | devices, streams, routing, timing, formats, real-time constraints |
 | Capture | cameras, authorization, raw frames, controls, timing, privacy, backpressure |
+| Notifications | content, attention policy, presentation requests, actions, scheduling, badges |
 | Devices | enumeration, identity evidence, properties, topology, hotplug, class handoff |
 | Time | clocks, instants, duration, calendar, timezone, timers |
 | Plugins | discovery, compatibility, isolation, authority, lifecycle |
@@ -55,3 +56,4 @@ Each domain will be decomposed into common, optional/advanced, and platform-spec
 - [Asynchronous I/O foundations vertical slice](async-io/README.md) — Draft
 - [Storage volumes and removable-media foundations vertical slice](storage/README.md) — Draft
 - [Camera and media-capture foundations vertical slice](capture/README.md) — Draft
+- [Notifications and user-attention foundations vertical slice](notifications/README.md) — Draft

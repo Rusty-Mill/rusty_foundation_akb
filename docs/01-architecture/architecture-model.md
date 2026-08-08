@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.27.0
+**Version:** 1.28.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -463,6 +463,8 @@ The [asynchronous I/O foundations vertical slice](../02-capabilities/async-io/RE
 The [storage volumes and removable-media foundations vertical slice](../02-capabilities/storage/README.md) defines distinct device/media/region/filesystem/mount entities, namespace-scoped observation, capacity/properties, mount arbitration, staged removal, durability evidence, authority, accessibility, conformance, and benchmarks. A mount is a namespace relationship rather than volume identity, and safe removal is observable coordination rather than a stronger durability or continued-presence guarantee ([ADR-0054](../adr/0054-a-mount-is-a-namespace-relationship-not-volume-identity.md), [ADR-0055](../adr/0055-safe-removal-is-coordination-not-a-durability-guarantee.md)). Destructive storage management remains separate. Its specifications remain Draft and cannot amend this model.
 
 The [camera and media-capture foundations vertical slice](../02-capabilities/capture/README.md) defines side-effect-free camera observation, explicit revocable capture authority, negotiated session generations, exact raw frame/color/orientation layouts, capture clocks, controls, bounded delivery, privacy/accessibility, conformance, and benchmarks. Capture authority is revalidated per session, while raw capture remains distinct from preview, still processing, encoding, recording, transport, and storage ([ADR-0056](../adr/0056-capture-authority-is-session-scoped-and-revocable.md), [ADR-0057](../adr/0057-raw-capture-is-not-recording-or-encoding.md)). Its specifications remain Draft and cannot amend this model.
+
+The [notifications and user-attention foundations vertical slice](../02-capabilities/notifications/README.md) defines typed localized content, acceptance/presentation evidence, user-controlled attention policy, untrusted action activation, replacement/progress/badges, scheduling, privacy/accessibility, conformance, and benchmarks. Submission acceptance is not a presentation or delivery guarantee, and every response re-enters through ordinary lifecycle activation and domain authorization ([ADR-0058](../adr/0058-notification-submission-is-not-presentation.md), [ADR-0059](../adr/0059-notification-actions-are-untrusted-activation.md)). Remote push transport and exceptional alert classes remain separate. Its specifications remain Draft and cannot amend this model.
 
 ## 18. Deliberately unresolved choices
 

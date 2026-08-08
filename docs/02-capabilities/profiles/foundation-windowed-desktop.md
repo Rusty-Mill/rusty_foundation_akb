@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.18.0 |
+| Version | 0.19.0 |
 | Extends | [`rm.profile.foundation.desktop` 1.0.0](foundation-desktop.md) |
 | Purpose | Add native top-level window and graphics-presentation infrastructure without claiming a complete GUI toolkit |
 
@@ -153,6 +153,14 @@
 
 **RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0072:** Preview, still-photo processing, encoded samples, codecs, containers, recording, transport, and storage/photo-library output are separately selected. Evidence covers permission states, hostile/malformed frames, color/orientation, timestamp drift, held buffers, drops, reconfiguration, device/privacy loss, virtual provenance, telemetry redaction, and keyboard/assistive-technology operation.
 
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0073:** Native notification submission is conditional on product workload. When selected, `rm.notify.submit` `>=0.1.0,<0.2.0` requires typed localized content, relevance/expiry, attention intent, privacy class, replacement identity, bounded assets/actions, and provider capability/degradation evidence.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0074:** Submission acceptance is not presentation, announcement, retention, delivery, or response. User/system notification settings, focus/quiet hours, lock/shared-screen privacy, accessibility, foreground/session, rate, and power policy remain authoritative; ordinary notifications cannot emulate critical alarms/calls.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0075:** Notification taps, actions, and text input enter as untrusted lifecycle activation. Action/content revision, freshness, schema, replay/idempotency, state, authority, and confirmation are revalidated before the ordinary domain command; system UI does not pre-authorize destructive or sensitive work.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0076:** Replacement, progress, badge, withdrawal, history, and scheduling are independently selected qualities. Evidence covers truncation/localization/bidi, unsupported features, policy denial, unknown outcomes, duplicate/late activation, stale updates, service/process/reboot/clock changes, sensitive-content redaction, and keyboard/assistive-technology interaction.
+
 ## Whole-product gaps
 
 This profile does not supply a rendering command model, widget/UI framework, text editing model, image/audio codecs, media containers/graphs, gestures, or translated product resources. Product-specific semantic roles/actions/content, accepted transfer formats/importers, locale coverage, audio policy/content, and accessible UX still belong to the product/framework. It cannot claim desktop-application completeness.
@@ -165,6 +173,7 @@ Input evidence additionally covers layout/IME diversity, keyboard-only operation
 
 ## History
 
+- **0.19.0:** Adds conditional typed notification submission, attention/privacy policy, untrusted action activation, optional state/scheduling features, accessibility, and evidence requirements.
 - **0.18.0:** Adds conditional consent-bound camera discovery/raw capture, exact frame/color/timing/control semantics, bounded delivery, privacy/accessibility, and evidence requirements.
 - **0.17.0:** Adds conditional storage-volume/mount observation, privileged mount/removal services, staged safe-removal/durability, identity, security, accessibility, and evidence requirements.
 - **0.16.0:** Adds conditional completion-oriented async-I/O infrastructure, readiness translation, cancellation lifetime, engine/executor separation, bounded-load, and shutdown evidence requirements.

@@ -59,5 +59,7 @@
 | [0055](0055-safe-removal-is-coordination-not-a-durability-guarantee.md) | Safe removal is coordination, not a durability guarantee | Accepted |
 | [0056](0056-capture-authority-is-session-scoped-and-revocable.md) | Capture authority is session-scoped and revocable | Accepted |
 | [0057](0057-raw-capture-is-not-recording-or-encoding.md) | Raw capture is not recording or encoding | Accepted |
+| [0058](0058-notification-submission-is-not-presentation.md) | Notification submission is not presentation | Accepted |
+| [0059](0059-notification-actions-are-untrusted-activation.md) | Notification actions are untrusted activation | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.
