@@ -2,6 +2,8 @@
 
 **Status:** Draft component contract 0.1.0
 
+This component consumes the platform [input foundation](../input/README.md). It does not observe native devices or run an IME itself; it translates already structured key, committed-text, pointer, paste, focus, and protocol-reply events into the negotiated terminal wire dialect.
+
 ## Event classes
 
 | Event | Meaning |
@@ -34,4 +36,3 @@ Text commits and key events are independent. A host must not send both for one l
 ## Accessibility and interaction
 
 Every host action is keyboard reachable without requiring pointer precision. Key bindings distinguish host commands from child input, expose conflicts, support remapping, and never trap focus without an escape path. IME candidate/preedit UI belongs to the host platform integration and follows zoom, contrast, reading order, and assistive-technology requirements.
-

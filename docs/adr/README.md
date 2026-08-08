@@ -25,5 +25,7 @@
 | [0021](0021-coordinate-spaces-are-typed.md) | Window coordinate spaces are typed and revision-bound | Accepted |
 | [0022](0022-graphics-selection-uses-workload-contracts.md) | Graphics selection uses workload contracts, not API names | Accepted |
 | [0023](0023-presentation-is-a-graphics-service.md) | Presentation is a graphics service over a window surface | Accepted |
+| [0024](0024-text-input-is-not-keyboard-input.md) | Text input is not keyboard input | Accepted |
+| [0025](0025-input-provenance-is-not-authority.md) | Input provenance is not authority | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

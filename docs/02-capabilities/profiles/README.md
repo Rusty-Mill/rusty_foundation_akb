@@ -33,7 +33,7 @@ The table is only a view. Each manifest defines exact contract ranges, predicate
 
 ## Windowed desktop extension
 
-[`rm.profile.foundation.windowed-desktop` 0.1.0](foundation-windowed-desktop.md) extends Desktop 1.0.0 with negotiated top-level windowing and graphics presentation infrastructure. It remains intentionally incomplete until renderer/UI, text, input, accessibility, and lifecycle contracts are selected.
+[`rm.profile.foundation.windowed-desktop` 0.2.0](foundation-windowed-desktop.md) extends Desktop 1.0.0 with negotiated top-level windowing, graphics presentation infrastructure, focused keyboard/pointer/conditional-touch input, and text composition. It remains intentionally incomplete until renderer/UI, editing/text layout, accessibility, and lifecycle contracts are selected.
 
 ## Version transition
 
@@ -41,7 +41,7 @@ Version 1.0.0 adds direct process launch/control to CLI, Desktop, and Server. Th
 
 ## Explicit gaps
 
-These profiles are incomplete for real applications because terminal, networking, configuration, observability, wall/calendar time, rendering/UI, input, accessibility, i18n, and audio contracts are not yet all specified. The windowed extension supplies window/presentation infrastructure but not those product layers. Resolution reports must preserve the gaps; the foundation profile name prevents a false completeness claim.
+These profiles are incomplete for real applications because terminal, networking, configuration, observability, wall/calendar time, rendering/UI, editing/text layout, accessibility, i18n, and audio contracts are not yet all specified. The windowed extension supplies window/presentation/input infrastructure but not those product layers. Resolution reports must preserve the gaps; the foundation profile name prevents a false completeness claim.
 
 ## Shared prohibitions
 

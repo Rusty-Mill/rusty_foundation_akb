@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.10.0
+**Version:** 1.11.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -230,6 +230,10 @@ Graphics providers are selected against exact versioned workload vectors rather 
 
 Windowing owns the presentation-surface generation. A graphics presentation service composes that surface with device, queue, image-pool, synchronization, color, and frame policy. Frame leases are bounded; submission, presentation acceptance, and observed display are distinct milestones; reconfiguration creates a new session generation ([ADR-0023](../adr/0023-presentation-is-a-graphics-service.md)).
 
+Keyboard observations and text input are separate coordinated contracts. Physical control, logical key meaning, modifier/layout revision, provisional composition, and committed Unicode text remain distinguishable. A text-input service owns focused editable-target context, surrounding-text disclosure, caret/selection geometry, composition, commit, and cancellation; backends do not synthesize committed text by blindly mapping keys ([ADR-0024](../adr/0024-text-input-is-not-keyboard-input.md)).
+
+Input provenance is evidence rather than authority. Hardware-associated, OS/accessibility, remote, replayed, application-synthetic, and unknown origins remain explicit; security-sensitive actions authorize independently. Focused input, background observation, capture/lock/confinement, and injection are separately negotiated capabilities with independent authority ([ADR-0025](../adr/0025-input-provenance-is-not-authority.md)).
+
 ## 9. Execution and concurrency model
 
 Rusty Mill is **async-first and sync-complete**.
@@ -409,6 +413,8 @@ The [filesystem foundations vertical slice](../02-capabilities/filesystem/README
 The [windowing foundations vertical slice](../02-capabilities/windowing/README.md) defines negotiated top-level window state, display topology, typed coordinate spaces, event delivery, and generation-scoped presentation surfaces. Graphics, input interpretation, widget layout, and application accessibility content remain separate domains. Its specifications remain Draft and cannot amend this model.
 
 The [graphics and presentation vertical slice](../02-capabilities/graphics/README.md) defines workload-vector resolution, device epochs, resource memory, explicit submission/synchronization, bounded frame scheduling, and a presentation service over window surfaces. Rendering command models, shaders, text, UI scenes, and codecs remain unresolved pending concrete workload evidence. Its specifications remain Draft and cannot amend this model.
+
+The [input foundations vertical slice](../02-capabilities/input/README.md) defines keyboard, pointer, touch, focus/capture routing, provenance, and a revision-bound text composition service. Shortcut resolution, widget focus, editing behavior, gestures, terminal encoding, and input injection remain higher-layer or separate capability concerns. Its specifications remain Draft and cannot amend this model.
 
 ## 18. Deliberately unresolved choices
 
