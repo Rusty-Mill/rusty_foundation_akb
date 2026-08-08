@@ -41,3 +41,5 @@ flowchart LR
 - [Platform research](pki-platform-research.md)
 - [Conformance](pki-conformance.md)
 - [Benchmarks](pki-benchmarks.md)
+
+Issuance, enrollment, renewal, rekey, revocation requests, and CA operation are specified separately in the [certificate issuance and CA-lifecycle foundation](pki-issuance-README.md). Validation consumes their outputs but does not authorize or perform issuance.

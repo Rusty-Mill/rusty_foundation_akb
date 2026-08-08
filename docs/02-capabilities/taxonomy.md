@@ -47,6 +47,7 @@ Each domain will be decomposed into common, optional/advanced, and platform-spec
 - [Security and authority foundations vertical slice](security/README.md) — Draft
 - [Cryptographic operations and key-management foundations](security/crypto-README.md) — Draft
 - [Certificate, trust-store, and PKI-validation foundations](security/pki-README.md) — Draft
+- [Certificate issuance, enrollment, and CA-lifecycle foundations](security/pki-issuance-README.md) — Draft
 - [Signed-artifact and provenance foundations](signed-artifacts/README.md) — Draft
 - [Package installation and update-orchestration foundations](package-management/README.md) — Draft
 - [Process foundations vertical slice](process/README.md) — Draft

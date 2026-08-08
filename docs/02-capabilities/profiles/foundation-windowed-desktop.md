@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.33.0 |
+| Version | 0.34.0 |
 | Extends | [`rm.profile.foundation.desktop` 1.0.0](foundation-desktop.md) |
 | Purpose | Add native top-level window and graphics-presentation infrastructure without claiming a complete GUI toolkit |
 
@@ -269,6 +269,12 @@
 
 **RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0130:** Evidence covers repository attacks, resolver conflicts, stale plans, native partial/in-use states, filesystem/archive attacks, hooks/services/config/data, crash/power/disk/reboot recovery, deterministic rollout cohorts and missing health, compensating rollback, repair/removal, privacy/accessibility, and benchmarks.
 
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0131:** Certificate enrollment/renewal is conditional for user, device, application, client-authentication, signing, or service identities. It binds operation kind, exact opaque key/protection, request/POP/attestation, subject/identifier authority, issuer/profile/policy, protocol/account/server trust, target store/scope/principal, interaction, activation, renewal/rekey/replacement, and revocation.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0132:** Interactive flows accessibly expose requester/subject, issuer, purpose/identifiers, key protection/export/archival, validity, target store/scope, requested-versus-issued changes, public disclosure, pending/retry, user-presence, activation, expiry risk, and nonclaims. A certificate does not itself confer application authorization.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0133:** Evidence covers native user/machine stores and managed enrollment, malicious requests/protocols, authority/POP/attestation, provider interaction/lock/loss, response/public-key mismatch, installation/activation, same-key/rekey/replace, clock/sleep/offline, mass renewal/revocation, privacy/accessibility, and benchmarks.
+
 ## Whole-product gaps
 
 This profile does not supply a rendering command model, widget/UI framework, text editing model, image/audio codecs, media containers/graphs, gestures, or translated product resources. Product-specific semantic roles/actions/content, accepted transfer formats/importers, locale coverage, audio policy/content, and accessible UX still belong to the product/framework. It cannot claim desktop-application completeness.
@@ -281,6 +287,7 @@ Input evidence additionally covers layout/IME diversity, keyboard-only operation
 
 ## History
 
+- **0.34.0:** Adds conditional certificate enrollment, opaque-key requests/POP, identity authority, protocol delivery/install, accessible renewal/rekey/replacement/revocation, activation, conformance, and benchmarks.
 - **0.33.0:** Adds conditional authenticated repository snapshots, package state/resolution/plans, journaled native deployment, hooks/services/data, accessible rollout/health, compensating rollback, recovery, conformance, and benchmarks.
 - **0.32.0:** Adds conditional exact signed code/package/document/artifact views, authority-bearing signing, timestamps, transparency, provenance/reproducibility, evidence-composing verification, lifecycle, accessibility, conformance, and benchmarks.
 - **0.31.0:** Adds conditional bounded certificate parsing, trust-store evidence, candidate path construction, policy/time/identity-bound validation, revocation/network/cache quality, result lifecycle, conformance, and benchmarks.

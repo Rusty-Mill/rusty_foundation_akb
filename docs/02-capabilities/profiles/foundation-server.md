@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 1.5.0 |
+| Version | 1.6.0 |
 | Purpose | Long-running non-interactive service foundation with bounded shutdown and protected credentials |
 
 ## Workload assumptions
@@ -41,6 +41,9 @@ No interactive desktop session, unattended restart, concurrent I/O, explicit ser
 - **RM-PROFILE-FOUNDATION-SERVER-0023:** Package deployment/update orchestration `>=0.1.0,<0.2.0` is conditional for self-update, managed installation, runtime/dependency servicing, or fleet rollout. It binds authenticated repository and installed-state generations, exact artifacts, native version/dependency semantics, immutable authority-bound plans, scope/principal, hooks/services/data, restart/reboot, recovery, and product health policy.
 - **RM-PROFILE-FOUNDATION-SERVER-0024:** Noninteractive execution revalidates every plan precondition, uses least-privilege native managers, journals points of no return, distinguishes commit/activation/readiness/health, bounds locks/hooks/network/disk, and reconciles crash/power/reboot/partial states. Rollback is a newly resolved compensating deployment and cannot imply data rollback.
 - **RM-PROFILE-FOUNDATION-SERVER-0025:** Evidence covers repository rollback/freeze/mix-and-match, dependency conflicts, stale-plan/authority substitution, native partial states, hooks/services/config/data, concurrency/fault injection, rollout missing/late health, emergency response, repair/removal/recovery, privacy, and staged benchmarks.
+- **RM-PROFILE-FOUNDATION-SERVER-0026:** Certificate enrollment/renewal `>=0.1.0,<0.2.0` is conditional when services or workloads require managed certificate generations. It binds operation kind, opaque key/protection, request/POP/attestation, subject/identifier authority, issuer/profile/policy, protocol/account/server trust, delivery/store/scope, activation, renewal/rekey/replacement, and revocation.
+- **RM-PROFILE-FOUNDATION-SERVER-0027:** Noninteractive renewal uses explicit workload authority and authenticated issuer guidance, spreads fleet load, preserves retry/outage margin, reconciles ambiguous issuance, distinguishes issued/installed/active/healthy/retired, and never treats old-key possession as authority for arbitrary claim changes.
+- **RM-PROFILE-FOUNDATION-SERVER-0028:** Evidence covers hostile requests/protocols, authority/POP/attestation, requested-versus-issued policy, pending/retry/cancel, store/key association, provider/network/clock failure, service generation overlap, mass renewal/revocation, privacy, and staged benchmarks. CA operation requires the separate CA-operator profile.
 
 ## Operational constraints
 
@@ -48,6 +51,7 @@ Deadline timers and cancellation support bounded multi-phase shutdown. Sync path
 
 ## History
 
+- **1.6.0:** Adds conditional certificate enrollment, opaque-key requests/POP, identity authority, protocol delivery/install, renewal/rekey/replacement/revocation, activation, conformance, and benchmarks.
 - **1.5.0:** Adds conditional authenticated repository snapshots, package state/resolution/plans, journaled native deployment, hooks/services/data, rollout/health, compensating rollback, recovery, conformance, and benchmarks.
 - **1.4.0:** Adds conditional exact signed-artifact views, authority-bearing signing, timestamps, transparency, provenance/reproducibility, evidence-composing verification, lifecycle, conformance, and benchmarks.
 - **1.3.0:** Adds conditional bounded certificate parsing, trust-store/path evidence, policy/time/identity-bound validation, revocation/network/cache modes, lifecycle, conformance, and benchmarks.

@@ -91,5 +91,7 @@
 | [0087](0087-rollback-is-a-compensating-deployment-not-an-inverse.md) | Rollback is a compensating deployment, not an inverse | Accepted |
 | [0088](0088-published-release-identity-and-bytes-are-immutable.md) | Published release identity and bytes are immutable | Accepted |
 | [0089](0089-channel-promotion-moves-an-authenticated-reference-to-the-same-digest.md) | Channel promotion moves an authenticated reference to the same digest | Accepted |
+| [0090](0090-certificate-requests-prove-key-possession-not-issuance-authority.md) | Certificate requests prove key possession, not issuance authority | Accepted |
+| [0091](0091-renewal-creates-a-new-credential-generation-with-explicit-continuity.md) | Renewal creates a new credential generation with explicit continuity | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

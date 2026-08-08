@@ -36,6 +36,8 @@ The [package installation and update-orchestration foundation](../02-capabilitie
 
 The [repository publication and security-response foundation](../04-ecosystem/repository-operations/README.md) closes that delivery boundary with immutable release records, digest-preserving channel promotion, authenticated repository snapshots, untrusted mirrors, revisioned advisories, coordinated disclosure, revocation/emergency response, retention/backup, conformance, and operational objectives. Concrete providers and wire profiles remain RFC choices.
 
+Repository, signing, timestamp, status, mirror, and service identities may compose the [certificate issuance and renewal lifecycle](../02-capabilities/security/pki-issuance-README.md). Enrollment authority, key proof, CA policy, delivery, activation, renewal, and revocation remain explicit; possession of a release-signing or TLS certificate never grants publication authority.
+
 ## Compatibility channels
 
 `experimental`, `preview`, and `stable` channels communicate contract maturity. Channel promotion is evidence-based and never inferred from elapsed time.

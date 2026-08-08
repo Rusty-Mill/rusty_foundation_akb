@@ -3,8 +3,8 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.1.0 |
-| Extends | [`rm.profile.foundation.server` 1.5.0](foundation-server.md) |
+| Version | 0.2.0 |
+| Extends | [`rm.profile.foundation.server` 1.6.0](foundation-server.md) |
 | Purpose | Operate software publication, authenticated repository metadata, mirrors, advisories, and emergency response without claiming a complete hosted registry product |
 
 ## Required composition
@@ -37,5 +37,5 @@
 
 ## History
 
+- **0.2.0:** Rebases on Server 1.6.0 so repository products can conditionally enroll and renew service/signing/status credentials under the shared lifecycle contract.
 - **0.1.0:** Initial publication, repository/mirror, channel, advisory/disclosure, emergency, retention/backup, conformance, and operational-evidence profile.
-
