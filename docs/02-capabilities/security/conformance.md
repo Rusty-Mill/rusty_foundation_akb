@@ -35,6 +35,21 @@ Every report identifies capability/contract version, provider and artifact diges
 
 Statistical batteries may detect gross provider or integration failures but cannot prove unpredictability or cryptographic security. Conformance trusts the documented OS cryptographic source, verifies correct use and failure handling, and treats suspicious statistical results as investigation triggers rather than a certification.
 
+## `rm.security.secret-store` assertions
+
+| ID | Assertion |
+|---|---|
+| SEC-SECRET-001 | Selection rejects each individually mismatched or unknown protection dimension before plaintext submission |
+| SEC-SECRET-002 | Create collision never overwrites; explicit replace observes generation/conflict semantics |
+| SEC-SECRET-003 | Non-exportable and scoped-reveal items cannot be obtained through an owned-export path |
+| SEC-SECRET-004 | Prompt-required, prompt-forbidden, locked, logged-out, and headless cases produce declared outcomes without unsafe blocking |
+| SEC-SECRET-005 | Cancellation races return confirmed canceled, completed, or indeterminate with no fabricated state |
+| SEC-SECRET-006 | Secret and sensitive-metadata canaries are absent from every configured diagnostic, telemetry, crash, and report sink |
+| SEC-SECRET-007 | Delete reports only evidenced visibility, replica, backup, garbage-collection, and erasure effects |
+| SEC-SECRET-008 | Logout, lock, password/account change, sandbox, migration, restore, and synchronization probes match scoped provider claims |
+| SEC-SECRET-009 | Item identifiers and lookup attributes do not authorize access and are isolated by provider namespace |
+| SEC-SECRET-010 | Fault injection at every native boundary preserves ownership and never exposes partially initialized plaintext |
+
 ## Adversarial platform matrix
 
 Run supported tests in ordinary and sandboxed contexts, under resource pressure, during high concurrency, and across process lifecycle events. Platform-specific probes must confirm the actual native source rather than inferring it from the OS name.

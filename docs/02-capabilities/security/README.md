@@ -9,7 +9,7 @@
 
 The security domain supplies semantic building blocks for least-authority operation. It does not replace Windows access checks, Linux credentials and security modules, macOS sandbox enforcement, application authorization policy, or specialist cryptographic protocols.
 
-This slice establishes the authority vocabulary, authority attenuation, restricted-execution composition, and one independent cryptographic service: secure random bytes. Secret storage, user authentication, credential brokers, signing, and general cryptographic primitives remain later analyses.
+This slice establishes the authority vocabulary, authority attenuation, restricted-execution composition, secure random bytes, and protected secret storage. User authentication, credential brokers, signing, and general cryptographic primitives remain later analyses.
 
 ## Model
 
@@ -49,8 +49,10 @@ flowchart TD
     Attenuate --> Isolation["Restricted execution service"]
     Random["rm.security.random"]
     Cancel["rm.runtime.cancellation"] -.->|"optional for readiness wait"| Random
-    Random --> FutureSecrets["Future secret generation and storage"]
     Random --> FutureCrypto["Future cryptographic protocols"]
+    Random --> Store["rm.security.secret-store"]
+    SecretValue["Secret value resource model"] --> Store
+    Claims["Protection claim vector"] --> Store
 ```
 
 ## Documents
@@ -62,6 +64,10 @@ flowchart TD
 - [Threat model](threat-model.md)
 - [Platform research](platform-research.md)
 - [`rm.security.random`](random.md)
+- [Secret value resource model](secret-value.md)
+- [Secret protection claim model](secret-protection-model.md)
+- [`rm.security.secret-store`](secret-store.md)
+- [Secret storage platform research](secret-platform-research.md)
 - [Restricted execution platform service](restricted-execution.md)
 - [Conformance specification](conformance.md)
 - [Benchmark specification](benchmarks.md)

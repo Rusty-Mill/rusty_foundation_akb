@@ -50,4 +50,4 @@ The [filesystem foundations analysis](../02-capabilities/filesystem/README.md) n
 
 ## Active third slice
 
-The [security and authority foundations analysis](../02-capabilities/security/README.md) separates identity, security context, explicit authority, policy advice, and native enforcement. It establishes attenuation and fail-closed rules and exercises them through `rm.security.random`. Its next gates are restricted-execution boundary analysis, authority delegation lifecycle, and cross-domain security review criteria.
+The [security and authority foundations analysis](../02-capabilities/security/README.md) separates identity, security context, explicit authority, policy advice, and native enforcement. It now covers attenuation, delegation, restricted execution, secure random, secret values, and protected stores with cross-domain review and evidence requirements. Its next gates are credential acquisition/brokering, cryptographic-key operation boundaries, and profile-specific authority manifests.

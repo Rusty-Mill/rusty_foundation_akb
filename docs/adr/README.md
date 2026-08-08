@@ -13,5 +13,6 @@
 | [0009](0009-identity-is-not-authority.md) | Identity is not authority | Accepted |
 | [0010](0010-native-operation-is-the-authorization-point.md) | The native operation is the authorization point | Accepted |
 | [0011](0011-restricted-execution-is-a-platform-service.md) | Restricted execution is a platform service | Accepted |
+| [0012](0012-secret-protection-is-a-vector.md) | Secret protection is a vector, not a level | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

@@ -26,9 +26,13 @@ The principal boundaries are application-to-common API, common API-to-provider, 
 | Provider substitution | Signed/provenanced provider evidence and policy-constrained selection |
 | Secret leakage | Redacted diagnostics, zeroization claims only when proven, no secret serialization by default |
 | Weak or repeated randomness | OS cryptographic source, exact-fill semantics, fork/snapshot test strategy, fail closed |
+| Secret exposure in memory or diagnostics | Opaque use where possible, scoped reveal, deny clone/display/serialization, canary-based sink inspection |
+| Metadata disclosure | Separate metadata sensitivity policy; minimize lookup attributes and enumeration authority |
+| Rollback or stale secret version | Provider generations and conditional replace; disclose when unavailable |
+| Unexpected prompt, backup, or synchronization | Protection-vector discovery and explicit policy before plaintext submission |
+| Misleading deletion/hardware claims | Scope claims to exact boundary and retain known copies, replicas, and garbage-collection limitations |
 | Denial of service | Bounded requests, cancellation/readiness policy, quotas, and rate-aware diagnostics |
 
 ## Non-guarantees
 
 The portable model cannot protect against a compromised kernel, physical memory attacks, platform bugs, an application that deliberately exports its authority, or rights retained through native aliases outside Rusty Mill's control. Such conditions belong in deployment threat models and provider disclosures.
-
