@@ -51,3 +51,7 @@ The [filesystem foundations analysis](../02-capabilities/filesystem/README.md) n
 ## Active third slice
 
 The [security and authority foundations analysis](../02-capabilities/security/README.md) separates identity, security context, explicit authority, policy advice, and native enforcement. It now covers attenuation, delegation, restricted execution, secure random, secret values, and protected stores with cross-domain review and evidence requirements. Its next gates are credential acquisition/brokering, cryptographic-key operation boundaries, and profile-specific authority manifests.
+
+## Active profile trial
+
+The four [foundation profiles](../02-capabilities/profiles/README.md) now exercise exact contract selection, conditional requirements, interaction policy, explicit workload gaps, deterministic resolution, and evidence-bound reports. They expand only as new domain contracts mature; they are not complete application-platform profiles yet.

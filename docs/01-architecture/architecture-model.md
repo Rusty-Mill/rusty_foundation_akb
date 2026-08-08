@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.2.0
+**Version:** 1.3.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -147,7 +147,9 @@ An application-oriented composition above platform services. Frameworks may offe
 
 ### 5.10 Profile
 
-A named, versioned declaration of required and optional capabilities, contract ranges, quality levels, and security constraints for a workload class. Initial profile families are CLI, Desktop, Server, and Embedded/headless; exact membership remains specification work.
+A named, versioned declaration of required, conditional, optional, and prohibited capabilities and services, contract ranges, quality levels, and security constraints for a workload class. Initial foundation profile families are CLI, Desktop, Server, and Embedded/headless; their current exact membership is specified while missing application domains remain explicit gaps.
+
+Profiles select exact capability contracts and platform services—not undifferentiated domains, crates, or OS features. Members are required, conditional, optional, or prohibited and carry independent quality, authority, interaction, budget, degradation, and evidence constraints. Current `foundation` profiles preserve explicit domain gaps and cannot imply complete application support. Satisfied resolution produces an immutable evidence-bound report ([ADR-0013](../adr/0013-profiles-select-contracts-not-domains.md)).
 
 ## 6. Capability dependency graph
 

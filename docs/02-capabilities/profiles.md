@@ -1,20 +1,22 @@
 # Capability profiles
 
-Profiles are named, versioned declarations of the capabilities and quality levels needed by a workload. They avoid a one-size-fits-all platform dependency.
+Profiles are named, versioned, resolvable workload contracts. They select exact capability contracts, services, quality and security constraints; they never require an undifferentiated domain such as “filesystem” or “security.”
 
-## Seed profiles
+The current profiles are deliberately **foundation profiles**. They exercise only specified capabilities and expose missing workload domains as explicit gaps. They are not yet promises that Rusty Mill can support a complete CLI, desktop, server, or embedded application.
 
-- **CLI:** process, terminal/stdio, filesystem, configuration, time, and diagnostics.
-- **Desktop:** runtime, filesystem, networking, security, windowing, graphics, input, accessibility, i18n, audio, and observability.
-- **Server:** runtime, async I/O, process, networking, security, configuration, time, and observability.
-- **Embedded/headless:** minimal runtime and explicitly selected I/O capabilities under constrained resource budgets.
+## Profile system
 
-These names are placeholders until domain analysis establishes exact membership.
+- [Profile contract and resolution rules](profiles/profile-contract.md)
+- [Resolution report](profiles/resolution-report.md)
+- [Foundation profile comparison](profiles/README.md)
 
-## Profile rules
+## Seed manifests
 
-- Required and optional members are explicit.
-- Quality and security requirements may be stricter than base capability contracts.
-- Profiles may extend another profile but cannot silently weaken it.
-- Resolution produces a report of selected providers, unavailable requirements, emulation, and degradation.
-- Profile versions follow compatibility rules and are included in conformance claims.
+- [`rm.profile.foundation.cli`](profiles/foundation-cli.md)
+- [`rm.profile.foundation.desktop`](profiles/foundation-desktop.md)
+- [`rm.profile.foundation.server`](profiles/foundation-server.md)
+- [`rm.profile.foundation.headless`](profiles/foundation-headless.md)
+
+## Authority
+
+Profile requirements are consumer-side constraints. Capability specifications remain authoritative for behavior, and the [architecture model](../01-architecture/architecture-model.md) governs resolution. Profiles cannot strengthen a provider claim without evidence, weaken a capability contract, or turn an optional dependency into an undeclared guarantee.
