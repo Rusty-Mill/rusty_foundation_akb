@@ -97,5 +97,7 @@
 | [0093](0093-resumption-creates-a-new-channel-and-early-data-is-separate-replay-authority.md) | Resumption creates a new channel and early data is separate replay authority | Accepted |
 | [0094](0094-http-semantics-are-stable-while-protocol-mechanics-remain-explicit.md) | HTTP semantics are stable while protocol mechanics remain explicit | Accepted |
 | [0095](0095-http-replay-is-an-explicit-domain-authority.md) | HTTP replay is an explicit domain authority | Accepted |
+| [0096](0096-real-time-transports-share-session-policy-not-a-data-abstraction.md) | Real-time transports share session policy, not a data abstraction | Accepted |
+| [0097](0097-reconnect-creates-a-new-session-and-resume-is-application-evidence.md) | Reconnect creates a new session and resume is application evidence | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

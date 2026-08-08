@@ -19,6 +19,7 @@ flowchart LR
     Intent --> Secure
     Secure --> Protocol["Application protocol"]
     Protocol --> HTTP["HTTP semantic exchange"]
+    HTTP --> Realtime["Real-time session protocols"]
     Listen["rm.network.listener"] --> Transport
 ```
 
@@ -31,6 +32,7 @@ flowchart LR
 - Connectivity observation is a hint scoped to requirements and process policy, not proof that a destination or the Internet is reachable.
 - Secure transport is a service composed over transport; authentication binds the original service identity and policy, not the selected address alone.
 - HTTP semantics compose over secure transport while version-specific framing, multiplexing, flow control, pooling, and failure scope remain explicit.
+- Real-time protocols share establishment and lifecycle policy while preserving WebSocket messages, SSE events, and WebTransport streams/datagrams as different contracts.
 
 ## Documents
 
@@ -44,6 +46,7 @@ flowchart LR
 - [Secure-channel boundary](secure-channel.md)
 - [Secure transport and channel foundations](secure-transport-README.md)
 - [HTTP client and server foundations](http-README.md)
+- [Real-time application transport foundations](realtime-README.md)
 - [Platform research](platform-research.md)
 - [Conformance specification](conformance.md)
 - [Benchmark specification](benchmarks.md)

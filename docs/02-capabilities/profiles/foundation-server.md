@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 1.8.0 |
+| Version | 1.9.0 |
 | Purpose | Long-running non-interactive service foundation with bounded shutdown and protected credentials |
 
 ## Workload assumptions
@@ -50,6 +50,9 @@ No interactive desktop session, unattended restart, concurrent I/O, explicit ser
 - **RM-PROFILE-FOUNDATION-SERVER-0032:** HTTP client/server service `>=0.1.0,<0.2.0` is conditional for HTTP workloads. It binds exact message semantics, original origin/authority, HTTP/1.1-/2-/3 protocol policy, secure channel and proxy route, pool/privacy/credential partition, bounded streaming, cache policy, server admission, deadlines, and observability.
 - **RM-PROFILE-FOUNDATION-SERVER-0033:** Redirects, origin/proxy authentication, retries, early-data fallback, hedging, connection coalescing, alternative services, and cache revalidation are explicit transitions. Every replay is a new linked attempt requiring body replayability, effect/idempotency/deduplication evidence, and bounded authority; unknown effect remains unknown.
 - **RM-PROFILE-FOUNDATION-SERVER-0034:** Evidence covers shared semantics; HTTP/1.1 framing/smuggling; HTTP/2/3 state, compression, flow control, reset/GOAWAY; streaming/cancellation; redirects/challenges/replay; proxy/tunnel/version translation; cache partition/freshness/validation; overload/drain; privacy/accessibility; provider differentials; and staged benchmarks.
+- **RM-PROFILE-FOUNDATION-SERVER-0035:** Real-time transport service `>=0.1.0,<0.2.0` is conditional for WebSocket, SSE, or WebTransport workloads. It binds protocol/profile revision, original service/resource/origin, secure HTTP route, credentials/application authority, subprotocol/extensions, session generation, native data primitives, flow/queue/resource limits, liveness, close, and reconnect policy.
+- **RM-PROFILE-FOUNDATION-SERVER-0036:** WebSocket messages, SSE events/cursors, and WebTransport streams/datagrams retain different delivery and failure semantics. Reconnect creates a new authenticated/authorized session; resume and acknowledgments are application evidence; gaps, duplicates, state loss, and ambiguous effects require explicit reconciliation and no queued operation replays automatically.
+- **RM-PROFILE-FOUNDATION-SERVER-0037:** Evidence covers protocol establishment and origin/auth, hostile frames/events/capsules, compression and bounds, slow peers/fairness, stream/datagram loss/reset, liveness, sleep/network/proxy change, drain/shutdown, reconnect/resume/gap/duplicate/storm behavior, privacy/accessibility, provider/draft variance, and staged benchmarks.
 
 ## Operational constraints
 
@@ -57,6 +60,7 @@ Deadline timers and cancellation support bounded multi-phase shutdown. Sync path
 
 ## History
 
+- **1.9.0:** Adds conditional WebSocket, SSE, and versioned WebTransport sessions with native data semantics, bounded flow/lifecycle, explicit reconnect/resume/replay, conformance, and benchmarks.
 - **1.8.0:** Adds conditional HTTP/1.1-/2-/3 semantic exchange, protocol mechanics, streaming, pooling, proxy/cache, redirect/auth/replay policy, server lifecycle, conformance, and benchmarks.
 - **1.7.0:** Adds conditional exact TLS/QUIC channel policy, authentication/readiness, resumption/early-data replay authority, exporters/bindings, data/closure, migration, conformance, and benchmarks.
 - **1.6.0:** Adds conditional certificate enrollment, opaque-key requests/POP, identity authority, protocol delivery/install, renewal/rekey/replacement/revocation, activation, conformance, and benchmarks.

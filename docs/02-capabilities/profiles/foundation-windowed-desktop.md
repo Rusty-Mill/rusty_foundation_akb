@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.36.0 |
+| Version | 0.37.0 |
 | Extends | [`rm.profile.foundation.desktop` 1.0.0](foundation-desktop.md) |
 | Purpose | Add native top-level window and graphics-presentation infrastructure without claiming a complete GUI toolkit |
 
@@ -287,6 +287,12 @@
 
 **RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0139:** Evidence covers shared semantics, hostile HTTP/1.1 framing, HTTP/2/3 state/flow/compression, connection coalescing, streaming/cancellation/suspend/network change, redirects/auth/replay, proxies, partitioned caches, privacy/i18n/accessibility, provider differential traces, and staged performance/energy benchmarks.
 
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0140:** Real-time transport service `>=0.1.0,<0.2.0` is conditional for WebSocket, SSE, or WebTransport products. It binds exact protocol/profile, service/resource/origin, secure HTTP route, credentials/application authority, native message/event/stream/datagram semantics, flow/queue limits, liveness, close, foreground/background/network-cost, and reconnect policy.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0141:** Reconnect always creates a new session and revalidates current identity, origin, credentials, authorization, subprotocol/extensions, limits, and product state. Resume cursors/acknowledgments are application evidence; gaps, duplicates, stale generations, unknown effects, suspend, and network changes are surfaced through accessible localized state/recovery rather than hidden replay.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0142:** Evidence covers browser/native mediation, origins/auth, hostile WebSocket/SSE/WebTransport input, compression/bounds, flow/fairness, background/suspend/network/proxy change, liveness, drain/close, reconnect/resume/storms, privacy/i18n/accessibility, provider/draft variance, and staged latency/energy benchmarks.
+
 ## Whole-product gaps
 
 This profile does not supply a rendering command model, widget/UI framework, text editing model, image/audio codecs, media containers/graphs, gestures, or translated product resources. Product-specific semantic roles/actions/content, accepted transfer formats/importers, locale coverage, audio policy/content, and accessible UX still belong to the product/framework. It cannot claim desktop-application completeness.
@@ -299,6 +305,7 @@ Input evidence additionally covers layout/IME diversity, keyboard-only operation
 
 ## History
 
+- **0.37.0:** Adds conditional WebSocket, SSE, and versioned WebTransport sessions, native data semantics, background-aware reconnect/resume evidence, accessibility, conformance, and benchmarks.
 - **0.36.0:** Adds conditional HTTP/1.1-/2-/3 semantics, streaming, connection/proxy/cache behavior, explicit redirect/auth/replay policy, accessible interaction, conformance, and benchmarks.
 - **0.35.0:** Adds conditional exact TLS/QUIC channel policy, authentication/readiness, resumption/early-data replay authority, exporters/bindings, data/closure, migration, accessibility, conformance, and benchmarks.
 - **0.34.0:** Adds conditional certificate enrollment, opaque-key requests/POP, identity authority, protocol delivery/install, accessible renewal/rekey/replacement/revocation, activation, conformance, and benchmarks.

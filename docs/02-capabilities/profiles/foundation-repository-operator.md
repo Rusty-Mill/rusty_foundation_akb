@@ -3,8 +3,8 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.4.0 |
-| Extends | [`rm.profile.foundation.server` 1.8.0](foundation-server.md) |
+| Version | 0.5.0 |
+| Extends | [`rm.profile.foundation.server` 1.9.0](foundation-server.md) |
 | Purpose | Operate software publication, authenticated repository metadata, mirrors, advisories, and emergency response without claiming a complete hosted registry product |
 
 ## Required composition
@@ -37,8 +37,11 @@
 
 **RM-PROFILE-REPOSITORY-OPERATOR-0013:** When a product RFC selects HTTP, repository fetch/publication/advisory endpoints compose Server 1.8.0 with immutable artifact identity, authenticated metadata generation, range/conditional/cache semantics, proxy/privacy partition, replay-safe publication authority, overload/drain, and exact receipt evidence; this profile does not itself select routes, media types, schemas, or wire APIs.
 
+**RM-PROFILE-REPOSITORY-OPERATOR-0014:** When a product selects real-time advisory, publication, mirror, or rollout observation, it composes Server 1.9.0 with immutable event identity/revision, authorization and tenant scope, bounded fanout/backpressure, reconnect as a new session, gap/duplicate/snapshot reconciliation, and no implication that observation authorizes or acknowledges a repository operation.
+
 ## History
 
+- **0.5.0:** Rebases on Server 1.9.0 and constrains optional real-time observation to revisioned events, bounded fanout, new-session reconnect, and explicit gap/duplicate reconciliation.
 - **0.4.0:** Rebases on Server 1.8.0 and constrains optional HTTP endpoints to preserve repository generations, publication replay authority, cache/proxy partitions, overload, and receipt evidence.
 - **0.3.0:** Rebases on Server 1.7.0 and requires product-selected TLS/QUIC service endpoints to preserve original repository identity, mutual authentication where selected, ALPN, resumption/early-data, channel-binding, and closure evidence.
 - **0.2.0:** Rebases on Server 1.6.0 so repository products can conditionally enroll and renew service/signing/status credentials under the shared lifecycle contract.
