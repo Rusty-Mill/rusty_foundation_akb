@@ -3,8 +3,8 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.2.0 |
-| Extends | [`rm.profile.foundation.server` 1.7.0](foundation-server.md) |
+| Version | 0.3.0 |
+| Extends | [`rm.profile.foundation.server` 1.8.0](foundation-server.md) |
 | Purpose | Operate registration, certificate issuance, renewal, status, and CA lifecycle without claiming a complete public or enterprise CA product |
 
 ## Required composition
@@ -27,7 +27,10 @@
 
 **RM-PROFILE-CA-OPERATOR-0008:** Server-generated keys, archival/escrow/recovery, subordinate-CA issuance, public-trust issuance, code-signing/timestamp services, and on-behalf-of enrollment are separately selected high-risk profiles and are not implied.
 
+**RM-PROFILE-CA-OPERATOR-0009:** When an enrollment/status/administration RFC selects HTTP, it composes Server 1.8.0 with exact account/request/nonce/transaction generations, replay and polling authority, credential/privacy partition, cache prohibition or freshness policy, bounded bodies, proxy/redirect constraints, overload, ambiguous-result reconciliation, and auditable response evidence; this profile does not choose the protocol mapping.
+
 ## History
 
+- **0.3.0:** Rebases on Server 1.8.0 and constrains optional HTTP mappings with exact transaction, replay/polling, credential/cache/proxy, overload, and ambiguous-result evidence.
 - **0.2.0:** Rebases on Server 1.7.0 so enrollment, status, audit, and administration endpoints compose exact TLS/QUIC identity, mutual-authentication, ALPN, resumption/early-data, channel-binding, overload, and closure policy.
 - **0.1.0:** Initial CA authority, issuance ledger/policy, enrollment protocols, renewal/revocation, hierarchy/key lifecycle, recovery, conformance, and benchmark profile.

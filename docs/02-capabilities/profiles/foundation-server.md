@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 1.7.0 |
+| Version | 1.8.0 |
 | Purpose | Long-running non-interactive service foundation with bounded shutdown and protected credentials |
 
 ## Workload assumptions
@@ -47,6 +47,9 @@ No interactive desktop session, unattended restart, concurrent I/O, explicit ser
 - **RM-PROFILE-FOUNDATION-SERVER-0029:** Secure transport/channel service `>=0.2.0,<0.3.0` is conditional for network services and clients requiring TLS or QUIC. Policy binds original service/listener, versions/suites/groups/signatures, credentials/trust/reference identity, client authentication, ALPN, SNI/ECH/privacy, resumption/early data, exporters, limits, provider, and closure.
 - **RM-PROFILE-FOUNDATION-SERVER-0030:** Application readiness follows handshake/confirmation, required peer/client authentication, original identity, compatible ALPN, and authenticated QUIC parameters. Resumption creates a new policy-validated channel; tickets are secret scoped credentials; early data requires separate replay-safe operation authority and distributed anti-replay/deduplication evidence.
 - **RM-PROFILE-FOUNDATION-SERVER-0031:** Evidence covers malicious handshakes/negotiation, identity/client credentials, policy downgrade, resumption/ticket isolation, replay/early-data outcomes, exporters/channel binding, partial I/O/key limits/updates, truncation/closure, QUIC streams/datagrams/migration/loss, overload, provider variance, privacy, and benchmarks.
+- **RM-PROFILE-FOUNDATION-SERVER-0032:** HTTP client/server service `>=0.1.0,<0.2.0` is conditional for HTTP workloads. It binds exact message semantics, original origin/authority, HTTP/1.1-/2-/3 protocol policy, secure channel and proxy route, pool/privacy/credential partition, bounded streaming, cache policy, server admission, deadlines, and observability.
+- **RM-PROFILE-FOUNDATION-SERVER-0033:** Redirects, origin/proxy authentication, retries, early-data fallback, hedging, connection coalescing, alternative services, and cache revalidation are explicit transitions. Every replay is a new linked attempt requiring body replayability, effect/idempotency/deduplication evidence, and bounded authority; unknown effect remains unknown.
+- **RM-PROFILE-FOUNDATION-SERVER-0034:** Evidence covers shared semantics; HTTP/1.1 framing/smuggling; HTTP/2/3 state, compression, flow control, reset/GOAWAY; streaming/cancellation; redirects/challenges/replay; proxy/tunnel/version translation; cache partition/freshness/validation; overload/drain; privacy/accessibility; provider differentials; and staged benchmarks.
 
 ## Operational constraints
 
@@ -54,6 +57,7 @@ Deadline timers and cancellation support bounded multi-phase shutdown. Sync path
 
 ## History
 
+- **1.8.0:** Adds conditional HTTP/1.1-/2-/3 semantic exchange, protocol mechanics, streaming, pooling, proxy/cache, redirect/auth/replay policy, server lifecycle, conformance, and benchmarks.
 - **1.7.0:** Adds conditional exact TLS/QUIC channel policy, authentication/readiness, resumption/early-data replay authority, exporters/bindings, data/closure, migration, conformance, and benchmarks.
 - **1.6.0:** Adds conditional certificate enrollment, opaque-key requests/POP, identity authority, protocol delivery/install, renewal/rekey/replacement/revocation, activation, conformance, and benchmarks.
 - **1.5.0:** Adds conditional authenticated repository snapshots, package state/resolution/plans, journaled native deployment, hooks/services/data, rollout/health, compensating rollback, recovery, conformance, and benchmarks.

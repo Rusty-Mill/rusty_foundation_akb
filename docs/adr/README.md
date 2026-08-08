@@ -95,5 +95,7 @@
 | [0091](0091-renewal-creates-a-new-credential-generation-with-explicit-continuity.md) | Renewal creates a new credential generation with explicit continuity | Accepted |
 | [0092](0092-secure-channels-become-ready-only-after-authentication-and-protocol-negotiation.md) | Secure channels become ready only after authentication and protocol negotiation | Accepted |
 | [0093](0093-resumption-creates-a-new-channel-and-early-data-is-separate-replay-authority.md) | Resumption creates a new channel and early data is separate replay authority | Accepted |
+| [0094](0094-http-semantics-are-stable-while-protocol-mechanics-remain-explicit.md) | HTTP semantics are stable while protocol mechanics remain explicit | Accepted |
+| [0095](0095-http-replay-is-an-explicit-domain-authority.md) | HTTP replay is an explicit domain authority | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

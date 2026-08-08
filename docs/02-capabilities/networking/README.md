@@ -18,6 +18,7 @@ flowchart LR
     Transport --> Secure["Secure-channel service"]
     Intent --> Secure
     Secure --> Protocol["Application protocol"]
+    Protocol --> HTTP["HTTP semantic exchange"]
     Listen["rm.network.listener"] --> Transport
 ```
 
@@ -29,6 +30,7 @@ flowchart LR
 - Byte streams preserve order, not writes or messages; datagrams preserve individual message boundaries but may lose, duplicate, reorder, or truncate.
 - Connectivity observation is a hint scoped to requirements and process policy, not proof that a destination or the Internet is reachable.
 - Secure transport is a service composed over transport; authentication binds the original service identity and policy, not the selected address alone.
+- HTTP semantics compose over secure transport while version-specific framing, multiplexing, flow control, pooling, and failure scope remain explicit.
 
 ## Documents
 
@@ -41,6 +43,7 @@ flowchart LR
 - [Connectivity and path observation](connectivity.md)
 - [Secure-channel boundary](secure-channel.md)
 - [Secure transport and channel foundations](secure-transport-README.md)
+- [HTTP client and server foundations](http-README.md)
 - [Platform research](platform-research.md)
 - [Conformance specification](conformance.md)
 - [Benchmark specification](benchmarks.md)

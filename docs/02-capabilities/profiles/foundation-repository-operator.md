@@ -3,8 +3,8 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.3.0 |
-| Extends | [`rm.profile.foundation.server` 1.7.0](foundation-server.md) |
+| Version | 0.4.0 |
+| Extends | [`rm.profile.foundation.server` 1.8.0](foundation-server.md) |
 | Purpose | Operate software publication, authenticated repository metadata, mirrors, advisories, and emergency response without claiming a complete hosted registry product |
 
 ## Required composition
@@ -35,8 +35,11 @@
 
 **RM-PROFILE-REPOSITORY-OPERATOR-0012:** This profile does not select HTTP/API protocols, database/object store, queue/coordination topology, TUF/OCI/OSV/CSAF wire profiles, GitHub/crates.io/registry providers, service objectives, legal workflow, or product staffing. Those remain explicit RFC and deployment choices.
 
+**RM-PROFILE-REPOSITORY-OPERATOR-0013:** When a product RFC selects HTTP, repository fetch/publication/advisory endpoints compose Server 1.8.0 with immutable artifact identity, authenticated metadata generation, range/conditional/cache semantics, proxy/privacy partition, replay-safe publication authority, overload/drain, and exact receipt evidence; this profile does not itself select routes, media types, schemas, or wire APIs.
+
 ## History
 
+- **0.4.0:** Rebases on Server 1.8.0 and constrains optional HTTP endpoints to preserve repository generations, publication replay authority, cache/proxy partitions, overload, and receipt evidence.
 - **0.3.0:** Rebases on Server 1.7.0 and requires product-selected TLS/QUIC service endpoints to preserve original repository identity, mutual authentication where selected, ALPN, resumption/early-data, channel-binding, and closure evidence.
 - **0.2.0:** Rebases on Server 1.6.0 so repository products can conditionally enroll and renew service/signing/status credentials under the shared lifecycle contract.
 - **0.1.0:** Initial publication, repository/mirror, channel, advisory/disclosure, emergency, retention/backup, conformance, and operational-evidence profile.
