@@ -3,8 +3,8 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.6.0 |
-| Extends | [`rm.profile.foundation.server` 1.11.0](foundation-server.md) |
+| Version | 0.7.0 |
+| Extends | [`rm.profile.foundation.server` 1.12.0](foundation-server.md) |
 | Purpose | Operate registration, certificate issuance, renewal, status, and CA lifecycle without claiming a complete public or enterprise CA product |
 
 ## Required composition
@@ -35,8 +35,11 @@
 
 **RM-PROFILE-CA-OPERATOR-0012:** When a CA deployment selects distributed coordination, it composes Server 1.11.0 with exact issuer/ledger/serial/status configuration, fault-domain/quorum policy, resource-enforced fencing for signing/serial/status actors, precisely checked consistency, key/ledger external-effect reconciliation, immutable disaster recovery, and no inference that election alone authorizes CA key use.
 
+**RM-PROFILE-CA-OPERATOR-0013:** When a CA selects a database, it composes Server 1.12.0 with exact account/request/serial/issuance/status/audit schemas and constraints, transaction-to-key-operation/release reconciliation, staged migrations, append-safe change evidence, encrypted backup/PITR and failover, semantic restore verification, and no inference that database commit proves certificate release, revocation propagation, or relying-party observation.
+
 ## History
 
+- **0.7.0:** Rebases on Server 1.12.0 and constrains optional databases to CA ledger invariants, staged migrations, key/effect reconciliation, and verified recovery.
 - **0.6.0:** Rebases on Server 1.11.0 and constrains optional coordination to fenced CA actors, precise ledger/status consistency, quorum policy, and disaster recovery.
 - **0.5.0:** Rebases on Server 1.10.0 and constrains optional messaging/RPC to exact CA schemas, separated authority, staged effects, durable idempotency, and reconciliation.
 - **0.4.0:** Rebases on Server 1.9.0 and constrains optional real-time observation to authenticated revisioned events, bounded fanout, new-session reconnect, and no authority from observation.

@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 1.11.0 |
+| Version | 1.12.0 |
 | Purpose | Long-running non-interactive service foundation with bounded shutdown and protected credentials |
 
 ## Workload assumptions
@@ -59,6 +59,9 @@ No interactive desktop session, unattended restart, concurrent I/O, explicit ser
 - **RM-PROFILE-FOUNDATION-SERVER-0041:** Distributed coordination `>=0.1.0,<0.2.0` is conditional for replicated membership/state, exclusive distributed work, leader election, distributed locks, cross-node transactions, or consistency-sensitive reads/writes. It binds exact domain/configuration/participant generations, failure model, quorum, clocks, consistency/durability, authority, fencing, recovery, and provider/topology.
 - **RM-PROFILE-FOUNDATION-SERVER-0042:** Timeout or suspicion never proves absence. Lease/election/lock authority gates side effects only when every protected resource atomically rejects stale monotonic fencing tokens. Consistency claims name checked histories and anomalies; consensus does not imply valid domain semantics or external atomicity.
 - **RM-PROFILE-FOUNDATION-SERVER-0043:** Evidence covers membership/reconfiguration, asymmetric partitions and failure suspicion, lease pause/expiry/fencing, elections/locks/barriers, consensus logs/reads/snapshots, history-model checking, distributed transactions/sagas, corruption/restore/quorum disaster/region return, upgrade, security/privacy/accessibility, and staged fault benchmarks.
+- **RM-PROFILE-FOUNDATION-SERVER-0044:** Application persistence/database service `>=0.1.0,<0.2.0` is conditional for durable typed application state. It binds logical schema/query, database/provider/topology generations, principal/tenant, sessions/pools, transaction/isolation/durability, constraints/indexes, migration/change, backup/recovery/replication, limits, and authority.
+- **RM-PROFILE-FOUNDATION-SERVER-0045:** Commit proves only the selected database boundary; durability, replica visibility, archive/PITR, change publication, caller observation, and external effect remain separate. Schema changes use staged compatible expand/deploy/backfill/validate/switch/contract plans with explicit destructive and recovery gates.
+- **RM-PROFILE-FOUNDATION-SERVER-0046:** Evidence covers logical/provider types and query binding, session/pool isolation, transaction histories/durability/unknown commits, constraints/indexes/concurrency, mixed-version migrations, change/outbox gaps, backup/semantic restore/PITR, replication/failover/divergence, privacy/accessibility, provider differentials, and staged fault benchmarks.
 
 ## Operational constraints
 
@@ -66,6 +69,7 @@ Deadline timers and cancellation support bounded multi-phase shutdown. Sync path
 
 ## History
 
+- **1.12.0:** Adds conditional typed persistence/databases, transaction/durability boundaries, constraints/indexes, staged migrations, change streams, backup/PITR, replication/failover, conformance, and benchmarks.
 - **1.11.0:** Adds conditional distributed membership, leases/fencing, election/locks, consensus, precise consistency histories, transactions/workflows, recovery, conformance, and benchmarks.
 - **1.10.0:** Adds conditional typed messaging/RPC, schema evolution, streaming, broker delivery/settlement, explicit retry/idempotency/reconciliation, effect-boundary conformance, and benchmarks.
 - **1.9.0:** Adds conditional WebSocket, SSE, and versioned WebTransport sessions with native data semantics, bounded flow/lifecycle, explicit reconnect/resume/replay, conformance, and benchmarks.

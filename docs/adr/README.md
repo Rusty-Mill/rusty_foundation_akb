@@ -103,5 +103,7 @@
 | [0099](0099-delivery-acknowledgment-is-not-domain-effect.md) | Delivery acknowledgment is not domain effect | Accepted |
 | [0100](0100-exclusive-coordination-requires-resource-enforced-fencing.md) | Exclusive coordination requires resource-enforced fencing | Accepted |
 | [0101](0101-consistency-is-a-history-property-not-a-strength-label.md) | Consistency is a history property, not a strength label | Accepted |
+| [0102](0102-database-commit-is-boundary-scoped-evidence.md) | Database commit is boundary-scoped evidence | Accepted |
+| [0103](0103-schema-migration-is-a-compatibility-rollout.md) | Schema migration is a compatibility rollout | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

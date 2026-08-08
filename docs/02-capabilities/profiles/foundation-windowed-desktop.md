@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.39.0 |
+| Version | 0.40.0 |
 | Extends | [`rm.profile.foundation.desktop` 1.0.0](foundation-desktop.md) |
 | Purpose | Add native top-level window and graphics-presentation infrastructure without claiming a complete GUI toolkit |
 
@@ -305,6 +305,12 @@
 
 **RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0148:** Evidence covers membership/failure suspicion, paused lease holders and fencing, election/lock cancellation races, consistency histories/caches/session loss, offline convergence/conflicts, distributed transactions/compensation, restore/identity clone, upgrades, privacy/i18n/accessibility, and staged network/energy benchmarks.
 
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0149:** Application persistence/database service `>=0.1.0,<0.2.0` is conditional for durable typed product state. It binds logical schema/query, embedded/service provider and storage/topology generations, user/tenant authority, sessions/pools, transaction/isolation/durability, migrations/change, backup/restore/sync, quotas, offline policy, and lifecycle.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0150:** Database commit, durable storage, sync/replica visibility, backup inclusion, and external effect are separate. Schema/data migration is a staged compatible rollout integrated with application update/rollback; user-visible conflicts, corruption, migration/recovery, storage pressure, and data-loss boundaries remain accessible.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0151:** Evidence covers embedded filesystem/process faults and service databases, types/query binding, session/pool identity, transaction histories/durability, mixed-version migrations/offline clients, change/sync reconciliation, encrypted backup/restore/PITR, replication/failover, privacy/i18n/accessibility, and staged latency/energy benchmarks.
+
 ## Whole-product gaps
 
 This profile does not supply a rendering command model, widget/UI framework, text editing model, image/audio codecs, media containers/graphs, gestures, or translated product resources. Product-specific semantic roles/actions/content, accepted transfer formats/importers, locale coverage, audio policy/content, and accessible UX still belong to the product/framework. It cannot claim desktop-application completeness.
@@ -317,6 +323,7 @@ Input evidence additionally covers layout/IME diversity, keyboard-only operation
 
 ## History
 
+- **0.40.0:** Adds conditional typed persistence/databases, transaction/durability evidence, staged migrations, offline/change reconciliation, backup/restore, replication, accessibility, conformance, and benchmarks.
 - **0.39.0:** Adds conditional distributed coordination, resource-enforced fencing, precise consistency, offline/conflict evidence, transactions/recovery, accessibility, conformance, and benchmarks.
 - **0.38.0:** Adds conditional messaging/RPC, schema evolution, streaming, broker delivery/settlement, explicit replay/idempotency/reconciliation, accessible state, conformance, and benchmarks.
 - **0.37.0:** Adds conditional WebSocket, SSE, and versioned WebTransport sessions, native data semantics, background-aware reconnect/resume evidence, accessibility, conformance, and benchmarks.
