@@ -13,10 +13,15 @@ flowchart LR
   File["rm.filesystem.file"] -.->|"optionally-uses"| Cancel
   Replace["rm.filesystem.atomic-replace"] -->|"requires"| Directory
   Replace -->|"requires"| File
+  ExecResolve["rm.process.executable-resolve"] -->|"requires"| Directory
+  ExecResolve -->|"requires"| Resolve
+  ExecResolve -->|"requires"| Metadata["rm.filesystem.metadata"]
   Spawn["rm.process.spawn"] -.->|"optionally-uses"| File
   Spawn -.->|"optionally-uses"| Pipe["rm.ipc.byte-pipe"]
   Spawn -.->|"optionally-uses"| Cancel
   Spawn -.->|"optionally-uses"| Clock
+  Control["rm.process.control"] -->|"requires"| Spawn
+  Control -.->|"optionally-uses"| Cancel
   Random["rm.security.random"] -.->|"optionally-uses"| Cancel
 ```
 
@@ -50,10 +55,15 @@ flowchart LR
 | `rm.filesystem.file` | `optionally-uses` | `rm.runtime.cancellation` | [Filesystem domain](../../02-capabilities/filesystem/README.md) | File operations may observe portable cancellation. |
 | `rm.filesystem.atomic-replace` | `requires` | `rm.filesystem.directory` | [Atomic replacement contract](../../02-capabilities/filesystem/atomic-replace.md) | Source and destination namespace authority are directory resources. |
 | `rm.filesystem.atomic-replace` | `requires` | `rm.filesystem.file` | [Atomic replacement contract](../../02-capabilities/filesystem/atomic-replace.md) | Replacement consumes a prepared regular-file resource and its synchronization semantics. |
+| `rm.process.executable-resolve` | `requires` | `rm.filesystem.directory` | [Executable resolution contract](../../02-capabilities/process/executable-resolve.md) | Search roots are explicit ordered directory authorities. |
+| `rm.process.executable-resolve` | `requires` | `rm.filesystem.resolve` | [Executable resolution contract](../../02-capabilities/process/executable-resolve.md) | Candidate lookup uses the filesystem traversal policy and reports its R-level. |
+| `rm.process.executable-resolve` | `requires` | `rm.filesystem.metadata` | [Executable resolution contract](../../02-capabilities/process/executable-resolve.md) | Candidate eligibility and identity evidence use explicit metadata semantics. |
 | `rm.process.spawn` | `optionally-uses` | `rm.filesystem.file` | [Process domain](../../02-capabilities/process/README.md) | Authorized file resources may bind standard I/O or inheritance. |
 | `rm.process.spawn` | `optionally-uses` | `rm.ipc.byte-pipe` | [Process domain](../../02-capabilities/process/README.md) | Pipe endpoints may bind standard I/O. |
 | `rm.process.spawn` | `optionally-uses` | `rm.runtime.cancellation` | [Process domain](../../02-capabilities/process/README.md) | Startup and wait paths may observe cancellation. |
 | `rm.process.spawn` | `optionally-uses` | `rm.time.monotonic-clock` | [Process domain](../../02-capabilities/process/README.md) | Evidence may use monotonic timestamps. |
+| `rm.process.control` | `requires` | `rm.process.spawn` | [Process control contract](../../02-capabilities/process/control.md) | Control consumes spawn's owned-child resource and never treats a PID as authority. |
+| `rm.process.control` | `optionally-uses` | `rm.runtime.cancellation` | [Process control contract](../../02-capabilities/process/control.md) | Cancellation may stop waiting for dispatch confirmation but cannot retract a delivered request. |
 | `rm.security.random` | `optionally-uses` | `rm.runtime.cancellation` | [Security domain](../../02-capabilities/security/README.md) | A provider readiness wait may observe cancellation. |
 
 ## Validation and coverage

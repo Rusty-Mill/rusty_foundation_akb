@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.84.0
+**Version:** 1.85.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -613,3 +613,9 @@ These documents should link to this model and elaborate their subject without in
 Filesystem foundations 0.1.1 apply the domain-readiness schema to lossless native paths, explicit directory authority, race-resistant resolution, positioned partial I/O, cancellation truth, metadata variance, atomic namespace replacement, and qualified durability. Stable semantic assertions and benchmark scenarios now cover every filesystem capability and benchmark requirement; source, cross-cutting, ownership, dependency/profile, and proposed-promotion reviews are explicit. The source-linked graph records only the three exact required edges declared by resolution and atomic replacement, alongside the existing optional cancellation edge.
 
 This evidence does not collapse a path into authority, an opened handle into permanent identity, atomic namespace visibility into persistence, or buffered completion into durability. Filesystem remains Draft: no native provider, filesystem family, R/D level, async runtime, public API, crate layout, benchmark budget, implementation trial, or release claim is authorized.
+
+## 21. Process readiness closure
+
+Process foundations 0.1.1 apply the readiness schema to explicit shell-free launch, native argument/environment construction, deny-by-default inheritance, startup milestones, owned-child identity, wait/control, executable resolution, supervision containment, and shell-free pipeline composition. Stable assertions and benchmark scenarios cover every process capability/service and benchmark requirement; source, quality, ownership, dependency/profile, and proposed-promotion reviews are explicit. The source-linked graph adds only source-declared dependencies for executable resolution and owned-child control.
+
+This evidence does not collapse creation into image confirmation or readiness, PID into authority, control dispatch into terminal state, known descendants into containment, or partial pipeline success into reconciliation. Process remains Draft: no provider, parser convention, service manager, P-level, sandbox, runtime, public API, repository layout, trial, benchmark budget, or release claim is authorized.

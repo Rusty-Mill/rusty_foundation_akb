@@ -3,6 +3,8 @@
 | Field | Value |
 |---|---|
 | Status | Draft domain analysis |
+| Domain version | 0.1.1 |
+| Accountable role | Process capability owner |
 | Purpose | Define direct executable launch, argument/environment semantics, explicit inheritance, and race-safe child lifecycle |
 
 ## Domain boundary
@@ -56,3 +58,9 @@ flowchart TD
 - [Process pipeline platform service](pipeline.md)
 - [Conformance specification](conformance.md)
 - [Benchmark specification](benchmarks.md)
+- [Assertion and benchmark traceability](traceability.md)
+- [Dependency and profile composition](dependencies.md)
+- [Cross-cutting review](cross-cutting.md)
+- [Source review](source-review.md)
+- [Ownership and bounded trial plan](ownership.md)
+- [Experimental promotion review](promotion-review.md)

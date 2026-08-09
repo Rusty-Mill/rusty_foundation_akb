@@ -2,6 +2,18 @@
 
 **Status:** Draft
 
+## Normative comparison requirements
+
+- **RM-PROCESS-BENCH-0001:** Spawn comparisons **MUST** bind the same executable artifact/identity policy, argument convention, environment, working directory, inheritance allowlist, standard-stream bindings, startup milestone, and child work.
+- **RM-PROCESS-BENCH-0002:** Construction comparisons **MUST** use equivalent native values, validation, redaction, entry/resource counts, serialization rules, and ownership-transfer boundaries.
+- **RM-PROCESS-BENCH-0003:** Wait and control comparisons **MUST** separate dispatch, native notification, terminal observation, reaping, and close milestones and preserve equivalent cancellation semantics.
+- **RM-PROCESS-BENCH-0004:** Supervision comparisons **MUST** bind the same P-level, membership/breakaway/orphan policy, member churn, shutdown phases, accounting scope, and terminal-set oracle.
+- **RM-PROCESS-BENCH-0005:** Executable-resolution comparisons **MUST** bind root order/authority, suffix/case policy, R-level, candidate identity policy, filesystem/cache state, and rejection disclosure.
+- **RM-PROCESS-BENCH-0006:** Pipeline comparisons **MUST** bind the same graph, endpoint ownership, release order, backpressure/capture limits, supervision, failure propagation, cancellation, and aggregate-status policy.
+- **RM-PROCESS-BENCH-0007:** Every run **MUST** record provider artifact, OS/kernel/SDK, hardware/virtualization, security/service/sandbox context, filesystem/cache state, parser convention, toolchain, warmup, samples, statistics, and correctness results.
+- **RM-PROCESS-BENCH-0008:** A shell wrapper, ambient search, broad inheritance, PID-only control, weaker containment, unbounded capture, or hidden blocking worker **MUST NOT** serve as an equivalent faster baseline.
+- **RM-PROCESS-BENCH-0009:** Numeric budgets and native-performance claims **MUST** derive from reviewed representative runs and **MUST NOT** be inferred from planned scenarios or structural budgets.
+
 | ID | Measurement | Required reporting |
 |---|---|---|
 | PROC-BENCH-001 | Minimal spawn-to-created latency | p50/p95/p99, CPU, allocations, native baseline |

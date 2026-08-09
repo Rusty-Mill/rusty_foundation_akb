@@ -4,27 +4,27 @@
   "authority": "docs/01-architecture/architecture-model.md",
   "generated_from": "Markdown; this index is derived and non-authoritative",
   "summary": {
-    "markdown_documents": 1125,
-    "internal_links": 2107,
-    "requirements": 5224,
+    "markdown_documents": 1131,
+    "internal_links": 2149,
+    "requirements": 5255,
     "domains": 62,
     "adrs": 159,
     "errors": 0,
     "warnings": 0,
     "domains_with_conformance": 62,
     "domains_with_benchmarks": 62,
-    "domains_with_direct_requirement_assertion_map": 6,
-    "domains_with_direct_benchmark_scenario_map": 6,
-    "benchmark_scenarios": 41,
-    "external_sources": 633,
-    "external_sources_with_review_record": 40,
-    "domains_with_dedicated_cross_cutting_analysis": 28,
-    "domains_with_complete_planned_traceability": 6,
-    "domains_experimental_eligible": 4,
-    "domains_with_proposed_promotion_review": 4,
+    "domains_with_direct_requirement_assertion_map": 7,
+    "domains_with_direct_benchmark_scenario_map": 7,
+    "benchmark_scenarios": 48,
+    "external_sources": 634,
+    "external_sources_with_review_record": 56,
+    "domains_with_dedicated_cross_cutting_analysis": 29,
+    "domains_with_complete_planned_traceability": 7,
+    "domains_experimental_eligible": 5,
+    "domains_with_proposed_promotion_review": 5,
     "domains_with_accepted_promotion_review": 0,
     "declared_graph_nodes": 15,
-    "declared_graph_edges": 11,
+    "declared_graph_edges": 16,
     "required_graph_acyclic": true
   },
   "domains": [
@@ -1616,23 +1616,23 @@
       "id": "process",
       "source": "docs/02-capabilities/process/README.md",
       "status": "Draft domain analysis",
-      "requirements": 58,
-      "capability_requirements": 58,
+      "requirements": 89,
+      "capability_requirements": 80,
       "conformance_requirements": 0,
-      "benchmark_requirements": 0,
-      "mapped_benchmark_requirements": 0,
+      "benchmark_requirements": 9,
+      "mapped_benchmark_requirements": 9,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
-      "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false,
-      "direct_benchmark_scenario_map": false,
-      "cross_cutting_analysis": "embedded-unreviewed",
-      "promotion_review": "absent",
+      "mapped_capability_requirements": 80,
+      "direct_requirement_assertion_map": true,
+      "direct_benchmark_scenario_map": true,
+      "cross_cutting_analysis": "dedicated",
+      "promotion_review": "proposed",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
         "accessibility": true,
-        "internationalization": false,
+        "internationalization": true,
         "observability": true,
         "operations": true
       },
@@ -1640,12 +1640,12 @@
         "contract_inventory": "pass",
         "conformance_plan": "pass",
         "benchmark_plan": "pass",
-        "assertion_traceability": "fail",
-        "benchmark_traceability": "unknown",
-        "cross_cutting_review": "unknown",
-        "source_freshness_review": "unknown",
-        "owner_review": "unknown",
-        "experimental_eligible": "no"
+        "assertion_traceability": "pass",
+        "benchmark_traceability": "pass",
+        "cross_cutting_review": "pass",
+        "source_freshness_review": "pass",
+        "owner_review": "pass",
+        "experimental_eligible": "yes"
       }
     },
     {
@@ -2564,6 +2564,87 @@
       ]
     },
     {
+      "id": "rm.assertion.process.spawn@1",
+      "domain": "process",
+      "source": "docs/02-capabilities/process/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/process/spawn.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.process.control@1",
+      "domain": "process",
+      "source": "docs/02-capabilities/process/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/process/control.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.process.executable-resolve@1",
+      "domain": "process",
+      "source": "docs/02-capabilities/process/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/process/executable-resolve.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.process.supervision@1",
+      "domain": "process",
+      "source": "docs/02-capabilities/process/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/process/supervision.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.process.pipeline@1",
+      "domain": "process",
+      "source": "docs/02-capabilities/process/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/process/pipeline.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.process.dependencies@1",
+      "domain": "process",
+      "source": "docs/02-capabilities/process/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/process/dependencies.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.process.quality-review@1",
+      "domain": "process",
+      "source": "docs/02-capabilities/process/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/process/cross-cutting.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.process.source-review@1",
+      "domain": "process",
+      "source": "docs/02-capabilities/process/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/process/source-review.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.process.ownership@1",
+      "domain": "process",
+      "source": "docs/02-capabilities/process/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/process/ownership.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.process.promotion-boundary@1",
+      "domain": "process",
+      "source": "docs/02-capabilities/process/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/process/promotion-review.md",
+        "docs/02-capabilities/process/traceability.md"
+      ]
+    },
+    {
       "id": "rm.assertion.runtime-time.clock@1",
       "domain": "runtime-time",
       "source": "docs/02-capabilities/runtime-time/traceability.md",
@@ -2929,6 +3010,78 @@
       ]
     },
     {
+      "id": "rm.benchmark.process.spawn-lifecycle@1",
+      "domain": "process",
+      "source": "docs/02-capabilities/process/traceability.md",
+      "requirements": [
+        "RM-PROCESS-BENCH-0001",
+        "RM-PROCESS-BENCH-0003",
+        "RM-PROCESS-BENCH-0007",
+        "RM-PROCESS-BENCH-0008"
+      ]
+    },
+    {
+      "id": "rm.benchmark.process.manifest-construction@1",
+      "domain": "process",
+      "source": "docs/02-capabilities/process/traceability.md",
+      "requirements": [
+        "RM-PROCESS-BENCH-0002",
+        "RM-PROCESS-BENCH-0007",
+        "RM-PROCESS-BENCH-0008"
+      ]
+    },
+    {
+      "id": "rm.benchmark.process.control@1",
+      "domain": "process",
+      "source": "docs/02-capabilities/process/traceability.md",
+      "requirements": [
+        "RM-PROCESS-BENCH-0003",
+        "RM-PROCESS-BENCH-0007",
+        "RM-PROCESS-BENCH-0008"
+      ]
+    },
+    {
+      "id": "rm.benchmark.process.supervision@1",
+      "domain": "process",
+      "source": "docs/02-capabilities/process/traceability.md",
+      "requirements": [
+        "RM-PROCESS-BENCH-0004",
+        "RM-PROCESS-BENCH-0007",
+        "RM-PROCESS-BENCH-0008"
+      ]
+    },
+    {
+      "id": "rm.benchmark.process.executable-resolution@1",
+      "domain": "process",
+      "source": "docs/02-capabilities/process/traceability.md",
+      "requirements": [
+        "RM-PROCESS-BENCH-0005",
+        "RM-PROCESS-BENCH-0007",
+        "RM-PROCESS-BENCH-0008"
+      ]
+    },
+    {
+      "id": "rm.benchmark.process.pipeline-construction@1",
+      "domain": "process",
+      "source": "docs/02-capabilities/process/traceability.md",
+      "requirements": [
+        "RM-PROCESS-BENCH-0006",
+        "RM-PROCESS-BENCH-0007",
+        "RM-PROCESS-BENCH-0008"
+      ]
+    },
+    {
+      "id": "rm.benchmark.process.pipeline-flow@1",
+      "domain": "process",
+      "source": "docs/02-capabilities/process/traceability.md",
+      "requirements": [
+        "RM-PROCESS-BENCH-0006",
+        "RM-PROCESS-BENCH-0007",
+        "RM-PROCESS-BENCH-0008",
+        "RM-PROCESS-BENCH-0009"
+      ]
+    },
+    {
       "id": "rm.benchmark.runtime-time.active-clock-read@1",
       "domain": "runtime-time",
       "source": "docs/02-capabilities/runtime-time/traceability.md",
@@ -3289,9 +3442,10 @@
       "host": "developer.apple.com",
       "sources": [
         "docs/02-capabilities/background-services/platform-research.md",
-        "docs/02-capabilities/process/platform-research.md"
+        "docs/02-capabilities/process/platform-research.md",
+        "docs/02-capabilities/process/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://developer.apple.com/documentation/appkit/nsaccessibility",
@@ -3876,9 +4030,10 @@
       "url": "https://developer.apple.com/documentation/security/defining-launch-environment-and-library-constraints",
       "host": "developer.apple.com",
       "sources": [
-        "docs/02-capabilities/process/platform-research.md"
+        "docs/02-capabilities/process/platform-research.md",
+        "docs/02-capabilities/process/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://developer.apple.com/documentation/security/hardened-runtime",
@@ -4161,9 +4316,10 @@
       "url": "https://developer.apple.com/library/archive/documentation/System/Conceptual/ManPages_iPhoneOS/man2/posix_spawn.2.html",
       "host": "developer.apple.com",
       "sources": [
-        "docs/02-capabilities/process/platform-research.md"
+        "docs/02-capabilities/process/platform-research.md",
+        "docs/02-capabilities/process/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://developer.apple.com/library/archive/documentation/System/Conceptual/ManPages_iPhoneOS/man2/rename.2.html",
@@ -5154,9 +5310,10 @@
       "url": "https://learn.microsoft.com/en-us/windows/console/generateconsolectrlevent",
       "host": "learn.microsoft.com",
       "sources": [
-        "docs/02-capabilities/process/platform-research.md"
+        "docs/02-capabilities/process/platform-research.md",
+        "docs/02-capabilities/process/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://learn.microsoft.com/en-us/windows/console/pseudoconsoles",
@@ -5304,17 +5461,19 @@
       "url": "https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessw",
       "host": "learn.microsoft.com",
       "sources": [
-        "docs/02-capabilities/process/platform-research.md"
+        "docs/02-capabilities/process/platform-research.md",
+        "docs/02-capabilities/process/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-terminateprocess",
       "host": "learn.microsoft.com",
       "sources": [
-        "docs/02-capabilities/process/platform-research.md"
+        "docs/02-capabilities/process/platform-research.md",
+        "docs/02-capabilities/process/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://learn.microsoft.com/en-us/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter",
@@ -5650,25 +5809,28 @@
       "url": "https://learn.microsoft.com/en-us/windows/win32/procthread/attribute-list",
       "host": "learn.microsoft.com",
       "sources": [
-        "docs/02-capabilities/process/platform-research.md"
+        "docs/02-capabilities/process/platform-research.md",
+        "docs/02-capabilities/process/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://learn.microsoft.com/en-us/windows/win32/procthread/creating-processes",
       "host": "learn.microsoft.com",
       "sources": [
-        "docs/02-capabilities/process/platform-research.md"
+        "docs/02-capabilities/process/platform-research.md",
+        "docs/02-capabilities/process/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://learn.microsoft.com/en-us/windows/win32/procthread/job-objects",
       "host": "learn.microsoft.com",
       "sources": [
-        "docs/02-capabilities/process/platform-research.md"
+        "docs/02-capabilities/process/platform-research.md",
+        "docs/02-capabilities/process/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://learn.microsoft.com/en-us/windows/win32/secauthn/creating-a-secure-connection-using-schannel",
@@ -6267,9 +6429,10 @@
       "url": "https://man7.org/linux/man-pages/man2/close_range.2.html",
       "host": "man7.org",
       "sources": [
-        "docs/02-capabilities/process/platform-research.md"
+        "docs/02-capabilities/process/platform-research.md",
+        "docs/02-capabilities/process/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://man7.org/linux/man-pages/man2/fsync.2.html",
@@ -6366,17 +6529,19 @@
       "url": "https://man7.org/linux/man-pages/man2/pidfd_open.2.html",
       "host": "man7.org",
       "sources": [
-        "docs/02-capabilities/process/platform-research.md"
+        "docs/02-capabilities/process/platform-research.md",
+        "docs/02-capabilities/process/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://man7.org/linux/man-pages/man2/pidfd_send_signal.2.html",
       "host": "man7.org",
       "sources": [
-        "docs/02-capabilities/process/platform-research.md"
+        "docs/02-capabilities/process/platform-research.md",
+        "docs/02-capabilities/process/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://man7.org/linux/man-pages/man2/pipe.2.html",
@@ -6436,6 +6601,14 @@
         "docs/02-capabilities/storage/platform-research.md"
       ],
       "freshness": "unreviewed-by-generator"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man2/waitid.2.html",
+      "host": "man7.org",
+      "sources": [
+        "docs/02-capabilities/process/source-review.md"
+      ],
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://man7.org/linux/man-pages/man2/waitpid.2.html",
@@ -6762,9 +6935,10 @@
       "url": "https://pubs.opengroup.org/onlinepubs/9799919799/functions/exec.html",
       "host": "pubs.opengroup.org",
       "sources": [
-        "docs/02-capabilities/process/platform-research.md"
+        "docs/02-capabilities/process/platform-research.md",
+        "docs/02-capabilities/process/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://pubs.opengroup.org/onlinepubs/9799919799/functions/pipe.html",
@@ -6778,17 +6952,19 @@
       "url": "https://pubs.opengroup.org/onlinepubs/9799919799/functions/posix_spawn.html",
       "host": "pubs.opengroup.org",
       "sources": [
-        "docs/02-capabilities/process/platform-research.md"
+        "docs/02-capabilities/process/platform-research.md",
+        "docs/02-capabilities/process/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://pubs.opengroup.org/onlinepubs/9799919799/functions/wait.html",
       "host": "pubs.opengroup.org",
       "sources": [
-        "docs/02-capabilities/process/platform-research.md"
+        "docs/02-capabilities/process/platform-research.md",
+        "docs/02-capabilities/process/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://pubs.opengroup.org/onlinepubs/9799919799/functions/write.html",
@@ -8287,6 +8463,24 @@
         "evidence": "../../02-capabilities/filesystem/atomic-replace.md"
       },
       {
+        "source": "rm.process.executable-resolve",
+        "kind": "requires",
+        "target": "rm.filesystem.directory",
+        "evidence": "../../02-capabilities/process/executable-resolve.md"
+      },
+      {
+        "source": "rm.process.executable-resolve",
+        "kind": "requires",
+        "target": "rm.filesystem.resolve",
+        "evidence": "../../02-capabilities/process/executable-resolve.md"
+      },
+      {
+        "source": "rm.process.executable-resolve",
+        "kind": "requires",
+        "target": "rm.filesystem.metadata",
+        "evidence": "../../02-capabilities/process/executable-resolve.md"
+      },
+      {
         "source": "rm.process.spawn",
         "kind": "optionally-uses",
         "target": "rm.filesystem.file",
@@ -8309,6 +8503,18 @@
         "kind": "optionally-uses",
         "target": "rm.time.monotonic-clock",
         "evidence": "../../02-capabilities/process/README.md"
+      },
+      {
+        "source": "rm.process.control",
+        "kind": "requires",
+        "target": "rm.process.spawn",
+        "evidence": "../../02-capabilities/process/control.md"
+      },
+      {
+        "source": "rm.process.control",
+        "kind": "optionally-uses",
+        "target": "rm.runtime.cancellation",
+        "evidence": "../../02-capabilities/process/control.md"
       },
       {
         "source": "rm.security.random",
@@ -33785,12 +33991,118 @@
       "assertions": []
     },
     {
+      "id": "RM-PROCESS-BENCH-0001",
+      "source": "docs/02-capabilities/process/benchmarks.md",
+      "line": 7,
+      "kind": "benchmark",
+      "domain": "process",
+      "benchmark_scenarios": [
+        "rm.benchmark.process.spawn-lifecycle@1"
+      ]
+    },
+    {
+      "id": "RM-PROCESS-BENCH-0002",
+      "source": "docs/02-capabilities/process/benchmarks.md",
+      "line": 8,
+      "kind": "benchmark",
+      "domain": "process",
+      "benchmark_scenarios": [
+        "rm.benchmark.process.manifest-construction@1"
+      ]
+    },
+    {
+      "id": "RM-PROCESS-BENCH-0003",
+      "source": "docs/02-capabilities/process/benchmarks.md",
+      "line": 9,
+      "kind": "benchmark",
+      "domain": "process",
+      "benchmark_scenarios": [
+        "rm.benchmark.process.spawn-lifecycle@1",
+        "rm.benchmark.process.control@1"
+      ]
+    },
+    {
+      "id": "RM-PROCESS-BENCH-0004",
+      "source": "docs/02-capabilities/process/benchmarks.md",
+      "line": 10,
+      "kind": "benchmark",
+      "domain": "process",
+      "benchmark_scenarios": [
+        "rm.benchmark.process.supervision@1"
+      ]
+    },
+    {
+      "id": "RM-PROCESS-BENCH-0005",
+      "source": "docs/02-capabilities/process/benchmarks.md",
+      "line": 11,
+      "kind": "benchmark",
+      "domain": "process",
+      "benchmark_scenarios": [
+        "rm.benchmark.process.executable-resolution@1"
+      ]
+    },
+    {
+      "id": "RM-PROCESS-BENCH-0006",
+      "source": "docs/02-capabilities/process/benchmarks.md",
+      "line": 12,
+      "kind": "benchmark",
+      "domain": "process",
+      "benchmark_scenarios": [
+        "rm.benchmark.process.pipeline-construction@1",
+        "rm.benchmark.process.pipeline-flow@1"
+      ]
+    },
+    {
+      "id": "RM-PROCESS-BENCH-0007",
+      "source": "docs/02-capabilities/process/benchmarks.md",
+      "line": 13,
+      "kind": "benchmark",
+      "domain": "process",
+      "benchmark_scenarios": [
+        "rm.benchmark.process.spawn-lifecycle@1",
+        "rm.benchmark.process.manifest-construction@1",
+        "rm.benchmark.process.control@1",
+        "rm.benchmark.process.supervision@1",
+        "rm.benchmark.process.executable-resolution@1",
+        "rm.benchmark.process.pipeline-construction@1",
+        "rm.benchmark.process.pipeline-flow@1"
+      ]
+    },
+    {
+      "id": "RM-PROCESS-BENCH-0008",
+      "source": "docs/02-capabilities/process/benchmarks.md",
+      "line": 14,
+      "kind": "benchmark",
+      "domain": "process",
+      "benchmark_scenarios": [
+        "rm.benchmark.process.spawn-lifecycle@1",
+        "rm.benchmark.process.manifest-construction@1",
+        "rm.benchmark.process.control@1",
+        "rm.benchmark.process.supervision@1",
+        "rm.benchmark.process.executable-resolution@1",
+        "rm.benchmark.process.pipeline-construction@1",
+        "rm.benchmark.process.pipeline-flow@1"
+      ]
+    },
+    {
+      "id": "RM-PROCESS-BENCH-0009",
+      "source": "docs/02-capabilities/process/benchmarks.md",
+      "line": 15,
+      "kind": "benchmark",
+      "domain": "process",
+      "benchmark_scenarios": [
+        "rm.benchmark.process.pipeline-flow@1"
+      ]
+    },
+    {
       "id": "RM-PROCESS-CONTROL-0001",
       "source": "docs/02-capabilities/process/control.md",
       "line": 28,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.control@1"
+      ]
     },
     {
       "id": "RM-PROCESS-CONTROL-0002",
@@ -33798,7 +34110,9 @@
       "line": 29,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.control@1"
+      ]
     },
     {
       "id": "RM-PROCESS-CONTROL-0003",
@@ -33806,7 +34120,9 @@
       "line": 30,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.control@1"
+      ]
     },
     {
       "id": "RM-PROCESS-CONTROL-0004",
@@ -33814,7 +34130,9 @@
       "line": 31,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.control@1"
+      ]
     },
     {
       "id": "RM-PROCESS-CONTROL-0005",
@@ -33822,7 +34140,9 @@
       "line": 32,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.control@1"
+      ]
     },
     {
       "id": "RM-PROCESS-CONTROL-0006",
@@ -33830,7 +34150,9 @@
       "line": 33,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.control@1"
+      ]
     },
     {
       "id": "RM-PROCESS-CONTROL-0007",
@@ -33838,7 +34160,9 @@
       "line": 34,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.control@1"
+      ]
     },
     {
       "id": "RM-PROCESS-CONTROL-0008",
@@ -33846,7 +34170,9 @@
       "line": 35,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.control@1"
+      ]
     },
     {
       "id": "RM-PROCESS-CONTROL-0009",
@@ -33854,7 +34180,9 @@
       "line": 36,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.control@1"
+      ]
     },
     {
       "id": "RM-PROCESS-CONTROL-0010",
@@ -33862,7 +34190,79 @@
       "line": 37,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.control@1"
+      ]
+    },
+    {
+      "id": "RM-PROCESS-QUALITY-0001",
+      "source": "docs/02-capabilities/process/cross-cutting.md",
+      "line": 20,
+      "kind": "capability",
+      "domain": "process",
+      "assertions": [
+        "rm.assertion.process.quality-review@1"
+      ]
+    },
+    {
+      "id": "RM-PROCESS-QUALITY-0002",
+      "source": "docs/02-capabilities/process/cross-cutting.md",
+      "line": 22,
+      "kind": "capability",
+      "domain": "process",
+      "assertions": [
+        "rm.assertion.process.quality-review@1"
+      ]
+    },
+    {
+      "id": "RM-PROCESS-QUALITY-0003",
+      "source": "docs/02-capabilities/process/cross-cutting.md",
+      "line": 24,
+      "kind": "capability",
+      "domain": "process",
+      "assertions": [
+        "rm.assertion.process.quality-review@1"
+      ]
+    },
+    {
+      "id": "RM-PROCESS-DEPENDENCY-0001",
+      "source": "docs/02-capabilities/process/dependencies.md",
+      "line": 37,
+      "kind": "capability",
+      "domain": "process",
+      "assertions": [
+        "rm.assertion.process.dependencies@1"
+      ]
+    },
+    {
+      "id": "RM-PROCESS-DEPENDENCY-0002",
+      "source": "docs/02-capabilities/process/dependencies.md",
+      "line": 39,
+      "kind": "capability",
+      "domain": "process",
+      "assertions": [
+        "rm.assertion.process.dependencies@1"
+      ]
+    },
+    {
+      "id": "RM-PROCESS-DEPENDENCY-0003",
+      "source": "docs/02-capabilities/process/dependencies.md",
+      "line": 41,
+      "kind": "capability",
+      "domain": "process",
+      "assertions": [
+        "rm.assertion.process.dependencies@1"
+      ]
+    },
+    {
+      "id": "RM-PROCESS-DEPENDENCY-0004",
+      "source": "docs/02-capabilities/process/dependencies.md",
+      "line": 43,
+      "kind": "capability",
+      "domain": "process",
+      "assertions": [
+        "rm.assertion.process.dependencies@1"
+      ]
     },
     {
       "id": "RM-PROCESS-RESOLVE-0001",
@@ -33870,7 +34270,9 @@
       "line": 19,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.executable-resolve@1"
+      ]
     },
     {
       "id": "RM-PROCESS-RESOLVE-0002",
@@ -33878,7 +34280,9 @@
       "line": 20,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.executable-resolve@1"
+      ]
     },
     {
       "id": "RM-PROCESS-RESOLVE-0003",
@@ -33886,7 +34290,9 @@
       "line": 21,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.executable-resolve@1"
+      ]
     },
     {
       "id": "RM-PROCESS-RESOLVE-0004",
@@ -33894,7 +34300,9 @@
       "line": 22,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.executable-resolve@1"
+      ]
     },
     {
       "id": "RM-PROCESS-RESOLVE-0005",
@@ -33902,7 +34310,9 @@
       "line": 23,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.executable-resolve@1"
+      ]
     },
     {
       "id": "RM-PROCESS-RESOLVE-0006",
@@ -33910,7 +34320,9 @@
       "line": 24,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.executable-resolve@1"
+      ]
     },
     {
       "id": "RM-PROCESS-RESOLVE-0007",
@@ -33918,7 +34330,9 @@
       "line": 25,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.executable-resolve@1"
+      ]
     },
     {
       "id": "RM-PROCESS-RESOLVE-0008",
@@ -33926,7 +34340,9 @@
       "line": 26,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.executable-resolve@1"
+      ]
     },
     {
       "id": "RM-PROCESS-RESOLVE-0009",
@@ -33934,7 +34350,9 @@
       "line": 27,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.executable-resolve@1"
+      ]
     },
     {
       "id": "RM-PROCESS-RESOLVE-0010",
@@ -33942,7 +34360,49 @@
       "line": 28,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.executable-resolve@1"
+      ]
+    },
+    {
+      "id": "RM-PROCESS-OWNER-0001",
+      "source": "docs/02-capabilities/process/ownership.md",
+      "line": 25,
+      "kind": "capability",
+      "domain": "process",
+      "assertions": [
+        "rm.assertion.process.ownership@1"
+      ]
+    },
+    {
+      "id": "RM-PROCESS-OWNER-0002",
+      "source": "docs/02-capabilities/process/ownership.md",
+      "line": 27,
+      "kind": "capability",
+      "domain": "process",
+      "assertions": [
+        "rm.assertion.process.ownership@1"
+      ]
+    },
+    {
+      "id": "RM-PROCESS-OWNER-0003",
+      "source": "docs/02-capabilities/process/ownership.md",
+      "line": 29,
+      "kind": "capability",
+      "domain": "process",
+      "assertions": [
+        "rm.assertion.process.ownership@1"
+      ]
+    },
+    {
+      "id": "RM-PROCESS-OWNER-0004",
+      "source": "docs/02-capabilities/process/ownership.md",
+      "line": 31,
+      "kind": "capability",
+      "domain": "process",
+      "assertions": [
+        "rm.assertion.process.ownership@1"
+      ]
     },
     {
       "id": "RM-PROCESS-PIPELINE-0001",
@@ -33950,7 +34410,9 @@
       "line": 30,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.pipeline@1"
+      ]
     },
     {
       "id": "RM-PROCESS-PIPELINE-0002",
@@ -33958,7 +34420,9 @@
       "line": 31,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.pipeline@1"
+      ]
     },
     {
       "id": "RM-PROCESS-PIPELINE-0003",
@@ -33966,7 +34430,9 @@
       "line": 32,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.pipeline@1"
+      ]
     },
     {
       "id": "RM-PROCESS-PIPELINE-0004",
@@ -33974,7 +34440,9 @@
       "line": 33,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.pipeline@1"
+      ]
     },
     {
       "id": "RM-PROCESS-PIPELINE-0005",
@@ -33982,7 +34450,9 @@
       "line": 34,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.pipeline@1"
+      ]
     },
     {
       "id": "RM-PROCESS-PIPELINE-0006",
@@ -33990,7 +34460,9 @@
       "line": 35,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.pipeline@1"
+      ]
     },
     {
       "id": "RM-PROCESS-PIPELINE-0007",
@@ -33998,7 +34470,9 @@
       "line": 36,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.pipeline@1"
+      ]
     },
     {
       "id": "RM-PROCESS-PIPELINE-0008",
@@ -34006,7 +34480,9 @@
       "line": 37,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.pipeline@1"
+      ]
     },
     {
       "id": "RM-PROCESS-PIPELINE-0009",
@@ -34014,7 +34490,9 @@
       "line": 38,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.pipeline@1"
+      ]
     },
     {
       "id": "RM-PROCESS-PIPELINE-0010",
@@ -34022,7 +34500,9 @@
       "line": 39,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.pipeline@1"
+      ]
     },
     {
       "id": "RM-PROCESS-PIPELINE-0011",
@@ -34030,7 +34510,9 @@
       "line": 40,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.pipeline@1"
+      ]
     },
     {
       "id": "RM-PROCESS-PIPELINE-0012",
@@ -34038,7 +34520,79 @@
       "line": 41,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.pipeline@1"
+      ]
+    },
+    {
+      "id": "RM-PROCESS-PROMOTION-0001",
+      "source": "docs/02-capabilities/process/promotion-review.md",
+      "line": 27,
+      "kind": "capability",
+      "domain": "process",
+      "assertions": [
+        "rm.assertion.process.promotion-boundary@1"
+      ]
+    },
+    {
+      "id": "RM-PROCESS-PROMOTION-0002",
+      "source": "docs/02-capabilities/process/promotion-review.md",
+      "line": 29,
+      "kind": "capability",
+      "domain": "process",
+      "assertions": [
+        "rm.assertion.process.promotion-boundary@1"
+      ]
+    },
+    {
+      "id": "RM-PROCESS-PROMOTION-0003",
+      "source": "docs/02-capabilities/process/promotion-review.md",
+      "line": 31,
+      "kind": "capability",
+      "domain": "process",
+      "assertions": [
+        "rm.assertion.process.promotion-boundary@1"
+      ]
+    },
+    {
+      "id": "RM-PROCESS-SOURCE-0001",
+      "source": "docs/02-capabilities/process/source-review.md",
+      "line": 19,
+      "kind": "capability",
+      "domain": "process",
+      "assertions": [
+        "rm.assertion.process.source-review@1"
+      ]
+    },
+    {
+      "id": "RM-PROCESS-SOURCE-0002",
+      "source": "docs/02-capabilities/process/source-review.md",
+      "line": 21,
+      "kind": "capability",
+      "domain": "process",
+      "assertions": [
+        "rm.assertion.process.source-review@1"
+      ]
+    },
+    {
+      "id": "RM-PROCESS-SOURCE-0003",
+      "source": "docs/02-capabilities/process/source-review.md",
+      "line": 23,
+      "kind": "capability",
+      "domain": "process",
+      "assertions": [
+        "rm.assertion.process.source-review@1"
+      ]
+    },
+    {
+      "id": "RM-PROCESS-SOURCE-0004",
+      "source": "docs/02-capabilities/process/source-review.md",
+      "line": 25,
+      "kind": "capability",
+      "domain": "process",
+      "assertions": [
+        "rm.assertion.process.source-review@1"
+      ]
     },
     {
       "id": "RM-PROCESS-SPAWN-0001",
@@ -34046,7 +34600,9 @@
       "line": 17,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.spawn@1"
+      ]
     },
     {
       "id": "RM-PROCESS-SPAWN-0002",
@@ -34054,7 +34610,9 @@
       "line": 18,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.spawn@1"
+      ]
     },
     {
       "id": "RM-PROCESS-SPAWN-0003",
@@ -34062,7 +34620,9 @@
       "line": 19,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.spawn@1"
+      ]
     },
     {
       "id": "RM-PROCESS-SPAWN-0004",
@@ -34070,7 +34630,9 @@
       "line": 20,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.spawn@1"
+      ]
     },
     {
       "id": "RM-PROCESS-SPAWN-0005",
@@ -34078,7 +34640,9 @@
       "line": 21,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.spawn@1"
+      ]
     },
     {
       "id": "RM-PROCESS-SPAWN-0006",
@@ -34086,7 +34650,9 @@
       "line": 22,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.spawn@1"
+      ]
     },
     {
       "id": "RM-PROCESS-SPAWN-0007",
@@ -34094,7 +34660,9 @@
       "line": 23,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.spawn@1"
+      ]
     },
     {
       "id": "RM-PROCESS-SPAWN-0008",
@@ -34102,7 +34670,9 @@
       "line": 24,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.spawn@1"
+      ]
     },
     {
       "id": "RM-PROCESS-SPAWN-0009",
@@ -34110,7 +34680,9 @@
       "line": 25,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.spawn@1"
+      ]
     },
     {
       "id": "RM-PROCESS-SPAWN-0010",
@@ -34118,7 +34690,9 @@
       "line": 26,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.spawn@1"
+      ]
     },
     {
       "id": "RM-PROCESS-SPAWN-0011",
@@ -34126,7 +34700,9 @@
       "line": 27,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.spawn@1"
+      ]
     },
     {
       "id": "RM-PROCESS-SPAWN-0012",
@@ -34134,7 +34710,9 @@
       "line": 28,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.spawn@1"
+      ]
     },
     {
       "id": "RM-PROCESS-SPAWN-0013",
@@ -34142,7 +34720,9 @@
       "line": 29,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.spawn@1"
+      ]
     },
     {
       "id": "RM-PROCESS-SPAWN-0014",
@@ -34150,7 +34730,9 @@
       "line": 30,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.spawn@1"
+      ]
     },
     {
       "id": "RM-PROCESS-SPAWN-0015",
@@ -34158,7 +34740,9 @@
       "line": 31,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.spawn@1"
+      ]
     },
     {
       "id": "RM-PROCESS-SPAWN-0016",
@@ -34166,7 +34750,9 @@
       "line": 32,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.spawn@1"
+      ]
     },
     {
       "id": "RM-PROCESS-SUPERVISION-0001",
@@ -34174,7 +34760,9 @@
       "line": 26,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.supervision@1"
+      ]
     },
     {
       "id": "RM-PROCESS-SUPERVISION-0002",
@@ -34182,7 +34770,9 @@
       "line": 27,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.supervision@1"
+      ]
     },
     {
       "id": "RM-PROCESS-SUPERVISION-0003",
@@ -34190,7 +34780,9 @@
       "line": 28,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.supervision@1"
+      ]
     },
     {
       "id": "RM-PROCESS-SUPERVISION-0004",
@@ -34198,7 +34790,9 @@
       "line": 29,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.supervision@1"
+      ]
     },
     {
       "id": "RM-PROCESS-SUPERVISION-0005",
@@ -34206,7 +34800,9 @@
       "line": 30,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.supervision@1"
+      ]
     },
     {
       "id": "RM-PROCESS-SUPERVISION-0006",
@@ -34214,7 +34810,9 @@
       "line": 31,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.supervision@1"
+      ]
     },
     {
       "id": "RM-PROCESS-SUPERVISION-0007",
@@ -34222,7 +34820,9 @@
       "line": 32,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.supervision@1"
+      ]
     },
     {
       "id": "RM-PROCESS-SUPERVISION-0008",
@@ -34230,7 +34830,9 @@
       "line": 33,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.supervision@1"
+      ]
     },
     {
       "id": "RM-PROCESS-SUPERVISION-0009",
@@ -34238,7 +34840,9 @@
       "line": 34,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.supervision@1"
+      ]
     },
     {
       "id": "RM-PROCESS-SUPERVISION-0010",
@@ -34246,7 +34850,49 @@
       "line": 35,
       "kind": "capability",
       "domain": "process",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.process.supervision@1"
+      ]
+    },
+    {
+      "id": "RM-PROCESS-TRACE-0001",
+      "source": "docs/02-capabilities/process/traceability.md",
+      "line": 31,
+      "kind": "capability",
+      "domain": "process",
+      "assertions": [
+        "rm.assertion.process.promotion-boundary@1"
+      ]
+    },
+    {
+      "id": "RM-PROCESS-TRACE-0002",
+      "source": "docs/02-capabilities/process/traceability.md",
+      "line": 33,
+      "kind": "capability",
+      "domain": "process",
+      "assertions": [
+        "rm.assertion.process.promotion-boundary@1"
+      ]
+    },
+    {
+      "id": "RM-PROCESS-TRACE-0003",
+      "source": "docs/02-capabilities/process/traceability.md",
+      "line": 35,
+      "kind": "capability",
+      "domain": "process",
+      "assertions": [
+        "rm.assertion.process.promotion-boundary@1"
+      ]
+    },
+    {
+      "id": "RM-PROCESS-TRACE-0004",
+      "source": "docs/02-capabilities/process/traceability.md",
+      "line": 37,
+      "kind": "capability",
+      "domain": "process",
+      "assertions": [
+        "rm.assertion.process.promotion-boundary@1"
+      ]
     },
     {
       "id": "RM-PROFILE-CA-OPERATOR-0001",
@@ -48289,56 +48935,56 @@
     {
       "id": "RM-READINESS-CONTRADICTION-0001",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 31,
+      "line": 32,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0002",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 33,
+      "line": 34,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0003",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 35,
+      "line": 36,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0004",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 37,
+      "line": 38,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-GRAPH-0001",
       "source": "docs/04-ecosystem/consistency-readiness/dependency-graph.md",
-      "line": 61,
+      "line": 71,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-GRAPH-0002",
       "source": "docs/04-ecosystem/consistency-readiness/dependency-graph.md",
-      "line": 63,
+      "line": 73,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-GRAPH-0003",
       "source": "docs/04-ecosystem/consistency-readiness/dependency-graph.md",
-      "line": 65,
+      "line": 75,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-GRAPH-0004",
       "source": "docs/04-ecosystem/consistency-readiness/dependency-graph.md",
-      "line": 67,
+      "line": 77,
       "kind": "governance",
       "domain": null
     },
@@ -50265,8 +50911,8 @@
     },
     {
       "source": "docs/01-architecture/architecture-model.md",
-      "sha256": "666eb9115448a4f5f60209f8d7c141f7a1f5f2bf7f8a92fd0a0c6aab7bb0b5e4",
-      "lines": 615
+      "sha256": "176edd9150807f85c36ee501706bc8394796efeddcb56e8e7f7b679a068462a0",
+      "lines": 621
     },
     {
       "source": "docs/01-architecture/behavioral-contracts.md",
@@ -53300,8 +53946,8 @@
     },
     {
       "source": "docs/02-capabilities/process/benchmarks.md",
-      "sha256": "d70b24d879e22740efd2a26f287408844f79e49acf23890c02aa8e2a127ef9d2",
-      "lines": 25
+      "sha256": "0f44af105173363fa11a55cb04dc987a309895014fb8526df9c4a8fbfaa85c11",
+      "lines": 37
     },
     {
       "source": "docs/02-capabilities/process/conformance.md",
@@ -53312,6 +53958,16 @@
       "source": "docs/02-capabilities/process/control.md",
       "sha256": "3e2a8359b150b55f203c369169d13d2d3145abf542bb63e6b8f5a7dc5cb2b56f",
       "lines": 46
+    },
+    {
+      "source": "docs/02-capabilities/process/cross-cutting.md",
+      "sha256": "0bc93ebb134b6fbb7a67ba49be22037d8dbc6668f90c797fd5842a420a926c68",
+      "lines": 24
+    },
+    {
+      "source": "docs/02-capabilities/process/dependencies.md",
+      "sha256": "b52746299f8ae157bed7d750c093aaa28b5a99b49050bb876127ec5ef6077aef",
+      "lines": 43
     },
     {
       "source": "docs/02-capabilities/process/environment-model.md",
@@ -53329,6 +53985,11 @@
       "lines": 51
     },
     {
+      "source": "docs/02-capabilities/process/ownership.md",
+      "sha256": "280ae4010ef528069ea301d0caa82233874efacc8c95b78153c0ead7acd01677",
+      "lines": 31
+    },
+    {
       "source": "docs/02-capabilities/process/pipeline.md",
       "sha256": "c69abf63b3fce510b504634b9bec99d43db86d91e4e27a877d9ee8c13a26aec3",
       "lines": 64
@@ -53339,9 +54000,19 @@
       "lines": 32
     },
     {
+      "source": "docs/02-capabilities/process/promotion-review.md",
+      "sha256": "8b01d26a22af26c1b056820c7da9772911fc3247333c93d780bb917fb8e4f363",
+      "lines": 31
+    },
+    {
       "source": "docs/02-capabilities/process/README.md",
-      "sha256": "f0262f4be1cbe0016d393a33673c7428074cc8858d0ba56f0ddac0b4318ce5b7",
-      "lines": 58
+      "sha256": "aa54dd27fef9463494e97f0a4b9823e8e55cf84113e0ede3e24ae8314de21c2b",
+      "lines": 66
+    },
+    {
+      "source": "docs/02-capabilities/process/source-review.md",
+      "sha256": "faaef6c92174c505f1cde2f42abcc501c2bb14008f62ef952ae5f77425347a50",
+      "lines": 25
     },
     {
       "source": "docs/02-capabilities/process/spawn.md",
@@ -53357,6 +54028,11 @@
       "source": "docs/02-capabilities/process/supervision.md",
       "sha256": "1776d3eb2daa4653d30eb5384d2de43556dba193227bbb993a56aa241712ac15",
       "lines": 57
+    },
+    {
+      "source": "docs/02-capabilities/process/traceability.md",
+      "sha256": "a13f967c8e951c8a60c3e3a1090b13ceef95717ab24efea8e2d19a3dfb77a8c9",
+      "lines": 37
     },
     {
       "source": "docs/02-capabilities/profiles/foundation-ca-operator.md",
@@ -54750,7 +55426,7 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/audit-report.md",
-      "sha256": "b3460e25efde2eba5c534dd83ebbdfea88da27829bcaf4412e3310980835c1bf",
+      "sha256": "e848c70da7191370d95c3cee9b5e241fae596f505c5a9ac32fa14b9bfdc8274d",
       "lines": 68
     },
     {
@@ -54765,18 +55441,18 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/closure-backlog.md",
-      "sha256": "37e06599f5cfbb10b2abbe21fc7079d00d71545e458be376f417d87d46d64a42",
+      "sha256": "612144eef05640a4b1f0dcf362ae6483d8080899b5d32f6e41349f4abe1ce524",
       "lines": 19
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "sha256": "ea7cbd0178d380e8ce5046bcd76be03cfe2f5565686162b176a9e15cd27b33bf",
-      "lines": 37
+      "sha256": "82c43e21b87142d3c42a060207d0b30dc35d0e578120e8a63bd576a9b66510da",
+      "lines": 38
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/dependency-graph.md",
-      "sha256": "9ef721e02543cdc70d97dd382dd87bd55b5672c4c6246ecbd740c67742d48305",
-      "lines": 74
+      "sha256": "b7a11ab6bbc5c593c25c4cf8d51227a4258c26a3c1ca5d97fc5b667d84a6ba98",
+      "lines": 84
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/domain-readiness-schema.md",
@@ -54805,12 +55481,12 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/promotion-scorecards.md",
-      "sha256": "fd0a4163259193a425f0126a7e972b9e7705feb5383807ab308be3aabc2e4d43",
+      "sha256": "c1e750d46fabbf6163bf8df8ea9aa879290f9a1229eabbe57b19ac9b291f1447",
       "lines": 78
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/quality-matrix.md",
-      "sha256": "f8032588ef3112b51c549e9cc7485258f3d354e21e3ef8cd4066ca4f871d4039",
+      "sha256": "733441fbcfa2d4e075e4526398db66ddafc9ab1e3d39f3c49d242a8edbdfc15d",
       "lines": 73
     },
     {
@@ -55050,8 +55726,8 @@
     },
     {
       "source": "docs/06-roadmap/roadmap.md",
-      "sha256": "05c6223ff9b6142e2770a8b88be7a29cefd342d5dbd7c5dabdc3c8c64d377f7d",
-      "lines": 229
+      "sha256": "9c4064e1b27886e8ceada9d74a36e648d2c3f60f9a90fce790ec9f15ce830fa3",
+      "lines": 233
     },
     {
       "source": "docs/adr/0001-capability-first-platform.md",
