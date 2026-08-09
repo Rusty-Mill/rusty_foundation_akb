@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.60.0 |
+| Version | 0.61.0 |
 | Extends | [`rm.profile.foundation.desktop` 1.0.0](foundation-desktop.md) |
 | Purpose | Add native top-level window and graphics-presentation infrastructure without claiming a complete GUI toolkit |
 
@@ -431,6 +431,12 @@
 
 **RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0211:** Evidence covers permission/token/reinstall/account changes, TTL/collapse/order/loss, push-to-sync reconciliation, in-app pagination/read state, endpoint reuse, preferences/quiet hours, locale/render/client matrices, inbound links/actions, privacy tracking, responsiveness, memory/network/energy, and benchmarks.
 
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0212:** Audit evidence `>=0.1.0,<0.2.0` is conditional for locally auditable security, administrative, data-rights, or regulated effects. Product policy binds capture classes, source/schema generations, local spool protection, upload authority, privacy, retention, proof, and objective context.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0213:** Native event logs and diagnostics are provider observations, not the product audit authority. Local capture remains bounded and non-blocking where policy permits, exposes accessible privacy and export controls, preserves stable event identity across offline upload, and represents gaps, redaction, correction, and clock uncertainty explicitly.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0214:** Evidence covers offline spool loss/full/corruption, device/account transitions, suspend and clock change, upload duplicates/gaps, privilege boundaries, redaction/tokenization, accessible query/export, integrity validation, retention/disposal, recovery, responsiveness, resource use, conformance, and benchmarks.
+
 ## Whole-product gaps
 
 This profile does not supply a rendering command model, widget/UI framework, text editing model, image/audio codecs, media containers/graphs, gestures, or translated product resources. Product-specific semantic roles/actions/content, accepted transfer formats/importers, locale coverage, audio policy/content, and accessible UX still belong to the product/framework. It cannot claim desktop-application completeness.
@@ -443,6 +449,7 @@ Input evidence additionally covers layout/IME diversity, keyboard-only operation
 
 ## History
 
+- **0.61.0:** Adds conditional client audit evidence, protected offline capture, explicit gaps and clock uncertainty, privacy/accessibility controls, upload reconciliation, conformance, and benchmarks.
 - **0.60.0:** Adds conditional application communications, remote-push-to-native-attention boundaries, in-app conversations, preference experiences, exact outcomes, accessible rendering, client lifecycle conformance, and benchmarks.
 - **0.59.0:** Adds conditional tenant/commercial governance, accessible eligibility and quota state, offline leases and usage reconciliation, metering corrections, provider fault histories, and benchmarks.
 - **0.58.0:** Adds conditional offline application synchronization, explicit optimistic/authoritative milestones, causal and conflict semantics, selective state, deletion/migration, accessible status, conformance, and benchmarks.

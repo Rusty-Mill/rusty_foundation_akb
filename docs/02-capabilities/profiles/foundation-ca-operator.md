@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.27.0 |
+| Version | 0.28.0 |
 | Extends | [`rm.profile.foundation.server` 1.23.0](foundation-server.md) |
 | Purpose | Operate registration, certificate issuance, renewal, status, and CA lifecycle without claiming a complete public or enterprise CA product |
 
@@ -77,8 +77,11 @@
 
 **RM-PROFILE-CA-OPERATOR-0033:** CA communications compose Server 1.32.0 for enrollment/renewal/status/security/operator notices while preserving certificate/status/ledger truth, recipient identity/privacy, scoped mandatory/preference policy, authenticated safe links, delivery uncertainty, and no provider receipt/open/click as proof of certificate installation, revocation awareness, or ceremony completion.
 
+**RM-PROFILE-CA-OPERATOR-0034:** CA audit evidence composes Server 1.33.0 for key ceremonies, issuance, revocation, status, policy, operator, recovery, and HSM effects. The issuance ledger and cryptographic effects remain authoritative; evidence preserves quorum and key-use provenance without exposing key material, integrity proofs state exact scope, completeness is independently reconciled, and holds, access, export, recovery, and disposal preserve compartment and trust boundaries.
+
 ## History
 
+- **0.28.0:** Adds constrained CA ceremony and security evidence, HSM/ledger provenance, scoped integrity proofs, independent completeness reconciliation, protected assessment, conformance, and benchmarks.
 - **0.27.0:** Adds constrained CA lifecycle/security communications with identity/privacy controls, scoped preferences, safe actions, and exact delivery-versus-domain-effect evidence.
 - **0.26.0:** Adds constrained managed-CA tenancy, placement, eligibility, quotas, and usage evidence while preserving issuance/key authority and security-response availability.
 - **0.25.0:** Adds constrained CA projection synchronization while prohibiting offline authority for issuance/key/status effects and preserving conflict, revocation, and retirement evidence.

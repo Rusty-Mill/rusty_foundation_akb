@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 1.32.0 |
+| Version | 1.33.0 |
 | Purpose | Long-running non-interactive service foundation with bounded shutdown and protected credentials |
 
 ## Workload assumptions
@@ -122,6 +122,9 @@ No interactive desktop session, unattended restart, concurrent I/O, explicit ser
 - **RM-PROFILE-FOUNDATION-SERVER-0104:** Application communications `>=0.1.0,<0.2.0` is conditional for email, SMS/provider messaging, remote push, in-app inboxes, campaigns, or conversations. It binds intent/audience/recipient/preference/template/plan/attempt/provider generations, purpose, authority, privacy, retention, and objectives.
 - **RM-PROFILE-FOUNDATION-SERVER-0105:** Provider acceptance, downstream handoff, delivery, presentation, engagement, reply, and domain effect remain distinct. Preferences/suppressions are scoped; retries/fallbacks preserve stable attempt/effect identity; callbacks are authenticated observations reconciled with providers.
 - **RM-PROFILE-FOUNDATION-SERVER-0106:** Evidence covers endpoint reuse, audiences, consent/preferences/suppression, accessible localized rendering, scheduling/quiet hours, email authentication/unsubscribe/bounces, SMS receipts/keywords, push TTL/collapse/token lifecycle, inbound/link/attachment safety, abuse, migration, privacy, and benchmarks.
+- **RM-PROFILE-FOUNDATION-SERVER-0107:** Audit evidence `>=0.1.0,<0.2.0` is conditional when the workload makes auditability, investigation, integrity, control-assessment, or compliance-reporting claims. It binds event/source/schema/collection/storage/proof/trust/policy generations and actor, subject, action, resource, outcome, purpose, authority, privacy, retention, and objective context.
+- **RM-PROFILE-FOUNDATION-SERVER-0108:** Domain facts, audit events, diagnostic telemetry, evidence artifacts, integrity proofs, control tests, findings, reports, and attestations remain distinct. Corrections append or supersede; integrity scope and completeness evidence are reported separately; exports preserve provenance and mapping loss.
+- **RM-PROFILE-FOUNDATION-SERVER-0109:** Evidence covers capture-before/after-effect failures, gaps and reconciliation, ordering/clock uncertainty, tamper detection, proof validation, privileged query/export, redaction/tokenization, holds/erasure/disposal, cases, assessment/report claim scope, external mappings, recovery, conformance, and benchmarks.
 
 ## Operational constraints
 
@@ -129,6 +132,7 @@ Deadline timers and cancellation support bounded multi-phase shutdown. Sync path
 
 ## History
 
+- **1.33.0:** Adds conditional audit trails, evidence ledgers, integrity and completeness claims, privacy/retention governance, investigation, control assessment, reporting, conformance, and benchmarks.
 - **1.32.0:** Adds conditional multichannel application communications, scoped preferences, accessible rendering, exact delivery evidence, provider reconciliation, content safety, abuse controls, conformance, and benchmarks.
 - **1.31.0:** Adds conditional tenant lifecycle and isolation, commercial eligibility boundaries, immutable metering and adjustments, quota reservations/enforcement, billing separation, migration, conformance, and benchmarks.
 - **1.30.0:** Adds conditional application synchronization, offline intent/effect milestones, causal convergence, typed conflicts, selective replication, tombstone retirement, migration, conformance histories, and benchmarks.

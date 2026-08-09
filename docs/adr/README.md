@@ -145,5 +145,7 @@
 | [0141](0141-meter-corrections-are-immutable-adjustments.md) | Meter corrections are immutable adjustments | Accepted |
 | [0142](0142-provider-acceptance-is-not-recipient-delivery.md) | Provider acceptance is not recipient delivery | Accepted |
 | [0143](0143-communication-preference-is-scoped-evidence.md) | Communication preference is scoped evidence | Accepted |
+| [0144](0144-audit-events-are-evidence-not-domain-truth.md) | Audit events are evidence, not domain truth | Accepted |
+| [0145](0145-integrity-proofs-do-not-prove-capture-completeness.md) | Integrity proofs do not prove capture completeness | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.
