@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.24.0 |
+| Version | 0.25.0 |
 | Extends | [`rm.profile.foundation.server` 1.23.0](foundation-server.md) |
 | Purpose | Operate software publication, authenticated repository metadata, mirrors, advisories, and emergency response without claiming a complete hosted registry product |
 
@@ -77,8 +77,11 @@
 
 **RM-PROFILE-REPOSITORY-OPERATOR-0033:** Repository workflows compose Server 1.28.0 with immutable release/advisory/security-response definitions and histories, fenced build/sign/publish/promote/yank/revoke effects, durable approvals/quorum/SoD, timers/embargoes, mirror/rollout children, explicit compensation, versioned in-flight migration, human tasks, and repair without replaying publication effects or claiming rollback of released artifacts.
 
+**RM-PROFILE-REPOSITORY-OPERATOR-0034:** Repository APIs compose Server 1.29.0 with stable package/release/advisory operation identity, immutable contract registry releases, consumer-qualified CLI/SDK/service compatibility, signed generated-artifact provenance, idempotent publication, stable pagination/errors, quota policy, and observed migration before retirement.
+
 ## History
 
+- **0.25.0:** Adds governed repository service contracts, generated artifacts, directional compatibility, publication semantics, and evidence-based API retirement.
 - **0.24.0:** Rebases on Server 1.28.0 and constrains repository workflows to immutable release histories, fenced publication effects, quorum tasks, embargo timers, mirror children, forward compensation, migration, and repair.
 - **0.23.0:** Rebases on Server 1.27.0 and constrains repository secrets to workload-brokered automation, opaque signing, exact audiences, complete CI/mirror rotation, privileged checkout, leak response, and separated release authority.
 - **0.22.0:** Rebases on Server 1.26.0 and constrains repository authorization to typed publication resources/actions, ownership/team relations, attenuated automation, quorum, private filtering, effective-access review, and final repository/signing enforcement.

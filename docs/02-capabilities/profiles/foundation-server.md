@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 1.28.0 |
+| Version | 1.29.0 |
 | Purpose | Long-running non-interactive service foundation with bounded shutdown and protected credentials |
 
 ## Workload assumptions
@@ -110,6 +110,9 @@ No interactive desktop session, unattended restart, concurrent I/O, explicit ser
 - **RM-PROFILE-FOUNDATION-SERVER-0092:** Durable workflow `>=0.1.0,<0.2.0` is conditional for long-running orchestration, activities/effects, timers/waits, retries/compensation, child workflows, human tasks/approvals, or in-flight migration. It binds instance/run/definition/history, tenant/subject/actor, schemas, authority, policy/provider/worker generations, consistency, deadlines, retention, and privacy.
 - **RM-PROFILE-FOUNDATION-SERVER-0093:** Replay reconstructs deterministic orchestration decisions and performs no external effects. Attempts are at least once absent target idempotency/fencing; exactly-once claims name boundaries; cancellation/termination/compensation differ; compensation is a forward action; human decisions and downstream fulfillment remain separately evidenced.
 - **RM-PROFILE-FOUNDATION-SERVER-0094:** Evidence covers definition validation, replay differentials, command/signal/update/query milestones, activity fault histories, idempotency/fencing, timers/calendars, parallel/join/race/child bounds, cancellation/compensation residuals, version/migration, accessible human tasks/forms, quorum/SoD, repair/restore, privacy, provider differentials, and benchmarks.
+- **RM-PROFILE-FOUNDATION-SERVER-0095:** API governance `>=0.1.0,<0.2.0` is conditional for externally consumed HTTP, RPC, or event contracts. It binds stable surface/operation/type identity, exact contract and binding generations, audience, ownership, compatibility policy, deployment overlap, security/privacy, support state, and objectives.
+- **RM-PROFILE-FOUNDATION-SERVER-0096:** Compatibility is directional and consumer-qualified across wire/schema, source, behavior, operations, security, privacy, and economics. Generated artifacts remain derived; publication, deployment, observation, deprecation, sunset, and removal remain separately evidenced.
+- **RM-PROFILE-FOUNDATION-SERVER-0097:** Evidence covers request/query/error/idempotency/concurrency/long-running/quota semantics, HTTP/RPC/event/webhook mappings, registry provenance, reproducible generation, consumer/provider/differential conformance, rollout, migration and sunset histories, privacy/accessibility, faults, and benchmarks.
 
 ## Operational constraints
 
@@ -117,6 +120,7 @@ Deadline timers and cancellation support bounded multi-phase shutdown. Sync path
 
 ## History
 
+- **1.29.0:** Adds conditional API contract governance, stable logical operation identity, directional compatibility, protocol composition, registries/generation, consumer-qualified deprecation and sunset, conformance, and benchmarks.
 - **1.28.0:** Adds conditional durable workflows, deterministic history replay, activity/effect boundaries, timers/parallelism/children, forward compensation, migration, human tasks/approvals, repair/recovery, conformance, and benchmarks.
 - **1.27.0:** Adds conditional secrets lifecycle, dynamic credentials and leases, workload bootstrap/brokers, non-reveal operations, controlled delivery, complete rotation/revocation, privileged access, leak response, recovery, conformance, and benchmarks.
 - **1.26.0:** Adds conditional application authorization administration, composable RBAC/ABAC/ReBAC, resource enforcement, sharing/delegation, sound filtering, effective access, consistency/revocation, native boundaries, conformance, and benchmarks.

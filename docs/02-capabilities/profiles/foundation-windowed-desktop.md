@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.56.0 |
+| Version | 0.57.0 |
 | Extends | [`rm.profile.foundation.desktop` 1.0.0](foundation-desktop.md) |
 | Purpose | Add native top-level window and graphics-presentation infrastructure without claiming a complete GUI toolkit |
 
@@ -407,6 +407,12 @@
 
 **RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0199:** Evidence covers restart/offline/reconnect, duplicate commands/signals, stale views, progress and cancellation races, task claim/delegation/conflicts/drafts/submission, approval/quorum/SoD, notifications/deadlines/calendars, partial effects/compensation, version migration, repair, privacy redaction, localization/accessibility, responsiveness, and energy.
 
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0200:** API governance `>=0.1.0,<0.2.0` is conditional for remote service or event APIs and binds logical operation, contract/binding/deployment generations, audience, consumer identity, compatibility, authority, privacy, support, and offline/reconnect policy.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0201:** Generated SDKs remain adapters behind domain boundaries. Async operations preserve cancellation/deadlines/streaming/backpressure and complete sync counterparts do not create hidden runtimes; pagination, retries, errors, quotas, and long-running state remain explicit.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0202:** Evidence covers old/new client-provider matrices, protocol mappings, offline/retry/idempotency, partial streams, inaccessible/localized errors, privacy-safe deprecation notices and telemetry, migration/rollback, generated SDK ergonomics, responsiveness, memory, energy, and benchmarks.
+
 ## Whole-product gaps
 
 This profile does not supply a rendering command model, widget/UI framework, text editing model, image/audio codecs, media containers/graphs, gestures, or translated product resources. Product-specific semantic roles/actions/content, accepted transfer formats/importers, locale coverage, audio policy/content, and accessible UX still belong to the product/framework. It cannot claim desktop-application completeness.
@@ -419,6 +425,7 @@ Input evidence additionally covers layout/IME diversity, keyboard-only operation
 
 ## History
 
+- **0.57.0:** Adds conditional API contract governance, generated SDK boundaries, directional compatibility, client migration/deprecation evidence, conformance, and desktop performance qualities.
 - **0.56.0:** Adds conditional durable user-visible workflows, resumable progress, safe cancellation/compensation status, protected task inboxes, accessible forms, approvals/quorum, migration/repair, conformance, and benchmarks.
 - **0.55.0:** Adds conditional secret and credential brokerage, minimized reveal/delivery, dynamic leases, rotation adoption/denial status, privileged checkout/break-glass, incident response, recovery, conformance, and benchmarks.
 - **0.54.0:** Adds conditional permission-aware UI, ownership/sharing and access administration, safe explanations, sound resource filtering, offline/revocation disclosure, point enforcement, conformance, and benchmarks.

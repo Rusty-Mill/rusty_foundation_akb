@@ -137,5 +137,7 @@
 | [0133](0133-use-without-reveal-is-a-provider-mediated-operation-contract.md) | Use without reveal is a provider-mediated operation contract | Accepted |
 | [0134](0134-workflow-replay-reconstructs-decisions-not-effects.md) | Workflow replay reconstructs decisions and never repeats effects implicitly | Accepted |
 | [0135](0135-compensation-is-a-forward-action-not-rollback.md) | Compensation is a forward action, not rollback | Accepted |
+| [0136](0136-compatibility-is-directional-and-consumer-qualified.md) | Compatibility is directional and consumer-qualified | Accepted |
+| [0137](0137-deprecation-notice-is-not-removal-authority.md) | Deprecation notice is not removal authority | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.
