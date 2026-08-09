@@ -11,11 +11,11 @@ This report is deterministic and contains no claim that file presence proves sem
 
 | Measure | Result |
 |---|---:|
-| Markdown documents | 1,069 |
-| Resolved internal links | 1,800 |
-| Unique normative requirements | 4,956 |
+| Markdown documents | 1,072 |
+| Resolved internal links | 1,878 |
+| Unique normative requirements | 4,961 |
 | Capability domains | 62 |
-| Indexed ADRs | 153 |
+| Indexed ADRs | 154 |
 | External source URLs inventoried | 621 |
 | Structural errors | 0 |
 | Structural warnings | 0 |
@@ -57,6 +57,8 @@ Keyword mentions are discovery hints only. The [quality matrix](quality-matrix.m
 - 0 domain README files lack the canonical table-form status field; this is recorded as a migration-quality issue, not silently interpreted as Stable.
 - 5 domain(s) have a complete direct planned requirement-to-assertion map; repository-wide migration remains open.
 - 3 domain(s) have complete benchmark-requirement-to-scenario maps across 18 stable semantic scenarios; run evidence remains absent by design.
+- 3 domain(s) have both complete planned assertion and benchmark traceability.
+- 0 domain(s) are currently eligible for Experimental promotion; generated scorecards cannot authorize promotion.
 - Semantic contradiction review remains human-governed and is tracked in the [closure backlog](closure-backlog.md).
 
 ## Readiness conclusion

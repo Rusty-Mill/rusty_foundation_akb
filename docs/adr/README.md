@@ -155,5 +155,6 @@
 | [0151](0151-benchmark-scenarios-and-runs-have-distinct-identities.md) | Benchmark scenarios and runs have distinct identities | Accepted |
 | [0152](0152-citation-presence-does-not-prove-source-freshness.md) | Citation presence does not prove source freshness | Accepted |
 | [0153](0153-cross-cutting-keywords-are-discovery-not-coverage.md) | Cross-cutting keywords are discovery, not coverage | Accepted |
+| [0154](0154-maturity-promotion-uses-conjunctive-gates-not-scores.md) | Maturity promotion uses conjunctive gates, not scores | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

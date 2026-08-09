@@ -4,11 +4,11 @@
   "authority": "docs/01-architecture/architecture-model.md",
   "generated_from": "Markdown; this index is derived and non-authoritative",
   "summary": {
-    "markdown_documents": 1069,
-    "internal_links": 1800,
-    "requirements": 4956,
+    "markdown_documents": 1072,
+    "internal_links": 1878,
+    "requirements": 4961,
     "domains": 62,
-    "adrs": 153,
+    "adrs": 154,
     "errors": 0,
     "warnings": 0,
     "domains_with_conformance": 62,
@@ -18,6 +18,8 @@
     "benchmark_scenarios": 18,
     "external_sources": 621,
     "domains_with_dedicated_cross_cutting_analysis": 25,
+    "domains_with_complete_planned_traceability": 3,
+    "domains_experimental_eligible": 0,
     "declared_graph_nodes": 15,
     "declared_graph_edges": 8,
     "required_graph_acyclic": true
@@ -45,6 +47,17 @@
         "internationalization": true,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -69,6 +82,17 @@
         "internationalization": false,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -93,6 +117,17 @@
         "internationalization": true,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -117,6 +152,17 @@
         "internationalization": true,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -141,6 +187,17 @@
         "internationalization": true,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -165,6 +222,17 @@
         "internationalization": true,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -189,6 +257,17 @@
         "internationalization": true,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -213,6 +292,17 @@
         "internationalization": true,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "pass",
+        "benchmark_traceability": "pass",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -237,6 +327,17 @@
         "internationalization": true,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -261,6 +362,17 @@
         "internationalization": false,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -285,6 +397,17 @@
         "internationalization": false,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -309,6 +432,17 @@
         "internationalization": true,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "pass",
+        "benchmark_traceability": "pass",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -333,6 +467,17 @@
         "internationalization": true,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -357,6 +502,17 @@
         "internationalization": true,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -381,6 +537,17 @@
         "internationalization": false,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -405,6 +572,17 @@
         "internationalization": true,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -429,6 +607,17 @@
         "internationalization": true,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -453,6 +642,17 @@
         "internationalization": true,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -477,6 +677,17 @@
         "internationalization": true,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -501,6 +712,17 @@
         "internationalization": false,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -525,6 +747,17 @@
         "internationalization": false,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -549,6 +782,17 @@
         "internationalization": true,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -573,6 +817,17 @@
         "internationalization": false,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -597,6 +852,17 @@
         "internationalization": true,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -621,6 +887,17 @@
         "internationalization": false,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -645,6 +922,17 @@
         "internationalization": true,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -669,6 +957,17 @@
         "internationalization": false,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -693,6 +992,17 @@
         "internationalization": true,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -717,6 +1027,17 @@
         "internationalization": true,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -741,6 +1062,17 @@
         "internationalization": false,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -765,6 +1097,17 @@
         "internationalization": true,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -789,6 +1132,17 @@
         "internationalization": false,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -813,6 +1167,17 @@
         "internationalization": true,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "pass",
+        "benchmark_traceability": "pass",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -837,6 +1202,17 @@
         "internationalization": true,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -861,6 +1237,17 @@
         "internationalization": true,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -885,6 +1272,17 @@
         "internationalization": true,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -909,6 +1307,17 @@
         "internationalization": true,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -933,6 +1342,17 @@
         "internationalization": false,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -957,6 +1377,17 @@
         "internationalization": true,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -981,6 +1412,17 @@
         "internationalization": false,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -1005,6 +1447,17 @@
         "internationalization": true,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -1029,6 +1482,17 @@
         "internationalization": false,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -1053,6 +1517,17 @@
         "internationalization": true,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -1077,6 +1552,17 @@
         "internationalization": true,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -1101,6 +1587,17 @@
         "internationalization": false,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -1125,6 +1622,17 @@
         "internationalization": false,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -1149,6 +1657,17 @@
         "internationalization": true,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "pass",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -1173,6 +1692,17 @@
         "internationalization": false,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -1197,6 +1727,17 @@
         "internationalization": true,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -1221,6 +1762,17 @@
         "internationalization": true,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -1245,6 +1797,17 @@
         "internationalization": true,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -1269,6 +1832,17 @@
         "internationalization": true,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -1293,6 +1867,17 @@
         "internationalization": false,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -1317,6 +1902,17 @@
         "internationalization": false,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -1341,6 +1937,17 @@
         "internationalization": false,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -1365,6 +1972,17 @@
         "internationalization": false,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -1389,6 +2007,17 @@
         "internationalization": true,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -1413,6 +2042,17 @@
         "internationalization": true,
         "observability": true,
         "operations": false
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -1437,6 +2077,17 @@
         "internationalization": false,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -1461,6 +2112,17 @@
         "internationalization": true,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -1485,6 +2147,17 @@
         "internationalization": false,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "pass",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -1509,6 +2182,17 @@
         "internationalization": true,
         "observability": true,
         "operations": true
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     }
   ],
@@ -45860,28 +46544,28 @@
     {
       "id": "RM-READINESS-CONTRADICTION-0001",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 23,
+      "line": 24,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0002",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 25,
+      "line": 26,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0003",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 27,
+      "line": 28,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0004",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 29,
+      "line": 30,
       "kind": "governance",
       "domain": null
     },
@@ -45966,6 +46650,41 @@
       "id": "RM-READINESS-MODEL-0004",
       "source": "docs/04-ecosystem/consistency-readiness/model.md",
       "line": 50,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-READINESS-SCORECARD-0001",
+      "source": "docs/04-ecosystem/consistency-readiness/promotion-decisions.md",
+      "line": 34,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-READINESS-SCORECARD-0002",
+      "source": "docs/04-ecosystem/consistency-readiness/promotion-decisions.md",
+      "line": 36,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-READINESS-SCORECARD-0003",
+      "source": "docs/04-ecosystem/consistency-readiness/promotion-decisions.md",
+      "line": 38,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-READINESS-SCORECARD-0004",
+      "source": "docs/04-ecosystem/consistency-readiness/promotion-decisions.md",
+      "line": 40,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-READINESS-SCORECARD-0005",
+      "source": "docs/04-ecosystem/consistency-readiness/promotion-decisions.md",
+      "line": 42,
       "kind": "governance",
       "domain": null
     },
@@ -46632,8 +47351,8 @@
     },
     {
       "source": "docs/01-architecture/architecture-model.md",
-      "sha256": "140f46580760a1590f81ee37e6b69899d6b719e342abc1831fc2b73c0ed9d958",
-      "lines": 595
+      "sha256": "3753dcddc00803fe75e5770cb4abe7eef7b4d551105b869fbe55159fc22501d9",
+      "lines": 597
     },
     {
       "source": "docs/01-architecture/behavioral-contracts.md",
@@ -51022,8 +51741,8 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/audit-report.md",
-      "sha256": "56257f29810691c3f47c1a093cc1840f60681fe0ed4739103feca94183fdc743",
-      "lines": 64
+      "sha256": "1133f656ce3a51bf9d6d882005d6c3427149a338279c01830b4dc5940e93d4a3",
+      "lines": 66
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/audit-rules.md",
@@ -51037,13 +51756,13 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/closure-backlog.md",
-      "sha256": "94df25561d97b137a68473fe6fd585fc9d2357365eb335f4d27113551c765c4c",
-      "lines": 16
+      "sha256": "80e4591d69098b917007446ade592cbe340d9475864b1906d301975a5df86db2",
+      "lines": 17
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "sha256": "06a92ebc7b76d4b5552fff9214341e71234f46d8a078d49354937763d4f2f4e2",
-      "lines": 29
+      "sha256": "714bebe9510ea5b67085d629427524865807fddf57da7a31b38d2b1c8a9eb8dd",
+      "lines": 30
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/dependency-graph.md",
@@ -51061,14 +51780,24 @@
       "lines": 50
     },
     {
+      "source": "docs/04-ecosystem/consistency-readiness/promotion-decisions.md",
+      "sha256": "9c87b46ab1afd44e69f5c3c5e412f40b4241aae6e64641fcc107cbaef3434b81",
+      "lines": 46
+    },
+    {
+      "source": "docs/04-ecosystem/consistency-readiness/promotion-scorecards.md",
+      "sha256": "0f83eabcfb2d686e265d9ce70b8eb9815d37ce8db8cbbcfd035495e2da1ce66e",
+      "lines": 78
+    },
+    {
       "source": "docs/04-ecosystem/consistency-readiness/quality-matrix.md",
       "sha256": "db8b2fe70b89cebc800108158db69ce5ccd79176a41c2b3cc364527140caa55f",
       "lines": 73
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/README.md",
-      "sha256": "ad5a749f27cf63a6dc084f44351192805bea72b8676c5f7450e1ec1f1979947b",
-      "lines": 50
+      "sha256": "daab6f962eac45d14560748d0a5fb5dcdbb6fe7f6e5a7cf7058062dda382b219",
+      "lines": 52
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/source-freshness.md",
@@ -51172,8 +51901,8 @@
     },
     {
       "source": "docs/06-roadmap/roadmap.md",
-      "sha256": "bf4abe86f184103e3ac6104888a3b8c827a47e886d6be2ea5c09a79f3523c228",
-      "lines": 203
+      "sha256": "9a276bce5777ce6e54c3e0862dd864c69aa0917b18eb1fae29e837de7a955834",
+      "lines": 205
     },
     {
       "source": "docs/adr/0001-capability-first-platform.md",
@@ -51941,9 +52670,14 @@
       "lines": 24
     },
     {
+      "source": "docs/adr/0154-maturity-promotion-uses-conjunctive-gates-not-scores.md",
+      "sha256": "6dfcea6b50d766aea821d46553c2f0ce15fd0d6079fcfbbe5a98933a60dea655",
+      "lines": 24
+    },
+    {
       "source": "docs/adr/README.md",
-      "sha256": "3abcd78e3adfdfbc8ba6cd33c1b58813b3d082ad1a132dd66741a3de746d2e7a",
-      "lines": 159
+      "sha256": "471df1cc845f6dc5f53cfdaeaa6da2f8452ac2f1dfab278afb0d2b346c7c4cee",
+      "lines": 160
     },
     {
       "source": "docs/README.md",

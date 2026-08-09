@@ -234,6 +234,17 @@ def inspect(root: Path) -> tuple[dict[str, object], list[Finding]]:
             "direct_benchmark_scenario_map": len(benchmark_requirement_items) > 0 and mapped_benchmark_requirements == len(benchmark_requirement_items),
             "cross_cutting_analysis": "dedicated" if (directory / "cross-cutting.md").exists() else "embedded-unreviewed",
             "quality_keyword_mentions": quality_mentions,
+            "promotion_gates": {
+                "contract_inventory": "pass",
+                "conformance_plan": "pass" if conformance.exists() else "fail",
+                "benchmark_plan": "pass" if benchmarks.exists() else "fail",
+                "assertion_traceability": "pass" if capability_requirement_count > 0 and mapped_capability_requirements == capability_requirement_count else "fail",
+                "benchmark_traceability": "pass" if len(benchmark_requirement_items) > 0 and mapped_benchmark_requirements == len(benchmark_requirement_items) else "unknown",
+                "cross_cutting_review": "unknown",
+                "source_freshness_review": "unknown",
+                "owner_review": "unknown",
+                "experimental_eligible": "no",
+            },
         }
         domains.append(domain_record)
         if not conformance.exists():
@@ -322,6 +333,10 @@ def inspect(root: Path) -> tuple[dict[str, object], list[Finding]]:
             "benchmark_scenarios": len(benchmark_scenarios),
             "external_sources": len(external_sources),
             "domains_with_dedicated_cross_cutting_analysis": sum(item["cross_cutting_analysis"] == "dedicated" for item in domains),
+            "domains_with_complete_planned_traceability": sum(
+                item["direct_requirement_assertion_map"] and item["direct_benchmark_scenario_map"] for item in domains
+            ),
+            "domains_experimental_eligible": sum(item["promotion_gates"]["experimental_eligible"] == "yes" for item in domains),
             "declared_graph_nodes": len(graph_nodes),
             "declared_graph_edges": len(graph_edges),
             "required_graph_acyclic": not any(item.rule == "graph-requires-acyclic" for item in findings),
@@ -408,6 +423,8 @@ Keyword mentions are discovery hints only. The [quality matrix](quality-matrix.m
 - {len(unspecified)} domain README files lack the canonical table-form status field; this is recorded as a migration-quality issue, not silently interpreted as Stable.
 - {summary['domains_with_direct_requirement_assertion_map']} domain(s) have a complete direct planned requirement-to-assertion map; repository-wide migration remains open.
 - {summary['domains_with_direct_benchmark_scenario_map']} domain(s) have complete benchmark-requirement-to-scenario maps across {summary['benchmark_scenarios']} stable semantic scenarios; run evidence remains absent by design.
+- {summary['domains_with_complete_planned_traceability']} domain(s) have both complete planned assertion and benchmark traceability.
+- {summary['domains_experimental_eligible']} domain(s) are currently eligible for Experimental promotion; generated scorecards cannot authorize promotion.
 - Semantic contradiction review remains human-governed and is tracked in the [closure backlog](closure-backlog.md).
 
 ## Readiness conclusion
@@ -450,6 +467,38 @@ def quality_report(index: dict[str, object]) -> str:
     return "\n".join(lines)
 
 
+def promotion_report(index: dict[str, object]) -> str:
+    domains = index["domains"]
+    assert isinstance(domains, list)
+    lines = [
+        "# Domain promotion scorecards",
+        "",
+        "**Status:** Generated decision-support evidence  ",
+        "**Authority:** [Promotion decision model](promotion-decisions.md)",
+        "",
+        "The table uses conjunctive gates. It does not calculate a weighted score, and it cannot authorize promotion. `unknown` blocks eligibility until reviewed evidence exists.",
+        "",
+        "| Domain | Contract | Conformance plan | Benchmark plan | Assertion map | Benchmark map | Cross-cutting review | Source review | Owner review | Experimental eligible |",
+        "|---|---|---|---|---|---|---|---|---|---|",
+    ]
+    for domain in domains:
+        gate = domain["promotion_gates"]
+        lines.append(
+            f"| [{domain['id']}](../../02-capabilities/{domain['id']}/README.md) | {gate['contract_inventory']} | {gate['conformance_plan']} | {gate['benchmark_plan']} | {gate['assertion_traceability']} | {gate['benchmark_traceability']} | {gate['cross_cutting_review']} | {gate['source_freshness_review']} | {gate['owner_review']} | **{gate['experimental_eligible']}** |"
+        )
+    lines.extend([
+        "",
+        "## Interpretation",
+        "",
+        "- Contract/conformance/benchmark-plan passes prove that structured Draft specifications exist.",
+        "- Assertion and benchmark maps prove planned traceability, not executable evidence.",
+        "- Cross-cutting, source, and owner review remain unknown until a reviewed claim binds exact evidence and findings.",
+        "- No domain is currently eligible for Experimental promotion or implementation precedent.",
+        "",
+    ])
+    return "\n".join(lines)
+
+
 def main(argv: Iterable[str] | None = None) -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--check", action="store_true", help="fail if generated evidence differs")
@@ -463,6 +512,7 @@ def main(argv: Iterable[str] | None = None) -> int:
         output / "index.json": index_text,
         output / "audit-report.md": report_text,
         output / "quality-matrix.md": quality_report(index),
+        output / "promotion-scorecards.md": promotion_report(index),
     }
     if args.check:
         stale = [relative(path, root) for path, content in expected.items() if not path.exists() or path.read_text(encoding="utf-8") != content]

@@ -1,7 +1,7 @@
 # Cross-domain contradiction ledger
 
 **Status:** Active reviewed evidence  
-**Scope:** Architecture model 1.76.0 and domain sources through audit-evidence 0.1.0
+**Scope:** Architecture model 1.77.0 and domain sources through audit-evidence 0.1.0
 
 The ledger records proposition-level review. “No contradiction found” is bounded to named sources and rules; it is not a repository-wide proof.
 
@@ -17,6 +17,7 @@ The ledger records proposition-level review. “No contradiction found” is bou
 | CL-008 | Existing conformance case identities and repository-scale semantic assertion identities can coexist without ambiguous authority. | [Runtime/time conformance](../../02-capabilities/runtime-time/conformance.md), [windowing conformance](../../02-capabilities/windowing/conformance.md), [audit traceability](../../02-capabilities/audit-evidence/traceability.md), [ADR-0150](../../adr/0150-semantic-assertions-and-executable-cases-have-distinct-identities.md) | Resolved | Preserve suite-local cases; map them beneath portable `rm.assertion.*` propositions and record all three identity layers in results. |
 | CL-009 | Benchmark scenario identity and measured-run identity remain distinct across legacy and modern domain specifications. | [Runtime/time benchmarks](../../02-capabilities/runtime-time/benchmarks.md), [messaging traceability](../../02-capabilities/messaging/traceability.md), [benchmark governance](benchmark-traceability.md), [ADR-0151](../../adr/0151-benchmark-scenarios-and-runs-have-distinct-identities.md) | Consistent with migration gap | Preserve legacy suite IDs, use semantic `rm.benchmark.*` scenarios for comparison contracts, and create immutable identities for every measured run. |
 | CL-010 | “Current,” “latest,” and quality-coverage claims remain scoped rather than inferred from URLs or keywords. | [Source freshness](source-freshness.md), [quality matrix](quality-matrix.md), [text Unicode model](../../02-capabilities/text/unicode-model.md), [ADR-0152](../../adr/0152-citation-presence-does-not-prove-source-freshness.md), [ADR-0153](../../adr/0153-cross-cutting-keywords-are-discovery-not-coverage.md) | Consistent with review backlog | Pin source versions at adoption, preserve generated unknowns, and require exact evidence links before promotion. |
+| CL-011 | Repository progress metrics cannot implicitly authorize domain maturity. | [Readiness model](model.md), [promotion decisions](promotion-decisions.md), [scorecards](promotion-scorecards.md), [ADR-0154](../../adr/0154-maturity-promotion-uses-conjunctive-gates-not-scores.md) | Consistent | Keep percentages descriptive, require conjunctive gates, and reserve maturity changes for reviewed decision records. |
 
 ## Finding rules
 

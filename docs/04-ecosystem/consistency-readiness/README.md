@@ -35,6 +35,8 @@ flowchart TD
 - [Consistency and readiness model](model.md)
 - [Audit rules and finding lifecycle](audit-rules.md)
 - [Maturity and promotion gates](maturity-promotion.md)
+- [Domain promotion decision model](promotion-decisions.md)
+- [Generated domain promotion scorecards](promotion-scorecards.md)
 - [Benchmark scenario and run traceability](benchmark-traceability.md)
 - [Normative-source freshness and cross-cutting coverage](source-freshness.md)
 - [Generated cross-cutting quality matrix](quality-matrix.md)
