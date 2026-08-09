@@ -12,6 +12,10 @@
 | `rm.assertion.application-sync.selection-deletion@1` | `selective-sync.md`, `deletion-compaction.md` | Verify selection boundaries, authorization, completeness, tombstones, resurrection prevention, retirement frontiers, and safe compaction. |
 | `rm.assertion.application-sync.evolution-attachment@1` | `schema-migration.md`, `attachments.md` | Verify directional schema evolution, mixed-version replicas, migration, opaque/large attachment identity, chunking, integrity, and garbage collection. |
 | `rm.assertion.application-sync.operations-qualities@1` | `operations-recovery.md`, `cross-cutting.md`, `platform-research.md`, `traceability.md` | Verify backup/restore, replica replacement, corruption/partition recovery, privacy/security/accessibility/i18n/observability/performance, platform variance, and traceability governance. |
+| `rm.assertion.application-sync.dependencies@1` | `dependencies.md` | Verify required/conditional/governance composition, profile resolution, semantic noninheritance, and graph-coverage qualification. |
+| `rm.assertion.application-sync.source-review@1` | `source-review.md` | Verify source class/version/status/frontier, provider adoption bindings, mutable-source review, research limitations, and invalidation. |
+| `rm.assertion.application-sync.ownership@1` | `ownership.md` | Verify accountable roles, bounded trial hypotheses and matrix, nonauthorization, stop conditions, credential/data cleanup, and evidence retention. |
+| `rm.assertion.application-sync.promotion-boundary@1` | `promotion-review.md` | Verify eligibility/decision separation, exact claim binding, named review, planned-versus-executed evidence, and continued implementation gates. |
 
 **RM-SYNC-TRACE-0001:** Every synchronization capability requirement MUST map to a stable semantic assertion before Experimental promotion.
 

@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.80.0
+**Version:** 1.81.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -569,6 +569,8 @@ The [Rusty Mill software development standards](../05-governance/software-develo
 The [implementation trial governance model](../05-governance/implementation-trials/README.md) defines that bounded decision ([RFC-0002](../rfc/0002-implementation-trial-governance.md)). An authorized trial binds exact questions, hypotheses, nonclaims, architecture/capability/standards/toolchain/provider generations, evidence, limits, reviewers, and closeout duties. Trial implementation and results are learning evidence rather than architectural or Stable precedent ([ADR-0157](../adr/0157-implementation-trials-are-bounded-learning-not-precedent.md)). Material change to relevant inputs suspends affected authorization until reviewed under a new generation; evidence reuse requires explicit validity reasoning ([ADR-0158](../adr/0158-material-drift-suspends-trial-authorization.md)). Success, failure, inconclusive, and terminated outcomes preserve evidence, while adoption, maturity promotion, code reuse, and release remain separate governed decisions.
 
 The [runtime/time promotion review](../02-capabilities/runtime-time/promotion-review.md) is the first complete planned-evidence exercise of these distinctions. Generated evidence may report that a subject satisfies eligibility gates, but eligibility is neither maturity nor authorization. Runtime/time remains Draft until an accepted record binds the exact promoted subject, named accountable people, reviewer independence, open-question dispositions, decision date, and trial constraints. No repository profile or trial authorization exists.
+
+The [application synchronization promotion review](../02-capabilities/application-sync/promotion-review.md) applies the same gate to a materially different distributed-state domain. Its [composition register](../02-capabilities/application-sync/dependencies.md) separates required runtime relationships, conditional integrations, evidence/governance relationships, and profile constraints rather than treating prose adjacency as capability-graph edges. Its source, cross-cutting, ownership, assertion, case, and benchmark plans are eligibility evidence only. The domain remains Draft pending an explicit named decision, and neither a provider nor implementation is selected.
 
 ## 18. Deliberately unresolved choices
 

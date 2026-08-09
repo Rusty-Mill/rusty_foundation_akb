@@ -1,7 +1,7 @@
 # Cross-domain contradiction ledger
 
 **Status:** Active reviewed evidence  
-**Scope:** Architecture model 1.80.0 and domain sources through runtime/time 0.2.0
+**Scope:** Architecture model 1.81.0; runtime/time 0.2.0 and application synchronization 0.1.1 readiness reviews
 
 The ledger records proposition-level review. “No contradiction found” is bounded to named sources and rules; it is not a repository-wide proof.
 
@@ -21,6 +21,7 @@ The ledger records proposition-level review. “No contradiction found” is bou
 | CL-012 | Unix/composability influences do not collapse capability semantics into files, text, tools, or process-per-feature architecture. | [Development philosophy](../../05-governance/software-development/design-philosophy.md), [capability model](../../02-capabilities/model.md), [development standards](../../05-governance/software-development/README.md), [ADR-0155](../../adr/0155-development-standards-are-implementation-entry-gates.md) | Consistent after qualification | Adopt composition, clarity, explicit policy, and data-driven design; keep text/file/process mechanisms scoped to suitable interfaces and backends. |
 | CL-013 | Experimental maturity, standards compliance, and trial authorization remain separate conjunctive gates. | [Promotion decisions](promotion-decisions.md), [standards evidence](../../05-governance/software-development/compliance-evidence.md), [trial entry gates](../../05-governance/implementation-trials/entry-gates.md), [RFC-0002](../../rfc/0002-implementation-trial-governance.md) | Consistent | Require all three exact decisions; treat trial results as evidence and suspend authority on material drift. |
 | CL-014 | Generated Experimental eligibility cannot itself change maturity or authorize a trial. | [Promotion decisions](promotion-decisions.md), [runtime/time review](../../02-capabilities/runtime-time/promotion-review.md), [trial governance](../../05-governance/implementation-trials/README.md), [ADR-0154](../../adr/0154-maturity-promotion-uses-conjunctive-gates-not-scores.md) | Consistent | Preserve Draft status until an accepted named decision; require separate repository profile and trial authorization afterward. |
+| CL-015 | A domain-composition dependency is not automatically a stable capability-graph edge. | [Application synchronization composition](../../02-capabilities/application-sync/dependencies.md), [capability graph](../../02-capabilities/graph-model.md), [source-linked graph](dependency-graph.md), [ADR-0148](../../adr/0148-dependency-edges-require-source-declaration.md) | Consistent | Preserve required/conditional/governance domain relationships; add graph edges only after exact capability endpoints and semantic conditions are reviewed. |
 
 ## Finding rules
 

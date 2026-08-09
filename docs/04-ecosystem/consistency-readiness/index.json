@@ -4,9 +4,9 @@
   "authority": "docs/01-architecture/architecture-model.md",
   "generated_from": "Markdown; this index is derived and non-authoritative",
   "summary": {
-    "markdown_documents": 1107,
-    "internal_links": 1972,
-    "requirements": 5146,
+    "markdown_documents": 1111,
+    "internal_links": 2011,
+    "requirements": 5160,
     "domains": 62,
     "adrs": 158,
     "errors": 0,
@@ -16,10 +16,10 @@
     "domains_with_direct_requirement_assertion_map": 5,
     "domains_with_direct_benchmark_scenario_map": 4,
     "benchmark_scenarios": 27,
-    "external_sources": 625,
+    "external_sources": 628,
     "domains_with_dedicated_cross_cutting_analysis": 26,
     "domains_with_complete_planned_traceability": 4,
-    "domains_experimental_eligible": 1,
+    "domains_experimental_eligible": 2,
     "declared_graph_nodes": 15,
     "declared_graph_edges": 8,
     "required_graph_acyclic": true
@@ -274,14 +274,14 @@
       "id": "application-sync",
       "source": "docs/02-capabilities/application-sync/README.md",
       "status": "Draft domain analysis",
-      "requirements": 98,
-      "capability_requirements": 85,
+      "requirements": 112,
+      "capability_requirements": 99,
       "conformance_requirements": 7,
       "benchmark_requirements": 6,
       "mapped_benchmark_requirements": 6,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
-      "mapped_capability_requirements": 85,
+      "mapped_capability_requirements": 99,
       "direct_requirement_assertion_map": true,
       "direct_benchmark_scenario_map": true,
       "cross_cutting_analysis": "dedicated",
@@ -299,10 +299,10 @@
         "benchmark_plan": "pass",
         "assertion_traceability": "pass",
         "benchmark_traceability": "pass",
-        "cross_cutting_review": "unknown",
-        "source_freshness_review": "unknown",
-        "owner_review": "unknown",
-        "experimental_eligible": "no"
+        "cross_cutting_review": "pass",
+        "source_freshness_review": "pass",
+        "owner_review": "pass",
+        "experimental_eligible": "yes"
       }
     },
     {
@@ -2262,6 +2262,38 @@
       ]
     },
     {
+      "id": "rm.assertion.application-sync.dependencies@1",
+      "domain": "application-sync",
+      "source": "docs/02-capabilities/application-sync/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/application-sync/dependencies.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.application-sync.source-review@1",
+      "domain": "application-sync",
+      "source": "docs/02-capabilities/application-sync/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/application-sync/source-review.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.application-sync.ownership@1",
+      "domain": "application-sync",
+      "source": "docs/02-capabilities/application-sync/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/application-sync/ownership.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.application-sync.promotion-boundary@1",
+      "domain": "application-sync",
+      "source": "docs/02-capabilities/application-sync/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/application-sync/promotion-review.md"
+      ]
+    },
+    {
       "id": "rm.assertion.audit-evidence.schema@1",
       "domain": "audit-evidence",
       "source": "docs/02-capabilities/audit-evidence/traceability.md",
@@ -2879,7 +2911,8 @@
       "url": "https://developer.android.com/topic/architecture/data-layer/offline-first",
       "host": "developer.android.com",
       "sources": [
-        "docs/02-capabilities/application-sync/platform-research.md"
+        "docs/02-capabilities/application-sync/platform-research.md",
+        "docs/02-capabilities/application-sync/source-review.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -3152,7 +3185,8 @@
       "url": "https://developer.apple.com/documentation/coredata/syncing-a-core-data-store-with-cloudkit",
       "host": "developer.apple.com",
       "sources": [
-        "docs/02-capabilities/application-sync/platform-research.md"
+        "docs/02-capabilities/application-sync/platform-research.md",
+        "docs/02-capabilities/application-sync/source-review.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -3947,7 +3981,8 @@
       "url": "https://docs.couchdb.org/en/stable/replication/protocol.html",
       "host": "docs.couchdb.org",
       "sources": [
-        "docs/02-capabilities/application-sync/platform-research.md"
+        "docs/02-capabilities/application-sync/platform-research.md",
+        "docs/02-capabilities/application-sync/source-review.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -4494,7 +4529,8 @@
       "url": "https://hal.inria.fr/inria-00609399/document",
       "host": "hal.inria.fr",
       "sources": [
-        "docs/02-capabilities/application-sync/platform-research.md"
+        "docs/02-capabilities/application-sync/platform-research.md",
+        "docs/02-capabilities/application-sync/source-review.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -7034,6 +7070,22 @@
       "freshness": "unreviewed-by-generator"
     },
     {
+      "url": "https://www.rfc-editor.org/info/rfc6578/",
+      "host": "www.rfc-editor.org",
+      "sources": [
+        "docs/02-capabilities/application-sync/source-review.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
+      "url": "https://www.rfc-editor.org/info/rfc6902/",
+      "host": "www.rfc-editor.org",
+      "sources": [
+        "docs/02-capabilities/application-sync/source-review.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
       "url": "https://www.rfc-editor.org/info/rfc7030/",
       "host": "www.rfc-editor.org",
       "sources": [
@@ -7046,6 +7098,14 @@
       "host": "www.rfc-editor.org",
       "sources": [
         "docs/02-capabilities/networking/secure-transport-platform-research.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
+      "url": "https://www.rfc-editor.org/info/rfc7396/",
+      "host": "www.rfc-editor.org",
+      "sources": [
+        "docs/02-capabilities/application-sync/source-review.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -12550,7 +12610,7 @@
     {
       "id": "RM-APP-SYNC-CROSS-0001",
       "source": "docs/02-capabilities/application-sync/cross-cutting.md",
-      "line": 3,
+      "line": 22,
       "kind": "capability",
       "domain": "application-sync",
       "assertions": [
@@ -12560,7 +12620,7 @@
     {
       "id": "RM-APP-SYNC-CROSS-0002",
       "source": "docs/02-capabilities/application-sync/cross-cutting.md",
-      "line": 5,
+      "line": 24,
       "kind": "capability",
       "domain": "application-sync",
       "assertions": [
@@ -12570,7 +12630,7 @@
     {
       "id": "RM-APP-SYNC-CROSS-0003",
       "source": "docs/02-capabilities/application-sync/cross-cutting.md",
-      "line": 7,
+      "line": 26,
       "kind": "capability",
       "domain": "application-sync",
       "assertions": [
@@ -12580,7 +12640,7 @@
     {
       "id": "RM-APP-SYNC-CROSS-0004",
       "source": "docs/02-capabilities/application-sync/cross-cutting.md",
-      "line": 9,
+      "line": 28,
       "kind": "capability",
       "domain": "application-sync",
       "assertions": [
@@ -12590,7 +12650,7 @@
     {
       "id": "RM-APP-SYNC-CROSS-0005",
       "source": "docs/02-capabilities/application-sync/cross-cutting.md",
-      "line": 11,
+      "line": 30,
       "kind": "capability",
       "domain": "application-sync",
       "assertions": [
@@ -12600,7 +12660,7 @@
     {
       "id": "RM-APP-SYNC-CROSS-0006",
       "source": "docs/02-capabilities/application-sync/cross-cutting.md",
-      "line": 13,
+      "line": 32,
       "kind": "capability",
       "domain": "application-sync",
       "assertions": [
@@ -12610,7 +12670,7 @@
     {
       "id": "RM-APP-SYNC-CROSS-0007",
       "source": "docs/02-capabilities/application-sync/cross-cutting.md",
-      "line": 15,
+      "line": 34,
       "kind": "capability",
       "domain": "application-sync",
       "assertions": [
@@ -12735,6 +12795,36 @@
       "domain": "application-sync",
       "assertions": [
         "rm.assertion.application-sync.selection-deletion@1"
+      ]
+    },
+    {
+      "id": "RM-APP-SYNC-DEPENDENCY-0001",
+      "source": "docs/02-capabilities/application-sync/dependencies.md",
+      "line": 43,
+      "kind": "capability",
+      "domain": "application-sync",
+      "assertions": [
+        "rm.assertion.application-sync.dependencies@1"
+      ]
+    },
+    {
+      "id": "RM-APP-SYNC-DEPENDENCY-0002",
+      "source": "docs/02-capabilities/application-sync/dependencies.md",
+      "line": 45,
+      "kind": "capability",
+      "domain": "application-sync",
+      "assertions": [
+        "rm.assertion.application-sync.dependencies@1"
+      ]
+    },
+    {
+      "id": "RM-APP-SYNC-DEPENDENCY-0003",
+      "source": "docs/02-capabilities/application-sync/dependencies.md",
+      "line": 47,
+      "kind": "capability",
+      "domain": "application-sync",
+      "assertions": [
+        "rm.assertion.application-sync.dependencies@1"
       ]
     },
     {
@@ -12908,6 +12998,46 @@
       ]
     },
     {
+      "id": "RM-APP-SYNC-OWNER-0001",
+      "source": "docs/02-capabilities/application-sync/ownership.md",
+      "line": 25,
+      "kind": "capability",
+      "domain": "application-sync",
+      "assertions": [
+        "rm.assertion.application-sync.ownership@1"
+      ]
+    },
+    {
+      "id": "RM-APP-SYNC-OWNER-0002",
+      "source": "docs/02-capabilities/application-sync/ownership.md",
+      "line": 27,
+      "kind": "capability",
+      "domain": "application-sync",
+      "assertions": [
+        "rm.assertion.application-sync.ownership@1"
+      ]
+    },
+    {
+      "id": "RM-APP-SYNC-OWNER-0003",
+      "source": "docs/02-capabilities/application-sync/ownership.md",
+      "line": 29,
+      "kind": "capability",
+      "domain": "application-sync",
+      "assertions": [
+        "rm.assertion.application-sync.ownership@1"
+      ]
+    },
+    {
+      "id": "RM-APP-SYNC-OWNER-0004",
+      "source": "docs/02-capabilities/application-sync/ownership.md",
+      "line": 31,
+      "kind": "capability",
+      "domain": "application-sync",
+      "assertions": [
+        "rm.assertion.application-sync.ownership@1"
+      ]
+    },
+    {
       "id": "RM-APP-SYNC-RESEARCH-0001",
       "source": "docs/02-capabilities/application-sync/platform-research.md",
       "line": 10,
@@ -12925,6 +13055,36 @@
       "domain": "application-sync",
       "assertions": [
         "rm.assertion.application-sync.operations-qualities@1"
+      ]
+    },
+    {
+      "id": "RM-APP-SYNC-PROMOTION-0001",
+      "source": "docs/02-capabilities/application-sync/promotion-review.md",
+      "line": 27,
+      "kind": "capability",
+      "domain": "application-sync",
+      "assertions": [
+        "rm.assertion.application-sync.promotion-boundary@1"
+      ]
+    },
+    {
+      "id": "RM-APP-SYNC-PROMOTION-0002",
+      "source": "docs/02-capabilities/application-sync/promotion-review.md",
+      "line": 29,
+      "kind": "capability",
+      "domain": "application-sync",
+      "assertions": [
+        "rm.assertion.application-sync.promotion-boundary@1"
+      ]
+    },
+    {
+      "id": "RM-APP-SYNC-PROMOTION-0003",
+      "source": "docs/02-capabilities/application-sync/promotion-review.md",
+      "line": 31,
+      "kind": "capability",
+      "domain": "application-sync",
+      "assertions": [
+        "rm.assertion.application-sync.promotion-boundary@1"
       ]
     },
     {
@@ -13168,27 +13328,47 @@
       ]
     },
     {
+      "id": "RM-APP-SYNC-SOURCE-0001",
+      "source": "docs/02-capabilities/application-sync/source-review.md",
+      "line": 20,
+      "kind": "capability",
+      "domain": "application-sync",
+      "assertions": [
+        "rm.assertion.application-sync.source-review@1"
+      ]
+    },
+    {
+      "id": "RM-APP-SYNC-SOURCE-0002",
+      "source": "docs/02-capabilities/application-sync/source-review.md",
+      "line": 22,
+      "kind": "capability",
+      "domain": "application-sync",
+      "assertions": [
+        "rm.assertion.application-sync.source-review@1"
+      ]
+    },
+    {
+      "id": "RM-APP-SYNC-SOURCE-0003",
+      "source": "docs/02-capabilities/application-sync/source-review.md",
+      "line": 24,
+      "kind": "capability",
+      "domain": "application-sync",
+      "assertions": [
+        "rm.assertion.application-sync.source-review@1"
+      ]
+    },
+    {
+      "id": "RM-APP-SYNC-SOURCE-0004",
+      "source": "docs/02-capabilities/application-sync/source-review.md",
+      "line": 26,
+      "kind": "capability",
+      "domain": "application-sync",
+      "assertions": [
+        "rm.assertion.application-sync.source-review@1"
+      ]
+    },
+    {
       "id": "RM-SYNC-TRACE-0001",
-      "source": "docs/02-capabilities/application-sync/traceability.md",
-      "line": 16,
-      "kind": "capability",
-      "domain": "application-sync",
-      "assertions": [
-        "rm.assertion.application-sync.operations-qualities@1"
-      ]
-    },
-    {
-      "id": "RM-SYNC-TRACE-0002",
-      "source": "docs/02-capabilities/application-sync/traceability.md",
-      "line": 18,
-      "kind": "capability",
-      "domain": "application-sync",
-      "assertions": [
-        "rm.assertion.application-sync.operations-qualities@1"
-      ]
-    },
-    {
-      "id": "RM-SYNC-TRACE-0003",
       "source": "docs/02-capabilities/application-sync/traceability.md",
       "line": 20,
       "kind": "capability",
@@ -13198,9 +13378,29 @@
       ]
     },
     {
-      "id": "RM-SYNC-TRACE-0004",
+      "id": "RM-SYNC-TRACE-0002",
       "source": "docs/02-capabilities/application-sync/traceability.md",
       "line": 22,
+      "kind": "capability",
+      "domain": "application-sync",
+      "assertions": [
+        "rm.assertion.application-sync.operations-qualities@1"
+      ]
+    },
+    {
+      "id": "RM-SYNC-TRACE-0003",
+      "source": "docs/02-capabilities/application-sync/traceability.md",
+      "line": 24,
+      "kind": "capability",
+      "domain": "application-sync",
+      "assertions": [
+        "rm.assertion.application-sync.operations-qualities@1"
+      ]
+    },
+    {
+      "id": "RM-SYNC-TRACE-0004",
+      "source": "docs/02-capabilities/application-sync/traceability.md",
+      "line": 26,
       "kind": "capability",
       "domain": "application-sync",
       "assertions": [
@@ -46957,28 +47157,28 @@
     {
       "id": "RM-READINESS-CONTRADICTION-0001",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 27,
+      "line": 28,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0002",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 29,
+      "line": 30,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0003",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 31,
+      "line": 32,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0004",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 33,
+      "line": 34,
       "kind": "governance",
       "domain": null
     },
@@ -48877,8 +49077,8 @@
     },
     {
       "source": "docs/01-architecture/architecture-model.md",
-      "sha256": "4f2211fe93e59544b343247ace5cb57b145048c2e1236c2fd5e414fc8105e005",
-      "lines": 603
+      "sha256": "9d716c0d279d7885e1635c9bbd19abfc973c9a29fe53afb1bf0ecdac9ef9e9d7",
+      "lines": 605
     },
     {
       "source": "docs/01-architecture/behavioral-contracts.md",
@@ -49422,8 +49622,8 @@
     },
     {
       "source": "docs/02-capabilities/application-sync/cross-cutting.md",
-      "sha256": "9a521fb463c122aeeac19b0a1dcb2910c972437268d0cf72185a4703cd6568cd",
-      "lines": 15
+      "sha256": "af250ad5689bdfb6982bb4bbb9af19e23ef922ef210ef0642bf867a742df8011",
+      "lines": 34
     },
     {
       "source": "docs/02-capabilities/application-sync/datasets-replicas.md",
@@ -49434,6 +49634,11 @@
       "source": "docs/02-capabilities/application-sync/deletion-compaction.md",
       "sha256": "a790a99d31f7c16d91c9b43bd9683ed3ac38f70208757defe9f5b2bde338953e",
       "lines": 13
+    },
+    {
+      "source": "docs/02-capabilities/application-sync/dependencies.md",
+      "sha256": "b30f2d8402a10275d99098e203c4f793a7d3cb4e691de420f9de2006be069687",
+      "lines": 48
     },
     {
       "source": "docs/02-capabilities/application-sync/model.md",
@@ -49451,14 +49656,24 @@
       "lines": 13
     },
     {
+      "source": "docs/02-capabilities/application-sync/ownership.md",
+      "sha256": "77eee7338b3571f028ad86beaf234d5d161bbd62d417584afe2b96176d2b26d1",
+      "lines": 32
+    },
+    {
       "source": "docs/02-capabilities/application-sync/platform-research.md",
       "sha256": "9219cb511f0e57c4a921dc5f03804ffebfd84909dd38c17c0b5eb0544148bba0",
       "lines": 12
     },
     {
+      "source": "docs/02-capabilities/application-sync/promotion-review.md",
+      "sha256": "51dee6dd4dfb57fc87022cc8f3873c6103b12444b66908353d50c2af7096dfe4",
+      "lines": 32
+    },
+    {
       "source": "docs/02-capabilities/application-sync/README.md",
-      "sha256": "e15b5874a009bb6275ce6275d5867d8c84a213adc7ef5796b371800c2a6fcbb3",
-      "lines": 58
+      "sha256": "e9480268e84093ef108e0222e5b2c1b8426fd3eaf65c5b36275bffd834946fa9",
+      "lines": 64
     },
     {
       "source": "docs/02-capabilities/application-sync/schema-migration.md",
@@ -49481,9 +49696,14 @@
       "lines": 13
     },
     {
+      "source": "docs/02-capabilities/application-sync/source-review.md",
+      "sha256": "25dd023b0cc14c0d8be5d7a0a1ed429d91eb42216f9ba8ae356e91ca62a49690",
+      "lines": 27
+    },
+    {
       "source": "docs/02-capabilities/application-sync/traceability.md",
-      "sha256": "441f429c0d9d6cf725eb15fa4953a4994c2d8132a949123a457eeeeac9dbf814",
-      "lines": 33
+      "sha256": "3949bd8eb68cc5d13cc19bd3e3ea460b6daf4954fe389a4a4bc156d807bffbe5",
+      "lines": 37
     },
     {
       "source": "docs/02-capabilities/archive/benchmarks.md",
@@ -53287,7 +53507,7 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/audit-report.md",
-      "sha256": "a09cdd6e7b57af6862a9791ac2b689c149910f31de7e213dfd68431e72befdb2",
+      "sha256": "5b25e02d19bf860e742ce22010f219f093f9623f9a53340346753cf22c7ff205",
       "lines": 66
     },
     {
@@ -53302,13 +53522,13 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/closure-backlog.md",
-      "sha256": "d665a2a0af24b02f5e88dfd9f83d45e160f0790056d09539df1c4005c34823d9",
+      "sha256": "8de6a4f346f692543bb8bb9f735eee75467a5c36d6aef7c15a26ce32dbf83319",
       "lines": 18
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "sha256": "a21af815428fbd9edfc86904cc07cee76294c679f8d50fc4edc09d177674bddf",
-      "lines": 33
+      "sha256": "1dc4962571fe683cce4f31ada0678bfa182f010b0767f8bd98426a8245e61430",
+      "lines": 34
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/dependency-graph.md",
@@ -53332,7 +53552,7 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/promotion-scorecards.md",
-      "sha256": "5b9b40df3432a9496d2ddc6075be320e5266096235f61985ee3634703c648f90",
+      "sha256": "427c259a47d9c1ba4bfcb3dd3cd83db0680f8156f972c43e263d8fdfbc2db2b6",
       "lines": 78
     },
     {
@@ -53577,8 +53797,8 @@
     },
     {
       "source": "docs/06-roadmap/roadmap.md",
-      "sha256": "595fbda9bf352303ee639eaa6287cfbd4409e92ee84622015ee578c8a55b20bd",
-      "lines": 213
+      "sha256": "7d0b6e96994710e2224a27b1e4d264e39f343578c1de4fd0bc44a127b9c1dc24",
+      "lines": 217
     },
     {
       "source": "docs/adr/0001-capability-first-platform.md",

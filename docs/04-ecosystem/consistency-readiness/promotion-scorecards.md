@@ -14,7 +14,7 @@ The table uses conjunctive gates. It does not calculate a weighted score, and it
 | [application-authentication](../../02-capabilities/application-authentication/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | **no** |
 | [application-authorization](../../02-capabilities/application-authorization/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | **no** |
 | [application-communications](../../02-capabilities/application-communications/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | **no** |
-| [application-sync](../../02-capabilities/application-sync/README.md) | pass | pass | pass | pass | pass | unknown | unknown | unknown | **no** |
+| [application-sync](../../02-capabilities/application-sync/README.md) | pass | pass | pass | pass | pass | pass | pass | pass | **yes** |
 | [archive](../../02-capabilities/archive/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | **no** |
 | [async-io](../../02-capabilities/async-io/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | **no** |
 | [audio](../../02-capabilities/audio/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | **no** |
@@ -75,4 +75,4 @@ The table uses conjunctive gates. It does not calculate a weighted score, and it
 - Contract/conformance/benchmark-plan passes prove that structured Draft specifications exist.
 - Assertion and benchmark maps prove planned traceability, not executable evidence.
 - Cross-cutting, source, and owner gates pass only from explicit `Review status` metadata in their authoritative domain artifacts; file presence and keywords are insufficient.
-- 1 domain(s) currently satisfy generated Experimental eligibility evidence: runtime-time. Eligibility does not change maturity or authorize implementation; an explicit reviewed promotion record remains required.
+- 2 domain(s) currently satisfy generated Experimental eligibility evidence: application-sync, runtime-time. Eligibility does not change maturity or authorize implementation; an explicit reviewed promotion record remains required.
