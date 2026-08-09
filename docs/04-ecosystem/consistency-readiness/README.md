@@ -44,6 +44,7 @@ flowchart TD
 - [Source-linked typed dependency graph](dependency-graph.md)
 - [Canonical shared semantic vocabulary](vocabulary.md)
 - [Cross-domain contradiction ledger](contradiction-ledger.md)
+- [Foundation capability-batch integration review](foundation-batch-integration-review.md)
 - [Bounded closure backlog](closure-backlog.md)
 - [Generated audit report](audit-report.md)
 - [Machine-readable inventory](index.json)

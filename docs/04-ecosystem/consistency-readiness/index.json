@@ -4,11 +4,11 @@
   "authority": "docs/01-architecture/architecture-model.md",
   "generated_from": "Markdown; this index is derived and non-authoritative",
   "summary": {
-    "markdown_documents": 1143,
-    "internal_links": 2215,
-    "requirements": 5317,
+    "markdown_documents": 1145,
+    "internal_links": 2240,
+    "requirements": 5322,
     "domains": 62,
-    "adrs": 159,
+    "adrs": 160,
     "errors": 0,
     "warnings": 0,
     "domains_with_conformance": 62,
@@ -50024,28 +50024,28 @@
     {
       "id": "RM-READINESS-CONTRADICTION-0001",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 34,
+      "line": 35,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0002",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 36,
+      "line": 37,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0003",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 38,
+      "line": 39,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0004",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 40,
+      "line": 41,
       "kind": "governance",
       "domain": null
     },
@@ -50130,6 +50130,41 @@
       "id": "RM-READINESS-REVIEW-0008",
       "source": "docs/04-ecosystem/consistency-readiness/domain-readiness-schema.md",
       "line": 60,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-FOUNDATION-BATCH-0001",
+      "source": "docs/04-ecosystem/consistency-readiness/foundation-batch-integration-review.md",
+      "line": 60,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-FOUNDATION-BATCH-0002",
+      "source": "docs/04-ecosystem/consistency-readiness/foundation-batch-integration-review.md",
+      "line": 62,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-FOUNDATION-BATCH-0003",
+      "source": "docs/04-ecosystem/consistency-readiness/foundation-batch-integration-review.md",
+      "line": 64,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-FOUNDATION-BATCH-0004",
+      "source": "docs/04-ecosystem/consistency-readiness/foundation-batch-integration-review.md",
+      "line": 66,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-FOUNDATION-BATCH-0005",
+      "source": "docs/04-ecosystem/consistency-readiness/foundation-batch-integration-review.md",
+      "line": 68,
       "kind": "governance",
       "domain": null
     },
@@ -52000,8 +52035,8 @@
     },
     {
       "source": "docs/01-architecture/architecture-model.md",
-      "sha256": "23241376b406d6a52bc5a6dfaeb4d5285d195fa4c98a78313adbe0f948c002cf",
-      "lines": 633
+      "sha256": "517be0969eaec55c059362c907eb882624e2ca249ee92af0fd45726b5dbe8f25",
+      "lines": 637
     },
     {
       "source": "docs/01-architecture/behavioral-contracts.md",
@@ -56575,7 +56610,7 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/audit-report.md",
-      "sha256": "b10877409cd03b2ed5c85a888d5aca7dd9903ae1830c312cbbc5b7b98310094d",
+      "sha256": "c10d07e261126b43109b5fb7c1128b09bf2a73a175afecdca9efd48f78974edd",
       "lines": 68
     },
     {
@@ -56590,13 +56625,13 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/closure-backlog.md",
-      "sha256": "863a2277ca95f020368726275de60f5e1108cdf09e24dc8f83a22439df7e19b1",
+      "sha256": "4e45899c610a6399f4ebe1e1b65fd13dda7bdcb7d0f334022f8fb534102f15a8",
       "lines": 19
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "sha256": "8e4ec2c94a8950a6b08e22aace2afe258c93d375e4fbdbb5507ff2ffc18795a6",
-      "lines": 40
+      "sha256": "869d813baad6ffd9e6e751bd2675f3dcb8622990b265cb8bac25f2f194a29f2e",
+      "lines": 41
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/dependency-graph.md",
@@ -56612,6 +56647,11 @@
       "source": "docs/04-ecosystem/consistency-readiness/domain-readiness-template.md",
       "sha256": "74ce4dc82c64f7c1b7ecfb4e9025d107a8520db206b07811566f447bbd8fc7cf",
       "lines": 73
+    },
+    {
+      "source": "docs/04-ecosystem/consistency-readiness/foundation-batch-integration-review.md",
+      "sha256": "6c3544b8d4da1d511a08d2e1ee43c9c1e92b42e7ea0e6c6595fb474064cae274",
+      "lines": 72
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/maturity-promotion.md",
@@ -56640,8 +56680,8 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/README.md",
-      "sha256": "ec02692bd6f6de2f707fdb90dcdc1cb83aaf46924d9e4150e90b21c7152811ce",
-      "lines": 53
+      "sha256": "4fe9bf9c2cc59ffcaaad060d92cecc9a2d7af7a1bf9c7cce9f08be4d114785c7",
+      "lines": 54
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/source-freshness.md",
@@ -56875,8 +56915,8 @@
     },
     {
       "source": "docs/06-roadmap/roadmap.md",
-      "sha256": "dfc63ad9359d000f860045786ffca42a6278ce54c45f2faa7d67cb89bed0f932",
-      "lines": 241
+      "sha256": "4f3737c3f770d98174ee1efcc13efee4d4b6e6601e47590fb2c9697b55161ed0",
+      "lines": 245
     },
     {
       "source": "docs/adr/0001-capability-first-platform.md",
@@ -57674,9 +57714,14 @@
       "lines": 33
     },
     {
+      "source": "docs/adr/0160-async-io-lifecycle-is-a-provider-framework-not-a-universal-capability.md",
+      "sha256": "3effc908c065883613c1b7cd24061ce0ed79aa237a62530fb4da33418e96c42a",
+      "lines": 40
+    },
+    {
       "source": "docs/adr/README.md",
-      "sha256": "5dd26eb51a71b3c0bccb7b98f4da2f5540ec6b87f8a58565f585cfdfdd0c7bbd",
-      "lines": 165
+      "sha256": "c238001dc3cd9a119ec0ca19943e208273b9d1290a63b42be9fb716212db51a3",
+      "lines": 166
     },
     {
       "source": "docs/README.md",

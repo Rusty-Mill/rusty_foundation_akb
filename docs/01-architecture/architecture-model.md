@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.87.0
+**Version:** 1.88.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -630,4 +630,8 @@ This evidence does not collapse bytes into messages or text, local anonymity int
 
 Async I/O foundations 0.1.1 define reusable provider invariants for generation-scoped operations, completion-oriented results, readiness translation, native completion, bounded blocking fallback, cancel/complete arbitration, retained buffers/control state, registration generations, saturation/fairness, executor-independent waking, shutdown/drain, and bounded observability. Stable assertions and benchmark scenarios cover every framework and benchmark requirement; source, quality, ownership, dependency/composition, and proposed-promotion reviews are explicit.
 
-Async I/O remains a provider-integration framework, not a universal application-facing capability or runtime. Consuming capabilities retain their own progress, EOF, message, ordering, side-effect, error, and authority semantics. No graph node is created until an independently selectable capability contract is accepted. The framework remains Draft: no native engine, executor/reactor, provider library, operation enum, public API, crate layout, trial, benchmark budget, power claim, or release claim is authorized.
+Async I/O remains a provider-integration framework, not a universal application-facing capability or runtime ([ADR-0160](../adr/0160-async-io-lifecycle-is-a-provider-framework-not-a-universal-capability.md)). Consuming capabilities retain their own progress, EOF, message, ordering, side-effect, error, and authority semantics. No graph node is created until an independently selectable capability contract is accepted. The framework remains Draft: no native engine, executor/reactor, provider library, operation enum, public API, crate layout, trial, benchmark budget, power claim, or release claim is authorized.
+
+## 24. Foundation capability-batch compatibility
+
+The [foundation capability-batch integration review](../04-ecosystem/consistency-readiness/foundation-batch-integration-review.md) verifies compatible identity/authority, cancellation, progress/milestone, ownership/cleanup, synchronous completeness, backpressure/fairness, ordering/time, provider-variance, dependency, and evidence boundaries across runtime/time, filesystem, process, IPC, and async I/O. Cross-domain lifecycle model tests complement rather than replace domain-specific effect oracles. A batch-level Pass establishes architecture-definition compatibility only and cannot aggregate Draft domains into implementation authority.

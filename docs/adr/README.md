@@ -161,5 +161,6 @@
 | [0157](0157-implementation-trials-are-bounded-learning-not-precedent.md) | Implementation trials are bounded learning, not precedent | Accepted |
 | [0158](0158-material-drift-suspends-trial-authorization.md) | Material drift suspends trial authorization | Accepted |
 | [0159](0159-domain-readiness-reviews-use-schema-validated-markdown.md) | Domain readiness reviews use schema-validated Markdown | Accepted |
+| [0160](0160-async-io-lifecycle-is-a-provider-framework-not-a-universal-capability.md) | Async I/O lifecycle is a provider framework, not a universal capability | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.
