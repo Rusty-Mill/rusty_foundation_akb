@@ -22,6 +22,7 @@ flowchart LR
   Spawn -.->|"optionally-uses"| Clock
   Control["rm.process.control"] -->|"requires"| Spawn
   Control -.->|"optionally-uses"| Cancel
+  Pipe -.->|"optionally-uses"| Cancel
   Random["rm.security.random"] -.->|"optionally-uses"| Cancel
 ```
 
@@ -64,6 +65,7 @@ flowchart LR
 | `rm.process.spawn` | `optionally-uses` | `rm.time.monotonic-clock` | [Process domain](../../02-capabilities/process/README.md) | Evidence may use monotonic timestamps. |
 | `rm.process.control` | `requires` | `rm.process.spawn` | [Process control contract](../../02-capabilities/process/control.md) | Control consumes spawn's owned-child resource and never treats a PID as authority. |
 | `rm.process.control` | `optionally-uses` | `rm.runtime.cancellation` | [Process control contract](../../02-capabilities/process/control.md) | Cancellation may stop waiting for dispatch confirmation but cannot retract a delivered request. |
+| `rm.ipc.byte-pipe` | `optionally-uses` | `rm.runtime.cancellation` | [Byte-pipe contract](../../02-capabilities/ipc/byte-pipe.md) | Pipe operations may observe cancellation while preserving accepted progress and terminal truth. |
 | `rm.security.random` | `optionally-uses` | `rm.runtime.cancellation` | [Security domain](../../02-capabilities/security/README.md) | A provider readiness wait may observe cancellation. |
 
 ## Validation and coverage

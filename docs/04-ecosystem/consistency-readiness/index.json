@@ -4,27 +4,27 @@
   "authority": "docs/01-architecture/architecture-model.md",
   "generated_from": "Markdown; this index is derived and non-authoritative",
   "summary": {
-    "markdown_documents": 1131,
-    "internal_links": 2149,
-    "requirements": 5255,
+    "markdown_documents": 1137,
+    "internal_links": 2181,
+    "requirements": 5286,
     "domains": 62,
     "adrs": 159,
     "errors": 0,
     "warnings": 0,
     "domains_with_conformance": 62,
     "domains_with_benchmarks": 62,
-    "domains_with_direct_requirement_assertion_map": 7,
-    "domains_with_direct_benchmark_scenario_map": 7,
-    "benchmark_scenarios": 48,
+    "domains_with_direct_requirement_assertion_map": 8,
+    "domains_with_direct_benchmark_scenario_map": 8,
+    "benchmark_scenarios": 54,
     "external_sources": 634,
-    "external_sources_with_review_record": 56,
-    "domains_with_dedicated_cross_cutting_analysis": 29,
-    "domains_with_complete_planned_traceability": 7,
-    "domains_experimental_eligible": 5,
-    "domains_with_proposed_promotion_review": 5,
+    "external_sources_with_review_record": 64,
+    "domains_with_dedicated_cross_cutting_analysis": 30,
+    "domains_with_complete_planned_traceability": 8,
+    "domains_experimental_eligible": 6,
+    "domains_with_proposed_promotion_review": 6,
     "domains_with_accepted_promotion_review": 0,
     "declared_graph_nodes": 15,
-    "declared_graph_edges": 16,
+    "declared_graph_edges": 17,
     "required_graph_acyclic": true
   },
   "domains": [
@@ -1076,23 +1076,23 @@
       "id": "ipc",
       "source": "docs/02-capabilities/ipc/README.md",
       "status": "Draft domain analysis",
-      "requirements": 15,
-      "capability_requirements": 15,
+      "requirements": 46,
+      "capability_requirements": 37,
       "conformance_requirements": 0,
-      "benchmark_requirements": 0,
-      "mapped_benchmark_requirements": 0,
+      "benchmark_requirements": 9,
+      "mapped_benchmark_requirements": 9,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
-      "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false,
-      "direct_benchmark_scenario_map": false,
-      "cross_cutting_analysis": "embedded-unreviewed",
-      "promotion_review": "absent",
+      "mapped_capability_requirements": 37,
+      "direct_requirement_assertion_map": true,
+      "direct_benchmark_scenario_map": true,
+      "cross_cutting_analysis": "dedicated",
+      "promotion_review": "proposed",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
-        "accessibility": false,
-        "internationalization": false,
+        "accessibility": true,
+        "internationalization": true,
         "observability": true,
         "operations": true
       },
@@ -1100,12 +1100,12 @@
         "contract_inventory": "pass",
         "conformance_plan": "pass",
         "benchmark_plan": "pass",
-        "assertion_traceability": "fail",
-        "benchmark_traceability": "unknown",
-        "cross_cutting_review": "unknown",
-        "source_freshness_review": "unknown",
-        "owner_review": "unknown",
-        "experimental_eligible": "no"
+        "assertion_traceability": "pass",
+        "benchmark_traceability": "pass",
+        "cross_cutting_review": "pass",
+        "source_freshness_review": "pass",
+        "owner_review": "pass",
+        "experimental_eligible": "yes"
       }
     },
     {
@@ -2513,6 +2513,55 @@
       ]
     },
     {
+      "id": "rm.assertion.ipc.byte-pipe@1",
+      "domain": "ipc",
+      "source": "docs/02-capabilities/ipc/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/ipc/byte-pipe.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.ipc.dependencies@1",
+      "domain": "ipc",
+      "source": "docs/02-capabilities/ipc/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/ipc/dependencies.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.ipc.quality-review@1",
+      "domain": "ipc",
+      "source": "docs/02-capabilities/ipc/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/ipc/cross-cutting.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.ipc.source-review@1",
+      "domain": "ipc",
+      "source": "docs/02-capabilities/ipc/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/ipc/source-review.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.ipc.ownership@1",
+      "domain": "ipc",
+      "source": "docs/02-capabilities/ipc/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/ipc/ownership.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.ipc.promotion-boundary@1",
+      "domain": "ipc",
+      "source": "docs/02-capabilities/ipc/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/ipc/promotion-review.md",
+        "docs/02-capabilities/ipc/traceability.md"
+      ]
+    },
+    {
       "id": "rm.assertion.messaging.schema-envelope@1",
       "domain": "messaging",
       "source": "docs/02-capabilities/messaging/traceability.md",
@@ -2959,6 +3008,67 @@
         "RM-FILESYSTEM-BENCH-0007",
         "RM-FILESYSTEM-BENCH-0008",
         "RM-FILESYSTEM-BENCH-0009"
+      ]
+    },
+    {
+      "id": "rm.benchmark.ipc.pipe-create-close@1",
+      "domain": "ipc",
+      "source": "docs/02-capabilities/ipc/traceability.md",
+      "requirements": [
+        "RM-IPC-BENCH-0001",
+        "RM-IPC-BENCH-0007",
+        "RM-IPC-BENCH-0008"
+      ]
+    },
+    {
+      "id": "rm.benchmark.ipc.pipe-transfer@1",
+      "domain": "ipc",
+      "source": "docs/02-capabilities/ipc/traceability.md",
+      "requirements": [
+        "RM-IPC-BENCH-0002",
+        "RM-IPC-BENCH-0007",
+        "RM-IPC-BENCH-0008"
+      ]
+    },
+    {
+      "id": "rm.benchmark.ipc.pipe-concurrent-writers@1",
+      "domain": "ipc",
+      "source": "docs/02-capabilities/ipc/traceability.md",
+      "requirements": [
+        "RM-IPC-BENCH-0003",
+        "RM-IPC-BENCH-0007",
+        "RM-IPC-BENCH-0008"
+      ]
+    },
+    {
+      "id": "rm.benchmark.ipc.pipe-async-scale@1",
+      "domain": "ipc",
+      "source": "docs/02-capabilities/ipc/traceability.md",
+      "requirements": [
+        "RM-IPC-BENCH-0004",
+        "RM-IPC-BENCH-0007",
+        "RM-IPC-BENCH-0008",
+        "RM-IPC-BENCH-0009"
+      ]
+    },
+    {
+      "id": "rm.benchmark.ipc.pipe-process-redirection@1",
+      "domain": "ipc",
+      "source": "docs/02-capabilities/ipc/traceability.md",
+      "requirements": [
+        "RM-IPC-BENCH-0005",
+        "RM-IPC-BENCH-0007",
+        "RM-IPC-BENCH-0008"
+      ]
+    },
+    {
+      "id": "rm.benchmark.ipc.pipe-terminal-paths@1",
+      "domain": "ipc",
+      "source": "docs/02-capabilities/ipc/traceability.md",
+      "requirements": [
+        "RM-IPC-BENCH-0006",
+        "RM-IPC-BENCH-0007",
+        "RM-IPC-BENCH-0008"
       ]
     },
     {
@@ -4308,9 +4418,10 @@
       "url": "https://developer.apple.com/library/archive/documentation/System/Conceptual/ManPages_iPhoneOS/man2/pipe.2.html",
       "host": "developer.apple.com",
       "sources": [
-        "docs/02-capabilities/ipc/platform-research.md"
+        "docs/02-capabilities/ipc/platform-research.md",
+        "docs/02-capabilities/ipc/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://developer.apple.com/library/archive/documentation/System/Conceptual/ManPages_iPhoneOS/man2/posix_spawn.2.html",
@@ -5445,9 +5556,10 @@
       "url": "https://learn.microsoft.com/en-us/windows/win32/api/namedpipeapi/nf-namedpipeapi-createpipe",
       "host": "learn.microsoft.com",
       "sources": [
-        "docs/02-capabilities/ipc/platform-research.md"
+        "docs/02-capabilities/ipc/platform-research.md",
+        "docs/02-capabilities/ipc/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://learn.microsoft.com/en-us/windows/win32/api/objidl/nn-objidl-idataobject",
@@ -5777,17 +5889,19 @@
       "url": "https://learn.microsoft.com/en-us/windows/win32/ipc/anonymous-pipe-operations",
       "host": "learn.microsoft.com",
       "sources": [
-        "docs/02-capabilities/ipc/platform-research.md"
+        "docs/02-capabilities/ipc/platform-research.md",
+        "docs/02-capabilities/ipc/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://learn.microsoft.com/en-us/windows/win32/ipc/named-pipe-open-modes",
       "host": "learn.microsoft.com",
       "sources": [
-        "docs/02-capabilities/ipc/platform-research.md"
+        "docs/02-capabilities/ipc/platform-research.md",
+        "docs/02-capabilities/ipc/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://learn.microsoft.com/en-us/windows/win32/medfound/presentation-clock",
@@ -6547,9 +6661,10 @@
       "url": "https://man7.org/linux/man-pages/man2/pipe.2.html",
       "host": "man7.org",
       "sources": [
-        "docs/02-capabilities/ipc/platform-research.md"
+        "docs/02-capabilities/ipc/platform-research.md",
+        "docs/02-capabilities/ipc/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://man7.org/linux/man-pages/man2/pread.2.html",
@@ -6710,9 +6825,10 @@
       "url": "https://man7.org/linux/man-pages/man7/pipe.7.html",
       "host": "man7.org",
       "sources": [
-        "docs/02-capabilities/ipc/platform-research.md"
+        "docs/02-capabilities/ipc/platform-research.md",
+        "docs/02-capabilities/ipc/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://man7.org/linux/man-pages/man7/pthreads.7.html",
@@ -6944,9 +7060,10 @@
       "url": "https://pubs.opengroup.org/onlinepubs/9799919799/functions/pipe.html",
       "host": "pubs.opengroup.org",
       "sources": [
-        "docs/02-capabilities/ipc/platform-research.md"
+        "docs/02-capabilities/ipc/platform-research.md",
+        "docs/02-capabilities/ipc/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://pubs.opengroup.org/onlinepubs/9799919799/functions/posix_spawn.html",
@@ -6970,9 +7087,10 @@
       "url": "https://pubs.opengroup.org/onlinepubs/9799919799/functions/write.html",
       "host": "pubs.opengroup.org",
       "sources": [
-        "docs/02-capabilities/ipc/platform-research.md"
+        "docs/02-capabilities/ipc/platform-research.md",
+        "docs/02-capabilities/ipc/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://pubs.opengroup.org/onlinepubs/9799919799/utilities/pax.html",
@@ -8515,6 +8633,12 @@
         "kind": "optionally-uses",
         "target": "rm.runtime.cancellation",
         "evidence": "../../02-capabilities/process/control.md"
+      },
+      {
+        "source": "rm.ipc.byte-pipe",
+        "kind": "optionally-uses",
+        "target": "rm.runtime.cancellation",
+        "evidence": "../../02-capabilities/ipc/byte-pipe.md"
       },
       {
         "source": "rm.security.random",
@@ -24973,12 +25097,114 @@
       "assertions": []
     },
     {
+      "id": "RM-IPC-BENCH-0001",
+      "source": "docs/02-capabilities/ipc/benchmarks.md",
+      "line": 7,
+      "kind": "benchmark",
+      "domain": "ipc",
+      "benchmark_scenarios": [
+        "rm.benchmark.ipc.pipe-create-close@1"
+      ]
+    },
+    {
+      "id": "RM-IPC-BENCH-0002",
+      "source": "docs/02-capabilities/ipc/benchmarks.md",
+      "line": 8,
+      "kind": "benchmark",
+      "domain": "ipc",
+      "benchmark_scenarios": [
+        "rm.benchmark.ipc.pipe-transfer@1"
+      ]
+    },
+    {
+      "id": "RM-IPC-BENCH-0003",
+      "source": "docs/02-capabilities/ipc/benchmarks.md",
+      "line": 9,
+      "kind": "benchmark",
+      "domain": "ipc",
+      "benchmark_scenarios": [
+        "rm.benchmark.ipc.pipe-concurrent-writers@1"
+      ]
+    },
+    {
+      "id": "RM-IPC-BENCH-0004",
+      "source": "docs/02-capabilities/ipc/benchmarks.md",
+      "line": 10,
+      "kind": "benchmark",
+      "domain": "ipc",
+      "benchmark_scenarios": [
+        "rm.benchmark.ipc.pipe-async-scale@1"
+      ]
+    },
+    {
+      "id": "RM-IPC-BENCH-0005",
+      "source": "docs/02-capabilities/ipc/benchmarks.md",
+      "line": 11,
+      "kind": "benchmark",
+      "domain": "ipc",
+      "benchmark_scenarios": [
+        "rm.benchmark.ipc.pipe-process-redirection@1"
+      ]
+    },
+    {
+      "id": "RM-IPC-BENCH-0006",
+      "source": "docs/02-capabilities/ipc/benchmarks.md",
+      "line": 12,
+      "kind": "benchmark",
+      "domain": "ipc",
+      "benchmark_scenarios": [
+        "rm.benchmark.ipc.pipe-terminal-paths@1"
+      ]
+    },
+    {
+      "id": "RM-IPC-BENCH-0007",
+      "source": "docs/02-capabilities/ipc/benchmarks.md",
+      "line": 13,
+      "kind": "benchmark",
+      "domain": "ipc",
+      "benchmark_scenarios": [
+        "rm.benchmark.ipc.pipe-create-close@1",
+        "rm.benchmark.ipc.pipe-transfer@1",
+        "rm.benchmark.ipc.pipe-concurrent-writers@1",
+        "rm.benchmark.ipc.pipe-async-scale@1",
+        "rm.benchmark.ipc.pipe-process-redirection@1",
+        "rm.benchmark.ipc.pipe-terminal-paths@1"
+      ]
+    },
+    {
+      "id": "RM-IPC-BENCH-0008",
+      "source": "docs/02-capabilities/ipc/benchmarks.md",
+      "line": 14,
+      "kind": "benchmark",
+      "domain": "ipc",
+      "benchmark_scenarios": [
+        "rm.benchmark.ipc.pipe-create-close@1",
+        "rm.benchmark.ipc.pipe-transfer@1",
+        "rm.benchmark.ipc.pipe-concurrent-writers@1",
+        "rm.benchmark.ipc.pipe-async-scale@1",
+        "rm.benchmark.ipc.pipe-process-redirection@1",
+        "rm.benchmark.ipc.pipe-terminal-paths@1"
+      ]
+    },
+    {
+      "id": "RM-IPC-BENCH-0009",
+      "source": "docs/02-capabilities/ipc/benchmarks.md",
+      "line": 15,
+      "kind": "benchmark",
+      "domain": "ipc",
+      "benchmark_scenarios": [
+        "rm.benchmark.ipc.pipe-async-scale@1"
+      ]
+    },
+    {
       "id": "RM-IPC-PIPE-0001",
       "source": "docs/02-capabilities/ipc/byte-pipe.md",
       "line": 17,
       "kind": "capability",
       "domain": "ipc",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.ipc.byte-pipe@1"
+      ]
     },
     {
       "id": "RM-IPC-PIPE-0002",
@@ -24986,7 +25212,9 @@
       "line": 18,
       "kind": "capability",
       "domain": "ipc",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.ipc.byte-pipe@1"
+      ]
     },
     {
       "id": "RM-IPC-PIPE-0003",
@@ -24994,7 +25222,9 @@
       "line": 19,
       "kind": "capability",
       "domain": "ipc",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.ipc.byte-pipe@1"
+      ]
     },
     {
       "id": "RM-IPC-PIPE-0004",
@@ -25002,7 +25232,9 @@
       "line": 20,
       "kind": "capability",
       "domain": "ipc",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.ipc.byte-pipe@1"
+      ]
     },
     {
       "id": "RM-IPC-PIPE-0005",
@@ -25010,7 +25242,9 @@
       "line": 21,
       "kind": "capability",
       "domain": "ipc",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.ipc.byte-pipe@1"
+      ]
     },
     {
       "id": "RM-IPC-PIPE-0006",
@@ -25018,7 +25252,9 @@
       "line": 22,
       "kind": "capability",
       "domain": "ipc",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.ipc.byte-pipe@1"
+      ]
     },
     {
       "id": "RM-IPC-PIPE-0007",
@@ -25026,7 +25262,9 @@
       "line": 23,
       "kind": "capability",
       "domain": "ipc",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.ipc.byte-pipe@1"
+      ]
     },
     {
       "id": "RM-IPC-PIPE-0008",
@@ -25034,7 +25272,9 @@
       "line": 24,
       "kind": "capability",
       "domain": "ipc",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.ipc.byte-pipe@1"
+      ]
     },
     {
       "id": "RM-IPC-PIPE-0009",
@@ -25042,7 +25282,9 @@
       "line": 25,
       "kind": "capability",
       "domain": "ipc",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.ipc.byte-pipe@1"
+      ]
     },
     {
       "id": "RM-IPC-PIPE-0010",
@@ -25050,7 +25292,9 @@
       "line": 26,
       "kind": "capability",
       "domain": "ipc",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.ipc.byte-pipe@1"
+      ]
     },
     {
       "id": "RM-IPC-PIPE-0011",
@@ -25058,7 +25302,9 @@
       "line": 27,
       "kind": "capability",
       "domain": "ipc",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.ipc.byte-pipe@1"
+      ]
     },
     {
       "id": "RM-IPC-PIPE-0012",
@@ -25066,7 +25312,9 @@
       "line": 28,
       "kind": "capability",
       "domain": "ipc",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.ipc.byte-pipe@1"
+      ]
     },
     {
       "id": "RM-IPC-PIPE-0013",
@@ -25074,7 +25322,9 @@
       "line": 29,
       "kind": "capability",
       "domain": "ipc",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.ipc.byte-pipe@1"
+      ]
     },
     {
       "id": "RM-IPC-PIPE-0014",
@@ -25082,7 +25332,9 @@
       "line": 30,
       "kind": "capability",
       "domain": "ipc",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.ipc.byte-pipe@1"
+      ]
     },
     {
       "id": "RM-IPC-PIPE-0015",
@@ -25090,7 +25342,229 @@
       "line": 31,
       "kind": "capability",
       "domain": "ipc",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.ipc.byte-pipe@1"
+      ]
+    },
+    {
+      "id": "RM-IPC-QUALITY-0001",
+      "source": "docs/02-capabilities/ipc/cross-cutting.md",
+      "line": 20,
+      "kind": "capability",
+      "domain": "ipc",
+      "assertions": [
+        "rm.assertion.ipc.quality-review@1"
+      ]
+    },
+    {
+      "id": "RM-IPC-QUALITY-0002",
+      "source": "docs/02-capabilities/ipc/cross-cutting.md",
+      "line": 22,
+      "kind": "capability",
+      "domain": "ipc",
+      "assertions": [
+        "rm.assertion.ipc.quality-review@1"
+      ]
+    },
+    {
+      "id": "RM-IPC-QUALITY-0003",
+      "source": "docs/02-capabilities/ipc/cross-cutting.md",
+      "line": 24,
+      "kind": "capability",
+      "domain": "ipc",
+      "assertions": [
+        "rm.assertion.ipc.quality-review@1"
+      ]
+    },
+    {
+      "id": "RM-IPC-DEPENDENCY-0001",
+      "source": "docs/02-capabilities/ipc/dependencies.md",
+      "line": 29,
+      "kind": "capability",
+      "domain": "ipc",
+      "assertions": [
+        "rm.assertion.ipc.dependencies@1"
+      ]
+    },
+    {
+      "id": "RM-IPC-DEPENDENCY-0002",
+      "source": "docs/02-capabilities/ipc/dependencies.md",
+      "line": 31,
+      "kind": "capability",
+      "domain": "ipc",
+      "assertions": [
+        "rm.assertion.ipc.dependencies@1"
+      ]
+    },
+    {
+      "id": "RM-IPC-DEPENDENCY-0003",
+      "source": "docs/02-capabilities/ipc/dependencies.md",
+      "line": 33,
+      "kind": "capability",
+      "domain": "ipc",
+      "assertions": [
+        "rm.assertion.ipc.dependencies@1"
+      ]
+    },
+    {
+      "id": "RM-IPC-DEPENDENCY-0004",
+      "source": "docs/02-capabilities/ipc/dependencies.md",
+      "line": 35,
+      "kind": "capability",
+      "domain": "ipc",
+      "assertions": [
+        "rm.assertion.ipc.dependencies@1"
+      ]
+    },
+    {
+      "id": "RM-IPC-OWNER-0001",
+      "source": "docs/02-capabilities/ipc/ownership.md",
+      "line": 25,
+      "kind": "capability",
+      "domain": "ipc",
+      "assertions": [
+        "rm.assertion.ipc.ownership@1"
+      ]
+    },
+    {
+      "id": "RM-IPC-OWNER-0002",
+      "source": "docs/02-capabilities/ipc/ownership.md",
+      "line": 27,
+      "kind": "capability",
+      "domain": "ipc",
+      "assertions": [
+        "rm.assertion.ipc.ownership@1"
+      ]
+    },
+    {
+      "id": "RM-IPC-OWNER-0003",
+      "source": "docs/02-capabilities/ipc/ownership.md",
+      "line": 29,
+      "kind": "capability",
+      "domain": "ipc",
+      "assertions": [
+        "rm.assertion.ipc.ownership@1"
+      ]
+    },
+    {
+      "id": "RM-IPC-OWNER-0004",
+      "source": "docs/02-capabilities/ipc/ownership.md",
+      "line": 31,
+      "kind": "capability",
+      "domain": "ipc",
+      "assertions": [
+        "rm.assertion.ipc.ownership@1"
+      ]
+    },
+    {
+      "id": "RM-IPC-PROMOTION-0001",
+      "source": "docs/02-capabilities/ipc/promotion-review.md",
+      "line": 27,
+      "kind": "capability",
+      "domain": "ipc",
+      "assertions": [
+        "rm.assertion.ipc.promotion-boundary@1"
+      ]
+    },
+    {
+      "id": "RM-IPC-PROMOTION-0002",
+      "source": "docs/02-capabilities/ipc/promotion-review.md",
+      "line": 29,
+      "kind": "capability",
+      "domain": "ipc",
+      "assertions": [
+        "rm.assertion.ipc.promotion-boundary@1"
+      ]
+    },
+    {
+      "id": "RM-IPC-PROMOTION-0003",
+      "source": "docs/02-capabilities/ipc/promotion-review.md",
+      "line": 31,
+      "kind": "capability",
+      "domain": "ipc",
+      "assertions": [
+        "rm.assertion.ipc.promotion-boundary@1"
+      ]
+    },
+    {
+      "id": "RM-IPC-SOURCE-0001",
+      "source": "docs/02-capabilities/ipc/source-review.md",
+      "line": 18,
+      "kind": "capability",
+      "domain": "ipc",
+      "assertions": [
+        "rm.assertion.ipc.source-review@1"
+      ]
+    },
+    {
+      "id": "RM-IPC-SOURCE-0002",
+      "source": "docs/02-capabilities/ipc/source-review.md",
+      "line": 20,
+      "kind": "capability",
+      "domain": "ipc",
+      "assertions": [
+        "rm.assertion.ipc.source-review@1"
+      ]
+    },
+    {
+      "id": "RM-IPC-SOURCE-0003",
+      "source": "docs/02-capabilities/ipc/source-review.md",
+      "line": 22,
+      "kind": "capability",
+      "domain": "ipc",
+      "assertions": [
+        "rm.assertion.ipc.source-review@1"
+      ]
+    },
+    {
+      "id": "RM-IPC-SOURCE-0004",
+      "source": "docs/02-capabilities/ipc/source-review.md",
+      "line": 24,
+      "kind": "capability",
+      "domain": "ipc",
+      "assertions": [
+        "rm.assertion.ipc.source-review@1"
+      ]
+    },
+    {
+      "id": "RM-IPC-TRACE-0001",
+      "source": "docs/02-capabilities/ipc/traceability.md",
+      "line": 26,
+      "kind": "capability",
+      "domain": "ipc",
+      "assertions": [
+        "rm.assertion.ipc.promotion-boundary@1"
+      ]
+    },
+    {
+      "id": "RM-IPC-TRACE-0002",
+      "source": "docs/02-capabilities/ipc/traceability.md",
+      "line": 28,
+      "kind": "capability",
+      "domain": "ipc",
+      "assertions": [
+        "rm.assertion.ipc.promotion-boundary@1"
+      ]
+    },
+    {
+      "id": "RM-IPC-TRACE-0003",
+      "source": "docs/02-capabilities/ipc/traceability.md",
+      "line": 30,
+      "kind": "capability",
+      "domain": "ipc",
+      "assertions": [
+        "rm.assertion.ipc.promotion-boundary@1"
+      ]
+    },
+    {
+      "id": "RM-IPC-TRACE-0004",
+      "source": "docs/02-capabilities/ipc/traceability.md",
+      "line": 32,
+      "kind": "capability",
+      "domain": "ipc",
+      "assertions": [
+        "rm.assertion.ipc.promotion-boundary@1"
+      ]
     },
     {
       "id": "RM-LIFECYCLE-ACTIVATION-0001",
@@ -48935,56 +49409,56 @@
     {
       "id": "RM-READINESS-CONTRADICTION-0001",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 32,
+      "line": 33,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0002",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 34,
+      "line": 35,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0003",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 36,
+      "line": 37,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0004",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 38,
+      "line": 39,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-GRAPH-0001",
       "source": "docs/04-ecosystem/consistency-readiness/dependency-graph.md",
-      "line": 71,
+      "line": 73,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-GRAPH-0002",
       "source": "docs/04-ecosystem/consistency-readiness/dependency-graph.md",
-      "line": 73,
+      "line": 75,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-GRAPH-0003",
       "source": "docs/04-ecosystem/consistency-readiness/dependency-graph.md",
-      "line": 75,
+      "line": 77,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-GRAPH-0004",
       "source": "docs/04-ecosystem/consistency-readiness/dependency-graph.md",
-      "line": 77,
+      "line": 79,
       "kind": "governance",
       "domain": null
     },
@@ -50911,8 +51385,8 @@
     },
     {
       "source": "docs/01-architecture/architecture-model.md",
-      "sha256": "176edd9150807f85c36ee501706bc8394796efeddcb56e8e7f7b679a068462a0",
-      "lines": 621
+      "sha256": "6eb9db323a362027e1834a695cf297f685583dfde2e9fef2ad0b6dad7c706056",
+      "lines": 627
     },
     {
       "source": "docs/01-architecture/behavioral-contracts.md",
@@ -52886,8 +53360,8 @@
     },
     {
       "source": "docs/02-capabilities/ipc/benchmarks.md",
-      "sha256": "5a57c248a04c47779fe9ee36aa74dabd86611efae631d7026f198d535463a8a7",
-      "lines": 16
+      "sha256": "fd20702317b960920d8563d8ad9b78ae15043f77b13dcb181bb76a8199150fb8",
+      "lines": 27
     },
     {
       "source": "docs/02-capabilities/ipc/byte-pipe.md",
@@ -52900,14 +53374,44 @@
       "lines": 19
     },
     {
+      "source": "docs/02-capabilities/ipc/cross-cutting.md",
+      "sha256": "04ff2e3f23a8496fb40739cd73953d4cd0c5e9b4ca817633d39f1ec38b58c50f",
+      "lines": 24
+    },
+    {
+      "source": "docs/02-capabilities/ipc/dependencies.md",
+      "sha256": "22c0e3d0df9927b7225335f17c0d57023a4177d7f856898023d1b8ae51ddb5c5",
+      "lines": 35
+    },
+    {
+      "source": "docs/02-capabilities/ipc/ownership.md",
+      "sha256": "31a57634e5f64783e15e271df5f98083902e56fca124c3da08cbcf5770465a21",
+      "lines": 31
+    },
+    {
       "source": "docs/02-capabilities/ipc/platform-research.md",
       "sha256": "202821e259e47c4067a4fff202b63901ad4ad30dc774616eee919f1c359e9d62",
       "lines": 27
     },
     {
-      "source": "docs/02-capabilities/ipc/README.md",
-      "sha256": "cf4382c3fb0bbd006a0c6f79a681b0e3a943b9dbcb51835782dcec8774ac6ed0",
+      "source": "docs/02-capabilities/ipc/promotion-review.md",
+      "sha256": "5d074f2367fc51589761097e6d07c645b0f4fe939b629264dcec3d2be8a5a26d",
       "lines": 31
+    },
+    {
+      "source": "docs/02-capabilities/ipc/README.md",
+      "sha256": "eae80459ddd44db558e495034946fa1863837dff1eff716461ed9923a193a5f4",
+      "lines": 38
+    },
+    {
+      "source": "docs/02-capabilities/ipc/source-review.md",
+      "sha256": "7b6aa8846b491ae936d39f557f3fce05a6f3ffd68120962f1a8dd37c3cbab8f7",
+      "lines": 24
+    },
+    {
+      "source": "docs/02-capabilities/ipc/traceability.md",
+      "sha256": "103a89d969afe9eb4697ddb6f3df2f45be32c5dfb92ca9cb19c153f4040cabd1",
+      "lines": 32
     },
     {
       "source": "docs/02-capabilities/lifecycle/activation.md",
@@ -55426,7 +55930,7 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/audit-report.md",
-      "sha256": "e848c70da7191370d95c3cee9b5e241fae596f505c5a9ac32fa14b9bfdc8274d",
+      "sha256": "705ceaf4622f11b66002d39e73272901a0b4958f403674b8b54e3e1599714eda",
       "lines": 68
     },
     {
@@ -55441,18 +55945,18 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/closure-backlog.md",
-      "sha256": "612144eef05640a4b1f0dcf362ae6483d8080899b5d32f6e41349f4abe1ce524",
+      "sha256": "0fd2852a495325fcd390e27714ff529670ead9e4e28ab3517032405dcbaa5c69",
       "lines": 19
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "sha256": "82c43e21b87142d3c42a060207d0b30dc35d0e578120e8a63bd576a9b66510da",
-      "lines": 38
+      "sha256": "5b061dc8141ca791d01c868210ceb6e698b0f30d01039348b0d7221cb534d10f",
+      "lines": 39
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/dependency-graph.md",
-      "sha256": "b7a11ab6bbc5c593c25c4cf8d51227a4258c26a3c1ca5d97fc5b667d84a6ba98",
-      "lines": 84
+      "sha256": "62d011c83143d46cc758778b77092b65c534da971bc603a04903f1d01a0fc346",
+      "lines": 86
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/domain-readiness-schema.md",
@@ -55481,12 +55985,12 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/promotion-scorecards.md",
-      "sha256": "c1e750d46fabbf6163bf8df8ea9aa879290f9a1229eabbe57b19ac9b291f1447",
+      "sha256": "e1c53abdb5daf96e5e3115e868a7b9eb9a10cbb933f3767d52f1df81b3405351",
       "lines": 78
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/quality-matrix.md",
-      "sha256": "733441fbcfa2d4e075e4526398db66ddafc9ab1e3d39f3c49d242a8edbdfc15d",
+      "sha256": "a3340cdf6d09eacf69379679097122ea5313de0a0e4d6e0e9185fdd7e2d0dfcd",
       "lines": 73
     },
     {
@@ -55726,8 +56230,8 @@
     },
     {
       "source": "docs/06-roadmap/roadmap.md",
-      "sha256": "9c4064e1b27886e8ceada9d74a36e648d2c3f60f9a90fce790ec9f15ce830fa3",
-      "lines": 233
+      "sha256": "1cbce948e0614160330d14f98b229abd21283b2eab58c5e2df3abbac9cf13a4e",
+      "lines": 237
     },
     {
       "source": "docs/adr/0001-capability-first-platform.md",

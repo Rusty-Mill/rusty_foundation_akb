@@ -36,7 +36,7 @@ The table uses conjunctive gates. It does not calculate a weighted score, and it
 | [input](../../02-capabilities/input/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | absent | **no** |
 | [interchange](../../02-capabilities/interchange/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | absent | **no** |
 | [internationalization](../../02-capabilities/internationalization/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | absent | **no** |
-| [ipc](../../02-capabilities/ipc/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | absent | **no** |
+| [ipc](../../02-capabilities/ipc/README.md) | pass | pass | pass | pass | pass | pass | pass | pass | proposed | **yes** |
 | [lifecycle](../../02-capabilities/lifecycle/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | absent | **no** |
 | [memory](../../02-capabilities/memory/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | absent | **no** |
 | [messaging](../../02-capabilities/messaging/README.md) | pass | pass | pass | pass | pass | unknown | unknown | unknown | absent | **no** |
@@ -75,4 +75,4 @@ The table uses conjunctive gates. It does not calculate a weighted score, and it
 - Contract/conformance/benchmark-plan passes prove that structured Draft specifications exist.
 - Assertion and benchmark maps prove planned traceability, not executable evidence.
 - Cross-cutting, source, and owner gates pass only from explicit `Review status` metadata in their authoritative domain artifacts; file presence and keywords are insufficient.
-- 5 domain(s) currently satisfy generated Experimental eligibility evidence: application-sync, filesystem, process, runtime-time, windowing. Eligibility does not change maturity or authorize implementation; an explicit reviewed promotion record remains required.
+- 6 domain(s) currently satisfy generated Experimental eligibility evidence: application-sync, filesystem, ipc, process, runtime-time, windowing. Eligibility does not change maturity or authorize implementation; an explicit reviewed promotion record remains required.

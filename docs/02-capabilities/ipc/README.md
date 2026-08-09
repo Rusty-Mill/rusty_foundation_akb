@@ -3,6 +3,8 @@
 | Field | Value |
 |---|---|
 | Status | Draft domain analysis |
+| Domain version | 0.1.1 |
+| Accountable role | IPC capability owner |
 | Purpose | Define local anonymous byte transport independently from files, process spawning, terminals, and message protocols |
 
 ## Initial boundary
@@ -28,4 +30,9 @@ flowchart LR
 - [Platform research](platform-research.md)
 - [Conformance specification](conformance.md)
 - [Benchmark specification](benchmarks.md)
-
+- [Assertion and benchmark traceability](traceability.md)
+- [Dependency and profile composition](dependencies.md)
+- [Cross-cutting review](cross-cutting.md)
+- [Source review](source-review.md)
+- [Ownership and bounded trial plan](ownership.md)
+- [Experimental promotion review](promotion-review.md)

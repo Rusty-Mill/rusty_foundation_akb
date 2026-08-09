@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.85.0
+**Version:** 1.86.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -619,3 +619,9 @@ This evidence does not collapse a path into authority, an opened handle into per
 Process foundations 0.1.1 apply the readiness schema to explicit shell-free launch, native argument/environment construction, deny-by-default inheritance, startup milestones, owned-child identity, wait/control, executable resolution, supervision containment, and shell-free pipeline composition. Stable assertions and benchmark scenarios cover every process capability/service and benchmark requirement; source, quality, ownership, dependency/profile, and proposed-promotion reviews are explicit. The source-linked graph adds only source-declared dependencies for executable resolution and owned-child control.
 
 This evidence does not collapse creation into image confirmation or readiness, PID into authority, control dispatch into terminal state, known descendants into containment, or partial pipeline success into reconciliation. Process remains Draft: no provider, parser convention, service manager, P-level, sandbox, runtime, public API, repository layout, trial, benchmark budget, or release claim is authorized.
+
+## 22. IPC byte-pipe readiness closure
+
+IPC foundations 0.1.1 apply the readiness schema to a local anonymous unidirectional byte stream with independently owned endpoints, deny-by-default transfer, partial progress, reference-counted EOF, broken-peer containment, bounded backpressure, scoped write atomicity, sync completeness, Q0–Q3 async quality, and cancellation truth. Stable assertions and benchmark scenarios cover every byte-pipe and benchmark requirement; source, quality, ownership, dependency/profile, and proposed-promotion reviews are explicit. The graph adds only the source-declared optional cancellation edge; process consumption and pipeline composition remain separately modeled.
+
+This evidence does not collapse bytes into messages or text, local anonymity into confidentiality/authentication, write acceptance into peer consumption, observed capacity into a guarantee, Q1 adaptation into native async, or endpoint data flow into a capability dependency. IPC remains Draft: no provider, runtime/reactor, capacity, atomicity bound, public API, crate layout, trial, benchmark budget, or release claim is authorized.

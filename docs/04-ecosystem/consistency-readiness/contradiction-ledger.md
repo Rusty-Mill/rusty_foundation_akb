@@ -1,7 +1,7 @@
 # Cross-domain contradiction ledger
 
 **Status:** Active reviewed evidence  
-**Scope:** Architecture model 1.85.0; schema-validated runtime/time, application synchronization, windowing, filesystem, and process readiness reviews
+**Scope:** Architecture model 1.86.0; schema-validated runtime/time, application synchronization, windowing, filesystem, process, and IPC readiness reviews
 
 The ledger records proposition-level review. “No contradiction found” is bounded to named sources and rules; it is not a repository-wide proof.
 
@@ -26,6 +26,7 @@ The ledger records proposition-level review. “No contradiction found” is bou
 | CL-017 | Window state, surface readiness, presentation, focus, accessibility exposure, and capture protection do not collapse into one success milestone. | [Windowing review](../../02-capabilities/windowing/promotion-review.md), [window contract](../../02-capabilities/windowing/window.md), [surface contract](../../02-capabilities/windowing/presentation-surface.md), [graphics](../../02-capabilities/graphics/README.md), [accessibility](../../02-capabilities/accessibility/README.md) | Consistent | Preserve separate typed observations/oracles and qualify provider-specific security/availability claims. |
 | CL-018 | Filesystem names, authority, object identity, namespace visibility, transfer completion, and durability do not collapse into one path- or success-based claim. | [Filesystem review](../../02-capabilities/filesystem/promotion-review.md), [path model](../../02-capabilities/filesystem/path-model.md), [resolution](../../02-capabilities/filesystem/resolve.md), [metadata](../../02-capabilities/filesystem/metadata.md), [replacement](../../02-capabilities/filesystem/atomic-replace.md), [durability](../../02-capabilities/filesystem/durability-model.md) | Consistent | Preserve explicit directory authority, scoped identity, R-level containment, partial progress, atomic-visibility outcomes, and distinct D-level oracles. |
 | CL-019 | Process creation, requested-image execution, readiness, control dispatch, terminal observation, reaping, and descendant containment do not collapse into one launch or success claim. | [Process review](../../02-capabilities/process/promotion-review.md), [launch model](../../02-capabilities/process/launch-model.md), [spawn](../../02-capabilities/process/spawn.md), [control](../../02-capabilities/process/control.md), [supervision](../../02-capabilities/process/supervision.md), [pipeline](../../02-capabilities/process/pipeline.md) | Consistent | Preserve owned-object authority, typed milestones, separate terminal oracles, P-level containment, and full child/endpoint reconciliation. |
+| CL-020 | Byte-stream write acceptance, buffering, read consumption, endpoint ownership, EOF, and process/pipeline completion do not collapse into one delivery claim. | [IPC review](../../02-capabilities/ipc/promotion-review.md), [byte-pipe](../../02-capabilities/ipc/byte-pipe.md), [process stdio](../../02-capabilities/process/stdio-model.md), [pipeline](../../02-capabilities/process/pipeline.md) | Consistent | Preserve directional authority, exact progress, reference-sensitive EOF, bounded backpressure, Q-levels, and full inherited-endpoint reconciliation. |
 
 ## Finding rules
 
