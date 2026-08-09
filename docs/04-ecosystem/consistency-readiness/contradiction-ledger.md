@@ -1,7 +1,7 @@
 # Cross-domain contradiction ledger
 
 **Status:** Active reviewed evidence  
-**Scope:** Architecture model 1.88.0; schema-validated readiness reviews plus the runtime/filesystem/process/IPC/async-I/O batch integration review
+**Scope:** Architecture model 1.89.0; schema-validated readiness reviews, foundation-batch integration, and secure-random capability dossier
 
 The ledger records proposition-level review. “No contradiction found” is bounded to named sources and rules; it is not a repository-wide proof.
 
@@ -29,6 +29,7 @@ The ledger records proposition-level review. “No contradiction found” is bou
 | CL-020 | Byte-stream write acceptance, buffering, read consumption, endpoint ownership, EOF, and process/pipeline completion do not collapse into one delivery claim. | [IPC review](../../02-capabilities/ipc/promotion-review.md), [byte-pipe](../../02-capabilities/ipc/byte-pipe.md), [process stdio](../../02-capabilities/process/stdio-model.md), [pipeline](../../02-capabilities/process/pipeline.md) | Consistent | Preserve directional authority, exact progress, reference-sensitive EOF, bounded backpressure, Q-levels, and full inherited-endpoint reconciliation. |
 | CL-021 | Native readiness, completion records, engine dequeue, wake, consumer resume, cancellation, and domain effects do not collapse into one async completion claim. | [Async I/O review](../../02-capabilities/async-io/promotion-review.md), [operation model](../../02-capabilities/async-io/operation-model.md), [readiness/completion](../../02-capabilities/async-io/readiness-completion.md), [cancellation/lifetime](../../02-capabilities/async-io/cancellation-lifetime.md), [runtime integration](../../02-capabilities/async-io/runtime-integration.md) | Consistent | Preserve generation/lifetime invariants, exact stage boundaries, provider strategy labels, and consuming-domain semantic ownership. |
 | CL-022 | Reused provider lifecycle invariants do not automatically create a universal application-facing capability or stable dependency-graph node. | [Batch review](foundation-batch-integration-review.md), [async composition](../../02-capabilities/async-io/dependencies.md), [capability graph](../../02-capabilities/graph-model.md), [ADR-0160](../../adr/0160-async-io-lifecycle-is-a-provider-framework-not-a-universal-capability.md) | Resolved | Keep framework conformance separate from capability selection and leave domain progress/effect/authority semantics with domain owners. |
+| CL-023 | Secure-random provider provenance and integration evidence cannot be replaced by output uniqueness, statistics, entropy estimates, or cryptographic-looking samples. | [Random dossier](../../02-capabilities/security/random-readiness-review.md), [random contract](../../02-capabilities/security/random.md), [conformance](../../02-capabilities/security/conformance.md), [ADR-0161](../../adr/0161-random-output-tests-do-not-certify-unpredictability.md) | Resolved | Treat statistics only as bounded investigation triggers; retain no output-derived artifacts and bind claims to exact provider/module/configuration/lifecycle evidence. |
 
 ## Finding rules
 

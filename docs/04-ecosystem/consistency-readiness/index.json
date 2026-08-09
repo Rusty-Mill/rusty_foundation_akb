@@ -4,11 +4,11 @@
   "authority": "docs/01-architecture/architecture-model.md",
   "generated_from": "Markdown; this index is derived and non-authoritative",
   "summary": {
-    "markdown_documents": 1145,
-    "internal_links": 2240,
-    "requirements": 5322,
+    "markdown_documents": 1152,
+    "internal_links": 2276,
+    "requirements": 5348,
     "domains": 62,
-    "adrs": 160,
+    "adrs": 161,
     "errors": 0,
     "warnings": 0,
     "domains_with_conformance": 62,
@@ -16,7 +16,7 @@
     "domains_with_direct_requirement_assertion_map": 9,
     "domains_with_direct_benchmark_scenario_map": 9,
     "benchmark_scenarios": 62,
-    "external_sources": 637,
+    "external_sources": 638,
     "external_sources_with_review_record": 74,
     "domains_with_dedicated_cross_cutting_analysis": 31,
     "domains_with_complete_planned_traceability": 9,
@@ -1832,10 +1832,10 @@
       "id": "security",
       "source": "docs/02-capabilities/security/README.md",
       "status": "Draft domain analysis",
-      "requirements": 246,
-      "capability_requirements": 246,
+      "requirements": 272,
+      "capability_requirements": 267,
       "conformance_requirements": 0,
-      "benchmark_requirements": 0,
+      "benchmark_requirements": 5,
       "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
@@ -4386,7 +4386,8 @@
       "url": "https://developer.apple.com/documentation/security/secrandomcopybytes(_:_:_:",
       "host": "developer.apple.com",
       "sources": [
-        "docs/02-capabilities/security/platform-research.md"
+        "docs/02-capabilities/security/platform-research.md",
+        "docs/02-capabilities/security/random-source-review.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -4812,6 +4813,14 @@
       "host": "docs.kernel.org",
       "sources": [
         "docs/02-capabilities/storage/platform-research.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
+      "url": "https://docs.kernel.org/admin-guide/kernel-parameters.html",
+      "host": "docs.kernel.org",
+      "sources": [
+        "docs/02-capabilities/security/random-source-review.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -5660,7 +5669,8 @@
       "url": "https://learn.microsoft.com/en-us/windows/win32/api/bcrypt/nf-bcrypt-bcryptgenrandom",
       "host": "learn.microsoft.com",
       "sources": [
-        "docs/02-capabilities/security/platform-research.md"
+        "docs/02-capabilities/security/platform-research.md",
+        "docs/02-capabilities/security/random-source-review.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -6768,7 +6778,8 @@
       "url": "https://man7.org/linux/man-pages/man2/getrandom.2.html",
       "host": "man7.org",
       "sources": [
-        "docs/02-capabilities/security/platform-research.md"
+        "docs/02-capabilities/security/platform-research.md",
+        "docs/02-capabilities/security/random-source-review.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -42064,6 +42075,46 @@
       "assertions": []
     },
     {
+      "id": "RM-SECURITY-RANDOM-BENCH-0001",
+      "source": "docs/02-capabilities/security/benchmarks.md",
+      "line": 13,
+      "kind": "benchmark",
+      "domain": "security",
+      "benchmark_scenarios": []
+    },
+    {
+      "id": "RM-SECURITY-RANDOM-BENCH-0002",
+      "source": "docs/02-capabilities/security/benchmarks.md",
+      "line": 14,
+      "kind": "benchmark",
+      "domain": "security",
+      "benchmark_scenarios": []
+    },
+    {
+      "id": "RM-SECURITY-RANDOM-BENCH-0003",
+      "source": "docs/02-capabilities/security/benchmarks.md",
+      "line": 15,
+      "kind": "benchmark",
+      "domain": "security",
+      "benchmark_scenarios": []
+    },
+    {
+      "id": "RM-SECURITY-RANDOM-BENCH-0004",
+      "source": "docs/02-capabilities/security/benchmarks.md",
+      "line": 16,
+      "kind": "benchmark",
+      "domain": "security",
+      "benchmark_scenarios": []
+    },
+    {
+      "id": "RM-SECURITY-RANDOM-BENCH-0005",
+      "source": "docs/02-capabilities/security/benchmarks.md",
+      "line": 17,
+      "kind": "benchmark",
+      "domain": "security",
+      "benchmark_scenarios": []
+    },
+    {
       "id": "RM-CRYPTO-AEAD-0001",
       "source": "docs/02-capabilities/security/crypto-aead.md",
       "line": 5,
@@ -43651,6 +43702,174 @@
       "id": "RM-PKI-TRUST-0007",
       "source": "docs/02-capabilities/security/pki-trust-stores.md",
       "line": 17,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-RANDOM-QUALITY-0001",
+      "source": "docs/02-capabilities/security/random-cross-cutting-review.md",
+      "line": 20,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-RANDOM-QUALITY-0002",
+      "source": "docs/02-capabilities/security/random-cross-cutting-review.md",
+      "line": 22,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-RANDOM-QUALITY-0003",
+      "source": "docs/02-capabilities/security/random-cross-cutting-review.md",
+      "line": 24,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-RANDOM-DEPENDENCY-0001",
+      "source": "docs/02-capabilities/security/random-dependencies.md",
+      "line": 27,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-RANDOM-DEPENDENCY-0002",
+      "source": "docs/02-capabilities/security/random-dependencies.md",
+      "line": 29,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-RANDOM-DEPENDENCY-0003",
+      "source": "docs/02-capabilities/security/random-dependencies.md",
+      "line": 31,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-RANDOM-DEPENDENCY-0004",
+      "source": "docs/02-capabilities/security/random-dependencies.md",
+      "line": 33,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-RANDOM-OWNER-0001",
+      "source": "docs/02-capabilities/security/random-ownership.md",
+      "line": 25,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-RANDOM-OWNER-0002",
+      "source": "docs/02-capabilities/security/random-ownership.md",
+      "line": 27,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-RANDOM-OWNER-0003",
+      "source": "docs/02-capabilities/security/random-ownership.md",
+      "line": 29,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-RANDOM-OWNER-0004",
+      "source": "docs/02-capabilities/security/random-ownership.md",
+      "line": 31,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-RANDOM-READINESS-0001",
+      "source": "docs/02-capabilities/security/random-readiness-review.md",
+      "line": 23,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-RANDOM-READINESS-0002",
+      "source": "docs/02-capabilities/security/random-readiness-review.md",
+      "line": 25,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-RANDOM-READINESS-0003",
+      "source": "docs/02-capabilities/security/random-readiness-review.md",
+      "line": 27,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-RANDOM-SOURCE-0001",
+      "source": "docs/02-capabilities/security/random-source-review.md",
+      "line": 17,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-RANDOM-SOURCE-0002",
+      "source": "docs/02-capabilities/security/random-source-review.md",
+      "line": 19,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-RANDOM-SOURCE-0003",
+      "source": "docs/02-capabilities/security/random-source-review.md",
+      "line": 21,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-RANDOM-SOURCE-0004",
+      "source": "docs/02-capabilities/security/random-source-review.md",
+      "line": 23,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-RANDOM-TRACE-0001",
+      "source": "docs/02-capabilities/security/random-traceability.md",
+      "line": 27,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-RANDOM-TRACE-0002",
+      "source": "docs/02-capabilities/security/random-traceability.md",
+      "line": 29,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-RANDOM-TRACE-0003",
+      "source": "docs/02-capabilities/security/random-traceability.md",
+      "line": 31,
       "kind": "capability",
       "domain": "security",
       "assertions": []
@@ -50024,28 +50243,28 @@
     {
       "id": "RM-READINESS-CONTRADICTION-0001",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 35,
+      "line": 36,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0002",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 37,
+      "line": 38,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0003",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 39,
+      "line": 40,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0004",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 41,
+      "line": 42,
       "kind": "governance",
       "domain": null
     },
@@ -52035,8 +52254,8 @@
     },
     {
       "source": "docs/01-architecture/architecture-model.md",
-      "sha256": "517be0969eaec55c059362c907eb882624e2ca249ee92af0fd45726b5dbe8f25",
-      "lines": 637
+      "sha256": "e8e1651553c8b2a3eb4943b5f076be1833ac386703936ba425ca0bf547e7afa4",
+      "lines": 643
     },
     {
       "source": "docs/01-architecture/behavioral-contracts.md",
@@ -55635,8 +55854,8 @@
     },
     {
       "source": "docs/02-capabilities/security/benchmarks.md",
-      "sha256": "c514890c677b84f788bd8836fe79afe191426ba42a4414541db57d716edc2a54",
-      "lines": 28
+      "sha256": "ad6b721f3318311a8fbf384ff715475f21bf93d063e481ce368a57fd43b5506f",
+      "lines": 36
     },
     {
       "source": "docs/02-capabilities/security/conformance.md",
@@ -55839,14 +56058,44 @@
       "lines": 38
     },
     {
+      "source": "docs/02-capabilities/security/random-cross-cutting-review.md",
+      "sha256": "109268bc88f8e265fdf78db231e93deb9a82d66d59357ca86653dfa2e71e2ffe",
+      "lines": 24
+    },
+    {
+      "source": "docs/02-capabilities/security/random-dependencies.md",
+      "sha256": "e1a42cac8e9f7c1d78725b1d9ed70e82a95d071e0e6e61f868a0dbf891113241",
+      "lines": 33
+    },
+    {
+      "source": "docs/02-capabilities/security/random-ownership.md",
+      "sha256": "b14484370827cf13f1d8b272a155de0f8332c972bf85cc2331d31902abebb10d",
+      "lines": 31
+    },
+    {
+      "source": "docs/02-capabilities/security/random-readiness-review.md",
+      "sha256": "b424a98369ee890e5fc8180d2b9b6ebcf079a36662aac0a2db3f11f03417e86d",
+      "lines": 27
+    },
+    {
+      "source": "docs/02-capabilities/security/random-source-review.md",
+      "sha256": "4df876e18b03eab3740108524769d0df1c46534e96197f5cf517fc7da0affe12",
+      "lines": 23
+    },
+    {
+      "source": "docs/02-capabilities/security/random-traceability.md",
+      "sha256": "ce2da5cb7a83d921f48fff8119f3009c6851d5e15b2d6af22e04776cb3753c2c",
+      "lines": 31
+    },
+    {
       "source": "docs/02-capabilities/security/random.md",
       "sha256": "c843aa5740aaeeca2addd5d46cb44c7762a287f14f7898f10b1a7c6483af9507",
       "lines": 47
     },
     {
       "source": "docs/02-capabilities/security/README.md",
-      "sha256": "fae23bbcf0e5dd8dda2993e7b7484f81dc6b1c0e4b5ffeb3e249b1600506ccd9",
-      "lines": 100
+      "sha256": "285605789b14057df67e020e107668dae7a3e7074c4262682cea957292fca40e",
+      "lines": 108
     },
     {
       "source": "docs/02-capabilities/security/restricted-execution.md",
@@ -56610,7 +56859,7 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/audit-report.md",
-      "sha256": "c10d07e261126b43109b5fb7c1128b09bf2a73a175afecdca9efd48f78974edd",
+      "sha256": "3d21e8919c5408fe19223c485e9f41e66c836da4455fde6fb899cc2bf8ffc139",
       "lines": 68
     },
     {
@@ -56625,13 +56874,13 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/closure-backlog.md",
-      "sha256": "4e45899c610a6399f4ebe1e1b65fd13dda7bdcb7d0f334022f8fb534102f15a8",
-      "lines": 19
+      "sha256": "85ac811b1be428cece5ef41045d864218855acada808dc8f363917f9c217f950",
+      "lines": 21
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "sha256": "869d813baad6ffd9e6e751bd2675f3dcb8622990b265cb8bac25f2f194a29f2e",
-      "lines": 41
+      "sha256": "756a05c37c3123ff1889558d438fe0aeccf3a2fa00004f3f4fa07a5b550bffa4",
+      "lines": 42
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/dependency-graph.md",
@@ -56915,8 +57164,8 @@
     },
     {
       "source": "docs/06-roadmap/roadmap.md",
-      "sha256": "4f3737c3f770d98174ee1efcc13efee4d4b6e6601e47590fb2c9697b55161ed0",
-      "lines": 245
+      "sha256": "913322bce29cfe93680ef14694ac859fa6cde428d427b2fcb47b4a09ab2ba90a",
+      "lines": 249
     },
     {
       "source": "docs/adr/0001-capability-first-platform.md",
@@ -57719,9 +57968,14 @@
       "lines": 40
     },
     {
+      "source": "docs/adr/0161-random-output-tests-do-not-certify-unpredictability.md",
+      "sha256": "18f4bc3edd05a55beaefb5a53a05ec8f5b1b9b9bcaeebfea655d81c38501b205",
+      "lines": 32
+    },
+    {
       "source": "docs/adr/README.md",
-      "sha256": "c238001dc3cd9a119ec0ca19943e208273b9d1290a63b42be9fb716212db51a3",
-      "lines": 166
+      "sha256": "9bb33bf0e47674cb2b674ded3477328b6c343c927e508afde75b07a9be239f87",
+      "lines": 167
     },
     {
       "source": "docs/README.md",

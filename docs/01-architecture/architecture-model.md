@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.88.0
+**Version:** 1.89.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -635,3 +635,9 @@ Async I/O remains a provider-integration framework, not a universal application-
 ## 24. Foundation capability-batch compatibility
 
 The [foundation capability-batch integration review](../04-ecosystem/consistency-readiness/foundation-batch-integration-review.md) verifies compatible identity/authority, cancellation, progress/milestone, ownership/cleanup, synchronous completeness, backpressure/fairness, ordering/time, provider-variance, dependency, and evidence boundaries across runtime/time, filesystem, process, IPC, and async I/O. Cross-domain lifecycle model tests complement rather than replace domain-specific effect oracles. A batch-level Pass establishes architecture-definition compatibility only and cannot aggregate Draft domains into implementation authority.
+
+## 25. Secure-random capability readiness
+
+The [`rm.security.random` capability dossier](../02-capabilities/security/random-readiness-review.md) closes planned traceability, dependency/profile composition, source freshness, cross-cutting quality, ownership, bounded-trial, conformance, and benchmark evidence for exact-fill OS cryptographic randomness. Assurance is grounded in exact provider/module/configuration provenance, fail-closed integration, lifecycle evidence, and scoped validation—not finite output statistics ([ADR-0161](../adr/0161-random-output-tests-do-not-certify-unpredictability.md)). No output or output-derived fingerprint belongs in evidence artifacts.
+
+This is capability-level evidence inside a composite security domain. It cannot promote the security domain while authority, restricted execution, secrets, cryptography, PKI, and issuance remain incompletely mapped/reviewed. `rm.security.random` and the security domain remain Draft; no provider, module, cryptographic library, public API, trial, certification, performance budget, or implementation is authorized.

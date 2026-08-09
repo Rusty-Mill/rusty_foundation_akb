@@ -8,6 +8,14 @@ Performance evidence must never weaken source choice, fail-closed behavior, memo
 
 ## Measurements
 
+### Secure-random comparison requirements
+
+- **RM-SECURITY-RANDOM-BENCH-0001:** Fill comparisons **MUST** bind the same approved OS source, provider initialization/readiness state, request sizes/chunking, exact-fill/failure semantics, memory policy, concurrency, and build mode.
+- **RM-SECURITY-RANDOM-BENCH-0002:** First-use comparisons **MUST** separate provider construction, source readiness wait, first fill, cancellation, and failure boundaries and **MUST NOT** silently prewarm one candidate.
+- **RM-SECURITY-RANDOM-BENCH-0003:** Failure comparisons **MUST** use controlled provider fault injection, confirm no usable partial output or fallback, and retain only sanitized non-output diagnostics.
+- **RM-SECURITY-RANDOM-BENCH-0004:** Every run **MUST** record provider/module artifact and configuration, OS/kernel/SDK, hardware/virtualization/clone context, security mode, toolchain/build, request/concurrency matrix, warmup, samples/statistics, and conformance result without random-derived artifacts.
+- **RM-SECURITY-RANDOM-BENCH-0005:** Numeric budgets and native-performance claims **MUST** derive from reviewed representative runs; statistical properties, uniqueness, checksums, compressibility, or provider names **MUST NOT** establish security or correctness.
+
 | ID | Measurement | Required reporting |
 |---|---|---|
 | SEC-BENCH-001 | Warm fill latency at 0, 16, 32, 256, 4 KiB, 64 KiB, and 1 MiB | p50/p95/p99, throughput, CPU time, allocations |

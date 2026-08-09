@@ -17,3 +17,5 @@ This backlog is bounded to architecture-definition readiness. Provider implement
 | CR-011 | High | Domain readiness pilots used conventions that were not fully schema-validated. | The accepted [domain readiness schema and template](domain-readiness-schema.md) plus audit validation now cover metadata, dates/expiry, six quality dimensions, exact source links, ownership/trial sections, and promotion nonauthorization across two materially different pilots. | Closed |
 
 The next closure order is CR-001/CR-002/CR-003, because direct traceability, dependencies, and shared semantics can invalidate conclusions drawn by the lower-priority reports.
+
+Capability-level closure has begun inside the composite security directory with [`rm.security.random`](../../02-capabilities/security/random-readiness-review.md). This evidence is deliberately excluded from domain-complete counts until the remaining authority, secrets, cryptography, PKI, and issuance specifications are mapped/reviewed or an accepted decision partitions their promotion units.

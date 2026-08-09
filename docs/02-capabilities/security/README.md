@@ -66,6 +66,12 @@ flowchart TD
 - [Threat model](threat-model.md)
 - [Platform research](platform-research.md)
 - [`rm.security.random`](random.md)
+- [Secure-random capability readiness dossier](random-readiness-review.md)
+- [Secure-random assertion and benchmark traceability](random-traceability.md)
+- [Secure-random dependency and profile composition](random-dependencies.md)
+- [Secure-random cross-cutting review](random-cross-cutting-review.md)
+- [Secure-random source review](random-source-review.md)
+- [Secure-random ownership and bounded trial plan](random-ownership.md)
 - [Secret value resource model](secret-value.md)
 - [Secret protection claim model](secret-protection-model.md)
 - [`rm.security.secret-store`](secret-store.md)
@@ -98,3 +104,5 @@ flowchart TD
 - [PKI platform research](pki-platform-research.md)
 - [PKI conformance](pki-conformance.md)
 - [PKI benchmarks](pki-benchmarks.md)
+
+The secure-random dossier is capability-scoped. It does not constitute a security-domain promotion review: authority, restricted execution, secrets, cryptography, PKI, and issuance retain independent incomplete readiness evidence.
