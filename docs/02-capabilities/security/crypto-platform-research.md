@@ -13,7 +13,7 @@
 - [NIST SP 800-131A Rev. 2](https://csrc.nist.gov/pubs/sp/800/131/a/r2/final)
 - [Microsoft: Cryptography API Next Generation](https://learn.microsoft.com/en-us/windows/win32/seccng/cng-portal)
 - [Microsoft: CNG key-storage providers](https://learn.microsoft.com/en-us/windows/win32/seccertenroll/cng-key-storage-providers)
-- [Linux kernel: AF_ALG userspace interface and deprecation](https://docs.kernel.org/next/crypto/userspace-if.html)
+- [Linux kernel: AF_ALG userspace interface and deprecation](https://docs.kernel.org/crypto/userspace-if.html)
 - [Linux kernel: Key retention service](https://docs.kernel.org/security/keys/core.html)
 - [Apple: CryptoKit](https://developer.apple.com/documentation/cryptokit)
 - [Apple: Protecting keys with the Secure Enclave](https://developer.apple.com/documentation/security/protecting-keys-with-the-secure-enclave)

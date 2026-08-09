@@ -101,6 +101,12 @@ flowchart TD
 - [Benchmark specification](benchmarks.md)
 - [Cross-domain security review checklist](review-checklist.md)
 - [Cryptographic operations and key-management foundations](crypto-README.md)
+- [Cryptography and key-management promotion-unit readiness dossier](crypto-readiness-review.md)
+- [Cryptography and key-management assertion and benchmark traceability](crypto-traceability.md)
+- [Cryptography and key-management dependency and profile composition](crypto-dependencies.md)
+- [Cryptography and key-management cross-cutting review](crypto-cross-cutting-review.md)
+- [Cryptography and key-management source review](crypto-source-review.md)
+- [Cryptography and key-management ownership and bounded trial plan](crypto-ownership.md)
 - [Cryptographic algorithm suites and policy](crypto-policy.md)
 - [Cryptographic key resources and lifecycle](crypto-keys.md)
 - [Hash, MAC, and derivation](crypto-hash-mac-kdf.md)
@@ -125,4 +131,4 @@ flowchart TD
 - [PKI conformance](pki-conformance.md)
 - [PKI benchmarks](pki-benchmarks.md)
 
-The secure-random, restricted-execution, and secret-protection dossiers are promotion-unit-scoped. None constitutes a security-domain promotion review: authority, cryptography, PKI, and issuance retain independent incomplete readiness evidence, and all units remain Draft.
+The secure-random, restricted-execution, secret-protection, and cryptography/key-management dossiers are promotion-unit-scoped. None constitutes a security-domain promotion review: authority, PKI validation, and PKI issuance retain independent incomplete readiness evidence, and all units remain Draft.

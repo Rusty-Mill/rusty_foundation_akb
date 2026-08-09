@@ -4,13 +4,14 @@
   "authority": "docs/01-architecture/architecture-model.md",
   "generated_from": "Markdown; this index is derived and non-authoritative",
   "summary": {
-    "markdown_documents": 1174,
-    "internal_links": 2405,
-    "requirements": 5438,
+    "markdown_documents": 1180,
+    "internal_links": 2448,
+    "requirements": 5468,
     "domains": 62,
     "promotion_units": 7,
     "draft_promotion_units": 7,
-    "promotion_units_with_readiness_dossier": 3,
+    "promotion_units_with_readiness_dossier": 4,
+    "promotion_units_with_schema_valid_readiness_dossier": 4,
     "adrs": 163,
     "errors": 0,
     "warnings": 0,
@@ -19,7 +20,7 @@
     "domains_with_direct_requirement_assertion_map": 9,
     "domains_with_direct_benchmark_scenario_map": 9,
     "benchmark_scenarios": 62,
-    "external_sources": 650,
+    "external_sources": 654,
     "external_sources_with_review_record": 74,
     "domains_with_dedicated_cross_cutting_analysis": 31,
     "domains_with_complete_planned_traceability": 9,
@@ -1835,8 +1836,8 @@
       "id": "security",
       "source": "docs/02-capabilities/security/README.md",
       "status": "Draft domain analysis",
-      "requirements": 357,
-      "capability_requirements": 337,
+      "requirements": 387,
+      "capability_requirements": 367,
       "conformance_requirements": 0,
       "benchmark_requirements": 20,
       "mapped_benchmark_requirements": 0,
@@ -2271,6 +2272,7 @@
       "owner": "Authority semantics owner",
       "primary_source": "docs/02-capabilities/security/authority-model.md",
       "readiness_dossier": null,
+      "readiness_dossier_schema_valid": false,
       "registry": "docs/02-capabilities/security/promotion-units.md"
     },
     {
@@ -2279,6 +2281,7 @@
       "owner": "Restricted-execution owner",
       "primary_source": "docs/02-capabilities/security/restricted-execution.md",
       "readiness_dossier": "docs/02-capabilities/security/restricted-execution-readiness-review.md",
+      "readiness_dossier_schema_valid": true,
       "registry": "docs/02-capabilities/security/promotion-units.md"
     },
     {
@@ -2287,6 +2290,7 @@
       "owner": "Secure-random capability owner",
       "primary_source": "docs/02-capabilities/security/random.md",
       "readiness_dossier": "docs/02-capabilities/security/random-readiness-review.md",
+      "readiness_dossier_schema_valid": true,
       "registry": "docs/02-capabilities/security/promotion-units.md"
     },
     {
@@ -2295,6 +2299,7 @@
       "owner": "Secret-protection owner",
       "primary_source": "docs/02-capabilities/security/secret-store.md",
       "readiness_dossier": "docs/02-capabilities/security/secret-readiness-review.md",
+      "readiness_dossier_schema_valid": true,
       "registry": "docs/02-capabilities/security/promotion-units.md"
     },
     {
@@ -2302,7 +2307,8 @@
       "maturity": "Draft",
       "owner": "Cryptography and key-management owner",
       "primary_source": "docs/02-capabilities/security/crypto-README.md",
-      "readiness_dossier": null,
+      "readiness_dossier": "docs/02-capabilities/security/crypto-readiness-review.md",
+      "readiness_dossier_schema_valid": true,
       "registry": "docs/02-capabilities/security/promotion-units.md"
     },
     {
@@ -2311,6 +2317,7 @@
       "owner": "PKI validation owner",
       "primary_source": "docs/02-capabilities/security/pki-README.md",
       "readiness_dossier": null,
+      "readiness_dossier_schema_valid": false,
       "registry": "docs/02-capabilities/security/promotion-units.md"
     },
     {
@@ -2319,6 +2326,7 @@
       "owner": "Certificate issuance owner",
       "primary_source": "docs/02-capabilities/security/pki-issuance-README.md",
       "readiness_dossier": null,
+      "readiness_dossier_schema_valid": false,
       "registry": "docs/02-capabilities/security/promotion-units.md"
     }
   ],
@@ -3651,7 +3659,8 @@
       "url": "https://csrc.nist.gov/Projects/key-management/publications",
       "host": "csrc.nist.gov",
       "sources": [
-        "docs/02-capabilities/security/crypto-platform-research.md"
+        "docs/02-capabilities/security/crypto-platform-research.md",
+        "docs/02-capabilities/security/crypto-source-review.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -3667,7 +3676,16 @@
       "url": "https://csrc.nist.gov/pubs/sp/800/131/a/r2/final",
       "host": "csrc.nist.gov",
       "sources": [
-        "docs/02-capabilities/security/crypto-platform-research.md"
+        "docs/02-capabilities/security/crypto-platform-research.md",
+        "docs/02-capabilities/security/crypto-source-review.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
+      "url": "https://csrc.nist.gov/pubs/sp/800/131/a/r3/ipd",
+      "host": "csrc.nist.gov",
+      "sources": [
+        "docs/02-capabilities/security/crypto-source-review.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -3701,7 +3719,8 @@
       "url": "https://csrc.nist.gov/pubs/sp/800/57/pt1/r5/final",
       "host": "csrc.nist.gov",
       "sources": [
-        "docs/02-capabilities/security/crypto-platform-research.md"
+        "docs/02-capabilities/security/crypto-platform-research.md",
+        "docs/02-capabilities/security/crypto-source-review.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -4082,7 +4101,16 @@
       "url": "https://developer.apple.com/documentation/cryptokit",
       "host": "developer.apple.com",
       "sources": [
-        "docs/02-capabilities/security/crypto-platform-research.md"
+        "docs/02-capabilities/security/crypto-platform-research.md",
+        "docs/02-capabilities/security/crypto-source-review.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
+      "url": "https://developer.apple.com/documentation/cryptokit/secureenclave",
+      "host": "developer.apple.com",
+      "sources": [
+        "docs/02-capabilities/security/crypto-source-review.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -4409,6 +4437,14 @@
       "freshness": "unreviewed-by-generator"
     },
     {
+      "url": "https://developer.apple.com/documentation/security/keys",
+      "host": "developer.apple.com",
+      "sources": [
+        "docs/02-capabilities/security/crypto-source-review.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
       "url": "https://developer.apple.com/documentation/security/preventing-insecure-network-connections",
       "host": "developer.apple.com",
       "sources": [
@@ -4420,7 +4456,8 @@
       "url": "https://developer.apple.com/documentation/security/protecting-keys-with-the-secure-enclave",
       "host": "developer.apple.com",
       "sources": [
-        "docs/02-capabilities/security/crypto-platform-research.md"
+        "docs/02-capabilities/security/crypto-platform-research.md",
+        "docs/02-capabilities/security/crypto-source-review.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -4942,6 +4979,15 @@
       "freshness": "unreviewed-by-generator"
     },
     {
+      "url": "https://docs.kernel.org/crypto/userspace-if.html",
+      "host": "docs.kernel.org",
+      "sources": [
+        "docs/02-capabilities/security/crypto-platform-research.md",
+        "docs/02-capabilities/security/crypto-source-review.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
       "url": "https://docs.kernel.org/driver-api/driver-model/overview.html",
       "host": "docs.kernel.org",
       "sources": [
@@ -4959,14 +5005,6 @@
       "freshness": "reviewed-in-domain-source-review"
     },
     {
-      "url": "https://docs.kernel.org/next/crypto/userspace-if.html",
-      "host": "docs.kernel.org",
-      "sources": [
-        "docs/02-capabilities/security/crypto-platform-research.md"
-      ],
-      "freshness": "unreviewed-by-generator"
-    },
-    {
       "url": "https://docs.kernel.org/security/credentials.html",
       "host": "docs.kernel.org",
       "sources": [
@@ -4981,6 +5019,7 @@
       "host": "docs.kernel.org",
       "sources": [
         "docs/02-capabilities/security/crypto-platform-research.md",
+        "docs/02-capabilities/security/crypto-source-review.md",
         "docs/02-capabilities/security/secret-platform-research.md",
         "docs/02-capabilities/security/secret-source-review.md"
       ],
@@ -6368,7 +6407,16 @@
       "url": "https://learn.microsoft.com/en-us/windows/win32/seccertenroll/cng-key-storage-providers",
       "host": "learn.microsoft.com",
       "sources": [
-        "docs/02-capabilities/security/crypto-platform-research.md"
+        "docs/02-capabilities/security/crypto-platform-research.md",
+        "docs/02-capabilities/security/crypto-source-review.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/seccng/cng-cryptographic-primitive-functions",
+      "host": "learn.microsoft.com",
+      "sources": [
+        "docs/02-capabilities/security/crypto-source-review.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -6376,7 +6424,8 @@
       "url": "https://learn.microsoft.com/en-us/windows/win32/seccng/cng-portal",
       "host": "learn.microsoft.com",
       "sources": [
-        "docs/02-capabilities/security/crypto-platform-research.md"
+        "docs/02-capabilities/security/crypto-platform-research.md",
+        "docs/02-capabilities/security/crypto-source-review.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -42640,6 +42689,126 @@
       "assertions": []
     },
     {
+      "id": "RM-CRYPTO-BENCH-0001",
+      "source": "docs/02-capabilities/security/crypto-benchmarks.md",
+      "line": 17,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-CRYPTO-BENCH-0002",
+      "source": "docs/02-capabilities/security/crypto-benchmarks.md",
+      "line": 19,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-CRYPTO-BENCH-0003",
+      "source": "docs/02-capabilities/security/crypto-benchmarks.md",
+      "line": 21,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-CRYPTO-BENCH-0004",
+      "source": "docs/02-capabilities/security/crypto-benchmarks.md",
+      "line": 23,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-CRYPTO-BENCH-0005",
+      "source": "docs/02-capabilities/security/crypto-benchmarks.md",
+      "line": 25,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-CRYPTO-BENCH-0006",
+      "source": "docs/02-capabilities/security/crypto-benchmarks.md",
+      "line": 27,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-CRYPTO-QUALITY-0001",
+      "source": "docs/02-capabilities/security/crypto-cross-cutting-review.md",
+      "line": 20,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-CRYPTO-QUALITY-0002",
+      "source": "docs/02-capabilities/security/crypto-cross-cutting-review.md",
+      "line": 22,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-CRYPTO-QUALITY-0003",
+      "source": "docs/02-capabilities/security/crypto-cross-cutting-review.md",
+      "line": 24,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-CRYPTO-QUALITY-0004",
+      "source": "docs/02-capabilities/security/crypto-cross-cutting-review.md",
+      "line": 26,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-CRYPTO-DEPENDENCY-0001",
+      "source": "docs/02-capabilities/security/crypto-dependencies.md",
+      "line": 33,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-CRYPTO-DEPENDENCY-0002",
+      "source": "docs/02-capabilities/security/crypto-dependencies.md",
+      "line": 35,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-CRYPTO-DEPENDENCY-0003",
+      "source": "docs/02-capabilities/security/crypto-dependencies.md",
+      "line": 37,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-CRYPTO-DEPENDENCY-0004",
+      "source": "docs/02-capabilities/security/crypto-dependencies.md",
+      "line": 39,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-CRYPTO-DEPENDENCY-0005",
+      "source": "docs/02-capabilities/security/crypto-dependencies.md",
+      "line": 41,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
       "id": "RM-CRYPTO-DERIVE-0001",
       "source": "docs/02-capabilities/security/crypto-hash-mac-kdf.md",
       "line": 3,
@@ -42880,6 +43049,38 @@
       "assertions": []
     },
     {
+      "id": "RM-CRYPTO-OWNER-0001",
+      "source": "docs/02-capabilities/security/crypto-ownership.md",
+      "line": 26,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-CRYPTO-OWNER-0002",
+      "source": "docs/02-capabilities/security/crypto-ownership.md",
+      "line": 28,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-CRYPTO-OWNER-0003",
+      "source": "docs/02-capabilities/security/crypto-ownership.md",
+      "line": 30,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-CRYPTO-OWNER-0004",
+      "source": "docs/02-capabilities/security/crypto-ownership.md",
+      "line": 32,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
       "id": "RM-CRYPTO-POLICY-0001",
       "source": "docs/02-capabilities/security/crypto-policy.md",
       "line": 5,
@@ -43051,6 +43252,94 @@
       "id": "RM-CRYPTO-PUBLIC-0007",
       "source": "docs/02-capabilities/security/crypto-public-key.md",
       "line": 15,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-CRYPTO-READINESS-0001",
+      "source": "docs/02-capabilities/security/crypto-readiness-review.md",
+      "line": 24,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-CRYPTO-READINESS-0002",
+      "source": "docs/02-capabilities/security/crypto-readiness-review.md",
+      "line": 26,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-CRYPTO-READINESS-0003",
+      "source": "docs/02-capabilities/security/crypto-readiness-review.md",
+      "line": 28,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-CRYPTO-SOURCE-0001",
+      "source": "docs/02-capabilities/security/crypto-source-review.md",
+      "line": 19,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-CRYPTO-SOURCE-0002",
+      "source": "docs/02-capabilities/security/crypto-source-review.md",
+      "line": 21,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-CRYPTO-SOURCE-0003",
+      "source": "docs/02-capabilities/security/crypto-source-review.md",
+      "line": 23,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-CRYPTO-SOURCE-0004",
+      "source": "docs/02-capabilities/security/crypto-source-review.md",
+      "line": 25,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-CRYPTO-SOURCE-0005",
+      "source": "docs/02-capabilities/security/crypto-source-review.md",
+      "line": 27,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-CRYPTO-TRACE-0001",
+      "source": "docs/02-capabilities/security/crypto-traceability.md",
+      "line": 33,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-CRYPTO-TRACE-0002",
+      "source": "docs/02-capabilities/security/crypto-traceability.md",
+      "line": 35,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-CRYPTO-TRACE-0003",
+      "source": "docs/02-capabilities/security/crypto-traceability.md",
+      "line": 37,
       "kind": "capability",
       "domain": "security",
       "assertions": []
@@ -51104,28 +51393,28 @@
     {
       "id": "RM-READINESS-CONTRADICTION-0001",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 40,
+      "line": 41,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0002",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 42,
+      "line": 43,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0003",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 44,
+      "line": 45,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0004",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 46,
+      "line": 47,
       "kind": "governance",
       "domain": null
     },
@@ -53150,8 +53439,8 @@
     },
     {
       "source": "docs/01-architecture/architecture-model.md",
-      "sha256": "e43650793f984bf0cc6fe9e2314d9c2a2d93095b61a6d7aab505b8f0322e7ad0",
-      "lines": 659
+      "sha256": "4d90c57bf8ada18ed68583ab53b6bafea15228ffa3ba5046ddc8d35b22509142",
+      "lines": 661
     },
     {
       "source": "docs/01-architecture/behavioral-contracts.md",
@@ -56795,13 +57084,23 @@
     },
     {
       "source": "docs/02-capabilities/security/crypto-benchmarks.md",
-      "sha256": "b9a81f39ae2e471acb23d2cb5bf511128daed5518790bfb65bd542def18ef308",
-      "lines": 15
+      "sha256": "0b163a04f9b29a86d9461d4c1c2b0ab5507c44b2a0a81b410a8207010f1e5b0b",
+      "lines": 29
     },
     {
       "source": "docs/02-capabilities/security/crypto-conformance.md",
       "sha256": "ffd98a97f9f8dfc547c5f3fb35527056e35ac05a9d8f7d38cddf23dfb88a9847",
       "lines": 14
+    },
+    {
+      "source": "docs/02-capabilities/security/crypto-cross-cutting-review.md",
+      "sha256": "f0d60381a75fb5a1de3266d579cc971dcf4660489fcd67ef07083d6455608875",
+      "lines": 26
+    },
+    {
+      "source": "docs/02-capabilities/security/crypto-dependencies.md",
+      "sha256": "2c4626396f86f277c1f829507f904df0591f01de16952409639ff0ee899db303",
+      "lines": 41
     },
     {
       "source": "docs/02-capabilities/security/crypto-hash-mac-kdf.md",
@@ -56824,8 +57123,13 @@
       "lines": 17
     },
     {
+      "source": "docs/02-capabilities/security/crypto-ownership.md",
+      "sha256": "70f0799edb1ddd46f644e2d884743fb4f11c84a457d65fd9b884ee9ba9803e87",
+      "lines": 32
+    },
+    {
       "source": "docs/02-capabilities/security/crypto-platform-research.md",
-      "sha256": "1b18d3cf1533abdf972789bdef2e88767093227c5cc6279cdaa814ac61c987d7",
+      "sha256": "dc21009a85b603e2f8d378c1e368a586f0809e20807645a7669dce81d639fb09",
       "lines": 26
     },
     {
@@ -56844,9 +57148,24 @@
       "lines": 15
     },
     {
+      "source": "docs/02-capabilities/security/crypto-readiness-review.md",
+      "sha256": "f0df7e8954e2a7effb862f729be6176c00c4a98b118359469f042e7ca3aef466",
+      "lines": 28
+    },
+    {
       "source": "docs/02-capabilities/security/crypto-README.md",
-      "sha256": "30b2afbb42f96575d5ff13e59a041cb0602507ff3efa3b39d28b31e66de04fb3",
-      "lines": 42
+      "sha256": "4161969be716b29081cef7d80cb11fe276dd219ce6cf0220cf7ebdff1d8bec09",
+      "lines": 48
+    },
+    {
+      "source": "docs/02-capabilities/security/crypto-source-review.md",
+      "sha256": "e2d0cf8bfd343f52745b9526c9a4d79f3e9ee0ed36ae81cf8c5cdbc93bc4e699",
+      "lines": 27
+    },
+    {
+      "source": "docs/02-capabilities/security/crypto-traceability.md",
+      "sha256": "d9a36c29a9cd3f6b2610d35dfb5412b32cc862a557dde9e38032897cc43cea5a",
+      "lines": 37
     },
     {
       "source": "docs/02-capabilities/security/delegation-model.md",
@@ -56985,7 +57304,7 @@
     },
     {
       "source": "docs/02-capabilities/security/promotion-units.md",
-      "sha256": "23100834f7c09b7a6061eccfafe767e9ee27ab82a083bb856d122021364f4624",
+      "sha256": "b319541d388193cc922c0ac0d37006465659b2fdadf9943d567caaeb1ac910e9",
       "lines": 53
     },
     {
@@ -57005,7 +57324,7 @@
     },
     {
       "source": "docs/02-capabilities/security/random-readiness-review.md",
-      "sha256": "b424a98369ee890e5fc8180d2b9b6ebcf079a36662aac0a2db3f11f03417e86d",
+      "sha256": "471c798f3a5b9faa6a13a5fe96155b0b0eba40ad4a12bad9eebabaa6614f9b21",
       "lines": 27
     },
     {
@@ -57025,8 +57344,8 @@
     },
     {
       "source": "docs/02-capabilities/security/README.md",
-      "sha256": "9280b866794efd3100d7a4c8fd0d1df5bba329bd6fdf81a452add812f3a78af4",
-      "lines": 128
+      "sha256": "9b08c1f43e844730d744f46fcca11805bbf2e87110e8c371d97df008214e65fc",
+      "lines": 134
     },
     {
       "source": "docs/02-capabilities/security/restricted-execution-cross-cutting-review.md",
@@ -57850,8 +58169,8 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/audit-report.md",
-      "sha256": "5250fa95ab290f9f36f79c607a4e6d0b0e522d803d13c961a9e7466d301d533c",
-      "lines": 70
+      "sha256": "41c6493dd51cf46f97d6a1f491f00375bdb0aefd4f0d854e0db60438c4d63a2d",
+      "lines": 71
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/audit-rules.md",
@@ -57865,13 +58184,13 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/closure-backlog.md",
-      "sha256": "4ff906197eab3138b13ca204e2beb8ae7008dcf2a4d276db3c0c32b942347ca6",
+      "sha256": "41494949a0e66b43484840021d895ae06c291ec292e1592981e5638fcf9863e4",
       "lines": 23
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "sha256": "69500cba27ccd9ef22e8d1d2beec1d01cc20981302735108d09ffef8bac917c5",
-      "lines": 46
+      "sha256": "a03e9d538345d3cdc9e5efe7d4501ea5bd5f00213c4d23b2863789ecf9b29603",
+      "lines": 47
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/dependency-graph.md",
@@ -57915,7 +58234,7 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/promotion-unit-model.md",
-      "sha256": "2990beee3f2afadc4596558088cdeefd47a6281905f099229804e67c106bb9ff",
+      "sha256": "f2dc9288851eed22120faf2f3d43417a49500957d57d4aa05c06419db93a10b0",
       "lines": 57
     },
     {
@@ -58160,8 +58479,8 @@
     },
     {
       "source": "docs/06-roadmap/roadmap.md",
-      "sha256": "861d4cae5ee41605c45dedb9b1030f51bb01c7b14872920bf9260b2831e35e74",
-      "lines": 265
+      "sha256": "9425d7e27e7d9c1218f87e1524febeabe548ace7002cad68b9d52f8a086a784f",
+      "lines": 269
     },
     {
       "source": "docs/adr/0001-capability-first-platform.md",

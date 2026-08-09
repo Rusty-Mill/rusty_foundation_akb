@@ -38,7 +38,7 @@ Composite directories publish `promotion-units.md`. Each machine-indexed row has
 |---|---|---|---|---|---|
 | `rm.promotion.example.unit` | Draft | Example owner | [Primary](README.md) | [Dossier](README.md) | Concise governed scope |
 
-The primary specification and any linked readiness dossier must exist. Use an em dash when no complete unit dossier exists. Unit identifiers are repository-unique. Dossier presence means only that the evidence bundle is addressable; it does not establish eligibility, maturity, implementation authority, or release authority. Maturity remains governed by explicit decision records; editing a registry row without the required accepted decision is invalid governance even if structurally parseable.
+The primary specification and any linked readiness dossier must exist. Use an em dash when no complete unit dossier exists. Unit identifiers are repository-unique. A linked dossier uses canonical table fields: `Status` is `Proposed unit dossier; no maturity change`, `Subject` exactly matches the registry unit, `Architecture` names its model frontier, and `Implementation authority` is `None`. Dossier presence or schema validity means only that the evidence bundle is addressable; it does not establish semantic completeness, eligibility, maturity, implementation authority, or release authority. Maturity remains governed by explicit decision records; editing a registry row without the required accepted decision is invalid governance even if structurally parseable.
 
 ## Evidence and aggregation
 
@@ -54,4 +54,4 @@ Directory-level reports aggregate unit state conjunctively and expose partial co
 
 **RM-READINESS-UNIT-0004:** Directory reorganization is optional and separately governed. Partitioning maturity units MUST NOT require premature file moves, crate boundaries, repositories, packages, or implementation topology.
 
-**RM-READINESS-UNIT-0005:** Generated indexes validate registry identity, primary-source integrity, and optional dossier integrity but MUST NOT infer dossier completeness, change maturity, or authorize implementation.
+**RM-READINESS-UNIT-0005:** Generated indexes validate registry identity, primary-source integrity, and optional dossier existence/schema/subject/nonauthorization integrity but MUST NOT infer semantic dossier completeness, change maturity, or authorize implementation.

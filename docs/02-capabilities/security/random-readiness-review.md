@@ -1,9 +1,9 @@
-# Secure-random capability readiness review
+# Secure-random promotion-unit readiness review
 
 | Field | Value |
 |---|---|
-| Status | Proposed capability dossier; no maturity change |
-| Subject | `rm.security.random` 0.1.0 |
+| Status | Proposed unit dossier; no maturity change |
+| Subject | `rm.promotion.security.random` |
 | Architecture | Model 1.89.0 |
 | Proposed decision | Capability evidence is ready for named review; security domain remains incomplete and Draft |
 | Implementation authority | None |

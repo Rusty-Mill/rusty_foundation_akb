@@ -439,8 +439,26 @@ def inspect(root: Path) -> tuple[dict[str, object], list[Finding]]:
                 findings.append(Finding("error", "promotion-unit-source-exists", relative(unit_source, root), f"missing primary source {match.group('source')}"))
             dossier_source = match.group("dossier_source")
             dossier = unit_source.parent / dossier_source if dossier_source else None
+            dossier_schema_valid = False
             if dossier is not None and not dossier.exists():
                 findings.append(Finding("error", "promotion-unit-dossier-exists", relative(unit_source, root), f"missing readiness dossier {dossier_source}"))
+            if dossier is not None and dossier.exists():
+                dossier_text = dossier.read_text(encoding="utf-8")
+                dossier_status = table_field(dossier_text, "Status")
+                dossier_subject = table_field(dossier_text, "Subject")
+                dossier_architecture = table_field(dossier_text, "Architecture")
+                dossier_authority = table_field(dossier_text, "Implementation authority")
+                expected_subject = f"`{unit_id}`"
+                dossier_schema_valid = all(
+                    (
+                        dossier_status == "Proposed unit dossier; no maturity change",
+                        dossier_subject == expected_subject,
+                        bool(dossier_architecture and dossier_architecture.startswith("Model ")),
+                        dossier_authority == "None",
+                    )
+                )
+                if not dossier_schema_valid:
+                    findings.append(Finding("error", "promotion-unit-dossier-schema", relative(dossier, root), f"expected canonical unit dossier fields for {unit_id}"))
             promotion_units.append(
                 {
                     "id": unit_id,
@@ -448,6 +466,7 @@ def inspect(root: Path) -> tuple[dict[str, object], list[Finding]]:
                     "owner": match.group("owner").strip(),
                     "primary_source": relative(primary, root) if primary.exists() else match.group("source"),
                     "readiness_dossier": relative(dossier, root) if dossier is not None and dossier.exists() else dossier_source,
+                    "readiness_dossier_schema_valid": dossier_schema_valid,
                     "registry": relative(unit_source, root),
                 }
             )
@@ -484,6 +503,7 @@ def inspect(root: Path) -> tuple[dict[str, object], list[Finding]]:
             "promotion_units": len(promotion_units),
             "draft_promotion_units": sum(item["maturity"] == "Draft" for item in promotion_units),
             "promotion_units_with_readiness_dossier": sum(bool(item["readiness_dossier"]) for item in promotion_units),
+            "promotion_units_with_schema_valid_readiness_dossier": sum(item["readiness_dossier_schema_valid"] for item in promotion_units),
             "adrs": len(adr_files),
             "errors": sum(item.severity == "error" for item in findings),
             "warnings": sum(item.severity == "warning" for item in findings),
@@ -552,6 +572,7 @@ This report is deterministic and contains no claim that file presence proves sem
 | Capability domains | {summary['domains']:,} |
 | Governed subdomain promotion units | {summary['promotion_units']:,} ({summary['draft_promotion_units']:,} Draft) |
 | Promotion units with linked readiness dossier | {summary['promotion_units_with_readiness_dossier']:,} / {summary['promotion_units']:,} |
+| Promotion units with schema-valid readiness dossier | {summary['promotion_units_with_schema_valid_readiness_dossier']:,} / {summary['promotion_units']:,} |
 | Indexed ADRs | {summary['adrs']:,} |
 | External source URLs inventoried | {summary['external_sources']:,} |
 | External URLs with schema-valid domain review | {summary['external_sources_with_review_record']:,} |
