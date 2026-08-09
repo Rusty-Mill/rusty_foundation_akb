@@ -147,5 +147,7 @@
 | [0143](0143-communication-preference-is-scoped-evidence.md) | Communication preference is scoped evidence | Accepted |
 | [0144](0144-audit-events-are-evidence-not-domain-truth.md) | Audit events are evidence, not domain truth | Accepted |
 | [0145](0145-integrity-proofs-do-not-prove-capture-completeness.md) | Integrity proofs do not prove capture completeness | Accepted |
+| [0146](0146-machine-readable-indexes-are-derived-evidence.md) | Machine-readable indexes are derived evidence | Accepted |
+| [0147](0147-readiness-is-an-evidence-bundle-not-a-label.md) | Readiness is an evidence bundle, not a label | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

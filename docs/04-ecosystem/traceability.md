@@ -29,8 +29,8 @@ Backend evidence --- Benchmark result --- Security evidence
 |---|---|---|
 | Capability | `rm.<domain>.<name>@<version>` | specification, owner, graph |
 | Requirement | `RM-<DOMAIN>-<CAPABILITY>-<NNNN>` | capability, decision source |
-| Conformance assertion | future test identifier | one or more requirements |
-| Benchmark scenario | future benchmark identifier | performance claim and native baseline |
+| Conformance assertion | stable assertion identifier (closure gate CR-001) | one or more requirements |
+| Benchmark scenario | stable scenario identifier (closure gate CR-005) | performance claim and native baseline |
 | Profile | profile name and version | required/optional capabilities and quality levels |
 | Provider claim | provider/version/platform tuple | passing evidence and known exceptions |
 | Release claim | artifact digest | profiles, provider claims, provenance, SBOM |
@@ -41,8 +41,8 @@ Backend evidence --- Benchmark result --- Security evidence
 - A passing test cannot establish a guarantee unless it links to a normative requirement.
 - A benchmark result states the environment, workload, baseline, and contract version.
 - Waivers are explicit, owned, time-bounded, and visible in release claims.
-- Trace links are validated automatically once machine-readable metadata exists.
+- Source records and structural links are validated by the [derived machine-readable consistency index](consistency-readiness/README.md). Direct requirement-to-assertion and requirement-to-scenario links remain explicit closure gates and MUST NOT be inferred from artifact presence.
 
 ## Documentation behavior
 
-Markdown remains the human-readable source of architectural intent. Future structured metadata may index and validate it, but generated views must link back to the normative source rather than fork its wording.
+Markdown remains the human-readable normative source of architectural intent. Structured indexes may derive and validate records, but generated views link back to the normative source and cannot fork, repair, or override its wording ([ADR-0146](../adr/0146-machine-readable-indexes-are-derived-evidence.md)).

@@ -24,4 +24,6 @@ Stable releases require required-profile conformance, security checks, compatibi
 
 Release artifacts and their conformance/benchmark reports use the [signed-artifact and provenance evidence model](../02-capabilities/signed-artifacts/README.md). Signature validity, signer trust, trusted time, transparency, provenance, reproducibility, and release authorization remain separately reportable gates.
 
+Repository-scale structural inventory and readiness claims use the [consistency, traceability, and readiness model](consistency-readiness/README.md). A conformance or benchmark file proves planned evidence structure only; direct requirement links and qualified results are required before provider, profile, release, or Stable-promotion claims.
+
 Publication, promotion, mirroring, advisories, revocation, and emergency exercises use the [repository-operations evidence model](repository-operations/README.md). A stable release claim binds an immutable artifact digest, publication record, channel-metadata generation, required evidence, and unresolved exceptions rather than a mutable tag or web page.
