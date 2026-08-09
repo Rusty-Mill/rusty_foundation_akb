@@ -11,11 +11,12 @@ This report is deterministic and contains no claim that file presence proves sem
 
 | Measure | Result |
 |---|---:|
-| Markdown documents | 1,065 |
-| Resolved internal links | 1,716 |
-| Unique normative requirements | 4,949 |
+| Markdown documents | 1,069 |
+| Resolved internal links | 1,800 |
+| Unique normative requirements | 4,956 |
 | Capability domains | 62 |
-| Indexed ADRs | 151 |
+| Indexed ADRs | 153 |
+| External source URLs inventoried | 621 |
 | Structural errors | 0 |
 | Structural warnings | 0 |
 
@@ -39,6 +40,15 @@ This report is deterministic and contains no claim that file presence proves sem
 Graph counts cover only explicit declarations. Missing nodes or edges are unknown, not proof of independence.
 
 The first two rows prove specification presence only. The mapping rows prove complete planned links only for counted domains. None proves executable assertions, benchmark runs, passing provider results, or performance budgets.
+
+## Cross-cutting analysis form
+
+| Evidence form | Domains | Coverage |
+|---|---:|---:|
+| Dedicated `cross-cutting.md` | 25 / 62 | 40.3% |
+| Embedded/unreviewed | 37 / 62 | 59.7% |
+
+Keyword mentions are discovery hints only. The [quality matrix](quality-matrix.md) does not treat them as reviewed coverage.
 
 ## Findings
 

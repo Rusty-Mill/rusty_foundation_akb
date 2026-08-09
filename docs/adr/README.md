@@ -153,5 +153,7 @@
 | [0149](0149-shared-terms-have-canonical-roles-not-universal-types.md) | Shared terms have canonical roles, not universal types | Accepted |
 | [0150](0150-semantic-assertions-and-executable-cases-have-distinct-identities.md) | Semantic assertions and executable cases have distinct identities | Accepted |
 | [0151](0151-benchmark-scenarios-and-runs-have-distinct-identities.md) | Benchmark scenarios and runs have distinct identities | Accepted |
+| [0152](0152-citation-presence-does-not-prove-source-freshness.md) | Citation presence does not prove source freshness | Accepted |
+| [0153](0153-cross-cutting-keywords-are-discovery-not-coverage.md) | Cross-cutting keywords are discovery, not coverage | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

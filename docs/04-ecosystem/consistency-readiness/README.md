@@ -36,6 +36,8 @@ flowchart TD
 - [Audit rules and finding lifecycle](audit-rules.md)
 - [Maturity and promotion gates](maturity-promotion.md)
 - [Benchmark scenario and run traceability](benchmark-traceability.md)
+- [Normative-source freshness and cross-cutting coverage](source-freshness.md)
+- [Generated cross-cutting quality matrix](quality-matrix.md)
 - [Source-linked typed dependency graph](dependency-graph.md)
 - [Canonical shared semantic vocabulary](vocabulary.md)
 - [Cross-domain contradiction ledger](contradiction-ledger.md)

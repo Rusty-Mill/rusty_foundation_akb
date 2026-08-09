@@ -12,6 +12,7 @@ import hashlib
 import json
 import re
 import sys
+import urllib.parse
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Iterable
@@ -81,6 +82,7 @@ def inspect(root: Path) -> tuple[dict[str, object], list[Finding]]:
     requirements: list[dict[str, object]] = []
     seen_requirements: dict[str, str] = {}
     internal_links = 0
+    external_source_files: dict[str, set[str]] = {}
 
     file_records: list[dict[str, object]] = []
     for path in files:
@@ -121,7 +123,10 @@ def inspect(root: Path) -> tuple[dict[str, object], list[Finding]]:
 
         for match in LINK_RE.finditer(text):
             target = match.group(1).strip()
-            if not target or target.startswith(("#", "http://", "https://", "mailto:", "chatgpt-")):
+            if target.startswith(("http://", "https://")):
+                external_source_files.setdefault(target, set()).add(source)
+                continue
+            if not target or target.startswith(("#", "mailto:", "chatgpt-")):
                 continue
             target_path = target.split("#", 1)[0].replace("%20", " ")
             if not target_path:
@@ -145,6 +150,16 @@ def inspect(root: Path) -> tuple[dict[str, object], list[Finding]]:
         text = readme.read_text(encoding="utf-8")
         status_match = STATUS_RE.search(text)
         domain_requirements = [item for item in requirements if item["domain"] == directory.name]
+        domain_text = "\n".join(path.read_text(encoding="utf-8").lower() for path in sorted(directory.glob("*.md")))
+        quality_terms = {
+            "security": ("security",),
+            "performance": ("performance", "benchmark"),
+            "accessibility": ("accessibility", "accessible"),
+            "internationalization": ("internationalization", "i18n", "locale"),
+            "observability": ("observability", "telemetry", "diagnostic"),
+            "operations": ("operations", "recovery", "migration"),
+        }
+        quality_mentions = {name: any(term in domain_text for term in terms) for name, terms in quality_terms.items()}
         conformance = directory / "conformance.md"
         benchmarks = directory / "benchmarks.md"
         traceability = directory / "traceability.md"
@@ -217,6 +232,8 @@ def inspect(root: Path) -> tuple[dict[str, object], list[Finding]]:
             "mapped_capability_requirements": mapped_capability_requirements,
             "direct_requirement_assertion_map": capability_requirement_count > 0 and mapped_capability_requirements == capability_requirement_count,
             "direct_benchmark_scenario_map": len(benchmark_requirement_items) > 0 and mapped_benchmark_requirements == len(benchmark_requirement_items),
+            "cross_cutting_analysis": "dedicated" if (directory / "cross-cutting.md").exists() else "embedded-unreviewed",
+            "quality_keyword_mentions": quality_mentions,
         }
         domains.append(domain_record)
         if not conformance.exists():
@@ -272,6 +289,15 @@ def inspect(root: Path) -> tuple[dict[str, object], list[Finding]]:
             findings.append(Finding("error", "graph-requires-acyclic", relative(graph_source, root), "required dependency cycle"))
 
     findings.sort(key=lambda item: (item.severity, item.rule, item.source, item.detail))
+    external_sources = [
+        {
+            "url": url,
+            "host": urllib.parse.urlsplit(url).netloc.lower(),
+            "sources": sorted(source_files),
+            "freshness": "unreviewed-by-generator",
+        }
+        for url, source_files in sorted(external_source_files.items())
+    ]
     index: dict[str, object] = {
         "format": "rusty-mill-akb-index",
         "version": 1,
@@ -294,6 +320,8 @@ def inspect(root: Path) -> tuple[dict[str, object], list[Finding]]:
                 bool(item["direct_benchmark_scenario_map"]) for item in domains
             ),
             "benchmark_scenarios": len(benchmark_scenarios),
+            "external_sources": len(external_sources),
+            "domains_with_dedicated_cross_cutting_analysis": sum(item["cross_cutting_analysis"] == "dedicated" for item in domains),
             "declared_graph_nodes": len(graph_nodes),
             "declared_graph_edges": len(graph_edges),
             "required_graph_acyclic": not any(item.rule == "graph-requires-acyclic" for item in findings),
@@ -301,6 +329,7 @@ def inspect(root: Path) -> tuple[dict[str, object], list[Finding]]:
         "domains": domains,
         "assertions": assertions,
         "benchmark_scenarios": benchmark_scenarios,
+        "external_sources": external_sources,
         "dependency_graph": {
             "source": relative(graph_source, root) if graph_source.exists() else None,
             "nodes": graph_nodes,
@@ -338,6 +367,7 @@ This report is deterministic and contains no claim that file presence proves sem
 | Unique normative requirements | {summary['requirements']:,} |
 | Capability domains | {summary['domains']:,} |
 | Indexed ADRs | {summary['adrs']:,} |
+| External source URLs inventoried | {summary['external_sources']:,} |
 | Structural errors | {summary['errors']:,} |
 | Structural warnings | {summary['warnings']:,} |
 
@@ -362,6 +392,15 @@ Graph counts cover only explicit declarations. Missing nodes or edges are unknow
 
 The first two rows prove specification presence only. The mapping rows prove complete planned links only for counted domains. None proves executable assertions, benchmark runs, passing provider results, or performance budgets.
 
+## Cross-cutting analysis form
+
+| Evidence form | Domains | Coverage |
+|---|---:|---:|
+| Dedicated `cross-cutting.md` | {summary['domains_with_dedicated_cross_cutting_analysis']:,} / {summary['domains']:,} | {summary['domains_with_dedicated_cross_cutting_analysis'] / summary['domains']:.1%} |
+| Embedded/unreviewed | {summary['domains'] - summary['domains_with_dedicated_cross_cutting_analysis']:,} / {summary['domains']:,} | {(summary['domains'] - summary['domains_with_dedicated_cross_cutting_analysis']) / summary['domains']:.1%} |
+
+Keyword mentions are discovery hints only. The [quality matrix](quality-matrix.md) does not treat them as reviewed coverage.
+
 ## Findings
 
 - Structural validation currently passes with {summary['errors']} errors.
@@ -383,6 +422,34 @@ def write_if_changed(path: Path, content: str) -> None:
     path.write_text(content, encoding="utf-8", newline="\n")
 
 
+def quality_report(index: dict[str, object]) -> str:
+    domains = index["domains"]
+    assert isinstance(domains, list)
+    lines = [
+        "# Cross-cutting quality coverage matrix",
+        "",
+        "**Status:** Generated discovery evidence  ",
+        "**Authority:** [Source freshness and quality coverage model](source-freshness.md)",
+        "",
+        "`dedicated` means the domain has `cross-cutting.md`; `embedded-unreviewed` means quality concerns may appear elsewhere but have not been promoted to a dedicated review artifact. Keyword columns are discovery hints, not pass/fail judgments.",
+        "",
+        "| Domain | Analysis | Security | Performance | Accessibility | I18n | Observability | Operations |",
+        "|---|---|---:|---:|---:|---:|---:|---:|",
+    ]
+    for domain in domains:
+        mentions = domain["quality_keyword_mentions"]
+        mark = lambda key: "yes" if mentions[key] else "unknown"
+        lines.append(
+            f"| [{domain['id']}](../../02-capabilities/{domain['id']}/README.md) | {domain['cross_cutting_analysis']} | {mark('security')} | {mark('performance')} | {mark('accessibility')} | {mark('internationalization')} | {mark('observability')} | {mark('operations')} |"
+        )
+    lines.extend([
+        "",
+        "A `yes` means only that one or more configured terms occur in the domain corpus. Review must still identify exact requirements, non-applicability rationale, evidence method, owner, and exceptions.",
+        "",
+    ])
+    return "\n".join(lines)
+
+
 def main(argv: Iterable[str] | None = None) -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--check", action="store_true", help="fail if generated evidence differs")
@@ -392,7 +459,11 @@ def main(argv: Iterable[str] | None = None) -> int:
     index, findings = inspect(root)
     index_text = json.dumps(index, indent=2, sort_keys=False) + "\n"
     report_text = report(index)
-    expected = {output / "index.json": index_text, output / "audit-report.md": report_text}
+    expected = {
+        output / "index.json": index_text,
+        output / "audit-report.md": report_text,
+        output / "quality-matrix.md": quality_report(index),
+    }
     if args.check:
         stale = [relative(path, root) for path, content in expected.items() if not path.exists() or path.read_text(encoding="utf-8") != content]
         if stale:

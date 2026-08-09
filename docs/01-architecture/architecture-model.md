@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.75.0
+**Version:** 1.76.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -559,6 +559,8 @@ Capability dependency edges enter the derived graph only from explicit source de
 Portable semantic assertions and executable conformance cases have distinct stable identities ([ADR-0150](../adr/0150-semantic-assertions-and-executable-cases-have-distinct-identities.md)). Assertions name propositions independent of provider or harness; cases name procedures and may vary by platform, provider, environment, fixture, and fault schedule. Results bind assertion, requirement, and case identities. Existing case identifiers remain reserved, and a passing case cannot establish claims beyond its declared assertion, scope, environment, and oracle.
 
 Benchmark scenarios and measured runs likewise have distinct identities ([ADR-0151](../adr/0151-benchmark-scenarios-and-runs-have-distinct-identities.md)). A scenario defines comparable workload semantics, measured boundaries, guarantees, dimensions, metrics, statistics, baseline equivalence, and correctness gates. Each run is an immutable observation bound to exact artifacts, environment, inputs, samples, and provenance. Regression conclusions bind comparable run sets and versioned budgets; neither planned scenarios nor a fast semantically weaker baseline establish native-performance claims.
+
+External citation presence does not prove authority, currency, applicability, or correct interpretation ([ADR-0152](../adr/0152-citation-presence-does-not-prove-source-freshness.md)). Freshness claims bind source version/status, review date, affected propositions, reviewer, and expiry/trigger. Similarly, cross-cutting keyword occurrence is discovery evidence rather than coverage ([ADR-0153](../adr/0153-cross-cutting-keywords-are-discovery-not-coverage.md)). Security, performance, accessibility, internationalization, observability, and operations require exact requirements, evidence methods, ownership, exceptions, or justified non-applicability before promotion.
 
 ## 18. Deliberately unresolved choices
 
