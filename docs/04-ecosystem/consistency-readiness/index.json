@@ -22,7 +22,7 @@
     "domains_with_direct_benchmark_scenario_map": 9,
     "benchmark_scenarios": 95,
     "external_sources": 669,
-    "external_sources_with_review_record": 74,
+    "external_sources_with_review_record": 144,
     "domains_with_dedicated_cross_cutting_analysis": 31,
     "domains_with_complete_planned_traceability": 9,
     "domains_experimental_eligible": 7,
@@ -1864,7 +1864,7 @@
         "assertion_traceability": "fail",
         "benchmark_traceability": "unknown",
         "cross_cutting_review": "unknown",
-        "source_freshness_review": "unknown",
+        "source_freshness_review": "pass",
         "owner_review": "unknown",
         "experimental_eligible": "no"
       }
@@ -4806,7 +4806,7 @@
         "docs/02-capabilities/security/crypto-platform-research.md",
         "docs/02-capabilities/security/crypto-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://csrc.nist.gov/pubs/fips/199/final",
@@ -4823,7 +4823,7 @@
         "docs/02-capabilities/security/crypto-platform-research.md",
         "docs/02-capabilities/security/crypto-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://csrc.nist.gov/pubs/sp/800/131/a/r3/ipd",
@@ -4831,7 +4831,7 @@
       "sources": [
         "docs/02-capabilities/security/crypto-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://csrc.nist.gov/pubs/sp/800/162/upd2/final",
@@ -4866,7 +4866,7 @@
         "docs/02-capabilities/security/crypto-platform-research.md",
         "docs/02-capabilities/security/crypto-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://csrc.nist.gov/pubs/sp/800/60/v1/r1/final",
@@ -5248,7 +5248,7 @@
         "docs/02-capabilities/security/crypto-platform-research.md",
         "docs/02-capabilities/security/crypto-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://developer.apple.com/documentation/cryptokit/secureenclave",
@@ -5256,7 +5256,7 @@
       "sources": [
         "docs/02-capabilities/security/crypto-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://developer.apple.com/documentation/dispatch/dispatch-source",
@@ -5483,7 +5483,7 @@
       "sources": [
         "docs/02-capabilities/security/authority-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://developer.apple.com/documentation/quartzcore/cametallayer",
@@ -5541,7 +5541,7 @@
         "docs/02-capabilities/security/platform-research.md",
         "docs/02-capabilities/security/restricted-execution-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://developer.apple.com/documentation/security/app-sandbox",
@@ -5552,7 +5552,7 @@
         "docs/02-capabilities/security/platform-research.md",
         "docs/02-capabilities/security/restricted-execution-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://developer.apple.com/documentation/security/authorization-services",
@@ -5587,7 +5587,7 @@
         "docs/02-capabilities/security/secret-platform-research.md",
         "docs/02-capabilities/security/secret-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://developer.apple.com/documentation/security/keys",
@@ -5595,7 +5595,7 @@
       "sources": [
         "docs/02-capabilities/security/crypto-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://developer.apple.com/documentation/security/preventing-insecure-network-connections",
@@ -5612,7 +5612,7 @@
         "docs/02-capabilities/security/crypto-platform-research.md",
         "docs/02-capabilities/security/crypto-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://developer.apple.com/documentation/security/restricting-keychain-item-accessibility",
@@ -5629,7 +5629,7 @@
         "docs/02-capabilities/security/secret-platform-research.md",
         "docs/02-capabilities/security/secret-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://developer.apple.com/documentation/security/secitemcopymatching(_:_:",
@@ -5638,7 +5638,7 @@
         "docs/02-capabilities/security/secret-platform-research.md",
         "docs/02-capabilities/security/secret-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://developer.apple.com/documentation/security/secitemdelete(_:_:",
@@ -5646,7 +5646,7 @@
       "sources": [
         "docs/02-capabilities/security/secret-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://developer.apple.com/documentation/security/secitemupdate(_:_:",
@@ -5654,7 +5654,7 @@
       "sources": [
         "docs/02-capabilities/security/secret-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://developer.apple.com/documentation/security/secrandomcopybytes(_:_:_:",
@@ -5663,7 +5663,7 @@
         "docs/02-capabilities/security/platform-research.md",
         "docs/02-capabilities/security/random-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://developer.apple.com/documentation/security/sectrustevaluatewitherror(_:_:",
@@ -5672,7 +5672,7 @@
         "docs/02-capabilities/security/pki-platform-research.md",
         "docs/02-capabilities/security/pki-validation-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://developer.apple.com/documentation/security/trust",
@@ -5681,7 +5681,7 @@
         "docs/02-capabilities/security/pki-platform-research.md",
         "docs/02-capabilities/security/pki-validation-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://developer.apple.com/documentation/technotes/tn3161-inside-code-signing-certificates",
@@ -5753,7 +5753,7 @@
       "sources": [
         "docs/02-capabilities/security/restricted-execution-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Printing/osxp_printapps/osxp_printapps.html",
@@ -6091,7 +6091,7 @@
         "docs/02-capabilities/security/attenuation-source-review.md",
         "docs/02-capabilities/security/platform-research.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://docs.kernel.org/admin-guide/abi-stable.html",
@@ -6107,7 +6107,7 @@
       "sources": [
         "docs/02-capabilities/security/restricted-execution-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://docs.kernel.org/admin-guide/kernel-parameters.html",
@@ -6115,7 +6115,7 @@
       "sources": [
         "docs/02-capabilities/security/random-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://docs.kernel.org/admin-guide/sysfs-rules.html",
@@ -6140,7 +6140,7 @@
         "docs/02-capabilities/security/crypto-platform-research.md",
         "docs/02-capabilities/security/crypto-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://docs.kernel.org/driver-api/driver-model/overview.html",
@@ -6168,7 +6168,7 @@
         "docs/02-capabilities/security/authority-source-review.md",
         "docs/02-capabilities/security/platform-research.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://docs.kernel.org/security/keys/core.html",
@@ -6179,7 +6179,7 @@
         "docs/02-capabilities/security/secret-platform-research.md",
         "docs/02-capabilities/security/secret-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://docs.kernel.org/security/keys/trusted-encrypted.html",
@@ -6188,7 +6188,7 @@
         "docs/02-capabilities/security/secret-platform-research.md",
         "docs/02-capabilities/security/secret-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://docs.kernel.org/userspace-api/media/v4l/buffer.html",
@@ -6970,7 +6970,7 @@
       "sources": [
         "docs/02-capabilities/security/authority-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://learn.microsoft.com/en-us/windows/win32/api/authz/nf-authz-authzcachedaccesscheck",
@@ -6978,7 +6978,7 @@
       "sources": [
         "docs/02-capabilities/security/authority-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://learn.microsoft.com/en-us/windows/win32/api/bcrypt/nf-bcrypt-bcryptgenrandom",
@@ -6987,7 +6987,7 @@
         "docs/02-capabilities/security/platform-research.md",
         "docs/02-capabilities/security/random-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://learn.microsoft.com/en-us/windows/win32/api/certenroll/nf-certenroll-ix509enrollment-enroll",
@@ -6995,7 +6995,7 @@
       "sources": [
         "docs/02-capabilities/security/pki-issuance-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://learn.microsoft.com/en-us/windows/win32/api/dpapi/nf-dpapi-cryptprotectdata",
@@ -7004,7 +7004,7 @@
         "docs/02-capabilities/security/secret-platform-research.md",
         "docs/02-capabilities/security/secret-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://learn.microsoft.com/en-us/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata",
@@ -7013,7 +7013,7 @@
         "docs/02-capabilities/security/secret-platform-research.md",
         "docs/02-capabilities/security/secret-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://learn.microsoft.com/en-us/windows/win32/api/dxgi/nf-dxgi-idxgiswapchain-present",
@@ -7136,7 +7136,7 @@
         "docs/02-capabilities/security/attenuation-source-review.md",
         "docs/02-capabilities/security/authority-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://learn.microsoft.com/en-us/windows/win32/api/synchapi/nf-synchapi-setwaitabletimerex",
@@ -7179,7 +7179,7 @@
       "sources": [
         "docs/02-capabilities/security/secret-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://learn.microsoft.com/en-us/windows/win32/api/wincred/nf-wincred-credreadw",
@@ -7188,7 +7188,7 @@
         "docs/02-capabilities/security/secret-platform-research.md",
         "docs/02-capabilities/security/secret-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://learn.microsoft.com/en-us/windows/win32/api/wincred/nf-wincred-credwritew",
@@ -7197,7 +7197,7 @@
         "docs/02-capabilities/security/secret-platform-research.md",
         "docs/02-capabilities/security/secret-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://learn.microsoft.com/en-us/windows/win32/api/wincrypt/nf-wincrypt-certgetcertificatechain",
@@ -7206,7 +7206,7 @@
         "docs/02-capabilities/security/pki-platform-research.md",
         "docs/02-capabilities/security/pki-validation-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://learn.microsoft.com/en-us/windows/win32/api/wincrypt/nf-wincrypt-certverifycertificatechainpolicy",
@@ -7215,7 +7215,7 @@
         "docs/02-capabilities/security/pki-platform-research.md",
         "docs/02-capabilities/security/pki-validation-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://learn.microsoft.com/en-us/windows/win32/api/wintrust/nf-wintrust-winverifytrust",
@@ -7508,7 +7508,7 @@
       "sources": [
         "docs/02-capabilities/security/restricted-execution-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://learn.microsoft.com/en-us/windows/win32/secauthn/creating-a-secure-connection-using-schannel",
@@ -7534,7 +7534,7 @@
         "docs/02-capabilities/security/authority-source-review.md",
         "docs/02-capabilities/security/platform-research.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://learn.microsoft.com/en-us/windows/win32/secauthz/appcontainer-isolation",
@@ -7544,7 +7544,7 @@
         "docs/02-capabilities/security/platform-research.md",
         "docs/02-capabilities/security/restricted-execution-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://learn.microsoft.com/en-us/windows/win32/secauthz/checking-access-with-authz-api",
@@ -7569,7 +7569,7 @@
         "docs/02-capabilities/security/platform-research.md",
         "docs/02-capabilities/security/restricted-execution-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://learn.microsoft.com/en-us/windows/win32/secbp/handling-passwords",
@@ -7593,7 +7593,7 @@
       "sources": [
         "docs/02-capabilities/security/pki-issuance-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://learn.microsoft.com/en-us/windows/win32/seccertenroll/cng-key-storage-providers",
@@ -7602,7 +7602,7 @@
         "docs/02-capabilities/security/crypto-platform-research.md",
         "docs/02-capabilities/security/crypto-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://learn.microsoft.com/en-us/windows/win32/seccng/cng-cryptographic-primitive-functions",
@@ -7610,7 +7610,7 @@
       "sources": [
         "docs/02-capabilities/security/crypto-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://learn.microsoft.com/en-us/windows/win32/seccng/cng-portal",
@@ -7619,7 +7619,7 @@
         "docs/02-capabilities/security/crypto-platform-research.md",
         "docs/02-capabilities/security/crypto-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://learn.microsoft.com/en-us/windows/win32/services/about-services",
@@ -8140,7 +8140,7 @@
       "sources": [
         "docs/02-capabilities/security/restricted-execution-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://man7.org/linux/man-pages/man2/close_range.2.html",
@@ -8157,7 +8157,7 @@
       "sources": [
         "docs/02-capabilities/security/restricted-execution-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://man7.org/linux/man-pages/man2/fsync.2.html",
@@ -8176,7 +8176,7 @@
         "docs/02-capabilities/security/platform-research.md",
         "docs/02-capabilities/security/random-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://man7.org/linux/man-pages/man2/io_uring_enter.2.html",
@@ -8259,7 +8259,7 @@
       "sources": [
         "docs/02-capabilities/security/authority-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://man7.org/linux/man-pages/man2/pidfd_open.2.html",
@@ -8294,7 +8294,7 @@
       "sources": [
         "docs/02-capabilities/security/restricted-execution-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://man7.org/linux/man-pages/man2/pread.2.html",
@@ -8327,7 +8327,7 @@
       "sources": [
         "docs/02-capabilities/security/restricted-execution-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://man7.org/linux/man-pages/man2/statx.2.html",
@@ -8419,7 +8419,7 @@
         "docs/02-capabilities/security/platform-research.md",
         "docs/02-capabilities/security/restricted-execution-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://man7.org/linux/man-pages/man7/credentials.7.html",
@@ -8460,7 +8460,7 @@
       "sources": [
         "docs/02-capabilities/security/restricted-execution-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://man7.org/linux/man-pages/man7/path_resolution.7.html",
@@ -8517,7 +8517,7 @@
       "sources": [
         "docs/02-capabilities/security/authority-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://mimesniff.spec.whatwg.org/",
@@ -8614,7 +8614,7 @@
         "docs/02-capabilities/security/pki-platform-research.md",
         "docs/02-capabilities/security/pki-validation-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://p11-glue.github.io/p11-glue/p11-kit/manual/trust.html",
@@ -8623,7 +8623,7 @@
         "docs/02-capabilities/security/pki-platform-research.md",
         "docs/02-capabilities/security/pki-validation-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
@@ -8902,7 +8902,7 @@
         "docs/02-capabilities/security/secret-platform-research.md",
         "docs/02-capabilities/security/secret-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://specifications.freedesktop.org/shared-mime-info/latest-single/",
@@ -8958,7 +8958,7 @@
       "sources": [
         "docs/02-capabilities/security/pki-issuance-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://support.apple.com/guide/deployment/deploy-managed-device-attestation-dep54e5ac1fd/web",
@@ -8974,7 +8974,7 @@
       "sources": [
         "docs/02-capabilities/security/pki-issuance-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://support.apple.com/guide/deployment/managed-open-in-dep8b081c79b/web",
@@ -9544,7 +9544,7 @@
       "sources": [
         "docs/02-capabilities/security/pki-issuance-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://www.rfc-editor.org/rfc/rfc3161",
@@ -9585,7 +9585,7 @@
         "docs/02-capabilities/security/pki-platform-research.md",
         "docs/02-capabilities/security/pki-validation-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://www.rfc-editor.org/rfc/rfc5321.html",
@@ -9650,7 +9650,7 @@
         "docs/02-capabilities/security/pki-platform-research.md",
         "docs/02-capabilities/security/pki-validation-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://www.rfc-editor.org/rfc/rfc7009.html",
@@ -9666,7 +9666,7 @@
       "sources": [
         "docs/02-capabilities/security/pki-issuance-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://www.rfc-editor.org/rfc/rfc7208.html",
@@ -9810,7 +9810,7 @@
       "sources": [
         "docs/02-capabilities/security/pki-issuance-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://www.rfc-editor.org/rfc/rfc8594.html",
@@ -9851,7 +9851,7 @@
         "docs/02-capabilities/security/pki-issuance-platform-research.md",
         "docs/02-capabilities/security/pki-issuance-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://www.rfc-editor.org/rfc/rfc8949.html",
@@ -9965,7 +9965,7 @@
       "sources": [
         "docs/02-capabilities/security/pki-issuance-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://www.rfc-editor.org/rfc/rfc9480.html",
@@ -9982,7 +9982,7 @@
         "docs/02-capabilities/security/pki-platform-research.md",
         "docs/02-capabilities/security/pki-validation-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://www.rfc-editor.org/rfc/rfc9700.html",
@@ -10006,7 +10006,7 @@
       "sources": [
         "docs/02-capabilities/security/pki-issuance-source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://www.rfc-editor.org/rfc/rfc9773.html",
@@ -60598,7 +60598,7 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/audit-report.md",
-      "sha256": "292721edfd5c802f3f51abf389e0f3a9406108a048a87ce409e171d357520aaa",
+      "sha256": "f34ec15a164185efe7d53d9c036b85eb269b186f69eeede39bc98353f059336d",
       "lines": 73
     },
     {
@@ -60658,7 +60658,7 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/promotion-scorecards.md",
-      "sha256": "849e30eaa8d586d15df59b19f3b501cbad0fb2e1ddb4063f152a321fc2cc6821",
+      "sha256": "1f1df34213f93f3a15552ffdb165e134a41fd91b3ca3d1291a8cdda73d979559",
       "lines": 78
     },
     {
