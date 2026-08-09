@@ -54614,6 +54614,34 @@
       "domain": null
     },
     {
+      "id": "RM-TRIAL-MODEL-0001",
+      "source": "docs/05-governance/implementation-trials/README.md",
+      "line": 27,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-TRIAL-MODEL-0002",
+      "source": "docs/05-governance/implementation-trials/README.md",
+      "line": 29,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-TRIAL-MODEL-0003",
+      "source": "docs/05-governance/implementation-trials/README.md",
+      "line": 31,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-TRIAL-MODEL-0004",
+      "source": "docs/05-governance/implementation-trials/README.md",
+      "line": 33,
+      "kind": "governance",
+      "domain": null
+    },
+    {
       "id": "RM-TRIAL-CHANGE-0001",
       "source": "docs/05-governance/implementation-trials/change-control.md",
       "line": 15,
@@ -54754,34 +54782,6 @@
       "domain": null
     },
     {
-      "id": "RM-TRIAL-MODEL-0001",
-      "source": "docs/05-governance/implementation-trials/README.md",
-      "line": 27,
-      "kind": "governance",
-      "domain": null
-    },
-    {
-      "id": "RM-TRIAL-MODEL-0002",
-      "source": "docs/05-governance/implementation-trials/README.md",
-      "line": 29,
-      "kind": "governance",
-      "domain": null
-    },
-    {
-      "id": "RM-TRIAL-MODEL-0003",
-      "source": "docs/05-governance/implementation-trials/README.md",
-      "line": 31,
-      "kind": "governance",
-      "domain": null
-    },
-    {
-      "id": "RM-TRIAL-MODEL-0004",
-      "source": "docs/05-governance/implementation-trials/README.md",
-      "line": 33,
-      "kind": "governance",
-      "domain": null
-    },
-    {
       "id": "RM-TRIAL-REPO-0001",
       "source": "docs/05-governance/implementation-trials/repository-and-ci.md",
       "line": 5,
@@ -54890,6 +54890,27 @@
       "id": "RM-TRIAL-CONTRACT-0004",
       "source": "docs/05-governance/implementation-trials/trial-contract.md",
       "line": 22,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-GOV-0001",
+      "source": "docs/05-governance/software-development/README.md",
+      "line": 55,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-GOV-0002",
+      "source": "docs/05-governance/software-development/README.md",
+      "line": 57,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-GOV-0003",
+      "source": "docs/05-governance/software-development/README.md",
+      "line": 59,
       "kind": "governance",
       "domain": null
     },
@@ -55335,27 +55356,6 @@
       "domain": null
     },
     {
-      "id": "RM-DEV-GOV-0001",
-      "source": "docs/05-governance/software-development/README.md",
-      "line": 55,
-      "kind": "governance",
-      "domain": null
-    },
-    {
-      "id": "RM-DEV-GOV-0002",
-      "source": "docs/05-governance/software-development/README.md",
-      "line": 57,
-      "kind": "governance",
-      "domain": null
-    },
-    {
-      "id": "RM-DEV-GOV-0003",
-      "source": "docs/05-governance/software-development/README.md",
-      "line": 59,
-      "kind": "governance",
-      "domain": null
-    },
-    {
       "id": "RM-DEV-PROFILE-0001",
       "source": "docs/05-governance/software-development/repository-profile.md",
       "line": 21,
@@ -55792,6 +55792,11 @@
       "lines": 36
     },
     {
+      "source": "docs/02-capabilities/accessibility/README.md",
+      "sha256": "efa9407ba6cd1b73dd43f346912d39a2790fc52e4f21d761149d191d79ea7a32",
+      "lines": 47
+    },
+    {
       "source": "docs/02-capabilities/accessibility/benchmarks.md",
       "sha256": "3de31ca05db54b1e7bda8def12a3b6b1d51e7befc34d9b9e7d427f32c096bb35",
       "lines": 16
@@ -55817,11 +55822,6 @@
       "lines": 39
     },
     {
-      "source": "docs/02-capabilities/accessibility/README.md",
-      "sha256": "efa9407ba6cd1b73dd43f346912d39a2790fc52e4f21d761149d191d79ea7a32",
-      "lines": 47
-    },
-    {
       "source": "docs/02-capabilities/accessibility/semantic-tree.md",
       "sha256": "64c0a33727a9ecc322bcbf05703e4a47aff98db981343602dbfe8eb2a9d04220",
       "lines": 27
@@ -55835,6 +55835,11 @@
       "source": "docs/02-capabilities/accessibility/user-preferences.md",
       "sha256": "16bd55d08dbfc10de60940f57c8ecf0cfef21c0cb67c9c0638d380236d2a179a",
       "lines": 19
+    },
+    {
+      "source": "docs/02-capabilities/activation/README.md",
+      "sha256": "079eb72e12f08bb010622f958cf6fad5c233119c65fa3e379d0dbfbe6c9cfc9c",
+      "lines": 43
     },
     {
       "source": "docs/02-capabilities/activation/benchmarks.md",
@@ -55877,11 +55882,6 @@
       "lines": 24
     },
     {
-      "source": "docs/02-capabilities/activation/README.md",
-      "sha256": "079eb72e12f08bb010622f958cf6fad5c233119c65fa3e379d0dbfbe6c9cfc9c",
-      "lines": 43
-    },
-    {
       "source": "docs/02-capabilities/activation/registration-packaging.md",
       "sha256": "87c1cc70df7cb150ab04b7aa276533fdfed9bd7a1ca0bc60ed395d95e70606a7",
       "lines": 17
@@ -55900,6 +55900,11 @@
       "source": "docs/02-capabilities/activation/uri-safety.md",
       "sha256": "ab721da64eb85cb6fc519043c52e1b70f577342f12d3a2e7fe695e9c5f6e8f12",
       "lines": 15
+    },
+    {
+      "source": "docs/02-capabilities/analytics/README.md",
+      "sha256": "370dbb9b355dbf9f0e17195a3f27601e52456ad2e272019f3fec201e5cb3b029",
+      "lines": 55
     },
     {
       "source": "docs/02-capabilities/analytics/benchmarks.md",
@@ -55962,11 +55967,6 @@
       "lines": 20
     },
     {
-      "source": "docs/02-capabilities/analytics/README.md",
-      "sha256": "370dbb9b355dbf9f0e17195a3f27601e52456ad2e272019f3fec201e5cb3b029",
-      "lines": 55
-    },
-    {
       "source": "docs/02-capabilities/analytics/resources-scheduling.md",
       "sha256": "a0de96f57994fc0bfee84fb6592b5cfa42efec8c26f66dd8d5debb2270308359",
       "lines": 17
@@ -55985,6 +55985,11 @@
       "source": "docs/02-capabilities/analytics/types-columnar.md",
       "sha256": "97b1c162e5bebeb58ef1a9d4c2fa09ac4de63425cb813c7ab272888c2b87cd8d",
       "lines": 15
+    },
+    {
+      "source": "docs/02-capabilities/api-governance/README.md",
+      "sha256": "cb22e53510f27a0199bc16dbb49accf4fe62c457e472266a36e79d9fb4fc08e0",
+      "lines": 49
     },
     {
       "source": "docs/02-capabilities/api-governance/benchmarks.md",
@@ -56032,14 +56037,14 @@
       "lines": 13
     },
     {
-      "source": "docs/02-capabilities/api-governance/README.md",
-      "sha256": "cb22e53510f27a0199bc16dbb49accf4fe62c457e472266a36e79d9fb4fc08e0",
-      "lines": 49
-    },
-    {
       "source": "docs/02-capabilities/api-governance/registry-generation.md",
       "sha256": "4e03178b473a3fa7306331489aead3b0577a74b1358819151dc5c640c5b7a569",
       "lines": 13
+    },
+    {
+      "source": "docs/02-capabilities/application-authentication/README.md",
+      "sha256": "d58121087b0560e97be52ac7dbf523ea51bfe8ac961d8cc4c0ad749e21590e61",
+      "lines": 55
     },
     {
       "source": "docs/02-capabilities/application-authentication/authenticator-lifecycle.md",
@@ -56092,11 +56097,6 @@
       "lines": 22
     },
     {
-      "source": "docs/02-capabilities/application-authentication/README.md",
-      "sha256": "d58121087b0560e97be52ac7dbf523ea51bfe8ac961d8cc4c0ad749e21590e61",
-      "lines": 55
-    },
-    {
       "source": "docs/02-capabilities/application-authentication/recovery.md",
       "sha256": "d2b7e1d4611107c1888e079d2ba939c1c92124516ad883d9446ec502fd2dfcca",
       "lines": 13
@@ -56120,6 +56120,11 @@
       "source": "docs/02-capabilities/application-authentication/webauthn-passkeys.md",
       "sha256": "d580f25af10db5feb0370c291adfe8fb757f68424745128341518c43528e44a5",
       "lines": 13
+    },
+    {
+      "source": "docs/02-capabilities/application-authorization/README.md",
+      "sha256": "b2824ff4de7c03a5fd64e165c43447402fcc137b6916d9e4735e3dc5b3be9412",
+      "lines": 54
     },
     {
       "source": "docs/02-capabilities/application-authorization/benchmarks.md",
@@ -56192,14 +56197,14 @@
       "lines": 13
     },
     {
-      "source": "docs/02-capabilities/application-authorization/README.md",
-      "sha256": "b2824ff4de7c03a5fd64e165c43447402fcc137b6916d9e4735e3dc5b3be9412",
-      "lines": 54
-    },
-    {
       "source": "docs/02-capabilities/application-authorization/resources-actions.md",
       "sha256": "30aebb8e20cd37e3a05ee07facc76bc2b58a89facd8cace99f12dbf70df3e3d5",
       "lines": 13
+    },
+    {
+      "source": "docs/02-capabilities/application-communications/README.md",
+      "sha256": "f6badfa12ab8c7a581f230001332f9af68a4bb3eae217a840aed47c76743f06b",
+      "lines": 59
     },
     {
       "source": "docs/02-capabilities/application-communications/benchmarks.md",
@@ -56272,11 +56277,6 @@
       "lines": 13
     },
     {
-      "source": "docs/02-capabilities/application-communications/README.md",
-      "sha256": "f6badfa12ab8c7a581f230001332f9af68a4bb3eae217a840aed47c76743f06b",
-      "lines": 59
-    },
-    {
       "source": "docs/02-capabilities/application-communications/recipients-audiences.md",
       "sha256": "1990d57e02559368ed61e676c924abe6972fe4a2c006b8641c1179c9bc779b8a",
       "lines": 13
@@ -56290,6 +56290,11 @@
       "source": "docs/02-capabilities/application-communications/templates-rendering.md",
       "sha256": "0ce616a02744bee13ea595002f8746637cf13c0faae614f66bb2c0cbfdd785eb",
       "lines": 15
+    },
+    {
+      "source": "docs/02-capabilities/application-sync/README.md",
+      "sha256": "e9480268e84093ef108e0222e5b2c1b8426fd3eaf65c5b36275bffd834946fa9",
+      "lines": 64
     },
     {
       "source": "docs/02-capabilities/application-sync/attachments.md",
@@ -56367,11 +56372,6 @@
       "lines": 32
     },
     {
-      "source": "docs/02-capabilities/application-sync/README.md",
-      "sha256": "e9480268e84093ef108e0222e5b2c1b8426fd3eaf65c5b36275bffd834946fa9",
-      "lines": 64
-    },
-    {
       "source": "docs/02-capabilities/application-sync/schema-migration.md",
       "sha256": "e5ec42042042be32a2f4a5de4590ae620b77bcfe6f9bfb3bdd6c4d4d888254e7",
       "lines": 13
@@ -56400,6 +56400,11 @@
       "source": "docs/02-capabilities/application-sync/traceability.md",
       "sha256": "3949bd8eb68cc5d13cc19bd3e3ea460b6daf4954fe389a4a4bc156d807bffbe5",
       "lines": 37
+    },
+    {
+      "source": "docs/02-capabilities/archive/README.md",
+      "sha256": "ff3f6ba787dd98a057c98eaed0e79bf83f61bf2a2aa23f6fa484b2dc0ea5e7f8",
+      "lines": 54
     },
     {
       "source": "docs/02-capabilities/archive/benchmarks.md",
@@ -56467,14 +56472,14 @@
       "lines": 15
     },
     {
-      "source": "docs/02-capabilities/archive/README.md",
-      "sha256": "ff3f6ba787dd98a057c98eaed0e79bf83f61bf2a2aa23f6fa484b2dc0ea5e7f8",
-      "lines": 54
-    },
-    {
       "source": "docs/02-capabilities/archive/streaming-integrity.md",
       "sha256": "bfd96d3022ed41a2fb7b8d47fbf0f97360ebc65ff368fc0abe7d823987e8ad44",
       "lines": 15
+    },
+    {
+      "source": "docs/02-capabilities/async-io/README.md",
+      "sha256": "7e5d3a1f193b37bdec5b039704173edc6bf0901cf82120baa6bfa74f87c5959f",
+      "lines": 51
     },
     {
       "source": "docs/02-capabilities/async-io/backpressure-fairness.md",
@@ -56537,11 +56542,6 @@
       "lines": 17
     },
     {
-      "source": "docs/02-capabilities/async-io/README.md",
-      "sha256": "7e5d3a1f193b37bdec5b039704173edc6bf0901cf82120baa6bfa74f87c5959f",
-      "lines": 51
-    },
-    {
       "source": "docs/02-capabilities/async-io/registration-resources.md",
       "sha256": "c65557061fbcad2d981b4fbde9fa314f6ee0be7d08b209e4a7ea8fb4b9f92acd",
       "lines": 15
@@ -56560,6 +56560,11 @@
       "source": "docs/02-capabilities/async-io/traceability.md",
       "sha256": "d6eb240dfd9bf0e5515f42a9536f8785a2a6e7c0fd9699f3aa9fbfc051d8a679",
       "lines": 40
+    },
+    {
+      "source": "docs/02-capabilities/audio/README.md",
+      "sha256": "3746c8354c51c7997724a31cfbd5fae471c147d2e47ee3fa117b1062a2345087",
+      "lines": 41
     },
     {
       "source": "docs/02-capabilities/audio/benchmarks.md",
@@ -56592,11 +56597,6 @@
       "lines": 19
     },
     {
-      "source": "docs/02-capabilities/audio/README.md",
-      "sha256": "3746c8354c51c7997724a31cfbd5fae471c147d2e47ee3fa117b1062a2345087",
-      "lines": 41
-    },
-    {
       "source": "docs/02-capabilities/audio/realtime-processing.md",
       "sha256": "e97129d8da685409f1eb331de6d3e0f9aaf217ebdc6e344f4a2d82fccac04bdd",
       "lines": 17
@@ -56610,6 +56610,11 @@
       "source": "docs/02-capabilities/audio/streams.md",
       "sha256": "4e4c2580dac6dff1bbcbd4a4c4796476f2a109fce18a38b06eda8139e10faf08",
       "lines": 33
+    },
+    {
+      "source": "docs/02-capabilities/audit-evidence/README.md",
+      "sha256": "69846b7f704add7ecc1cab6bca1f5c132236f2424389c8659b0db47e820c7c05",
+      "lines": 58
     },
     {
       "source": "docs/02-capabilities/audit-evidence/append-corrections.md",
@@ -56687,11 +56692,6 @@
       "lines": 15
     },
     {
-      "source": "docs/02-capabilities/audit-evidence/README.md",
-      "sha256": "69846b7f704add7ecc1cab6bca1f5c132236f2424389c8659b0db47e820c7c05",
-      "lines": 58
-    },
-    {
       "source": "docs/02-capabilities/audit-evidence/retention-holds.md",
       "sha256": "066989dc44e5149b0ca73f8d892831affca46a7c6225c0ae5eb5d30d50a931f3",
       "lines": 13
@@ -56705,6 +56705,11 @@
       "source": "docs/02-capabilities/audit-evidence/traceability.md",
       "sha256": "34838dd338d0dd6fef7152668c8fb179f72997b8a5ea6ac9a13ca19daf387610",
       "lines": 41
+    },
+    {
+      "source": "docs/02-capabilities/background-services/README.md",
+      "sha256": "d026770fbb552bf41e4a7b0cee95723c6e5bef89aff4306656ed0e88dd066f97",
+      "lines": 44
     },
     {
       "source": "docs/02-capabilities/background-services/attempts-retries.md",
@@ -56737,11 +56742,6 @@
       "lines": 25
     },
     {
-      "source": "docs/02-capabilities/background-services/README.md",
-      "sha256": "d026770fbb552bf41e4a7b0cee95723c6e5bef89aff4306656ed0e88dd066f97",
-      "lines": 44
-    },
-    {
       "source": "docs/02-capabilities/background-services/schedules-clocks.md",
       "sha256": "0d2d6450105c265b4937ebe269ef97a68af514074da058f696005c872c5680a0",
       "lines": 17
@@ -56770,6 +56770,11 @@
       "source": "docs/02-capabilities/background-services/updates-recovery.md",
       "sha256": "f401e436100e8f11ad1fcb485c96a9fe1df1b85de58e2cb03ce1eaecbc4781fb",
       "lines": 15
+    },
+    {
+      "source": "docs/02-capabilities/caching/README.md",
+      "sha256": "3e4f44d41d28ae2553e50e842d2923478a72a8a4f8c8f9020f68d995f225170d",
+      "lines": 52
     },
     {
       "source": "docs/02-capabilities/caching/admission-eviction-tiers.md",
@@ -56827,14 +56832,14 @@
       "lines": 20
     },
     {
-      "source": "docs/02-capabilities/caching/README.md",
-      "sha256": "3e4f44d41d28ae2553e50e842d2923478a72a8a4f8c8f9020f68d995f225170d",
-      "lines": 52
-    },
-    {
       "source": "docs/02-capabilities/capability-template.md",
       "sha256": "b47e36dc25e31ca64f54d35ff643d63a98bed5c8fbbc2e40d17ac16b29671017",
       "lines": 114
+    },
+    {
+      "source": "docs/02-capabilities/capture/README.md",
+      "sha256": "6c8141e97eee6d45dcfeb2fd66a597b0fc5fa941d39fd8df4e524ee7313946bf",
+      "lines": 42
     },
     {
       "source": "docs/02-capabilities/capture/benchmarks.md",
@@ -56882,14 +56887,14 @@
       "lines": 17
     },
     {
-      "source": "docs/02-capabilities/capture/README.md",
-      "sha256": "6c8141e97eee6d45dcfeb2fd66a597b0fc5fa941d39fd8df4e524ee7313946bf",
-      "lines": 42
-    },
-    {
       "source": "docs/02-capabilities/capture/timing-synchronization.md",
       "sha256": "a1e922514d3c80f4dfa01d62b173ab4b08ce3a938e6cf27425f3396540bd7f99",
       "lines": 15
+    },
+    {
+      "source": "docs/02-capabilities/configuration/README.md",
+      "sha256": "d56c468c473f0593c529279fb59c3f69dd0279e9026be4d50a7e7640ee306717",
+      "lines": 47
     },
     {
       "source": "docs/02-capabilities/configuration/benchmarks.md",
@@ -56912,11 +56917,6 @@
       "lines": 24
     },
     {
-      "source": "docs/02-capabilities/configuration/README.md",
-      "sha256": "d56c468c473f0593c529279fb59c3f69dd0279e9026be4d50a7e7640ee306717",
-      "lines": 47
-    },
-    {
       "source": "docs/02-capabilities/configuration/schema-value-model.md",
       "sha256": "60583eb1c6c77707d2f62bd883750e3adbe43d2eee0cf13807daddf0dd65e7a2",
       "lines": 31
@@ -56935,6 +56935,11 @@
       "source": "docs/02-capabilities/configuration/sources-precedence.md",
       "sha256": "3a8a07bee526f3a909927c38933c91a54a3b953fb176344e998640949cb59ecd",
       "lines": 33
+    },
+    {
+      "source": "docs/02-capabilities/content-inspection/README.md",
+      "sha256": "c1fcf5ab1ec54a85f660d80f346593e5d55dfd35213b20cc5bf28bbe6d3bf178",
+      "lines": 56
     },
     {
       "source": "docs/02-capabilities/content-inspection/benchmarks.md",
@@ -56997,11 +57002,6 @@
       "lines": 15
     },
     {
-      "source": "docs/02-capabilities/content-inspection/README.md",
-      "sha256": "c1fcf5ab1ec54a85f660d80f346593e5d55dfd35213b20cc5bf28bbe6d3bf178",
-      "lines": 56
-    },
-    {
       "source": "docs/02-capabilities/content-inspection/recursive-inspection.md",
       "sha256": "6eac2d47c298e205d1f8e99ae85bf9fec7975e01af39fbf5a2b38b44313d64b6",
       "lines": 15
@@ -57010,6 +57010,11 @@
       "source": "docs/02-capabilities/content-inspection/transformation.md",
       "sha256": "fa97be88025672ad50542edc191db48f921169d506354822ffeb6b131c214902",
       "lines": 30
+    },
+    {
+      "source": "docs/02-capabilities/coordination/README.md",
+      "sha256": "05b96831ba267d7ccf3497567c1b122f61359c895a7ccd53456d34926436530a",
+      "lines": 44
     },
     {
       "source": "docs/02-capabilities/coordination/benchmarks.md",
@@ -57062,11 +57067,6 @@
       "lines": 13
     },
     {
-      "source": "docs/02-capabilities/coordination/README.md",
-      "sha256": "05b96831ba267d7ccf3497567c1b122f61359c895a7ccd53456d34926436530a",
-      "lines": 44
-    },
-    {
       "source": "docs/02-capabilities/coordination/recovery-lifecycle.md",
       "sha256": "4eb9bdb9ed5eb5a3288488cf20766652635ce7e0a0b0543785a2b172404378d6",
       "lines": 16
@@ -57075,6 +57075,11 @@
       "source": "docs/02-capabilities/coordination/transactions-workflows.md",
       "sha256": "3820d7f59c79b8fa6bb41e402994494ff14d92ed299d2a1bcf4bf29b70a002bb",
       "lines": 18
+    },
+    {
+      "source": "docs/02-capabilities/data-transfer/README.md",
+      "sha256": "034b917b4383392c50c27036c1e336524bef7fa7c2dc8588f8dc940998df20df",
+      "lines": 45
     },
     {
       "source": "docs/02-capabilities/data-transfer/benchmarks.md",
@@ -57117,9 +57122,9 @@
       "lines": 35
     },
     {
-      "source": "docs/02-capabilities/data-transfer/README.md",
-      "sha256": "034b917b4383392c50c27036c1e336524bef7fa7c2dc8588f8dc940998df20df",
-      "lines": 45
+      "source": "docs/02-capabilities/devices/README.md",
+      "sha256": "29f97e90f3549d074b155af66b3bf13e3d79bc185f5458d6eb2f2be704d03e47",
+      "lines": 41
     },
     {
       "source": "docs/02-capabilities/devices/authority-handoff.md",
@@ -57157,11 +57162,6 @@
       "lines": 19
     },
     {
-      "source": "docs/02-capabilities/devices/README.md",
-      "sha256": "29f97e90f3549d074b155af66b3bf13e3d79bc185f5458d6eb2f2be704d03e47",
-      "lines": 41
-    },
-    {
       "source": "docs/02-capabilities/devices/scope-scenarios.md",
       "sha256": "4138ce7bb8faf3f18feaa93e94f585bba2bc12edf9734e49f3075e6d0a132fed",
       "lines": 25
@@ -57170,6 +57170,11 @@
       "source": "docs/02-capabilities/devices/snapshots-queries.md",
       "sha256": "90c5c4cd22d48a8a5ff7ba224e40a5e9361d312de5b635d787b5aa2216eb7989",
       "lines": 15
+    },
+    {
+      "source": "docs/02-capabilities/display-color/README.md",
+      "sha256": "4a410cdd9afbac280348db5cedab33d94e8b17d6c27468adcca3a432b832d55d",
+      "lines": 40
     },
     {
       "source": "docs/02-capabilities/display-color/benchmarks.md",
@@ -57212,11 +57217,6 @@
       "lines": 15
     },
     {
-      "source": "docs/02-capabilities/display-color/README.md",
-      "sha256": "4a410cdd9afbac280348db5cedab33d94e8b17d6c27468adcca3a432b832d55d",
-      "lines": 40
-    },
-    {
       "source": "docs/02-capabilities/display-color/security-accessibility.md",
       "sha256": "40df2b2c596a6b4b09c3d66524110eeef55339231c24b534c9974d11f743a02b",
       "lines": 15
@@ -57230,6 +57230,11 @@
       "source": "docs/02-capabilities/domain-analysis.md",
       "sha256": "f63989c44dcfe058c2ac0244a8b04f052b53c6b7cd264e00ec3fac700a176c82",
       "lines": 63
+    },
+    {
+      "source": "docs/02-capabilities/filesystem/README.md",
+      "sha256": "7f4dfa45be4fbef35e25921cf9c83c5de99b8004582914352db909ce18468de0",
+      "lines": 80
     },
     {
       "source": "docs/02-capabilities/filesystem/atomic-replace.md",
@@ -57307,11 +57312,6 @@
       "lines": 31
     },
     {
-      "source": "docs/02-capabilities/filesystem/README.md",
-      "sha256": "7f4dfa45be4fbef35e25921cf9c83c5de99b8004582914352db909ce18468de0",
-      "lines": 80
-    },
-    {
       "source": "docs/02-capabilities/filesystem/resolution-quality.md",
       "sha256": "53b1691d717cc71f97b4a68e7f05de42aa9a473e5dda3fa26eb999a1960764b0",
       "lines": 36
@@ -57340,6 +57340,11 @@
       "source": "docs/02-capabilities/graph-model.md",
       "sha256": "90e6a414bc71b5b4536b4c73aff3f7b7c2d51e16c2ca6b464f273fca70b87cee",
       "lines": 43
+    },
+    {
+      "source": "docs/02-capabilities/graphics/README.md",
+      "sha256": "64f18f846109f47eed90646b09f435dd6e0a8303eee8bc8da158a92652ee7e23",
+      "lines": 46
     },
     {
       "source": "docs/02-capabilities/graphics/benchmarks.md",
@@ -57372,11 +57377,6 @@
       "lines": 48
     },
     {
-      "source": "docs/02-capabilities/graphics/README.md",
-      "sha256": "64f18f846109f47eed90646b09f435dd6e0a8303eee8bc8da158a92652ee7e23",
-      "lines": 46
-    },
-    {
       "source": "docs/02-capabilities/graphics/resource-memory.md",
       "sha256": "d48625c55a2849e7282b1240c0a98db30f897fcd1cbbd7f43eda6fd47c965edc",
       "lines": 25
@@ -57385,6 +57385,11 @@
       "source": "docs/02-capabilities/graphics/submission.md",
       "sha256": "81be9549cc7d91971b50eef6279dac181c91253b158ea64ae008f30198397a12",
       "lines": 25
+    },
+    {
+      "source": "docs/02-capabilities/identity-governance/README.md",
+      "sha256": "8486c962455905fc1ee4d73740f58dd19caf6d686760f75c6b15faa040bd1093",
+      "lines": 56
     },
     {
       "source": "docs/02-capabilities/identity-governance/account-lifecycle.md",
@@ -57452,11 +57457,6 @@
       "lines": 11
     },
     {
-      "source": "docs/02-capabilities/identity-governance/README.md",
-      "sha256": "8486c962455905fc1ee4d73740f58dd19caf6d686760f75c6b15faa040bd1093",
-      "lines": 56
-    },
-    {
       "source": "docs/02-capabilities/identity-governance/schemas-mappings.md",
       "sha256": "67b5b9c2fdaffeb178ed33b7e793f69ba373abdd4ce43127d35906d8dcffeceb",
       "lines": 11
@@ -57465,6 +57465,11 @@
       "source": "docs/02-capabilities/identity-governance/tenants-federation.md",
       "sha256": "5963c883b8407eb1c7418f6d64ace2ce6b1d1e9737b6aba9bbced758c371073b",
       "lines": 11
+    },
+    {
+      "source": "docs/02-capabilities/identity-session/README.md",
+      "sha256": "ffff798c0342822e5a7759e10115ecfa765bbbcfdc823c5f4402e7576329bd13",
+      "lines": 42
     },
     {
       "source": "docs/02-capabilities/identity-session/authentication-ceremony.md",
@@ -57507,11 +57512,6 @@
       "lines": 17
     },
     {
-      "source": "docs/02-capabilities/identity-session/README.md",
-      "sha256": "ffff798c0342822e5a7759e10115ecfa765bbbcfdc823c5f4402e7576329bd13",
-      "lines": 42
-    },
-    {
       "source": "docs/02-capabilities/identity-session/security-accessibility.md",
       "sha256": "08ca30daf459b22a974a9e1912717069bc63cedb591fcb9301971577a0a4c1b5",
       "lines": 15
@@ -57520,6 +57520,11 @@
       "source": "docs/02-capabilities/identity-session/session-context.md",
       "sha256": "1c33dd3b4ce587eb102896758a30fcd04fb27f923d8921f8c19137c08a778c67",
       "lines": 17
+    },
+    {
+      "source": "docs/02-capabilities/information-protection/README.md",
+      "sha256": "c40b588dac45117113b65524ed9057ce008fd35ad1333eca3dd8ab6c1df45031",
+      "lines": 55
     },
     {
       "source": "docs/02-capabilities/information-protection/audit-governance.md",
@@ -57582,11 +57587,6 @@
       "lines": 15
     },
     {
-      "source": "docs/02-capabilities/information-protection/README.md",
-      "sha256": "c40b588dac45117113b65524ed9057ce008fd35ad1333eca3dd8ab6c1df45031",
-      "lines": 55
-    },
-    {
       "source": "docs/02-capabilities/information-protection/sharing-tenants.md",
       "sha256": "45370994344d3f4bafa8ced7ea7c606574c4b3af6439a3cb2dd91290b3397ce3",
       "lines": 15
@@ -57600,6 +57600,11 @@
       "source": "docs/02-capabilities/information-protection/user-mediation.md",
       "sha256": "3667718d0ff993a1e85b620321a8b6ea06c142d5a1e7aaf477b3d092b4c27f7e",
       "lines": 15
+    },
+    {
+      "source": "docs/02-capabilities/input/README.md",
+      "sha256": "20f988addf07d9e8f3f37fd9372eee8f17a40b8341e469381c49474c8d3335f9",
+      "lines": 47
     },
     {
       "source": "docs/02-capabilities/input/benchmarks.md",
@@ -57627,11 +57632,6 @@
       "lines": 23
     },
     {
-      "source": "docs/02-capabilities/input/README.md",
-      "sha256": "20f988addf07d9e8f3f37fd9372eee8f17a40b8341e469381c49474c8d3335f9",
-      "lines": 47
-    },
-    {
       "source": "docs/02-capabilities/input/routing-provenance.md",
       "sha256": "ecb22429ca2595be5db46515ac08740eae28b427dabcee817e654914c80fe005",
       "lines": 31
@@ -57645,6 +57645,11 @@
       "source": "docs/02-capabilities/input/touch.md",
       "sha256": "e8e64ca1684c4153e1c1aefbd88b81ba9aceebbccb0f5745ce1783c217083151",
       "lines": 21
+    },
+    {
+      "source": "docs/02-capabilities/interchange/README.md",
+      "sha256": "fa423f7e44cd05ec934fbf4ccfd36ff275f26752098ab7ddf4bd3c87d9012547",
+      "lines": 54
     },
     {
       "source": "docs/02-capabilities/interchange/benchmarks.md",
@@ -57702,11 +57707,6 @@
       "lines": 19
     },
     {
-      "source": "docs/02-capabilities/interchange/README.md",
-      "sha256": "fa423f7e44cd05ec934fbf4ccfd36ff275f26752098ab7ddf4bd3c87d9012547",
-      "lines": 54
-    },
-    {
       "source": "docs/02-capabilities/interchange/registries-lifecycle.md",
       "sha256": "c4b9733d88b741ecd4ab24d65150ee98c13a37946d5ec816234644e3fb135b89",
       "lines": 15
@@ -57725,6 +57725,11 @@
       "source": "docs/02-capabilities/interchange/wire-formats.md",
       "sha256": "589260c4405f8abdd78a0bcbb0a78b39e6be40463964b568e9928b8b61a7423b",
       "lines": 17
+    },
+    {
+      "source": "docs/02-capabilities/internationalization/README.md",
+      "sha256": "8012d666ccb6d601ce8adfe0ccc090d2411520fb12f5afa7435a22452fca334c",
+      "lines": 47
     },
     {
       "source": "docs/02-capabilities/internationalization/benchmarks.md",
@@ -57767,14 +57772,14 @@
       "lines": 39
     },
     {
-      "source": "docs/02-capabilities/internationalization/README.md",
-      "sha256": "8012d666ccb6d601ce8adfe0ccc090d2411520fb12f5afa7435a22452fca334c",
-      "lines": 47
-    },
-    {
       "source": "docs/02-capabilities/internationalization/resources-messages.md",
       "sha256": "973269ef154b76e34151701692e0a7725fb89c059e4d05b9f771aef24c32085a",
       "lines": 24
+    },
+    {
+      "source": "docs/02-capabilities/ipc/README.md",
+      "sha256": "eae80459ddd44db558e495034946fa1863837dff1eff716461ed9923a193a5f4",
+      "lines": 38
     },
     {
       "source": "docs/02-capabilities/ipc/benchmarks.md",
@@ -57817,11 +57822,6 @@
       "lines": 31
     },
     {
-      "source": "docs/02-capabilities/ipc/README.md",
-      "sha256": "eae80459ddd44db558e495034946fa1863837dff1eff716461ed9923a193a5f4",
-      "lines": 38
-    },
-    {
       "source": "docs/02-capabilities/ipc/source-review.md",
       "sha256": "7b6aa8846b491ae936d39f557f3fce05a6f3ffd68120962f1a8dd37c3cbab8f7",
       "lines": 24
@@ -57830,6 +57830,11 @@
       "source": "docs/02-capabilities/ipc/traceability.md",
       "sha256": "103a89d969afe9eb4697ddb6f3df2f45be32c5dfb92ca9cb19c153f4040cabd1",
       "lines": 32
+    },
+    {
+      "source": "docs/02-capabilities/lifecycle/README.md",
+      "sha256": "c2d38c1be63341637ee3250a96d2eaf578e8db49dbedb19994a518f7e049195a",
+      "lines": 42
     },
     {
       "source": "docs/02-capabilities/lifecycle/activation.md",
@@ -57857,11 +57862,6 @@
       "lines": 22
     },
     {
-      "source": "docs/02-capabilities/lifecycle/README.md",
-      "sha256": "c2d38c1be63341637ee3250a96d2eaf578e8db49dbedb19994a518f7e049195a",
-      "lines": 42
-    },
-    {
       "source": "docs/02-capabilities/lifecycle/restoration.md",
       "sha256": "b96601326b1a3f9a07abb754d43c32d97fdcf60adc66c692552ddbd08f565bb4",
       "lines": 20
@@ -57875,6 +57875,11 @@
       "source": "docs/02-capabilities/lifecycle/termination-inhibition.md",
       "sha256": "396831b075443150b725c14b4292a05a03ef42fec1c32d59092a7d72f3d79181",
       "lines": 20
+    },
+    {
+      "source": "docs/02-capabilities/memory/README.md",
+      "sha256": "3579e923850868fe6d4d5538cd86b466694eb83a0dd5841dd6231529578f5fde",
+      "lines": 43
     },
     {
       "source": "docs/02-capabilities/memory/allocator.md",
@@ -57907,11 +57912,6 @@
       "lines": 18
     },
     {
-      "source": "docs/02-capabilities/memory/README.md",
-      "sha256": "3579e923850868fe6d4d5538cd86b466694eb83a0dd5841dd6231529578f5fde",
-      "lines": 43
-    },
-    {
       "source": "docs/02-capabilities/memory/residency.md",
       "sha256": "f897ef13fe16b2fdba319d27d2572d6eff91a335a94ed998f65fe65fec4b3e42",
       "lines": 14
@@ -57925,6 +57925,11 @@
       "source": "docs/02-capabilities/memory/virtual-region.md",
       "sha256": "ad6fa4c4d65df700a30782397bf856b9456ac00149c99e49409232aa7ba8ab0b",
       "lines": 20
+    },
+    {
+      "source": "docs/02-capabilities/messaging/README.md",
+      "sha256": "4572f53c2649f1c6b3e9ef55d6b2295c77f6fe9d099eb4c2783e9e6d6052556e",
+      "lines": 45
     },
     {
       "source": "docs/02-capabilities/messaging/benchmarks.md",
@@ -57962,11 +57967,6 @@
       "lines": 18
     },
     {
-      "source": "docs/02-capabilities/messaging/README.md",
-      "sha256": "4572f53c2649f1c6b3e9ef55d6b2295c77f6fe9d099eb4c2783e9e6d6052556e",
-      "lines": 45
-    },
-    {
       "source": "docs/02-capabilities/messaging/retries-idempotency.md",
       "sha256": "6a7baf3389aa00af1b8be983bada90be295d91cb9b7d0a660687b06208a8e551",
       "lines": 18
@@ -57994,6 +57994,11 @@
     {
       "source": "docs/02-capabilities/model.md",
       "sha256": "e9942549ff985c20cb8b04c83db5158206bca50f4d39dbc8d107bc60db3598fc",
+      "lines": 52
+    },
+    {
+      "source": "docs/02-capabilities/networking/README.md",
+      "sha256": "c499f20326da2a11891f0e1391e0af522a709939bf6161b63406dc3340c0b8a5",
       "lines": 52
     },
     {
@@ -58030,6 +58035,11 @@
       "source": "docs/02-capabilities/networking/endpoint-identity.md",
       "sha256": "aeb2c85eda5b1c6b3d26ed0908ee591f41a52a97f09aa8672144de1f2080021b",
       "lines": 14
+    },
+    {
+      "source": "docs/02-capabilities/networking/http-README.md",
+      "sha256": "8140ada55829cb4f254a82176204b343f35e7c2fd5d5078a30a8268ce4e6412a",
+      "lines": 42
     },
     {
       "source": "docs/02-capabilities/networking/http-benchmarks.md",
@@ -58072,11 +58082,6 @@
       "lines": 16
     },
     {
-      "source": "docs/02-capabilities/networking/http-README.md",
-      "sha256": "8140ada55829cb4f254a82176204b343f35e7c2fd5d5078a30a8268ce4e6412a",
-      "lines": 42
-    },
-    {
       "source": "docs/02-capabilities/networking/http-server.md",
       "sha256": "0ff5161e811ab480be1ee4cd128353b0416fce4d979f753f8316f86be39fe16a",
       "lines": 14
@@ -58097,9 +58102,9 @@
       "lines": 23
     },
     {
-      "source": "docs/02-capabilities/networking/README.md",
-      "sha256": "c499f20326da2a11891f0e1391e0af522a709939bf6161b63406dc3340c0b8a5",
-      "lines": 52
+      "source": "docs/02-capabilities/networking/realtime-README.md",
+      "sha256": "72ce6df255933e3b70be6935169e7b458e8dfaf99056900e3b6e6029dd90e102",
+      "lines": 41
     },
     {
       "source": "docs/02-capabilities/networking/realtime-benchmarks.md",
@@ -58125,11 +58130,6 @@
       "source": "docs/02-capabilities/networking/realtime-platform-research.md",
       "sha256": "010e4e44cc0e13a570edc70edc332b9992552b4b6bd1dac9a7556d21629c1f3b",
       "lines": 15
-    },
-    {
-      "source": "docs/02-capabilities/networking/realtime-README.md",
-      "sha256": "72ce6df255933e3b70be6935169e7b458e8dfaf99056900e3b6e6029dd90e102",
-      "lines": 41
     },
     {
       "source": "docs/02-capabilities/networking/realtime-session.md",
@@ -58160,6 +58160,11 @@
       "source": "docs/02-capabilities/networking/secure-channel.md",
       "sha256": "31b847b832011b08ff4215f5c9f2fe08425fe9a4593da38916833f039247297e",
       "lines": 19
+    },
+    {
+      "source": "docs/02-capabilities/networking/secure-transport-README.md",
+      "sha256": "ce1216da7d5ee25d32f800b7fe27f90ff1a9af5e960795ce9c709964e8217419",
+      "lines": 46
     },
     {
       "source": "docs/02-capabilities/networking/secure-transport-authentication.md",
@@ -58212,11 +58217,6 @@
       "lines": 20
     },
     {
-      "source": "docs/02-capabilities/networking/secure-transport-README.md",
-      "sha256": "ce1216da7d5ee25d32f800b7fe27f90ff1a9af5e960795ce9c709964e8217419",
-      "lines": 46
-    },
-    {
       "source": "docs/02-capabilities/networking/secure-transport-resumption.md",
       "sha256": "cdaae8e6a9d95aeea0d7bc6488927edd372992b82326171f9a9ebe7185c668a0",
       "lines": 28
@@ -58225,6 +58225,11 @@
       "source": "docs/02-capabilities/networking/secure-transport-security-accessibility.md",
       "sha256": "5cdd4fdde778182792fb5e8cc05e49104d4068f8032f16ca3289376071f3095e",
       "lines": 18
+    },
+    {
+      "source": "docs/02-capabilities/notifications/README.md",
+      "sha256": "977dbfceb6a17563609cac58df2d26e3f33e1726656d92d5a3194b3e6404d5ff",
+      "lines": 41
     },
     {
       "source": "docs/02-capabilities/notifications/actions-activation.md",
@@ -58262,11 +58267,6 @@
       "lines": 17
     },
     {
-      "source": "docs/02-capabilities/notifications/README.md",
-      "sha256": "977dbfceb6a17563609cac58df2d26e3f33e1726656d92d5a3194b3e6404d5ff",
-      "lines": 41
-    },
-    {
       "source": "docs/02-capabilities/notifications/scheduling-lifecycle.md",
       "sha256": "e3ad3f346082ad029fb99e16e8b09122095e41c01f80df12ba218a60668ccaf3",
       "lines": 15
@@ -58280,6 +58280,11 @@
       "source": "docs/02-capabilities/notifications/submission-delivery.md",
       "sha256": "9e8344da4afecdc7b9d7f412a1523c3217637d56ba64ef1acc903b621b439819",
       "lines": 28
+    },
+    {
+      "source": "docs/02-capabilities/object-storage/README.md",
+      "sha256": "5bf5c3c108474f921fe1ed6fb9f88cb06c6fa3a32c2804e9dcb1f31c8e6f9387",
+      "lines": 45
     },
     {
       "source": "docs/02-capabilities/object-storage/benchmarks.md",
@@ -58337,11 +58342,6 @@
       "lines": 13
     },
     {
-      "source": "docs/02-capabilities/object-storage/README.md",
-      "sha256": "5bf5c3c108474f921fe1ed6fb9f88cb06c6fa3a32c2804e9dcb1f31c8e6f9387",
-      "lines": 45
-    },
-    {
       "source": "docs/02-capabilities/object-storage/reads-ranges.md",
       "sha256": "fa501230c142f7b89961e9ac0ff3a3a52960a0bf03d7038dd9e0fec2c54def11",
       "lines": 16
@@ -58355,6 +58355,11 @@
       "source": "docs/02-capabilities/object-storage/writes-multipart.md",
       "sha256": "06a4d010b459647cd938863056d895be15fe6c9786df8db5fb5d71ef6a05b052",
       "lines": 20
+    },
+    {
+      "source": "docs/02-capabilities/observability/README.md",
+      "sha256": "11955e4b005ca2316cadf3da13964229ae05dd79f6df81422d98404660340453",
+      "lines": 49
     },
     {
       "source": "docs/02-capabilities/observability/benchmarks.md",
@@ -58407,9 +58412,9 @@
       "lines": 20
     },
     {
-      "source": "docs/02-capabilities/observability/README.md",
-      "sha256": "11955e4b005ca2316cadf3da13964229ae05dd79f6df81422d98404660340453",
-      "lines": 49
+      "source": "docs/02-capabilities/package-management/README.md",
+      "sha256": "338cf7d66e59ad79bcf5a46b79b79f7858056052bf1be11585e06f14c8117f0c",
+      "lines": 43
     },
     {
       "source": "docs/02-capabilities/package-management/benchmarks.md",
@@ -58435,11 +58440,6 @@
       "source": "docs/02-capabilities/package-management/platform-research.md",
       "sha256": "05440eae6c9d40c1fc959ba81091be6329ba3c4333cadd036ffe019bdf603279",
       "lines": 33
-    },
-    {
-      "source": "docs/02-capabilities/package-management/README.md",
-      "sha256": "338cf7d66e59ad79bcf5a46b79b79f7858056052bf1be11585e06f14c8117f0c",
-      "lines": 43
     },
     {
       "source": "docs/02-capabilities/package-management/repository-update-metadata.md",
@@ -58470,6 +58470,11 @@
       "source": "docs/02-capabilities/package-management/staging-transactions.md",
       "sha256": "69486931d87dd72c85d747ce4e909acacbd82a60f7db8d4effdc4b2b75e49d73",
       "lines": 20
+    },
+    {
+      "source": "docs/02-capabilities/persistence/README.md",
+      "sha256": "da8708e10d01c7e710f8c9d6aa4cfc998b1fb7a8ab43c8e9c81060e7b849fbc6",
+      "lines": 45
     },
     {
       "source": "docs/02-capabilities/persistence/backup-recovery.md",
@@ -58522,11 +58527,6 @@
       "lines": 12
     },
     {
-      "source": "docs/02-capabilities/persistence/README.md",
-      "sha256": "da8708e10d01c7e710f8c9d6aa4cfc998b1fb7a8ab43c8e9c81060e7b849fbc6",
-      "lines": 45
-    },
-    {
       "source": "docs/02-capabilities/persistence/replication-failover.md",
       "sha256": "b70360c2043287d8e44bc40c0198924425f3a63b57c172aa13b99f873335f354",
       "lines": 18
@@ -58540,6 +58540,11 @@
       "source": "docs/02-capabilities/persistence/transactions.md",
       "sha256": "2e94cc0cd59aa620836e695f3ef7e562a36f4c605ddb78ade4c22bf31cf4576d",
       "lines": 18
+    },
+    {
+      "source": "docs/02-capabilities/plugins/README.md",
+      "sha256": "581362040f699a43d9dedbf83478212b6f07193c12e7e910d48fc81f5a6078d4",
+      "lines": 47
     },
     {
       "source": "docs/02-capabilities/plugins/activation-lifecycle.md",
@@ -58577,11 +58582,6 @@
       "lines": 18
     },
     {
-      "source": "docs/02-capabilities/plugins/README.md",
-      "sha256": "581362040f699a43d9dedbf83478212b6f07193c12e7e910d48fc81f5a6078d4",
-      "lines": 47
-    },
-    {
       "source": "docs/02-capabilities/plugins/trust-isolation.md",
       "sha256": "13b3093ad0fcfd9d895d973bbb770e3696231a3cb175fce68e88ddc2fafdec17",
       "lines": 20
@@ -58590,6 +58590,11 @@
       "source": "docs/02-capabilities/plugins/update-rollback.md",
       "sha256": "0880cf247faf21c6b17f523b710a4d6465e0e1eeb8843d1f7aa729c15a3a5237",
       "lines": 14
+    },
+    {
+      "source": "docs/02-capabilities/policy/README.md",
+      "sha256": "d28366da1ff13a857e51069e0be33a5230b0fb6dcb0df3861ea96c2a05db4576",
+      "lines": 55
     },
     {
       "source": "docs/02-capabilities/policy/benchmarks.md",
@@ -58657,11 +58662,6 @@
       "lines": 18
     },
     {
-      "source": "docs/02-capabilities/policy/README.md",
-      "sha256": "d28366da1ff13a857e51069e0be33a5230b0fb6dcb0df3861ea96c2a05db4576",
-      "lines": 55
-    },
-    {
       "source": "docs/02-capabilities/policy/security.md",
       "sha256": "21c2135cc44c2a5c82dd7b1365de47b48e32bb0e73bdc0dd55ee3dbc1b085f62",
       "lines": 17
@@ -58670,6 +58670,11 @@
       "source": "docs/02-capabilities/policy/testing-simulation.md",
       "sha256": "04ae065360ef88d7980f446d72bf3ef7ce5f1ec5fde6e100f956bcadd2cf5c8f",
       "lines": 17
+    },
+    {
+      "source": "docs/02-capabilities/power/README.md",
+      "sha256": "e250d4bda7722a889a0bbdd316e34e23d06a8868c70e8a9b72a2bf4f8768948b",
+      "lines": 39
     },
     {
       "source": "docs/02-capabilities/power/assertion-leases.md",
@@ -58707,11 +58712,6 @@
       "lines": 18
     },
     {
-      "source": "docs/02-capabilities/power/README.md",
-      "sha256": "e250d4bda7722a889a0bbdd316e34e23d06a8868c70e8a9b72a2bf4f8768948b",
-      "lines": 39
-    },
-    {
       "source": "docs/02-capabilities/power/security-accessibility.md",
       "sha256": "35206ebeafe242f70d151f64e9bbef73577b414329f936d2e36298d1fd777011",
       "lines": 15
@@ -58725,6 +58725,11 @@
       "source": "docs/02-capabilities/power/thermal-performance.md",
       "sha256": "6f50059c0b81a583ac775810a0f1ecc0e21ed6551f6e73fcec6d0ef05367b6f5",
       "lines": 15
+    },
+    {
+      "source": "docs/02-capabilities/printing/README.md",
+      "sha256": "8751788c8b29fef6edbdbc5e7c01dffbdff1f46c6a8dab545119e85a312dc3c7",
+      "lines": 40
     },
     {
       "source": "docs/02-capabilities/printing/artifact-output.md",
@@ -58767,11 +58772,6 @@
       "lines": 25
     },
     {
-      "source": "docs/02-capabilities/printing/README.md",
-      "sha256": "8751788c8b29fef6edbdbc5e7c01dffbdff1f46c6a8dab545119e85a312dc3c7",
-      "lines": 40
-    },
-    {
       "source": "docs/02-capabilities/printing/rendering-color.md",
       "sha256": "2ef5745f0aee79bcff1e501667cd04196b3f14a2668ae0f71815ce523ec4e494",
       "lines": 15
@@ -58780,6 +58780,11 @@
       "source": "docs/02-capabilities/printing/security-accessibility.md",
       "sha256": "063a53e47cad0488d2f17702645f052e629dbed735b20ba7badd822175f6782d",
       "lines": 15
+    },
+    {
+      "source": "docs/02-capabilities/privacy/README.md",
+      "sha256": "7997b6b92677e85e9621141674a169201513e675c805f51c5b9cfbe4ff661126",
+      "lines": 57
     },
     {
       "source": "docs/02-capabilities/privacy/access-export-correction.md",
@@ -58842,11 +58847,6 @@
       "lines": 15
     },
     {
-      "source": "docs/02-capabilities/privacy/README.md",
-      "sha256": "7997b6b92677e85e9621141674a169201513e675c805f51c5b9cfbe4ff661126",
-      "lines": 57
-    },
-    {
       "source": "docs/02-capabilities/privacy/retention-erasure.md",
       "sha256": "6946079cc54c40af6549cdb3049a111469a83a418a34acb1fc0f0a18f9e0b327",
       "lines": 17
@@ -58865,6 +58865,11 @@
       "source": "docs/02-capabilities/privacy/transfers-processors.md",
       "sha256": "f70b6e23857d673b73767a533ad90545d40fcc0bd0e59201a5089d178143c9ba",
       "lines": 15
+    },
+    {
+      "source": "docs/02-capabilities/process/README.md",
+      "sha256": "aa54dd27fef9463494e97f0a4b9823e8e55cf84113e0ede3e24ae8314de21c2b",
+      "lines": 66
     },
     {
       "source": "docs/02-capabilities/process/benchmarks.md",
@@ -58927,11 +58932,6 @@
       "lines": 31
     },
     {
-      "source": "docs/02-capabilities/process/README.md",
-      "sha256": "aa54dd27fef9463494e97f0a4b9823e8e55cf84113e0ede3e24ae8314de21c2b",
-      "lines": 66
-    },
-    {
       "source": "docs/02-capabilities/process/source-review.md",
       "sha256": "faaef6c92174c505f1cde2f42abcc501c2bb14008f62ef952ae5f77425347a50",
       "lines": 25
@@ -58955,6 +58955,11 @@
       "source": "docs/02-capabilities/process/traceability.md",
       "sha256": "a13f967c8e951c8a60c3e3a1090b13ceef95717ab24efea8e2d19a3dfb77a8c9",
       "lines": 37
+    },
+    {
+      "source": "docs/02-capabilities/profiles/README.md",
+      "sha256": "d915afa400734498208b1bcef7044108dba00da7414ff5ab2ef6f8f4096bdc8c",
+      "lines": 68
     },
     {
       "source": "docs/02-capabilities/profiles/foundation-ca-operator.md",
@@ -59002,11 +59007,6 @@
       "lines": 64
     },
     {
-      "source": "docs/02-capabilities/profiles/README.md",
-      "sha256": "d915afa400734498208b1bcef7044108dba00da7414ff5ab2ef6f8f4096bdc8c",
-      "lines": 68
-    },
-    {
       "source": "docs/02-capabilities/profiles/resolution-report.md",
       "sha256": "63bf5f7c2bacd6e4d72e15452be9ccef3f46009504aac54c535825c892b0d214",
       "lines": 38
@@ -59015,6 +59015,11 @@
       "source": "docs/02-capabilities/profiles.md",
       "sha256": "9ea55518967a345695667fb4c805638c78704134b87984b1f647f4de6aaf5beb",
       "lines": 23
+    },
+    {
+      "source": "docs/02-capabilities/remote-interaction/README.md",
+      "sha256": "fa8d4f32c63d45d26df2d0297afd0e01e2daad384bb8a6797445affd0601b7d0",
+      "lines": 44
     },
     {
       "source": "docs/02-capabilities/remote-interaction/benchmarks.md",
@@ -59057,11 +59062,6 @@
       "lines": 17
     },
     {
-      "source": "docs/02-capabilities/remote-interaction/README.md",
-      "sha256": "fa8d4f32c63d45d26df2d0297afd0e01e2daad384bb8a6797445affd0601b7d0",
-      "lines": 44
-    },
-    {
       "source": "docs/02-capabilities/remote-interaction/security-accessibility.md",
       "sha256": "a954e41f0cd431d90d7f1737b8b01d5f0e96b31010a4c7e10919955e1c20bcac",
       "lines": 15
@@ -59075,6 +59075,11 @@
       "source": "docs/02-capabilities/remote-interaction/state-ordering-recovery.md",
       "sha256": "f0fc469b4e3159cc308fcd45fa6a94f57f4ec81bf72ba2ef3012694975472dc9",
       "lines": 17
+    },
+    {
+      "source": "docs/02-capabilities/runtime-time/README.md",
+      "sha256": "bc17604c94c403e3fc34254d6934b1fa9dedba9f9908808cf0ae79e0f8996316",
+      "lines": 64
     },
     {
       "source": "docs/02-capabilities/runtime-time/benchmarks.md",
@@ -59127,11 +59132,6 @@
       "lines": 39
     },
     {
-      "source": "docs/02-capabilities/runtime-time/README.md",
-      "sha256": "bc17604c94c403e3fc34254d6934b1fa9dedba9f9908808cf0ae79e0f8996316",
-      "lines": 64
-    },
-    {
       "source": "docs/02-capabilities/runtime-time/shutdown.md",
       "sha256": "cad133472cee81d8ab43bf2938737e6282ec57d3b88005320d4cd9bdfa0ab531",
       "lines": 72
@@ -59145,6 +59145,11 @@
       "source": "docs/02-capabilities/runtime-time/traceability.md",
       "sha256": "05ee249820d2912fda907d178d626fbd085981491e74130e4781e569f375d9e8",
       "lines": 41
+    },
+    {
+      "source": "docs/02-capabilities/screen-capture/README.md",
+      "sha256": "d78ca1936b5de4cb0addd68a90cfd1946c0b9c5a8b29f901f0e7ef4ea946ae0c",
+      "lines": 43
     },
     {
       "source": "docs/02-capabilities/screen-capture/benchmarks.md",
@@ -59187,11 +59192,6 @@
       "lines": 17
     },
     {
-      "source": "docs/02-capabilities/screen-capture/README.md",
-      "sha256": "d78ca1936b5de4cb0addd68a90cfd1946c0b9c5a8b29f901f0e7ef4ea946ae0c",
-      "lines": 43
-    },
-    {
       "source": "docs/02-capabilities/screen-capture/security-accessibility.md",
       "sha256": "5a9135cbb2d7770f484daab9c5ae5f8ebadd0e16d9231bad8f10ab327823d845",
       "lines": 17
@@ -59205,6 +59205,11 @@
       "source": "docs/02-capabilities/screen-capture/source-selection.md",
       "sha256": "58a81866b4c9ebce7c4fc1e959653d85975f7a014f02f06808ab63484693398a",
       "lines": 21
+    },
+    {
+      "source": "docs/02-capabilities/search/README.md",
+      "sha256": "f846eecdcd1ff3e22711e00cf0aa239fdf9815ed0ae6204b94e517eeaa6681b6",
+      "lines": 53
     },
     {
       "source": "docs/02-capabilities/search/benchmarks.md",
@@ -59257,11 +59262,6 @@
       "lines": 19
     },
     {
-      "source": "docs/02-capabilities/search/README.md",
-      "sha256": "f846eecdcd1ff3e22711e00cf0aa239fdf9815ed0ae6204b94e517eeaa6681b6",
-      "lines": 53
-    },
-    {
       "source": "docs/02-capabilities/search/schema-analysis.md",
       "sha256": "61a03edad2db6afd1195d92134bc736d047343297daf1ff0a02404df40f392d3",
       "lines": 15
@@ -59280,6 +59280,11 @@
       "source": "docs/02-capabilities/search/visibility-lifecycle.md",
       "sha256": "fe9ec9bc52a129f3336feb6fd6827d1543d26d18680961394a3d15b093c0cb14",
       "lines": 15
+    },
+    {
+      "source": "docs/02-capabilities/secrets-lifecycle/README.md",
+      "sha256": "4583eb859bac1ebbf5a38f5ec845023d7d5d4ec3a192c26f604ec2fc66d5c26a",
+      "lines": 54
     },
     {
       "source": "docs/02-capabilities/secrets-lifecycle/benchmarks.md",
@@ -59337,11 +59342,6 @@
       "lines": 13
     },
     {
-      "source": "docs/02-capabilities/secrets-lifecycle/README.md",
-      "sha256": "4583eb859bac1ebbf5a38f5ec845023d7d5d4ec3a192c26f604ec2fc66d5c26a",
-      "lines": 54
-    },
-    {
       "source": "docs/02-capabilities/secrets-lifecycle/recovery-migration.md",
       "sha256": "f3c13187c044752b6fab6f2e20161521f1db563ad34a4832f4354e36b9999dde",
       "lines": 13
@@ -59360,6 +59360,11 @@
       "source": "docs/02-capabilities/secrets-lifecycle/use-without-reveal.md",
       "sha256": "f59ddffd295a35866bf1a63cc37f3d2dc0185695233f1fd2595f04a7ccbe5599",
       "lines": 13
+    },
+    {
+      "source": "docs/02-capabilities/security/README.md",
+      "sha256": "bd5420143406c3cb5ac521b3eea7a0640978e284c2a97e0710c45f41a79fa9eb",
+      "lines": 155
     },
     {
       "source": "docs/02-capabilities/security/attenuation-cross-cutting-review.md",
@@ -59442,6 +59447,11 @@
       "lines": 74
     },
     {
+      "source": "docs/02-capabilities/security/crypto-README.md",
+      "sha256": "4161969be716b29081cef7d80cb11fe276dd219ce6cf0220cf7ebdff1d8bec09",
+      "lines": 48
+    },
+    {
       "source": "docs/02-capabilities/security/crypto-aead.md",
       "sha256": "e2fc24fe95ce514b4e4c221be11fa3dd5db2a2371fb0ad025fdf00e7de15d599",
       "lines": 17
@@ -59517,11 +59527,6 @@
       "lines": 28
     },
     {
-      "source": "docs/02-capabilities/security/crypto-README.md",
-      "sha256": "4161969be716b29081cef7d80cb11fe276dd219ce6cf0220cf7ebdff1d8bec09",
-      "lines": 48
-    },
-    {
       "source": "docs/02-capabilities/security/crypto-source-review.md",
       "sha256": "e2d0cf8bfd343f52745b9526c9a4d79f3e9ee0ed36ae81cf8c5cdbc93bc4e699",
       "lines": 27
@@ -59535,6 +59540,11 @@
       "source": "docs/02-capabilities/security/delegation-model.md",
       "sha256": "d32ae911c066a61e97df4ebc5df3bc7564dcd35955718dcb1633e5dffa196b21",
       "lines": 63
+    },
+    {
+      "source": "docs/02-capabilities/security/pki-README.md",
+      "sha256": "2fa1f1ab17d8aa07204410f150c88549e9a441f08e5c2d8a7db9fd2eca05c482",
+      "lines": 51
     },
     {
       "source": "docs/02-capabilities/security/pki-benchmarks.md",
@@ -59555,6 +59565,11 @@
       "source": "docs/02-capabilities/security/pki-identity-matching.md",
       "sha256": "b078227223f66d778e096f2981491828ab0bdb58a17894752f4fe11ab2ba5a21",
       "lines": 15
+    },
+    {
+      "source": "docs/02-capabilities/security/pki-issuance-README.md",
+      "sha256": "e58eeb648dd774beca7a7995e666ad8032851f67320af1eb1f3b8c6bd9e69dec",
+      "lines": 48
     },
     {
       "source": "docs/02-capabilities/security/pki-issuance-authority.md",
@@ -59617,11 +59632,6 @@
       "lines": 28
     },
     {
-      "source": "docs/02-capabilities/security/pki-issuance-README.md",
-      "sha256": "e58eeb648dd774beca7a7995e666ad8032851f67320af1eb1f3b8c6bd9e69dec",
-      "lines": 48
-    },
-    {
       "source": "docs/02-capabilities/security/pki-issuance-renewal.md",
       "sha256": "1475f2b044975bb7ed4be04cc58e03dc35b4093e4db8473234e16110c69dd752",
       "lines": 20
@@ -59665,11 +59675,6 @@
       "source": "docs/02-capabilities/security/pki-platform-research.md",
       "sha256": "da6d0f90904ff86111e81429638abcd0f9f785f0f88b8f46068334daf33ad1b6",
       "lines": 26
-    },
-    {
-      "source": "docs/02-capabilities/security/pki-README.md",
-      "sha256": "2fa1f1ab17d8aa07204410f150c88549e9a441f08e5c2d8a7db9fd2eca05c482",
-      "lines": 51
     },
     {
       "source": "docs/02-capabilities/security/pki-results-lifecycle.md",
@@ -59767,11 +59772,6 @@
       "lines": 47
     },
     {
-      "source": "docs/02-capabilities/security/README.md",
-      "sha256": "bd5420143406c3cb5ac521b3eea7a0640978e284c2a97e0710c45f41a79fa9eb",
-      "lines": 155
-    },
-    {
       "source": "docs/02-capabilities/security/restricted-execution-cross-cutting-review.md",
       "sha256": "aee13e4f732ddf10795bb098a317469096546504df487e9d8b7a42f44cb9bca8",
       "lines": 26
@@ -59867,6 +59867,11 @@
       "lines": 38
     },
     {
+      "source": "docs/02-capabilities/service-traffic/README.md",
+      "sha256": "85946dda86ce0db7bf44ffe05ba7402d87a85db95fd4e043f2d9b40dee1302b7",
+      "lines": 54
+    },
+    {
       "source": "docs/02-capabilities/service-traffic/attempts-admission.md",
       "sha256": "9b06f7c16208b99c83555938d635675a8efaeeb674a31cad54afa0d995430e80",
       "lines": 17
@@ -59922,11 +59927,6 @@
       "lines": 20
     },
     {
-      "source": "docs/02-capabilities/service-traffic/README.md",
-      "sha256": "85946dda86ce0db7bf44ffe05ba7402d87a85db95fd4e043f2d9b40dee1302b7",
-      "lines": 54
-    },
-    {
       "source": "docs/02-capabilities/service-traffic/registration-discovery.md",
       "sha256": "22a4fec1f5d9ea2f42b2257e92bb2c4962c0850fb97a6e38cb6dd6f7a3bee27e",
       "lines": 19
@@ -59940,6 +59940,11 @@
       "source": "docs/02-capabilities/service-traffic/security-privacy.md",
       "sha256": "48c9a3021d41eb0e4a864ec805482f84623dc303163ad04d90ae610b8bf7e261",
       "lines": 17
+    },
+    {
+      "source": "docs/02-capabilities/signed-artifacts/README.md",
+      "sha256": "9a56e7bc3c4c5d4a59a64942e62cc91cb52480cb13ba6257addcf47af314454c",
+      "lines": 43
     },
     {
       "source": "docs/02-capabilities/signed-artifacts/artifact-model.md",
@@ -59967,11 +59972,6 @@
       "lines": 18
     },
     {
-      "source": "docs/02-capabilities/signed-artifacts/README.md",
-      "sha256": "9a56e7bc3c4c5d4a59a64942e62cc91cb52480cb13ba6257addcf47af314454c",
-      "lines": 43
-    },
-    {
       "source": "docs/02-capabilities/signed-artifacts/security-accessibility.md",
       "sha256": "43499874eb4bd1dfce162af975f8be1d5f39607796a88562eac6e04b32ddf0fd",
       "lines": 18
@@ -59990,6 +59990,11 @@
       "source": "docs/02-capabilities/signed-artifacts/verification-lifecycle.md",
       "sha256": "abb8a7230cacf43bfa81c8f774ba3ece7c6b9a8f85afddc74eef90180a95970d",
       "lines": 20
+    },
+    {
+      "source": "docs/02-capabilities/still-image/README.md",
+      "sha256": "cae241ffb299e581d46345f1fc9c2218450024922b5f655cd7f1b34211e33599",
+      "lines": 42
     },
     {
       "source": "docs/02-capabilities/still-image/animation.md",
@@ -60042,14 +60047,14 @@
       "lines": 15
     },
     {
-      "source": "docs/02-capabilities/still-image/README.md",
-      "sha256": "cae241ffb299e581d46345f1fc9c2218450024922b5f655cd7f1b34211e33599",
-      "lines": 42
-    },
-    {
       "source": "docs/02-capabilities/still-image/security-accessibility.md",
       "sha256": "606784fcab0fcd8b2e8f79eab534d1920277bc517e5b4337a99df55459ea200c",
       "lines": 15
+    },
+    {
+      "source": "docs/02-capabilities/storage/README.md",
+      "sha256": "22e9b957f856550db79f419c7102d41ccd534c8901c42b45992caaeacbeee9b0",
+      "lines": 42
     },
     {
       "source": "docs/02-capabilities/storage/benchmarks.md",
@@ -60092,11 +60097,6 @@
       "lines": 18
     },
     {
-      "source": "docs/02-capabilities/storage/README.md",
-      "sha256": "22e9b957f856550db79f419c7102d41ccd534c8901c42b45992caaeacbeee9b0",
-      "lines": 42
-    },
-    {
       "source": "docs/02-capabilities/storage/removal-coordination.md",
       "sha256": "7fcf44680e3d073bef11df8efeab0cb991ccb0824d523e27668efc98499999f6",
       "lines": 32
@@ -60110,6 +60110,11 @@
       "source": "docs/02-capabilities/taxonomy.md",
       "sha256": "2c277ebbda777edef1b774f30101946ddbb9b18bf329c6a3ea133d8f86393295",
       "lines": 122
+    },
+    {
+      "source": "docs/02-capabilities/tenant-service-governance/README.md",
+      "sha256": "3e732f437bd7480353f22e29746d059bfedcbb1aedf9dcb4c344806950d018f1",
+      "lines": 57
     },
     {
       "source": "docs/02-capabilities/tenant-service-governance/aggregation-rating.md",
@@ -60187,14 +60192,14 @@
       "lines": 15
     },
     {
-      "source": "docs/02-capabilities/tenant-service-governance/README.md",
-      "sha256": "3e732f437bd7480353f22e29746d059bfedcbb1aedf9dcb4c344806950d018f1",
-      "lines": 57
-    },
-    {
       "source": "docs/02-capabilities/tenant-service-governance/tenant-lifecycle.md",
       "sha256": "4d50be8cfed890cd55191a970d1888abad822c272376fc5bdc93a406565e93f2",
       "lines": 13
+    },
+    {
+      "source": "docs/02-capabilities/terminal/README.md",
+      "sha256": "414762b0b50855b414bc7b00789b203991ea8f7bc607522b39a0fa78b7eb583b",
+      "lines": 50
     },
     {
       "source": "docs/02-capabilities/terminal/accessibility-model.md",
@@ -60242,11 +60247,6 @@
       "lines": 36
     },
     {
-      "source": "docs/02-capabilities/terminal/README.md",
-      "sha256": "414762b0b50855b414bc7b00789b203991ea8f7bc607522b39a0fa78b7eb583b",
-      "lines": 50
-    },
-    {
       "source": "docs/02-capabilities/terminal/recording-replay.md",
       "sha256": "fc42d45a845f49e15b56a742d019876f56db211c57de0899376acd9c7c3b9f9a",
       "lines": 44
@@ -60265,6 +60265,11 @@
       "source": "docs/02-capabilities/terminal/terminal-model.md",
       "sha256": "b05c8e2185e78d8934ae1a831b554b4e531832843556758f21d78c2f37059428",
       "lines": 46
+    },
+    {
+      "source": "docs/02-capabilities/text/README.md",
+      "sha256": "930e74e23ad954b2fc850e6cc85ca6fe8d21598d58723d9897bd06b9d571b32e",
+      "lines": 47
     },
     {
       "source": "docs/02-capabilities/text/benchmarks.md",
@@ -60297,11 +60302,6 @@
       "lines": 20
     },
     {
-      "source": "docs/02-capabilities/text/README.md",
-      "sha256": "930e74e23ad954b2fc850e6cc85ca6fe8d21598d58723d9897bd06b9d571b32e",
-      "lines": 47
-    },
-    {
       "source": "docs/02-capabilities/text/shaping.md",
       "sha256": "df2165ec81ccdb64414f232902540065a1031e6ca64fbf9947d274c2e2a2c29d",
       "lines": 25
@@ -60310,6 +60310,11 @@
       "source": "docs/02-capabilities/text/unicode-model.md",
       "sha256": "557e1607668a37c35b32006b04c5cb714038858b6534f7c1b732631ba6d5e63f",
       "lines": 31
+    },
+    {
+      "source": "docs/02-capabilities/threading/README.md",
+      "sha256": "23fb3066ff5553d0ca44f0fa1f481370c6fb94d0cd7f5b32b0f421898556cfbe",
+      "lines": 40
     },
     {
       "source": "docs/02-capabilities/threading/atomics.md",
@@ -60337,11 +60342,6 @@
       "lines": 17
     },
     {
-      "source": "docs/02-capabilities/threading/README.md",
-      "sha256": "23fb3066ff5553d0ca44f0fa1f481370c6fb94d0cd7f5b32b0f421898556cfbe",
-      "lines": 40
-    },
-    {
       "source": "docs/02-capabilities/threading/scheduling-affinity.md",
       "sha256": "4d3aa9e58ea8fdd8f360d52f7cc496f63867d2eb611a75cd99e3405f2040da36",
       "lines": 14
@@ -60360,6 +60360,11 @@
       "source": "docs/02-capabilities/threading/wait-primitives.md",
       "sha256": "b106f617e6edd09418d777124e1a300c8aaeb44d789c5ceaa59193ec722b6803",
       "lines": 16
+    },
+    {
+      "source": "docs/02-capabilities/time-media/README.md",
+      "sha256": "f5d05286429c35fd4f0c96a7bb4a843f6d153aa7e1b24dfec8684c837f3ef2b5",
+      "lines": 47
     },
     {
       "source": "docs/02-capabilities/time-media/benchmarks.md",
@@ -60397,11 +60402,6 @@
       "lines": 15
     },
     {
-      "source": "docs/02-capabilities/time-media/README.md",
-      "sha256": "f5d05286429c35fd4f0c96a7bb4a843f6d153aa7e1b24dfec8684c837f3ef2b5",
-      "lines": 47
-    },
-    {
       "source": "docs/02-capabilities/time-media/security-protected.md",
       "sha256": "25ffab09315207b34ef070f0a775f97b867f5da46325dac7d765233b1c30dd21",
       "lines": 15
@@ -60425,6 +60425,11 @@
       "source": "docs/02-capabilities/time-media/timeline.md",
       "sha256": "f9e9152a7703c133d7f8cb236c2fcd7ac3d14ab0a1e585aa3f5c9139dd9893be",
       "lines": 17
+    },
+    {
+      "source": "docs/02-capabilities/windowing/README.md",
+      "sha256": "2994762b0340ce6251b6f96de9d259584202a625e90065a83d6c16559786b162",
+      "lines": 52
     },
     {
       "source": "docs/02-capabilities/windowing/benchmarks.md",
@@ -60482,11 +60487,6 @@
       "lines": 32
     },
     {
-      "source": "docs/02-capabilities/windowing/README.md",
-      "sha256": "2994762b0340ce6251b6f96de9d259584202a625e90065a83d6c16559786b162",
-      "lines": 52
-    },
-    {
       "source": "docs/02-capabilities/windowing/source-review.md",
       "sha256": "73902e0f8b33660de69e862dc22661ec688a38e6ab6190e7210625c34b7430f8",
       "lines": 25
@@ -60500,6 +60500,11 @@
       "source": "docs/02-capabilities/windowing/window.md",
       "sha256": "9caeaab471ce69294c64a2c1619d5f079864608eac9c9161f1fd07a06995bfff",
       "lines": 48
+    },
+    {
+      "source": "docs/02-capabilities/workflow-orchestration/README.md",
+      "sha256": "ef750a663dbe91c97a3149703b29bfcab372a9a7c1d36ad7b5412569c6bc0f64",
+      "lines": 58
     },
     {
       "source": "docs/02-capabilities/workflow-orchestration/activities-events.md",
@@ -60567,11 +60572,6 @@
       "lines": 16
     },
     {
-      "source": "docs/02-capabilities/workflow-orchestration/README.md",
-      "sha256": "ef750a663dbe91c97a3149703b29bfcab372a9a7c1d36ad7b5412569c6bc0f64",
-      "lines": 58
-    },
-    {
       "source": "docs/02-capabilities/workflow-orchestration/retries-effects.md",
       "sha256": "450a1abd0382a3889665fb4c3e0016142fd829fc9c3c5786a49662a817141472",
       "lines": 13
@@ -60590,6 +60590,11 @@
       "source": "docs/03-delivery/strategy.md",
       "sha256": "8a07b94ab86bcfd117841f4c8b0fdb0cc962c98be6bcd6b3711a543c332c9d32",
       "lines": 43
+    },
+    {
+      "source": "docs/04-ecosystem/consistency-readiness/README.md",
+      "sha256": "48873d164133acaab94bfb62c1f5eb3c169568f1624911b1ffcb54b3c4397684",
+      "lines": 60
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/audit-report.md",
@@ -60667,11 +60672,6 @@
       "lines": 73
     },
     {
-      "source": "docs/04-ecosystem/consistency-readiness/README.md",
-      "sha256": "48873d164133acaab94bfb62c1f5eb3c169568f1624911b1ffcb54b3c4397684",
-      "lines": 60
-    },
-    {
       "source": "docs/04-ecosystem/consistency-readiness/security-batch-benchmarks.md",
       "sha256": "3bc77123378d9d8a49a297b432df4a14689e6824a029c70118ef2f9077f058e4",
       "lines": 31
@@ -60695,6 +60695,11 @@
       "source": "docs/04-ecosystem/consistency-readiness/vocabulary.md",
       "sha256": "b874708ce071a203eb6979c3405bba3fdc900cab602a955365295403262f8378",
       "lines": 68
+    },
+    {
+      "source": "docs/04-ecosystem/repository-operations/README.md",
+      "sha256": "a0fefeb6630981cf6cffd7c093e60006b0fd0b28cd408411f9bd2b15ba56a543",
+      "lines": 42
     },
     {
       "source": "docs/04-ecosystem/repository-operations/advisory-model.md",
@@ -60742,11 +60747,6 @@
       "lines": 32
     },
     {
-      "source": "docs/04-ecosystem/repository-operations/README.md",
-      "sha256": "a0fefeb6630981cf6cffd7c093e60006b0fd0b28cd408411f9bd2b15ba56a543",
-      "lines": 42
-    },
-    {
       "source": "docs/04-ecosystem/repository-operations/revocation-emergency.md",
       "sha256": "526a6043f650f4af5d32b20f88d0f734e6ee55526cd38a34cdfd5b6a2ac6c949",
       "lines": 20
@@ -60782,6 +60782,11 @@
       "lines": 40
     },
     {
+      "source": "docs/05-governance/implementation-trials/README.md",
+      "sha256": "9ba5508cdf5a1730b758ad832e6ef5f7c6d2b1f31c1d97480b14d6396d1855fc",
+      "lines": 33
+    },
+    {
       "source": "docs/05-governance/implementation-trials/change-control.md",
       "sha256": "33967aa904975bf1fc4aa5d11a85435e19d3730a2028fe80222ebf019f440542",
       "lines": 22
@@ -60805,11 +60810,6 @@
       "source": "docs/05-governance/implementation-trials/native-provider-matrix.md",
       "sha256": "f0707a3c854b94e1ae2a120dfd2f885cf0e9036d480489ee5e7ad0193347fdd0",
       "lines": 25
-    },
-    {
-      "source": "docs/05-governance/implementation-trials/README.md",
-      "sha256": "9ba5508cdf5a1730b758ad832e6ef5f7c6d2b1f31c1d97480b14d6396d1855fc",
-      "lines": 33
     },
     {
       "source": "docs/05-governance/implementation-trials/repository-and-ci.md",
@@ -60840,6 +60840,11 @@
       "source": "docs/05-governance/rfc-template.md",
       "sha256": "ac3ed0ca47f004851d82870ab0785fac36ad6ee8ee415feaf34b0c602cd448e0",
       "lines": 34
+    },
+    {
+      "source": "docs/05-governance/software-development/README.md",
+      "sha256": "69d84e6d0c9eb382d6b8548790c5a36ac2d6d460deb8f9c5052201d633625198",
+      "lines": 59
     },
     {
       "source": "docs/05-governance/software-development/api-errors.md",
@@ -60882,11 +60887,6 @@
       "lines": 17
     },
     {
-      "source": "docs/05-governance/software-development/README.md",
-      "sha256": "69d84e6d0c9eb382d6b8548790c5a36ac2d6d460deb8f9c5052201d633625198",
-      "lines": 59
-    },
-    {
       "source": "docs/05-governance/software-development/repository-profile.md",
       "sha256": "fac35fcd5e24ecfec650556bb8f43eea7e1c2e87e08e9006961c770ef292347f",
       "lines": 29
@@ -60925,6 +60925,11 @@
       "source": "docs/06-roadmap/roadmap.md",
       "sha256": "8ba8d5100b2e286510d946ef11e7b8218846d9430d0c3d33783c8748ca1b37fa",
       "lines": 289
+    },
+    {
+      "source": "docs/README.md",
+      "sha256": "d295204dca574b5c3d3178160f1279e8bc9e9abcc3d3d0806d769169fb96a53e",
+      "lines": 67
     },
     {
       "source": "docs/adr/0001-capability-first-platform.md",
@@ -61745,11 +61750,6 @@
       "source": "docs/adr/README.md",
       "sha256": "5407e4dd4be94454369784939a8f17d30947499d329745b80afc29cfba5f89ef",
       "lines": 169
-    },
-    {
-      "source": "docs/README.md",
-      "sha256": "d295204dca574b5c3d3178160f1279e8bc9e9abcc3d3d0806d769169fb96a53e",
-      "lines": 67
     },
     {
       "source": "docs/rfc/0001-capability-specification-system.md",
