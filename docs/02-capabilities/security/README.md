@@ -83,6 +83,12 @@ flowchart TD
 - [Secret value resource model](secret-value.md)
 - [Secret protection claim model](secret-protection-model.md)
 - [`rm.security.secret-store`](secret-store.md)
+- [Secret-protection promotion-unit readiness dossier](secret-readiness-review.md)
+- [Secret-protection assertion and benchmark traceability](secret-traceability.md)
+- [Secret-protection dependency and profile composition](secret-dependencies.md)
+- [Secret-protection cross-cutting review](secret-cross-cutting-review.md)
+- [Secret-protection source review](secret-source-review.md)
+- [Secret-protection ownership and bounded trial plan](secret-ownership.md)
 - [Secret storage platform research](secret-platform-research.md)
 - [Restricted execution platform service](restricted-execution.md)
 - [Restricted-execution promotion-unit readiness dossier](restricted-execution-readiness-review.md)
@@ -119,4 +125,4 @@ flowchart TD
 - [PKI conformance](pki-conformance.md)
 - [PKI benchmarks](pki-benchmarks.md)
 
-The secure-random and restricted-execution dossiers are promotion-unit-scoped. Neither constitutes a security-domain promotion review: authority, secrets, cryptography, PKI, and issuance retain independent incomplete readiness evidence, and all units remain Draft.
+The secure-random, restricted-execution, and secret-protection dossiers are promotion-unit-scoped. None constitutes a security-domain promotion review: authority, cryptography, PKI, and issuance retain independent incomplete readiness evidence, and all units remain Draft.

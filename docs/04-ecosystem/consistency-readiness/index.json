@@ -4,13 +4,13 @@
   "authority": "docs/01-architecture/architecture-model.md",
   "generated_from": "Markdown; this index is derived and non-authoritative",
   "summary": {
-    "markdown_documents": 1168,
-    "internal_links": 2369,
-    "requirements": 5410,
+    "markdown_documents": 1174,
+    "internal_links": 2405,
+    "requirements": 5438,
     "domains": 62,
     "promotion_units": 7,
     "draft_promotion_units": 7,
-    "promotion_units_with_readiness_dossier": 2,
+    "promotion_units_with_readiness_dossier": 3,
     "adrs": 163,
     "errors": 0,
     "warnings": 0,
@@ -19,7 +19,7 @@
     "domains_with_direct_requirement_assertion_map": 9,
     "domains_with_direct_benchmark_scenario_map": 9,
     "benchmark_scenarios": 62,
-    "external_sources": 647,
+    "external_sources": 650,
     "external_sources_with_review_record": 74,
     "domains_with_dedicated_cross_cutting_analysis": 31,
     "domains_with_complete_planned_traceability": 9,
@@ -1835,10 +1835,10 @@
       "id": "security",
       "source": "docs/02-capabilities/security/README.md",
       "status": "Draft domain analysis",
-      "requirements": 329,
-      "capability_requirements": 314,
+      "requirements": 357,
+      "capability_requirements": 337,
       "conformance_requirements": 0,
-      "benchmark_requirements": 15,
+      "benchmark_requirements": 20,
       "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
@@ -2294,7 +2294,7 @@
       "maturity": "Draft",
       "owner": "Secret-protection owner",
       "primary_source": "docs/02-capabilities/security/secret-store.md",
-      "readiness_dossier": null,
+      "readiness_dossier": "docs/02-capabilities/security/secret-readiness-review.md",
       "registry": "docs/02-capabilities/security/promotion-units.md"
     },
     {
@@ -4403,7 +4403,8 @@
       "url": "https://developer.apple.com/documentation/security/keychain-services",
       "host": "developer.apple.com",
       "sources": [
-        "docs/02-capabilities/security/secret-platform-research.md"
+        "docs/02-capabilities/security/secret-platform-research.md",
+        "docs/02-capabilities/security/secret-source-review.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -4435,7 +4436,8 @@
       "url": "https://developer.apple.com/documentation/security/secitemadd(_:_:",
       "host": "developer.apple.com",
       "sources": [
-        "docs/02-capabilities/security/secret-platform-research.md"
+        "docs/02-capabilities/security/secret-platform-research.md",
+        "docs/02-capabilities/security/secret-source-review.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -4443,7 +4445,24 @@
       "url": "https://developer.apple.com/documentation/security/secitemcopymatching(_:_:",
       "host": "developer.apple.com",
       "sources": [
-        "docs/02-capabilities/security/secret-platform-research.md"
+        "docs/02-capabilities/security/secret-platform-research.md",
+        "docs/02-capabilities/security/secret-source-review.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
+      "url": "https://developer.apple.com/documentation/security/secitemdelete(_:_:",
+      "host": "developer.apple.com",
+      "sources": [
+        "docs/02-capabilities/security/secret-source-review.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
+      "url": "https://developer.apple.com/documentation/security/secitemupdate(_:_:",
+      "host": "developer.apple.com",
+      "sources": [
+        "docs/02-capabilities/security/secret-source-review.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -4962,7 +4981,8 @@
       "host": "docs.kernel.org",
       "sources": [
         "docs/02-capabilities/security/crypto-platform-research.md",
-        "docs/02-capabilities/security/secret-platform-research.md"
+        "docs/02-capabilities/security/secret-platform-research.md",
+        "docs/02-capabilities/security/secret-source-review.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -4970,7 +4990,8 @@
       "url": "https://docs.kernel.org/security/keys/trusted-encrypted.html",
       "host": "docs.kernel.org",
       "sources": [
-        "docs/02-capabilities/security/secret-platform-research.md"
+        "docs/02-capabilities/security/secret-platform-research.md",
+        "docs/02-capabilities/security/secret-source-review.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -5761,7 +5782,8 @@
       "url": "https://learn.microsoft.com/en-us/windows/win32/api/dpapi/nf-dpapi-cryptprotectdata",
       "host": "learn.microsoft.com",
       "sources": [
-        "docs/02-capabilities/security/secret-platform-research.md"
+        "docs/02-capabilities/security/secret-platform-research.md",
+        "docs/02-capabilities/security/secret-source-review.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -5769,7 +5791,8 @@
       "url": "https://learn.microsoft.com/en-us/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata",
       "host": "learn.microsoft.com",
       "sources": [
-        "docs/02-capabilities/security/secret-platform-research.md"
+        "docs/02-capabilities/security/secret-platform-research.md",
+        "docs/02-capabilities/security/secret-source-review.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -5931,10 +5954,19 @@
       "freshness": "reviewed-in-domain-source-review"
     },
     {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/api/wincred/nf-wincred-creddeletew",
+      "host": "learn.microsoft.com",
+      "sources": [
+        "docs/02-capabilities/security/secret-source-review.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
       "url": "https://learn.microsoft.com/en-us/windows/win32/api/wincred/nf-wincred-credreadw",
       "host": "learn.microsoft.com",
       "sources": [
-        "docs/02-capabilities/security/secret-platform-research.md"
+        "docs/02-capabilities/security/secret-platform-research.md",
+        "docs/02-capabilities/security/secret-source-review.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -5942,7 +5974,8 @@
       "url": "https://learn.microsoft.com/en-us/windows/win32/api/wincred/nf-wincred-credwritew",
       "host": "learn.microsoft.com",
       "sources": [
-        "docs/02-capabilities/security/secret-platform-research.md"
+        "docs/02-capabilities/security/secret-platform-research.md",
+        "docs/02-capabilities/security/secret-source-review.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -7607,7 +7640,8 @@
       "url": "https://specifications.freedesktop.org/secret-service/latest/",
       "host": "specifications.freedesktop.org",
       "sources": [
-        "docs/02-capabilities/security/secret-platform-research.md"
+        "docs/02-capabilities/security/secret-platform-research.md",
+        "docs/02-capabilities/security/secret-source-review.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -42432,7 +42466,7 @@
     {
       "id": "RM-SECURITY-ATTENUATE-BENCH-0001",
       "source": "docs/02-capabilities/security/benchmarks.md",
-      "line": 42,
+      "line": 46,
       "kind": "benchmark",
       "domain": "security",
       "benchmark_scenarios": []
@@ -42440,7 +42474,7 @@
     {
       "id": "RM-SECURITY-ATTENUATE-BENCH-0002",
       "source": "docs/02-capabilities/security/benchmarks.md",
-      "line": 43,
+      "line": 47,
       "kind": "benchmark",
       "domain": "security",
       "benchmark_scenarios": []
@@ -42448,7 +42482,7 @@
     {
       "id": "RM-SECURITY-ATTENUATE-BENCH-0003",
       "source": "docs/02-capabilities/security/benchmarks.md",
-      "line": 44,
+      "line": 48,
       "kind": "benchmark",
       "domain": "security",
       "benchmark_scenarios": []
@@ -42456,7 +42490,7 @@
     {
       "id": "RM-SECURITY-ATTENUATE-BENCH-0004",
       "source": "docs/02-capabilities/security/benchmarks.md",
-      "line": 45,
+      "line": 49,
       "kind": "benchmark",
       "domain": "security",
       "benchmark_scenarios": []
@@ -42464,7 +42498,7 @@
     {
       "id": "RM-SECURITY-ATTENUATE-BENCH-0005",
       "source": "docs/02-capabilities/security/benchmarks.md",
-      "line": 46,
+      "line": 50,
       "kind": "benchmark",
       "domain": "security",
       "benchmark_scenarios": []
@@ -42472,7 +42506,7 @@
     {
       "id": "RM-SECURITY-RESTRICTED-BENCH-0001",
       "source": "docs/02-capabilities/security/benchmarks.md",
-      "line": 50,
+      "line": 54,
       "kind": "benchmark",
       "domain": "security",
       "benchmark_scenarios": []
@@ -42480,7 +42514,7 @@
     {
       "id": "RM-SECURITY-RESTRICTED-BENCH-0002",
       "source": "docs/02-capabilities/security/benchmarks.md",
-      "line": 51,
+      "line": 55,
       "kind": "benchmark",
       "domain": "security",
       "benchmark_scenarios": []
@@ -42488,7 +42522,7 @@
     {
       "id": "RM-SECURITY-RESTRICTED-BENCH-0003",
       "source": "docs/02-capabilities/security/benchmarks.md",
-      "line": 52,
+      "line": 56,
       "kind": "benchmark",
       "domain": "security",
       "benchmark_scenarios": []
@@ -42496,7 +42530,7 @@
     {
       "id": "RM-SECURITY-RESTRICTED-BENCH-0004",
       "source": "docs/02-capabilities/security/benchmarks.md",
-      "line": 53,
+      "line": 57,
       "kind": "benchmark",
       "domain": "security",
       "benchmark_scenarios": []
@@ -42504,7 +42538,47 @@
     {
       "id": "RM-SECURITY-RESTRICTED-BENCH-0005",
       "source": "docs/02-capabilities/security/benchmarks.md",
-      "line": 54,
+      "line": 58,
+      "kind": "benchmark",
+      "domain": "security",
+      "benchmark_scenarios": []
+    },
+    {
+      "id": "RM-SECURITY-SECRET-BENCH-0001",
+      "source": "docs/02-capabilities/security/benchmarks.md",
+      "line": 62,
+      "kind": "benchmark",
+      "domain": "security",
+      "benchmark_scenarios": []
+    },
+    {
+      "id": "RM-SECURITY-SECRET-BENCH-0002",
+      "source": "docs/02-capabilities/security/benchmarks.md",
+      "line": 63,
+      "kind": "benchmark",
+      "domain": "security",
+      "benchmark_scenarios": []
+    },
+    {
+      "id": "RM-SECURITY-SECRET-BENCH-0003",
+      "source": "docs/02-capabilities/security/benchmarks.md",
+      "line": 64,
+      "kind": "benchmark",
+      "domain": "security",
+      "benchmark_scenarios": []
+    },
+    {
+      "id": "RM-SECURITY-SECRET-BENCH-0004",
+      "source": "docs/02-capabilities/security/benchmarks.md",
+      "line": 65,
+      "kind": "benchmark",
+      "domain": "security",
+      "benchmark_scenarios": []
+    },
+    {
+      "id": "RM-SECURITY-SECRET-BENCH-0005",
+      "source": "docs/02-capabilities/security/benchmarks.md",
+      "line": 66,
       "kind": "benchmark",
       "domain": "security",
       "benchmark_scenarios": []
@@ -44654,6 +44728,166 @@
       "assertions": []
     },
     {
+      "id": "RM-SECURITY-SECRET-QUALITY-0001",
+      "source": "docs/02-capabilities/security/secret-cross-cutting-review.md",
+      "line": 20,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-SECRET-QUALITY-0002",
+      "source": "docs/02-capabilities/security/secret-cross-cutting-review.md",
+      "line": 22,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-SECRET-QUALITY-0003",
+      "source": "docs/02-capabilities/security/secret-cross-cutting-review.md",
+      "line": 24,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-SECRET-QUALITY-0004",
+      "source": "docs/02-capabilities/security/secret-cross-cutting-review.md",
+      "line": 26,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-SECRET-DEPENDENCY-0001",
+      "source": "docs/02-capabilities/security/secret-dependencies.md",
+      "line": 32,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-SECRET-DEPENDENCY-0002",
+      "source": "docs/02-capabilities/security/secret-dependencies.md",
+      "line": 34,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-SECRET-DEPENDENCY-0003",
+      "source": "docs/02-capabilities/security/secret-dependencies.md",
+      "line": 36,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-SECRET-DEPENDENCY-0004",
+      "source": "docs/02-capabilities/security/secret-dependencies.md",
+      "line": 38,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-SECRET-DEPENDENCY-0005",
+      "source": "docs/02-capabilities/security/secret-dependencies.md",
+      "line": 40,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-SECRET-OWNER-0001",
+      "source": "docs/02-capabilities/security/secret-ownership.md",
+      "line": 25,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-SECRET-OWNER-0002",
+      "source": "docs/02-capabilities/security/secret-ownership.md",
+      "line": 27,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-SECRET-OWNER-0003",
+      "source": "docs/02-capabilities/security/secret-ownership.md",
+      "line": 29,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-SECRET-OWNER-0004",
+      "source": "docs/02-capabilities/security/secret-ownership.md",
+      "line": 31,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-SECRET-READINESS-0001",
+      "source": "docs/02-capabilities/security/secret-readiness-review.md",
+      "line": 23,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-SECRET-READINESS-0002",
+      "source": "docs/02-capabilities/security/secret-readiness-review.md",
+      "line": 25,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-SECRET-READINESS-0003",
+      "source": "docs/02-capabilities/security/secret-readiness-review.md",
+      "line": 27,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-SECRET-SOURCE-0001",
+      "source": "docs/02-capabilities/security/secret-source-review.md",
+      "line": 18,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-SECRET-SOURCE-0002",
+      "source": "docs/02-capabilities/security/secret-source-review.md",
+      "line": 20,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-SECRET-SOURCE-0003",
+      "source": "docs/02-capabilities/security/secret-source-review.md",
+      "line": 22,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-SECRET-SOURCE-0004",
+      "source": "docs/02-capabilities/security/secret-source-review.md",
+      "line": 24,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
       "id": "RM-SECURITY-SECRET-0001",
       "source": "docs/02-capabilities/security/secret-store.md",
       "line": 23,
@@ -44769,6 +45003,30 @@
       "id": "RM-SECURITY-SECRET-0015",
       "source": "docs/02-capabilities/security/secret-store.md",
       "line": 37,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-SECRET-TRACE-0001",
+      "source": "docs/02-capabilities/security/secret-traceability.md",
+      "line": 30,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-SECRET-TRACE-0002",
+      "source": "docs/02-capabilities/security/secret-traceability.md",
+      "line": 32,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-SECRET-TRACE-0003",
+      "source": "docs/02-capabilities/security/secret-traceability.md",
+      "line": 34,
       "kind": "capability",
       "domain": "security",
       "assertions": []
@@ -50846,28 +51104,28 @@
     {
       "id": "RM-READINESS-CONTRADICTION-0001",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 39,
+      "line": 40,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0002",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 41,
+      "line": 42,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0003",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 43,
+      "line": 44,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0004",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 45,
+      "line": 46,
       "kind": "governance",
       "domain": null
     },
@@ -52892,8 +53150,8 @@
     },
     {
       "source": "docs/01-architecture/architecture-model.md",
-      "sha256": "ee1e3529d2c67bf7a5f29ea1821b742ed5a94c53519d769ac90cd791b4fce6e4",
-      "lines": 657
+      "sha256": "e43650793f984bf0cc6fe9e2314d9c2a2d93095b61a6d7aab505b8f0322e7ad0",
+      "lines": 659
     },
     {
       "source": "docs/01-architecture/behavioral-contracts.md",
@@ -56522,8 +56780,8 @@
     },
     {
       "source": "docs/02-capabilities/security/benchmarks.md",
-      "sha256": "90f93b5d579de92217bac19e7040612782468f90472c54728d18530b9d9638e8",
-      "lines": 62
+      "sha256": "c8dc69fd9b36056e9ccc4dce4b5608dc5c4523fa173aff90a9b79b39f35276dc",
+      "lines": 74
     },
     {
       "source": "docs/02-capabilities/security/conformance.md",
@@ -56727,7 +56985,7 @@
     },
     {
       "source": "docs/02-capabilities/security/promotion-units.md",
-      "sha256": "2cfa48a76ed8bab7f09414b8152bec12aaa03d48cb2b9a0cff987bc696cded6a",
+      "sha256": "23100834f7c09b7a6061eccfafe767e9ee27ab82a083bb856d122021364f4624",
       "lines": 53
     },
     {
@@ -56767,8 +57025,8 @@
     },
     {
       "source": "docs/02-capabilities/security/README.md",
-      "sha256": "2081c6b40d60c9f8b728bce11de9136f3ede7d94326828bc9b5b26de56245aa7",
-      "lines": 122
+      "sha256": "9280b866794efd3100d7a4c8fd0d1df5bba329bd6fdf81a452add812f3a78af4",
+      "lines": 128
     },
     {
       "source": "docs/02-capabilities/security/restricted-execution-cross-cutting-review.md",
@@ -56811,6 +57069,21 @@
       "lines": 43
     },
     {
+      "source": "docs/02-capabilities/security/secret-cross-cutting-review.md",
+      "sha256": "c3b20cd9d78ec08b0bfd07c89913068a7e425e9dac73ed15f645f8ff02d3c913",
+      "lines": 26
+    },
+    {
+      "source": "docs/02-capabilities/security/secret-dependencies.md",
+      "sha256": "1b37063cacdd80a0427040ab4d434ec18b4caa3adf4f0a72b0cf81fd3bbd9f93",
+      "lines": 40
+    },
+    {
+      "source": "docs/02-capabilities/security/secret-ownership.md",
+      "sha256": "6fb0f5199157686a2156b5862706fa9bdded8198d65b665f11ca8c99bc772dec",
+      "lines": 31
+    },
+    {
       "source": "docs/02-capabilities/security/secret-platform-research.md",
       "sha256": "b08690911da811bb316cb871e172389ca7a5821a0909b5b8ad133b5998180d35",
       "lines": 44
@@ -56821,9 +57094,24 @@
       "lines": 38
     },
     {
+      "source": "docs/02-capabilities/security/secret-readiness-review.md",
+      "sha256": "ed6de7810b9091aae25c33f81616102d46042b881779679677569b670d88d413",
+      "lines": 27
+    },
+    {
+      "source": "docs/02-capabilities/security/secret-source-review.md",
+      "sha256": "afce682f9ef882cea2b6efd9ce566a888441d33f4f733b12598b6c52c4baee47",
+      "lines": 24
+    },
+    {
       "source": "docs/02-capabilities/security/secret-store.md",
       "sha256": "c8990ffa14a20de5beb4efb6882eb4ffd4c9056f80b68fb94130ed9c597fc6ca",
       "lines": 56
+    },
+    {
+      "source": "docs/02-capabilities/security/secret-traceability.md",
+      "sha256": "feeb8e431b905078d7e94337f065e73409f3fdd5a352a22ad2dcb13f69fa78ff",
+      "lines": 34
     },
     {
       "source": "docs/02-capabilities/security/secret-value.md",
@@ -57562,7 +57850,7 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/audit-report.md",
-      "sha256": "5c5f77771012ad2de6778d30d7edaada9acd5712e7c30886db487e0118b1c100",
+      "sha256": "5250fa95ab290f9f36f79c607a4e6d0b0e522d803d13c961a9e7466d301d533c",
       "lines": 70
     },
     {
@@ -57577,13 +57865,13 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/closure-backlog.md",
-      "sha256": "0dee765d3046105c49d6b35fff2f531af4705675938575672407b5d93bd1b626",
+      "sha256": "4ff906197eab3138b13ca204e2beb8ae7008dcf2a4d276db3c0c32b942347ca6",
       "lines": 23
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "sha256": "b7393749aac84d21af89b02caa106bfba29e2aad6fcf008140c3cf39335f5e28",
-      "lines": 45
+      "sha256": "69500cba27ccd9ef22e8d1d2beec1d01cc20981302735108d09ffef8bac917c5",
+      "lines": 46
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/dependency-graph.md",
@@ -57872,8 +58160,8 @@
     },
     {
       "source": "docs/06-roadmap/roadmap.md",
-      "sha256": "5da6a33fdefff48c7f3d3171fb7ad2884e455801c162bfd41232caa794452b28",
-      "lines": 261
+      "sha256": "861d4cae5ee41605c45dedb9b1030f51bb01c7b14872920bf9260b2831e35e74",
+      "lines": 265
     },
     {
       "source": "docs/adr/0001-capability-first-platform.md",

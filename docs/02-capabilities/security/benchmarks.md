@@ -36,6 +36,10 @@ Performance evidence must never weaken source choice, fail-closed behavior, memo
 | SEC-BENCH-016 | Restricted readiness and supervised lifecycle | release-to-ready, ready-to-stop, descendant policy, shutdown/reap latency, terminal accounting |
 | SEC-BENCH-017 | Restricted failure, cancellation, and reconciliation | injection stage, cancellation phase, child execution oracle, authority/resource reconciliation latency and outcome |
 | SEC-BENCH-018 | Restricted abstraction overhead against equivalent native composition | exact mechanisms/constraints, stage deltas and ratios, conformance equivalence, residual assumptions |
+| SEC-BENCH-019 | Secret conditional replace and delete lifecycle | generations/conflicts, acceptance/visibility, replica/backup/GC/erasure observations, reconciliation latency |
+| SEC-BENCH-020 | Secret opaque/scoped/owned operation boundary | named operation, provider boundary, copies/exposures, transitions, latency/throughput, allocations/native calls |
+| SEC-BENCH-021 | Secret interaction and cancellation | provider/product prompt stages, human time separated, cancellation phase, terminal/indeterminate outcome, recovery |
+| SEC-BENCH-022 | Secret provider failure and recovery | fault boundary, partial state, public result, generation/visibility reconciliation, diagnostic overhead |
 
 ### Authority-attenuation comparison requirements
 
@@ -52,6 +56,14 @@ Performance evidence must never weaken source choice, fail-closed behavior, memo
 - **RM-SECURITY-RESTRICTED-BENCH-0003:** Failure and cancellation comparisons **MUST** inject at every supported pre-release and post-release boundary and prove whether child code executed, which authority transferred, and how every child and prepared resource was reconciled.
 - **RM-SECURITY-RESTRICTED-BENCH-0004:** Every run **MUST** record exact OS/kernel/SDK, native mechanisms and configuration, manifest digest without sensitive values, enforced/degraded/unsupported constraints, supervision level, hardware/virtualization, toolchain/build, samples/statistics, and conformance outcome.
 - **RM-SECURITY-RESTRICTED-BENCH-0005:** A native baseline is equivalent only when it enforces and verifies the same constraints with the same release, inheritance, readiness, descendant, failure, cancellation, audit, and cleanup semantics; numeric budgets and native-performance claims require reviewed representative runs.
+
+### Secret-protection comparison requirements
+
+- **RM-SECURITY-SECRET-BENCH-0001:** Lifecycle comparisons **MUST** bind the same provider/store/item class, protection vector, item size, account/session/sandbox/interaction state, generation/collision policy, operation milestones, replication/backup context, and cleanup contract.
+- **RM-SECURITY-SECRET-BENCH-0002:** Scale comparisons **MUST** bind the same item population, lookup and enumeration authority, metadata sensitivity policy, concurrency, provider quotas/serialization, consistency, and terminal outcomes.
+- **RM-SECURITY-SECRET-BENCH-0003:** Exposure comparisons **MUST** bind the same named consumer operation, opaque/scoped/owned mode, provider boundary, interaction policy, copy/allocation rules, secret-canary checks, and output semantics; a baseline that reveals reusable material is not equivalent to non-reveal.
+- **RM-SECURITY-SECRET-BENCH-0004:** Every run **MUST** record exact provider/service/store/item artifact and configuration, OS/kernel/SDK, account/session/sandbox, claim vector, interaction/exposure, replication/backup, toolchain/build, workload/concurrency, stages, samples/statistics, conformance result, and sanitized provenance without secret-derived artifacts.
+- **RM-SECURITY-SECRET-BENCH-0005:** Provider acceptance, logical visibility, replica/backup state, garbage collection, cryptographic erasure, and physical erasure **MUST** remain separate; numeric budgets and native-performance, security, hardware, non-export, or deletion claims require reviewed representative evidence.
 
 ## Controls
 

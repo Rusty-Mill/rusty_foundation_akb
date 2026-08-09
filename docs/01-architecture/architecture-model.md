@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.92.0
+**Version:** 1.93.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -652,6 +652,8 @@ This capability dossier cannot promote the composite security domain. `rm.securi
 
 Maturity subjects follow coherent ownership, evidence, compatibility, risk, and release boundaries rather than filesystem layout ([ADR-0163](../adr/0163-maturity-promotion-units-follow-evidence-boundaries-not-directory-layout.md)). Composite documentation directories publish stable [promotion-unit registries](../04-ecosystem/consistency-readiness/promotion-unit-model.md). Shared evidence is proposition-scoped; one unit cannot inherit another unit's maturity, waiver, provider result, or release claim. Unit partitioning does not select directories, crates, repositories, packages, or implementation topology.
 
-The [security registry](../02-capabilities/security/promotion-units.md) defines seven Draft units: authority, restricted execution, secure randomness, secret protection, cryptography/key management, PKI validation, and certificate issuance. It links complete unit dossiers separately from primary specifications; the generated index verifies links but cannot infer completeness or maturity. Secure-random and restricted-execution have unit dossiers, while attenuation remains partial evidence inside the broader authority unit. No dossier changes maturity or authorizes trials/code.
+The [security registry](../02-capabilities/security/promotion-units.md) defines seven Draft units: authority, restricted execution, secure randomness, secret protection, cryptography/key management, PKI validation, and certificate issuance. It links complete unit dossiers separately from primary specifications; the generated index verifies links but cannot infer completeness or maturity. Secure-random, restricted-execution, and secret-protection have unit dossiers, while attenuation remains partial evidence inside the broader authority unit. No dossier changes maturity or authorizes trials/code.
 
 Restricted execution is a verified pre-release composition, not a process-creation synonym or portable sandbox-strength label. Its immutable manifest resolves authority, inheritance, enforcement, degradation, readiness, supervision, and cleanup before application-controlled child code runs. Native creation, restriction application, verification, release, readiness, termination, reaping, and close are distinct evidence milestones. A permitted degradation is an explicitly authorized manifest outcome disclosed before release; provider fallback cannot silently weaken a prepared or running child.
+
+Secret protection remains a scoped multidimensional claim vector rather than a “secure storage” boolean ([ADR-0012](../adr/0012-secret-protection-is-a-vector.md)). Provider discovery and claim matching precede plaintext submission where possible. Item identity, operation authority, secret-value exposure, provider acceptance, logical visibility, generations, replica/backup state, garbage collection, cryptographic erasure, and physical erasure are distinct boundaries. References and protected storage do not imply non-reveal; that claim requires a named provider-mediated operation and exact exposure boundary ([ADR-0133](../adr/0133-use-without-reveal-is-a-provider-mediated-operation-contract.md)).

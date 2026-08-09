@@ -11,14 +11,14 @@ This report is deterministic and contains no claim that file presence proves sem
 
 | Measure | Result |
 |---|---:|
-| Markdown documents | 1,168 |
-| Resolved internal links | 2,369 |
-| Unique normative requirements | 5,410 |
+| Markdown documents | 1,174 |
+| Resolved internal links | 2,405 |
+| Unique normative requirements | 5,438 |
 | Capability domains | 62 |
 | Governed subdomain promotion units | 7 (7 Draft) |
-| Promotion units with linked readiness dossier | 2 / 7 |
+| Promotion units with linked readiness dossier | 3 / 7 |
 | Indexed ADRs | 163 |
-| External source URLs inventoried | 647 |
+| External source URLs inventoried | 650 |
 | External URLs with schema-valid domain review | 74 |
 | Structural errors | 0 |
 | Structural warnings | 0 |
