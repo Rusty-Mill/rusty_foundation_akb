@@ -42,4 +42,4 @@ flowchart LR
 - [Platform research](platform-research.md)
 - [Conformance specification](conformance.md)
 - [Benchmark specification](benchmarks.md)
-
+- [Assertion traceability](traceability.md)

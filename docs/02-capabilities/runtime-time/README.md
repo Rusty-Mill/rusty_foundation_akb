@@ -9,6 +9,8 @@
 
 Time and cancellation appear simple but expose difficult cross-platform questions: whether clocks advance during suspend, whether timers wake a sleeping machine, how timer coalescing affects deadlines, what cancellation actually guarantees, and how shutdown handles work that does not cooperate. The slice also spans synchronous and asynchronous consumers without requiring an application framework.
 
+Direct planned verification links are defined in the [assertion traceability map](traceability.md).
+
 ## Candidate model
 
 ```mermaid

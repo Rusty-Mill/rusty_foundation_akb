@@ -4,7 +4,7 @@ This backlog is bounded to architecture-definition readiness. Provider implement
 
 | ID | Priority | Finding | Closure evidence | State |
 |---|---|---|---|---|
-| CR-001 | High | Individual capability requirements do not yet map directly to stable assertion identifiers repository-wide. | The [audit-evidence pilot](../../02-capabilities/audit-evidence/traceability.md) proves the identity and expansion scheme; close after reviewed bidirectional mappings cover every domain. | In progress |
+| CR-001 | High | Individual capability requirements do not yet map directly to stable assertion identifiers repository-wide. | Mappings now cover audit evidence, runtime/time, windowing, messaging/RPC, and application synchronization; close after reviewed bidirectional mappings cover every domain. | In progress |
 | CR-002 | High | Dependency statements are primarily prose and cannot yet be checked repository-wide for cycles or profile satisfiability. | The [partial source-linked graph](dependency-graph.md) and validator establish the rules; close after stable nodes/edges and profile resolution cover every promoted capability. | In progress |
 | CR-003 | High | Shared entity vocabulary has not received a repository-wide collision and authority review. | The [canonical vocabulary](vocabulary.md) and [contradiction ledger](contradiction-ledger.md) establish roles and findings; close after every domain is reviewed against them. | In progress |
 | CR-004 | Medium | Domain status metadata was not uniformly machine-readable. | All 62 domain README records now use the canonical table-form status field without changing maturity. | Closed |

@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.73.0
+**Version:** 1.74.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -555,6 +555,8 @@ The [application audit trails, evidence ledgers, and compliance-reporting founda
 The [architecture consistency, traceability, and readiness model](../04-ecosystem/consistency-readiness/README.md) makes repository-scale coherence a reproducible evidence claim. Normative Markdown remains authoritative and machine-readable indexes are deterministic derived evidence ([ADR-0146](../adr/0146-machine-readable-indexes-are-derived-evidence.md)). Readiness binds an exact subject, scope, evidence frontier, dimension results, open findings, waivers, and review rather than being inferred from document volume or structural cleanliness ([ADR-0147](../adr/0147-readiness-is-an-evidence-bundle-not-a-label.md)). Structural, semantic, traceability, conformance, performance, cross-cutting, governance, provider, profile, release, and Stable-promotion evidence remain distinct. Unknown never silently aggregates to pass.
 
 Capability dependency edges enter the derived graph only from explicit source declarations; diagrams, links, profile membership, and composition prose cannot create an inferred minimum dependency ([ADR-0148](../adr/0148-dependency-edges-require-source-declaration.md)). Shared terms use [canonical semantic roles and nonclaims](../04-ecosystem/consistency-readiness/vocabulary.md), while domains retain qualified types and lifecycle refinements rather than sharing a universal object model ([ADR-0149](../adr/0149-shared-terms-have-canonical-roles-not-universal-types.md)). The source-linked graph, vocabulary, and contradiction ledger are review evidence with explicit coverage frontiers, not claims that undeclared edges are absent or every domain has been semantically audited.
+
+Portable semantic assertions and executable conformance cases have distinct stable identities ([ADR-0150](../adr/0150-semantic-assertions-and-executable-cases-have-distinct-identities.md)). Assertions name propositions independent of provider or harness; cases name procedures and may vary by platform, provider, environment, fixture, and fault schedule. Results bind assertion, requirement, and case identities. Existing case identifiers remain reserved, and a passing case cannot establish claims beyond its declared assertion, scope, environment, and oracle.
 
 ## 18. Deliberately unresolved choices
 

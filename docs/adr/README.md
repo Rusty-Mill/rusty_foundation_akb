@@ -151,5 +151,6 @@
 | [0147](0147-readiness-is-an-evidence-bundle-not-a-label.md) | Readiness is an evidence bundle, not a label | Accepted |
 | [0148](0148-dependency-edges-require-source-declaration.md) | Dependency edges require source declaration | Accepted |
 | [0149](0149-shared-terms-have-canonical-roles-not-universal-types.md) | Shared terms have canonical roles, not universal types | Accepted |
+| [0150](0150-semantic-assertions-and-executable-cases-have-distinct-identities.md) | Semantic assertions and executable cases have distinct identities | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

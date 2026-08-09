@@ -11,11 +11,11 @@ This report is deterministic and contains no claim that file presence proves sem
 
 | Measure | Result |
 |---|---:|
-| Markdown documents | 1,058 |
-| Resolved internal links | 1,688 |
-| Unique normative requirements | 4,931 |
+| Markdown documents | 1,063 |
+| Resolved internal links | 1,704 |
+| Unique normative requirements | 4,944 |
 | Capability domains | 62 |
-| Indexed ADRs | 149 |
+| Indexed ADRs | 150 |
 | Structural errors | 0 |
 | Structural warnings | 0 |
 
@@ -25,7 +25,7 @@ This report is deterministic and contains no claim that file presence proves sem
 |---|---:|---:|
 | Conformance specification present | 62 / 62 | 100.0% |
 | Benchmark specification present | 62 / 62 | 100.0% |
-| Direct requirement-to-assertion map | 1 / 62 | 1.6% |
+| Direct requirement-to-assertion map | 5 / 62 | 8.1% |
 
 ## Declared dependency graph
 
@@ -44,7 +44,7 @@ The first two rows prove specification presence only. The third proves complete 
 - Structural validation currently passes with 0 errors.
 - Every capability domain has conformance and benchmark planning artifacts.
 - 0 domain README files lack the canonical table-form status field; this is recorded as a migration-quality issue, not silently interpreted as Stable.
-- 1 domain(s) have a complete direct planned requirement-to-assertion map; repository-wide migration remains open.
+- 5 domain(s) have a complete direct planned requirement-to-assertion map; repository-wide migration remains open.
 - Semantic contradiction review remains human-governed and is tracked in the [closure backlog](closure-backlog.md).
 
 ## Readiness conclusion

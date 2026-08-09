@@ -130,6 +130,7 @@ def inspect(root: Path) -> tuple[dict[str, object], list[Finding]]:
     capability_root = root / "docs" / "02-capabilities"
     domains: list[dict[str, object]] = []
     assertions: list[dict[str, object]] = []
+    assertion_ids: set[str] = set()
     for directory in sorted(p for p in capability_root.iterdir() if p.is_dir() and p.name != "profiles"):
         readme = directory / "README.md"
         if not readme.exists():
@@ -146,8 +147,14 @@ def inspect(root: Path) -> tuple[dict[str, object], list[Finding]]:
             trace_text = traceability.read_text(encoding="utf-8")
             for match in ASSERTION_ROW_RE.finditer(trace_text):
                 assertion_id = match.group("id")
+                if assertion_id in assertion_ids:
+                    findings.append(Finding("error", "assertion-unique", relative(traceability, root), f"duplicate assertion {assertion_id}"))
+                assertion_ids.add(assertion_id)
                 source_names = [item.strip().strip("`") for item in match.group("sources").split(",")]
                 source_paths = [f"docs/02-capabilities/{directory.name}/{name}" for name in source_names]
+                for source_path in source_paths:
+                    if not root.joinpath(source_path).exists():
+                        findings.append(Finding("error", "assertion-source-exists", relative(traceability, root), f"missing source {source_path}"))
                 assertions.append(
                     {
                         "id": assertion_id,
