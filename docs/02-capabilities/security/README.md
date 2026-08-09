@@ -61,6 +61,12 @@ flowchart TD
 
 - [Authority model](authority-model.md)
 - [`rm.security.attenuate`](attenuation.md)
+- [Authority-attenuation capability readiness dossier](attenuation-readiness-review.md)
+- [Authority-attenuation assertion and benchmark traceability](attenuation-traceability.md)
+- [Authority-attenuation dependency and service composition](attenuation-dependencies.md)
+- [Authority-attenuation cross-cutting review](attenuation-cross-cutting-review.md)
+- [Authority-attenuation source review](attenuation-source-review.md)
+- [Authority-attenuation ownership and bounded trial plan](attenuation-ownership.md)
 - [Authority delegation model](delegation-model.md)
 - [Policy and decision model](policy-model.md)
 - [Threat model](threat-model.md)

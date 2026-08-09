@@ -18,4 +18,4 @@ This backlog is bounded to architecture-definition readiness. Provider implement
 
 The next closure order is CR-001/CR-002/CR-003, because direct traceability, dependencies, and shared semantics can invalidate conclusions drawn by the lower-priority reports.
 
-Capability-level closure has begun inside the composite security directory with [`rm.security.random`](../../02-capabilities/security/random-readiness-review.md). This evidence is deliberately excluded from domain-complete counts until the remaining authority, secrets, cryptography, PKI, and issuance specifications are mapped/reviewed or an accepted decision partitions their promotion units.
+Capability-level closure has begun inside the composite security directory with [`rm.security.random`](../../02-capabilities/security/random-readiness-review.md) and [`rm.security.attenuate`](../../02-capabilities/security/attenuation-readiness-review.md). This evidence is deliberately excluded from domain-complete counts until the remaining authority, restricted-execution, secrets, cryptography, PKI, and issuance specifications are mapped/reviewed or an accepted decision partitions their promotion units.

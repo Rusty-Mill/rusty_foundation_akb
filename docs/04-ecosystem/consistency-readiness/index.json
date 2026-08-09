@@ -4,11 +4,11 @@
   "authority": "docs/01-architecture/architecture-model.md",
   "generated_from": "Markdown; this index is derived and non-authoritative",
   "summary": {
-    "markdown_documents": 1152,
-    "internal_links": 2276,
-    "requirements": 5348,
+    "markdown_documents": 1159,
+    "internal_links": 2312,
+    "requirements": 5374,
     "domains": 62,
-    "adrs": 161,
+    "adrs": 162,
     "errors": 0,
     "warnings": 0,
     "domains_with_conformance": 62,
@@ -16,7 +16,7 @@
     "domains_with_direct_requirement_assertion_map": 9,
     "domains_with_direct_benchmark_scenario_map": 9,
     "benchmark_scenarios": 62,
-    "external_sources": 638,
+    "external_sources": 639,
     "external_sources_with_review_record": 74,
     "domains_with_dedicated_cross_cutting_analysis": 31,
     "domains_with_complete_planned_traceability": 9,
@@ -1832,10 +1832,10 @@
       "id": "security",
       "source": "docs/02-capabilities/security/README.md",
       "status": "Draft domain analysis",
-      "requirements": 272,
-      "capability_requirements": 267,
+      "requirements": 298,
+      "capability_requirements": 288,
       "conformance_requirements": 0,
-      "benchmark_requirements": 5,
+      "benchmark_requirements": 10,
       "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
@@ -4296,6 +4296,7 @@
       "url": "https://developer.apple.com/documentation/security/accessing-files-from-the-macos-app-sandbox",
       "host": "developer.apple.com",
       "sources": [
+        "docs/02-capabilities/security/attenuation-source-review.md",
         "docs/02-capabilities/security/platform-research.md"
       ],
       "freshness": "unreviewed-by-generator"
@@ -4304,6 +4305,7 @@
       "url": "https://developer.apple.com/documentation/security/app-sandbox",
       "host": "developer.apple.com",
       "sources": [
+        "docs/02-capabilities/security/attenuation-source-review.md",
         "docs/02-capabilities/security/platform-research.md"
       ],
       "freshness": "unreviewed-by-generator"
@@ -4804,6 +4806,7 @@
       "url": "https://docs.kernel.org/admin-guide/LSM/index.html",
       "host": "docs.kernel.org",
       "sources": [
+        "docs/02-capabilities/security/attenuation-source-review.md",
         "docs/02-capabilities/security/platform-research.md"
       ],
       "freshness": "unreviewed-by-generator"
@@ -4870,6 +4873,7 @@
       "host": "docs.kernel.org",
       "sources": [
         "docs/02-capabilities/identity-session/platform-research.md",
+        "docs/02-capabilities/security/attenuation-source-review.md",
         "docs/02-capabilities/security/platform-research.md"
       ],
       "freshness": "unreviewed-by-generator"
@@ -5805,6 +5809,14 @@
       "freshness": "unreviewed-by-generator"
     },
     {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/api/securitybaseapi/nf-securitybaseapi-createrestrictedtoken",
+      "host": "learn.microsoft.com",
+      "sources": [
+        "docs/02-capabilities/security/attenuation-source-review.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
       "url": "https://learn.microsoft.com/en-us/windows/win32/api/synchapi/nf-synchapi-setwaitabletimerex",
       "host": "learn.microsoft.com",
       "sources": [
@@ -6174,6 +6186,7 @@
       "url": "https://learn.microsoft.com/en-us/windows/win32/secauthz/access-tokens",
       "host": "learn.microsoft.com",
       "sources": [
+        "docs/02-capabilities/security/attenuation-source-review.md",
         "docs/02-capabilities/security/platform-research.md"
       ],
       "freshness": "unreviewed-by-generator"
@@ -6182,6 +6195,7 @@
       "url": "https://learn.microsoft.com/en-us/windows/win32/secauthz/appcontainer-isolation",
       "host": "learn.microsoft.com",
       "sources": [
+        "docs/02-capabilities/security/attenuation-source-review.md",
         "docs/02-capabilities/security/platform-research.md"
       ],
       "freshness": "unreviewed-by-generator"
@@ -6996,6 +7010,7 @@
       "url": "https://man7.org/linux/man-pages/man7/capabilities.7.html",
       "host": "man7.org",
       "sources": [
+        "docs/02-capabilities/security/attenuation-source-review.md",
         "docs/02-capabilities/security/platform-research.md"
       ],
       "freshness": "unreviewed-by-generator"
@@ -41995,6 +42010,174 @@
       "assertions": []
     },
     {
+      "id": "RM-SECURITY-ATTENUATE-QUALITY-0001",
+      "source": "docs/02-capabilities/security/attenuation-cross-cutting-review.md",
+      "line": 20,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-ATTENUATE-QUALITY-0002",
+      "source": "docs/02-capabilities/security/attenuation-cross-cutting-review.md",
+      "line": 22,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-ATTENUATE-QUALITY-0003",
+      "source": "docs/02-capabilities/security/attenuation-cross-cutting-review.md",
+      "line": 24,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-ATTENUATE-DEPENDENCY-0001",
+      "source": "docs/02-capabilities/security/attenuation-dependencies.md",
+      "line": 29,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-ATTENUATE-DEPENDENCY-0002",
+      "source": "docs/02-capabilities/security/attenuation-dependencies.md",
+      "line": 31,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-ATTENUATE-DEPENDENCY-0003",
+      "source": "docs/02-capabilities/security/attenuation-dependencies.md",
+      "line": 33,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-ATTENUATE-DEPENDENCY-0004",
+      "source": "docs/02-capabilities/security/attenuation-dependencies.md",
+      "line": 35,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-ATTENUATE-OWNER-0001",
+      "source": "docs/02-capabilities/security/attenuation-ownership.md",
+      "line": 25,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-ATTENUATE-OWNER-0002",
+      "source": "docs/02-capabilities/security/attenuation-ownership.md",
+      "line": 27,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-ATTENUATE-OWNER-0003",
+      "source": "docs/02-capabilities/security/attenuation-ownership.md",
+      "line": 29,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-ATTENUATE-OWNER-0004",
+      "source": "docs/02-capabilities/security/attenuation-ownership.md",
+      "line": 31,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-ATTENUATE-READINESS-0001",
+      "source": "docs/02-capabilities/security/attenuation-readiness-review.md",
+      "line": 23,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-ATTENUATE-READINESS-0002",
+      "source": "docs/02-capabilities/security/attenuation-readiness-review.md",
+      "line": 25,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-ATTENUATE-READINESS-0003",
+      "source": "docs/02-capabilities/security/attenuation-readiness-review.md",
+      "line": 27,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-ATTENUATE-SOURCE-0001",
+      "source": "docs/02-capabilities/security/attenuation-source-review.md",
+      "line": 17,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-ATTENUATE-SOURCE-0002",
+      "source": "docs/02-capabilities/security/attenuation-source-review.md",
+      "line": 19,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-ATTENUATE-SOURCE-0003",
+      "source": "docs/02-capabilities/security/attenuation-source-review.md",
+      "line": 21,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-ATTENUATE-SOURCE-0004",
+      "source": "docs/02-capabilities/security/attenuation-source-review.md",
+      "line": 23,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-ATTENUATE-TRACE-0001",
+      "source": "docs/02-capabilities/security/attenuation-traceability.md",
+      "line": 28,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-ATTENUATE-TRACE-0002",
+      "source": "docs/02-capabilities/security/attenuation-traceability.md",
+      "line": 30,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-ATTENUATE-TRACE-0003",
+      "source": "docs/02-capabilities/security/attenuation-traceability.md",
+      "line": 32,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
       "id": "RM-SECURITY-ATTENUATE-0001",
       "source": "docs/02-capabilities/security/attenuation.md",
       "line": 21,
@@ -42110,6 +42293,46 @@
       "id": "RM-SECURITY-RANDOM-BENCH-0005",
       "source": "docs/02-capabilities/security/benchmarks.md",
       "line": 17,
+      "kind": "benchmark",
+      "domain": "security",
+      "benchmark_scenarios": []
+    },
+    {
+      "id": "RM-SECURITY-ATTENUATE-BENCH-0001",
+      "source": "docs/02-capabilities/security/benchmarks.md",
+      "line": 37,
+      "kind": "benchmark",
+      "domain": "security",
+      "benchmark_scenarios": []
+    },
+    {
+      "id": "RM-SECURITY-ATTENUATE-BENCH-0002",
+      "source": "docs/02-capabilities/security/benchmarks.md",
+      "line": 38,
+      "kind": "benchmark",
+      "domain": "security",
+      "benchmark_scenarios": []
+    },
+    {
+      "id": "RM-SECURITY-ATTENUATE-BENCH-0003",
+      "source": "docs/02-capabilities/security/benchmarks.md",
+      "line": 39,
+      "kind": "benchmark",
+      "domain": "security",
+      "benchmark_scenarios": []
+    },
+    {
+      "id": "RM-SECURITY-ATTENUATE-BENCH-0004",
+      "source": "docs/02-capabilities/security/benchmarks.md",
+      "line": 40,
+      "kind": "benchmark",
+      "domain": "security",
+      "benchmark_scenarios": []
+    },
+    {
+      "id": "RM-SECURITY-ATTENUATE-BENCH-0005",
+      "source": "docs/02-capabilities/security/benchmarks.md",
+      "line": 41,
       "kind": "benchmark",
       "domain": "security",
       "benchmark_scenarios": []
@@ -50243,28 +50466,28 @@
     {
       "id": "RM-READINESS-CONTRADICTION-0001",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 36,
+      "line": 37,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0002",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 38,
+      "line": 39,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0003",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 40,
+      "line": 41,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0004",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 42,
+      "line": 43,
       "kind": "governance",
       "domain": null
     },
@@ -52254,8 +52477,8 @@
     },
     {
       "source": "docs/01-architecture/architecture-model.md",
-      "sha256": "e8e1651553c8b2a3eb4943b5f076be1833ac386703936ba425ca0bf547e7afa4",
-      "lines": 643
+      "sha256": "6f290cfb27cbb633740b68bec300b85ff077504a3af44b26e9d87708ed6c47fd",
+      "lines": 649
     },
     {
       "source": "docs/01-architecture/behavioral-contracts.md",
@@ -55843,6 +56066,36 @@
       "lines": 13
     },
     {
+      "source": "docs/02-capabilities/security/attenuation-cross-cutting-review.md",
+      "sha256": "210c111b2fe2bac5ab8c0fda53fdc2f4b1dcf192b2f9a126c66d4ffdc94c4eae",
+      "lines": 24
+    },
+    {
+      "source": "docs/02-capabilities/security/attenuation-dependencies.md",
+      "sha256": "bec92a48158398713277b0f818bd0ad81f7ceccfd1f6926a6da01ae8760f57db",
+      "lines": 35
+    },
+    {
+      "source": "docs/02-capabilities/security/attenuation-ownership.md",
+      "sha256": "4bcb7c176dc1c1a005c196fe08005f8cfb8a8bac3f094933dd5139cf80ae2754",
+      "lines": 31
+    },
+    {
+      "source": "docs/02-capabilities/security/attenuation-readiness-review.md",
+      "sha256": "b7f3e61e6d4ebd7e642a80e8e3af4e6f32c22d0560c20237128403438e185414",
+      "lines": 27
+    },
+    {
+      "source": "docs/02-capabilities/security/attenuation-source-review.md",
+      "sha256": "3ef895154c74e0941bdcd96b21ca502752d38c0b05380536b7fc8669af50e5ca",
+      "lines": 23
+    },
+    {
+      "source": "docs/02-capabilities/security/attenuation-traceability.md",
+      "sha256": "82d027e02c506ab750252f5de9a38c3bfbe3c607a5ac2c3218c7cebe08db9778",
+      "lines": 32
+    },
+    {
       "source": "docs/02-capabilities/security/attenuation.md",
       "sha256": "b96fd9a47ee2a9407079bad804998d4ff4d1da261c557b04293301e8c2fe1562",
       "lines": 50
@@ -55854,8 +56107,8 @@
     },
     {
       "source": "docs/02-capabilities/security/benchmarks.md",
-      "sha256": "ad6b721f3318311a8fbf384ff715475f21bf93d063e481ce368a57fd43b5506f",
-      "lines": 36
+      "sha256": "58d39750169f398d71c0550f894d87e63909daf281df0151db09c869821cd509",
+      "lines": 49
     },
     {
       "source": "docs/02-capabilities/security/conformance.md",
@@ -56094,8 +56347,8 @@
     },
     {
       "source": "docs/02-capabilities/security/README.md",
-      "sha256": "285605789b14057df67e020e107668dae7a3e7074c4262682cea957292fca40e",
-      "lines": 108
+      "sha256": "73bfba1b2f3bfbed9b6db53f90a3cbbe5a5198a68149882ac2f69930b8806787",
+      "lines": 114
     },
     {
       "source": "docs/02-capabilities/security/restricted-execution.md",
@@ -56859,7 +57112,7 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/audit-report.md",
-      "sha256": "3d21e8919c5408fe19223c485e9f41e66c836da4455fde6fb899cc2bf8ffc139",
+      "sha256": "9c0dca1db318be2f850de2468458171a0217b3406fb34ba4e4624c81bdb8f066",
       "lines": 68
     },
     {
@@ -56874,13 +57127,13 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/closure-backlog.md",
-      "sha256": "85ac811b1be428cece5ef41045d864218855acada808dc8f363917f9c217f950",
+      "sha256": "7e7929c8d6688919452ca24fdec64c996c2a3a7b33ffe77ccc801378c5beabc9",
       "lines": 21
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "sha256": "756a05c37c3123ff1889558d438fe0aeccf3a2fa00004f3f4fa07a5b550bffa4",
-      "lines": 42
+      "sha256": "d47374a145fbe982c9ec86650c7ba99feba63ea3de6c021019c1b80b454e02e5",
+      "lines": 43
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/dependency-graph.md",
@@ -57164,8 +57417,8 @@
     },
     {
       "source": "docs/06-roadmap/roadmap.md",
-      "sha256": "913322bce29cfe93680ef14694ac859fa6cde428d427b2fcb47b4a09ab2ba90a",
-      "lines": 249
+      "sha256": "a0320f6659536cc9b9365f1aa381ce0a9e835dae7eeaa131d58beb62b4855467",
+      "lines": 253
     },
     {
       "source": "docs/adr/0001-capability-first-platform.md",
@@ -57973,9 +58226,14 @@
       "lines": 32
     },
     {
+      "source": "docs/adr/0162-attenuation-enforcement-is-a-scoped-claim-vector-not-a-security-score.md",
+      "sha256": "712fb0d20ca92e3ac0df3dad4c5f0c7038b0710b0998dcfde30513c93608207f",
+      "lines": 32
+    },
+    {
       "source": "docs/adr/README.md",
-      "sha256": "9bb33bf0e47674cb2b674ded3477328b6c343c927e508afde75b07a9be239f87",
-      "lines": 167
+      "sha256": "0aa1822eab729dfa731b9b84a5af9fe11df357fe507ab273835f8bbb50f49751",
+      "lines": 168
     },
     {
       "source": "docs/README.md",

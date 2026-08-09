@@ -11,12 +11,12 @@ This report is deterministic and contains no claim that file presence proves sem
 
 | Measure | Result |
 |---|---:|
-| Markdown documents | 1,152 |
-| Resolved internal links | 2,276 |
-| Unique normative requirements | 5,348 |
+| Markdown documents | 1,159 |
+| Resolved internal links | 2,312 |
+| Unique normative requirements | 5,374 |
 | Capability domains | 62 |
-| Indexed ADRs | 161 |
-| External source URLs inventoried | 638 |
+| Indexed ADRs | 162 |
+| External source URLs inventoried | 639 |
 | External URLs with schema-valid domain review | 74 |
 | Structural errors | 0 |
 | Structural warnings | 0 |

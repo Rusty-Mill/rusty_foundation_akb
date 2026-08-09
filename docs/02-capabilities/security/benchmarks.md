@@ -26,6 +26,19 @@ Performance evidence must never weaken source choice, fail-closed behavior, memo
 | SEC-BENCH-006 | Secret create/retrieve/replace/delete | Provider, item size/class, interaction state, warm/cold latency distributions |
 | SEC-BENCH-007 | Secret-store contention and scale | Item count, concurrency, lookup mode, throughput, p95/p99, provider serialization |
 | SEC-BENCH-008 | Scoped reveal and opaque-use overhead | Native baseline, exposure mode, copies, allocations, boundary transitions |
+| SEC-BENCH-009 | Authority derivation | constraint dimensions, parent/child representation, A-claim vector, p50/p95/p99, allocations, native calls |
+| SEC-BENCH-010 | Constraint inspection/provenance | chain depth, dimensions, redaction mode, serialization-free report size, latency, allocations |
+| SEC-BENCH-011 | Concurrent derivation/close | parent fanout, concurrency, close race, successes/failures, contention, tail latency |
+| SEC-BENCH-012 | Transfer and delegation-depth enforcement | hop count, transport boundary, receiver policy, rejection/return path, cleanup latency |
+| SEC-BENCH-013 | Revocation observation | scope, alias set, operation phase, request-to-observation latency, survivors/indeterminate outcomes |
+
+### Authority-attenuation comparison requirements
+
+- **RM-SECURITY-ATTENUATE-BENCH-0001:** Derivation comparisons **MUST** bind identical parent authority, requested operation/resource/lifetime/audience/delegation restrictions, native context, A-claim vector, and subset/failure oracle.
+- **RM-SECURITY-ATTENUATE-BENCH-0002:** Inspection/provenance comparisons **MUST** bind identical chain depth, constraint dimensions, disclosure/redaction authority, native evidence policy, and nonsecret output semantics.
+- **RM-SECURITY-ATTENUATE-BENCH-0003:** Concurrency/transfer/revocation comparisons **MUST** bind identical alias topology, delegation depth, transport and receiver policy, close/revoke schedule, in-flight operations, terminal outcomes, and cleanup boundary.
+- **RM-SECURITY-ATTENUATE-BENCH-0004:** Every run **MUST** record provider artifact, OS/kernel/SDK, authority kind, native enforcement/identity/sandbox context, complete claim vector and bypass assumptions, concurrency/topology, samples/statistics, and conformance result without authority material.
+- **RM-SECURITY-ATTENUATE-BENCH-0005:** A faster baseline that drops an incomparable constraint, uses broader ambient credentials, weakens enforcement/alias/revocation semantics, or omits subset/bypass probes **MUST NOT** be treated as equivalent; numeric budgets require reviewed representative runs.
 
 ## Controls
 

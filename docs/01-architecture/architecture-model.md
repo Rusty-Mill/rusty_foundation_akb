@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.89.0
+**Version:** 1.90.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -641,3 +641,9 @@ The [foundation capability-batch integration review](../04-ecosystem/consistency
 The [`rm.security.random` capability dossier](../02-capabilities/security/random-readiness-review.md) closes planned traceability, dependency/profile composition, source freshness, cross-cutting quality, ownership, bounded-trial, conformance, and benchmark evidence for exact-fill OS cryptographic randomness. Assurance is grounded in exact provider/module/configuration provenance, fail-closed integration, lifecycle evidence, and scoped validation—not finite output statistics ([ADR-0161](../adr/0161-random-output-tests-do-not-certify-unpredictability.md)). No output or output-derived fingerprint belongs in evidence artifacts.
 
 This is capability-level evidence inside a composite security domain. It cannot promote the security domain while authority, restricted execution, secrets, cryptography, PKI, and issuance remain incompletely mapped/reviewed. `rm.security.random` and the security domain remain Draft; no provider, module, cryptographic library, public API, trial, certification, performance budget, or implementation is authorized.
+
+## 26. Authority-attenuation capability readiness
+
+The [`rm.security.attenuate` capability dossier](../02-capabilities/security/attenuation-readiness-review.md) closes planned traceability, dependency/service composition, source freshness, quality review, ownership, bounded-trial, conformance, and benchmark evidence for multidimensional subset derivation. A0–A3 remain summaries of scoped claim vectors, not scalar security scores or substitutes for exact mechanisms, aliases, bypass assumptions, deployment context, transfer, and revocation evidence ([ADR-0162](../adr/0162-attenuation-enforcement-is-a-scoped-claim-vector-not-a-security-score.md)). Restricted execution separately composes and verifies controls before child code.
+
+This capability dossier cannot promote the composite security domain. `rm.security.attenuate` and security remain Draft; no native authority kind, policy language, sandbox, revocation mechanism, public API, trial, performance budget, or implementation is authorized.
