@@ -2,6 +2,8 @@
 
 The AKB is specification-first. A contribution should make intent, semantics, boundaries, or verification clearer.
 
+Implementation repositories and trials additionally follow the [Rusty Mill software development standards](docs/05-governance/software-development/README.md). Those standards do not authorize implementation by themselves; the affected domain must first pass its promotion and trial gates.
+
 The [authoritative architecture model](docs/01-architecture/architecture-model.md) governs current architecture. Changes to architectural rules must update the model and their ADR/RFC in the same contribution.
 
 ## Change paths

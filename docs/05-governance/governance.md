@@ -32,3 +32,7 @@ Use an RFC for new stable capabilities, public contracts, cross-repository chang
 Every normative document names its status and owner. Pull requests link affected contracts, ADRs/RFCs, profiles, tests, benchmarks, and migration notes. Scheduled reviews identify stale or contradictory guidance.
 
 When architecture changes, the accepted decision and the authoritative model are updated together. A draft or lower-level document cannot override the model implicitly.
+
+## Software development governance
+
+The [foundation software development standards](software-development/README.md) govern implementation entry, Rust/API/unsafe practices, testing, performance, cross-cutting qualities, dependencies, review/CI, releases, and exceptions. Domain promotion and an applicable repository standards profile are separate conjunctive gates; neither can substitute for the other.

@@ -4,11 +4,11 @@
   "authority": "docs/01-architecture/architecture-model.md",
   "generated_from": "Markdown; this index is derived and non-authoritative",
   "summary": {
-    "markdown_documents": 1072,
-    "internal_links": 1878,
-    "requirements": 4961,
+    "markdown_documents": 1090,
+    "internal_links": 1909,
+    "requirements": 5084,
     "domains": 62,
-    "adrs": 154,
+    "adrs": 156,
     "errors": 0,
     "warnings": 0,
     "domains_with_conformance": 62,
@@ -16,7 +16,7 @@
     "domains_with_direct_requirement_assertion_map": 5,
     "domains_with_direct_benchmark_scenario_map": 3,
     "benchmark_scenarios": 18,
-    "external_sources": 621,
+    "external_sources": 625,
     "domains_with_dedicated_cross_cutting_analysis": 25,
     "domains_with_complete_planned_traceability": 3,
     "domains_experimental_eligible": 0,
@@ -3735,10 +3735,34 @@
       "freshness": "unreviewed-by-generator"
     },
     {
+      "url": "https://doc.rust-lang.org/cargo/reference/rust-version.html",
+      "host": "doc.rust-lang.org",
+      "sources": [
+        "docs/05-governance/software-development/rust-language.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
       "url": "https://doc.rust-lang.org/core/sync/atomic/",
       "host": "doc.rust-lang.org",
       "sources": [
         "docs/02-capabilities/threading/platform-research.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
+      "url": "https://doc.rust-lang.org/edition-guide/rust-2024/unsafe-op-in-unsafe-fn.html",
+      "host": "doc.rust-lang.org",
+      "sources": [
+        "docs/05-governance/software-development/unsafe-ffi.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
+      "url": "https://doc.rust-lang.org/reference/",
+      "host": "doc.rust-lang.org",
+      "sources": [
+        "docs/05-governance/software-development/rust-language.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -6307,6 +6331,14 @@
       "host": "rpm.org",
       "sources": [
         "docs/02-capabilities/package-management/platform-research.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
+      "url": "https://rust-lang.github.io/api-guidelines/",
+      "host": "rust-lang.github.io",
+      "sources": [
+        "docs/05-governance/software-development/api-errors.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -46544,28 +46576,28 @@
     {
       "id": "RM-READINESS-CONTRADICTION-0001",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 24,
+      "line": 25,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0002",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 26,
+      "line": 27,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0003",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 28,
+      "line": 29,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0004",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 30,
+      "line": 31,
       "kind": "governance",
       "domain": null
     },
@@ -47331,6 +47363,867 @@
       "line": 15,
       "kind": "governance",
       "domain": null
+    },
+    {
+      "id": "RM-DEV-API-0001",
+      "source": "docs/05-governance/software-development/api-errors.md",
+      "line": 5,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-API-0002",
+      "source": "docs/05-governance/software-development/api-errors.md",
+      "line": 7,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-API-0003",
+      "source": "docs/05-governance/software-development/api-errors.md",
+      "line": 9,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-API-0004",
+      "source": "docs/05-governance/software-development/api-errors.md",
+      "line": 11,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-API-0005",
+      "source": "docs/05-governance/software-development/api-errors.md",
+      "line": 13,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-ERR-0001",
+      "source": "docs/05-governance/software-development/api-errors.md",
+      "line": 15,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-ERR-0002",
+      "source": "docs/05-governance/software-development/api-errors.md",
+      "line": 17,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-ERR-0003",
+      "source": "docs/05-governance/software-development/api-errors.md",
+      "line": 19,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-ERR-0004",
+      "source": "docs/05-governance/software-development/api-errors.md",
+      "line": 21,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-ERR-0005",
+      "source": "docs/05-governance/software-development/api-errors.md",
+      "line": 23,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-ASYNC-0001",
+      "source": "docs/05-governance/software-development/async-concurrency.md",
+      "line": 3,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-ASYNC-0002",
+      "source": "docs/05-governance/software-development/async-concurrency.md",
+      "line": 5,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-ASYNC-0003",
+      "source": "docs/05-governance/software-development/async-concurrency.md",
+      "line": 7,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-ASYNC-0004",
+      "source": "docs/05-governance/software-development/async-concurrency.md",
+      "line": 9,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-CONC-0001",
+      "source": "docs/05-governance/software-development/async-concurrency.md",
+      "line": 11,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-CONC-0002",
+      "source": "docs/05-governance/software-development/async-concurrency.md",
+      "line": 13,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-CONC-0003",
+      "source": "docs/05-governance/software-development/async-concurrency.md",
+      "line": 15,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-CONC-0004",
+      "source": "docs/05-governance/software-development/async-concurrency.md",
+      "line": 17,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-RES-0001",
+      "source": "docs/05-governance/software-development/async-concurrency.md",
+      "line": 19,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-RES-0002",
+      "source": "docs/05-governance/software-development/async-concurrency.md",
+      "line": 21,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-EVIDENCE-0001",
+      "source": "docs/05-governance/software-development/compliance-evidence.md",
+      "line": 27,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-EVIDENCE-0002",
+      "source": "docs/05-governance/software-development/compliance-evidence.md",
+      "line": 29,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-EVIDENCE-0003",
+      "source": "docs/05-governance/software-development/compliance-evidence.md",
+      "line": 31,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-EVIDENCE-0004",
+      "source": "docs/05-governance/software-development/compliance-evidence.md",
+      "line": 33,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-EVIDENCE-0005",
+      "source": "docs/05-governance/software-development/compliance-evidence.md",
+      "line": 35,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-DEP-0001",
+      "source": "docs/05-governance/software-development/dependencies-supply-chain.md",
+      "line": 3,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-DEP-0002",
+      "source": "docs/05-governance/software-development/dependencies-supply-chain.md",
+      "line": 5,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-DEP-0003",
+      "source": "docs/05-governance/software-development/dependencies-supply-chain.md",
+      "line": 7,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-DEP-0004",
+      "source": "docs/05-governance/software-development/dependencies-supply-chain.md",
+      "line": 9,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-DEP-0005",
+      "source": "docs/05-governance/software-development/dependencies-supply-chain.md",
+      "line": 11,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-DEP-0006",
+      "source": "docs/05-governance/software-development/dependencies-supply-chain.md",
+      "line": 13,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-DEP-0007",
+      "source": "docs/05-governance/software-development/dependencies-supply-chain.md",
+      "line": 15,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-DEP-0008",
+      "source": "docs/05-governance/software-development/dependencies-supply-chain.md",
+      "line": 17,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-PHIL-0001",
+      "source": "docs/05-governance/software-development/design-philosophy.md",
+      "line": 57,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-PHIL-0002",
+      "source": "docs/05-governance/software-development/design-philosophy.md",
+      "line": 59,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-PHIL-0003",
+      "source": "docs/05-governance/software-development/design-philosophy.md",
+      "line": 61,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-PHIL-0004",
+      "source": "docs/05-governance/software-development/design-philosophy.md",
+      "line": 63,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-PHIL-0005",
+      "source": "docs/05-governance/software-development/design-philosophy.md",
+      "line": 65,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-DOC-0001",
+      "source": "docs/05-governance/software-development/documentation-release.md",
+      "line": 3,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-DOC-0002",
+      "source": "docs/05-governance/software-development/documentation-release.md",
+      "line": 5,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-DOC-0003",
+      "source": "docs/05-governance/software-development/documentation-release.md",
+      "line": 7,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-COMPAT-0001",
+      "source": "docs/05-governance/software-development/documentation-release.md",
+      "line": 9,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-COMPAT-0002",
+      "source": "docs/05-governance/software-development/documentation-release.md",
+      "line": 11,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-REL-0001",
+      "source": "docs/05-governance/software-development/documentation-release.md",
+      "line": 13,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-REL-0002",
+      "source": "docs/05-governance/software-development/documentation-release.md",
+      "line": 15,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-MAINT-0001",
+      "source": "docs/05-governance/software-development/documentation-release.md",
+      "line": 17,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-MAINT-0002",
+      "source": "docs/05-governance/software-development/documentation-release.md",
+      "line": 19,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-EXC-0001",
+      "source": "docs/05-governance/software-development/exceptions-evolution.md",
+      "line": 15,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-EXC-0002",
+      "source": "docs/05-governance/software-development/exceptions-evolution.md",
+      "line": 17,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-EXC-0003",
+      "source": "docs/05-governance/software-development/exceptions-evolution.md",
+      "line": 19,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-EXC-0004",
+      "source": "docs/05-governance/software-development/exceptions-evolution.md",
+      "line": 21,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-DEBT-0001",
+      "source": "docs/05-governance/software-development/exceptions-evolution.md",
+      "line": 23,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-INCIDENT-0001",
+      "source": "docs/05-governance/software-development/exceptions-evolution.md",
+      "line": 25,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-EVOLVE-0001",
+      "source": "docs/05-governance/software-development/exceptions-evolution.md",
+      "line": 27,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-EVOLVE-0002",
+      "source": "docs/05-governance/software-development/exceptions-evolution.md",
+      "line": 29,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-PERF-0001",
+      "source": "docs/05-governance/software-development/performance.md",
+      "line": 3,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-PERF-0002",
+      "source": "docs/05-governance/software-development/performance.md",
+      "line": 5,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-PERF-0003",
+      "source": "docs/05-governance/software-development/performance.md",
+      "line": 7,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-PERF-0004",
+      "source": "docs/05-governance/software-development/performance.md",
+      "line": 9,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-PERF-0005",
+      "source": "docs/05-governance/software-development/performance.md",
+      "line": 11,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-PERF-0006",
+      "source": "docs/05-governance/software-development/performance.md",
+      "line": 13,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-PERF-0007",
+      "source": "docs/05-governance/software-development/performance.md",
+      "line": 15,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-PERF-0008",
+      "source": "docs/05-governance/software-development/performance.md",
+      "line": 17,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-GOV-0001",
+      "source": "docs/05-governance/software-development/README.md",
+      "line": 55,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-GOV-0002",
+      "source": "docs/05-governance/software-development/README.md",
+      "line": 57,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-GOV-0003",
+      "source": "docs/05-governance/software-development/README.md",
+      "line": 59,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-PROFILE-0001",
+      "source": "docs/05-governance/software-development/repository-profile.md",
+      "line": 21,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-PROFILE-0002",
+      "source": "docs/05-governance/software-development/repository-profile.md",
+      "line": 23,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-PROFILE-0003",
+      "source": "docs/05-governance/software-development/repository-profile.md",
+      "line": 25,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-PROFILE-0004",
+      "source": "docs/05-governance/software-development/repository-profile.md",
+      "line": 27,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-PROFILE-0005",
+      "source": "docs/05-governance/software-development/repository-profile.md",
+      "line": 29,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-CHANGE-0001",
+      "source": "docs/05-governance/software-development/review-ci.md",
+      "line": 3,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-CHANGE-0002",
+      "source": "docs/05-governance/software-development/review-ci.md",
+      "line": 5,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-REVIEW-0001",
+      "source": "docs/05-governance/software-development/review-ci.md",
+      "line": 7,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-REVIEW-0002",
+      "source": "docs/05-governance/software-development/review-ci.md",
+      "line": 9,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-CI-0001",
+      "source": "docs/05-governance/software-development/review-ci.md",
+      "line": 11,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-CI-0002",
+      "source": "docs/05-governance/software-development/review-ci.md",
+      "line": 13,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-CI-0003",
+      "source": "docs/05-governance/software-development/review-ci.md",
+      "line": 15,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-CI-0004",
+      "source": "docs/05-governance/software-development/review-ci.md",
+      "line": 17,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-CI-0005",
+      "source": "docs/05-governance/software-development/review-ci.md",
+      "line": 19,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-CI-0006",
+      "source": "docs/05-governance/software-development/review-ci.md",
+      "line": 21,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-RUST-0001",
+      "source": "docs/05-governance/software-development/rust-language.md",
+      "line": 5,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-RUST-0002",
+      "source": "docs/05-governance/software-development/rust-language.md",
+      "line": 7,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-RUST-0003",
+      "source": "docs/05-governance/software-development/rust-language.md",
+      "line": 9,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-RUST-0004",
+      "source": "docs/05-governance/software-development/rust-language.md",
+      "line": 11,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-RUST-0005",
+      "source": "docs/05-governance/software-development/rust-language.md",
+      "line": 13,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-RUST-0006",
+      "source": "docs/05-governance/software-development/rust-language.md",
+      "line": 15,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-RUST-0007",
+      "source": "docs/05-governance/software-development/rust-language.md",
+      "line": 17,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-RUST-0008",
+      "source": "docs/05-governance/software-development/rust-language.md",
+      "line": 19,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-RUST-0009",
+      "source": "docs/05-governance/software-development/rust-language.md",
+      "line": 21,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-RUST-0010",
+      "source": "docs/05-governance/software-development/rust-language.md",
+      "line": 23,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-GOV-0004",
+      "source": "docs/05-governance/software-development/scope-governance.md",
+      "line": 14,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-GOV-0005",
+      "source": "docs/05-governance/software-development/scope-governance.md",
+      "line": 16,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-GOV-0006",
+      "source": "docs/05-governance/software-development/scope-governance.md",
+      "line": 18,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-GOV-0007",
+      "source": "docs/05-governance/software-development/scope-governance.md",
+      "line": 20,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-GOV-0008",
+      "source": "docs/05-governance/software-development/scope-governance.md",
+      "line": 31,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-QUAL-0001",
+      "source": "docs/05-governance/software-development/secure-inclusive.md",
+      "line": 3,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-QUAL-0002",
+      "source": "docs/05-governance/software-development/secure-inclusive.md",
+      "line": 5,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-QUAL-0003",
+      "source": "docs/05-governance/software-development/secure-inclusive.md",
+      "line": 7,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-QUAL-0004",
+      "source": "docs/05-governance/software-development/secure-inclusive.md",
+      "line": 9,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-QUAL-0005",
+      "source": "docs/05-governance/software-development/secure-inclusive.md",
+      "line": 11,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-QUAL-0006",
+      "source": "docs/05-governance/software-development/secure-inclusive.md",
+      "line": 13,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-QUAL-0007",
+      "source": "docs/05-governance/software-development/secure-inclusive.md",
+      "line": 15,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-QUAL-0008",
+      "source": "docs/05-governance/software-development/secure-inclusive.md",
+      "line": 17,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-UNSAFE-0001",
+      "source": "docs/05-governance/software-development/unsafe-ffi.md",
+      "line": 15,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-UNSAFE-0002",
+      "source": "docs/05-governance/software-development/unsafe-ffi.md",
+      "line": 17,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-UNSAFE-0003",
+      "source": "docs/05-governance/software-development/unsafe-ffi.md",
+      "line": 19,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-UNSAFE-0004",
+      "source": "docs/05-governance/software-development/unsafe-ffi.md",
+      "line": 21,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-FFI-0001",
+      "source": "docs/05-governance/software-development/unsafe-ffi.md",
+      "line": 23,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-FFI-0002",
+      "source": "docs/05-governance/software-development/unsafe-ffi.md",
+      "line": 25,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-FFI-0003",
+      "source": "docs/05-governance/software-development/unsafe-ffi.md",
+      "line": 27,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-FFI-0004",
+      "source": "docs/05-governance/software-development/unsafe-ffi.md",
+      "line": 29,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-UNSAFE-0005",
+      "source": "docs/05-governance/software-development/unsafe-ffi.md",
+      "line": 31,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-TEST-0001",
+      "source": "docs/05-governance/software-development/verification.md",
+      "line": 3,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-TEST-0002",
+      "source": "docs/05-governance/software-development/verification.md",
+      "line": 5,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-TEST-0003",
+      "source": "docs/05-governance/software-development/verification.md",
+      "line": 7,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-TEST-0004",
+      "source": "docs/05-governance/software-development/verification.md",
+      "line": 9,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-TEST-0005",
+      "source": "docs/05-governance/software-development/verification.md",
+      "line": 11,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-TEST-0006",
+      "source": "docs/05-governance/software-development/verification.md",
+      "line": 13,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-TEST-0007",
+      "source": "docs/05-governance/software-development/verification.md",
+      "line": 15,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-TEST-0008",
+      "source": "docs/05-governance/software-development/verification.md",
+      "line": 17,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-TEST-0009",
+      "source": "docs/05-governance/software-development/verification.md",
+      "line": 19,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-DEV-TEST-0010",
+      "source": "docs/05-governance/software-development/verification.md",
+      "line": 21,
+      "kind": "governance",
+      "domain": null
     }
   ],
   "files": [
@@ -47351,8 +48244,8 @@
     },
     {
       "source": "docs/01-architecture/architecture-model.md",
-      "sha256": "3753dcddc00803fe75e5770cb4abe7eef7b4d551105b869fbe55159fc22501d9",
-      "lines": 597
+      "sha256": "fd0e3a8fc06bd5d7879fb3aab206ea556ae2e33954d92db84a996c857aeded99",
+      "lines": 599
     },
     {
       "source": "docs/01-architecture/behavioral-contracts.md",
@@ -51741,7 +52634,7 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/audit-report.md",
-      "sha256": "1133f656ce3a51bf9d6d882005d6c3427149a338279c01830b4dc5940e93d4a3",
+      "sha256": "df402b410369c9245fde221f3a016a16de6fec826d5053e37a0798755eec56fc",
       "lines": 66
     },
     {
@@ -51756,13 +52649,13 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/closure-backlog.md",
-      "sha256": "80e4591d69098b917007446ade592cbe340d9475864b1906d301975a5df86db2",
+      "sha256": "84bbf0d89e81c4ccfa2ad160efacd80f8464055b3aa28c2219071fbe7ab40189",
       "lines": 17
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "sha256": "714bebe9510ea5b67085d629427524865807fddf57da7a31b38d2b1c8a9eb8dd",
-      "lines": 30
+      "sha256": "cf6b728fd788fb6b3b5bdf52c3eabb9b6dfaad9da927ee9b465a828d9c6a0436",
+      "lines": 31
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/dependency-graph.md",
@@ -51881,8 +52774,8 @@
     },
     {
       "source": "docs/04-ecosystem/verification.md",
-      "sha256": "2f04619a51ddf0ef60f0a3d45064d82603dff30be8e28bcc69801e5cfb8a46d1",
-      "lines": 29
+      "sha256": "8bb7f50bfae3db4094e80bee19b259e7adeb610c09239b0fbcb7c3c9783c647d",
+      "lines": 31
     },
     {
       "source": "docs/05-governance/adr-template.md",
@@ -51891,8 +52784,8 @@
     },
     {
       "source": "docs/05-governance/governance.md",
-      "sha256": "f61c2f8f7a43f05020891a8593f18123d26d96ebb025039710e2a7c19d9d9b2d",
-      "lines": 34
+      "sha256": "f7ac7160abc8a3e0acca4c667090ed5e9dc3946e22d250d204005ca65af61680",
+      "lines": 38
     },
     {
       "source": "docs/05-governance/rfc-template.md",
@@ -51900,9 +52793,89 @@
       "lines": 34
     },
     {
+      "source": "docs/05-governance/software-development/api-errors.md",
+      "sha256": "31d5df2c2005031bace16662d1aede171e3092b1a1ad377568526e915d141b3a",
+      "lines": 23
+    },
+    {
+      "source": "docs/05-governance/software-development/async-concurrency.md",
+      "sha256": "05d0e7c6d7cc1e5dac69ab0cef8637dbbf2edb1d6e06e502e216c9603245a73c",
+      "lines": 21
+    },
+    {
+      "source": "docs/05-governance/software-development/compliance-evidence.md",
+      "sha256": "4013bed398fba7fb43d5684fce90098ddaaec6b7ae1e22cccbbe95a301e48cfd",
+      "lines": 50
+    },
+    {
+      "source": "docs/05-governance/software-development/dependencies-supply-chain.md",
+      "sha256": "32cd84a3249d49bc0387173acb1030775e5ec6aca273ad04a36c31c1777a02aa",
+      "lines": 17
+    },
+    {
+      "source": "docs/05-governance/software-development/design-philosophy.md",
+      "sha256": "7059eeb02d8f419402373604256fdeaa8efc8544b8d08106d762ba00ee1e7b66",
+      "lines": 65
+    },
+    {
+      "source": "docs/05-governance/software-development/documentation-release.md",
+      "sha256": "75cde92f68ccda7a4853b6cf7663573040485e7aefbc129ee75f4caa42127caa",
+      "lines": 19
+    },
+    {
+      "source": "docs/05-governance/software-development/exceptions-evolution.md",
+      "sha256": "60e76f3caf22a5501132fcd8fc0d06d0d4fe133b92300f00d201cd617f33f4a7",
+      "lines": 29
+    },
+    {
+      "source": "docs/05-governance/software-development/performance.md",
+      "sha256": "bda40a3fbdcea9d129b94b11d9a83c2b83d2d14f7ca839f0c07a9f5ae8e70e6c",
+      "lines": 17
+    },
+    {
+      "source": "docs/05-governance/software-development/README.md",
+      "sha256": "69d84e6d0c9eb382d6b8548790c5a36ac2d6d460deb8f9c5052201d633625198",
+      "lines": 59
+    },
+    {
+      "source": "docs/05-governance/software-development/repository-profile.md",
+      "sha256": "fac35fcd5e24ecfec650556bb8f43eea7e1c2e87e08e9006961c770ef292347f",
+      "lines": 29
+    },
+    {
+      "source": "docs/05-governance/software-development/review-ci.md",
+      "sha256": "ab425582bc082ce931ee1fa827b73ac6d9eb695f28840ae24ccfad306d65a71e",
+      "lines": 21
+    },
+    {
+      "source": "docs/05-governance/software-development/rust-language.md",
+      "sha256": "31820be3d84314380b7d2045fdacb3394c3139c4a9dd3be3bdeb043532b451ca",
+      "lines": 23
+    },
+    {
+      "source": "docs/05-governance/software-development/scope-governance.md",
+      "sha256": "cdfc369583b479d3a022fc2af5547c370f8ee97e39d67348849b313ed9ec8c46",
+      "lines": 31
+    },
+    {
+      "source": "docs/05-governance/software-development/secure-inclusive.md",
+      "sha256": "bfd393146be7e16ef6d44306ce23e7d863f0e3b607e9fb8d76dc05c2bf20663e",
+      "lines": 17
+    },
+    {
+      "source": "docs/05-governance/software-development/unsafe-ffi.md",
+      "sha256": "fa6c860093f937737342470e0f3867bd4ff64f4551456574ca71597bddfd2ff9",
+      "lines": 31
+    },
+    {
+      "source": "docs/05-governance/software-development/verification.md",
+      "sha256": "b6d6c7ad43cdbc50843eb520b59a1b5afac52d0242bbf1fdaa68276105362eb4",
+      "lines": 21
+    },
+    {
       "source": "docs/06-roadmap/roadmap.md",
-      "sha256": "9a276bce5777ce6e54c3e0862dd864c69aa0917b18eb1fae29e837de7a955834",
-      "lines": 205
+      "sha256": "49931b10e233ae8d7e7be0d05eb6ecc19a54136c89b0733271881390fd43d9e8",
+      "lines": 207
     },
     {
       "source": "docs/adr/0001-capability-first-platform.md",
@@ -52675,9 +53648,19 @@
       "lines": 24
     },
     {
+      "source": "docs/adr/0155-development-standards-are-implementation-entry-gates.md",
+      "sha256": "e8285d1e5ed1246dd8a12bcffd9325bdb5c44b294c2bb290063bf0335fb6acdc",
+      "lines": 24
+    },
+    {
+      "source": "docs/adr/0156-unsafe-code-is-a-scoped-proof-obligation.md",
+      "sha256": "8392c56f6dcbbb4fe3b3aaa2d288b27529ac4293e3ac430962008b276f54f2e4",
+      "lines": 24
+    },
+    {
       "source": "docs/adr/README.md",
-      "sha256": "471df1cc845f6dc5f53cfdaeaa6da2f8452ac2f1dfab278afb0d2b346c7c4cee",
-      "lines": 160
+      "sha256": "dc182c447977dcb62985b2004701ea57e2a59a9aff30e6297a9fa2eca226d564",
+      "lines": 162
     },
     {
       "source": "docs/README.md",

@@ -156,5 +156,7 @@
 | [0152](0152-citation-presence-does-not-prove-source-freshness.md) | Citation presence does not prove source freshness | Accepted |
 | [0153](0153-cross-cutting-keywords-are-discovery-not-coverage.md) | Cross-cutting keywords are discovery, not coverage | Accepted |
 | [0154](0154-maturity-promotion-uses-conjunctive-gates-not-scores.md) | Maturity promotion uses conjunctive gates, not scores | Accepted |
+| [0155](0155-development-standards-are-implementation-entry-gates.md) | Development standards are implementation entry gates | Accepted |
+| [0156](0156-unsafe-code-is-a-scoped-proof-obligation.md) | Unsafe code is a scoped proof obligation | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

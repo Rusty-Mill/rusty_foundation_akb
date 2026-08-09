@@ -27,3 +27,5 @@ Release artifacts and their conformance/benchmark reports use the [signed-artifa
 Repository-scale structural inventory and readiness claims use the [consistency, traceability, and readiness model](consistency-readiness/README.md). A conformance or benchmark file proves planned evidence structure only; direct requirement links and qualified results are required before provider, profile, release, or Stable-promotion claims.
 
 Publication, promotion, mirroring, advisories, revocation, and emergency exercises use the [repository-operations evidence model](repository-operations/README.md). A stable release claim binds an immutable artifact digest, publication record, channel-metadata generation, required evidence, and unresolved exceptions rather than a mutable tag or web page.
+
+Implementation change and repository evidence follow the [software development compliance model](../05-governance/software-development/compliance-evidence.md). Development-standard results identify exact rules, repository profile, source/tool/configuration generations, review/test/benchmark evidence, and exceptions; a generic “standards compliant” label is insufficient.

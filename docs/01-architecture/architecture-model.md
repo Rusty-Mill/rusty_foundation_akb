@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.77.0
+**Version:** 1.78.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -563,6 +563,8 @@ Benchmark scenarios and measured runs likewise have distinct identities ([ADR-01
 External citation presence does not prove authority, currency, applicability, or correct interpretation ([ADR-0152](../adr/0152-citation-presence-does-not-prove-source-freshness.md)). Freshness claims bind source version/status, review date, affected propositions, reviewer, and expiry/trigger. Similarly, cross-cutting keyword occurrence is discovery evidence rather than coverage ([ADR-0153](../adr/0153-cross-cutting-keywords-are-discovery-not-coverage.md)). Security, performance, accessibility, internationalization, observability, and operations require exact requirements, evidence methods, ownership, exceptions, or justified non-applicability before promotion.
 
 Maturity promotion uses conjunctive gates rather than numeric or weighted readiness scores ([ADR-0154](../adr/0154-maturity-promotion-uses-conjunctive-gates-not-scores.md)). `Unknown` blocks promotion; reviewed non-applicability and governed waivers remain distinct. Generated scorecards assemble decision evidence but cannot change maturity. Only an explicit reviewed record can authorize Experimental trials, and that authorization does not establish Stable precedent, production support, portability, or release eligibility.
+
+The [Rusty Mill software development standards](../05-governance/software-development/README.md) are a separate conjunctive implementation-entry gate ([ADR-0155](../adr/0155-development-standards-are-implementation-entry-gates.md)). They govern design philosophy, Rust/API/errors/async/concurrency/resources, unsafe/FFI, testing/conformance/fuzzing, performance, security/privacy/accessibility/i18n/observability, dependencies/supply chain, review/CI, documentation/releases/maintenance, repository profiles, evidence, and exceptions. Unsafe code is a scoped proof obligation behind safe abstractions rather than a convenience or blanket prohibition ([ADR-0156](../adr/0156-unsafe-code-is-a-scoped-proof-obligation.md)). Standards profiles may strengthen but cannot silently weaken the foundation. Neither standards compliance nor domain promotion alone authorizes implementation; both and an exact bounded trial decision are required.
 
 ## 18. Deliberately unresolved choices
 
