@@ -9,8 +9,8 @@
 ## Primary sources
 
 - Microsoft, [I/O completion ports](https://learn.microsoft.com/windows/win32/fileio/i-o-completion-ports), [Overlapped I/O](https://learn.microsoft.com/windows/win32/sync/synchronization-and-overlapped-input-and-output), and [`CancelIoEx`](https://learn.microsoft.com/windows/win32/api/ioapiset/nf-ioapiset-cancelioex)
-- Linux, [`io_uring_enter(2)`](https://man7.org/linux/man-pages/man2/io_uring_enter.2.html), [`io_uring_setup(2)`](https://man7.org/linux/man-pages/man2/io_uring_setup.2.html), [`epoll(7)`](https://man7.org/linux/man-pages/man7/epoll.7.html), and kernel [io_uring documentation](https://docs.kernel.org/io_uring/index.html)
-- Apple, [`kqueue(2)`](https://developer.apple.com/library/archive/documentation/System/Conceptual/ManPages_iPhoneOS/man2/kqueue.2.html), [Dispatch I/O](https://developer.apple.com/documentation/dispatch/dispatch_io), and [Dispatch sources](https://developer.apple.com/documentation/dispatch/dispatch-source)
+- Linux, [`io_uring_enter(2)`](https://man7.org/linux/man-pages/man2/io_uring_enter.2.html), [`io_uring_setup(2)`](https://man7.org/linux/man-pages/man2/io_uring_setup.2.html), [`epoll(7)`](https://man7.org/linux/man-pages/man7/epoll.7.html), and [`io_uring(7)`](https://man7.org/linux/man-pages/man7/io_uring.7.html)
+- Apple, [`kqueue(2)`](https://developer.apple.com/library/archive/documentation/System/Conceptual/ManPages_iPhoneOS/man2/kqueue.2.html), [Dispatch I/O](https://developer.apple.com/documentation/dispatch/dispatchio), and [Dispatch sources](https://developer.apple.com/documentation/dispatch/dispatch-source)
 
 ## Synthesis
 

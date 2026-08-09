@@ -14,7 +14,7 @@ Wayland gives the compositor authority over top-level configuration. An `xdg_sur
 
 X11 permits stronger client placement assumptions and exposes root-window coordinates, but those are provider-specific quality/extension claims. The portable contract adopts Wayland's stricter truthful semantics; an X11 provider may advertise additional placement and observation support.
 
-Primary sources: [Wayland core protocol](https://gitlab.freedesktop.org/wayland/wayland/-/blob/main/protocol/wayland.xml), [xdg-shell protocol](https://gitlab.freedesktop.org/wayland/wayland-protocols/-/blob/main/stable/xdg-shell/xdg-shell.xml), [fractional scale protocol](https://gitlab.freedesktop.org/wayland/wayland-protocols/-/blob/main/staging/fractional-scale/fractional-scale-v1.xml), [Xlib manual](https://www.x.org/releases/current/doc/libX11/libX11/libX11.html).
+Primary sources: [Wayland core protocol](https://gitlab.freedesktop.org/wayland/wayland/-/blob/main/protocol/wayland.xml), [xdg-shell protocol](https://gitlab.freedesktop.org/wayland/wayland-protocols/-/blob/main/stable/xdg-shell/xdg-shell.xml), [fractional scale protocol](https://gitlab.freedesktop.org/wayland/wayland-protocols/-/blob/main/staging/fractional-scale/fractional-scale-v1.xml), [Xlib manual](https://xorg.freedesktop.org/archive/current/doc/libX11/libX11/libX11.html).
 
 ## macOS
 

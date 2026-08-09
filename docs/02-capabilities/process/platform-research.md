@@ -24,7 +24,7 @@
 
 ## Primary sources
 
-- Microsoft: [Create processes](https://learn.microsoft.com/en-us/windows/win32/procthread/creating-processes), [`CreateProcessW`](https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessw), and [Process Thread Attribute List](https://learn.microsoft.com/en-us/windows/win32/procthread/attribute-list)
+- Microsoft: [Create processes](https://learn.microsoft.com/en-us/windows/win32/procthread/creating-processes), [`CreateProcessW`](https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessw), and [Process Thread Attribute List](https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-initializeprocthreadattributelist)
 - Microsoft: [Job Objects](https://learn.microsoft.com/en-us/windows/win32/procthread/job-objects), [`TerminateProcess`](https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-terminateprocess), and [`GenerateConsoleCtrlEvent`](https://learn.microsoft.com/en-us/windows/console/generateconsolectrlevent)
 - The Open Group: [`posix_spawn`](https://pubs.opengroup.org/onlinepubs/9799919799/functions/posix_spawn.html), [`exec`](https://pubs.opengroup.org/onlinepubs/9799919799/functions/exec.html), and [`wait`](https://pubs.opengroup.org/onlinepubs/9799919799/functions/wait.html)
 - Linux man-pages: [`pidfd_open`](https://man7.org/linux/man-pages/man2/pidfd_open.2.html), [`waitid`](https://man7.org/linux/man-pages/man2/waitpid.2.html), and [`close_range`](https://man7.org/linux/man-pages/man2/close_range.2.html)
