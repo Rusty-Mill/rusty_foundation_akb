@@ -1,7 +1,9 @@
 # Runtime and time vertical slice
 
-**Status:** Draft domain analysis  
-**Purpose:** Exercise the capability model against timing, cancellation, and lifecycle behavior before API design.
+| Field | Value |
+|---|---|
+| Status | Draft domain analysis |
+| Purpose | Exercise the capability model against timing, cancellation, and lifecycle behavior before API design |
 
 ## Why this slice
 

@@ -4,16 +4,19 @@
   "authority": "docs/01-architecture/architecture-model.md",
   "generated_from": "Markdown; this index is derived and non-authoritative",
   "summary": {
-    "markdown_documents": 1053,
-    "internal_links": 1619,
-    "requirements": 4919,
+    "markdown_documents": 1058,
+    "internal_links": 1688,
+    "requirements": 4931,
     "domains": 62,
-    "adrs": 147,
+    "adrs": 149,
     "errors": 0,
-    "warnings": 1,
+    "warnings": 0,
     "domains_with_conformance": 62,
     "domains_with_benchmarks": 62,
-    "domains_with_direct_requirement_assertion_map": 1
+    "domains_with_direct_requirement_assertion_map": 1,
+    "declared_graph_nodes": 15,
+    "declared_graph_edges": 8,
+    "required_graph_acyclic": true
   },
   "domains": [
     {
@@ -617,7 +620,7 @@
     {
       "id": "runtime-time",
       "source": "docs/02-capabilities/runtime-time/README.md",
-      "status": "unspecified",
+      "status": "Draft domain analysis",
       "requirements": 41,
       "capability_requirements": 41,
       "conformance_requirements": 0,
@@ -890,6 +893,122 @@
       ]
     }
   ],
+  "dependency_graph": {
+    "source": "docs/04-ecosystem/consistency-readiness/dependency-graph.md",
+    "nodes": [
+      {
+        "id": "rm.time.monotonic-clock",
+        "source": "../../02-capabilities/runtime-time/monotonic-clock.md"
+      },
+      {
+        "id": "rm.time.deadline-timer",
+        "source": "../../02-capabilities/runtime-time/deadline-timer.md"
+      },
+      {
+        "id": "rm.runtime.cancellation",
+        "source": "../../02-capabilities/runtime-time/cancellation.md"
+      },
+      {
+        "id": "rm.filesystem.directory",
+        "source": "../../02-capabilities/filesystem/directory.md"
+      },
+      {
+        "id": "rm.filesystem.resolve",
+        "source": "../../02-capabilities/filesystem/resolve.md"
+      },
+      {
+        "id": "rm.filesystem.file",
+        "source": "../../02-capabilities/filesystem/file.md"
+      },
+      {
+        "id": "rm.filesystem.metadata",
+        "source": "../../02-capabilities/filesystem/metadata.md"
+      },
+      {
+        "id": "rm.filesystem.atomic-replace",
+        "source": "../../02-capabilities/filesystem/atomic-replace.md"
+      },
+      {
+        "id": "rm.security.random",
+        "source": "../../02-capabilities/security/random.md"
+      },
+      {
+        "id": "rm.security.attenuate",
+        "source": "../../02-capabilities/security/attenuation.md"
+      },
+      {
+        "id": "rm.security.secret-store",
+        "source": "../../02-capabilities/security/secret-store.md"
+      },
+      {
+        "id": "rm.process.executable-resolve",
+        "source": "../../02-capabilities/process/executable-resolve.md"
+      },
+      {
+        "id": "rm.process.spawn",
+        "source": "../../02-capabilities/process/spawn.md"
+      },
+      {
+        "id": "rm.process.control",
+        "source": "../../02-capabilities/process/control.md"
+      },
+      {
+        "id": "rm.ipc.byte-pipe",
+        "source": "../../02-capabilities/ipc/byte-pipe.md"
+      }
+    ],
+    "edges": [
+      {
+        "source": "rm.time.deadline-timer",
+        "kind": "requires",
+        "target": "rm.time.monotonic-clock",
+        "evidence": "../../02-capabilities/runtime-time/README.md"
+      },
+      {
+        "source": "rm.time.deadline-timer",
+        "kind": "optionally-uses",
+        "target": "rm.runtime.cancellation",
+        "evidence": "../../02-capabilities/runtime-time/README.md"
+      },
+      {
+        "source": "rm.filesystem.file",
+        "kind": "optionally-uses",
+        "target": "rm.runtime.cancellation",
+        "evidence": "../../02-capabilities/filesystem/README.md"
+      },
+      {
+        "source": "rm.process.spawn",
+        "kind": "optionally-uses",
+        "target": "rm.filesystem.file",
+        "evidence": "../../02-capabilities/process/README.md"
+      },
+      {
+        "source": "rm.process.spawn",
+        "kind": "optionally-uses",
+        "target": "rm.ipc.byte-pipe",
+        "evidence": "../../02-capabilities/process/README.md"
+      },
+      {
+        "source": "rm.process.spawn",
+        "kind": "optionally-uses",
+        "target": "rm.runtime.cancellation",
+        "evidence": "../../02-capabilities/process/README.md"
+      },
+      {
+        "source": "rm.process.spawn",
+        "kind": "optionally-uses",
+        "target": "rm.time.monotonic-clock",
+        "evidence": "../../02-capabilities/process/README.md"
+      },
+      {
+        "source": "rm.security.random",
+        "kind": "optionally-uses",
+        "target": "rm.runtime.cancellation",
+        "evidence": "../../02-capabilities/security/README.md"
+      }
+    ],
+    "required_acyclic": true
+  },
   "requirements": [
     {
       "id": "RM-ACCESSIBILITY-EVENT-0001",
@@ -38923,6 +39042,62 @@
       "domain": null
     },
     {
+      "id": "RM-READINESS-CONTRADICTION-0001",
+      "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
+      "line": 20,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-READINESS-CONTRADICTION-0002",
+      "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
+      "line": 22,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-READINESS-CONTRADICTION-0003",
+      "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
+      "line": 24,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-READINESS-CONTRADICTION-0004",
+      "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
+      "line": 26,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-READINESS-GRAPH-0001",
+      "source": "docs/04-ecosystem/consistency-readiness/dependency-graph.md",
+      "line": 55,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-READINESS-GRAPH-0002",
+      "source": "docs/04-ecosystem/consistency-readiness/dependency-graph.md",
+      "line": 57,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-READINESS-GRAPH-0003",
+      "source": "docs/04-ecosystem/consistency-readiness/dependency-graph.md",
+      "line": 59,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-READINESS-GRAPH-0004",
+      "source": "docs/04-ecosystem/consistency-readiness/dependency-graph.md",
+      "line": 61,
+      "kind": "governance",
+      "domain": null
+    },
+    {
       "id": "RM-READINESS-PROMOTION-0001",
       "source": "docs/04-ecosystem/consistency-readiness/maturity-promotion.md",
       "line": 40,
@@ -38975,6 +39150,34 @@
       "id": "RM-READINESS-MODEL-0004",
       "source": "docs/04-ecosystem/consistency-readiness/model.md",
       "line": 50,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-READINESS-VOCAB-0001",
+      "source": "docs/04-ecosystem/consistency-readiness/vocabulary.md",
+      "line": 62,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-READINESS-VOCAB-0002",
+      "source": "docs/04-ecosystem/consistency-readiness/vocabulary.md",
+      "line": 64,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-READINESS-VOCAB-0003",
+      "source": "docs/04-ecosystem/consistency-readiness/vocabulary.md",
+      "line": 66,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-READINESS-VOCAB-0004",
+      "source": "docs/04-ecosystem/consistency-readiness/vocabulary.md",
+      "line": 68,
       "kind": "governance",
       "domain": null
     },
@@ -39564,8 +39767,8 @@
     },
     {
       "source": "docs/01-architecture/architecture-model.md",
-      "sha256": "a6b477da6547b897349955a3da1922256625055d8e76f0302725dacd07288d83",
-      "lines": 587
+      "sha256": "51e339e95e3dc4dab1ff66e8a77dc0b23799adcdcc3ab5886a514d6011f6cac0",
+      "lines": 589
     },
     {
       "source": "docs/01-architecture/behavioral-contracts.md",
@@ -41044,8 +41247,8 @@
     },
     {
       "source": "docs/02-capabilities/graph-model.md",
-      "sha256": "84c3537430a795be420fc113539e5f2f5a2961a7d0f0f0640cc5484684956f6d",
-      "lines": 41
+      "sha256": "90e6a414bc71b5b4536b4c73aff3f7b7c2d51e16c2ca6b464f273fca70b87cee",
+      "lines": 43
     },
     {
       "source": "docs/02-capabilities/graphics/benchmarks.md",
@@ -42644,7 +42847,7 @@
     },
     {
       "source": "docs/02-capabilities/profiles/README.md",
-      "sha256": "8538c1a169e15c00cb92e64ae487268f51771cc6f7eb3753545c9b8dc591a094",
+      "sha256": "d915afa400734498208b1bcef7044108dba00da7414ff5ab2ef6f8f4096bdc8c",
       "lines": 68
     },
     {
@@ -42754,8 +42957,8 @@
     },
     {
       "source": "docs/02-capabilities/runtime-time/README.md",
-      "sha256": "393ca7d9635d166ec5555a16af1455079f06f2bf2c7a4b21ccdfcac7bebed21c",
-      "lines": 54
+      "sha256": "1c13c508257fb0f391566cf5bdbe0071c416cba0b42b666feb16116225d7639a",
+      "lines": 56
     },
     {
       "source": "docs/02-capabilities/runtime-time/shutdown.md",
@@ -43934,8 +44137,8 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/audit-report.md",
-      "sha256": "956ada8333076cb62d77831c71b4468ddcc8e898453c796fde5c2cc47fcfd704",
-      "lines": 42
+      "sha256": "51730485dff4fde96065e1231654364d67d1c176c17024e3589c235b7b95ea38",
+      "lines": 52
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/audit-rules.md",
@@ -43944,8 +44147,18 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/closure-backlog.md",
-      "sha256": "c40f9a492aa6526a4ef0ac4c251ca393286bbe77ba33e16ec54e91925e45ef49",
+      "sha256": "9a886389f570e950e05e49a3a141d9ab9609f850169898ed44cdd10ea990a237",
       "lines": 16
+    },
+    {
+      "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
+      "sha256": "b3e5387cfacbaa69918f061c3f75765d6a8f8ca9e6102dab7f19576ea2b45c36",
+      "lines": 26
+    },
+    {
+      "source": "docs/04-ecosystem/consistency-readiness/dependency-graph.md",
+      "sha256": "49a378a4728e2d2c97ea86ab7c249670b3289f2d18562e14d589097dfcdefc13",
+      "lines": 68
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/maturity-promotion.md",
@@ -43959,8 +44172,13 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/README.md",
-      "sha256": "b764da69718b5c4dd8ff385fca04edc54fbda03609f27352612c889b5d0e6aab",
-      "lines": 44
+      "sha256": "9fd9360df00e27a9af8f5fcc3b5d6409272f3fd3b6091d43bed15740dd2e41b8",
+      "lines": 47
+    },
+    {
+      "source": "docs/04-ecosystem/consistency-readiness/vocabulary.md",
+      "sha256": "b874708ce071a203eb6979c3405bba3fdc900cab602a955365295403262f8378",
+      "lines": 68
     },
     {
       "source": "docs/04-ecosystem/repository-operations/advisory-model.md",
@@ -44054,8 +44272,8 @@
     },
     {
       "source": "docs/06-roadmap/roadmap.md",
-      "sha256": "57076a83e3d5cfd0cb713aaa7e1440c1ec48ded5b11cfd149d2fcd337311fdfb",
-      "lines": 195
+      "sha256": "b3e02d212f56b81a981fec03068bc77050b86f9c74ff98eae35ac1e54fd37cbe",
+      "lines": 197
     },
     {
       "source": "docs/adr/0001-capability-first-platform.md",
@@ -44793,9 +45011,19 @@
       "lines": 24
     },
     {
+      "source": "docs/adr/0148-dependency-edges-require-source-declaration.md",
+      "sha256": "49514aed427b9b6aefe1f6d97e5c8adf4bd782f6b2bdfd9c665bc65f6218cdb1",
+      "lines": 24
+    },
+    {
+      "source": "docs/adr/0149-shared-terms-have-canonical-roles-not-universal-types.md",
+      "sha256": "002897a78c2174bc279c74f3116849301cc1d2620ad19c37b81a7687f199e4fd",
+      "lines": 24
+    },
+    {
       "source": "docs/adr/README.md",
-      "sha256": "1ac0b2a5f16cb76d38fb35261d657ce0d7f9c7ce193530f7ecd1040af3612f9d",
-      "lines": 153
+      "sha256": "442487f77af02a8958a501f623ad92a824fb166e261ba118ecfd1f639e37d2ac",
+      "lines": 155
     },
     {
       "source": "docs/README.md",
@@ -44813,12 +45041,5 @@
       "lines": 7
     }
   ],
-  "findings": [
-    {
-      "severity": "warning",
-      "rule": "domain-status",
-      "source": "docs/02-capabilities/runtime-time/README.md",
-      "detail": "machine-readable status absent"
-    }
-  ]
+  "findings": []
 }

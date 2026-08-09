@@ -26,6 +26,8 @@ ASSERTION_ROW_RE = re.compile(
     r"^\| `(?P<id>rm\.assertion\.[a-z0-9.-]+@\d+)` \| (?P<sources>[^|]+) \|",
     re.MULTILINE,
 )
+GRAPH_NODE_RE = re.compile(r"^\| `(?P<id>rm\.(?!assertion\.)[a-z0-9.-]+)` \| \[(?P<label>[^]]+)\]\((?P<source>[^)]+)\) \|", re.MULTILINE)
+GRAPH_EDGE_RE = re.compile(r"^\| `(?P<source>rm\.[a-z0-9.-]+)` \| `(?P<kind>requires|optionally-uses|conflicts-with)` \| `(?P<target>rm\.[a-z0-9.-]+)` \| \[(?P<label>[^]]+)\]\((?P<evidence>[^)]+)\) \|", re.MULTILINE)
 
 
 @dataclass(frozen=True)
@@ -195,6 +197,42 @@ def inspect(root: Path) -> tuple[dict[str, object], list[Finding]]:
     for missing in sorted(indexed_adrs - adr_files):
         findings.append(Finding("error", "adr-exists", "docs/adr/README.md", f"{missing} missing"))
 
+    graph_source = root / "docs" / "04-ecosystem" / "consistency-readiness" / "dependency-graph.md"
+    graph_nodes: list[dict[str, str]] = []
+    graph_edges: list[dict[str, str]] = []
+    if graph_source.exists():
+        graph_text = graph_source.read_text(encoding="utf-8")
+        for match in GRAPH_NODE_RE.finditer(graph_text):
+            graph_nodes.append({"id": match.group("id"), "source": match.group("source")})
+        node_ids = {item["id"] for item in graph_nodes}
+        if len(node_ids) != len(graph_nodes):
+            findings.append(Finding("error", "graph-node-unique", relative(graph_source, root), "duplicate node identity"))
+        for match in GRAPH_EDGE_RE.finditer(graph_text):
+            edge = {"source": match.group("source"), "kind": match.group("kind"), "target": match.group("target"), "evidence": match.group("evidence")}
+            graph_edges.append(edge)
+            for endpoint in (edge["source"], edge["target"]):
+                if endpoint not in node_ids:
+                    findings.append(Finding("error", "graph-endpoint-declared", relative(graph_source, root), f"undeclared endpoint {endpoint}"))
+        adjacency: dict[str, list[str]] = {node: [] for node in node_ids}
+        for edge in graph_edges:
+            if edge["kind"] == "requires" and edge["source"] in adjacency:
+                adjacency[edge["source"]].append(edge["target"])
+        visiting: set[str] = set()
+        visited: set[str] = set()
+        def visit(node: str) -> bool:
+            if node in visiting:
+                return True
+            if node in visited:
+                return False
+            visiting.add(node)
+            if any(visit(target) for target in adjacency.get(node, [])):
+                return True
+            visiting.remove(node)
+            visited.add(node)
+            return False
+        if any(visit(node) for node in sorted(node_ids)):
+            findings.append(Finding("error", "graph-requires-acyclic", relative(graph_source, root), "required dependency cycle"))
+
     findings.sort(key=lambda item: (item.severity, item.rule, item.source, item.detail))
     index: dict[str, object] = {
         "format": "rusty-mill-akb-index",
@@ -214,9 +252,18 @@ def inspect(root: Path) -> tuple[dict[str, object], list[Finding]]:
             "domains_with_direct_requirement_assertion_map": sum(
                 bool(item["direct_requirement_assertion_map"]) for item in domains
             ),
+            "declared_graph_nodes": len(graph_nodes),
+            "declared_graph_edges": len(graph_edges),
+            "required_graph_acyclic": not any(item.rule == "graph-requires-acyclic" for item in findings),
         },
         "domains": domains,
         "assertions": assertions,
+        "dependency_graph": {
+            "source": relative(graph_source, root) if graph_source.exists() else None,
+            "nodes": graph_nodes,
+            "edges": graph_edges,
+            "required_acyclic": not any(item.rule == "graph-requires-acyclic" for item in findings),
+        },
         "requirements": requirements,
         "files": file_records,
         "findings": [item.__dict__ for item in findings],
@@ -258,6 +305,16 @@ This report is deterministic and contains no claim that file presence proves sem
 | Conformance specification present | {summary['domains_with_conformance']:,} / {summary['domains']:,} | {summary['domains_with_conformance'] / summary['domains']:.1%} |
 | Benchmark specification present | {summary['domains_with_benchmarks']:,} / {summary['domains']:,} | {summary['domains_with_benchmarks'] / summary['domains']:.1%} |
 | Direct requirement-to-assertion map | {summary['domains_with_direct_requirement_assertion_map']:,} / {summary['domains']:,} | {summary['domains_with_direct_requirement_assertion_map'] / summary['domains']:.1%} |
+
+## Declared dependency graph
+
+| Measure | Result |
+|---|---:|
+| Source-declared capability nodes | {summary['declared_graph_nodes']:,} |
+| Source-declared typed edges | {summary['declared_graph_edges']:,} |
+| Required-edge graph acyclic | {str(summary['required_graph_acyclic']).lower()} |
+
+Graph counts cover only explicit declarations. Missing nodes or edges are unknown, not proof of independence.
 
 The first two rows prove specification presence only. The third proves complete planned requirement-to-assertion mapping only for the counted domains. None proves executable assertions, passing provider results, or benchmark coverage.
 

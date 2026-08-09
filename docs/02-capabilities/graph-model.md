@@ -38,4 +38,6 @@ Edges may carry a version constraint, condition, rationale, and requirement iden
 
 ## Serialization direction
 
-A future machine-readable representation should be deterministic, reviewable as text, schema-versioned, and losslessly linked to Markdown specifications. The choice of YAML, TOML, JSON, or generated metadata remains open pending toolchain experiments; RFC-0001 does not commit to a syntax.
+The [consistency/readiness index](../04-ecosystem/consistency-readiness/README.md) now proves deterministic JSON derivation and validation without making JSON normative. The source-linked graph remains Markdown authority; its derived view is schema-versioned evidence. A future RFC may choose normative authoring serialization only after lossless round-trip and review evidence.
+
+The [partial declared graph](../04-ecosystem/consistency-readiness/dependency-graph.md) is the current validated view. It distinguishes absent/unknown relationships from declared independence and does not infer edges from diagrams or links ([ADR-0148](../adr/0148-dependency-edges-require-source-declaration.md)).
