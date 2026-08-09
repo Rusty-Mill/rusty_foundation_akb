@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.58.0 |
+| Version | 0.59.0 |
 | Extends | [`rm.profile.foundation.desktop` 1.0.0](foundation-desktop.md) |
 | Purpose | Add native top-level window and graphics-presentation infrastructure without claiming a complete GUI toolkit |
 
@@ -419,6 +419,12 @@
 
 **RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0205:** Evidence covers offline/reconnect, replica reinstall/clone/restore, session/checkpoint recovery, duplicate/reorder/partition, merge policies, selective sync/revocation, tombstones/late devices, migration, attachments, account transitions, localization/accessibility, responsiveness, memory/disk/network, energy, and benchmarks.
 
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0206:** Tenant service governance `>=0.1.0,<0.2.0` is conditional for tenant-scoped plans/features/usage/quotas and binds tenant/account/device, catalog/agreement/feature/meter/quota/provider generations, offline/grace evidence, privacy, localization, and objectives.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0207:** The UI distinguishes eligibility, authorization, availability, quota, pending effect, usage, charge, invoice, and payment. Cached/offline entitlements and allowances are expiry/scoped leases; optimistic use records stable effect and meter identities for reconciliation.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0208:** Evidence covers provider delay/gaps, plan/trial changes, cached entitlement expiry/revocation, offline grace and overuse, quota reservation/recovery, meter retry/dedup/correction, account/tenant transition, accessible localized explanations/appeals, responsiveness, energy, and benchmarks.
+
 ## Whole-product gaps
 
 This profile does not supply a rendering command model, widget/UI framework, text editing model, image/audio codecs, media containers/graphs, gestures, or translated product resources. Product-specific semantic roles/actions/content, accepted transfer formats/importers, locale coverage, audio policy/content, and accessible UX still belong to the product/framework. It cannot claim desktop-application completeness.
@@ -431,6 +437,7 @@ Input evidence additionally covers layout/IME diversity, keyboard-only operation
 
 ## History
 
+- **0.59.0:** Adds conditional tenant/commercial governance, accessible eligibility and quota state, offline leases and usage reconciliation, metering corrections, provider fault histories, and benchmarks.
 - **0.58.0:** Adds conditional offline application synchronization, explicit optimistic/authoritative milestones, causal and conflict semantics, selective state, deletion/migration, accessible status, conformance, and benchmarks.
 - **0.57.0:** Adds conditional API contract governance, generated SDK boundaries, directional compatibility, client migration/deprecation evidence, conformance, and desktop performance qualities.
 - **0.56.0:** Adds conditional durable user-visible workflows, resumable progress, safe cancellation/compensation status, protected task inboxes, accessible forms, approvals/quorum, migration/repair, conformance, and benchmarks.

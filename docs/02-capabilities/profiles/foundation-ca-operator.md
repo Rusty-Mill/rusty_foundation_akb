@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.25.0 |
+| Version | 0.26.0 |
 | Extends | [`rm.profile.foundation.server` 1.23.0](foundation-server.md) |
 | Purpose | Operate registration, certificate issuance, renewal, status, and CA lifecycle without claiming a complete public or enterprise CA product |
 
@@ -73,8 +73,11 @@
 
 **RM-PROFILE-CA-OPERATOR-0031:** CA synchronization composes Server 1.30.0 only for authenticated status, policy, inventory, and ceremony projections; issuance, revocation, signing, key, and ledger effects require current fenced authority. Conflicts never use generic last-write-wins, and revocation/tombstone evidence cannot be compacted before every admitted replica is retired or rebased.
 
+**RM-PROFILE-CA-OPERATOR-0032:** CA tenant governance composes Server 1.31.0 only for scoped managed-CA tenancy, resource placement, service eligibility, protective quotas, and auditable usage. Commercial state never authorizes issuance/signing/key effects or blocks revocation/security response; meter corrections preserve immutable issuance and ledger facts.
+
 ## History
 
+- **0.26.0:** Adds constrained managed-CA tenancy, placement, eligibility, quotas, and usage evidence while preserving issuance/key authority and security-response availability.
 - **0.25.0:** Adds constrained CA projection synchronization while prohibiting offline authority for issuance/key/status effects and preserving conflict, revocation, and retirement evidence.
 - **0.24.0:** Adds governed CA service contracts, compatibility across agents and relying parties, generated artifacts, issuance-effect semantics, and evidence-based retirement.
 - **0.23.0:** Rebases on Server 1.28.0 and constrains CA workflows to immutable issuance histories, fenced HSM/ledger effects, pending timers, quorum ceremonies, forward compensation, migration, and repair without replayed signing.

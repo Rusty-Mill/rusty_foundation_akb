@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.68.0
+**Version:** 1.69.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -545,6 +545,8 @@ The [application workflow, durable orchestration, and human-task foundations](..
 The [application API lifecycle and service-contract governance foundations](../02-capabilities/api-governance/README.md) compose stable logical surface/operation/type identity, HTTP/RPC/event bindings, multidimensional directional compatibility, request/query/idempotency/concurrency/error/long-running/quota semantics, immutable registries, reproducible generation, SDK review, rollout, consumer-qualified deprecation/migration/sunset, conformance, and benchmarks. Compatibility is directional and consumer-qualified, while deprecation notices and dates do not authorize removal ([ADR-0136](../adr/0136-compatibility-is-directional-and-consumer-qualified.md), [ADR-0137](../adr/0137-deprecation-notice-is-not-removal-authority.md)). Exact product APIs, protocols/schema languages, gateways, registries, SDK languages, quotas, support periods, rollout policy, and release trains remain product choices. Its specifications remain Draft and cannot amend this model.
 
 The [application synchronization, offline state, and conflict-resolution foundations](../02-capabilities/application-sync/README.md) compose dataset/replica/object/change identity, topology and membership, authenticated sessions/checkpoints, snapshots and atomic changes, causal context and qualified convergence, typed merge/conflict policy, durable offline intent and optimistic projections, selective synchronization, deletion/tombstone retirement, schema migration, large attachments, operations/recovery, conformance histories, and benchmarks. Local acceptance is distinct from authoritative effect completion, while conflict resolution is typed domain policy rather than universal timestamp or arrival-order arbitration ([ADR-0138](../adr/0138-local-acceptance-is-not-authoritative-effect-completion.md), [ADR-0139](../adr/0139-conflict-resolution-is-typed-domain-policy.md)). Exact datasets, authorities, topologies, providers/protocols, schemas, merge algorithms, offline eligibility, selection, retention, and objectives remain product choices. Its specifications remain Draft and cannot amend this model.
+
+The [tenant lifecycle, entitlements, metering, and quota-governance foundations](../02-capabilities/tenant-service-governance/README.md) compose tenant lifecycle and ownership, placement and multidimensional isolation, catalog/plans/subscriptions/trials, effective feature eligibility, immutable usage events, aggregation/rating/allocation/adjustment, quota reservations and enforcement, billing-provider/invoice/payment boundaries, grace/offline behavior, migration, disputes/reconciliation, conformance, and benchmarks. Entitlements are eligibility evidence rather than effect authority, while meter corrections are immutable provenance-bearing adjustments rather than rewritten history ([ADR-0140](../adr/0140-entitlement-is-eligibility-evidence-not-effect-authority.md), [ADR-0141](../adr/0141-meter-corrections-are-immutable-adjustments.md)). Exact packaging/prices/currencies/tax/payment/billing providers, tenant topology/isolation tier, quota/overage, grace, accounting policy, and objectives remain product and qualified-review choices. Its specifications remain Draft and cannot amend this model.
 
 ## 18. Deliberately unresolved choices
 

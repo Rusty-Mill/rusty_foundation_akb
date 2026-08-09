@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 1.30.0 |
+| Version | 1.31.0 |
 | Purpose | Long-running non-interactive service foundation with bounded shutdown and protected credentials |
 
 ## Workload assumptions
@@ -116,6 +116,9 @@ No interactive desktop session, unattended restart, concurrent I/O, explicit ser
 - **RM-PROFILE-FOUNDATION-SERVER-0098:** Application synchronization `>=0.1.0,<0.2.0` is conditional for partially replicated or intermittently connected datasets. It binds dataset/replica/object/change/schema/policy identity, topology, authority, directions, selection, causal/convergence semantics, retention, privacy, and objectives.
 - **RM-PROFILE-FOUNDATION-SERVER-0099:** Local acceptance, transfer, peer acceptance, merge, authoritative effect, visibility, acknowledgement, and convergence remain distinct. Conflict resolution is typed; tombstones survive until a proven retirement frontier; old replicas rebase or remain excluded.
 - **RM-PROFILE-FOUNDATION-SERVER-0100:** Evidence covers replica incarnation, session/checkpoint ancestry, snapshots/deltas, duplicate/reorder/partition histories, causal metadata, conflict policies, offline intent, selective sync, deletion/compaction, migrations, attachments, security/privacy, recovery, provider differentials, and benchmarks.
+- **RM-PROFILE-FOUNDATION-SERVER-0101:** Tenant service governance `>=0.1.0,<0.2.0` is conditional for multi-tenant placement/isolation, commercial feature eligibility, usage metering, or quota admission. It binds tenant/partition/catalog/agreement/feature/meter/quota/provider generations, authority, periods, privacy, and objectives.
+- **RM-PROFILE-FOUNDATION-SERVER-0102:** Entitlement, authorization, capacity, quota reservation, effect, usage, charge, invoice, and payment remain distinct. Meter events are immutable; corrections are adjustments; distributed quota enforcement declares consistency and overshoot; tenant closure reconciles every boundary.
+- **RM-PROFILE-FOUNDATION-SERVER-0103:** Evidence covers tenant lifecycle/transfer/closure, isolation vectors and placement moves, subscription/provider reconciliation, entitlement precedence/cache/revocation, quota fault histories, meter/aggregation/rating/adjustments, grace/offline, migrations, disputes, privacy/accessibility, and benchmarks.
 
 ## Operational constraints
 
@@ -123,6 +126,7 @@ Deadline timers and cancellation support bounded multi-phase shutdown. Sync path
 
 ## History
 
+- **1.31.0:** Adds conditional tenant lifecycle and isolation, commercial eligibility boundaries, immutable metering and adjustments, quota reservations/enforcement, billing separation, migration, conformance, and benchmarks.
 - **1.30.0:** Adds conditional application synchronization, offline intent/effect milestones, causal convergence, typed conflicts, selective replication, tombstone retirement, migration, conformance histories, and benchmarks.
 - **1.29.0:** Adds conditional API contract governance, stable logical operation identity, directional compatibility, protocol composition, registries/generation, consumer-qualified deprecation and sunset, conformance, and benchmarks.
 - **1.28.0:** Adds conditional durable workflows, deterministic history replay, activity/effect boundaries, timers/parallelism/children, forward compensation, migration, human tasks/approvals, repair/recovery, conformance, and benchmarks.

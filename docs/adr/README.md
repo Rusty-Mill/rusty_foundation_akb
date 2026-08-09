@@ -141,5 +141,7 @@
 | [0137](0137-deprecation-notice-is-not-removal-authority.md) | Deprecation notice is not removal authority | Accepted |
 | [0138](0138-local-acceptance-is-not-authoritative-effect-completion.md) | Local acceptance is not authoritative effect completion | Accepted |
 | [0139](0139-conflict-resolution-is-typed-domain-policy.md) | Conflict resolution is typed domain policy | Accepted |
+| [0140](0140-entitlement-is-eligibility-evidence-not-effect-authority.md) | Entitlement is eligibility evidence, not effect authority | Accepted |
+| [0141](0141-meter-corrections-are-immutable-adjustments.md) | Meter corrections are immutable adjustments | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.
