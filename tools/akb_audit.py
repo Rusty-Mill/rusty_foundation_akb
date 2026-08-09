@@ -140,6 +140,32 @@ def reviewed_gate(path: Path, kind: str, root: Path) -> tuple[str, list[Finding]
     return status, errors
 
 
+def domain_source_reviews(directory: Path) -> list[Path]:
+    """A domain reviews its sources either as one root file or, for composite
+    domains with independently reviewed sub-units, as one file per unit."""
+    root_review = directory / "source-review.md"
+    if root_review.exists():
+        return [root_review]
+    return sorted(directory.glob("*-source-review.md"))
+
+
+def domain_source_freshness_review(directory: Path, root: Path) -> tuple[str, list[Finding]]:
+    paths = domain_source_reviews(directory)
+    if not paths:
+        return "unknown", []
+    findings: list[Finding] = []
+    statuses: list[str] = []
+    for path in paths:
+        status, unit_findings = reviewed_gate(path, "source", root)
+        statuses.append(status)
+        findings.extend(unit_findings)
+    if all(status == "pass" for status in statuses):
+        return "pass", findings
+    if any(status == "fail" for status in statuses):
+        return "fail", findings
+    return "unknown", findings
+
+
 def promotion_review(path: Path, domain_status: str, root: Path) -> tuple[str, list[Finding]]:
     """Validate that a candidate promotion record cannot self-authorize."""
     if not path.exists():
@@ -324,7 +350,7 @@ def inspect(root: Path) -> tuple[dict[str, object], list[Finding]]:
             item["benchmark_scenarios"] = scenario_ids_by_requirement.get(str(item["id"]), [])
         mapped_benchmark_requirements = sum(bool(item["benchmark_scenarios"]) for item in benchmark_requirement_items)
         cross_cutting_review, cross_findings = reviewed_gate(directory / "cross-cutting.md", "cross-cutting", root)
-        source_freshness_review, source_findings = reviewed_gate(directory / "source-review.md", "source", root)
+        source_freshness_review, source_findings = domain_source_freshness_review(directory, root)
         owner_review, owner_findings = reviewed_gate(directory / "ownership.md", "ownership", root)
         findings.extend(cross_findings + source_findings + owner_findings)
         promotion_status, promotion_findings = promotion_review(
@@ -549,11 +575,11 @@ def inspect(root: Path) -> tuple[dict[str, object], list[Finding]]:
     for domain in domains:
         if domain["promotion_gates"]["source_freshness_review"] != "pass":
             continue
-        source_review = capability_root / str(domain["id"]) / "source-review.md"
-        for match in LINK_RE.finditer(source_review.read_text(encoding="utf-8")):
-            target = match.group(1).strip()
-            if target.startswith(("http://", "https://")):
-                reviewed_source_urls.add(target)
+        for source_review in domain_source_reviews(capability_root / str(domain["id"])):
+            for match in LINK_RE.finditer(source_review.read_text(encoding="utf-8")):
+                target = match.group(1).strip()
+                if target.startswith(("http://", "https://")):
+                    reviewed_source_urls.add(target)
     external_sources = [
         {
             "url": url,

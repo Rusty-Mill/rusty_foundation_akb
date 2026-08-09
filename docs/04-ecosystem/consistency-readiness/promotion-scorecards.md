@@ -57,7 +57,7 @@ The table uses conjunctive gates. It does not calculate a weighted score, and it
 | [screen-capture](../../02-capabilities/screen-capture/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | absent | **no** |
 | [search](../../02-capabilities/search/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | absent | **no** |
 | [secrets-lifecycle](../../02-capabilities/secrets-lifecycle/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | absent | **no** |
-| [security](../../02-capabilities/security/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | absent | **no** |
+| [security](../../02-capabilities/security/README.md) | pass | pass | pass | fail | unknown | unknown | pass | unknown | absent | **no** |
 | [service-traffic](../../02-capabilities/service-traffic/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | absent | **no** |
 | [signed-artifacts](../../02-capabilities/signed-artifacts/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | absent | **no** |
 | [still-image](../../02-capabilities/still-image/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | absent | **no** |

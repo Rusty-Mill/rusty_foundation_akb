@@ -21,7 +21,7 @@ This report is deterministic and contains no claim that file presence proves sem
 | Promotion units with validated semantic traceability | 7 / 7 |
 | Indexed ADRs | 163 |
 | External source URLs inventoried | 669 |
-| External URLs with schema-valid domain review | 74 |
+| External URLs with schema-valid domain review | 144 |
 | Structural errors | 0 |
 | Structural warnings | 0 |
 
