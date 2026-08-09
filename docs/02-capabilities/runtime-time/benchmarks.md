@@ -26,6 +26,28 @@
 | BM-RUNTIME-CANCEL-002 | Cancellation hierarchy | propagation latency, stack, CPU | depth/breadth matrix |
 | BM-RUNTIME-SHUTDOWN-001 | Service coordination | fixed overhead, per-component cost, report cost | DAG sizes 1–100K |
 
+## Benchmark requirements
+
+**RM-RUNTIME-BENCH-0001:** Active clock-read measurement MUST preserve `rm.time.monotonic-clock` semantics and report latency, throughput, allocation, and provider-call boundaries across declared concurrency conditions.
+
+**RM-RUNTIME-BENCH-0002:** Continuous clock-read measurement MUST use only a provider that includes suspend and MUST report unsupported separately from active-clock results.
+
+**RM-RUNTIME-BENCH-0003:** Instant and duration arithmetic measurement MUST retain checked overflow, underflow, and incompatibility behavior in every baseline.
+
+**RM-RUNTIME-BENCH-0004:** Timer lifecycle measurement MUST separate cold creation, reuse, arm, disarm, resource release, and race-correct terminal observation.
+
+**RM-RUNTIME-BENCH-0005:** Timer-delivery measurement MUST correctness-gate on zero early expiration and report lateness distributions by deadline, load, suspend, and tolerance class.
+
+**RM-RUNTIME-BENCH-0006:** Timer-scale measurement MUST report logical and provider resource use, memory after stabilization, insertion/removal cost, churn, and mass-expiration behavior.
+
+**RM-RUNTIME-BENCH-0007:** Cancellation observation measurement MUST separate request-to-observation from operation cleanup and retain idempotence, late-observer, and terminal-outcome semantics.
+
+**RM-RUNTIME-BENCH-0008:** Cancellation hierarchy measurement MUST cover depth and breadth, bounded caller-stack use, concurrent requesters, and failure isolation.
+
+**RM-RUNTIME-BENCH-0009:** Shutdown measurement MUST use valid dependency graphs, preserve quiescence and ordering, separate construction from execution, and retain complete failure/escalation reports.
+
+**RM-RUNTIME-BENCH-0010:** Every result MUST bind an immutable run identity, exact scenario generation, source artifact, provider/environment, raw samples, harness overhead, exclusions, and correctness-case results.
+
 ## Native baselines
 
 Baseline selection follows the platform research and exact contract semantics:

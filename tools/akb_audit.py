@@ -23,6 +23,7 @@ LINK_RE = re.compile(r"(?<!!)\[[^\]]*\]\(([^)]+)\)")
 ADR_FILE_RE = re.compile(r"(?P<number>\d{4})-[a-z0-9-]+\.md$")
 ADR_INDEX_RE = re.compile(r"\| \[(?P<number>\d{4})\]\((?P<file>[^)]+)\)")
 STATUS_RE = re.compile(r"^\| Status \| (?P<status>[^|]+) \|$", re.MULTILINE)
+REVIEW_STATUS_RE = re.compile(r"^\| Review status \| (?P<status>Pass|Fail|Unknown) \|$", re.MULTILINE | re.IGNORECASE)
 ASSERTION_ROW_RE = re.compile(
     r"^\| `(?P<id>rm\.assertion\.[a-z0-9.-]+@\d+)` \| (?P<sources>[^|]+) \|",
     re.MULTILINE,
@@ -67,6 +68,23 @@ def requirement_kind(source: str) -> str:
     if source.startswith("docs/02-capabilities/"):
         return "capability"
     return "governance"
+
+
+def reviewed_gate(path: Path, required_fields: tuple[str, ...]) -> str:
+    """Return an explicit reviewed gate state only when required metadata is present."""
+    if not path.exists():
+        return "unknown"
+    text = path.read_text(encoding="utf-8")
+    match = REVIEW_STATUS_RE.search(text)
+    if not match:
+        return "unknown"
+    status = match.group("status").lower()
+    if status != "pass":
+        return status
+    for field in required_fields:
+        if not re.search(rf"^\| {re.escape(field)} \| [^|]+ \|$", text, re.MULTILINE):
+            return "unknown"
+    return "pass"
 
 
 def domain_for(source: str) -> str | None:
@@ -218,6 +236,28 @@ def inspect(root: Path) -> tuple[dict[str, object], list[Finding]]:
         for item in benchmark_requirement_items:
             item["benchmark_scenarios"] = scenario_ids_by_requirement.get(str(item["id"]), [])
         mapped_benchmark_requirements = sum(bool(item["benchmark_scenarios"]) for item in benchmark_requirement_items)
+        cross_cutting_review = reviewed_gate(
+            directory / "cross-cutting.md",
+            ("Reviewed", "Review frontier", "Accountable owner", "Open blocking findings"),
+        )
+        source_freshness_review = reviewed_gate(
+            directory / "source-review.md",
+            ("Reviewed", "Expires", "Reviewer", "Open blocking findings"),
+        )
+        owner_review = reviewed_gate(
+            directory / "ownership.md",
+            ("Reviewed", "Accountable owner", "Architecture reviewer", "Security reviewer", "Evidence reviewer"),
+        )
+        gate_states = (
+            "pass",
+            "pass" if conformance.exists() else "fail",
+            "pass" if benchmarks.exists() else "fail",
+            "pass" if capability_requirement_count > 0 and mapped_capability_requirements == capability_requirement_count else "fail",
+            "pass" if len(benchmark_requirement_items) > 0 and mapped_benchmark_requirements == len(benchmark_requirement_items) else "unknown",
+            cross_cutting_review,
+            source_freshness_review,
+            owner_review,
+        )
         domain_record = {
             "id": directory.name,
             "source": relative(readme, root),
@@ -240,10 +280,10 @@ def inspect(root: Path) -> tuple[dict[str, object], list[Finding]]:
                 "benchmark_plan": "pass" if benchmarks.exists() else "fail",
                 "assertion_traceability": "pass" if capability_requirement_count > 0 and mapped_capability_requirements == capability_requirement_count else "fail",
                 "benchmark_traceability": "pass" if len(benchmark_requirement_items) > 0 and mapped_benchmark_requirements == len(benchmark_requirement_items) else "unknown",
-                "cross_cutting_review": "unknown",
-                "source_freshness_review": "unknown",
-                "owner_review": "unknown",
-                "experimental_eligible": "no",
+                "cross_cutting_review": cross_cutting_review,
+                "source_freshness_review": source_freshness_review,
+                "owner_review": owner_review,
+                "experimental_eligible": "yes" if all(state == "pass" for state in gate_states) else "no",
             },
         }
         domains.append(domain_record)
@@ -470,6 +510,7 @@ def quality_report(index: dict[str, object]) -> str:
 def promotion_report(index: dict[str, object]) -> str:
     domains = index["domains"]
     assert isinstance(domains, list)
+    eligible = [domain["id"] for domain in domains if domain["promotion_gates"]["experimental_eligible"] == "yes"]
     lines = [
         "# Domain promotion scorecards",
         "",
@@ -492,8 +533,8 @@ def promotion_report(index: dict[str, object]) -> str:
         "",
         "- Contract/conformance/benchmark-plan passes prove that structured Draft specifications exist.",
         "- Assertion and benchmark maps prove planned traceability, not executable evidence.",
-        "- Cross-cutting, source, and owner review remain unknown until a reviewed claim binds exact evidence and findings.",
-        "- No domain is currently eligible for Experimental promotion or implementation precedent.",
+        "- Cross-cutting, source, and owner gates pass only from explicit `Review status` metadata in their authoritative domain artifacts; file presence and keywords are insufficient.",
+        f"- {len(eligible)} domain(s) currently satisfy generated Experimental eligibility evidence: {', '.join(eligible) if eligible else 'none'}. Eligibility does not change maturity or authorize implementation; an explicit reviewed promotion record remains required.",
         "",
     ])
     return "\n".join(lines)

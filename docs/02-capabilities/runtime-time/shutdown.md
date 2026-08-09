@@ -5,7 +5,7 @@
 | Status | Draft |
 | Service specification version | 0.1.0 |
 | Domain | Runtime |
-| Owner | Unassigned |
+| Owner | Runtime/time capability owner; named assignee required for promotion |
 | Decision | [ADR-0005](../../adr/0005-orderly-shutdown-is-a-platform-service.md) |
 | Suggested workloads | CLI, Desktop, Server; optional for Embedded/headless |
 

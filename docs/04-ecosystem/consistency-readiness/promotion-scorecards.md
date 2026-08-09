@@ -53,7 +53,7 @@ The table uses conjunctive gates. It does not calculate a weighted score, and it
 | [privacy](../../02-capabilities/privacy/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | **no** |
 | [process](../../02-capabilities/process/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | **no** |
 | [remote-interaction](../../02-capabilities/remote-interaction/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | **no** |
-| [runtime-time](../../02-capabilities/runtime-time/README.md) | pass | pass | pass | pass | unknown | unknown | unknown | unknown | **no** |
+| [runtime-time](../../02-capabilities/runtime-time/README.md) | pass | pass | pass | pass | pass | pass | pass | pass | **yes** |
 | [screen-capture](../../02-capabilities/screen-capture/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | **no** |
 | [search](../../02-capabilities/search/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | **no** |
 | [secrets-lifecycle](../../02-capabilities/secrets-lifecycle/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | **no** |
@@ -74,5 +74,5 @@ The table uses conjunctive gates. It does not calculate a weighted score, and it
 
 - Contract/conformance/benchmark-plan passes prove that structured Draft specifications exist.
 - Assertion and benchmark maps prove planned traceability, not executable evidence.
-- Cross-cutting, source, and owner review remain unknown until a reviewed claim binds exact evidence and findings.
-- No domain is currently eligible for Experimental promotion or implementation precedent.
+- Cross-cutting, source, and owner gates pass only from explicit `Review status` metadata in their authoritative domain artifacts; file presence and keywords are insufficient.
+- 1 domain(s) currently satisfy generated Experimental eligibility evidence: runtime-time. Eligibility does not change maturity or authorize implementation; an explicit reviewed promotion record remains required.

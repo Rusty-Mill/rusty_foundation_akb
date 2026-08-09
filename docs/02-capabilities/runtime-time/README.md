@@ -3,6 +3,8 @@
 | Field | Value |
 |---|---|
 | Status | Draft domain analysis |
+| Domain version | 0.2.0 |
+| Accountable role | Runtime/time capability owner; named assignee required for promotion |
 | Purpose | Exercise the capability model against timing, cancellation, and lifecycle behavior before API design |
 
 ## Why this slice
@@ -10,6 +12,10 @@
 Time and cancellation appear simple but expose difficult cross-platform questions: whether clocks advance during suspend, whether timers wake a sleeping machine, how timer coalescing affects deadlines, what cancellation actually guarantees, and how shutdown handles work that does not cooperate. The slice also spans synchronous and asynchronous consumers without requiring an application framework.
 
 Direct planned verification links are defined in the [assertion traceability map](traceability.md).
+
+Reviewed readiness evidence is separated into [cross-cutting quality](cross-cutting.md), [source freshness](source-review.md), and [ownership and bounded trial planning](ownership.md). These artifacts can establish eligibility evidence but cannot change maturity or authorize implementation.
+
+The [promotion review record](promotion-review.md) reports that the evidence gates are ready for explicit review while retaining Draft status pending named accountable ownership and reviewer disposition.
 
 ## Candidate model
 

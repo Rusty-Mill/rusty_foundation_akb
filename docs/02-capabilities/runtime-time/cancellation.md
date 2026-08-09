@@ -3,7 +3,8 @@
 **Status:** Draft  
 **Contract version:** 0.1.0  
 **Domain:** Runtime  
-**Owner:** Unassigned  
+**Owner:** Runtime/time capability owner; named assignee required for promotion
+
 **Profiles:** CLI, Desktop, Server, Embedded/headless (candidate required member)
 
 ## Purpose

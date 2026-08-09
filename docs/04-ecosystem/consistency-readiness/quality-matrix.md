@@ -53,7 +53,7 @@
 | [privacy](../../02-capabilities/privacy/README.md) | dedicated | yes | yes | yes | yes | yes | yes |
 | [process](../../02-capabilities/process/README.md) | embedded-unreviewed | yes | yes | yes | unknown | yes | yes |
 | [remote-interaction](../../02-capabilities/remote-interaction/README.md) | embedded-unreviewed | yes | yes | yes | unknown | yes | yes |
-| [runtime-time](../../02-capabilities/runtime-time/README.md) | embedded-unreviewed | yes | yes | yes | yes | yes | yes |
+| [runtime-time](../../02-capabilities/runtime-time/README.md) | dedicated | yes | yes | yes | yes | yes | yes |
 | [screen-capture](../../02-capabilities/screen-capture/README.md) | embedded-unreviewed | yes | yes | yes | unknown | yes | yes |
 | [search](../../02-capabilities/search/README.md) | dedicated | yes | yes | yes | yes | yes | yes |
 | [secrets-lifecycle](../../02-capabilities/secrets-lifecycle/README.md) | dedicated | yes | yes | yes | yes | yes | yes |

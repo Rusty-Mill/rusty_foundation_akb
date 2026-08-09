@@ -4,9 +4,9 @@
   "authority": "docs/01-architecture/architecture-model.md",
   "generated_from": "Markdown; this index is derived and non-authoritative",
   "summary": {
-    "markdown_documents": 1103,
-    "internal_links": 1940,
-    "requirements": 5120,
+    "markdown_documents": 1107,
+    "internal_links": 1972,
+    "requirements": 5146,
     "domains": 62,
     "adrs": 158,
     "errors": 0,
@@ -14,12 +14,12 @@
     "domains_with_conformance": 62,
     "domains_with_benchmarks": 62,
     "domains_with_direct_requirement_assertion_map": 5,
-    "domains_with_direct_benchmark_scenario_map": 3,
-    "benchmark_scenarios": 18,
+    "domains_with_direct_benchmark_scenario_map": 4,
+    "benchmark_scenarios": 27,
     "external_sources": 625,
-    "domains_with_dedicated_cross_cutting_analysis": 25,
-    "domains_with_complete_planned_traceability": 3,
-    "domains_experimental_eligible": 0,
+    "domains_with_dedicated_cross_cutting_analysis": 26,
+    "domains_with_complete_planned_traceability": 4,
+    "domains_experimental_eligible": 1,
     "declared_graph_nodes": 15,
     "declared_graph_edges": 8,
     "required_graph_acyclic": true
@@ -1639,17 +1639,17 @@
       "id": "runtime-time",
       "source": "docs/02-capabilities/runtime-time/README.md",
       "status": "Draft domain analysis",
-      "requirements": 44,
-      "capability_requirements": 44,
+      "requirements": 70,
+      "capability_requirements": 60,
       "conformance_requirements": 0,
-      "benchmark_requirements": 0,
-      "mapped_benchmark_requirements": 0,
+      "benchmark_requirements": 10,
+      "mapped_benchmark_requirements": 10,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
-      "mapped_capability_requirements": 44,
+      "mapped_capability_requirements": 60,
       "direct_requirement_assertion_map": true,
-      "direct_benchmark_scenario_map": false,
-      "cross_cutting_analysis": "embedded-unreviewed",
+      "direct_benchmark_scenario_map": true,
+      "cross_cutting_analysis": "dedicated",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -1663,11 +1663,11 @@
         "conformance_plan": "pass",
         "benchmark_plan": "pass",
         "assertion_traceability": "pass",
-        "benchmark_traceability": "unknown",
-        "cross_cutting_review": "unknown",
-        "source_freshness_review": "unknown",
-        "owner_review": "unknown",
-        "experimental_eligible": "no"
+        "benchmark_traceability": "pass",
+        "cross_cutting_review": "pass",
+        "source_freshness_review": "pass",
+        "owner_review": "pass",
+        "experimental_eligible": "yes"
       }
     },
     {
@@ -2411,6 +2411,38 @@
       ]
     },
     {
+      "id": "rm.assertion.runtime-time.quality-review@1",
+      "domain": "runtime-time",
+      "source": "docs/02-capabilities/runtime-time/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/runtime-time/cross-cutting.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.runtime-time.source-review@1",
+      "domain": "runtime-time",
+      "source": "docs/02-capabilities/runtime-time/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/runtime-time/source-review.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.runtime-time.ownership@1",
+      "domain": "runtime-time",
+      "source": "docs/02-capabilities/runtime-time/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/runtime-time/ownership.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.runtime-time.promotion-boundary@1",
+      "domain": "runtime-time",
+      "source": "docs/02-capabilities/runtime-time/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/runtime-time/promotion-review.md"
+      ]
+    },
+    {
       "id": "rm.assertion.windowing.lifecycle@1",
       "domain": "windowing",
       "source": "docs/02-capabilities/windowing/traceability.md",
@@ -2588,6 +2620,87 @@
       "source": "docs/02-capabilities/messaging/traceability.md",
       "requirements": [
         "RM-MESSAGING-BENCH-0006"
+      ]
+    },
+    {
+      "id": "rm.benchmark.runtime-time.active-clock-read@1",
+      "domain": "runtime-time",
+      "source": "docs/02-capabilities/runtime-time/traceability.md",
+      "requirements": [
+        "RM-RUNTIME-BENCH-0001",
+        "RM-RUNTIME-BENCH-0010"
+      ]
+    },
+    {
+      "id": "rm.benchmark.runtime-time.continuous-clock-read@1",
+      "domain": "runtime-time",
+      "source": "docs/02-capabilities/runtime-time/traceability.md",
+      "requirements": [
+        "RM-RUNTIME-BENCH-0002",
+        "RM-RUNTIME-BENCH-0010"
+      ]
+    },
+    {
+      "id": "rm.benchmark.runtime-time.instant-arithmetic@1",
+      "domain": "runtime-time",
+      "source": "docs/02-capabilities/runtime-time/traceability.md",
+      "requirements": [
+        "RM-RUNTIME-BENCH-0003",
+        "RM-RUNTIME-BENCH-0010"
+      ]
+    },
+    {
+      "id": "rm.benchmark.runtime-time.timer-lifecycle@1",
+      "domain": "runtime-time",
+      "source": "docs/02-capabilities/runtime-time/traceability.md",
+      "requirements": [
+        "RM-RUNTIME-BENCH-0004",
+        "RM-RUNTIME-BENCH-0010"
+      ]
+    },
+    {
+      "id": "rm.benchmark.runtime-time.timer-delivery@1",
+      "domain": "runtime-time",
+      "source": "docs/02-capabilities/runtime-time/traceability.md",
+      "requirements": [
+        "RM-RUNTIME-BENCH-0005",
+        "RM-RUNTIME-BENCH-0010"
+      ]
+    },
+    {
+      "id": "rm.benchmark.runtime-time.timer-scale@1",
+      "domain": "runtime-time",
+      "source": "docs/02-capabilities/runtime-time/traceability.md",
+      "requirements": [
+        "RM-RUNTIME-BENCH-0006",
+        "RM-RUNTIME-BENCH-0010"
+      ]
+    },
+    {
+      "id": "rm.benchmark.runtime-time.cancellation-observation@1",
+      "domain": "runtime-time",
+      "source": "docs/02-capabilities/runtime-time/traceability.md",
+      "requirements": [
+        "RM-RUNTIME-BENCH-0007",
+        "RM-RUNTIME-BENCH-0010"
+      ]
+    },
+    {
+      "id": "rm.benchmark.runtime-time.cancellation-hierarchy@1",
+      "domain": "runtime-time",
+      "source": "docs/02-capabilities/runtime-time/traceability.md",
+      "requirements": [
+        "RM-RUNTIME-BENCH-0008",
+        "RM-RUNTIME-BENCH-0010"
+      ]
+    },
+    {
+      "id": "rm.benchmark.runtime-time.shutdown-coordination@1",
+      "domain": "runtime-time",
+      "source": "docs/02-capabilities/runtime-time/traceability.md",
+      "requirements": [
+        "RM-RUNTIME-BENCH-0009",
+        "RM-RUNTIME-BENCH-0010"
       ]
     }
   ],
@@ -36424,9 +36537,117 @@
       "assertions": []
     },
     {
+      "id": "RM-RUNTIME-BENCH-0001",
+      "source": "docs/02-capabilities/runtime-time/benchmarks.md",
+      "line": 31,
+      "kind": "benchmark",
+      "domain": "runtime-time",
+      "benchmark_scenarios": [
+        "rm.benchmark.runtime-time.active-clock-read@1"
+      ]
+    },
+    {
+      "id": "RM-RUNTIME-BENCH-0002",
+      "source": "docs/02-capabilities/runtime-time/benchmarks.md",
+      "line": 33,
+      "kind": "benchmark",
+      "domain": "runtime-time",
+      "benchmark_scenarios": [
+        "rm.benchmark.runtime-time.continuous-clock-read@1"
+      ]
+    },
+    {
+      "id": "RM-RUNTIME-BENCH-0003",
+      "source": "docs/02-capabilities/runtime-time/benchmarks.md",
+      "line": 35,
+      "kind": "benchmark",
+      "domain": "runtime-time",
+      "benchmark_scenarios": [
+        "rm.benchmark.runtime-time.instant-arithmetic@1"
+      ]
+    },
+    {
+      "id": "RM-RUNTIME-BENCH-0004",
+      "source": "docs/02-capabilities/runtime-time/benchmarks.md",
+      "line": 37,
+      "kind": "benchmark",
+      "domain": "runtime-time",
+      "benchmark_scenarios": [
+        "rm.benchmark.runtime-time.timer-lifecycle@1"
+      ]
+    },
+    {
+      "id": "RM-RUNTIME-BENCH-0005",
+      "source": "docs/02-capabilities/runtime-time/benchmarks.md",
+      "line": 39,
+      "kind": "benchmark",
+      "domain": "runtime-time",
+      "benchmark_scenarios": [
+        "rm.benchmark.runtime-time.timer-delivery@1"
+      ]
+    },
+    {
+      "id": "RM-RUNTIME-BENCH-0006",
+      "source": "docs/02-capabilities/runtime-time/benchmarks.md",
+      "line": 41,
+      "kind": "benchmark",
+      "domain": "runtime-time",
+      "benchmark_scenarios": [
+        "rm.benchmark.runtime-time.timer-scale@1"
+      ]
+    },
+    {
+      "id": "RM-RUNTIME-BENCH-0007",
+      "source": "docs/02-capabilities/runtime-time/benchmarks.md",
+      "line": 43,
+      "kind": "benchmark",
+      "domain": "runtime-time",
+      "benchmark_scenarios": [
+        "rm.benchmark.runtime-time.cancellation-observation@1"
+      ]
+    },
+    {
+      "id": "RM-RUNTIME-BENCH-0008",
+      "source": "docs/02-capabilities/runtime-time/benchmarks.md",
+      "line": 45,
+      "kind": "benchmark",
+      "domain": "runtime-time",
+      "benchmark_scenarios": [
+        "rm.benchmark.runtime-time.cancellation-hierarchy@1"
+      ]
+    },
+    {
+      "id": "RM-RUNTIME-BENCH-0009",
+      "source": "docs/02-capabilities/runtime-time/benchmarks.md",
+      "line": 47,
+      "kind": "benchmark",
+      "domain": "runtime-time",
+      "benchmark_scenarios": [
+        "rm.benchmark.runtime-time.shutdown-coordination@1"
+      ]
+    },
+    {
+      "id": "RM-RUNTIME-BENCH-0010",
+      "source": "docs/02-capabilities/runtime-time/benchmarks.md",
+      "line": 49,
+      "kind": "benchmark",
+      "domain": "runtime-time",
+      "benchmark_scenarios": [
+        "rm.benchmark.runtime-time.active-clock-read@1",
+        "rm.benchmark.runtime-time.continuous-clock-read@1",
+        "rm.benchmark.runtime-time.instant-arithmetic@1",
+        "rm.benchmark.runtime-time.timer-lifecycle@1",
+        "rm.benchmark.runtime-time.timer-delivery@1",
+        "rm.benchmark.runtime-time.timer-scale@1",
+        "rm.benchmark.runtime-time.cancellation-observation@1",
+        "rm.benchmark.runtime-time.cancellation-hierarchy@1",
+        "rm.benchmark.runtime-time.shutdown-coordination@1"
+      ]
+    },
+    {
       "id": "RM-RUNTIME-CANCEL-0001",
       "source": "docs/02-capabilities/runtime-time/cancellation.md",
-      "line": 25,
+      "line": 26,
       "kind": "capability",
       "domain": "runtime-time",
       "assertions": [
@@ -36436,7 +36657,7 @@
     {
       "id": "RM-RUNTIME-CANCEL-0002",
       "source": "docs/02-capabilities/runtime-time/cancellation.md",
-      "line": 26,
+      "line": 27,
       "kind": "capability",
       "domain": "runtime-time",
       "assertions": [
@@ -36446,7 +36667,7 @@
     {
       "id": "RM-RUNTIME-CANCEL-0003",
       "source": "docs/02-capabilities/runtime-time/cancellation.md",
-      "line": 27,
+      "line": 28,
       "kind": "capability",
       "domain": "runtime-time",
       "assertions": [
@@ -36456,7 +36677,7 @@
     {
       "id": "RM-RUNTIME-CANCEL-0004",
       "source": "docs/02-capabilities/runtime-time/cancellation.md",
-      "line": 28,
+      "line": 29,
       "kind": "capability",
       "domain": "runtime-time",
       "assertions": [
@@ -36466,7 +36687,7 @@
     {
       "id": "RM-RUNTIME-CANCEL-0005",
       "source": "docs/02-capabilities/runtime-time/cancellation.md",
-      "line": 29,
+      "line": 30,
       "kind": "capability",
       "domain": "runtime-time",
       "assertions": [
@@ -36476,7 +36697,7 @@
     {
       "id": "RM-RUNTIME-CANCEL-0006",
       "source": "docs/02-capabilities/runtime-time/cancellation.md",
-      "line": 30,
+      "line": 31,
       "kind": "capability",
       "domain": "runtime-time",
       "assertions": [
@@ -36486,7 +36707,7 @@
     {
       "id": "RM-RUNTIME-CANCEL-0007",
       "source": "docs/02-capabilities/runtime-time/cancellation.md",
-      "line": 31,
+      "line": 32,
       "kind": "capability",
       "domain": "runtime-time",
       "assertions": [
@@ -36496,7 +36717,7 @@
     {
       "id": "RM-RUNTIME-CANCEL-0008",
       "source": "docs/02-capabilities/runtime-time/cancellation.md",
-      "line": 32,
+      "line": 33,
       "kind": "capability",
       "domain": "runtime-time",
       "assertions": [
@@ -36506,7 +36727,7 @@
     {
       "id": "RM-RUNTIME-CANCEL-0009",
       "source": "docs/02-capabilities/runtime-time/cancellation.md",
-      "line": 33,
+      "line": 34,
       "kind": "capability",
       "domain": "runtime-time",
       "assertions": [
@@ -36516,7 +36737,7 @@
     {
       "id": "RM-RUNTIME-CANCEL-0010",
       "source": "docs/02-capabilities/runtime-time/cancellation.md",
-      "line": 34,
+      "line": 35,
       "kind": "capability",
       "domain": "runtime-time",
       "assertions": [
@@ -36524,17 +36745,47 @@
       ]
     },
     {
-      "id": "RM-TIME-DEADLINE-0001",
-      "source": "docs/02-capabilities/runtime-time/deadline-timer.md",
-      "line": 21,
+      "id": "RM-RUNTIME-QUALITY-0001",
+      "source": "docs/02-capabilities/runtime-time/cross-cutting.md",
+      "line": 22,
       "kind": "capability",
       "domain": "runtime-time",
       "assertions": [
-        "rm.assertion.runtime-time.deadline@1"
+        "rm.assertion.runtime-time.quality-review@1"
       ]
     },
     {
-      "id": "RM-TIME-DEADLINE-0002",
+      "id": "RM-RUNTIME-QUALITY-0002",
+      "source": "docs/02-capabilities/runtime-time/cross-cutting.md",
+      "line": 24,
+      "kind": "capability",
+      "domain": "runtime-time",
+      "assertions": [
+        "rm.assertion.runtime-time.quality-review@1"
+      ]
+    },
+    {
+      "id": "RM-RUNTIME-QUALITY-0003",
+      "source": "docs/02-capabilities/runtime-time/cross-cutting.md",
+      "line": 26,
+      "kind": "capability",
+      "domain": "runtime-time",
+      "assertions": [
+        "rm.assertion.runtime-time.quality-review@1"
+      ]
+    },
+    {
+      "id": "RM-RUNTIME-QUALITY-0004",
+      "source": "docs/02-capabilities/runtime-time/cross-cutting.md",
+      "line": 28,
+      "kind": "capability",
+      "domain": "runtime-time",
+      "assertions": [
+        "rm.assertion.runtime-time.quality-review@1"
+      ]
+    },
+    {
+      "id": "RM-TIME-DEADLINE-0001",
       "source": "docs/02-capabilities/runtime-time/deadline-timer.md",
       "line": 22,
       "kind": "capability",
@@ -36544,7 +36795,7 @@
       ]
     },
     {
-      "id": "RM-TIME-DEADLINE-0003",
+      "id": "RM-TIME-DEADLINE-0002",
       "source": "docs/02-capabilities/runtime-time/deadline-timer.md",
       "line": 23,
       "kind": "capability",
@@ -36554,7 +36805,7 @@
       ]
     },
     {
-      "id": "RM-TIME-DEADLINE-0004",
+      "id": "RM-TIME-DEADLINE-0003",
       "source": "docs/02-capabilities/runtime-time/deadline-timer.md",
       "line": 24,
       "kind": "capability",
@@ -36564,7 +36815,7 @@
       ]
     },
     {
-      "id": "RM-TIME-DEADLINE-0005",
+      "id": "RM-TIME-DEADLINE-0004",
       "source": "docs/02-capabilities/runtime-time/deadline-timer.md",
       "line": 25,
       "kind": "capability",
@@ -36574,7 +36825,7 @@
       ]
     },
     {
-      "id": "RM-TIME-DEADLINE-0006",
+      "id": "RM-TIME-DEADLINE-0005",
       "source": "docs/02-capabilities/runtime-time/deadline-timer.md",
       "line": 26,
       "kind": "capability",
@@ -36584,7 +36835,7 @@
       ]
     },
     {
-      "id": "RM-TIME-DEADLINE-0007",
+      "id": "RM-TIME-DEADLINE-0006",
       "source": "docs/02-capabilities/runtime-time/deadline-timer.md",
       "line": 27,
       "kind": "capability",
@@ -36594,7 +36845,7 @@
       ]
     },
     {
-      "id": "RM-TIME-DEADLINE-0008",
+      "id": "RM-TIME-DEADLINE-0007",
       "source": "docs/02-capabilities/runtime-time/deadline-timer.md",
       "line": 28,
       "kind": "capability",
@@ -36604,7 +36855,7 @@
       ]
     },
     {
-      "id": "RM-TIME-DEADLINE-0009",
+      "id": "RM-TIME-DEADLINE-0008",
       "source": "docs/02-capabilities/runtime-time/deadline-timer.md",
       "line": 29,
       "kind": "capability",
@@ -36614,7 +36865,7 @@
       ]
     },
     {
-      "id": "RM-TIME-DEADLINE-0010",
+      "id": "RM-TIME-DEADLINE-0009",
       "source": "docs/02-capabilities/runtime-time/deadline-timer.md",
       "line": 30,
       "kind": "capability",
@@ -36624,7 +36875,7 @@
       ]
     },
     {
-      "id": "RM-TIME-DEADLINE-0011",
+      "id": "RM-TIME-DEADLINE-0010",
       "source": "docs/02-capabilities/runtime-time/deadline-timer.md",
       "line": 31,
       "kind": "capability",
@@ -36634,17 +36885,17 @@
       ]
     },
     {
-      "id": "RM-TIME-MONOTONIC-0001",
-      "source": "docs/02-capabilities/runtime-time/monotonic-clock.md",
-      "line": 42,
+      "id": "RM-TIME-DEADLINE-0011",
+      "source": "docs/02-capabilities/runtime-time/deadline-timer.md",
+      "line": 32,
       "kind": "capability",
       "domain": "runtime-time",
       "assertions": [
-        "rm.assertion.runtime-time.clock@1"
+        "rm.assertion.runtime-time.deadline@1"
       ]
     },
     {
-      "id": "RM-TIME-MONOTONIC-0002",
+      "id": "RM-TIME-MONOTONIC-0001",
       "source": "docs/02-capabilities/runtime-time/monotonic-clock.md",
       "line": 43,
       "kind": "capability",
@@ -36654,7 +36905,7 @@
       ]
     },
     {
-      "id": "RM-TIME-MONOTONIC-0003",
+      "id": "RM-TIME-MONOTONIC-0002",
       "source": "docs/02-capabilities/runtime-time/monotonic-clock.md",
       "line": 44,
       "kind": "capability",
@@ -36664,7 +36915,7 @@
       ]
     },
     {
-      "id": "RM-TIME-MONOTONIC-0004",
+      "id": "RM-TIME-MONOTONIC-0003",
       "source": "docs/02-capabilities/runtime-time/monotonic-clock.md",
       "line": 45,
       "kind": "capability",
@@ -36674,7 +36925,7 @@
       ]
     },
     {
-      "id": "RM-TIME-MONOTONIC-0005",
+      "id": "RM-TIME-MONOTONIC-0004",
       "source": "docs/02-capabilities/runtime-time/monotonic-clock.md",
       "line": 46,
       "kind": "capability",
@@ -36684,7 +36935,7 @@
       ]
     },
     {
-      "id": "RM-TIME-MONOTONIC-0006",
+      "id": "RM-TIME-MONOTONIC-0005",
       "source": "docs/02-capabilities/runtime-time/monotonic-clock.md",
       "line": 47,
       "kind": "capability",
@@ -36694,7 +36945,7 @@
       ]
     },
     {
-      "id": "RM-TIME-MONOTONIC-0007",
+      "id": "RM-TIME-MONOTONIC-0006",
       "source": "docs/02-capabilities/runtime-time/monotonic-clock.md",
       "line": 48,
       "kind": "capability",
@@ -36704,7 +36955,7 @@
       ]
     },
     {
-      "id": "RM-TIME-MONOTONIC-0008",
+      "id": "RM-TIME-MONOTONIC-0007",
       "source": "docs/02-capabilities/runtime-time/monotonic-clock.md",
       "line": 49,
       "kind": "capability",
@@ -36714,7 +36965,7 @@
       ]
     },
     {
-      "id": "RM-TIME-MONOTONIC-0009",
+      "id": "RM-TIME-MONOTONIC-0008",
       "source": "docs/02-capabilities/runtime-time/monotonic-clock.md",
       "line": 50,
       "kind": "capability",
@@ -36724,13 +36975,93 @@
       ]
     },
     {
-      "id": "RM-TIME-MONOTONIC-0010",
+      "id": "RM-TIME-MONOTONIC-0009",
       "source": "docs/02-capabilities/runtime-time/monotonic-clock.md",
       "line": 51,
       "kind": "capability",
       "domain": "runtime-time",
       "assertions": [
         "rm.assertion.runtime-time.clock@1"
+      ]
+    },
+    {
+      "id": "RM-TIME-MONOTONIC-0010",
+      "source": "docs/02-capabilities/runtime-time/monotonic-clock.md",
+      "line": 52,
+      "kind": "capability",
+      "domain": "runtime-time",
+      "assertions": [
+        "rm.assertion.runtime-time.clock@1"
+      ]
+    },
+    {
+      "id": "RM-RUNTIME-OWNER-0001",
+      "source": "docs/02-capabilities/runtime-time/ownership.md",
+      "line": 23,
+      "kind": "capability",
+      "domain": "runtime-time",
+      "assertions": [
+        "rm.assertion.runtime-time.ownership@1"
+      ]
+    },
+    {
+      "id": "RM-RUNTIME-OWNER-0002",
+      "source": "docs/02-capabilities/runtime-time/ownership.md",
+      "line": 25,
+      "kind": "capability",
+      "domain": "runtime-time",
+      "assertions": [
+        "rm.assertion.runtime-time.ownership@1"
+      ]
+    },
+    {
+      "id": "RM-RUNTIME-OWNER-0003",
+      "source": "docs/02-capabilities/runtime-time/ownership.md",
+      "line": 27,
+      "kind": "capability",
+      "domain": "runtime-time",
+      "assertions": [
+        "rm.assertion.runtime-time.ownership@1"
+      ]
+    },
+    {
+      "id": "RM-RUNTIME-OWNER-0004",
+      "source": "docs/02-capabilities/runtime-time/ownership.md",
+      "line": 29,
+      "kind": "capability",
+      "domain": "runtime-time",
+      "assertions": [
+        "rm.assertion.runtime-time.ownership@1"
+      ]
+    },
+    {
+      "id": "RM-RUNTIME-PROMOTION-0001",
+      "source": "docs/02-capabilities/runtime-time/promotion-review.md",
+      "line": 34,
+      "kind": "capability",
+      "domain": "runtime-time",
+      "assertions": [
+        "rm.assertion.runtime-time.promotion-boundary@1"
+      ]
+    },
+    {
+      "id": "RM-RUNTIME-PROMOTION-0002",
+      "source": "docs/02-capabilities/runtime-time/promotion-review.md",
+      "line": 36,
+      "kind": "capability",
+      "domain": "runtime-time",
+      "assertions": [
+        "rm.assertion.runtime-time.promotion-boundary@1"
+      ]
+    },
+    {
+      "id": "RM-RUNTIME-PROMOTION-0003",
+      "source": "docs/02-capabilities/runtime-time/promotion-review.md",
+      "line": 38,
+      "kind": "capability",
+      "domain": "runtime-time",
+      "assertions": [
+        "rm.assertion.runtime-time.promotion-boundary@1"
       ]
     },
     {
@@ -36834,9 +37165,49 @@
       ]
     },
     {
+      "id": "RM-RUNTIME-SOURCE-0001",
+      "source": "docs/02-capabilities/runtime-time/source-review.md",
+      "line": 19,
+      "kind": "capability",
+      "domain": "runtime-time",
+      "assertions": [
+        "rm.assertion.runtime-time.source-review@1"
+      ]
+    },
+    {
+      "id": "RM-RUNTIME-SOURCE-0002",
+      "source": "docs/02-capabilities/runtime-time/source-review.md",
+      "line": 21,
+      "kind": "capability",
+      "domain": "runtime-time",
+      "assertions": [
+        "rm.assertion.runtime-time.source-review@1"
+      ]
+    },
+    {
+      "id": "RM-RUNTIME-SOURCE-0003",
+      "source": "docs/02-capabilities/runtime-time/source-review.md",
+      "line": 23,
+      "kind": "capability",
+      "domain": "runtime-time",
+      "assertions": [
+        "rm.assertion.runtime-time.source-review@1"
+      ]
+    },
+    {
+      "id": "RM-RUNTIME-SOURCE-0004",
+      "source": "docs/02-capabilities/runtime-time/source-review.md",
+      "line": 25,
+      "kind": "capability",
+      "domain": "runtime-time",
+      "assertions": [
+        "rm.assertion.runtime-time.source-review@1"
+      ]
+    },
+    {
       "id": "RM-RUNTIME-TRACE-0001",
       "source": "docs/02-capabilities/runtime-time/traceability.md",
-      "line": 15,
+      "line": 35,
       "kind": "capability",
       "domain": "runtime-time",
       "assertions": [
@@ -36846,7 +37217,7 @@
     {
       "id": "RM-RUNTIME-TRACE-0002",
       "source": "docs/02-capabilities/runtime-time/traceability.md",
-      "line": 17,
+      "line": 37,
       "kind": "capability",
       "domain": "runtime-time",
       "assertions": [
@@ -36856,7 +37227,17 @@
     {
       "id": "RM-RUNTIME-TRACE-0003",
       "source": "docs/02-capabilities/runtime-time/traceability.md",
-      "line": 19,
+      "line": 39,
+      "kind": "capability",
+      "domain": "runtime-time",
+      "assertions": [
+        "rm.assertion.runtime-time.shutdown@1"
+      ]
+    },
+    {
+      "id": "RM-RUNTIME-TRACE-0004",
+      "source": "docs/02-capabilities/runtime-time/traceability.md",
+      "line": 41,
       "kind": "capability",
       "domain": "runtime-time",
       "assertions": [
@@ -46576,28 +46957,28 @@
     {
       "id": "RM-READINESS-CONTRADICTION-0001",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 26,
+      "line": 27,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0002",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 28,
+      "line": 29,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0003",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 30,
+      "line": 31,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0004",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 32,
+      "line": 33,
       "kind": "governance",
       "domain": null
     },
@@ -48496,8 +48877,8 @@
     },
     {
       "source": "docs/01-architecture/architecture-model.md",
-      "sha256": "d05013179df24e7819ce4fa62a46ac3ccf9125dbec5f9613052c444e61aed7d8",
-      "lines": 601
+      "sha256": "4f2211fe93e59544b343247ace5cb57b145048c2e1236c2fd5e414fc8105e005",
+      "lines": 603
     },
     {
       "source": "docs/01-architecture/behavioral-contracts.md",
@@ -51661,13 +52042,13 @@
     },
     {
       "source": "docs/02-capabilities/runtime-time/benchmarks.md",
-      "sha256": "866700e5fd130c648f972f10ba7279ac132654a3f1e2b8ae3bbb2590985555a6",
-      "lines": 75
+      "sha256": "d0a0902ca41cd27a8ca61656eb2760e4c6982c4a52cd187a3c83bd09a8ee4cbb",
+      "lines": 97
     },
     {
       "source": "docs/02-capabilities/runtime-time/cancellation.md",
-      "sha256": "b5289ed057e3b57d313c8f8d523288ab7c0d05e726d4acc2558456aacd6cab44",
-      "lines": 60
+      "sha256": "48b5f1dc1bab6b042d9e85523d2cf33c9b18851d1d738b4d7aa953f0161a8d9e",
+      "lines": 61
     },
     {
       "source": "docs/02-capabilities/runtime-time/conformance.md",
@@ -51675,14 +52056,19 @@
       "lines": 98
     },
     {
+      "source": "docs/02-capabilities/runtime-time/cross-cutting.md",
+      "sha256": "3805d7def5100206879e9040532acfe8d1de1715c3728a75229f68fa219dbc8e",
+      "lines": 29
+    },
+    {
       "source": "docs/02-capabilities/runtime-time/deadline-timer.md",
-      "sha256": "1cb546aa3e71d6f13f7a73681f12350980b20ac81149b8cb78f350086fe2557c",
-      "lines": 83
+      "sha256": "890341a0330afa56f7f772e97442e061f74143f89afb8657cefdea8e7f865ce9",
+      "lines": 84
     },
     {
       "source": "docs/02-capabilities/runtime-time/monotonic-clock.md",
-      "sha256": "cc24608d68351ed8182a81b84e78257743c99941a272f839a704a90862fdd627",
-      "lines": 92
+      "sha256": "7d98dfac6fa757b7368d40cceaf5bf70e66d1e18108e8d5b259357c7510f8e8d",
+      "lines": 93
     },
     {
       "source": "docs/02-capabilities/runtime-time/open-questions.md",
@@ -51690,24 +52076,39 @@
       "lines": 18
     },
     {
+      "source": "docs/02-capabilities/runtime-time/ownership.md",
+      "sha256": "cb2d323a776f7b075bfa74b131c51d69aaadcd932934854b88a3c20bf41a9c47",
+      "lines": 30
+    },
+    {
       "source": "docs/02-capabilities/runtime-time/platform-research.md",
       "sha256": "6603ed99447464be446a13f609c244c0a248522e875c1dc70f154236f160dd1d",
       "lines": 81
     },
     {
+      "source": "docs/02-capabilities/runtime-time/promotion-review.md",
+      "sha256": "5dd89496705c65e32eea840daacbab00e41145946cdf1225609814b416bfee8b",
+      "lines": 39
+    },
+    {
       "source": "docs/02-capabilities/runtime-time/README.md",
-      "sha256": "a04c3a80642caa31d35fa01e357bc0f1b4da4ceda66b8e6b8c0297a91a4572de",
-      "lines": 58
+      "sha256": "bc17604c94c403e3fc34254d6934b1fa9dedba9f9908808cf0ae79e0f8996316",
+      "lines": 64
     },
     {
       "source": "docs/02-capabilities/runtime-time/shutdown.md",
-      "sha256": "788d29f49454f1a94cf61fe1bb5f7f285e0596926e0d85e6127e4c3b3bced6f4",
+      "sha256": "cad133472cee81d8ab43bf2938737e6282ec57d3b88005320d4cd9bdfa0ab531",
       "lines": 72
     },
     {
+      "source": "docs/02-capabilities/runtime-time/source-review.md",
+      "sha256": "01f4a0fd33ba6eeafc03729be8ce7453435eddca72b7e9fb3b593be9e404938a",
+      "lines": 25
+    },
+    {
       "source": "docs/02-capabilities/runtime-time/traceability.md",
-      "sha256": "4c64d5579dc5d0cc3a1f41172e0554ce8aca2f3cce9e3c3d4fa0598e09d404ba",
-      "lines": 19
+      "sha256": "05ee249820d2912fda907d178d626fbd085981491e74130e4781e569f375d9e8",
+      "lines": 41
     },
     {
       "source": "docs/02-capabilities/screen-capture/benchmarks.md",
@@ -52886,7 +53287,7 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/audit-report.md",
-      "sha256": "bbe25395db7b448a8b690d1a7683973d2e05b88645419d96892b06982665432c",
+      "sha256": "a09cdd6e7b57af6862a9791ac2b689c149910f31de7e213dfd68431e72befdb2",
       "lines": 66
     },
     {
@@ -52901,13 +53302,13 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/closure-backlog.md",
-      "sha256": "cfc99c4ee80cbca7dd88090c542babf1475aaf32130139f5dc339f2f1adf489f",
+      "sha256": "d665a2a0af24b02f5e88dfd9f83d45e160f0790056d09539df1c4005c34823d9",
       "lines": 18
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "sha256": "c5330c8bcf6c861117ad1de8c8845decc5ee601fc1b13a6fc2c594e064adbed1",
-      "lines": 32
+      "sha256": "a21af815428fbd9edfc86904cc07cee76294c679f8d50fc4edc09d177674bddf",
+      "lines": 33
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/dependency-graph.md",
@@ -52931,12 +53332,12 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/promotion-scorecards.md",
-      "sha256": "0f83eabcfb2d686e265d9ce70b8eb9815d37ce8db8cbbcfd035495e2da1ce66e",
+      "sha256": "5b9b40df3432a9496d2ddc6075be320e5266096235f61985ee3634703c648f90",
       "lines": 78
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/quality-matrix.md",
-      "sha256": "db8b2fe70b89cebc800108158db69ce5ccd79176a41c2b3cc364527140caa55f",
+      "sha256": "eb3c1e4fcd2d276f21d02f82c220d0f9a43a70ef20e5a00daadca447215f0377",
       "lines": 73
     },
     {
@@ -53176,8 +53577,8 @@
     },
     {
       "source": "docs/06-roadmap/roadmap.md",
-      "sha256": "bc2e03d98a71d8d71c93fa44161cc813f33489e05e7cad87b97dbb8fada60143",
-      "lines": 209
+      "sha256": "595fbda9bf352303ee639eaa6287cfbd4409e92ee84622015ee578c8a55b20bd",
+      "lines": 213
     },
     {
       "source": "docs/adr/0001-capability-first-platform.md",
