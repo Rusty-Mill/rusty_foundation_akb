@@ -11,13 +11,13 @@ This report is deterministic and contains no claim that file presence proves sem
 
 | Measure | Result |
 |---|---:|
-| Markdown documents | 1,114 |
-| Resolved internal links | 2,029 |
-| Unique normative requirements | 5,168 |
+| Markdown documents | 1,119 |
+| Resolved internal links | 2,064 |
+| Unique normative requirements | 5,193 |
 | Capability domains | 62 |
 | Indexed ADRs | 159 |
-| External source URLs inventoried | 629 |
-| External URLs with schema-valid domain review | 12 |
+| External source URLs inventoried | 630 |
+| External URLs with schema-valid domain review | 21 |
 | Structural errors | 0 |
 | Structural warnings | 0 |
 
@@ -28,7 +28,7 @@ This report is deterministic and contains no claim that file presence proves sem
 | Conformance specification present | 62 / 62 | 100.0% |
 | Benchmark specification present | 62 / 62 | 100.0% |
 | Direct requirement-to-assertion map | 5 / 62 | 8.1% |
-| Direct benchmark-requirement-to-scenario map | 4 / 62 | 6.5% |
+| Direct benchmark-requirement-to-scenario map | 5 / 62 | 8.1% |
 
 ## Declared dependency graph
 
@@ -46,8 +46,8 @@ The first two rows prove specification presence only. The mapping rows prove com
 
 | Evidence form | Domains | Coverage |
 |---|---:|---:|
-| Dedicated `cross-cutting.md` | 26 / 62 | 41.9% |
-| Embedded/unreviewed | 36 / 62 | 58.1% |
+| Dedicated `cross-cutting.md` | 27 / 62 | 43.5% |
+| Embedded/unreviewed | 35 / 62 | 56.5% |
 
 Keyword mentions are discovery hints only. The [quality matrix](quality-matrix.md) does not treat them as reviewed coverage.
 
@@ -57,10 +57,10 @@ Keyword mentions are discovery hints only. The [quality matrix](quality-matrix.m
 - Every capability domain has conformance and benchmark planning artifacts.
 - 0 domain README files lack the canonical table-form status field; this is recorded as a migration-quality issue, not silently interpreted as Stable.
 - 5 domain(s) have a complete direct planned requirement-to-assertion map; repository-wide migration remains open.
-- 4 domain(s) have complete benchmark-requirement-to-scenario maps across 27 stable semantic scenarios; run evidence remains absent by design.
-- 4 domain(s) have both complete planned assertion and benchmark traceability.
-- 2 domain(s) are currently eligible for Experimental promotion; generated scorecards cannot authorize promotion.
-- 2 domain(s) have schema-valid Proposed promotion reviews and 0 have Accepted reviews.
+- 5 domain(s) have complete benchmark-requirement-to-scenario maps across 33 stable semantic scenarios; run evidence remains absent by design.
+- 5 domain(s) have both complete planned assertion and benchmark traceability.
+- 3 domain(s) are currently eligible for Experimental promotion; generated scorecards cannot authorize promotion.
+- 3 domain(s) have schema-valid Proposed promotion reviews and 0 have Accepted reviews.
 - Semantic contradiction review remains human-governed and is tracked in the [closure backlog](closure-backlog.md).
 
 ## Readiness conclusion

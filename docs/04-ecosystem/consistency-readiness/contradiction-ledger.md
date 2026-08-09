@@ -1,7 +1,7 @@
 # Cross-domain contradiction ledger
 
 **Status:** Active reviewed evidence  
-**Scope:** Architecture model 1.82.0; schema-validated runtime/time 0.2.0 and application synchronization 0.1.1 readiness reviews
+**Scope:** Architecture model 1.83.0; schema-validated runtime/time, application synchronization, and windowing readiness reviews
 
 The ledger records proposition-level review. “No contradiction found” is bounded to named sources and rules; it is not a repository-wide proof.
 
@@ -23,6 +23,7 @@ The ledger records proposition-level review. “No contradiction found” is bou
 | CL-014 | Generated Experimental eligibility cannot itself change maturity or authorize a trial. | [Promotion decisions](promotion-decisions.md), [runtime/time review](../../02-capabilities/runtime-time/promotion-review.md), [trial governance](../../05-governance/implementation-trials/README.md), [ADR-0154](../../adr/0154-maturity-promotion-uses-conjunctive-gates-not-scores.md) | Consistent | Preserve Draft status until an accepted named decision; require separate repository profile and trial authorization afterward. |
 | CL-015 | A domain-composition dependency is not automatically a stable capability-graph edge. | [Application synchronization composition](../../02-capabilities/application-sync/dependencies.md), [capability graph](../../02-capabilities/graph-model.md), [source-linked graph](dependency-graph.md), [ADR-0148](../../adr/0148-dependency-edges-require-source-declaration.md) | Consistent | Preserve required/conditional/governance domain relationships; add graph edges only after exact capability endpoints and semantic conditions are reviewed. |
 | CL-016 | Schema validation of Markdown evidence does not create a second architecture authority or prematurely select repository-profile serialization. | [Readiness schema](domain-readiness-schema.md), [readiness model](model.md), [standards profile](../../05-governance/software-development/repository-profile.md), [ADR-0146](../../adr/0146-machine-readable-indexes-are-derived-evidence.md), [ADR-0159](../../adr/0159-domain-readiness-reviews-use-schema-validated-markdown.md) | Consistent | Keep Markdown normative and generated indexes derived; defer implementation-repository serialization until its separate evidence gate. |
+| CL-017 | Window state, surface readiness, presentation, focus, accessibility exposure, and capture protection do not collapse into one success milestone. | [Windowing review](../../02-capabilities/windowing/promotion-review.md), [window contract](../../02-capabilities/windowing/window.md), [surface contract](../../02-capabilities/windowing/presentation-surface.md), [graphics](../../02-capabilities/graphics/README.md), [accessibility](../../02-capabilities/accessibility/README.md) | Consistent | Preserve separate typed observations/oracles and qualify provider-specific security/availability claims. |
 
 ## Finding rules
 

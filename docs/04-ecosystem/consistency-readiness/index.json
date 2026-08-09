@@ -4,9 +4,9 @@
   "authority": "docs/01-architecture/architecture-model.md",
   "generated_from": "Markdown; this index is derived and non-authoritative",
   "summary": {
-    "markdown_documents": 1114,
-    "internal_links": 2029,
-    "requirements": 5168,
+    "markdown_documents": 1119,
+    "internal_links": 2064,
+    "requirements": 5193,
     "domains": 62,
     "adrs": 159,
     "errors": 0,
@@ -14,14 +14,14 @@
     "domains_with_conformance": 62,
     "domains_with_benchmarks": 62,
     "domains_with_direct_requirement_assertion_map": 5,
-    "domains_with_direct_benchmark_scenario_map": 4,
-    "benchmark_scenarios": 27,
-    "external_sources": 629,
-    "external_sources_with_review_record": 12,
-    "domains_with_dedicated_cross_cutting_analysis": 26,
-    "domains_with_complete_planned_traceability": 4,
-    "domains_experimental_eligible": 2,
-    "domains_with_proposed_promotion_review": 2,
+    "domains_with_direct_benchmark_scenario_map": 5,
+    "benchmark_scenarios": 33,
+    "external_sources": 630,
+    "external_sources_with_review_record": 21,
+    "domains_with_dedicated_cross_cutting_analysis": 27,
+    "domains_with_complete_planned_traceability": 5,
+    "domains_experimental_eligible": 3,
+    "domains_with_proposed_promotion_review": 3,
     "domains_with_accepted_promotion_review": 0,
     "declared_graph_nodes": 15,
     "declared_graph_edges": 8,
@@ -2192,23 +2192,23 @@
       "id": "windowing",
       "source": "docs/02-capabilities/windowing/README.md",
       "status": "Draft domain analysis",
-      "requirements": 40,
-      "capability_requirements": 40,
+      "requirements": 65,
+      "capability_requirements": 58,
       "conformance_requirements": 0,
-      "benchmark_requirements": 0,
-      "mapped_benchmark_requirements": 0,
+      "benchmark_requirements": 7,
+      "mapped_benchmark_requirements": 7,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
-      "mapped_capability_requirements": 40,
+      "mapped_capability_requirements": 58,
       "direct_requirement_assertion_map": true,
-      "direct_benchmark_scenario_map": false,
-      "cross_cutting_analysis": "embedded-unreviewed",
-      "promotion_review": "absent",
+      "direct_benchmark_scenario_map": true,
+      "cross_cutting_analysis": "dedicated",
+      "promotion_review": "proposed",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
         "accessibility": true,
-        "internationalization": false,
+        "internationalization": true,
         "observability": true,
         "operations": true
       },
@@ -2217,11 +2217,11 @@
         "conformance_plan": "pass",
         "benchmark_plan": "pass",
         "assertion_traceability": "pass",
-        "benchmark_traceability": "unknown",
-        "cross_cutting_review": "unknown",
-        "source_freshness_review": "unknown",
-        "owner_review": "unknown",
-        "experimental_eligible": "no"
+        "benchmark_traceability": "pass",
+        "cross_cutting_review": "pass",
+        "source_freshness_review": "pass",
+        "owner_review": "pass",
+        "experimental_eligible": "yes"
       }
     },
     {
@@ -2572,6 +2572,46 @@
         "docs/02-capabilities/windowing/presentation-surface.md",
         "docs/02-capabilities/windowing/traceability.md"
       ]
+    },
+    {
+      "id": "rm.assertion.windowing.dependencies@1",
+      "domain": "windowing",
+      "source": "docs/02-capabilities/windowing/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/windowing/dependencies.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.windowing.quality-review@1",
+      "domain": "windowing",
+      "source": "docs/02-capabilities/windowing/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/windowing/cross-cutting.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.windowing.source-review@1",
+      "domain": "windowing",
+      "source": "docs/02-capabilities/windowing/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/windowing/source-review.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.windowing.ownership@1",
+      "domain": "windowing",
+      "source": "docs/02-capabilities/windowing/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/windowing/ownership.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.windowing.promotion-boundary@1",
+      "domain": "windowing",
+      "source": "docs/02-capabilities/windowing/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/windowing/promotion-review.md"
+      ]
     }
   ],
   "benchmark_scenarios": [
@@ -2798,6 +2838,60 @@
       "requirements": [
         "RM-RUNTIME-BENCH-0009",
         "RM-RUNTIME-BENCH-0010"
+      ]
+    },
+    {
+      "id": "rm.benchmark.windowing.create-ready@1",
+      "domain": "windowing",
+      "source": "docs/02-capabilities/windowing/traceability.md",
+      "requirements": [
+        "RM-WINDOWING-BENCH-0001",
+        "RM-WINDOWING-BENCH-0007"
+      ]
+    },
+    {
+      "id": "rm.benchmark.windowing.interactive-resize@1",
+      "domain": "windowing",
+      "source": "docs/02-capabilities/windowing/traceability.md",
+      "requirements": [
+        "RM-WINDOWING-BENCH-0002",
+        "RM-WINDOWING-BENCH-0007"
+      ]
+    },
+    {
+      "id": "rm.benchmark.windowing.mixed-scale-traversal@1",
+      "domain": "windowing",
+      "source": "docs/02-capabilities/windowing/traceability.md",
+      "requirements": [
+        "RM-WINDOWING-BENCH-0003",
+        "RM-WINDOWING-BENCH-0007"
+      ]
+    },
+    {
+      "id": "rm.benchmark.windowing.topology-storm@1",
+      "domain": "windowing",
+      "source": "docs/02-capabilities/windowing/traceability.md",
+      "requirements": [
+        "RM-WINDOWING-BENCH-0004",
+        "RM-WINDOWING-BENCH-0007"
+      ]
+    },
+    {
+      "id": "rm.benchmark.windowing.lifecycle-churn@1",
+      "domain": "windowing",
+      "source": "docs/02-capabilities/windowing/traceability.md",
+      "requirements": [
+        "RM-WINDOWING-BENCH-0005",
+        "RM-WINDOWING-BENCH-0007"
+      ]
+    },
+    {
+      "id": "rm.benchmark.windowing.surface-regeneration@1",
+      "domain": "windowing",
+      "source": "docs/02-capabilities/windowing/traceability.md",
+      "requirements": [
+        "RM-WINDOWING-BENCH-0006",
+        "RM-WINDOWING-BENCH-0007"
       ]
     }
   ],
@@ -3114,9 +3208,10 @@
       "url": "https://developer.apple.com/documentation/appkit/nswindow/backingscalefactor",
       "host": "developer.apple.com",
       "sources": [
-        "docs/02-capabilities/windowing/platform-research.md"
+        "docs/02-capabilities/windowing/platform-research.md",
+        "docs/02-capabilities/windowing/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://developer.apple.com/documentation/appkit/nswindow/didchangebackingpropertiesnotification",
@@ -3125,6 +3220,14 @@
         "docs/02-capabilities/windowing/platform-research.md"
       ],
       "freshness": "unreviewed-by-generator"
+    },
+    {
+      "url": "https://developer.apple.com/documentation/appkit/nswindowdelegate/1419517-windowdidchangebackingproperties",
+      "host": "developer.apple.com",
+      "sources": [
+        "docs/02-capabilities/windowing/source-review.md"
+      ],
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://developer.apple.com/documentation/appkit/nswindowdelegate/windowdidchangebackingproperties(_:",
@@ -4475,25 +4578,28 @@
       "url": "https://gitlab.freedesktop.org/wayland/wayland-protocols/-/blob/main/stable/xdg-shell/xdg-shell.xml",
       "host": "gitlab.freedesktop.org",
       "sources": [
-        "docs/02-capabilities/windowing/platform-research.md"
+        "docs/02-capabilities/windowing/platform-research.md",
+        "docs/02-capabilities/windowing/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://gitlab.freedesktop.org/wayland/wayland-protocols/-/blob/main/staging/fractional-scale/fractional-scale-v1.xml",
       "host": "gitlab.freedesktop.org",
       "sources": [
-        "docs/02-capabilities/windowing/platform-research.md"
+        "docs/02-capabilities/windowing/platform-research.md",
+        "docs/02-capabilities/windowing/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://gitlab.freedesktop.org/wayland/wayland/-/blob/main/protocol/wayland.xml",
       "host": "gitlab.freedesktop.org",
       "sources": [
-        "docs/02-capabilities/windowing/platform-research.md"
+        "docs/02-capabilities/windowing/platform-research.md",
+        "docs/02-capabilities/windowing/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://globalprivacycontrol.org/",
@@ -5127,9 +5233,10 @@
       "url": "https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-getdpiforwindow",
       "host": "learn.microsoft.com",
       "sources": [
-        "docs/02-capabilities/windowing/platform-research.md"
+        "docs/02-capabilities/windowing/platform-research.md",
+        "docs/02-capabilities/windowing/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-injecttouchinput",
@@ -5257,9 +5364,10 @@
       "url": "https://learn.microsoft.com/en-us/windows/win32/hidpi/wm-dpichanged",
       "host": "learn.microsoft.com",
       "sources": [
-        "docs/02-capabilities/windowing/platform-research.md"
+        "docs/02-capabilities/windowing/platform-research.md",
+        "docs/02-capabilities/windowing/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://learn.microsoft.com/en-us/windows/win32/inputdev/about-raw-input",
@@ -5593,9 +5701,10 @@
       "url": "https://learn.microsoft.com/en-us/windows/win32/winmsg/about-window-procedures",
       "host": "learn.microsoft.com",
       "sources": [
-        "docs/02-capabilities/windowing/platform-research.md"
+        "docs/02-capabilities/windowing/platform-research.md",
+        "docs/02-capabilities/windowing/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://learn.microsoft.com/purview/dlp-sensitivity-label-as-condition",
@@ -7837,9 +7946,10 @@
       "url": "https://www.x.org/releases/current/doc/libX11/libX11/libX11.html",
       "host": "www.x.org",
       "sources": [
-        "docs/02-capabilities/windowing/platform-research.md"
+        "docs/02-capabilities/windowing/platform-research.md",
+        "docs/02-capabilities/windowing/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://www.x.org/releases/current/doc/xorg-docs/icccm/icccm.html#Peer_to_Peer_Communication_by_Means_of_Selections",
@@ -46041,6 +46151,81 @@
       "assertions": []
     },
     {
+      "id": "RM-WINDOWING-BENCH-0001",
+      "source": "docs/02-capabilities/windowing/benchmarks.md",
+      "line": 18,
+      "kind": "benchmark",
+      "domain": "windowing",
+      "benchmark_scenarios": [
+        "rm.benchmark.windowing.create-ready@1"
+      ]
+    },
+    {
+      "id": "RM-WINDOWING-BENCH-0002",
+      "source": "docs/02-capabilities/windowing/benchmarks.md",
+      "line": 20,
+      "kind": "benchmark",
+      "domain": "windowing",
+      "benchmark_scenarios": [
+        "rm.benchmark.windowing.interactive-resize@1"
+      ]
+    },
+    {
+      "id": "RM-WINDOWING-BENCH-0003",
+      "source": "docs/02-capabilities/windowing/benchmarks.md",
+      "line": 22,
+      "kind": "benchmark",
+      "domain": "windowing",
+      "benchmark_scenarios": [
+        "rm.benchmark.windowing.mixed-scale-traversal@1"
+      ]
+    },
+    {
+      "id": "RM-WINDOWING-BENCH-0004",
+      "source": "docs/02-capabilities/windowing/benchmarks.md",
+      "line": 24,
+      "kind": "benchmark",
+      "domain": "windowing",
+      "benchmark_scenarios": [
+        "rm.benchmark.windowing.topology-storm@1"
+      ]
+    },
+    {
+      "id": "RM-WINDOWING-BENCH-0005",
+      "source": "docs/02-capabilities/windowing/benchmarks.md",
+      "line": 26,
+      "kind": "benchmark",
+      "domain": "windowing",
+      "benchmark_scenarios": [
+        "rm.benchmark.windowing.lifecycle-churn@1"
+      ]
+    },
+    {
+      "id": "RM-WINDOWING-BENCH-0006",
+      "source": "docs/02-capabilities/windowing/benchmarks.md",
+      "line": 28,
+      "kind": "benchmark",
+      "domain": "windowing",
+      "benchmark_scenarios": [
+        "rm.benchmark.windowing.surface-regeneration@1"
+      ]
+    },
+    {
+      "id": "RM-WINDOWING-BENCH-0007",
+      "source": "docs/02-capabilities/windowing/benchmarks.md",
+      "line": 30,
+      "kind": "benchmark",
+      "domain": "windowing",
+      "benchmark_scenarios": [
+        "rm.benchmark.windowing.create-ready@1",
+        "rm.benchmark.windowing.interactive-resize@1",
+        "rm.benchmark.windowing.mixed-scale-traversal@1",
+        "rm.benchmark.windowing.topology-storm@1",
+        "rm.benchmark.windowing.lifecycle-churn@1",
+        "rm.benchmark.windowing.surface-regeneration@1"
+      ]
+    },
+    {
       "id": "RM-WINDOWING-COORD-0001",
       "source": "docs/02-capabilities/windowing/coordinate-model.md",
       "line": 12,
@@ -46098,6 +46283,66 @@
       "domain": "windowing",
       "assertions": [
         "rm.assertion.windowing.coordinates@1"
+      ]
+    },
+    {
+      "id": "RM-WINDOWING-QUALITY-0001",
+      "source": "docs/02-capabilities/windowing/cross-cutting.md",
+      "line": 20,
+      "kind": "capability",
+      "domain": "windowing",
+      "assertions": [
+        "rm.assertion.windowing.quality-review@1"
+      ]
+    },
+    {
+      "id": "RM-WINDOWING-QUALITY-0002",
+      "source": "docs/02-capabilities/windowing/cross-cutting.md",
+      "line": 22,
+      "kind": "capability",
+      "domain": "windowing",
+      "assertions": [
+        "rm.assertion.windowing.quality-review@1"
+      ]
+    },
+    {
+      "id": "RM-WINDOWING-QUALITY-0003",
+      "source": "docs/02-capabilities/windowing/cross-cutting.md",
+      "line": 24,
+      "kind": "capability",
+      "domain": "windowing",
+      "assertions": [
+        "rm.assertion.windowing.quality-review@1"
+      ]
+    },
+    {
+      "id": "RM-WINDOWING-DEPENDENCY-0001",
+      "source": "docs/02-capabilities/windowing/dependencies.md",
+      "line": 29,
+      "kind": "capability",
+      "domain": "windowing",
+      "assertions": [
+        "rm.assertion.windowing.dependencies@1"
+      ]
+    },
+    {
+      "id": "RM-WINDOWING-DEPENDENCY-0002",
+      "source": "docs/02-capabilities/windowing/dependencies.md",
+      "line": 31,
+      "kind": "capability",
+      "domain": "windowing",
+      "assertions": [
+        "rm.assertion.windowing.dependencies@1"
+      ]
+    },
+    {
+      "id": "RM-WINDOWING-DEPENDENCY-0003",
+      "source": "docs/02-capabilities/windowing/dependencies.md",
+      "line": 33,
+      "kind": "capability",
+      "domain": "windowing",
+      "assertions": [
+        "rm.assertion.windowing.dependencies@1"
       ]
     },
     {
@@ -46221,6 +46466,46 @@
       ]
     },
     {
+      "id": "RM-WINDOWING-OWNER-0001",
+      "source": "docs/02-capabilities/windowing/ownership.md",
+      "line": 25,
+      "kind": "capability",
+      "domain": "windowing",
+      "assertions": [
+        "rm.assertion.windowing.ownership@1"
+      ]
+    },
+    {
+      "id": "RM-WINDOWING-OWNER-0002",
+      "source": "docs/02-capabilities/windowing/ownership.md",
+      "line": 27,
+      "kind": "capability",
+      "domain": "windowing",
+      "assertions": [
+        "rm.assertion.windowing.ownership@1"
+      ]
+    },
+    {
+      "id": "RM-WINDOWING-OWNER-0003",
+      "source": "docs/02-capabilities/windowing/ownership.md",
+      "line": 29,
+      "kind": "capability",
+      "domain": "windowing",
+      "assertions": [
+        "rm.assertion.windowing.ownership@1"
+      ]
+    },
+    {
+      "id": "RM-WINDOWING-OWNER-0004",
+      "source": "docs/02-capabilities/windowing/ownership.md",
+      "line": 31,
+      "kind": "capability",
+      "domain": "windowing",
+      "assertions": [
+        "rm.assertion.windowing.ownership@1"
+      ]
+    },
+    {
       "id": "RM-WINDOWING-SURFACE-0001",
       "source": "docs/02-capabilities/windowing/presentation-surface.md",
       "line": 8,
@@ -46291,9 +46576,79 @@
       ]
     },
     {
+      "id": "RM-WINDOWING-PROMOTION-0001",
+      "source": "docs/02-capabilities/windowing/promotion-review.md",
+      "line": 27,
+      "kind": "capability",
+      "domain": "windowing",
+      "assertions": [
+        "rm.assertion.windowing.promotion-boundary@1"
+      ]
+    },
+    {
+      "id": "RM-WINDOWING-PROMOTION-0002",
+      "source": "docs/02-capabilities/windowing/promotion-review.md",
+      "line": 29,
+      "kind": "capability",
+      "domain": "windowing",
+      "assertions": [
+        "rm.assertion.windowing.promotion-boundary@1"
+      ]
+    },
+    {
+      "id": "RM-WINDOWING-PROMOTION-0003",
+      "source": "docs/02-capabilities/windowing/promotion-review.md",
+      "line": 31,
+      "kind": "capability",
+      "domain": "windowing",
+      "assertions": [
+        "rm.assertion.windowing.promotion-boundary@1"
+      ]
+    },
+    {
+      "id": "RM-WINDOWING-SOURCE-0001",
+      "source": "docs/02-capabilities/windowing/source-review.md",
+      "line": 18,
+      "kind": "capability",
+      "domain": "windowing",
+      "assertions": [
+        "rm.assertion.windowing.source-review@1"
+      ]
+    },
+    {
+      "id": "RM-WINDOWING-SOURCE-0002",
+      "source": "docs/02-capabilities/windowing/source-review.md",
+      "line": 20,
+      "kind": "capability",
+      "domain": "windowing",
+      "assertions": [
+        "rm.assertion.windowing.source-review@1"
+      ]
+    },
+    {
+      "id": "RM-WINDOWING-SOURCE-0003",
+      "source": "docs/02-capabilities/windowing/source-review.md",
+      "line": 22,
+      "kind": "capability",
+      "domain": "windowing",
+      "assertions": [
+        "rm.assertion.windowing.source-review@1"
+      ]
+    },
+    {
+      "id": "RM-WINDOWING-SOURCE-0004",
+      "source": "docs/02-capabilities/windowing/source-review.md",
+      "line": 24,
+      "kind": "capability",
+      "domain": "windowing",
+      "assertions": [
+        "rm.assertion.windowing.source-review@1"
+      ]
+    },
+    {
       "id": "RM-WINDOW-TRACE-0001",
       "source": "docs/02-capabilities/windowing/traceability.md",
-      "line": 15,
+      "line": 31,
       "kind": "capability",
       "domain": "windowing",
       "assertions": [
@@ -46303,7 +46658,7 @@
     {
       "id": "RM-WINDOW-TRACE-0002",
       "source": "docs/02-capabilities/windowing/traceability.md",
-      "line": 17,
+      "line": 33,
       "kind": "capability",
       "domain": "windowing",
       "assertions": [
@@ -46313,7 +46668,17 @@
     {
       "id": "RM-WINDOW-TRACE-0003",
       "source": "docs/02-capabilities/windowing/traceability.md",
-      "line": 19,
+      "line": 35,
+      "kind": "capability",
+      "domain": "windowing",
+      "assertions": [
+        "rm.assertion.windowing.presentation-surface@1"
+      ]
+    },
+    {
+      "id": "RM-WINDOW-TRACE-0004",
+      "source": "docs/02-capabilities/windowing/traceability.md",
+      "line": 37,
       "kind": "capability",
       "domain": "windowing",
       "assertions": [
@@ -47234,28 +47599,28 @@
     {
       "id": "RM-READINESS-CONTRADICTION-0001",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 29,
+      "line": 30,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0002",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 31,
+      "line": 32,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0003",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 33,
+      "line": 34,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0004",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 35,
+      "line": 36,
       "kind": "governance",
       "domain": null
     },
@@ -49210,8 +49575,8 @@
     },
     {
       "source": "docs/01-architecture/architecture-model.md",
-      "sha256": "250d02663c886220568a8c281a2fdd2975a660eb284c405b24ba79ae9b00f5e9",
-      "lines": 607
+      "sha256": "3502ad8dee099bee92341af82477b99cf88bbb00e2c9ffef541500481f14ab56",
+      "lines": 609
     },
     {
       "source": "docs/01-architecture/behavioral-contracts.md",
@@ -53500,8 +53865,8 @@
     },
     {
       "source": "docs/02-capabilities/windowing/benchmarks.md",
-      "sha256": "5522703994607ba7923537a44c807b9821926538274304b342ceda49ec502b7d",
-      "lines": 17
+      "sha256": "5b062b52555ff1d2c80a5a59ef9e18a95241c2df9d520eb697f580dc290b1a94",
+      "lines": 32
     },
     {
       "source": "docs/02-capabilities/windowing/conformance.md",
@@ -53514,6 +53879,16 @@
       "lines": 33
     },
     {
+      "source": "docs/02-capabilities/windowing/cross-cutting.md",
+      "sha256": "7f35db6193bb2e1a1f40592713c791e2f33d835024d32951d78a21357834209a",
+      "lines": 25
+    },
+    {
+      "source": "docs/02-capabilities/windowing/dependencies.md",
+      "sha256": "69f7ab07a05c896b15ef4728bb9cbdb2b630b9d321d29ba2151c4e8b4eb66541",
+      "lines": 34
+    },
+    {
       "source": "docs/02-capabilities/windowing/display-topology.md",
       "sha256": "b23a6c156558c9adfd6b974d7160dbc2643915a1d82a071a527faf2ca8e44009",
       "lines": 19
@@ -53522,6 +53897,11 @@
       "source": "docs/02-capabilities/windowing/event-model.md",
       "sha256": "cb65b9f8624f31e3b5a901adef54f028cb2048264600fcbee8e98f6bdfea82f7",
       "lines": 34
+    },
+    {
+      "source": "docs/02-capabilities/windowing/ownership.md",
+      "sha256": "541b64140cb6ca7dc5d20d0975a2465589d09e9e6230e275d53291bb1d424d15",
+      "lines": 32
     },
     {
       "source": "docs/02-capabilities/windowing/platform-research.md",
@@ -53534,14 +53914,24 @@
       "lines": 21
     },
     {
+      "source": "docs/02-capabilities/windowing/promotion-review.md",
+      "sha256": "d02f9c1971d7c901054ab686914330e2f841b9a32795a1d39a686e5625aa391e",
+      "lines": 32
+    },
+    {
       "source": "docs/02-capabilities/windowing/README.md",
-      "sha256": "7bf490d04cef4a0654d31ff74eac831e5aece804657a375e9753ad6b6f150801",
-      "lines": 45
+      "sha256": "2994762b0340ce6251b6f96de9d259584202a625e90065a83d6c16559786b162",
+      "lines": 52
+    },
+    {
+      "source": "docs/02-capabilities/windowing/source-review.md",
+      "sha256": "73902e0f8b33660de69e862dc22661ec688a38e6ab6190e7210625c34b7430f8",
+      "lines": 25
     },
     {
       "source": "docs/02-capabilities/windowing/traceability.md",
-      "sha256": "302b0534aad6feed6efa706987a1a8ee1e445a20808cc403e2ed8a3fd7a5d00b",
-      "lines": 19
+      "sha256": "c53ac773a6252514a2cce826cf86164b30d7265a802da9243a9410324c0de80e",
+      "lines": 37
     },
     {
       "source": "docs/02-capabilities/windowing/window.md",
@@ -53640,7 +54030,7 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/audit-report.md",
-      "sha256": "ae5ab1321576b64a1588b3e94d6da4a20cecebf7d84fe4ed00f7b4c8f1dff8fd",
+      "sha256": "8adc62bb5c9fe1bbb1a58e0a7f9dacd4105a79d38e01e15f71cbdec11a57940d",
       "lines": 68
     },
     {
@@ -53655,13 +54045,13 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/closure-backlog.md",
-      "sha256": "bcdf2c0bf24d5d12f94be80a93a514843d961ca7735560079456424a770afc69",
+      "sha256": "91f980fe9d2c1eb8a02a717dddf2d1fe6c81c2630b586792c09baeea00df5978",
       "lines": 19
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "sha256": "1da87ecc27d75939577dd96c1da002dc9b13cf9704c6ab0aa4a6110f08b5cb2e",
-      "lines": 35
+      "sha256": "c2e0e8507bd1edea92880b04c6ee97545bc6b4f5e813f15c11a14b66ba1bbe3e",
+      "lines": 36
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/dependency-graph.md",
@@ -53695,12 +54085,12 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/promotion-scorecards.md",
-      "sha256": "a78e13e7112669a2f9e7d52c1909bd40d5778bc145c8ece639eff759a7f0c041",
+      "sha256": "2cefe8a8984fc67ac4997347aa8760eb3f525f4ddfe559f28aea0be8c8f3d596",
       "lines": 78
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/quality-matrix.md",
-      "sha256": "eb3c1e4fcd2d276f21d02f82c220d0f9a43a70ef20e5a00daadca447215f0377",
+      "sha256": "26dff08d6dda3cdcef178f16cba47666fbeb19ae2bae9a43c899ccc5b76ebefb",
       "lines": 73
     },
     {
@@ -53940,8 +54330,8 @@
     },
     {
       "source": "docs/06-roadmap/roadmap.md",
-      "sha256": "352bad2d70f7132ac33a924943f8b7adf59e333f974b1e478a235ef95d5e372e",
-      "lines": 221
+      "sha256": "c4d6f88f9edcd2410c2ecd2f872b0a0537ddeb680ae75428c89b7ef490a3260b",
+      "lines": 225
     },
     {
       "source": "docs/adr/0001-capability-first-platform.md",

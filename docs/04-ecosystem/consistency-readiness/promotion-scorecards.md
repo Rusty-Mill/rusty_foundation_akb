@@ -67,7 +67,7 @@ The table uses conjunctive gates. It does not calculate a weighted score, and it
 | [text](../../02-capabilities/text/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | absent | **no** |
 | [threading](../../02-capabilities/threading/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | absent | **no** |
 | [time-media](../../02-capabilities/time-media/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | absent | **no** |
-| [windowing](../../02-capabilities/windowing/README.md) | pass | pass | pass | pass | unknown | unknown | unknown | unknown | absent | **no** |
+| [windowing](../../02-capabilities/windowing/README.md) | pass | pass | pass | pass | pass | pass | pass | pass | proposed | **yes** |
 | [workflow-orchestration](../../02-capabilities/workflow-orchestration/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | absent | **no** |
 
 ## Interpretation
@@ -75,4 +75,4 @@ The table uses conjunctive gates. It does not calculate a weighted score, and it
 - Contract/conformance/benchmark-plan passes prove that structured Draft specifications exist.
 - Assertion and benchmark maps prove planned traceability, not executable evidence.
 - Cross-cutting, source, and owner gates pass only from explicit `Review status` metadata in their authoritative domain artifacts; file presence and keywords are insufficient.
-- 2 domain(s) currently satisfy generated Experimental eligibility evidence: application-sync, runtime-time. Eligibility does not change maturity or authorize implementation; an explicit reviewed promotion record remains required.
+- 3 domain(s) currently satisfy generated Experimental eligibility evidence: application-sync, runtime-time, windowing. Eligibility does not change maturity or authorize implementation; an explicit reviewed promotion record remains required.

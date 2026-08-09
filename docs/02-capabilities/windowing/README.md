@@ -3,6 +3,8 @@
 | Field | Value |
 |---|---|
 | Status | Draft domain analysis |
+| Domain version | 0.1.1 |
+| Accountable role | Windowing capability owner; named assignee required for promotion |
 | Purpose | Define portable top-level window, display-topology, and presentation-surface semantics without absorbing graphics, input, or product policy |
 
 ## Domain boundary
@@ -43,3 +45,8 @@ flowchart LR
 - [Conformance specification](conformance.md)
 - [Benchmark specification](benchmarks.md)
 - [Assertion traceability](traceability.md)
+- [Dependency and profile composition](dependencies.md)
+- [Cross-cutting quality review](cross-cutting.md)
+- [Source freshness review](source-review.md)
+- [Ownership and bounded trial planning](ownership.md)
+- [Experimental promotion review](promotion-review.md)

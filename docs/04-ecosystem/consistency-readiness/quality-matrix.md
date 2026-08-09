@@ -67,7 +67,7 @@
 | [text](../../02-capabilities/text/README.md) | embedded-unreviewed | yes | yes | yes | yes | yes | unknown |
 | [threading](../../02-capabilities/threading/README.md) | embedded-unreviewed | yes | yes | unknown | unknown | yes | yes |
 | [time-media](../../02-capabilities/time-media/README.md) | embedded-unreviewed | yes | yes | yes | yes | yes | yes |
-| [windowing](../../02-capabilities/windowing/README.md) | embedded-unreviewed | yes | yes | yes | unknown | yes | yes |
+| [windowing](../../02-capabilities/windowing/README.md) | dedicated | yes | yes | yes | yes | yes | yes |
 | [workflow-orchestration](../../02-capabilities/workflow-orchestration/README.md) | dedicated | yes | yes | yes | yes | yes | yes |
 
 A `yes` means only that one or more configured terms occur in the domain corpus. Review must still identify exact requirements, non-applicability rationale, evidence method, owner, and exceptions.
