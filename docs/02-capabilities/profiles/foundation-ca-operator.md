@@ -3,8 +3,8 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.17.0 |
-| Extends | [`rm.profile.foundation.server` 1.22.0](foundation-server.md) |
+| Version | 0.18.0 |
+| Extends | [`rm.profile.foundation.server` 1.23.0](foundation-server.md) |
 | Purpose | Operate registration, certificate issuance, renewal, status, and CA lifecycle without claiming a complete public or enterprise CA product |
 
 ## Required composition
@@ -57,8 +57,11 @@
 
 **RM-PROFILE-CA-OPERATOR-0023:** CA information protection composes Server 1.22.0 with issuer-qualified classifications for requests/identity evidence/key material/ceremonies/ledgers/audit/backups, compartmented recipients and channels, rights/encryption/markings, quorum downgrade, offline/revocation/recovery, DLP, and no inference that a label grants HSM/key/issuance/status/publication/trust authority.
 
+**RM-PROFILE-CA-OPERATOR-0024:** CA privacy composes Server 1.23.0 for account/identity/validation/attestation/contact/audit/security data with exact issuance/status/security/legal-purpose plans, minimized projections, processor/region routes, retention/holds, subject rights and scoped erasure where policy permits, and no inference that privacy workflow can alter immutable certificate/ledger/trust facts.
+
 ## History
 
+- **0.18.0:** Rebases on Server 1.23.0 and constrains CA privacy to explicit issuance/security purposes, minimized identity evidence, processors/regions, rights/holds/scoped erasure, and preservation of immutable certificate/ledger facts.
 - **0.17.0:** Rebases on Server 1.22.0 and constrains CA classification to compartmented immutable evidence, protected channels, quorum downgrade, DLP, offline/revocation, and separated key/issuance/trust authority.
 - **0.16.0:** Rebases on Server 1.21.0 and constrains CA content inspection to private generation-bound evidence, bounded recursion, quarantine, isolated derivation, and separated issuance/key/trust authority.
 - **0.15.0:** Rebases on Server 1.20.0 and constrains CA archives to reproducible evidence, independent cryptographic verification, key separation, safe staged restore, and separated ledger/trust authority.

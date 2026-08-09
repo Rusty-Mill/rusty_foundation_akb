@@ -3,8 +3,8 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.18.0 |
-| Extends | [`rm.profile.foundation.server` 1.22.0](foundation-server.md) |
+| Version | 0.19.0 |
+| Extends | [`rm.profile.foundation.server` 1.23.0](foundation-server.md) |
 | Purpose | Operate software publication, authenticated repository metadata, mirrors, advisories, and emergency response without claiming a complete hosted registry product |
 
 ## Required composition
@@ -65,8 +65,11 @@
 
 **RM-PROFILE-REPOSITORY-OPERATOR-0027:** Repository information protection composes Server 1.22.0 with issuer-qualified release/source/advisory/audit classifications, immutable artifact lineage, private namespace and cross-tenant recipient policy, protected uploads/downloads, governed downgrade, publication/export DLP, and no inference that a label or encryption grants publication, consumer access, installation, or legal compliance.
 
+**RM-PROFILE-REPOSITORY-OPERATOR-0028:** Repository privacy composes Server 1.23.0 for accounts, maintainers, publishers, download/security telemetry, support, advisories, abuse/fraud, mirrors, recipients/processors, and analytics with explicit purpose plans, minimization, consent/preference where selected, lineage, rights/erasure/holds, secure exports, and no built-in legal/compliance conclusion.
+
 ## History
 
+- **0.19.0:** Rebases on Server 1.23.0 and constrains repository privacy to explicit purposes, minimized account/telemetry data, recipient/processor lineage, rights and scoped erasure, secure exports, and legal-policy separation.
 - **0.18.0:** Rebases on Server 1.22.0 and constrains repository classification to issuer-qualified immutable lineage, private sharing, protected transfer, governed downgrade, publication DLP, and separated release authority.
 - **0.17.0:** Rebases on Server 1.21.0 and constrains repository inspection to digest-pinned evidence graphs, provider freshness/privacy, isolated derivation, publication gates, and explicit nonclaims.
 - **0.16.0:** Rebases on Server 1.20.0 and constrains repository archives to reproducible immutable artifacts, hostile validation, safe staging, exact signed views, and separated publication authority.

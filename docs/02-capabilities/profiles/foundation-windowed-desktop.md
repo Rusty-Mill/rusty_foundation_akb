@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.50.0 |
+| Version | 0.51.0 |
 | Extends | [`rm.profile.foundation.desktop` 1.0.0](foundation-desktop.md) |
 | Purpose | Add native top-level window and graphics-presentation infrastructure without claiming a complete GUI toolkit |
 
@@ -371,6 +371,12 @@
 
 **RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0181:** Evidence covers manual/default/inherited/automatic labels, cross-application/platform metadata and markings, downgrade/appeal, rights/offline/revocation, managed/unmanaged recipients and apps, every selected interactive channel, background/headless denial, batch/cancellation/partial effects, hostile UI, privacy/accessibility, and latency/energy/task benchmarks.
 
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0182:** Privacy engineering `>=0.1.0,<0.2.0` is conditional for personal/linkable data collection, device signals, permissions, preferences/consent, sharing/processing, data-rights UI, or deidentification. It binds user/subject/agent/session/device, purpose/data actions, exact notice/choice/policy, recipients/regions, retention, lineage, provider, accessibility, and authority.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0183:** Choice is granular, unbundled, localized, accessible, and withdrawable without fabricating legal conclusions or consent in background/headless contexts. Platform permission is separate evidence. Users can inspect current purposes/preferences, initiate/track requests, securely receive exports, correct/appeal, and see partial/held/residual outcomes.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0184:** Evidence covers notice/choice versions, refuse/withdraw/device/account conflicts, permissions versus consent, offline queued actions, recipient/processor/region changes, subject/agent verification, access/export/correction/restriction/erasure cases, third-party redaction, export security, restore/no-resurrection, privacy UX/accessibility, and task/latency/energy benchmarks.
+
 ## Whole-product gaps
 
 This profile does not supply a rendering command model, widget/UI framework, text editing model, image/audio codecs, media containers/graphs, gestures, or translated product resources. Product-specific semantic roles/actions/content, accepted transfer formats/importers, locale coverage, audio policy/content, and accessible UX still belong to the product/framework. It cannot claim desktop-application completeness.
@@ -383,6 +389,7 @@ Input evidence additionally covers layout/IME diversity, keyboard-only operation
 
 ## History
 
+- **0.51.0:** Adds conditional privacy-purpose and consent/preference evidence, accessible rights workflows, secure exports/corrections, scoped erasure and residuals, offline/processor/region handling, conformance, and benchmarks.
 - **0.50.0:** Adds conditional sensitivity labeling, lineage-aware classification, governed downgrade, independently evidenced markings/rights, cross-channel DLP, accessible user mediation, offline/revocation, conformance, and benchmarks.
 - **0.49.0:** Adds conditional evidence-preserving identification, restricted recursive inspection and previews, origin/quarantine propagation, provider verdicts, explicit transformation loss, accessible mediation, conformance, and benchmarks.
 - **0.48.0:** Adds conditional codec/archive processing with inert accessible preview, bounded hostile input, safe transactional extraction, explicit trust and metadata loss, recovery, conformance, and benchmarks.

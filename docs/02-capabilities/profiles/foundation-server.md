@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 1.22.0 |
+| Version | 1.23.0 |
 | Purpose | Long-running non-interactive service foundation with bounded shutdown and protected credentials |
 
 ## Workload assumptions
@@ -92,6 +92,9 @@ No interactive desktop session, unattended restart, concurrent I/O, explicit ser
 - **RM-PROFILE-FOUNDATION-SERVER-0074:** Information protection `>=0.1.0,<0.2.0` is conditional for classified application data, regulated records, cross-tenant sharing, protected artifacts/messages, or channel loss-prevention. It binds subject/lineage, issuer taxonomy and assertions, classifier/policy generations, principal/device/application, recipient/channel/purpose, protections, freshness, audit/privacy, and providers.
 - **RM-PROFILE-FOUNDATION-SERVER-0075:** Labels are assertions, not authority or completed protection. Downgrade/declassification/removal requires a generation-bound authorized transition; marking, encryption, rights, retention, DLP decision, user/approval mediation, channel effect, recipient access, revocation, and reconciliation remain independently evidenced.
 - **RM-PROFILE-FOUNDATION-SERVER-0076:** Evidence covers taxonomy orders/mappings/rollouts, classifier corpora and drift, lineage/aggregation/reidentification, downgrade/quorum/transform histories, markings/encryption/rights/offline/revocation, every selected DLP channel and failure, cross-tenant recipients, accessibility/privacy/audit, provider differentials, and adversarial benchmarks.
+- **RM-PROFILE-FOUNDATION-SERVER-0077:** Privacy engineering `>=0.1.0,<0.2.0` is conditional for personal or linkable data, consent/preferences, multiple purposes/recipients/processors/regions, privacy rights, or deidentification. It binds subject/role/data and lineage, purpose/processing plan, product legal-policy evidence, grants, minimization, retention/holds, providers, authority, and audit.
+- **RM-PROFILE-FOUNDATION-SERVER-0078:** Consent is granular revocable purpose evidence, not universal processing authority. Every data action is plan- and policy-bound; rights cases verify identity/agency proportionally; erasure reconciles named live/derived/recipient/log/backup/model boundaries and reports residuals without claiming universal disappearance.
+- **RM-PROFILE-FOUNDATION-SERVER-0079:** Evidence covers subject graphs/verification, all data actions/purpose transitions, consent/refusal/withdrawal/preference histories, minimization projections, lineage/secondary use, processors/transfers/regions, retention/holds, every rights workflow, exports/corrections, deidentification/privacy budgets, restore/no-resurrection, privacy/audit/accessibility, and benchmarks.
 
 ## Operational constraints
 
@@ -99,6 +102,7 @@ Deadline timers and cancellation support bounded multi-phase shutdown. Sync path
 
 ## History
 
+- **1.23.0:** Adds conditional privacy-purpose plans, granular consent/preferences, minimization, lineage/secondary use, processors/transfers, rights workflows, scoped erasure, deidentification, derived-system recovery, conformance, and benchmarks.
 - **1.22.0:** Adds conditional issuer-scoped classification assertions, lineage, governed downgrade, independently evidenced protection, channel-bound DLP, accessible mediation, cross-tenant/offline/revocation semantics, conformance, and benchmarks.
 - **1.21.0:** Adds conditional multi-evidence content identification, recursive restricted inspection, quarantine/origin propagation, malware/reputation boundaries, inert previews, generation-producing transformations, conformance, and benchmarks.
 - **1.20.0:** Adds conditional independently negotiated codec/container processing, bounded streaming and metadata, deterministic creation, transactional extraction, encryption/trust separation, recovery, conformance, and benchmarks.

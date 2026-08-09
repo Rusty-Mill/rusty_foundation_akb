@@ -125,5 +125,7 @@
 | [0121](0121-safe-transformation-creates-a-new-artifact-generation.md) | Safe transformation creates a new artifact generation with bounded claims | Accepted |
 | [0122](0122-sensitivity-labels-are-scoped-assertions-not-protection-or-authority.md) | Sensitivity labels are scoped assertions, not protection or authority | Accepted |
 | [0123](0123-downgrade-and-declassification-are-authorized-transitions.md) | Downgrade and declassification are authorized transitions | Accepted |
+| [0124](0124-consent-is-a-revocable-purpose-scoped-grant.md) | Consent is a revocable purpose-scoped grant, not universal processing authority | Accepted |
+| [0125](0125-erasure-is-a-scoped-lineage-reconciliation-workflow.md) | Erasure is a scoped lineage-reconciliation workflow | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.
