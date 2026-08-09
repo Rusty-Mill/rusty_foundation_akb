@@ -164,5 +164,6 @@
 | [0160](0160-async-io-lifecycle-is-a-provider-framework-not-a-universal-capability.md) | Async I/O lifecycle is a provider framework, not a universal capability | Accepted |
 | [0161](0161-random-output-tests-do-not-certify-unpredictability.md) | Random-output tests do not certify unpredictability | Accepted |
 | [0162](0162-attenuation-enforcement-is-a-scoped-claim-vector-not-a-security-score.md) | Attenuation enforcement is a scoped claim vector, not a security score | Accepted |
+| [0163](0163-maturity-promotion-units-follow-evidence-boundaries-not-directory-layout.md) | Maturity promotion units follow evidence boundaries, not directory layout | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

@@ -1,7 +1,7 @@
 # Cross-domain contradiction ledger
 
 **Status:** Active reviewed evidence  
-**Scope:** Architecture model 1.90.0; schema-validated readiness reviews, foundation-batch integration, and secure-random/authority-attenuation capability dossiers
+**Scope:** Architecture model 1.91.0; schema-validated reviews, batch integration, capability dossiers, and governed security promotion units
 
 The ledger records proposition-level review. “No contradiction found” is bounded to named sources and rules; it is not a repository-wide proof.
 
@@ -31,6 +31,7 @@ The ledger records proposition-level review. “No contradiction found” is bou
 | CL-022 | Reused provider lifecycle invariants do not automatically create a universal application-facing capability or stable dependency-graph node. | [Batch review](foundation-batch-integration-review.md), [async composition](../../02-capabilities/async-io/dependencies.md), [capability graph](../../02-capabilities/graph-model.md), [ADR-0160](../../adr/0160-async-io-lifecycle-is-a-provider-framework-not-a-universal-capability.md) | Resolved | Keep framework conformance separate from capability selection and leave domain progress/effect/authority semantics with domain owners. |
 | CL-023 | Secure-random provider provenance and integration evidence cannot be replaced by output uniqueness, statistics, entropy estimates, or cryptographic-looking samples. | [Random dossier](../../02-capabilities/security/random-readiness-review.md), [random contract](../../02-capabilities/security/random.md), [conformance](../../02-capabilities/security/conformance.md), [ADR-0161](../../adr/0161-random-output-tests-do-not-certify-unpredictability.md) | Resolved | Treat statistics only as bounded investigation triggers; retain no output-derived artifacts and bind claims to exact provider/module/configuration/lifecycle evidence. |
 | CL-024 | A0–A3 attenuation labels cannot collapse multidimensional subset, native enforcement, isolation, aliases, bypasses, transfer, and revocation evidence into a scalar security score. | [Attenuation dossier](../../02-capabilities/security/attenuation-readiness-review.md), [attenuation](../../02-capabilities/security/attenuation.md), [restricted execution](../../02-capabilities/security/restricted-execution.md), [ADR-0162](../../adr/0162-attenuation-enforcement-is-a-scoped-claim-vector-not-a-security-score.md) | Resolved | Bind exact authority kinds, constraint dimensions, mechanisms, contexts, claim vectors, aliases/bypasses, lifecycle, and consumer scope. |
+| CL-025 | Documentation-directory boundaries cannot silently define maturity, ownership, compatibility, release, or implementation boundaries for composite domains. | [Promotion-unit model](promotion-unit-model.md), [security registry](../../02-capabilities/security/promotion-units.md), [promotion decisions](promotion-decisions.md), [ADR-0163](../../adr/0163-maturity-promotion-units-follow-evidence-boundaries-not-directory-layout.md) | Resolved | Govern stable units by evidence/ownership/risk; keep shared evidence scoped and filesystem/crate/repository/package topology separate. |
 
 ## Finding rules
 

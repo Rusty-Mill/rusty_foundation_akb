@@ -59,6 +59,8 @@ flowchart TD
 
 ## Documents
 
+- [Governed security promotion units](promotion-units.md)
+
 - [Authority model](authority-model.md)
 - [`rm.security.attenuate`](attenuation.md)
 - [Authority-attenuation capability readiness dossier](attenuation-readiness-review.md)

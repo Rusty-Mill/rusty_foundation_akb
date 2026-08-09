@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.90.0
+**Version:** 1.91.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -647,3 +647,9 @@ This is capability-level evidence inside a composite security domain. It cannot 
 The [`rm.security.attenuate` capability dossier](../02-capabilities/security/attenuation-readiness-review.md) closes planned traceability, dependency/service composition, source freshness, quality review, ownership, bounded-trial, conformance, and benchmark evidence for multidimensional subset derivation. A0–A3 remain summaries of scoped claim vectors, not scalar security scores or substitutes for exact mechanisms, aliases, bypass assumptions, deployment context, transfer, and revocation evidence ([ADR-0162](../adr/0162-attenuation-enforcement-is-a-scoped-claim-vector-not-a-security-score.md)). Restricted execution separately composes and verifies controls before child code.
 
 This capability dossier cannot promote the composite security domain. `rm.security.attenuate` and security remain Draft; no native authority kind, policy language, sandbox, revocation mechanism, public API, trial, performance budget, or implementation is authorized.
+
+## 27. Governed promotion units
+
+Maturity subjects follow coherent ownership, evidence, compatibility, risk, and release boundaries rather than filesystem layout ([ADR-0163](../adr/0163-maturity-promotion-units-follow-evidence-boundaries-not-directory-layout.md)). Composite documentation directories publish stable [promotion-unit registries](../04-ecosystem/consistency-readiness/promotion-unit-model.md). Shared evidence is proposition-scoped; one unit cannot inherit another unit's maturity, waiver, provider result, or release claim. Unit partitioning does not select directories, crates, repositories, packages, or implementation topology.
+
+The [security registry](../02-capabilities/security/promotion-units.md) defines seven Draft units: authority, restricted execution, secure randomness, secret protection, cryptography/key management, PKI validation, and certificate issuance. Existing secure-random and attenuation dossiers provide evidence within two units but do not change maturity or authorize trials/code.

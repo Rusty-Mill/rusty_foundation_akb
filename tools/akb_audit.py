@@ -35,6 +35,10 @@ BENCHMARK_ROW_RE = re.compile(
     r"^\| `(?P<id>rm\.benchmark\.[a-z0-9.-]+@\d+)` \| (?P<requirements>(?:`RM-[A-Z0-9-]+`(?:, )?)+) \|",
     re.MULTILINE,
 )
+PROMOTION_UNIT_ROW_RE = re.compile(
+    r"^\| `(?P<id>rm\.promotion\.[a-z0-9.-]+)` \| (?P<maturity>Draft|Experimental|Stable) \| (?P<owner>[^|]+) \| \[(?P<label>[^]]+)\]\((?P<source>[^)]+)\) \|",
+    re.MULTILINE,
+)
 
 
 @dataclass(frozen=True)
@@ -421,6 +425,28 @@ def inspect(root: Path) -> tuple[dict[str, object], list[Finding]]:
         if any(visit(node) for node in sorted(node_ids)):
             findings.append(Finding("error", "graph-requires-acyclic", relative(graph_source, root), "required dependency cycle"))
 
+    promotion_units: list[dict[str, str]] = []
+    promotion_unit_ids: set[str] = set()
+    for unit_source in sorted(capability_root.rglob("promotion-units.md")):
+        unit_text = unit_source.read_text(encoding="utf-8")
+        for match in PROMOTION_UNIT_ROW_RE.finditer(unit_text):
+            unit_id = match.group("id")
+            if unit_id in promotion_unit_ids:
+                findings.append(Finding("error", "promotion-unit-unique", relative(unit_source, root), f"duplicate promotion unit {unit_id}"))
+            promotion_unit_ids.add(unit_id)
+            primary = unit_source.parent / match.group("source")
+            if not primary.exists():
+                findings.append(Finding("error", "promotion-unit-source-exists", relative(unit_source, root), f"missing primary source {match.group('source')}"))
+            promotion_units.append(
+                {
+                    "id": unit_id,
+                    "maturity": match.group("maturity"),
+                    "owner": match.group("owner").strip(),
+                    "primary_source": relative(primary, root) if primary.exists() else match.group("source"),
+                    "registry": relative(unit_source, root),
+                }
+            )
+
     findings.sort(key=lambda item: (item.severity, item.rule, item.source, item.detail))
     reviewed_source_urls: set[str] = set()
     for domain in domains:
@@ -450,6 +476,8 @@ def inspect(root: Path) -> tuple[dict[str, object], list[Finding]]:
             "internal_links": internal_links,
             "requirements": len(requirements),
             "domains": len(domains),
+            "promotion_units": len(promotion_units),
+            "draft_promotion_units": sum(item["maturity"] == "Draft" for item in promotion_units),
             "adrs": len(adr_files),
             "errors": sum(item.severity == "error" for item in findings),
             "warnings": sum(item.severity == "warning" for item in findings),
@@ -476,6 +504,7 @@ def inspect(root: Path) -> tuple[dict[str, object], list[Finding]]:
             "required_graph_acyclic": not any(item.rule == "graph-requires-acyclic" for item in findings),
         },
         "domains": domains,
+        "promotion_units": promotion_units,
         "assertions": assertions,
         "benchmark_scenarios": benchmark_scenarios,
         "external_sources": external_sources,
@@ -515,6 +544,7 @@ This report is deterministic and contains no claim that file presence proves sem
 | Resolved internal links | {summary['internal_links']:,} |
 | Unique normative requirements | {summary['requirements']:,} |
 | Capability domains | {summary['domains']:,} |
+| Governed subdomain promotion units | {summary['promotion_units']:,} ({summary['draft_promotion_units']:,} Draft) |
 | Indexed ADRs | {summary['adrs']:,} |
 | External source URLs inventoried | {summary['external_sources']:,} |
 | External URLs with schema-valid domain review | {summary['external_sources_with_review_record']:,} |

@@ -38,6 +38,7 @@ flowchart TD
 - [Domain promotion decision model](promotion-decisions.md)
 - [Generated domain promotion scorecards](promotion-scorecards.md)
 - [Domain readiness review schema](domain-readiness-schema.md) and [template](domain-readiness-template.md)
+- [Governed promotion-unit model](promotion-unit-model.md)
 - [Benchmark scenario and run traceability](benchmark-traceability.md)
 - [Normative-source freshness and cross-cutting coverage](source-freshness.md)
 - [Generated cross-cutting quality matrix](quality-matrix.md)

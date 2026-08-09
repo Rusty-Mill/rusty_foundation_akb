@@ -4,11 +4,13 @@
   "authority": "docs/01-architecture/architecture-model.md",
   "generated_from": "Markdown; this index is derived and non-authoritative",
   "summary": {
-    "markdown_documents": 1159,
-    "internal_links": 2312,
-    "requirements": 5374,
+    "markdown_documents": 1162,
+    "internal_links": 2340,
+    "requirements": 5382,
     "domains": 62,
-    "adrs": 162,
+    "promotion_units": 7,
+    "draft_promotion_units": 7,
+    "adrs": 163,
     "errors": 0,
     "warnings": 0,
     "domains_with_conformance": 62,
@@ -1832,8 +1834,8 @@
       "id": "security",
       "source": "docs/02-capabilities/security/README.md",
       "status": "Draft domain analysis",
-      "requirements": 298,
-      "capability_requirements": 288,
+      "requirements": 301,
+      "capability_requirements": 291,
       "conformance_requirements": 0,
       "benchmark_requirements": 10,
       "mapped_benchmark_requirements": 0,
@@ -2259,6 +2261,57 @@
         "owner_review": "unknown",
         "experimental_eligible": "no"
       }
+    }
+  ],
+  "promotion_units": [
+    {
+      "id": "rm.promotion.security.authority",
+      "maturity": "Draft",
+      "owner": "Authority semantics owner",
+      "primary_source": "docs/02-capabilities/security/authority-model.md",
+      "registry": "docs/02-capabilities/security/promotion-units.md"
+    },
+    {
+      "id": "rm.promotion.security.restricted-execution",
+      "maturity": "Draft",
+      "owner": "Restricted-execution owner",
+      "primary_source": "docs/02-capabilities/security/restricted-execution.md",
+      "registry": "docs/02-capabilities/security/promotion-units.md"
+    },
+    {
+      "id": "rm.promotion.security.random",
+      "maturity": "Draft",
+      "owner": "Secure-random capability owner",
+      "primary_source": "docs/02-capabilities/security/random.md",
+      "registry": "docs/02-capabilities/security/promotion-units.md"
+    },
+    {
+      "id": "rm.promotion.security.secrets",
+      "maturity": "Draft",
+      "owner": "Secret-protection owner",
+      "primary_source": "docs/02-capabilities/security/secret-store.md",
+      "registry": "docs/02-capabilities/security/promotion-units.md"
+    },
+    {
+      "id": "rm.promotion.security.cryptography",
+      "maturity": "Draft",
+      "owner": "Cryptography and key-management owner",
+      "primary_source": "docs/02-capabilities/security/crypto-README.md",
+      "registry": "docs/02-capabilities/security/promotion-units.md"
+    },
+    {
+      "id": "rm.promotion.security.pki-validation",
+      "maturity": "Draft",
+      "owner": "PKI validation owner",
+      "primary_source": "docs/02-capabilities/security/pki-README.md",
+      "registry": "docs/02-capabilities/security/promotion-units.md"
+    },
+    {
+      "id": "rm.promotion.security.pki-issuance",
+      "maturity": "Draft",
+      "owner": "Certificate issuance owner",
+      "primary_source": "docs/02-capabilities/security/pki-issuance-README.md",
+      "registry": "docs/02-capabilities/security/promotion-units.md"
     }
   ],
   "assertions": [
@@ -43930,6 +43983,30 @@
       "assertions": []
     },
     {
+      "id": "RM-SECURITY-UNIT-0001",
+      "source": "docs/02-capabilities/security/promotion-units.md",
+      "line": 49,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-UNIT-0002",
+      "source": "docs/02-capabilities/security/promotion-units.md",
+      "line": 51,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-UNIT-0003",
+      "source": "docs/02-capabilities/security/promotion-units.md",
+      "line": 53,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
       "id": "RM-SECURITY-RANDOM-QUALITY-0001",
       "source": "docs/02-capabilities/security/random-cross-cutting-review.md",
       "line": 20,
@@ -50466,28 +50543,28 @@
     {
       "id": "RM-READINESS-CONTRADICTION-0001",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 37,
+      "line": 38,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0002",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 39,
+      "line": 40,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0003",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 41,
+      "line": 42,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0004",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 43,
+      "line": 44,
       "kind": "governance",
       "domain": null
     },
@@ -50698,6 +50775,41 @@
       "id": "RM-READINESS-SCORECARD-0005",
       "source": "docs/04-ecosystem/consistency-readiness/promotion-decisions.md",
       "line": 42,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-READINESS-UNIT-0001",
+      "source": "docs/04-ecosystem/consistency-readiness/promotion-unit-model.md",
+      "line": 49,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-READINESS-UNIT-0002",
+      "source": "docs/04-ecosystem/consistency-readiness/promotion-unit-model.md",
+      "line": 51,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-READINESS-UNIT-0003",
+      "source": "docs/04-ecosystem/consistency-readiness/promotion-unit-model.md",
+      "line": 53,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-READINESS-UNIT-0004",
+      "source": "docs/04-ecosystem/consistency-readiness/promotion-unit-model.md",
+      "line": 55,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-READINESS-UNIT-0005",
+      "source": "docs/04-ecosystem/consistency-readiness/promotion-unit-model.md",
+      "line": 57,
       "kind": "governance",
       "domain": null
     },
@@ -52477,8 +52589,8 @@
     },
     {
       "source": "docs/01-architecture/architecture-model.md",
-      "sha256": "6f290cfb27cbb633740b68bec300b85ff077504a3af44b26e9d87708ed6c47fd",
-      "lines": 649
+      "sha256": "3ebdce4053725a70674299952c6f824dd61f28a1e7761bb341d5889451b22ee0",
+      "lines": 655
     },
     {
       "source": "docs/01-architecture/behavioral-contracts.md",
@@ -56311,6 +56423,11 @@
       "lines": 38
     },
     {
+      "source": "docs/02-capabilities/security/promotion-units.md",
+      "sha256": "0ff97be046a27b6d86275b7e1740d03e1744ed68c1f3d5046504300ce6858e9b",
+      "lines": 53
+    },
+    {
       "source": "docs/02-capabilities/security/random-cross-cutting-review.md",
       "sha256": "109268bc88f8e265fdf78db231e93deb9a82d66d59357ca86653dfa2e71e2ffe",
       "lines": 24
@@ -56347,8 +56464,8 @@
     },
     {
       "source": "docs/02-capabilities/security/README.md",
-      "sha256": "73bfba1b2f3bfbed9b6db53f90a3cbbe5a5198a68149882ac2f69930b8806787",
-      "lines": 114
+      "sha256": "7ca1c5aca4990e7173626940d5467517dbd3dd45253b8a2892d20a26b52ced18",
+      "lines": 116
     },
     {
       "source": "docs/02-capabilities/security/restricted-execution.md",
@@ -57112,8 +57229,8 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/audit-report.md",
-      "sha256": "9c0dca1db318be2f850de2468458171a0217b3406fb34ba4e4624c81bdb8f066",
-      "lines": 68
+      "sha256": "746475df7eb1a8faeebe9e286f3c3ead24a6f58cc0455c96e3c45789476baea4",
+      "lines": 69
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/audit-rules.md",
@@ -57127,13 +57244,13 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/closure-backlog.md",
-      "sha256": "7e7929c8d6688919452ca24fdec64c996c2a3a7b33ffe77ccc801378c5beabc9",
-      "lines": 21
+      "sha256": "4466b4a3ef5086264ead3f9e5a2f1a29fe650d927747c738ee3a638695605fbc",
+      "lines": 23
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "sha256": "d47374a145fbe982c9ec86650c7ba99feba63ea3de6c021019c1b80b454e02e5",
-      "lines": 43
+      "sha256": "a001fb2878c11fc4d9130a2c98433877ca3a59d4ed2af7580eaa4af11e074049",
+      "lines": 44
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/dependency-graph.md",
@@ -57176,14 +57293,19 @@
       "lines": 78
     },
     {
+      "source": "docs/04-ecosystem/consistency-readiness/promotion-unit-model.md",
+      "sha256": "ae16897eb30a285073411fec855b692e5075b4c76a40bfb47ff5624342277506",
+      "lines": 57
+    },
+    {
       "source": "docs/04-ecosystem/consistency-readiness/quality-matrix.md",
       "sha256": "e790cdeafcb26ac548bea75ad541b132af86a3ff27f08e4b553f8f902226a8d8",
       "lines": 73
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/README.md",
-      "sha256": "4fe9bf9c2cc59ffcaaad060d92cecc9a2d7af7a1bf9c7cce9f08be4d114785c7",
-      "lines": 54
+      "sha256": "c7b14d3c9c2c31be8a7aeab2f222a17f95ec8eae36242d81df24821cfa1df7d4",
+      "lines": 55
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/source-freshness.md",
@@ -57417,8 +57539,8 @@
     },
     {
       "source": "docs/06-roadmap/roadmap.md",
-      "sha256": "a0320f6659536cc9b9365f1aa381ce0a9e835dae7eeaa131d58beb62b4855467",
-      "lines": 253
+      "sha256": "bcd6a6be4695602e70a525473475c00342203ab597397c6a910b510bb1e9d3a7",
+      "lines": 257
     },
     {
       "source": "docs/adr/0001-capability-first-platform.md",
@@ -58231,9 +58353,14 @@
       "lines": 32
     },
     {
+      "source": "docs/adr/0163-maturity-promotion-units-follow-evidence-boundaries-not-directory-layout.md",
+      "sha256": "1141524de0c502a3d7bd81d87b22c8ada54d87dcd73dbba87b995158380a1758",
+      "lines": 35
+    },
+    {
       "source": "docs/adr/README.md",
-      "sha256": "0aa1822eab729dfa731b9b84a5af9fe11df357fe507ab273835f8bbb50f49751",
-      "lines": 168
+      "sha256": "5407e4dd4be94454369784939a8f17d30947499d329745b80afc29cfba5f89ef",
+      "lines": 169
     },
     {
       "source": "docs/README.md",
