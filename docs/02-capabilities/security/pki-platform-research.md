@@ -10,6 +10,7 @@
 
 - [RFC 5280: Internet X.509 PKI Certificate and CRL Profile](https://www.rfc-editor.org/rfc/rfc5280)
 - [RFC 6960: Online Certificate Status Protocol](https://www.rfc-editor.org/rfc/rfc6960)
+- [RFC 9525: Service Identity in TLS](https://www.rfc-editor.org/rfc/rfc9525)
 - [Microsoft: CertGetCertificateChain](https://learn.microsoft.com/en-us/windows/win32/api/wincrypt/nf-wincrypt-certgetcertificatechain)
 - [Microsoft: CertVerifyCertificateChainPolicy](https://learn.microsoft.com/en-us/windows/win32/api/wincrypt/nf-wincrypt-certverifycertificatechainpolicy)
 - [p11-kit trust policy module](https://p11-glue.github.io/p11-glue/p11-kit/manual/trust-module.html)

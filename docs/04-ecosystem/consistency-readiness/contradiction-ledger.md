@@ -1,7 +1,7 @@
 # Cross-domain contradiction ledger
 
 **Status:** Active reviewed evidence  
-**Scope:** Architecture model 1.94.0; schema-validated reviews, batch integration, capability dossiers, and governed security promotion units
+**Scope:** Architecture model 1.95.0; schema-validated reviews, batch integration, capability dossiers, and governed security promotion units
 
 The ledger records proposition-level review. “No contradiction found” is bounded to named sources and rules; it is not a repository-wide proof.
 
@@ -35,6 +35,7 @@ The ledger records proposition-level review. “No contradiction found” is bou
 | CL-026 | Restricted execution cannot both require verified controls before child code and allow a provider to discover or silently apply weaker fallback after release. | [Restricted execution](../../02-capabilities/security/restricted-execution.md), [composition](../../02-capabilities/security/restricted-execution-dependencies.md), [dossier](../../02-capabilities/security/restricted-execution-readiness-review.md) | Resolved | Resolve required controls and any explicitly permitted degraded plan before release; otherwise fail and reconcile without application-controlled execution. |
 | CL-027 | A secret-store delete cannot simultaneously mean loss of application visibility and verified removal from provider garbage collection, replicas, backups, restored state, and physical media. | [Secret store](../../02-capabilities/security/secret-store.md), [protection model](../../02-capabilities/security/secret-protection-model.md), [secret dossier](../../02-capabilities/security/secret-readiness-review.md), [ADR-0012](../../adr/0012-secret-protection-is-a-vector.md) | Resolved | Report each deletion/replication/erasure boundary independently with residuals and evidence; never infer stronger erasure from operation acceptance. |
 | CL-028 | A versioned cryptographic plan cannot fix exact security semantics while a provider default, installed catalog, hardware label, or “best available” choice is allowed to substitute algorithms, parameters, encodings, protection, or operating mode. | [Crypto policy](../../02-capabilities/security/crypto-policy.md), [composition](../../02-capabilities/security/crypto-dependencies.md), [dossier](../../02-capabilities/security/crypto-readiness-review.md), [ADR-0081](../../adr/0081-cryptographic-policy-precedes-provider-selection.md) | Resolved | Resolve an immutable exact plan before provider activation/key creation/use; mismatch or unknown fails, while any transition is a new versioned policy and compatibility workflow. |
+| CL-029 | A PKI result cannot be portable and reproducible if `trusted` discards the selected path/anchor, purpose/identity/time, trust and algorithm generations, status/network/cache evidence, overrides, warnings, unknowns, expiry, and dependencies. | [Results/lifecycle](../../02-capabilities/security/pki-results-lifecycle.md), [PKI dossier](../../02-capabilities/security/pki-validation-readiness-review.md), [ADR-0083](../../adr/0083-trust-results-are-context-bound-evidence-not-identity-or-authority.md) | Resolved | Preserve immutable context-bound evidence; treat a boolean as a lossy projection and require consumer proof-of-possession plus domain authorization separately. |
 
 ## Finding rules
 

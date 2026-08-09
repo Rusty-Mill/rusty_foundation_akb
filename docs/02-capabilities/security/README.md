@@ -119,6 +119,12 @@ flowchart TD
 - [Cryptographic conformance](crypto-conformance.md)
 - [Cryptographic benchmarks](crypto-benchmarks.md)
 - [Certificate, trust-store, and PKI-validation foundations](pki-README.md)
+- [PKI-validation promotion-unit readiness dossier](pki-validation-readiness-review.md)
+- [PKI-validation assertion and benchmark traceability](pki-validation-traceability.md)
+- [PKI-validation dependency and profile composition](pki-validation-dependencies.md)
+- [PKI-validation cross-cutting review](pki-validation-cross-cutting-review.md)
+- [PKI-validation source review](pki-validation-source-review.md)
+- [PKI-validation ownership and bounded trial plan](pki-validation-ownership.md)
 - [Certificate parsing and evidence](pki-certificates.md)
 - [Trust stores, anchors, and distrust](pki-trust-stores.md)
 - [Path construction](pki-path-construction.md)
@@ -131,4 +137,4 @@ flowchart TD
 - [PKI conformance](pki-conformance.md)
 - [PKI benchmarks](pki-benchmarks.md)
 
-The secure-random, restricted-execution, secret-protection, and cryptography/key-management dossiers are promotion-unit-scoped. None constitutes a security-domain promotion review: authority, PKI validation, and PKI issuance retain independent incomplete readiness evidence, and all units remain Draft.
+The secure-random, restricted-execution, secret-protection, cryptography/key-management, and PKI-validation dossiers are promotion-unit-scoped. None constitutes a security-domain promotion review: authority and PKI issuance retain independent incomplete readiness evidence, and all units remain Draft.

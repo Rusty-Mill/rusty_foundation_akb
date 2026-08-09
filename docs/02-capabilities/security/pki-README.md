@@ -41,5 +41,11 @@ flowchart LR
 - [Platform research](pki-platform-research.md)
 - [Conformance](pki-conformance.md)
 - [Benchmarks](pki-benchmarks.md)
+- [Promotion-unit readiness dossier](pki-validation-readiness-review.md)
+- [Assertion and benchmark traceability](pki-validation-traceability.md)
+- [Dependency and profile composition](pki-validation-dependencies.md)
+- [Cross-cutting review](pki-validation-cross-cutting-review.md)
+- [Source review](pki-validation-source-review.md)
+- [Ownership and bounded trial plan](pki-validation-ownership.md)
 
 Issuance, enrollment, renewal, rekey, revocation requests, and CA operation are specified separately in the [certificate issuance and CA-lifecycle foundation](pki-issuance-README.md). Validation consumes their outputs but does not authorize or perform issuance.

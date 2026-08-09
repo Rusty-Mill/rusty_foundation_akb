@@ -4,14 +4,14 @@
   "authority": "docs/01-architecture/architecture-model.md",
   "generated_from": "Markdown; this index is derived and non-authoritative",
   "summary": {
-    "markdown_documents": 1180,
-    "internal_links": 2448,
-    "requirements": 5468,
+    "markdown_documents": 1186,
+    "internal_links": 2488,
+    "requirements": 5498,
     "domains": 62,
     "promotion_units": 7,
     "draft_promotion_units": 7,
-    "promotion_units_with_readiness_dossier": 4,
-    "promotion_units_with_schema_valid_readiness_dossier": 4,
+    "promotion_units_with_readiness_dossier": 5,
+    "promotion_units_with_schema_valid_readiness_dossier": 5,
     "adrs": 163,
     "errors": 0,
     "warnings": 0,
@@ -20,7 +20,7 @@
     "domains_with_direct_requirement_assertion_map": 9,
     "domains_with_direct_benchmark_scenario_map": 9,
     "benchmark_scenarios": 62,
-    "external_sources": 654,
+    "external_sources": 655,
     "external_sources_with_review_record": 74,
     "domains_with_dedicated_cross_cutting_analysis": 31,
     "domains_with_complete_planned_traceability": 9,
@@ -1836,8 +1836,8 @@
       "id": "security",
       "source": "docs/02-capabilities/security/README.md",
       "status": "Draft domain analysis",
-      "requirements": 387,
-      "capability_requirements": 367,
+      "requirements": 417,
+      "capability_requirements": 397,
       "conformance_requirements": 0,
       "benchmark_requirements": 20,
       "mapped_benchmark_requirements": 0,
@@ -2316,8 +2316,8 @@
       "maturity": "Draft",
       "owner": "PKI validation owner",
       "primary_source": "docs/02-capabilities/security/pki-README.md",
-      "readiness_dossier": null,
-      "readiness_dossier_schema_valid": false,
+      "readiness_dossier": "docs/02-capabilities/security/pki-validation-readiness-review.md",
+      "readiness_dossier_schema_valid": true,
       "registry": "docs/02-capabilities/security/promotion-units.md"
     },
     {
@@ -4516,7 +4516,8 @@
       "url": "https://developer.apple.com/documentation/security/sectrustevaluatewitherror(_:_:",
       "host": "developer.apple.com",
       "sources": [
-        "docs/02-capabilities/security/pki-platform-research.md"
+        "docs/02-capabilities/security/pki-platform-research.md",
+        "docs/02-capabilities/security/pki-validation-source-review.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -4524,7 +4525,8 @@
       "url": "https://developer.apple.com/documentation/security/trust",
       "host": "developer.apple.com",
       "sources": [
-        "docs/02-capabilities/security/pki-platform-research.md"
+        "docs/02-capabilities/security/pki-platform-research.md",
+        "docs/02-capabilities/security/pki-validation-source-review.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -6022,7 +6024,8 @@
       "url": "https://learn.microsoft.com/en-us/windows/win32/api/wincrypt/nf-wincrypt-certgetcertificatechain",
       "host": "learn.microsoft.com",
       "sources": [
-        "docs/02-capabilities/security/pki-platform-research.md"
+        "docs/02-capabilities/security/pki-platform-research.md",
+        "docs/02-capabilities/security/pki-validation-source-review.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -6030,7 +6033,8 @@
       "url": "https://learn.microsoft.com/en-us/windows/win32/api/wincrypt/nf-wincrypt-certverifycertificatechainpolicy",
       "host": "learn.microsoft.com",
       "sources": [
-        "docs/02-capabilities/security/pki-platform-research.md"
+        "docs/02-capabilities/security/pki-platform-research.md",
+        "docs/02-capabilities/security/pki-validation-source-review.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -7403,7 +7407,8 @@
       "url": "https://p11-glue.github.io/p11-glue/p11-kit/manual/trust-module.html",
       "host": "p11-glue.github.io",
       "sources": [
-        "docs/02-capabilities/security/pki-platform-research.md"
+        "docs/02-capabilities/security/pki-platform-research.md",
+        "docs/02-capabilities/security/pki-validation-source-review.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -7411,7 +7416,8 @@
       "url": "https://p11-glue.github.io/p11-glue/p11-kit/manual/trust.html",
       "host": "p11-glue.github.io",
       "sources": [
-        "docs/02-capabilities/security/pki-platform-research.md"
+        "docs/02-capabilities/security/pki-platform-research.md",
+        "docs/02-capabilities/security/pki-validation-source-review.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -8348,7 +8354,8 @@
       "url": "https://www.rfc-editor.org/rfc/rfc5280",
       "host": "www.rfc-editor.org",
       "sources": [
-        "docs/02-capabilities/security/pki-platform-research.md"
+        "docs/02-capabilities/security/pki-platform-research.md",
+        "docs/02-capabilities/security/pki-validation-source-review.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -8412,7 +8419,8 @@
       "url": "https://www.rfc-editor.org/rfc/rfc6960",
       "host": "www.rfc-editor.org",
       "sources": [
-        "docs/02-capabilities/security/pki-platform-research.md"
+        "docs/02-capabilities/security/pki-platform-research.md",
+        "docs/02-capabilities/security/pki-validation-source-review.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -8711,6 +8719,15 @@
       "host": "www.rfc-editor.org",
       "sources": [
         "docs/02-capabilities/security/pki-issuance-platform-research.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9525",
+      "host": "www.rfc-editor.org",
+      "sources": [
+        "docs/02-capabilities/security/pki-platform-research.md",
+        "docs/02-capabilities/security/pki-validation-source-review.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -43345,6 +43362,54 @@
       "assertions": []
     },
     {
+      "id": "RM-PKI-BENCH-0001",
+      "source": "docs/02-capabilities/security/pki-benchmarks.md",
+      "line": 16,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-BENCH-0002",
+      "source": "docs/02-capabilities/security/pki-benchmarks.md",
+      "line": 18,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-BENCH-0003",
+      "source": "docs/02-capabilities/security/pki-benchmarks.md",
+      "line": 20,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-BENCH-0004",
+      "source": "docs/02-capabilities/security/pki-benchmarks.md",
+      "line": 22,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-BENCH-0005",
+      "source": "docs/02-capabilities/security/pki-benchmarks.md",
+      "line": 24,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-BENCH-0006",
+      "source": "docs/02-capabilities/security/pki-benchmarks.md",
+      "line": 26,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
       "id": "RM-PKI-CERT-0001",
       "source": "docs/02-capabilities/security/pki-certificates.md",
       "line": 5,
@@ -44460,6 +44525,198 @@
       "id": "RM-PKI-TRUST-0007",
       "source": "docs/02-capabilities/security/pki-trust-stores.md",
       "line": 17,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-QUALITY-0001",
+      "source": "docs/02-capabilities/security/pki-validation-cross-cutting-review.md",
+      "line": 20,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-QUALITY-0002",
+      "source": "docs/02-capabilities/security/pki-validation-cross-cutting-review.md",
+      "line": 22,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-QUALITY-0003",
+      "source": "docs/02-capabilities/security/pki-validation-cross-cutting-review.md",
+      "line": 24,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-QUALITY-0004",
+      "source": "docs/02-capabilities/security/pki-validation-cross-cutting-review.md",
+      "line": 26,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-DEPENDENCY-0001",
+      "source": "docs/02-capabilities/security/pki-validation-dependencies.md",
+      "line": 33,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-DEPENDENCY-0002",
+      "source": "docs/02-capabilities/security/pki-validation-dependencies.md",
+      "line": 35,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-DEPENDENCY-0003",
+      "source": "docs/02-capabilities/security/pki-validation-dependencies.md",
+      "line": 37,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-DEPENDENCY-0004",
+      "source": "docs/02-capabilities/security/pki-validation-dependencies.md",
+      "line": 39,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-DEPENDENCY-0005",
+      "source": "docs/02-capabilities/security/pki-validation-dependencies.md",
+      "line": 41,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-OWNER-0001",
+      "source": "docs/02-capabilities/security/pki-validation-ownership.md",
+      "line": 26,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-OWNER-0002",
+      "source": "docs/02-capabilities/security/pki-validation-ownership.md",
+      "line": 28,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-OWNER-0003",
+      "source": "docs/02-capabilities/security/pki-validation-ownership.md",
+      "line": 30,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-OWNER-0004",
+      "source": "docs/02-capabilities/security/pki-validation-ownership.md",
+      "line": 32,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-READINESS-0001",
+      "source": "docs/02-capabilities/security/pki-validation-readiness-review.md",
+      "line": 24,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-READINESS-0002",
+      "source": "docs/02-capabilities/security/pki-validation-readiness-review.md",
+      "line": 26,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-READINESS-0003",
+      "source": "docs/02-capabilities/security/pki-validation-readiness-review.md",
+      "line": 28,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-SOURCE-0001",
+      "source": "docs/02-capabilities/security/pki-validation-source-review.md",
+      "line": 20,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-SOURCE-0002",
+      "source": "docs/02-capabilities/security/pki-validation-source-review.md",
+      "line": 22,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-SOURCE-0003",
+      "source": "docs/02-capabilities/security/pki-validation-source-review.md",
+      "line": 24,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-SOURCE-0004",
+      "source": "docs/02-capabilities/security/pki-validation-source-review.md",
+      "line": 26,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-SOURCE-0005",
+      "source": "docs/02-capabilities/security/pki-validation-source-review.md",
+      "line": 28,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-TRACE-0001",
+      "source": "docs/02-capabilities/security/pki-validation-traceability.md",
+      "line": 36,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-TRACE-0002",
+      "source": "docs/02-capabilities/security/pki-validation-traceability.md",
+      "line": 38,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-TRACE-0003",
+      "source": "docs/02-capabilities/security/pki-validation-traceability.md",
+      "line": 40,
       "kind": "capability",
       "domain": "security",
       "assertions": []
@@ -51393,28 +51650,28 @@
     {
       "id": "RM-READINESS-CONTRADICTION-0001",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 41,
+      "line": 42,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0002",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 43,
+      "line": 44,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0003",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 45,
+      "line": 46,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0004",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 47,
+      "line": 48,
       "kind": "governance",
       "domain": null
     },
@@ -53439,8 +53696,8 @@
     },
     {
       "source": "docs/01-architecture/architecture-model.md",
-      "sha256": "4d90c57bf8ada18ed68583ab53b6bafea15228ffa3ba5046ddc8d35b22509142",
-      "lines": 661
+      "sha256": "96c7ece578d6c41dd9bc7cc829472d0b558aabd9095be651f5aa4dff71b57924",
+      "lines": 663
     },
     {
       "source": "docs/01-architecture/behavioral-contracts.md",
@@ -57174,8 +57431,8 @@
     },
     {
       "source": "docs/02-capabilities/security/pki-benchmarks.md",
-      "sha256": "0163b43eaebb2515977885e668d09491c772d060116f87949ea09105e3bfdc2f",
-      "lines": 14
+      "sha256": "c2628ef1d927fba3070b4cfc90637a44ce8a1370864834cf4e45763e53650057",
+      "lines": 28
     },
     {
       "source": "docs/02-capabilities/security/pki-certificates.md",
@@ -57269,13 +57526,13 @@
     },
     {
       "source": "docs/02-capabilities/security/pki-platform-research.md",
-      "sha256": "74708edbe70659d23876d7237bed9092aceb18852377c9736110cbbdd95ff96e",
-      "lines": 25
+      "sha256": "da6d0f90904ff86111e81429638abcd0f9f785f0f88b8f46068334daf33ad1b6",
+      "lines": 26
     },
     {
       "source": "docs/02-capabilities/security/pki-README.md",
-      "sha256": "e6357ee553644d41d4f29c5740fdad0ef6d63e58249e404ade4c61fb073faa61",
-      "lines": 45
+      "sha256": "2fa1f1ab17d8aa07204410f150c88549e9a441f08e5c2d8a7db9fd2eca05c482",
+      "lines": 51
     },
     {
       "source": "docs/02-capabilities/security/pki-results-lifecycle.md",
@@ -57293,6 +57550,36 @@
       "lines": 17
     },
     {
+      "source": "docs/02-capabilities/security/pki-validation-cross-cutting-review.md",
+      "sha256": "ffd25fab02f09ed04cbbdc0d7f8213737196e21c87eee8586e708d5ef7e2d49c",
+      "lines": 26
+    },
+    {
+      "source": "docs/02-capabilities/security/pki-validation-dependencies.md",
+      "sha256": "5ade1dfb21ade39b4bfc70a7d703f55f2677ef3c9c9e849519fbf2db3c531f5e",
+      "lines": 41
+    },
+    {
+      "source": "docs/02-capabilities/security/pki-validation-ownership.md",
+      "sha256": "a7b371c8686036bd377e5184b7858df390dc7a64bb09f498191af0a547574fed",
+      "lines": 32
+    },
+    {
+      "source": "docs/02-capabilities/security/pki-validation-readiness-review.md",
+      "sha256": "403194b6f20779b1647783dc1862320e20edfabb4f109a4a69c531d4d2319673",
+      "lines": 28
+    },
+    {
+      "source": "docs/02-capabilities/security/pki-validation-source-review.md",
+      "sha256": "17428191bfd125e8f2ae92f488b14583c93c04f724caa8c966d85807b3e75bc3",
+      "lines": 28
+    },
+    {
+      "source": "docs/02-capabilities/security/pki-validation-traceability.md",
+      "sha256": "b8a8212b58bf66f5c1d606f59e60dfca45c9a411c91d95828fa6ef4a8f63ae4e",
+      "lines": 40
+    },
+    {
       "source": "docs/02-capabilities/security/platform-research.md",
       "sha256": "2fcb30fb8637177c55b9290e879afbb27d6e5aa68438a5d29ee65012753f4d12",
       "lines": 26
@@ -57304,7 +57591,7 @@
     },
     {
       "source": "docs/02-capabilities/security/promotion-units.md",
-      "sha256": "b319541d388193cc922c0ac0d37006465659b2fdadf9943d567caaeb1ac910e9",
+      "sha256": "1fb474217d7c3ff857e2c3542a0c29d4ccb4585eacd3bf1ee9b4720586f794aa",
       "lines": 53
     },
     {
@@ -57344,8 +57631,8 @@
     },
     {
       "source": "docs/02-capabilities/security/README.md",
-      "sha256": "9b08c1f43e844730d744f46fcca11805bbf2e87110e8c371d97df008214e65fc",
-      "lines": 134
+      "sha256": "a2da8c81bb9efd5de1c46babb0c46547ff23daf76a2c9e18460e67cb702994ba",
+      "lines": 140
     },
     {
       "source": "docs/02-capabilities/security/restricted-execution-cross-cutting-review.md",
@@ -58169,7 +58456,7 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/audit-report.md",
-      "sha256": "41c6493dd51cf46f97d6a1f491f00375bdb0aefd4f0d854e0db60438c4d63a2d",
+      "sha256": "82e3ad8d093ae53af3879dc77212c023a473bf06bb7fff8457cf3a0b46739bad",
       "lines": 71
     },
     {
@@ -58184,13 +58471,13 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/closure-backlog.md",
-      "sha256": "41494949a0e66b43484840021d895ae06c291ec292e1592981e5638fcf9863e4",
+      "sha256": "2fd4256afebb1ba68f0f1eda87f18c7bf83aa87ac48da47f17a95a00639c7ea6",
       "lines": 23
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "sha256": "a03e9d538345d3cdc9e5efe7d4501ea5bd5f00213c4d23b2863789ecf9b29603",
-      "lines": 47
+      "sha256": "8fbdd3f723ccfb1b1701d68346095e3594041469a56b730b6cc456957c2b192d",
+      "lines": 48
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/dependency-graph.md",
@@ -58479,8 +58766,8 @@
     },
     {
       "source": "docs/06-roadmap/roadmap.md",
-      "sha256": "9425d7e27e7d9c1218f87e1524febeabe548ace7002cad68b9d52f8a086a784f",
-      "lines": 269
+      "sha256": "4652b6a7763e16b74d5cef8082c6e4d69713d8b9002f3bc5b4b261c7b8ffe785",
+      "lines": 273
     },
     {
       "source": "docs/adr/0001-capability-first-platform.md",
