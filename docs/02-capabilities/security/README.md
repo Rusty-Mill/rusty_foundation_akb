@@ -151,3 +151,5 @@ flowchart TD
 - [PKI benchmarks](pki-benchmarks.md)
 
 All seven security promotion units now have schema-valid unit-scoped dossiers. This inventory is not a security-domain promotion review, does not establish semantic or provider equivalence, and does not authorize trials or implementation; every unit remains Draft.
+
+The [security-foundation batch integration review](../../04-ecosystem/consistency-readiness/security-batch-integration-review.md), [composed conformance specification](../../04-ecosystem/consistency-readiness/security-batch-conformance.md), and [composed benchmark specification](../../04-ecosystem/consistency-readiness/security-batch-benchmarks.md) verify their planned cross-unit boundaries. The batch review is compatibility evidence, not aggregate maturity or implementation authority.

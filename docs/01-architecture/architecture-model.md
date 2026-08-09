@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.97.0
+**Version:** 1.98.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -657,6 +657,8 @@ This capability dossier cannot promote the composite security domain. `rm.securi
 Maturity subjects follow coherent ownership, evidence, compatibility, risk, and release boundaries rather than filesystem layout ([ADR-0163](../adr/0163-maturity-promotion-units-follow-evidence-boundaries-not-directory-layout.md)). Composite documentation directories publish stable [promotion-unit registries](../04-ecosystem/consistency-readiness/promotion-unit-model.md). Shared evidence is proposition-scoped; one unit cannot inherit another unit's maturity, waiver, provider result, or release claim. Unit partitioning does not select directories, crates, repositories, packages, or implementation topology.
 
 The [security registry](../02-capabilities/security/promotion-units.md) defines seven Draft units: authority, restricted execution, secure randomness, secret protection, cryptography/key management, PKI validation, and certificate issuance. It links complete unit dossiers separately from primary specifications; the generated index verifies existence plus canonical status, exact subject, architecture frontier, and explicit implementation nonauthorization, but cannot infer semantic completeness or maturity. All seven units have schema-valid dossiers; attenuation remains separately reviewable capability evidence consumed inside the broader authority unit rather than an eighth maturity unit. No dossier changes maturity or authorizes trials/code.
+
+The [security-foundation batch integration review](../04-ecosystem/consistency-readiness/security-batch-integration-review.md) verifies architecture-definition compatibility across those seven units. It preserves identity/authority, selection/side-effect, randomness/purpose, secret/key, primitive/PKI, validation/issuance, cancellation/effect, generation/invalidation, failure, sync/async, observability, provider/certification, compatibility, and release boundaries. Shared providers, stores, keys, certificates, mechanisms, or certifications prove only named unit operations and contexts; they cannot transfer guarantees, maturity, waivers, or release status. Cross-unit conformance and benchmarks supplement rather than replace unit evidence. The batch Pass leaves all units Draft and authorizes neither trials nor implementation.
 
 Restricted execution is a verified pre-release composition, not a process-creation synonym or portable sandbox-strength label. Its immutable manifest resolves authority, inheritance, enforcement, degradation, readiness, supervision, and cleanup before application-controlled child code runs. Native creation, restriction application, verification, release, readiness, termination, reaping, and close are distinct evidence milestones. A permitted degradation is an explicitly authorized manifest outcome disclosed before release; provider fallback cannot silently weaken a prepared or running child.
 

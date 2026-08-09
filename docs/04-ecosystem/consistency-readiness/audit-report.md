@@ -11,9 +11,9 @@ This report is deterministic and contains no claim that file presence proves sem
 
 | Measure | Result |
 |---|---:|
-| Markdown documents | 1,198 |
-| Resolved internal links | 2,574 |
-| Unique normative requirements | 5,579 |
+| Markdown documents | 1,201 |
+| Resolved internal links | 2,599 |
+| Unique normative requirements | 5,599 |
 | Capability domains | 62 |
 | Governed subdomain promotion units | 7 (7 Draft) |
 | Promotion units with linked readiness dossier | 7 / 7 |

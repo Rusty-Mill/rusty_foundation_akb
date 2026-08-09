@@ -4,9 +4,9 @@
   "authority": "docs/01-architecture/architecture-model.md",
   "generated_from": "Markdown; this index is derived and non-authoritative",
   "summary": {
-    "markdown_documents": 1198,
-    "internal_links": 2574,
-    "requirements": 5579,
+    "markdown_documents": 1201,
+    "internal_links": 2599,
+    "requirements": 5599,
     "domains": 62,
     "promotion_units": 7,
     "draft_promotion_units": 7,
@@ -52415,28 +52415,28 @@
     {
       "id": "RM-READINESS-CONTRADICTION-0001",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 44,
+      "line": 45,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0002",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 46,
+      "line": 47,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0003",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 48,
+      "line": 49,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0004",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 50,
+      "line": 51,
       "kind": "governance",
       "domain": null
     },
@@ -52682,6 +52682,146 @@
       "id": "RM-READINESS-UNIT-0005",
       "source": "docs/04-ecosystem/consistency-readiness/promotion-unit-model.md",
       "line": 57,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-SECURITY-BATCH-BENCH-0001",
+      "source": "docs/04-ecosystem/consistency-readiness/security-batch-benchmarks.md",
+      "line": 21,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-SECURITY-BATCH-BENCH-0002",
+      "source": "docs/04-ecosystem/consistency-readiness/security-batch-benchmarks.md",
+      "line": 23,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-SECURITY-BATCH-BENCH-0003",
+      "source": "docs/04-ecosystem/consistency-readiness/security-batch-benchmarks.md",
+      "line": 25,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-SECURITY-BATCH-BENCH-0004",
+      "source": "docs/04-ecosystem/consistency-readiness/security-batch-benchmarks.md",
+      "line": 27,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-SECURITY-BATCH-BENCH-0005",
+      "source": "docs/04-ecosystem/consistency-readiness/security-batch-benchmarks.md",
+      "line": 29,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-SECURITY-BATCH-BENCH-0006",
+      "source": "docs/04-ecosystem/consistency-readiness/security-batch-benchmarks.md",
+      "line": 31,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-SECURITY-BATCH-CONFORMANCE-0001",
+      "source": "docs/04-ecosystem/consistency-readiness/security-batch-conformance.md",
+      "line": 26,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-SECURITY-BATCH-CONFORMANCE-0002",
+      "source": "docs/04-ecosystem/consistency-readiness/security-batch-conformance.md",
+      "line": 28,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-SECURITY-BATCH-CONFORMANCE-0003",
+      "source": "docs/04-ecosystem/consistency-readiness/security-batch-conformance.md",
+      "line": 30,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-SECURITY-BATCH-CONFORMANCE-0004",
+      "source": "docs/04-ecosystem/consistency-readiness/security-batch-conformance.md",
+      "line": 32,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-SECURITY-BATCH-CONFORMANCE-0005",
+      "source": "docs/04-ecosystem/consistency-readiness/security-batch-conformance.md",
+      "line": 34,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-SECURITY-BATCH-0001",
+      "source": "docs/04-ecosystem/consistency-readiness/security-batch-integration-review.md",
+      "line": 76,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-SECURITY-BATCH-0002",
+      "source": "docs/04-ecosystem/consistency-readiness/security-batch-integration-review.md",
+      "line": 78,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-SECURITY-BATCH-0003",
+      "source": "docs/04-ecosystem/consistency-readiness/security-batch-integration-review.md",
+      "line": 80,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-SECURITY-BATCH-0004",
+      "source": "docs/04-ecosystem/consistency-readiness/security-batch-integration-review.md",
+      "line": 82,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-SECURITY-BATCH-0005",
+      "source": "docs/04-ecosystem/consistency-readiness/security-batch-integration-review.md",
+      "line": 84,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-SECURITY-BATCH-0006",
+      "source": "docs/04-ecosystem/consistency-readiness/security-batch-integration-review.md",
+      "line": 86,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-SECURITY-BATCH-0007",
+      "source": "docs/04-ecosystem/consistency-readiness/security-batch-integration-review.md",
+      "line": 88,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-SECURITY-BATCH-0008",
+      "source": "docs/04-ecosystem/consistency-readiness/security-batch-integration-review.md",
+      "line": 90,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-SECURITY-BATCH-0009",
+      "source": "docs/04-ecosystem/consistency-readiness/security-batch-integration-review.md",
+      "line": 92,
       "kind": "governance",
       "domain": null
     },
@@ -54461,8 +54601,8 @@
     },
     {
       "source": "docs/01-architecture/architecture-model.md",
-      "sha256": "2e2aec5f08f02e377df03e0d9339809ba20bc1d70fd09c153d5b2e925bcb8182",
-      "lines": 667
+      "sha256": "554047ccd20dccfa0600dc2793a4aa2e851d9ae330d99ae94e897f7533827ab7",
+      "lines": 669
     },
     {
       "source": "docs/01-architecture/behavioral-contracts.md",
@@ -58456,8 +58596,8 @@
     },
     {
       "source": "docs/02-capabilities/security/README.md",
-      "sha256": "439b7681eb4c63a5466c2cf44c9e4a42f17e932e414c20c4e2e8fdc2e096e561",
-      "lines": 153
+      "sha256": "bd5420143406c3cb5ac521b3eea7a0640978e284c2a97e0710c45f41a79fa9eb",
+      "lines": 155
     },
     {
       "source": "docs/02-capabilities/security/restricted-execution-cross-cutting-review.md",
@@ -59281,7 +59421,7 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/audit-report.md",
-      "sha256": "5d4b08e70d81b61c05625a2b8fcfb824909951993b4451e724a648b507aa776b",
+      "sha256": "654fd23911272033aea8c28adc1f4f3753a14af5f11bdef8d902c728b079aafb",
       "lines": 71
     },
     {
@@ -59296,13 +59436,13 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/closure-backlog.md",
-      "sha256": "d1939315769a7475b51c04d9601dc13c39cb64389e5440d9bfc58e5f4bcdbb22",
+      "sha256": "5fe604d2a14653b49d63689c261ade1000c57e1582a154026add102a56a05cda",
       "lines": 23
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "sha256": "a3c1fa94325e50c3e1d21d23313dd848fa2d783b06fd40f48ab6bfa6f83ce14a",
-      "lines": 50
+      "sha256": "7590684d6d672b771eebfa9ef7ebb38cbc5c64e790315442dae54ff36f0b2d21",
+      "lines": 51
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/dependency-graph.md",
@@ -59356,8 +59496,23 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/README.md",
-      "sha256": "c7b14d3c9c2c31be8a7aeab2f222a17f95ec8eae36242d81df24821cfa1df7d4",
-      "lines": 55
+      "sha256": "59155b8de65ea80562cbe22e9bd2dcda38fb3fb7df2f0282408155c00e50f4f6",
+      "lines": 58
+    },
+    {
+      "source": "docs/04-ecosystem/consistency-readiness/security-batch-benchmarks.md",
+      "sha256": "3bc77123378d9d8a49a297b432df4a14689e6824a029c70118ef2f9077f058e4",
+      "lines": 31
+    },
+    {
+      "source": "docs/04-ecosystem/consistency-readiness/security-batch-conformance.md",
+      "sha256": "012bc1a3f327a4cfdb135c36866b3b69da5c29fcb120c1a248fd3c7e18bf9b43",
+      "lines": 34
+    },
+    {
+      "source": "docs/04-ecosystem/consistency-readiness/security-batch-integration-review.md",
+      "sha256": "9658132691c5778792b508241892ae2ffe7666b7043ab2fe271f27f5f1d63810",
+      "lines": 96
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/source-freshness.md",
@@ -59591,8 +59746,8 @@
     },
     {
       "source": "docs/06-roadmap/roadmap.md",
-      "sha256": "3cbe7600342fae6ea34c2b4ed05f890d1a70e98d8b0ae7c7e5faea520f7fd655",
-      "lines": 281
+      "sha256": "3f768781d4b34ca749cefde82022f121cf40ac9c9eaddc2b2f49e9e28fd4f563",
+      "lines": 285
     },
     {
       "source": "docs/adr/0001-capability-first-platform.md",
