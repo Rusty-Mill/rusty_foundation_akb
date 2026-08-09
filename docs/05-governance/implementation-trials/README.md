@@ -22,6 +22,8 @@ stateDiagram-v2
 
 The lifecycle is defined by the [entry gates](entry-gates.md), [trial contract](trial-contract.md), [evidence plan](evidence-plan.md), [repository and CI rules](repository-and-ci.md), [native-provider matrix](native-provider-matrix.md), [change control](change-control.md), [closeout rules](closeout.md), and [review checklist](review-checklist.md). Authors start from the [trial template](trial-template.md).
 
+The [security-foundation batch trial proposal](security-batch-trial-proposal.md) is the first full application of this governance model. It is intentionally blocked because its subjects remain Draft and its exact people, platforms, providers, repository, toolchain, limits, and approvals are unselected. Proposal completeness is not authorization.
+
 **RM-TRIAL-MODEL-0001:** A trial MUST bind one exact authorization generation to named questions, scope, inputs, evidence, owners, limits, and closeout conditions.
 
 **RM-TRIAL-MODEL-0002:** Trial work and results MUST NOT establish Stable API, production support, portability, provider preference, release eligibility, or repository topology by implication.
@@ -29,4 +31,3 @@ The lifecycle is defined by the [entry gates](entry-gates.md), [trial contract](
 **RM-TRIAL-MODEL-0003:** Success, failure, and inconclusive outcomes are equally valid learning outcomes and MUST preserve their evidence and limitations.
 
 **RM-TRIAL-MODEL-0004:** A trial MAY inform a later ADR, RFC, contract revision, or promotion review, but only those ordinary governance paths can change architecture or maturity.
-

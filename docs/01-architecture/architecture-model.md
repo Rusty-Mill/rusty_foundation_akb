@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.98.0
+**Version:** 1.99.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -659,6 +659,10 @@ Maturity subjects follow coherent ownership, evidence, compatibility, risk, and 
 The [security registry](../02-capabilities/security/promotion-units.md) defines seven Draft units: authority, restricted execution, secure randomness, secret protection, cryptography/key management, PKI validation, and certificate issuance. It links complete unit dossiers separately from primary specifications; the generated index verifies existence plus canonical status, exact subject, architecture frontier, and explicit implementation nonauthorization, but cannot infer semantic completeness or maturity. All seven units have schema-valid dossiers; attenuation remains separately reviewable capability evidence consumed inside the broader authority unit rather than an eighth maturity unit. No dossier changes maturity or authorizes trials/code.
 
 The [security-foundation batch integration review](../04-ecosystem/consistency-readiness/security-batch-integration-review.md) verifies architecture-definition compatibility across those seven units. It preserves identity/authority, selection/side-effect, randomness/purpose, secret/key, primitive/PKI, validation/issuance, cancellation/effect, generation/invalidation, failure, sync/async, observability, provider/certification, compatibility, and release boundaries. Shared providers, stores, keys, certificates, mechanisms, or certifications prove only named unit operations and contexts; they cannot transfer guarantees, maturity, waivers, or release status. Cross-unit conformance and benchmarks supplement rather than replace unit evidence. The batch Pass leaves all units Draft and authorizes neither trials nor implementation.
+
+The [security batch trial proposal](../05-governance/implementation-trials/security-batch-trial-proposal.md) binds falsifiable cross-unit questions, disposable scope, provider-variance dimensions, evidence classes, repository/operations requirements, stop conditions, gate states, and closeout before code. It is explicitly blocked: all candidate subjects remain Draft, and required people, exact providers/platforms, repository profile, limits, cases, environments, and approvals are absent. A complete proposal is not an authorization; no trial action may begin until one exact revision satisfies every conjunctive entry gate.
+
+Derived audit evidence now validates each governed promotion unit’s dossier plus its linked traceability, dependency, cross-cutting, source, ownership, conformance, and benchmark evidence classes. It also resolves stable assertion sources and benchmark requirement identifiers. This proves machine-checkable planning structure only; semantic correctness, executed cases, provider evidence, performance, maturity, and authorization remain human-governed.
 
 Restricted execution is a verified pre-release composition, not a process-creation synonym or portable sandbox-strength label. Its immutable manifest resolves authority, inheritance, enforcement, degradation, readiness, supervision, and cleanup before application-controlled child code runs. Native creation, restriction application, verification, release, readiness, termination, reaping, and close are distinct evidence milestones. A permitted degradation is an explicitly authorized manifest outcome disclosed before release; provider fallback cannot silently weaken a prepared or running child.
 

@@ -11,13 +11,14 @@ This report is deterministic and contains no claim that file presence proves sem
 
 | Measure | Result |
 |---|---:|
-| Markdown documents | 1,201 |
-| Resolved internal links | 2,599 |
-| Unique normative requirements | 5,599 |
+| Markdown documents | 1,202 |
+| Resolved internal links | 2,613 |
+| Unique normative requirements | 5,603 |
 | Capability domains | 62 |
 | Governed subdomain promotion units | 7 (7 Draft) |
 | Promotion units with linked readiness dossier | 7 / 7 |
 | Promotion units with schema-valid readiness dossier | 7 / 7 |
+| Promotion units with validated semantic traceability | 7 / 7 |
 | Indexed ADRs | 163 |
 | External source URLs inventoried | 669 |
 | External URLs with schema-valid domain review | 74 |
@@ -58,9 +59,10 @@ Keyword mentions are discovery hints only. The [quality matrix](quality-matrix.m
 
 - Structural validation currently passes with 0 errors.
 - Every capability domain has conformance and benchmark planning artifacts.
+- 7 / 7 governed promotion unit(s) link all required evidence classes and expose stable assertion and benchmark mappings whose sources and benchmark requirements resolve.
 - 0 domain README files lack the canonical table-form status field; this is recorded as a migration-quality issue, not silently interpreted as Stable.
 - 9 domain(s) have a complete direct planned requirement-to-assertion map; repository-wide migration remains open.
-- 9 domain(s) have complete benchmark-requirement-to-scenario maps across 62 stable semantic scenarios; run evidence remains absent by design.
+- 9 domain(s) have complete benchmark-requirement-to-scenario maps across 95 stable semantic scenarios; run evidence remains absent by design.
 - 9 domain(s) have both complete planned assertion and benchmark traceability.
 - 7 domain(s) are currently eligible for Experimental promotion; generated scorecards cannot authorize promotion.
 - 7 domain(s) have schema-valid Proposed promotion reviews and 0 have Accepted reviews.

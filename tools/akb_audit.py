@@ -425,7 +425,7 @@ def inspect(root: Path) -> tuple[dict[str, object], list[Finding]]:
         if any(visit(node) for node in sorted(node_ids)):
             findings.append(Finding("error", "graph-requires-acyclic", relative(graph_source, root), "required dependency cycle"))
 
-    promotion_units: list[dict[str, str]] = []
+    promotion_units: list[dict[str, object]] = []
     promotion_unit_ids: set[str] = set()
     for unit_source in sorted(capability_root.rglob("promotion-units.md")):
         unit_text = unit_source.read_text(encoding="utf-8")
@@ -440,6 +440,10 @@ def inspect(root: Path) -> tuple[dict[str, object], list[Finding]]:
             dossier_source = match.group("dossier_source")
             dossier = unit_source.parent / dossier_source if dossier_source else None
             dossier_schema_valid = False
+            semantic_traceability_valid = False
+            traceability_source: str | None = None
+            unit_assertion_count = 0
+            unit_benchmark_count = 0
             if dossier is not None and not dossier.exists():
                 findings.append(Finding("error", "promotion-unit-dossier-exists", relative(unit_source, root), f"missing readiness dossier {dossier_source}"))
             if dossier is not None and dossier.exists():
@@ -459,6 +463,71 @@ def inspect(root: Path) -> tuple[dict[str, object], list[Finding]]:
                 )
                 if not dossier_schema_valid:
                     findings.append(Finding("error", "promotion-unit-dossier-schema", relative(dossier, root), f"expected canonical unit dossier fields for {unit_id}"))
+                dossier_links = [match.group(1).split("#", 1)[0] for match in LINK_RE.finditer(dossier_text)]
+                evidence_suffixes = {
+                    "traceability": "-traceability.md",
+                    "dependencies": "-dependencies.md",
+                    "cross-cutting": "-cross-cutting-review.md",
+                    "source-review": "-source-review.md",
+                    "ownership": "-ownership.md",
+                }
+                evidence_links: dict[str, list[str]] = {
+                    name: sorted({link for link in dossier_links if link.endswith(suffix)})
+                    for name, suffix in evidence_suffixes.items()
+                }
+                evidence_links["conformance"] = sorted({link for link in dossier_links if "conformance" in link and link.endswith(".md")})
+                evidence_links["benchmarks"] = sorted({link for link in dossier_links if "benchmark" in link and link.endswith(".md")})
+                semantic_errors_before = len(findings)
+                for evidence_name, links in evidence_links.items():
+                    if not links:
+                        findings.append(Finding("error", "promotion-unit-evidence-link", relative(dossier, root), f"missing {evidence_name} evidence link for {unit_id}"))
+                        continue
+                    for link in links:
+                        if not (dossier.parent / link).resolve().exists():
+                            findings.append(Finding("error", "promotion-unit-evidence-exists", relative(dossier, root), f"missing {evidence_name} evidence {link}"))
+                traceability_links = evidence_links["traceability"]
+                if len(traceability_links) != 1:
+                    findings.append(Finding("error", "promotion-unit-traceability-link", relative(dossier, root), f"expected one traceability link for {unit_id}"))
+                else:
+                    traceability = (dossier.parent / traceability_links[0]).resolve()
+                    traceability_source = relative(traceability, root) if traceability.exists() else traceability_links[0]
+                    if traceability.exists():
+                        trace_text = traceability.read_text(encoding="utf-8")
+                        unit_assertions = list(ASSERTION_ROW_RE.finditer(trace_text))
+                        unit_benchmarks = list(BENCHMARK_ROW_RE.finditer(trace_text))
+                        unit_assertion_count = len(unit_assertions)
+                        unit_benchmark_count = len(unit_benchmarks)
+                        if not unit_assertions:
+                            findings.append(Finding("error", "promotion-unit-assertions", traceability_source, f"no stable assertions for {unit_id}"))
+                        if not unit_benchmarks:
+                            findings.append(Finding("error", "promotion-unit-benchmarks", traceability_source, f"no stable benchmark scenarios for {unit_id}"))
+                        for assertion_match in unit_assertions:
+                            assertion_id = assertion_match.group("id")
+                            if assertion_id in assertion_ids:
+                                findings.append(Finding("error", "assertion-unique", traceability_source, f"duplicate assertion {assertion_id}"))
+                            assertion_ids.add(assertion_id)
+                            covered_names = re.findall(r"`([^`]+\.md)`", assertion_match.group("sources"))
+                            if not covered_names:
+                                findings.append(Finding("error", "promotion-unit-assertion-source", traceability_source, f"{assertion_id} has no exact Markdown source"))
+                            covered_sources: list[str] = []
+                            for covered_name in covered_names:
+                                covered_path = (traceability.parent / covered_name).resolve()
+                                if not covered_path.exists():
+                                    findings.append(Finding("error", "assertion-source-exists", traceability_source, f"missing source {covered_name}"))
+                                else:
+                                    covered_sources.append(relative(covered_path, root))
+                            assertions.append({"id": assertion_id, "domain": "security", "promotion_unit": unit_id, "source": traceability_source, "covers_sources": covered_sources})
+                        for benchmark_match in unit_benchmarks:
+                            scenario_id = benchmark_match.group("id")
+                            if scenario_id in benchmark_scenario_ids:
+                                findings.append(Finding("error", "benchmark-scenario-unique", traceability_source, f"duplicate scenario {scenario_id}"))
+                            benchmark_scenario_ids.add(scenario_id)
+                            requirement_ids = re.findall(r"RM-[A-Z0-9-]+", benchmark_match.group("requirements"))
+                            for requirement_id in requirement_ids:
+                                if requirement_id not in seen_requirements:
+                                    findings.append(Finding("error", "benchmark-requirement-exists", traceability_source, f"{scenario_id} references missing requirement {requirement_id}"))
+                            benchmark_scenarios.append({"id": scenario_id, "domain": "security", "promotion_unit": unit_id, "source": traceability_source, "requirements": requirement_ids})
+                semantic_traceability_valid = dossier_schema_valid and len(findings) == semantic_errors_before and unit_assertion_count > 0 and unit_benchmark_count > 0
             promotion_units.append(
                 {
                     "id": unit_id,
@@ -467,6 +536,10 @@ def inspect(root: Path) -> tuple[dict[str, object], list[Finding]]:
                     "primary_source": relative(primary, root) if primary.exists() else match.group("source"),
                     "readiness_dossier": relative(dossier, root) if dossier is not None and dossier.exists() else dossier_source,
                     "readiness_dossier_schema_valid": dossier_schema_valid,
+                    "traceability": traceability_source,
+                    "stable_assertions": unit_assertion_count,
+                    "stable_benchmark_scenarios": unit_benchmark_count,
+                    "semantic_traceability_valid": semantic_traceability_valid,
                     "registry": relative(unit_source, root),
                 }
             )
@@ -504,6 +577,7 @@ def inspect(root: Path) -> tuple[dict[str, object], list[Finding]]:
             "draft_promotion_units": sum(item["maturity"] == "Draft" for item in promotion_units),
             "promotion_units_with_readiness_dossier": sum(bool(item["readiness_dossier"]) for item in promotion_units),
             "promotion_units_with_schema_valid_readiness_dossier": sum(item["readiness_dossier_schema_valid"] for item in promotion_units),
+            "promotion_units_with_semantic_traceability": sum(item["semantic_traceability_valid"] for item in promotion_units),
             "adrs": len(adr_files),
             "errors": sum(item.severity == "error" for item in findings),
             "warnings": sum(item.severity == "warning" for item in findings),
@@ -573,6 +647,7 @@ This report is deterministic and contains no claim that file presence proves sem
 | Governed subdomain promotion units | {summary['promotion_units']:,} ({summary['draft_promotion_units']:,} Draft) |
 | Promotion units with linked readiness dossier | {summary['promotion_units_with_readiness_dossier']:,} / {summary['promotion_units']:,} |
 | Promotion units with schema-valid readiness dossier | {summary['promotion_units_with_schema_valid_readiness_dossier']:,} / {summary['promotion_units']:,} |
+| Promotion units with validated semantic traceability | {summary['promotion_units_with_semantic_traceability']:,} / {summary['promotion_units']:,} |
 | Indexed ADRs | {summary['adrs']:,} |
 | External source URLs inventoried | {summary['external_sources']:,} |
 | External URLs with schema-valid domain review | {summary['external_sources_with_review_record']:,} |
@@ -613,6 +688,7 @@ Keyword mentions are discovery hints only. The [quality matrix](quality-matrix.m
 
 - Structural validation currently passes with {summary['errors']} errors.
 - Every capability domain has conformance and benchmark planning artifacts.
+- {summary['promotion_units_with_semantic_traceability']} / {summary['promotion_units']} governed promotion unit(s) link all required evidence classes and expose stable assertion and benchmark mappings whose sources and benchmark requirements resolve.
 - {len(unspecified)} domain README files lack the canonical table-form status field; this is recorded as a migration-quality issue, not silently interpreted as Stable.
 - {summary['domains_with_direct_requirement_assertion_map']} domain(s) have a complete direct planned requirement-to-assertion map; repository-wide migration remains open.
 - {summary['domains_with_direct_benchmark_scenario_map']} domain(s) have complete benchmark-requirement-to-scenario maps across {summary['benchmark_scenarios']} stable semantic scenarios; run evidence remains absent by design.

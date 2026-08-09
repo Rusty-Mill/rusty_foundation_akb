@@ -4,14 +4,15 @@
   "authority": "docs/01-architecture/architecture-model.md",
   "generated_from": "Markdown; this index is derived and non-authoritative",
   "summary": {
-    "markdown_documents": 1201,
-    "internal_links": 2599,
-    "requirements": 5599,
+    "markdown_documents": 1202,
+    "internal_links": 2613,
+    "requirements": 5603,
     "domains": 62,
     "promotion_units": 7,
     "draft_promotion_units": 7,
     "promotion_units_with_readiness_dossier": 7,
     "promotion_units_with_schema_valid_readiness_dossier": 7,
+    "promotion_units_with_semantic_traceability": 7,
     "adrs": 163,
     "errors": 0,
     "warnings": 0,
@@ -19,7 +20,7 @@
     "domains_with_benchmarks": 62,
     "domains_with_direct_requirement_assertion_map": 9,
     "domains_with_direct_benchmark_scenario_map": 9,
-    "benchmark_scenarios": 62,
+    "benchmark_scenarios": 95,
     "external_sources": 669,
     "external_sources_with_review_record": 74,
     "domains_with_dedicated_cross_cutting_analysis": 31,
@@ -2273,6 +2274,10 @@
       "primary_source": "docs/02-capabilities/security/authority-model.md",
       "readiness_dossier": "docs/02-capabilities/security/authority-readiness-review.md",
       "readiness_dossier_schema_valid": true,
+      "traceability": "docs/02-capabilities/security/authority-traceability.md",
+      "stable_assertions": 13,
+      "stable_benchmark_scenarios": 4,
+      "semantic_traceability_valid": true,
       "registry": "docs/02-capabilities/security/promotion-units.md"
     },
     {
@@ -2282,6 +2287,10 @@
       "primary_source": "docs/02-capabilities/security/restricted-execution.md",
       "readiness_dossier": "docs/02-capabilities/security/restricted-execution-readiness-review.md",
       "readiness_dossier_schema_valid": true,
+      "traceability": "docs/02-capabilities/security/restricted-execution-traceability.md",
+      "stable_assertions": 10,
+      "stable_benchmark_scenarios": 4,
+      "semantic_traceability_valid": true,
       "registry": "docs/02-capabilities/security/promotion-units.md"
     },
     {
@@ -2291,6 +2300,10 @@
       "primary_source": "docs/02-capabilities/security/random.md",
       "readiness_dossier": "docs/02-capabilities/security/random-readiness-review.md",
       "readiness_dossier_schema_valid": true,
+      "traceability": "docs/02-capabilities/security/random-traceability.md",
+      "stable_assertions": 10,
+      "stable_benchmark_scenarios": 3,
+      "semantic_traceability_valid": true,
       "registry": "docs/02-capabilities/security/promotion-units.md"
     },
     {
@@ -2300,6 +2313,10 @@
       "primary_source": "docs/02-capabilities/security/secret-store.md",
       "readiness_dossier": "docs/02-capabilities/security/secret-readiness-review.md",
       "readiness_dossier_schema_valid": true,
+      "traceability": "docs/02-capabilities/security/secret-traceability.md",
+      "stable_assertions": 10,
+      "stable_benchmark_scenarios": 5,
+      "semantic_traceability_valid": true,
       "registry": "docs/02-capabilities/security/promotion-units.md"
     },
     {
@@ -2309,6 +2326,10 @@
       "primary_source": "docs/02-capabilities/security/crypto-README.md",
       "readiness_dossier": "docs/02-capabilities/security/crypto-readiness-review.md",
       "readiness_dossier_schema_valid": true,
+      "traceability": "docs/02-capabilities/security/crypto-traceability.md",
+      "stable_assertions": 13,
+      "stable_benchmark_scenarios": 5,
+      "semantic_traceability_valid": true,
       "registry": "docs/02-capabilities/security/promotion-units.md"
     },
     {
@@ -2318,6 +2339,10 @@
       "primary_source": "docs/02-capabilities/security/pki-README.md",
       "readiness_dossier": "docs/02-capabilities/security/pki-validation-readiness-review.md",
       "readiness_dossier_schema_valid": true,
+      "traceability": "docs/02-capabilities/security/pki-validation-traceability.md",
+      "stable_assertions": 13,
+      "stable_benchmark_scenarios": 8,
+      "semantic_traceability_valid": true,
       "registry": "docs/02-capabilities/security/promotion-units.md"
     },
     {
@@ -2327,6 +2352,10 @@
       "primary_source": "docs/02-capabilities/security/pki-issuance-README.md",
       "readiness_dossier": "docs/02-capabilities/security/pki-issuance-readiness-review.md",
       "readiness_dossier_schema_valid": true,
+      "traceability": "docs/02-capabilities/security/pki-issuance-traceability.md",
+      "stable_assertions": 13,
+      "stable_benchmark_scenarios": 4,
+      "semantic_traceability_valid": true,
       "registry": "docs/02-capabilities/security/promotion-units.md"
     }
   ],
@@ -2997,6 +3026,755 @@
       "covers_sources": [
         "docs/02-capabilities/windowing/promotion-review.md"
       ]
+    },
+    {
+      "id": "rm.assertion.security.authority.types@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.authority",
+      "source": "docs/02-capabilities/security/authority-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/authority-model.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.authority.descriptor@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.authority",
+      "source": "docs/02-capabilities/security/authority-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/authority-model.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.authority.ambient-enforcement@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.authority",
+      "source": "docs/02-capabilities/security/authority-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/authority-model.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.authority.lifecycle@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.authority",
+      "source": "docs/02-capabilities/security/authority-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/authority-model.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.authority.policy@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.authority",
+      "source": "docs/02-capabilities/security/authority-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/policy-model.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.authority.delegation@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.authority",
+      "source": "docs/02-capabilities/security/authority-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/delegation-model.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.authority.attenuation@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.authority",
+      "source": "docs/02-capabilities/security/authority-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/attenuation.md",
+        "docs/02-capabilities/security/attenuation-traceability.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.authority.conformance@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.authority",
+      "source": "docs/02-capabilities/security/authority-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/conformance.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.authority.dependencies@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.authority",
+      "source": "docs/02-capabilities/security/authority-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/authority-dependencies.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.authority.quality@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.authority",
+      "source": "docs/02-capabilities/security/authority-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/authority-cross-cutting-review.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.authority.sources@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.authority",
+      "source": "docs/02-capabilities/security/authority-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/authority-source-review.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.authority.ownership@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.authority",
+      "source": "docs/02-capabilities/security/authority-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/authority-ownership.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.authority.readiness-boundary@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.authority",
+      "source": "docs/02-capabilities/security/authority-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/authority-readiness-review.md",
+        "docs/02-capabilities/security/authority-traceability.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.restricted.plan@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.restricted-execution",
+      "source": "docs/02-capabilities/security/restricted-execution-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/restricted-execution.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.restricted.pre-release@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.restricted-execution",
+      "source": "docs/02-capabilities/security/restricted-execution-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/restricted-execution.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.restricted.result@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.restricted-execution",
+      "source": "docs/02-capabilities/security/restricted-execution-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/restricted-execution.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.restricted.reconcile@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.restricted-execution",
+      "source": "docs/02-capabilities/security/restricted-execution-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/restricted-execution.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.restricted.audit@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.restricted-execution",
+      "source": "docs/02-capabilities/security/restricted-execution-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/restricted-execution.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.restricted.dependencies@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.restricted-execution",
+      "source": "docs/02-capabilities/security/restricted-execution-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/restricted-execution-dependencies.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.restricted.quality@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.restricted-execution",
+      "source": "docs/02-capabilities/security/restricted-execution-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/restricted-execution-cross-cutting-review.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.restricted.sources@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.restricted-execution",
+      "source": "docs/02-capabilities/security/restricted-execution-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/restricted-execution-source-review.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.restricted.ownership@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.restricted-execution",
+      "source": "docs/02-capabilities/security/restricted-execution-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/restricted-execution-ownership.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.restricted.readiness-boundary@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.restricted-execution",
+      "source": "docs/02-capabilities/security/restricted-execution-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/restricted-execution-readiness-review.md",
+        "docs/02-capabilities/security/restricted-execution-traceability.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.random.exact-fill@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.random",
+      "source": "docs/02-capabilities/security/random-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/random.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.random.readiness@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.random",
+      "source": "docs/02-capabilities/security/random-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/random.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.random.secrecy@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.random",
+      "source": "docs/02-capabilities/security/random-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/random.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.random.lifecycle@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.random",
+      "source": "docs/02-capabilities/security/random-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/random.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.random.claims@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.random",
+      "source": "docs/02-capabilities/security/random-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/random.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.random.dependencies@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.random",
+      "source": "docs/02-capabilities/security/random-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/random-dependencies.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.random.quality@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.random",
+      "source": "docs/02-capabilities/security/random-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/random-cross-cutting-review.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.random.sources@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.random",
+      "source": "docs/02-capabilities/security/random-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/random-source-review.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.random.ownership@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.random",
+      "source": "docs/02-capabilities/security/random-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/random-ownership.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.random.readiness-boundary@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.random",
+      "source": "docs/02-capabilities/security/random-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/random-readiness-review.md",
+        "docs/02-capabilities/security/random-traceability.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.secret.selection@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.secrets",
+      "source": "docs/02-capabilities/security/secret-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/secret-store.md",
+        "docs/02-capabilities/security/secret-protection-model.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.secret.identity-mutation@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.secrets",
+      "source": "docs/02-capabilities/security/secret-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/secret-store.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.secret.exposure@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.secrets",
+      "source": "docs/02-capabilities/security/secret-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/secret-store.md",
+        "docs/02-capabilities/security/secret-value.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.secret.interaction@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.secrets",
+      "source": "docs/02-capabilities/security/secret-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/secret-store.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.secret.lifecycle@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.secrets",
+      "source": "docs/02-capabilities/security/secret-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/secret-store.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.secret.dependencies@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.secrets",
+      "source": "docs/02-capabilities/security/secret-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/secret-dependencies.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.secret.quality@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.secrets",
+      "source": "docs/02-capabilities/security/secret-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/secret-cross-cutting-review.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.secret.sources@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.secrets",
+      "source": "docs/02-capabilities/security/secret-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/secret-source-review.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.secret.ownership@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.secrets",
+      "source": "docs/02-capabilities/security/secret-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/secret-ownership.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.secret.readiness-boundary@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.secrets",
+      "source": "docs/02-capabilities/security/secret-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/secret-readiness-review.md",
+        "docs/02-capabilities/security/secret-traceability.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.crypto.policy@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.cryptography",
+      "source": "docs/02-capabilities/security/crypto-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/crypto-policy.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.crypto.keys@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.cryptography",
+      "source": "docs/02-capabilities/security/crypto-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/crypto-keys.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.crypto.derive@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.cryptography",
+      "source": "docs/02-capabilities/security/crypto-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/crypto-hash-mac-kdf.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.crypto.aead@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.cryptography",
+      "source": "docs/02-capabilities/security/crypto-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/crypto-aead.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.crypto.public-key@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.cryptography",
+      "source": "docs/02-capabilities/security/crypto-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/crypto-public-key.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.crypto.transfer@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.cryptography",
+      "source": "docs/02-capabilities/security/crypto-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/crypto-import-export.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.crypto.provider@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.cryptography",
+      "source": "docs/02-capabilities/security/crypto-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/crypto-providers-attestation.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.crypto.operation@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.cryptography",
+      "source": "docs/02-capabilities/security/crypto-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/crypto-operations.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.crypto.dependencies@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.cryptography",
+      "source": "docs/02-capabilities/security/crypto-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/crypto-dependencies.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.crypto.quality@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.cryptography",
+      "source": "docs/02-capabilities/security/crypto-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/crypto-cross-cutting-review.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.crypto.sources@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.cryptography",
+      "source": "docs/02-capabilities/security/crypto-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/crypto-source-review.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.crypto.ownership@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.cryptography",
+      "source": "docs/02-capabilities/security/crypto-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/crypto-ownership.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.crypto.readiness-boundary@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.cryptography",
+      "source": "docs/02-capabilities/security/crypto-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/crypto-readiness-review.md",
+        "docs/02-capabilities/security/crypto-traceability.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.pki.certificate@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.pki-validation",
+      "source": "docs/02-capabilities/security/pki-validation-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/pki-certificates.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.pki.trust-store@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.pki-validation",
+      "source": "docs/02-capabilities/security/pki-validation-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/pki-trust-stores.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.pki.path-construction@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.pki-validation",
+      "source": "docs/02-capabilities/security/pki-validation-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/pki-path-construction.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.pki.path-validation@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.pki-validation",
+      "source": "docs/02-capabilities/security/pki-validation-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/pki-path-validation.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.pki.identity@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.pki-validation",
+      "source": "docs/02-capabilities/security/pki-validation-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/pki-identity-matching.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.pki.status@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.pki-validation",
+      "source": "docs/02-capabilities/security/pki-validation-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/pki-revocation.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.pki.network-cache@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.pki-validation",
+      "source": "docs/02-capabilities/security/pki-validation-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/pki-network-cache.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.pki.result@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.pki-validation",
+      "source": "docs/02-capabilities/security/pki-validation-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/pki-results-lifecycle.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.pki.dependencies@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.pki-validation",
+      "source": "docs/02-capabilities/security/pki-validation-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/pki-validation-dependencies.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.pki.quality@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.pki-validation",
+      "source": "docs/02-capabilities/security/pki-validation-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/pki-validation-cross-cutting-review.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.pki.sources@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.pki-validation",
+      "source": "docs/02-capabilities/security/pki-validation-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/pki-validation-source-review.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.pki.ownership@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.pki-validation",
+      "source": "docs/02-capabilities/security/pki-validation-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/pki-validation-ownership.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.pki.readiness-boundary@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.pki-validation",
+      "source": "docs/02-capabilities/security/pki-validation-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/pki-validation-readiness-review.md",
+        "docs/02-capabilities/security/pki-validation-traceability.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.pki-issuance.enrollment@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.pki-issuance",
+      "source": "docs/02-capabilities/security/pki-issuance-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/pki-issuance-enrollment.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.pki-issuance.authority@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.pki-issuance",
+      "source": "docs/02-capabilities/security/pki-issuance-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/pki-issuance-authority.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.pki-issuance.request@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.pki-issuance",
+      "source": "docs/02-capabilities/security/pki-issuance-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/pki-issuance-requests.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.pki-issuance.policy@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.pki-issuance",
+      "source": "docs/02-capabilities/security/pki-issuance-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/pki-issuance-policy.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.pki-issuance.protocol@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.pki-issuance",
+      "source": "docs/02-capabilities/security/pki-issuance-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/pki-issuance-protocols.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.pki-issuance.renewal@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.pki-issuance",
+      "source": "docs/02-capabilities/security/pki-issuance-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/pki-issuance-renewal.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.pki-issuance.ca@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.pki-issuance",
+      "source": "docs/02-capabilities/security/pki-issuance-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/pki-issuance-ca-operations.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.pki-issuance.cross-cutting@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.pki-issuance",
+      "source": "docs/02-capabilities/security/pki-issuance-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/pki-issuance-security-accessibility.md",
+        "docs/02-capabilities/security/pki-issuance-cross-cutting-review.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.pki-issuance.conformance@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.pki-issuance",
+      "source": "docs/02-capabilities/security/pki-issuance-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/pki-issuance-conformance.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.pki-issuance.dependencies@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.pki-issuance",
+      "source": "docs/02-capabilities/security/pki-issuance-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/pki-issuance-dependencies.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.pki-issuance.sources@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.pki-issuance",
+      "source": "docs/02-capabilities/security/pki-issuance-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/pki-issuance-source-review.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.pki-issuance.ownership@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.pki-issuance",
+      "source": "docs/02-capabilities/security/pki-issuance-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/pki-issuance-ownership.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.security.pki-issuance.readiness-boundary@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.pki-issuance",
+      "source": "docs/02-capabilities/security/pki-issuance-traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/security/pki-issuance-readiness-review.md",
+        "docs/02-capabilities/security/pki-issuance-traceability.md"
+      ]
     }
   ],
   "benchmark_scenarios": [
@@ -3571,6 +4349,372 @@
       "requirements": [
         "RM-WINDOWING-BENCH-0006",
         "RM-WINDOWING-BENCH-0007"
+      ]
+    },
+    {
+      "id": "rm.benchmark.security.authority.policy-enforcement@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.authority",
+      "source": "docs/02-capabilities/security/authority-traceability.md",
+      "requirements": [
+        "RM-SECURITY-AUTHORITY-BENCH-0001",
+        "RM-SECURITY-AUTHORITY-BENCH-0002",
+        "RM-SECURITY-AUTHORITY-BENCH-0005"
+      ]
+    },
+    {
+      "id": "rm.benchmark.security.authority.derive-inspect@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.authority",
+      "source": "docs/02-capabilities/security/authority-traceability.md",
+      "requirements": [
+        "RM-SECURITY-AUTHORITY-BENCH-0005",
+        "RM-SECURITY-ATTENUATE-BENCH-0001",
+        "RM-SECURITY-ATTENUATE-BENCH-0002",
+        "RM-SECURITY-ATTENUATE-BENCH-0003",
+        "RM-SECURITY-ATTENUATE-BENCH-0004",
+        "RM-SECURITY-ATTENUATE-BENCH-0005"
+      ]
+    },
+    {
+      "id": "rm.benchmark.security.authority.delegate-transfer@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.authority",
+      "source": "docs/02-capabilities/security/authority-traceability.md",
+      "requirements": [
+        "RM-SECURITY-AUTHORITY-BENCH-0003",
+        "RM-SECURITY-AUTHORITY-BENCH-0005"
+      ]
+    },
+    {
+      "id": "rm.benchmark.security.authority.expire-revoke@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.authority",
+      "source": "docs/02-capabilities/security/authority-traceability.md",
+      "requirements": [
+        "RM-SECURITY-AUTHORITY-BENCH-0004",
+        "RM-SECURITY-AUTHORITY-BENCH-0005"
+      ]
+    },
+    {
+      "id": "rm.benchmark.security.restricted.prepare@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.restricted-execution",
+      "source": "docs/02-capabilities/security/restricted-execution-traceability.md",
+      "requirements": [
+        "RM-SECURITY-RESTRICTED-BENCH-0001",
+        "RM-SECURITY-RESTRICTED-BENCH-0004",
+        "RM-SECURITY-RESTRICTED-BENCH-0005"
+      ]
+    },
+    {
+      "id": "rm.benchmark.security.restricted.launch@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.restricted-execution",
+      "source": "docs/02-capabilities/security/restricted-execution-traceability.md",
+      "requirements": [
+        "RM-SECURITY-RESTRICTED-BENCH-0002",
+        "RM-SECURITY-RESTRICTED-BENCH-0004",
+        "RM-SECURITY-RESTRICTED-BENCH-0005"
+      ]
+    },
+    {
+      "id": "rm.benchmark.security.restricted.lifecycle@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.restricted-execution",
+      "source": "docs/02-capabilities/security/restricted-execution-traceability.md",
+      "requirements": [
+        "RM-SECURITY-RESTRICTED-BENCH-0002",
+        "RM-SECURITY-RESTRICTED-BENCH-0004",
+        "RM-SECURITY-RESTRICTED-BENCH-0005"
+      ]
+    },
+    {
+      "id": "rm.benchmark.security.restricted.failure@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.restricted-execution",
+      "source": "docs/02-capabilities/security/restricted-execution-traceability.md",
+      "requirements": [
+        "RM-SECURITY-RESTRICTED-BENCH-0003",
+        "RM-SECURITY-RESTRICTED-BENCH-0004",
+        "RM-SECURITY-RESTRICTED-BENCH-0005"
+      ]
+    },
+    {
+      "id": "rm.benchmark.security.random.fill@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.random",
+      "source": "docs/02-capabilities/security/random-traceability.md",
+      "requirements": [
+        "RM-SECURITY-RANDOM-BENCH-0001",
+        "RM-SECURITY-RANDOM-BENCH-0004",
+        "RM-SECURITY-RANDOM-BENCH-0005"
+      ]
+    },
+    {
+      "id": "rm.benchmark.security.random.first-use@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.random",
+      "source": "docs/02-capabilities/security/random-traceability.md",
+      "requirements": [
+        "RM-SECURITY-RANDOM-BENCH-0002",
+        "RM-SECURITY-RANDOM-BENCH-0004",
+        "RM-SECURITY-RANDOM-BENCH-0005"
+      ]
+    },
+    {
+      "id": "rm.benchmark.security.random.failure@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.random",
+      "source": "docs/02-capabilities/security/random-traceability.md",
+      "requirements": [
+        "RM-SECURITY-RANDOM-BENCH-0003",
+        "RM-SECURITY-RANDOM-BENCH-0004",
+        "RM-SECURITY-RANDOM-BENCH-0005"
+      ]
+    },
+    {
+      "id": "rm.benchmark.security.secret.lifecycle@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.secrets",
+      "source": "docs/02-capabilities/security/secret-traceability.md",
+      "requirements": [
+        "RM-SECURITY-SECRET-BENCH-0001",
+        "RM-SECURITY-SECRET-BENCH-0004",
+        "RM-SECURITY-SECRET-BENCH-0005"
+      ]
+    },
+    {
+      "id": "rm.benchmark.security.secret.scale@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.secrets",
+      "source": "docs/02-capabilities/security/secret-traceability.md",
+      "requirements": [
+        "RM-SECURITY-SECRET-BENCH-0002",
+        "RM-SECURITY-SECRET-BENCH-0004",
+        "RM-SECURITY-SECRET-BENCH-0005"
+      ]
+    },
+    {
+      "id": "rm.benchmark.security.secret.exposure@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.secrets",
+      "source": "docs/02-capabilities/security/secret-traceability.md",
+      "requirements": [
+        "RM-SECURITY-SECRET-BENCH-0003",
+        "RM-SECURITY-SECRET-BENCH-0004",
+        "RM-SECURITY-SECRET-BENCH-0005"
+      ]
+    },
+    {
+      "id": "rm.benchmark.security.secret.interaction@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.secrets",
+      "source": "docs/02-capabilities/security/secret-traceability.md",
+      "requirements": [
+        "RM-SECURITY-SECRET-BENCH-0001",
+        "RM-SECURITY-SECRET-BENCH-0004",
+        "RM-SECURITY-SECRET-BENCH-0005"
+      ]
+    },
+    {
+      "id": "rm.benchmark.security.secret.failure@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.secrets",
+      "source": "docs/02-capabilities/security/secret-traceability.md",
+      "requirements": [
+        "RM-SECURITY-SECRET-BENCH-0001",
+        "RM-SECURITY-SECRET-BENCH-0004",
+        "RM-SECURITY-SECRET-BENCH-0005"
+      ]
+    },
+    {
+      "id": "rm.benchmark.security.crypto.resolve@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.cryptography",
+      "source": "docs/02-capabilities/security/crypto-traceability.md",
+      "requirements": [
+        "RM-CRYPTO-BENCH-0001",
+        "RM-CRYPTO-BENCH-0005",
+        "RM-CRYPTO-BENCH-0006"
+      ]
+    },
+    {
+      "id": "rm.benchmark.security.crypto.key-lifecycle@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.cryptography",
+      "source": "docs/02-capabilities/security/crypto-traceability.md",
+      "requirements": [
+        "RM-CRYPTO-BENCH-0002",
+        "RM-CRYPTO-BENCH-0005",
+        "RM-CRYPTO-BENCH-0006"
+      ]
+    },
+    {
+      "id": "rm.benchmark.security.crypto.symmetric@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.cryptography",
+      "source": "docs/02-capabilities/security/crypto-traceability.md",
+      "requirements": [
+        "RM-CRYPTO-BENCH-0003",
+        "RM-CRYPTO-BENCH-0005",
+        "RM-CRYPTO-BENCH-0006"
+      ]
+    },
+    {
+      "id": "rm.benchmark.security.crypto.public-key@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.cryptography",
+      "source": "docs/02-capabilities/security/crypto-traceability.md",
+      "requirements": [
+        "RM-CRYPTO-BENCH-0003",
+        "RM-CRYPTO-BENCH-0005",
+        "RM-CRYPTO-BENCH-0006"
+      ]
+    },
+    {
+      "id": "rm.benchmark.security.crypto.provider@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.cryptography",
+      "source": "docs/02-capabilities/security/crypto-traceability.md",
+      "requirements": [
+        "RM-CRYPTO-BENCH-0004",
+        "RM-CRYPTO-BENCH-0005",
+        "RM-CRYPTO-BENCH-0006"
+      ]
+    },
+    {
+      "id": "rm.benchmark.security.pki.parse@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.pki-validation",
+      "source": "docs/02-capabilities/security/pki-validation-traceability.md",
+      "requirements": [
+        "RM-PKI-BENCH-0001",
+        "RM-PKI-BENCH-0005",
+        "RM-PKI-BENCH-0006"
+      ]
+    },
+    {
+      "id": "rm.benchmark.security.pki.trust-snapshot@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.pki-validation",
+      "source": "docs/02-capabilities/security/pki-validation-traceability.md",
+      "requirements": [
+        "RM-PKI-BENCH-0002",
+        "RM-PKI-BENCH-0005",
+        "RM-PKI-BENCH-0006"
+      ]
+    },
+    {
+      "id": "rm.benchmark.security.pki.construct@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.pki-validation",
+      "source": "docs/02-capabilities/security/pki-validation-traceability.md",
+      "requirements": [
+        "RM-PKI-BENCH-0003",
+        "RM-PKI-BENCH-0005",
+        "RM-PKI-BENCH-0006"
+      ]
+    },
+    {
+      "id": "rm.benchmark.security.pki.validate@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.pki-validation",
+      "source": "docs/02-capabilities/security/pki-validation-traceability.md",
+      "requirements": [
+        "RM-PKI-BENCH-0003",
+        "RM-PKI-BENCH-0005",
+        "RM-PKI-BENCH-0006"
+      ]
+    },
+    {
+      "id": "rm.benchmark.security.pki.status-network@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.pki-validation",
+      "source": "docs/02-capabilities/security/pki-validation-traceability.md",
+      "requirements": [
+        "RM-PKI-BENCH-0004",
+        "RM-PKI-BENCH-0005",
+        "RM-PKI-BENCH-0006"
+      ]
+    },
+    {
+      "id": "rm.benchmark.security.pki.cache@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.pki-validation",
+      "source": "docs/02-capabilities/security/pki-validation-traceability.md",
+      "requirements": [
+        "RM-PKI-BENCH-0002",
+        "RM-PKI-BENCH-0004",
+        "RM-PKI-BENCH-0005",
+        "RM-PKI-BENCH-0006"
+      ]
+    },
+    {
+      "id": "rm.benchmark.security.pki.concurrent@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.pki-validation",
+      "source": "docs/02-capabilities/security/pki-validation-traceability.md",
+      "requirements": [
+        "RM-PKI-BENCH-0004",
+        "RM-PKI-BENCH-0005",
+        "RM-PKI-BENCH-0006"
+      ]
+    },
+    {
+      "id": "rm.benchmark.security.pki.lifecycle@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.pki-validation",
+      "source": "docs/02-capabilities/security/pki-validation-traceability.md",
+      "requirements": [
+        "RM-PKI-BENCH-0002",
+        "RM-PKI-BENCH-0004",
+        "RM-PKI-BENCH-0005",
+        "RM-PKI-BENCH-0006"
+      ]
+    },
+    {
+      "id": "rm.benchmark.security.pki-issuance.transaction@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.pki-issuance",
+      "source": "docs/02-capabilities/security/pki-issuance-traceability.md",
+      "requirements": [
+        "RM-PKI-ISSUANCE-BENCH-0001",
+        "RM-PKI-ISSUANCE-BENCH-0003",
+        "RM-PKI-ISSUANCE-BENCH-0006"
+      ]
+    },
+    {
+      "id": "rm.benchmark.security.pki-issuance.matrix@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.pki-issuance",
+      "source": "docs/02-capabilities/security/pki-issuance-traceability.md",
+      "requirements": [
+        "RM-PKI-ISSUANCE-BENCH-0002",
+        "RM-PKI-ISSUANCE-BENCH-0003",
+        "RM-PKI-ISSUANCE-BENCH-0006"
+      ]
+    },
+    {
+      "id": "rm.benchmark.security.pki-issuance.fleet@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.pki-issuance",
+      "source": "docs/02-capabilities/security/pki-issuance-traceability.md",
+      "requirements": [
+        "RM-PKI-ISSUANCE-BENCH-0003",
+        "RM-PKI-ISSUANCE-BENCH-0004",
+        "RM-PKI-ISSUANCE-BENCH-0006"
+      ]
+    },
+    {
+      "id": "rm.benchmark.security.pki-issuance.ca-durability@1",
+      "domain": "security",
+      "promotion_unit": "rm.promotion.security.pki-issuance",
+      "source": "docs/02-capabilities/security/pki-issuance-traceability.md",
+      "requirements": [
+        "RM-PKI-ISSUANCE-BENCH-0003",
+        "RM-PKI-ISSUANCE-BENCH-0005",
+        "RM-PKI-ISSUANCE-BENCH-0006"
       ]
     }
   ],
@@ -52415,28 +53559,28 @@
     {
       "id": "RM-READINESS-CONTRADICTION-0001",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 45,
+      "line": 46,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0002",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 47,
+      "line": 48,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0003",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 49,
+      "line": 50,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0004",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 51,
+      "line": 52,
       "kind": "governance",
       "domain": null
     },
@@ -53612,28 +54756,28 @@
     {
       "id": "RM-TRIAL-MODEL-0001",
       "source": "docs/05-governance/implementation-trials/README.md",
-      "line": 25,
+      "line": 27,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-TRIAL-MODEL-0002",
       "source": "docs/05-governance/implementation-trials/README.md",
-      "line": 27,
+      "line": 29,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-TRIAL-MODEL-0003",
       "source": "docs/05-governance/implementation-trials/README.md",
-      "line": 29,
+      "line": 31,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-TRIAL-MODEL-0004",
       "source": "docs/05-governance/implementation-trials/README.md",
-      "line": 31,
+      "line": 33,
       "kind": "governance",
       "domain": null
     },
@@ -53690,6 +54834,34 @@
       "id": "RM-TRIAL-REVIEW-0003",
       "source": "docs/05-governance/implementation-trials/review-checklist.md",
       "line": 18,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-SECURITY-TRIAL-0001",
+      "source": "docs/05-governance/implementation-trials/security-batch-trial-proposal.md",
+      "line": 119,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-SECURITY-TRIAL-0002",
+      "source": "docs/05-governance/implementation-trials/security-batch-trial-proposal.md",
+      "line": 121,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-SECURITY-TRIAL-0003",
+      "source": "docs/05-governance/implementation-trials/security-batch-trial-proposal.md",
+      "line": 123,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-SECURITY-TRIAL-0004",
+      "source": "docs/05-governance/implementation-trials/security-batch-trial-proposal.md",
+      "line": 125,
       "kind": "governance",
       "domain": null
     },
@@ -54601,8 +55773,8 @@
     },
     {
       "source": "docs/01-architecture/architecture-model.md",
-      "sha256": "554047ccd20dccfa0600dc2793a4aa2e851d9ae330d99ae94e897f7533827ab7",
-      "lines": 669
+      "sha256": "14ade8dbe1baee8a296f91c2f98827be7255a619520ef6847bf23ff1fa38f720",
+      "lines": 673
     },
     {
       "source": "docs/01-architecture/behavioral-contracts.md",
@@ -58256,7 +59428,7 @@
     },
     {
       "source": "docs/02-capabilities/security/authority-traceability.md",
-      "sha256": "b6d365990bfe43e05587911aa22e63b0a2abaafe303f0f21e3cab883445f26db",
+      "sha256": "dae60e08f603e900d6514f199b7e359406acf9ea49b849a8142c063bf2af5b26",
       "lines": 35
     },
     {
@@ -59421,8 +60593,8 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/audit-report.md",
-      "sha256": "654fd23911272033aea8c28adc1f4f3753a14af5f11bdef8d902c728b079aafb",
-      "lines": 71
+      "sha256": "292721edfd5c802f3f51abf389e0f3a9406108a048a87ce409e171d357520aaa",
+      "lines": 73
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/audit-rules.md",
@@ -59436,13 +60608,13 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/closure-backlog.md",
-      "sha256": "5fe604d2a14653b49d63689c261ade1000c57e1582a154026add102a56a05cda",
-      "lines": 23
+      "sha256": "002e263e2b39008eecae84fdcb0d53882d61e12d165274e381cae270122c37c7",
+      "lines": 25
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "sha256": "7590684d6d672b771eebfa9ef7ebb38cbc5c64e790315442dae54ff36f0b2d21",
-      "lines": 51
+      "sha256": "950dca52a97af4bb2ba0a9f66c9ba4a698a30a4e972507c6cdcfea66aceddef2",
+      "lines": 52
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/dependency-graph.md",
@@ -59496,8 +60668,8 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/README.md",
-      "sha256": "59155b8de65ea80562cbe22e9bd2dcda38fb3fb7df2f0282408155c00e50f4f6",
-      "lines": 58
+      "sha256": "48873d164133acaab94bfb62c1f5eb3c169568f1624911b1ffcb54b3c4397684",
+      "lines": 60
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/security-batch-benchmarks.md",
@@ -59636,8 +60808,8 @@
     },
     {
       "source": "docs/05-governance/implementation-trials/README.md",
-      "sha256": "f5e2875e2e978ab92cef6a40c8d4c9c93cb3a023d4219c8d8eaf65475392e648",
-      "lines": 32
+      "sha256": "9ba5508cdf5a1730b758ad832e6ef5f7c6d2b1f31c1d97480b14d6396d1855fc",
+      "lines": 33
     },
     {
       "source": "docs/05-governance/implementation-trials/repository-and-ci.md",
@@ -59648,6 +60820,11 @@
       "source": "docs/05-governance/implementation-trials/review-checklist.md",
       "sha256": "5a1bc71a8f096e2cfd8c22fa0dab2e31b972c041d91543569313c58977197107",
       "lines": 19
+    },
+    {
+      "source": "docs/05-governance/implementation-trials/security-batch-trial-proposal.md",
+      "sha256": "99f852840c0cab14b76ca350777d1485a8be9660726f9c1062eb44d8cd15c23a",
+      "lines": 125
     },
     {
       "source": "docs/05-governance/implementation-trials/trial-contract.md",
@@ -59746,8 +60923,8 @@
     },
     {
       "source": "docs/06-roadmap/roadmap.md",
-      "sha256": "3f768781d4b34ca749cefde82022f121cf40ac9c9eaddc2b2f49e9e28fd4f563",
-      "lines": 285
+      "sha256": "8ba8d5100b2e286510d946ef11e7b8218846d9430d0c3d33783c8748ca1b37fa",
+      "lines": 289
     },
     {
       "source": "docs/adr/0001-capability-first-platform.md",

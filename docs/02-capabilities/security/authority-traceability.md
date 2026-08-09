@@ -23,10 +23,10 @@
 
 | Scenario | Benchmark requirements | Legacy workloads | Comparison contract |
 |---|---|---|---|
-| `rm.benchmark.security.authority.policy-enforcement@1` | `RM-SECURITY-AUTHORITY-BENCH-0001`, `0002`, `0005` | SEC-BENCH-009 | Same policy/evidence/authority/request, evaluation/cache, native enforcement, operation race/effect, audit, and reconciliation boundaries. |
-| `rm.benchmark.security.authority.derive-inspect@1` | `RM-SECURITY-AUTHORITY-BENCH-0005`; all `RM-SECURITY-ATTENUATE-BENCH-*` | SEC-BENCH-009–011 | Same multidimensional parent/child, claim vector, provenance/disclosure, native context, concurrency, close, failure, and subset/bypass oracle. |
-| `rm.benchmark.security.authority.delegate-transfer@1` | `RM-SECURITY-AUTHORITY-BENCH-0003`, `0005` | SEC-BENCH-012 | Same mode, authority constraints/depth, audience/channel/replay bounds, transaction/failure schedule, ownership inventory, redaction, and cleanup. |
-| `rm.benchmark.security.authority.expire-revoke@1` | `RM-SECURITY-AUTHORITY-BENCH-0004`, `0005` | SEC-BENCH-013 | Same generation/alias/partition topology, clocks, in-flight phases/effects, mechanism, propagation/observation, residuals, and reconciliation. |
+| `rm.benchmark.security.authority.policy-enforcement@1` | `RM-SECURITY-AUTHORITY-BENCH-0001`, `RM-SECURITY-AUTHORITY-BENCH-0002`, `RM-SECURITY-AUTHORITY-BENCH-0005` | SEC-BENCH-009 | Same policy/evidence/authority/request, evaluation/cache, native enforcement, operation race/effect, audit, and reconciliation boundaries. |
+| `rm.benchmark.security.authority.derive-inspect@1` | `RM-SECURITY-AUTHORITY-BENCH-0005`, `RM-SECURITY-ATTENUATE-BENCH-0001`, `RM-SECURITY-ATTENUATE-BENCH-0002`, `RM-SECURITY-ATTENUATE-BENCH-0003`, `RM-SECURITY-ATTENUATE-BENCH-0004`, `RM-SECURITY-ATTENUATE-BENCH-0005` | SEC-BENCH-009–011 | Same multidimensional parent/child, claim vector, provenance/disclosure, native context, concurrency, close, failure, and subset/bypass oracle. |
+| `rm.benchmark.security.authority.delegate-transfer@1` | `RM-SECURITY-AUTHORITY-BENCH-0003`, `RM-SECURITY-AUTHORITY-BENCH-0005` | SEC-BENCH-012 | Same mode, authority constraints/depth, audience/channel/replay bounds, transaction/failure schedule, ownership inventory, redaction, and cleanup. |
+| `rm.benchmark.security.authority.expire-revoke@1` | `RM-SECURITY-AUTHORITY-BENCH-0004`, `RM-SECURITY-AUTHORITY-BENCH-0005` | SEC-BENCH-013 | Same generation/alias/partition topology, clocks, in-flight phases/effects, mechanism, propagation/observation, residuals, and reconciliation. |
 
 **RM-SECURITY-AUTHORITY-TRACE-0001:** Every authority, policy, delegation, and consumed attenuation requirement MUST map to a stable assertion and executable case/review method before unit promotion.
 

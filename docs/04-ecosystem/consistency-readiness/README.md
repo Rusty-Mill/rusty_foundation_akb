@@ -56,3 +56,5 @@ flowchart TD
 ## Reproduce
 
 Run `python tools/akb_audit.py` to refresh derived evidence and `python tools/akb_audit.py --check` to verify that committed evidence matches the Markdown sources. The tool has no third-party dependencies and never edits normative documents.
+
+Promotion-unit validation includes canonical dossier fields, links to every required evidence class, stable assertion/source resolution, and stable benchmark-to-requirement resolution. These checks reject broken traceability but cannot establish semantic truth or executed evidence.
