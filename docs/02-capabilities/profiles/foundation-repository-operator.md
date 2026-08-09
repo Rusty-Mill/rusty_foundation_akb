@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.21.0 |
+| Version | 0.22.0 |
 | Extends | [`rm.profile.foundation.server` 1.23.0](foundation-server.md) |
 | Purpose | Operate software publication, authenticated repository metadata, mirrors, advisories, and emergency response without claiming a complete hosted registry product |
 
@@ -71,8 +71,11 @@
 
 **RM-PROFILE-REPOSITORY-OPERATOR-0030:** Repository authentication composes Server 1.25.0 with phishing-resistant maintainer/publisher and privileged ceremonies where product policy requires, exact WebAuthn/federation/OAuth client and audience boundaries, separately protected automation credentials, step-up for publication/security effects, recovery with namespace/signing/session/token reconciliation, and no inference that authentication or token possession grants publish, sign, promote, yank, advisory, or revoke authority.
 
+**RM-PROFILE-REPOSITORY-OPERATOR-0031:** Repository authorization composes Server 1.26.0 with typed namespace/package/release/channel/advisory actions, organization/team/maintainer relations, explicit ownership and publication grants/denies, attenuated automation/delegation, quorum obligations, sound private-resource filtering, effective-access review, generation-bound revocation, and final repository/signing/native enforcement without deriving publish authority from authentication, membership, or policy permit alone.
+
 ## History
 
+- **0.22.0:** Rebases on Server 1.26.0 and constrains repository authorization to typed publication resources/actions, ownership/team relations, attenuated automation, quorum, private filtering, effective-access review, and final repository/signing enforcement.
 - **0.21.0:** Rebases on Server 1.25.0 and constrains repository authentication to verifier-bound operator ceremonies, exact federation/token audiences, protected automation, publication step-up, and recovery/session/credential reconciliation.
 - **0.20.0:** Rebases on Server 1.24.0 and constrains repository identity governance to generation-bound maintainers, teams, publication entitlements, approvals/reviews, emergency roles, ownership, and complete credential/session/resource reconciliation.
 - **0.19.0:** Rebases on Server 1.23.0 and constrains repository privacy to explicit purposes, minimized account/telemetry data, recipient/processor lineage, rights and scoped erasure, secure exports, and legal-policy separation.

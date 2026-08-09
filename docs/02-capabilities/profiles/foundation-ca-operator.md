@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.20.0 |
+| Version | 0.21.0 |
 | Extends | [`rm.profile.foundation.server` 1.23.0](foundation-server.md) |
 | Purpose | Operate registration, certificate issuance, renewal, status, and CA lifecycle without claiming a complete public or enterprise CA product |
 
@@ -63,8 +63,11 @@
 
 **RM-PROFILE-CA-OPERATOR-0026:** CA authentication composes Server 1.25.0 with phishing-resistant and non-exportable operator authentication where policy requires, verifier-bound administration/ceremony audiences, separately authenticated service/automation identities, transaction-bound step-up for key/issuance/status effects, quorum preserved after authentication, and recovery that rotates/revokes authenticators, sessions, tokens, key access, and emergency material without inferring issuance authority.
 
+**RM-PROFILE-CA-OPERATOR-0027:** CA authorization composes Server 1.26.0 with typed issuer/key/profile/request/order/certificate/status/ceremony actions, operator/service/tenant relations, mandatory denies and quorum/SoD obligations, attenuated enrollment/signing/status delegation, sound private-ledger filtering, effective-access review, generation-bound emergency revocation, and final HSM/ledger/native enforcement without deriving key or issuance authority from authentication, role, or policy permit alone.
+
 ## History
 
+- **0.21.0:** Rebases on Server 1.26.0 and constrains CA authorization to typed issuer/key effects, operator/service relations, mandatory deny/quorum, attenuated delegation, private-ledger filtering, effective-access review, and final HSM/ledger enforcement.
 - **0.20.0:** Rebases on Server 1.25.0 and constrains CA authentication to verifier-bound operator ceremonies, exact service audiences, transaction-bound step-up, preserved quorum, and recovery across authenticators/sessions/tokens/key access.
 - **0.19.0:** Rebases on Server 1.24.0 and constrains CA identity governance to immutable operator roles, ceremony/issuance entitlements, quorum/SoD/reviews, emergency access, and complete credential/key/session/resource reconciliation.
 - **0.18.0:** Rebases on Server 1.23.0 and constrains CA privacy to explicit issuance/security purposes, minimized identity evidence, processors/regions, rights/holds/scoped erasure, and preservation of immutable certificate/ledger facts.

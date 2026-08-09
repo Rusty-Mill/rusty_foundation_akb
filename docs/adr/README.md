@@ -131,5 +131,7 @@
 | [0127](0127-deprovisioning-is-multi-boundary-reconciliation.md) | Deprovisioning is multi-boundary reconciliation, not account disablement | Accepted |
 | [0128](0128-phishing-resistance-is-an-end-to-end-protocol-property.md) | Phishing resistance is an end-to-end protocol property | Accepted |
 | [0129](0129-account-recovery-is-an-authenticator-replacement-ceremony.md) | Account recovery is an authenticator replacement ceremony | Accepted |
+| [0130](0130-effective-access-is-a-versioned-derivation.md) | Effective access is a versioned derivation, not stored truth | Accepted |
+| [0131](0131-authorization-filtering-must-be-sound-with-point-enforcement.md) | Authorization filtering must be sound with point enforcement | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

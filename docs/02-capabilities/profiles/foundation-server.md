@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 1.25.0 |
+| Version | 1.26.0 |
 | Purpose | Long-running non-interactive service foundation with bounded shutdown and protected credentials |
 
 ## Workload assumptions
@@ -101,6 +101,9 @@ No interactive desktop session, unattended restart, concurrent I/O, explicit ser
 - **RM-PROFILE-FOUNDATION-SERVER-0083:** Application authentication `>=0.1.0,<0.2.0` is conditional for interactive subjects, application sessions, external identity federation, OAuth-protected resources, authenticator enrollment/recovery, or step-up. It binds verifier/audience/purpose, account/authenticator/client/issuer generations, method/protocol, policy/risk/trust/key generations, freshness, authority, and privacy mode.
 - **RM-PROFILE-FOUNDATION-SERVER-0084:** Factors, authenticators, ceremonies, evidence, assertions, grants, tokens, sessions, entitlements, and resource authority remain separate. Phishing resistance requires complete verifier/channel binding; fallback is explicit; recovery replaces authenticators and reconciles sessions/tokens rather than bypassing authentication.
 - **RM-PROFILE-FOUNDATION-SERVER-0085:** Evidence covers passwords, WebAuthn/passkeys/attestation/backup state, OTP/OOB/recovery codes, enrollment/replacement/revocation, recovery, risk/assurance/step-up/transaction binding, federation/subject mapping, OAuth/token rotation/exchange/revocation, sessions/logout/convergence, privacy/accessibility, adversarial vectors, provider differentials, and benchmarks.
+- **RM-PROFILE-FOUNDATION-SERVER-0086:** Application authorization `>=0.1.0,<0.2.0` is conditional for product resources/actions, roles/attributes/relations, sharing/delegation, policy administration, list/search filtering, effective-access review, or cross-service enforcement. It binds exact subject/actor/delegation, tenant, resource/action/scope, context, policy/data/evaluator/native generations, consistency, authority, and purpose.
+- **RM-PROFILE-FOUNDATION-SERVER-0087:** RBAC/ABAC/ReBAC/ownership/grants/denies compose under explicit policy; decisions are evidence and resource boundaries enforce current effects. Effective access is a versioned derivation; filtering is sound with point checks; caches include every dependency; delegation attenuates; revocation reports propagation frontiers.
+- **RM-PROFILE-FOUNDATION-SERVER-0088:** Evidence covers resource/action/scope lifecycle, role/attribute/relation composition, policy release/distribution, decision/obligation/enforcement races, ownership/sharing/denies, delegation/confused deputies, filter/batch/discovery equivalence, cache/causal/revocation faults, effective-access/explanation/simulation, native drift, privacy/accessibility, and benchmarks.
 
 ## Operational constraints
 
@@ -108,6 +111,7 @@ Deadline timers and cancellation support bounded multi-phase shutdown. Sync path
 
 ## History
 
+- **1.26.0:** Adds conditional application authorization administration, composable RBAC/ABAC/ReBAC, resource enforcement, sharing/delegation, sound filtering, effective access, consistency/revocation, native boundaries, conformance, and benchmarks.
 - **1.25.0:** Adds conditional application authentication, authenticator lifecycle/recovery, protocol-qualified phishing resistance, federation and OAuth/token boundaries, session assurance/revocation, conformance, and benchmarks.
 - **1.24.0:** Adds conditional versioned directory and identity governance, loss-aware provisioning mappings, membership evidence, lifecycle and access-governance workflows, privilege/emergency handling, multi-boundary deprovisioning, conformance, and benchmarks.
 - **1.23.0:** Adds conditional privacy-purpose plans, granular consent/preferences, minimization, lineage/secondary use, processors/transfers, rights workflows, scoped erasure, deidentification, derived-system recovery, conformance, and benchmarks.
