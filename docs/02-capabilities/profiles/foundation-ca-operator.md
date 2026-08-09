@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.24.0 |
+| Version | 0.25.0 |
 | Extends | [`rm.profile.foundation.server` 1.23.0](foundation-server.md) |
 | Purpose | Operate registration, certificate issuance, renewal, status, and CA lifecycle without claiming a complete public or enterprise CA product |
 
@@ -71,8 +71,11 @@
 
 **RM-PROFILE-CA-OPERATOR-0030:** CA APIs compose Server 1.29.0 with stable enrollment/issuance/status/revocation operation identity, exact contract and profile generations, directional relying-party/agent compatibility, generated-client provenance, idempotent effect identity, privacy-safe errors, bounded quotas, and migration evidence before retirement.
 
+**RM-PROFILE-CA-OPERATOR-0031:** CA synchronization composes Server 1.30.0 only for authenticated status, policy, inventory, and ceremony projections; issuance, revocation, signing, key, and ledger effects require current fenced authority. Conflicts never use generic last-write-wins, and revocation/tombstone evidence cannot be compacted before every admitted replica is retired or rebased.
+
 ## History
 
+- **0.25.0:** Adds constrained CA projection synchronization while prohibiting offline authority for issuance/key/status effects and preserving conflict, revocation, and retirement evidence.
 - **0.24.0:** Adds governed CA service contracts, compatibility across agents and relying parties, generated artifacts, issuance-effect semantics, and evidence-based retirement.
 - **0.23.0:** Rebases on Server 1.28.0 and constrains CA workflows to immutable issuance histories, fenced HSM/ledger effects, pending timers, quorum ceremonies, forward compensation, migration, and repair without replayed signing.
 - **0.22.0:** Rebases on Server 1.27.0 and constrains CA secrets to HSM-mediated use, brokered service identity, scoped leases, complete issuer/service rotation, dual-control emergency access, compromise response, and explicit recovery/deletion boundaries.

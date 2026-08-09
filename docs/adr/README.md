@@ -139,5 +139,7 @@
 | [0135](0135-compensation-is-a-forward-action-not-rollback.md) | Compensation is a forward action, not rollback | Accepted |
 | [0136](0136-compatibility-is-directional-and-consumer-qualified.md) | Compatibility is directional and consumer-qualified | Accepted |
 | [0137](0137-deprecation-notice-is-not-removal-authority.md) | Deprecation notice is not removal authority | Accepted |
+| [0138](0138-local-acceptance-is-not-authoritative-effect-completion.md) | Local acceptance is not authoritative effect completion | Accepted |
+| [0139](0139-conflict-resolution-is-typed-domain-policy.md) | Conflict resolution is typed domain policy | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

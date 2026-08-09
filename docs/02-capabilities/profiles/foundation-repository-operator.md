@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.25.0 |
+| Version | 0.26.0 |
 | Extends | [`rm.profile.foundation.server` 1.23.0](foundation-server.md) |
 | Purpose | Operate software publication, authenticated repository metadata, mirrors, advisories, and emergency response without claiming a complete hosted registry product |
 
@@ -79,8 +79,11 @@
 
 **RM-PROFILE-REPOSITORY-OPERATOR-0034:** Repository APIs compose Server 1.29.0 with stable package/release/advisory operation identity, immutable contract registry releases, consumer-qualified CLI/SDK/service compatibility, signed generated-artifact provenance, idempotent publication, stable pagination/errors, quota policy, and observed migration before retirement.
 
+**RM-PROFILE-REPOSITORY-OPERATOR-0035:** Repository synchronization composes Server 1.30.0 for mirrors, operator caches, and offline metadata tools while preserving immutable release identity/bytes, authenticated snapshot/frontier authority, signed provenance, yank/advisory/deletion overlays, selective privacy boundaries, conflict rejection, and no offline claim of publication completion.
+
 ## History
 
+- **0.26.0:** Adds constrained repository synchronization for mirrors and offline metadata while preserving immutable publication authority, authenticated frontiers, security overlays, and conflict rejection.
 - **0.25.0:** Adds governed repository service contracts, generated artifacts, directional compatibility, publication semantics, and evidence-based API retirement.
 - **0.24.0:** Rebases on Server 1.28.0 and constrains repository workflows to immutable release histories, fenced publication effects, quorum tasks, embargo timers, mirror children, forward compensation, migration, and repair.
 - **0.23.0:** Rebases on Server 1.27.0 and constrains repository secrets to workload-brokered automation, opaque signing, exact audiences, complete CI/mirror rotation, privileged checkout, leak response, and separated release authority.

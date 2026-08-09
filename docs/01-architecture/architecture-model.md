@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.67.0
+**Version:** 1.68.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -543,6 +543,8 @@ The [secrets lifecycle, dynamic credentials, and privileged-access brokerage fou
 The [application workflow, durable orchestration, and human-task foundations](../02-capabilities/workflow-orchestration/README.md) compose immutable definitions/instances/history, deterministic replay, activities/commands/signals/queries, retries/idempotency/fencing/effects, timers/calendars/waits, parallelism/joins/races/children, cancellation/termination/compensation, definition evolution/in-flight migration, human tasks/forms, approvals/quorum/separation of duties, operations/repair/recovery, conformance, and benchmarks. Replay reconstructs decisions without repeating effects implicitly, while compensation is a newly authorized forward action rather than rollback ([ADR-0134](../adr/0134-workflow-replay-reconstructs-decisions-not-effects.md), [ADR-0135](../adr/0135-compensation-is-a-forward-action-not-rollback.md)). Exact engine/language/notation, workflow definitions, activities/effects, state/payload schemas, calendars, retry/compensation/migration, task/forms, assignment/approval/SoD policy, retention, and objectives remain product choices. Its specifications remain Draft and cannot amend this model.
 
 The [application API lifecycle and service-contract governance foundations](../02-capabilities/api-governance/README.md) compose stable logical surface/operation/type identity, HTTP/RPC/event bindings, multidimensional directional compatibility, request/query/idempotency/concurrency/error/long-running/quota semantics, immutable registries, reproducible generation, SDK review, rollout, consumer-qualified deprecation/migration/sunset, conformance, and benchmarks. Compatibility is directional and consumer-qualified, while deprecation notices and dates do not authorize removal ([ADR-0136](../adr/0136-compatibility-is-directional-and-consumer-qualified.md), [ADR-0137](../adr/0137-deprecation-notice-is-not-removal-authority.md)). Exact product APIs, protocols/schema languages, gateways, registries, SDK languages, quotas, support periods, rollout policy, and release trains remain product choices. Its specifications remain Draft and cannot amend this model.
+
+The [application synchronization, offline state, and conflict-resolution foundations](../02-capabilities/application-sync/README.md) compose dataset/replica/object/change identity, topology and membership, authenticated sessions/checkpoints, snapshots and atomic changes, causal context and qualified convergence, typed merge/conflict policy, durable offline intent and optimistic projections, selective synchronization, deletion/tombstone retirement, schema migration, large attachments, operations/recovery, conformance histories, and benchmarks. Local acceptance is distinct from authoritative effect completion, while conflict resolution is typed domain policy rather than universal timestamp or arrival-order arbitration ([ADR-0138](../adr/0138-local-acceptance-is-not-authoritative-effect-completion.md), [ADR-0139](../adr/0139-conflict-resolution-is-typed-domain-policy.md)). Exact datasets, authorities, topologies, providers/protocols, schemas, merge algorithms, offline eligibility, selection, retention, and objectives remain product choices. Its specifications remain Draft and cannot amend this model.
 
 ## 18. Deliberately unresolved choices
 
