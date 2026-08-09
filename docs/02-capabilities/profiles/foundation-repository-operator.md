@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.27.0 |
+| Version | 0.28.0 |
 | Extends | [`rm.profile.foundation.server` 1.23.0](foundation-server.md) |
 | Purpose | Operate software publication, authenticated repository metadata, mirrors, advisories, and emergency response without claiming a complete hosted registry product |
 
@@ -83,8 +83,11 @@
 
 **RM-PROFILE-REPOSITORY-OPERATOR-0036:** Repository tenant governance composes Server 1.31.0 for private namespaces, storage/transfer/build quotas, plan eligibility, and usage allocation while preserving repository authorization and publication authority, immutable release facts, security/advisory access during commercial faults, signed meter provenance, and no billing status as artifact trust evidence.
 
+**RM-PROFILE-REPOSITORY-OPERATOR-0037:** Repository communications compose Server 1.32.0 for release/advisory/security notifications, maintainer workflows, and subscriber preferences while preserving signed repository/advisory truth, embargo/access policy, scoped audiences/suppressions, provider-bound delivery evidence, safe artifact links, and no email/push engagement as acknowledgement authority.
+
 ## History
 
+- **0.28.0:** Adds constrained release/advisory/security communications with scoped audiences/preferences, exact delivery evidence, safe links, and preserved repository authority.
 - **0.27.0:** Adds constrained private-repository tenancy, plan eligibility, quota and usage governance while preserving publication, authorization, trust, and security-response boundaries.
 - **0.26.0:** Adds constrained repository synchronization for mirrors and offline metadata while preserving immutable publication authority, authenticated frontiers, security overlays, and conflict rejection.
 - **0.25.0:** Adds governed repository service contracts, generated artifacts, directional compatibility, publication semantics, and evidence-based API retirement.

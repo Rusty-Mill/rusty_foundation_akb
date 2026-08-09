@@ -143,5 +143,7 @@
 | [0139](0139-conflict-resolution-is-typed-domain-policy.md) | Conflict resolution is typed domain policy | Accepted |
 | [0140](0140-entitlement-is-eligibility-evidence-not-effect-authority.md) | Entitlement is eligibility evidence, not effect authority | Accepted |
 | [0141](0141-meter-corrections-are-immutable-adjustments.md) | Meter corrections are immutable adjustments | Accepted |
+| [0142](0142-provider-acceptance-is-not-recipient-delivery.md) | Provider acceptance is not recipient delivery | Accepted |
+| [0143](0143-communication-preference-is-scoped-evidence.md) | Communication preference is scoped evidence | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

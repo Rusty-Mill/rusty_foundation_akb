@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 1.31.0 |
+| Version | 1.32.0 |
 | Purpose | Long-running non-interactive service foundation with bounded shutdown and protected credentials |
 
 ## Workload assumptions
@@ -119,6 +119,9 @@ No interactive desktop session, unattended restart, concurrent I/O, explicit ser
 - **RM-PROFILE-FOUNDATION-SERVER-0101:** Tenant service governance `>=0.1.0,<0.2.0` is conditional for multi-tenant placement/isolation, commercial feature eligibility, usage metering, or quota admission. It binds tenant/partition/catalog/agreement/feature/meter/quota/provider generations, authority, periods, privacy, and objectives.
 - **RM-PROFILE-FOUNDATION-SERVER-0102:** Entitlement, authorization, capacity, quota reservation, effect, usage, charge, invoice, and payment remain distinct. Meter events are immutable; corrections are adjustments; distributed quota enforcement declares consistency and overshoot; tenant closure reconciles every boundary.
 - **RM-PROFILE-FOUNDATION-SERVER-0103:** Evidence covers tenant lifecycle/transfer/closure, isolation vectors and placement moves, subscription/provider reconciliation, entitlement precedence/cache/revocation, quota fault histories, meter/aggregation/rating/adjustments, grace/offline, migrations, disputes, privacy/accessibility, and benchmarks.
+- **RM-PROFILE-FOUNDATION-SERVER-0104:** Application communications `>=0.1.0,<0.2.0` is conditional for email, SMS/provider messaging, remote push, in-app inboxes, campaigns, or conversations. It binds intent/audience/recipient/preference/template/plan/attempt/provider generations, purpose, authority, privacy, retention, and objectives.
+- **RM-PROFILE-FOUNDATION-SERVER-0105:** Provider acceptance, downstream handoff, delivery, presentation, engagement, reply, and domain effect remain distinct. Preferences/suppressions are scoped; retries/fallbacks preserve stable attempt/effect identity; callbacks are authenticated observations reconciled with providers.
+- **RM-PROFILE-FOUNDATION-SERVER-0106:** Evidence covers endpoint reuse, audiences, consent/preferences/suppression, accessible localized rendering, scheduling/quiet hours, email authentication/unsubscribe/bounces, SMS receipts/keywords, push TTL/collapse/token lifecycle, inbound/link/attachment safety, abuse, migration, privacy, and benchmarks.
 
 ## Operational constraints
 
@@ -126,6 +129,7 @@ Deadline timers and cancellation support bounded multi-phase shutdown. Sync path
 
 ## History
 
+- **1.32.0:** Adds conditional multichannel application communications, scoped preferences, accessible rendering, exact delivery evidence, provider reconciliation, content safety, abuse controls, conformance, and benchmarks.
 - **1.31.0:** Adds conditional tenant lifecycle and isolation, commercial eligibility boundaries, immutable metering and adjustments, quota reservations/enforcement, billing separation, migration, conformance, and benchmarks.
 - **1.30.0:** Adds conditional application synchronization, offline intent/effect milestones, causal convergence, typed conflicts, selective replication, tombstone retirement, migration, conformance histories, and benchmarks.
 - **1.29.0:** Adds conditional API contract governance, stable logical operation identity, directional compatibility, protocol composition, registries/generation, consumer-qualified deprecation and sunset, conformance, and benchmarks.

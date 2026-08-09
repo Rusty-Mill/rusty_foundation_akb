@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.59.0 |
+| Version | 0.60.0 |
 | Extends | [`rm.profile.foundation.desktop` 1.0.0](foundation-desktop.md) |
 | Purpose | Add native top-level window and graphics-presentation infrastructure without claiming a complete GUI toolkit |
 
@@ -425,6 +425,12 @@
 
 **RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0208:** Evidence covers provider delay/gaps, plan/trial changes, cached entitlement expiry/revocation, offline grace and overuse, quota reservation/recovery, meter retry/dedup/correction, account/tenant transition, accessible localized explanations/appeals, responsiveness, energy, and benchmarks.
 
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0209:** Application communications `>=0.1.0,<0.2.0` is conditional for remote push, in-app inbox/conversations, email/SMS handoff, preference centers, or delivery status. It binds account/device/endpoint, purpose/topic/channel, content/locale, plan/attempt/provider, privacy, and lifecycle generations.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0210:** Remote push is an optional attention/invalidation hint above native notifications and never authoritative data delivery. The UI distinguishes sent/delivered/unknown/read/replied/effect states and offers accessible localized preferences, unsubscribe, conflict/correction, attachment/link safety, and offline synchronization.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0211:** Evidence covers permission/token/reinstall/account changes, TTL/collapse/order/loss, push-to-sync reconciliation, in-app pagination/read state, endpoint reuse, preferences/quiet hours, locale/render/client matrices, inbound links/actions, privacy tracking, responsiveness, memory/network/energy, and benchmarks.
+
 ## Whole-product gaps
 
 This profile does not supply a rendering command model, widget/UI framework, text editing model, image/audio codecs, media containers/graphs, gestures, or translated product resources. Product-specific semantic roles/actions/content, accepted transfer formats/importers, locale coverage, audio policy/content, and accessible UX still belong to the product/framework. It cannot claim desktop-application completeness.
@@ -437,6 +443,7 @@ Input evidence additionally covers layout/IME diversity, keyboard-only operation
 
 ## History
 
+- **0.60.0:** Adds conditional application communications, remote-push-to-native-attention boundaries, in-app conversations, preference experiences, exact outcomes, accessible rendering, client lifecycle conformance, and benchmarks.
 - **0.59.0:** Adds conditional tenant/commercial governance, accessible eligibility and quota state, offline leases and usage reconciliation, metering corrections, provider fault histories, and benchmarks.
 - **0.58.0:** Adds conditional offline application synchronization, explicit optimistic/authoritative milestones, causal and conflict semantics, selective state, deletion/migration, accessible status, conformance, and benchmarks.
 - **0.57.0:** Adds conditional API contract governance, generated SDK boundaries, directional compatibility, client migration/deprecation evidence, conformance, and desktop performance qualities.
