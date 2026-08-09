@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 1.27.0 |
+| Version | 1.28.0 |
 | Purpose | Long-running non-interactive service foundation with bounded shutdown and protected credentials |
 
 ## Workload assumptions
@@ -107,6 +107,9 @@ No interactive desktop session, unattended restart, concurrent I/O, explicit ser
 - **RM-PROFILE-FOUNDATION-SERVER-0089:** Secrets lifecycle `>=0.1.0,<0.2.0` is conditional for remote vaults/brokers, dynamic database/cloud/API/SSH/certificate credentials, workload bootstrap, secret delivery, rotation, privileged checkout, or leak response. It binds subject/actor/workload, target/audience/purpose, secret/credential/lease/provider generations, protection/exposure, authority, expiry, and policy.
 - **RM-PROFILE-FOUNDATION-SERVER-0090:** Stored items, values, credentials, leases, handles, deliveries, adoption, use, and target authentication remain distinct. Non-reveal requires a named provider-mediated operation; rotation closes only after successor use and predecessor denial; revocation/deletion claims name target/provider/backup residuals.
 - **RM-PROFILE-FOUNDATION-SERVER-0091:** Evidence covers conditional versioning, secret classes, bootstrap/attestation, dynamic issuance/renew/revoke, broker/agent isolation, opaque-use canaries, file/env/argument/descriptor delivery, dependent reload, staged fleet rotation, privileged/JIT/break-glass, scanning/leak response, backup/restore/migration/deletion, privacy/accessibility, faults, and benchmarks.
+- **RM-PROFILE-FOUNDATION-SERVER-0092:** Durable workflow `>=0.1.0,<0.2.0` is conditional for long-running orchestration, activities/effects, timers/waits, retries/compensation, child workflows, human tasks/approvals, or in-flight migration. It binds instance/run/definition/history, tenant/subject/actor, schemas, authority, policy/provider/worker generations, consistency, deadlines, retention, and privacy.
+- **RM-PROFILE-FOUNDATION-SERVER-0093:** Replay reconstructs deterministic orchestration decisions and performs no external effects. Attempts are at least once absent target idempotency/fencing; exactly-once claims name boundaries; cancellation/termination/compensation differ; compensation is a forward action; human decisions and downstream fulfillment remain separately evidenced.
+- **RM-PROFILE-FOUNDATION-SERVER-0094:** Evidence covers definition validation, replay differentials, command/signal/update/query milestones, activity fault histories, idempotency/fencing, timers/calendars, parallel/join/race/child bounds, cancellation/compensation residuals, version/migration, accessible human tasks/forms, quorum/SoD, repair/restore, privacy, provider differentials, and benchmarks.
 
 ## Operational constraints
 
@@ -114,6 +117,7 @@ Deadline timers and cancellation support bounded multi-phase shutdown. Sync path
 
 ## History
 
+- **1.28.0:** Adds conditional durable workflows, deterministic history replay, activity/effect boundaries, timers/parallelism/children, forward compensation, migration, human tasks/approvals, repair/recovery, conformance, and benchmarks.
 - **1.27.0:** Adds conditional secrets lifecycle, dynamic credentials and leases, workload bootstrap/brokers, non-reveal operations, controlled delivery, complete rotation/revocation, privileged access, leak response, recovery, conformance, and benchmarks.
 - **1.26.0:** Adds conditional application authorization administration, composable RBAC/ABAC/ReBAC, resource enforcement, sharing/delegation, sound filtering, effective access, consistency/revocation, native boundaries, conformance, and benchmarks.
 - **1.25.0:** Adds conditional application authentication, authenticator lifecycle/recovery, protocol-qualified phishing resistance, federation and OAuth/token boundaries, session assurance/revocation, conformance, and benchmarks.

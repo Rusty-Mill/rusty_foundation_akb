@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.55.0 |
+| Version | 0.56.0 |
 | Extends | [`rm.profile.foundation.desktop` 1.0.0](foundation-desktop.md) |
 | Purpose | Add native top-level window and graphics-presentation infrastructure without claiming a complete GUI toolkit |
 
@@ -401,6 +401,12 @@
 
 **RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0196:** Evidence covers locked/unavailable vaults, account/device/app switching, prompts/cancellation, dynamic lease renewal, broker routing, clipboard/file/env/child-process exposure, reload/restart, rotation overlap/failure, privileged session/JIT/emergency flows, leak containment, backup/restore, localization/accessibility, responsiveness, and energy.
 
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0197:** Durable workflow `>=0.1.0,<0.2.0` is conditional for user-visible long-running operations, offline/resumable processes, task inboxes/forms, approvals, progress/cancellation, or repair. It binds exact instance/run/definition/history, account/tenant/actor, task/effect generations, authority, deadlines, privacy, and provider.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0198:** Interfaces display durable domain state rather than owning it; distinguish requested/accepted/running/waiting/human/compensating/completed/residual states; provide safe cancel/withdraw/retry/escalate; protect task existence; support accessible/localized forms and adequate time; and never label compensation as rollback.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0199:** Evidence covers restart/offline/reconnect, duplicate commands/signals, stale views, progress and cancellation races, task claim/delegation/conflicts/drafts/submission, approval/quorum/SoD, notifications/deadlines/calendars, partial effects/compensation, version migration, repair, privacy redaction, localization/accessibility, responsiveness, and energy.
+
 ## Whole-product gaps
 
 This profile does not supply a rendering command model, widget/UI framework, text editing model, image/audio codecs, media containers/graphs, gestures, or translated product resources. Product-specific semantic roles/actions/content, accepted transfer formats/importers, locale coverage, audio policy/content, and accessible UX still belong to the product/framework. It cannot claim desktop-application completeness.
@@ -413,6 +419,7 @@ Input evidence additionally covers layout/IME diversity, keyboard-only operation
 
 ## History
 
+- **0.56.0:** Adds conditional durable user-visible workflows, resumable progress, safe cancellation/compensation status, protected task inboxes, accessible forms, approvals/quorum, migration/repair, conformance, and benchmarks.
 - **0.55.0:** Adds conditional secret and credential brokerage, minimized reveal/delivery, dynamic leases, rotation adoption/denial status, privileged checkout/break-glass, incident response, recovery, conformance, and benchmarks.
 - **0.54.0:** Adds conditional permission-aware UI, ownership/sharing and access administration, safe explanations, sound resource filtering, offline/revocation disclosure, point enforcement, conformance, and benchmarks.
 - **0.53.0:** Adds conditional application sign-in, passkey/security-key and fallback UX, broker/federation routing, authenticator management/recovery, step-up, session/logout/revocation, conformance, and benchmarks.

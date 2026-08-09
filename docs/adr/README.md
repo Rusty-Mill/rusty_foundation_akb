@@ -135,5 +135,7 @@
 | [0131](0131-authorization-filtering-must-be-sound-with-point-enforcement.md) | Authorization filtering must be sound with point enforcement | Accepted |
 | [0132](0132-secret-rotation-completes-at-successor-use-and-predecessor-denial.md) | Secret rotation completes at successor use and predecessor denial | Accepted |
 | [0133](0133-use-without-reveal-is-a-provider-mediated-operation-contract.md) | Use without reveal is a provider-mediated operation contract | Accepted |
+| [0134](0134-workflow-replay-reconstructs-decisions-not-effects.md) | Workflow replay reconstructs decisions and never repeats effects implicitly | Accepted |
+| [0135](0135-compensation-is-a-forward-action-not-rollback.md) | Compensation is a forward action, not rollback | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.23.0 |
+| Version | 0.24.0 |
 | Extends | [`rm.profile.foundation.server` 1.23.0](foundation-server.md) |
 | Purpose | Operate software publication, authenticated repository metadata, mirrors, advisories, and emergency response without claiming a complete hosted registry product |
 
@@ -75,8 +75,11 @@
 
 **RM-PROFILE-REPOSITORY-OPERATOR-0032:** Repository secrets compose Server 1.27.0 with workload-brokered upload/sign/publish/mirror/advisory credentials, opaque signing where available, exact automation audiences, staged rotation across CI and mirrors, successor-use and predecessor-denial proof, JIT/emergency operator checkout, leak scanning/response for source/history/artifacts/logs, and recovery that preserves release/signing authority separation.
 
+**RM-PROFILE-REPOSITORY-OPERATOR-0033:** Repository workflows compose Server 1.28.0 with immutable release/advisory/security-response definitions and histories, fenced build/sign/publish/promote/yank/revoke effects, durable approvals/quorum/SoD, timers/embargoes, mirror/rollout children, explicit compensation, versioned in-flight migration, human tasks, and repair without replaying publication effects or claiming rollback of released artifacts.
+
 ## History
 
+- **0.24.0:** Rebases on Server 1.28.0 and constrains repository workflows to immutable release histories, fenced publication effects, quorum tasks, embargo timers, mirror children, forward compensation, migration, and repair.
 - **0.23.0:** Rebases on Server 1.27.0 and constrains repository secrets to workload-brokered automation, opaque signing, exact audiences, complete CI/mirror rotation, privileged checkout, leak response, and separated release authority.
 - **0.22.0:** Rebases on Server 1.26.0 and constrains repository authorization to typed publication resources/actions, ownership/team relations, attenuated automation, quorum, private filtering, effective-access review, and final repository/signing enforcement.
 - **0.21.0:** Rebases on Server 1.25.0 and constrains repository authentication to verifier-bound operator ceremonies, exact federation/token audiences, protected automation, publication step-up, and recovery/session/credential reconciliation.

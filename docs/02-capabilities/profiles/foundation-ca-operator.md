@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.22.0 |
+| Version | 0.23.0 |
 | Extends | [`rm.profile.foundation.server` 1.23.0](foundation-server.md) |
 | Purpose | Operate registration, certificate issuance, renewal, status, and CA lifecycle without claiming a complete public or enterprise CA product |
 
@@ -67,8 +67,11 @@
 
 **RM-PROFILE-CA-OPERATOR-0028:** CA secrets compose Server 1.27.0 with HSM/provider-mediated key use, workload-brokered enrollment/status/transparency credentials, dynamic operator sessions, exact lease/ceremony scopes, staged issuer/service rotation with successor-use and predecessor-denial evidence, dual-control checkout and offline break-glass, leak/compromise response, backup/migration/deletion boundaries, and no plaintext private-key assumption.
 
+**RM-PROFILE-CA-OPERATOR-0029:** CA workflows compose Server 1.28.0 with immutable enrollment/issuance/revocation/key-ceremony/hierarchy-recovery histories, fenced HSM/ledger/status effects, timers and pending approvals, quorum/SoD human tasks, child ceremonies, forward compensation and residuals, versioned migration, repair/recovery, and no replay of signing or issuance effects.
+
 ## History
 
+- **0.23.0:** Rebases on Server 1.28.0 and constrains CA workflows to immutable issuance histories, fenced HSM/ledger effects, pending timers, quorum ceremonies, forward compensation, migration, and repair without replayed signing.
 - **0.22.0:** Rebases on Server 1.27.0 and constrains CA secrets to HSM-mediated use, brokered service identity, scoped leases, complete issuer/service rotation, dual-control emergency access, compromise response, and explicit recovery/deletion boundaries.
 - **0.21.0:** Rebases on Server 1.26.0 and constrains CA authorization to typed issuer/key effects, operator/service relations, mandatory deny/quorum, attenuated delegation, private-ledger filtering, effective-access review, and final HSM/ledger enforcement.
 - **0.20.0:** Rebases on Server 1.25.0 and constrains CA authentication to verifier-bound operator ceremonies, exact service audiences, transaction-bound step-up, preserved quorum, and recovery across authenticators/sessions/tokens/key access.
