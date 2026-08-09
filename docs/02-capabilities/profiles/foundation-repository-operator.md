@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.20.0 |
+| Version | 0.21.0 |
 | Extends | [`rm.profile.foundation.server` 1.23.0](foundation-server.md) |
 | Purpose | Operate software publication, authenticated repository metadata, mirrors, advisories, and emergency response without claiming a complete hosted registry product |
 
@@ -69,8 +69,11 @@
 
 **RM-PROFILE-REPOSITORY-OPERATOR-0029:** Repository identity governance composes Server 1.24.0 with immutable maintainer/publisher/service/tenant generations, organization/team membership evidence, invitations/federation, scoped publication entitlements, approval/SoD/access-review policy, emergency roles, and deprovisioning across sessions, credentials, signing/publishing grants, namespaces, artifacts, advisories, mirrors, and ownership without inferring publication authority from directory membership.
 
+**RM-PROFILE-REPOSITORY-OPERATOR-0030:** Repository authentication composes Server 1.25.0 with phishing-resistant maintainer/publisher and privileged ceremonies where product policy requires, exact WebAuthn/federation/OAuth client and audience boundaries, separately protected automation credentials, step-up for publication/security effects, recovery with namespace/signing/session/token reconciliation, and no inference that authentication or token possession grants publish, sign, promote, yank, advisory, or revoke authority.
+
 ## History
 
+- **0.21.0:** Rebases on Server 1.25.0 and constrains repository authentication to verifier-bound operator ceremonies, exact federation/token audiences, protected automation, publication step-up, and recovery/session/credential reconciliation.
 - **0.20.0:** Rebases on Server 1.24.0 and constrains repository identity governance to generation-bound maintainers, teams, publication entitlements, approvals/reviews, emergency roles, ownership, and complete credential/session/resource reconciliation.
 - **0.19.0:** Rebases on Server 1.23.0 and constrains repository privacy to explicit purposes, minimized account/telemetry data, recipient/processor lineage, rights and scoped erasure, secure exports, and legal-policy separation.
 - **0.18.0:** Rebases on Server 1.22.0 and constrains repository classification to issuer-qualified immutable lineage, private sharing, protected transfer, governed downgrade, publication DLP, and separated release authority.

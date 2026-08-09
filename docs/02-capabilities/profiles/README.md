@@ -39,17 +39,17 @@ The table is only a view. Each manifest defines exact contract ranges, predicate
 
 ## Windowed desktop extension
 
-[`rm.profile.foundation.windowed-desktop` 0.52.0](foundation-windowed-desktop.md) extends Desktop 1.0.0 with negotiated windowing/graphics/input/text/accessibility, data transfer, i18n/configuration/observability/lifecycle, and conditional networking/service-traffic/security/policy/messaging/coordination/application-persistence/object-storage/caching/search/analytics/interchange/compression/archive/content-inspection/information-protection/privacy/identity-governance/audio/capture/background/deployment/device/document/media capabilities. It retains optional reauthentication/delegation, memory, plugins, and threading foundations. It remains incomplete until product identity sources, tenant/group/entitlement/workflow policy, providers, UI/document/media choices, translations, and other product policy are selected.
+[`rm.profile.foundation.windowed-desktop` 0.53.0](foundation-windowed-desktop.md) extends Desktop 1.0.0 with negotiated windowing/graphics/input/text/accessibility and conditional infrastructure, privacy, identity governance, and application-authentication capabilities. Product identity/authentication providers, methods, federation/token/session/recovery policy, UI/document/media choices, translations, and other product policy remain explicit.
 
-[`rm.profile.foundation.server` 1.24.0](foundation-server.md) conditionally selects managed services/schedules, cryptographic/certificate lifecycle, network/application protocols, policy, messaging, coordination, persistence, storage, caching, search, analytics, interchange, archives, inspection, information protection, privacy, account/directory/tenant/identity governance, signed artifacts, and deployment. It preserves exact identity sources/providers, schemas/mappings, correlation/group/tenant/entitlement/workflow/authorization policy, services, providers, topologies, effects, recovery policy, and operational gaps.
+[`rm.profile.foundation.server` 1.25.0](foundation-server.md) conditionally selects application authentication, authenticator lifecycle/recovery, federation, tokens, and session assurance in addition to the prior infrastructure and governance domains. Exact providers, methods, assurance/risk, trust relationships, clients/audiences/scopes, session/recovery objectives, resource authorization, and operational gaps remain product choices.
 
 ## Repository operator extension
 
-[`rm.profile.foundation.repository-operator` 0.20.0](foundation-repository-operator.md) extends Server 1.24.0 with publication, repository security response, privacy, and identity-governance evidence. Exact provider, policy, topology, objectives, legal workflow, and staffing remain product RFC choices.
+[`rm.profile.foundation.repository-operator` 0.21.0](foundation-repository-operator.md) extends Server 1.25.0 with publication, repository security response, privacy, identity-governance, and operator-authentication evidence. Exact provider, method, federation/token, publication-step-up, recovery, policy, topology, and staffing remain product RFC choices.
 
 ## Certificate-authority operator extension
 
-[`rm.profile.foundation.ca-operator` 0.19.0](foundation-ca-operator.md) extends Server 1.24.0 with registration/validation, issuance, key ceremonies, status/transparency, credential/hierarchy lifecycle, privacy, and identity-governance evidence. Exact provider, trust, certificate, legal/audit, and high-risk-feature policy remains explicit.
+[`rm.profile.foundation.ca-operator` 0.20.0](foundation-ca-operator.md) extends Server 1.25.0 with registration/validation, issuance, key ceremonies, status/transparency, credential/hierarchy lifecycle, privacy, identity governance, and high-assurance operator authentication. Exact providers, methods, transaction step-up, trust, certificate, legal/audit, and recovery policy remain explicit.
 
 ## Version transition
 

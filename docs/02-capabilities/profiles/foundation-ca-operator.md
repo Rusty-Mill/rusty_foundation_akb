@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.19.0 |
+| Version | 0.20.0 |
 | Extends | [`rm.profile.foundation.server` 1.23.0](foundation-server.md) |
 | Purpose | Operate registration, certificate issuance, renewal, status, and CA lifecycle without claiming a complete public or enterprise CA product |
 
@@ -61,8 +61,11 @@
 
 **RM-PROFILE-CA-OPERATOR-0025:** CA identity governance composes Server 1.24.0 with immutable operator/approver/auditor/service/tenant generations, ceremony and issuance entitlements, separation of duties, quorum/access reviews, JIT/emergency roles, and deprovisioning across directory, sessions, credentials, HSM/key shares, issuance/status/transparency authority, ledgers, backups, and ownership without inferring key or issuance authority from membership.
 
+**RM-PROFILE-CA-OPERATOR-0026:** CA authentication composes Server 1.25.0 with phishing-resistant and non-exportable operator authentication where policy requires, verifier-bound administration/ceremony audiences, separately authenticated service/automation identities, transaction-bound step-up for key/issuance/status effects, quorum preserved after authentication, and recovery that rotates/revokes authenticators, sessions, tokens, key access, and emergency material without inferring issuance authority.
+
 ## History
 
+- **0.20.0:** Rebases on Server 1.25.0 and constrains CA authentication to verifier-bound operator ceremonies, exact service audiences, transaction-bound step-up, preserved quorum, and recovery across authenticators/sessions/tokens/key access.
 - **0.19.0:** Rebases on Server 1.24.0 and constrains CA identity governance to immutable operator roles, ceremony/issuance entitlements, quorum/SoD/reviews, emergency access, and complete credential/key/session/resource reconciliation.
 - **0.18.0:** Rebases on Server 1.23.0 and constrains CA privacy to explicit issuance/security purposes, minimized identity evidence, processors/regions, rights/holds/scoped erasure, and preservation of immutable certificate/ledger facts.
 - **0.17.0:** Rebases on Server 1.22.0 and constrains CA classification to compartmented immutable evidence, protected channels, quorum downgrade, DLP, offline/revocation, and separated key/issuance/trust authority.

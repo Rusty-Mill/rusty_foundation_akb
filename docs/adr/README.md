@@ -129,5 +129,7 @@
 | [0125](0125-erasure-is-a-scoped-lineage-reconciliation-workflow.md) | Erasure is a scoped lineage-reconciliation workflow | Accepted |
 | [0126](0126-directory-membership-is-evidence-not-effective-authority.md) | Directory membership is evidence, not effective authority | Accepted |
 | [0127](0127-deprovisioning-is-multi-boundary-reconciliation.md) | Deprovisioning is multi-boundary reconciliation, not account disablement | Accepted |
+| [0128](0128-phishing-resistance-is-an-end-to-end-protocol-property.md) | Phishing resistance is an end-to-end protocol property | Accepted |
+| [0129](0129-account-recovery-is-an-authenticator-replacement-ceremony.md) | Account recovery is an authenticator replacement ceremony | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

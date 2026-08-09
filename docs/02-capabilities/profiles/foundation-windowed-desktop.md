@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.52.0 |
+| Version | 0.53.0 |
 | Extends | [`rm.profile.foundation.desktop` 1.0.0](foundation-desktop.md) |
 | Purpose | Add native top-level window and graphics-presentation infrastructure without claiming a complete GUI toolkit |
 
@@ -383,6 +383,12 @@
 
 **RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0187:** Evidence covers ambiguous identity, tenant/guest context, group derivations, stale pages/feeds, mapping loss, approval/SoD conflicts, JML and access-review tasks, offline/provider failures, session/credential/resource residuals, no-resurrection, localization/accessibility, disclosure resistance, responsiveness, and energy.
 
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0188:** Application authentication `>=0.1.0,<0.2.0` is conditional for sign-in, passkeys/security keys, external browser/broker federation, authenticator management/recovery, account switching, session management, or sensitive-action step-up. It binds exact account/tenant/verifier/client/provider generations, purpose/transaction, interaction, risk/assurance, and authority.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0189:** Interfaces identify the verifier/account/tenant/method/transaction, preserve platform brokers and password managers, provide adequate time and non-biometric alternatives, distinguish local user verification from RP authentication, expose fallback weakness and session/logout boundaries, and never train users to approve context-free prompts.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0190:** Evidence covers browser/broker/app return routing, cancellation/restart, passkey discovery and synced/device-bound states, security keys, password/OTP/OOB, authenticator lifecycle/recovery, federation errors, step-up, concurrent sessions/logout/revocation, offline/locked devices, accessibility/localization, disclosure resistance, responsiveness, and energy.
+
 ## Whole-product gaps
 
 This profile does not supply a rendering command model, widget/UI framework, text editing model, image/audio codecs, media containers/graphs, gestures, or translated product resources. Product-specific semantic roles/actions/content, accepted transfer formats/importers, locale coverage, audio policy/content, and accessible UX still belong to the product/framework. It cannot claim desktop-application completeness.
@@ -395,6 +401,7 @@ Input evidence additionally covers layout/IME diversity, keyboard-only operation
 
 ## History
 
+- **0.53.0:** Adds conditional application sign-in, passkey/security-key and fallback UX, broker/federation routing, authenticator management/recovery, step-up, session/logout/revocation, conformance, and benchmarks.
 - **0.52.0:** Adds conditional identity administration, tenant/guest and membership evidence, provisioning/lifecycle/access-review workflows, privileged/emergency mediation, explicit propagation/residuals, conformance, and benchmarks.
 - **0.51.0:** Adds conditional privacy-purpose and consent/preference evidence, accessible rights workflows, secure exports/corrections, scoped erasure and residuals, offline/processor/region handling, conformance, and benchmarks.
 - **0.50.0:** Adds conditional sensitivity labeling, lineage-aware classification, governed downgrade, independently evidenced markings/rights, cross-channel DLP, accessible user mediation, offline/revocation, conformance, and benchmarks.
