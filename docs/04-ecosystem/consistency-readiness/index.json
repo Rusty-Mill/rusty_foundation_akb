@@ -4,24 +4,24 @@
   "authority": "docs/01-architecture/architecture-model.md",
   "generated_from": "Markdown; this index is derived and non-authoritative",
   "summary": {
-    "markdown_documents": 1137,
-    "internal_links": 2181,
-    "requirements": 5286,
+    "markdown_documents": 1143,
+    "internal_links": 2215,
+    "requirements": 5317,
     "domains": 62,
     "adrs": 159,
     "errors": 0,
     "warnings": 0,
     "domains_with_conformance": 62,
     "domains_with_benchmarks": 62,
-    "domains_with_direct_requirement_assertion_map": 8,
-    "domains_with_direct_benchmark_scenario_map": 8,
-    "benchmark_scenarios": 54,
-    "external_sources": 634,
-    "external_sources_with_review_record": 64,
-    "domains_with_dedicated_cross_cutting_analysis": 30,
-    "domains_with_complete_planned_traceability": 8,
-    "domains_experimental_eligible": 6,
-    "domains_with_proposed_promotion_review": 6,
+    "domains_with_direct_requirement_assertion_map": 9,
+    "domains_with_direct_benchmark_scenario_map": 9,
+    "benchmark_scenarios": 62,
+    "external_sources": 637,
+    "external_sources_with_review_record": 74,
+    "domains_with_dedicated_cross_cutting_analysis": 31,
+    "domains_with_complete_planned_traceability": 9,
+    "domains_experimental_eligible": 7,
+    "domains_with_proposed_promotion_review": 7,
     "domains_with_accepted_promotion_review": 0,
     "declared_graph_nodes": 15,
     "declared_graph_edges": 17,
@@ -356,23 +356,23 @@
       "id": "async-io",
       "source": "docs/02-capabilities/async-io/README.md",
       "status": "Draft domain analysis",
-      "requirements": 40,
-      "capability_requirements": 40,
+      "requirements": 71,
+      "capability_requirements": 62,
       "conformance_requirements": 0,
-      "benchmark_requirements": 0,
-      "mapped_benchmark_requirements": 0,
+      "benchmark_requirements": 9,
+      "mapped_benchmark_requirements": 9,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
-      "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false,
-      "direct_benchmark_scenario_map": false,
-      "cross_cutting_analysis": "embedded-unreviewed",
-      "promotion_review": "absent",
+      "mapped_capability_requirements": 62,
+      "direct_requirement_assertion_map": true,
+      "direct_benchmark_scenario_map": true,
+      "cross_cutting_analysis": "dedicated",
+      "promotion_review": "proposed",
       "quality_keyword_mentions": {
-        "security": false,
+        "security": true,
         "performance": true,
-        "accessibility": false,
-        "internationalization": false,
+        "accessibility": true,
+        "internationalization": true,
         "observability": true,
         "operations": true
       },
@@ -380,12 +380,12 @@
         "contract_inventory": "pass",
         "conformance_plan": "pass",
         "benchmark_plan": "pass",
-        "assertion_traceability": "fail",
-        "benchmark_traceability": "unknown",
-        "cross_cutting_review": "unknown",
-        "source_freshness_review": "unknown",
-        "owner_review": "unknown",
-        "experimental_eligible": "no"
+        "assertion_traceability": "pass",
+        "benchmark_traceability": "pass",
+        "cross_cutting_review": "pass",
+        "source_freshness_review": "pass",
+        "owner_review": "pass",
+        "experimental_eligible": "yes"
       }
     },
     {
@@ -2359,6 +2359,103 @@
       ]
     },
     {
+      "id": "rm.assertion.async-io.operation@1",
+      "domain": "async-io",
+      "source": "docs/02-capabilities/async-io/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/async-io/operation-model.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.async-io.engine@1",
+      "domain": "async-io",
+      "source": "docs/02-capabilities/async-io/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/async-io/readiness-completion.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.async-io.cancellation@1",
+      "domain": "async-io",
+      "source": "docs/02-capabilities/async-io/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/async-io/cancellation-lifetime.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.async-io.registration@1",
+      "domain": "async-io",
+      "source": "docs/02-capabilities/async-io/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/async-io/registration-resources.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.async-io.load@1",
+      "domain": "async-io",
+      "source": "docs/02-capabilities/async-io/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/async-io/backpressure-fairness.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.async-io.runtime@1",
+      "domain": "async-io",
+      "source": "docs/02-capabilities/async-io/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/async-io/runtime-integration.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.async-io.observability@1",
+      "domain": "async-io",
+      "source": "docs/02-capabilities/async-io/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/async-io/errors-observability.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.async-io.dependencies@1",
+      "domain": "async-io",
+      "source": "docs/02-capabilities/async-io/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/async-io/dependencies.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.async-io.quality-review@1",
+      "domain": "async-io",
+      "source": "docs/02-capabilities/async-io/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/async-io/cross-cutting.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.async-io.source-review@1",
+      "domain": "async-io",
+      "source": "docs/02-capabilities/async-io/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/async-io/source-review.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.async-io.ownership@1",
+      "domain": "async-io",
+      "source": "docs/02-capabilities/async-io/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/async-io/ownership.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.async-io.promotion-boundary@1",
+      "domain": "async-io",
+      "source": "docs/02-capabilities/async-io/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/async-io/promotion-review.md",
+        "docs/02-capabilities/async-io/traceability.md"
+      ]
+    },
+    {
       "id": "rm.assertion.audit-evidence.schema@1",
       "domain": "audit-evidence",
       "source": "docs/02-capabilities/audit-evidence/traceability.md",
@@ -2880,6 +2977,87 @@
       "source": "docs/02-capabilities/application-sync/traceability.md",
       "requirements": [
         "RM-APP-SYNC-BENCH-0006"
+      ]
+    },
+    {
+      "id": "rm.benchmark.async-io.submit-complete@1",
+      "domain": "async-io",
+      "source": "docs/02-capabilities/async-io/traceability.md",
+      "requirements": [
+        "RM-ASYNC-BENCH-0001",
+        "RM-ASYNC-BENCH-0007",
+        "RM-ASYNC-BENCH-0008"
+      ]
+    },
+    {
+      "id": "rm.benchmark.async-io.scale@1",
+      "domain": "async-io",
+      "source": "docs/02-capabilities/async-io/traceability.md",
+      "requirements": [
+        "RM-ASYNC-BENCH-0002",
+        "RM-ASYNC-BENCH-0007",
+        "RM-ASYNC-BENCH-0008"
+      ]
+    },
+    {
+      "id": "rm.benchmark.async-io.readiness-translation@1",
+      "domain": "async-io",
+      "source": "docs/02-capabilities/async-io/traceability.md",
+      "requirements": [
+        "RM-ASYNC-BENCH-0003",
+        "RM-ASYNC-BENCH-0007",
+        "RM-ASYNC-BENCH-0008"
+      ]
+    },
+    {
+      "id": "rm.benchmark.async-io.cancellation@1",
+      "domain": "async-io",
+      "source": "docs/02-capabilities/async-io/traceability.md",
+      "requirements": [
+        "RM-ASYNC-BENCH-0004",
+        "RM-ASYNC-BENCH-0007",
+        "RM-ASYNC-BENCH-0008"
+      ]
+    },
+    {
+      "id": "rm.benchmark.async-io.saturation-fairness@1",
+      "domain": "async-io",
+      "source": "docs/02-capabilities/async-io/traceability.md",
+      "requirements": [
+        "RM-ASYNC-BENCH-0005",
+        "RM-ASYNC-BENCH-0007",
+        "RM-ASYNC-BENCH-0008",
+        "RM-ASYNC-BENCH-0009"
+      ]
+    },
+    {
+      "id": "rm.benchmark.async-io.registration-churn@1",
+      "domain": "async-io",
+      "source": "docs/02-capabilities/async-io/traceability.md",
+      "requirements": [
+        "RM-ASYNC-BENCH-0006",
+        "RM-ASYNC-BENCH-0007",
+        "RM-ASYNC-BENCH-0008"
+      ]
+    },
+    {
+      "id": "rm.benchmark.async-io.idle-power@1",
+      "domain": "async-io",
+      "source": "docs/02-capabilities/async-io/traceability.md",
+      "requirements": [
+        "RM-ASYNC-BENCH-0002",
+        "RM-ASYNC-BENCH-0007",
+        "RM-ASYNC-BENCH-0008"
+      ]
+    },
+    {
+      "id": "rm.benchmark.async-io.shutdown@1",
+      "domain": "async-io",
+      "source": "docs/02-capabilities/async-io/traceability.md",
+      "requirements": [
+        "RM-ASYNC-BENCH-0006",
+        "RM-ASYNC-BENCH-0007",
+        "RM-ASYNC-BENCH-0008"
       ]
     },
     {
@@ -3851,17 +4029,19 @@
       "url": "https://developer.apple.com/documentation/dispatch/dispatch-source",
       "host": "developer.apple.com",
       "sources": [
-        "docs/02-capabilities/async-io/platform-research.md"
+        "docs/02-capabilities/async-io/platform-research.md",
+        "docs/02-capabilities/async-io/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://developer.apple.com/documentation/dispatch/dispatch_io",
       "host": "developer.apple.com",
       "sources": [
-        "docs/02-capabilities/async-io/platform-research.md"
+        "docs/02-capabilities/async-io/platform-research.md",
+        "docs/02-capabilities/async-io/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://developer.apple.com/documentation/dispatch/dispatchsourcetimer",
@@ -4410,9 +4590,10 @@
       "url": "https://developer.apple.com/library/archive/documentation/System/Conceptual/ManPages_iPhoneOS/man2/kqueue.2.html",
       "host": "developer.apple.com",
       "sources": [
-        "docs/02-capabilities/async-io/platform-research.md"
+        "docs/02-capabilities/async-io/platform-research.md",
+        "docs/02-capabilities/async-io/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://developer.apple.com/library/archive/documentation/System/Conceptual/ManPages_iPhoneOS/man2/pipe.2.html",
@@ -4662,9 +4843,10 @@
       "url": "https://docs.kernel.org/io_uring/index.html",
       "host": "docs.kernel.org",
       "sources": [
-        "docs/02-capabilities/async-io/platform-research.md"
+        "docs/02-capabilities/async-io/platform-research.md",
+        "docs/02-capabilities/async-io/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://docs.kernel.org/next/crypto/userspace-if.html",
@@ -5553,6 +5735,14 @@
       "freshness": "reviewed-in-domain-source-review"
     },
     {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/api/ioapiset/nf-ioapiset-cancelioex",
+      "host": "learn.microsoft.com",
+      "sources": [
+        "docs/02-capabilities/async-io/source-review.md"
+      ],
+      "freshness": "reviewed-in-domain-source-review"
+    },
+    {
       "url": "https://learn.microsoft.com/en-us/windows/win32/api/namedpipeapi/nf-namedpipeapi-createpipe",
       "host": "learn.microsoft.com",
       "sources": [
@@ -5813,6 +6003,14 @@
       "freshness": "reviewed-in-domain-source-review"
     },
     {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/fileio/i-o-completion-ports",
+      "host": "learn.microsoft.com",
+      "sources": [
+        "docs/02-capabilities/async-io/source-review.md"
+      ],
+      "freshness": "reviewed-in-domain-source-review"
+    },
+    {
       "url": "https://learn.microsoft.com/en-us/windows/win32/hidpi/wm-dpichanged",
       "host": "learn.microsoft.com",
       "sources": [
@@ -6065,6 +6263,14 @@
         "docs/02-capabilities/data-transfer/platform-research.md"
       ],
       "freshness": "unreviewed-by-generator"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/sync/synchronization-and-overlapped-input-and-output",
+      "host": "learn.microsoft.com",
+      "sources": [
+        "docs/02-capabilities/async-io/source-review.md"
+      ],
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/windows-time",
@@ -6570,17 +6776,19 @@
       "url": "https://man7.org/linux/man-pages/man2/io_uring_enter.2.html",
       "host": "man7.org",
       "sources": [
-        "docs/02-capabilities/async-io/platform-research.md"
+        "docs/02-capabilities/async-io/platform-research.md",
+        "docs/02-capabilities/async-io/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://man7.org/linux/man-pages/man2/io_uring_setup.2.html",
       "host": "man7.org",
       "sources": [
-        "docs/02-capabilities/async-io/platform-research.md"
+        "docs/02-capabilities/async-io/platform-research.md",
+        "docs/02-capabilities/async-io/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://man7.org/linux/man-pages/man2/ioctl_tty.2.html",
@@ -6793,9 +7001,10 @@
       "url": "https://man7.org/linux/man-pages/man7/epoll.7.html",
       "host": "man7.org",
       "sources": [
-        "docs/02-capabilities/async-io/platform-research.md"
+        "docs/02-capabilities/async-io/platform-research.md",
+        "docs/02-capabilities/async-io/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://man7.org/linux/man-pages/man7/inotify.7.html",
@@ -14853,7 +15062,9 @@
       "line": 5,
       "kind": "capability",
       "domain": "async-io",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.async-io.load@1"
+      ]
     },
     {
       "id": "RM-ASYNC-LOAD-0002",
@@ -14861,7 +15072,9 @@
       "line": 7,
       "kind": "capability",
       "domain": "async-io",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.async-io.load@1"
+      ]
     },
     {
       "id": "RM-ASYNC-LOAD-0003",
@@ -14869,7 +15082,9 @@
       "line": 9,
       "kind": "capability",
       "domain": "async-io",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.async-io.load@1"
+      ]
     },
     {
       "id": "RM-ASYNC-LOAD-0004",
@@ -14877,7 +15092,9 @@
       "line": 11,
       "kind": "capability",
       "domain": "async-io",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.async-io.load@1"
+      ]
     },
     {
       "id": "RM-ASYNC-LOAD-0005",
@@ -14885,7 +15102,9 @@
       "line": 13,
       "kind": "capability",
       "domain": "async-io",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.async-io.load@1"
+      ]
     },
     {
       "id": "RM-ASYNC-LOAD-0006",
@@ -14893,7 +15112,115 @@
       "line": 15,
       "kind": "capability",
       "domain": "async-io",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.async-io.load@1"
+      ]
+    },
+    {
+      "id": "RM-ASYNC-BENCH-0001",
+      "source": "docs/02-capabilities/async-io/benchmarks.md",
+      "line": 5,
+      "kind": "benchmark",
+      "domain": "async-io",
+      "benchmark_scenarios": [
+        "rm.benchmark.async-io.submit-complete@1"
+      ]
+    },
+    {
+      "id": "RM-ASYNC-BENCH-0002",
+      "source": "docs/02-capabilities/async-io/benchmarks.md",
+      "line": 6,
+      "kind": "benchmark",
+      "domain": "async-io",
+      "benchmark_scenarios": [
+        "rm.benchmark.async-io.scale@1",
+        "rm.benchmark.async-io.idle-power@1"
+      ]
+    },
+    {
+      "id": "RM-ASYNC-BENCH-0003",
+      "source": "docs/02-capabilities/async-io/benchmarks.md",
+      "line": 7,
+      "kind": "benchmark",
+      "domain": "async-io",
+      "benchmark_scenarios": [
+        "rm.benchmark.async-io.readiness-translation@1"
+      ]
+    },
+    {
+      "id": "RM-ASYNC-BENCH-0004",
+      "source": "docs/02-capabilities/async-io/benchmarks.md",
+      "line": 8,
+      "kind": "benchmark",
+      "domain": "async-io",
+      "benchmark_scenarios": [
+        "rm.benchmark.async-io.cancellation@1"
+      ]
+    },
+    {
+      "id": "RM-ASYNC-BENCH-0005",
+      "source": "docs/02-capabilities/async-io/benchmarks.md",
+      "line": 9,
+      "kind": "benchmark",
+      "domain": "async-io",
+      "benchmark_scenarios": [
+        "rm.benchmark.async-io.saturation-fairness@1"
+      ]
+    },
+    {
+      "id": "RM-ASYNC-BENCH-0006",
+      "source": "docs/02-capabilities/async-io/benchmarks.md",
+      "line": 10,
+      "kind": "benchmark",
+      "domain": "async-io",
+      "benchmark_scenarios": [
+        "rm.benchmark.async-io.registration-churn@1",
+        "rm.benchmark.async-io.shutdown@1"
+      ]
+    },
+    {
+      "id": "RM-ASYNC-BENCH-0007",
+      "source": "docs/02-capabilities/async-io/benchmarks.md",
+      "line": 11,
+      "kind": "benchmark",
+      "domain": "async-io",
+      "benchmark_scenarios": [
+        "rm.benchmark.async-io.submit-complete@1",
+        "rm.benchmark.async-io.scale@1",
+        "rm.benchmark.async-io.readiness-translation@1",
+        "rm.benchmark.async-io.cancellation@1",
+        "rm.benchmark.async-io.saturation-fairness@1",
+        "rm.benchmark.async-io.registration-churn@1",
+        "rm.benchmark.async-io.idle-power@1",
+        "rm.benchmark.async-io.shutdown@1"
+      ]
+    },
+    {
+      "id": "RM-ASYNC-BENCH-0008",
+      "source": "docs/02-capabilities/async-io/benchmarks.md",
+      "line": 12,
+      "kind": "benchmark",
+      "domain": "async-io",
+      "benchmark_scenarios": [
+        "rm.benchmark.async-io.submit-complete@1",
+        "rm.benchmark.async-io.scale@1",
+        "rm.benchmark.async-io.readiness-translation@1",
+        "rm.benchmark.async-io.cancellation@1",
+        "rm.benchmark.async-io.saturation-fairness@1",
+        "rm.benchmark.async-io.registration-churn@1",
+        "rm.benchmark.async-io.idle-power@1",
+        "rm.benchmark.async-io.shutdown@1"
+      ]
+    },
+    {
+      "id": "RM-ASYNC-BENCH-0009",
+      "source": "docs/02-capabilities/async-io/benchmarks.md",
+      "line": 13,
+      "kind": "benchmark",
+      "domain": "async-io",
+      "benchmark_scenarios": [
+        "rm.benchmark.async-io.saturation-fairness@1"
+      ]
     },
     {
       "id": "RM-ASYNC-CANCEL-0001",
@@ -14901,7 +15228,9 @@
       "line": 5,
       "kind": "capability",
       "domain": "async-io",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.async-io.cancellation@1"
+      ]
     },
     {
       "id": "RM-ASYNC-CANCEL-0002",
@@ -14909,7 +15238,9 @@
       "line": 7,
       "kind": "capability",
       "domain": "async-io",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.async-io.cancellation@1"
+      ]
     },
     {
       "id": "RM-ASYNC-CANCEL-0003",
@@ -14917,7 +15248,9 @@
       "line": 9,
       "kind": "capability",
       "domain": "async-io",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.async-io.cancellation@1"
+      ]
     },
     {
       "id": "RM-ASYNC-CANCEL-0004",
@@ -14925,7 +15258,9 @@
       "line": 11,
       "kind": "capability",
       "domain": "async-io",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.async-io.cancellation@1"
+      ]
     },
     {
       "id": "RM-ASYNC-CANCEL-0005",
@@ -14933,7 +15268,9 @@
       "line": 13,
       "kind": "capability",
       "domain": "async-io",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.async-io.cancellation@1"
+      ]
     },
     {
       "id": "RM-ASYNC-CANCEL-0006",
@@ -14941,7 +15278,79 @@
       "line": 15,
       "kind": "capability",
       "domain": "async-io",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.async-io.cancellation@1"
+      ]
+    },
+    {
+      "id": "RM-ASYNC-QUALITY-0001",
+      "source": "docs/02-capabilities/async-io/cross-cutting.md",
+      "line": 20,
+      "kind": "capability",
+      "domain": "async-io",
+      "assertions": [
+        "rm.assertion.async-io.quality-review@1"
+      ]
+    },
+    {
+      "id": "RM-ASYNC-QUALITY-0002",
+      "source": "docs/02-capabilities/async-io/cross-cutting.md",
+      "line": 22,
+      "kind": "capability",
+      "domain": "async-io",
+      "assertions": [
+        "rm.assertion.async-io.quality-review@1"
+      ]
+    },
+    {
+      "id": "RM-ASYNC-QUALITY-0003",
+      "source": "docs/02-capabilities/async-io/cross-cutting.md",
+      "line": 24,
+      "kind": "capability",
+      "domain": "async-io",
+      "assertions": [
+        "rm.assertion.async-io.quality-review@1"
+      ]
+    },
+    {
+      "id": "RM-ASYNC-DEPENDENCY-0001",
+      "source": "docs/02-capabilities/async-io/dependencies.md",
+      "line": 34,
+      "kind": "capability",
+      "domain": "async-io",
+      "assertions": [
+        "rm.assertion.async-io.dependencies@1"
+      ]
+    },
+    {
+      "id": "RM-ASYNC-DEPENDENCY-0002",
+      "source": "docs/02-capabilities/async-io/dependencies.md",
+      "line": 36,
+      "kind": "capability",
+      "domain": "async-io",
+      "assertions": [
+        "rm.assertion.async-io.dependencies@1"
+      ]
+    },
+    {
+      "id": "RM-ASYNC-DEPENDENCY-0003",
+      "source": "docs/02-capabilities/async-io/dependencies.md",
+      "line": 38,
+      "kind": "capability",
+      "domain": "async-io",
+      "assertions": [
+        "rm.assertion.async-io.dependencies@1"
+      ]
+    },
+    {
+      "id": "RM-ASYNC-DEPENDENCY-0004",
+      "source": "docs/02-capabilities/async-io/dependencies.md",
+      "line": 40,
+      "kind": "capability",
+      "domain": "async-io",
+      "assertions": [
+        "rm.assertion.async-io.dependencies@1"
+      ]
     },
     {
       "id": "RM-ASYNC-ERROR-0001",
@@ -14949,7 +15358,9 @@
       "line": 5,
       "kind": "capability",
       "domain": "async-io",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.async-io.observability@1"
+      ]
     },
     {
       "id": "RM-ASYNC-ERROR-0002",
@@ -14957,7 +15368,9 @@
       "line": 7,
       "kind": "capability",
       "domain": "async-io",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.async-io.observability@1"
+      ]
     },
     {
       "id": "RM-ASYNC-OBSERVE-0001",
@@ -14965,7 +15378,9 @@
       "line": 9,
       "kind": "capability",
       "domain": "async-io",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.async-io.observability@1"
+      ]
     },
     {
       "id": "RM-ASYNC-OBSERVE-0002",
@@ -14973,7 +15388,9 @@
       "line": 11,
       "kind": "capability",
       "domain": "async-io",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.async-io.observability@1"
+      ]
     },
     {
       "id": "RM-ASYNC-OBSERVE-0003",
@@ -14981,7 +15398,9 @@
       "line": 13,
       "kind": "capability",
       "domain": "async-io",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.async-io.observability@1"
+      ]
     },
     {
       "id": "RM-ASYNC-OBSERVE-0004",
@@ -14989,7 +15408,9 @@
       "line": 15,
       "kind": "capability",
       "domain": "async-io",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.async-io.observability@1"
+      ]
     },
     {
       "id": "RM-ASYNC-OP-0001",
@@ -14997,7 +15418,9 @@
       "line": 17,
       "kind": "capability",
       "domain": "async-io",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.async-io.operation@1"
+      ]
     },
     {
       "id": "RM-ASYNC-OP-0002",
@@ -15005,7 +15428,9 @@
       "line": 19,
       "kind": "capability",
       "domain": "async-io",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.async-io.operation@1"
+      ]
     },
     {
       "id": "RM-ASYNC-OP-0003",
@@ -15013,7 +15438,9 @@
       "line": 21,
       "kind": "capability",
       "domain": "async-io",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.async-io.operation@1"
+      ]
     },
     {
       "id": "RM-ASYNC-OP-0004",
@@ -15021,7 +15448,9 @@
       "line": 23,
       "kind": "capability",
       "domain": "async-io",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.async-io.operation@1"
+      ]
     },
     {
       "id": "RM-ASYNC-OP-0005",
@@ -15029,7 +15458,79 @@
       "line": 25,
       "kind": "capability",
       "domain": "async-io",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.async-io.operation@1"
+      ]
+    },
+    {
+      "id": "RM-ASYNC-OWNER-0001",
+      "source": "docs/02-capabilities/async-io/ownership.md",
+      "line": 25,
+      "kind": "capability",
+      "domain": "async-io",
+      "assertions": [
+        "rm.assertion.async-io.ownership@1"
+      ]
+    },
+    {
+      "id": "RM-ASYNC-OWNER-0002",
+      "source": "docs/02-capabilities/async-io/ownership.md",
+      "line": 27,
+      "kind": "capability",
+      "domain": "async-io",
+      "assertions": [
+        "rm.assertion.async-io.ownership@1"
+      ]
+    },
+    {
+      "id": "RM-ASYNC-OWNER-0003",
+      "source": "docs/02-capabilities/async-io/ownership.md",
+      "line": 29,
+      "kind": "capability",
+      "domain": "async-io",
+      "assertions": [
+        "rm.assertion.async-io.ownership@1"
+      ]
+    },
+    {
+      "id": "RM-ASYNC-OWNER-0004",
+      "source": "docs/02-capabilities/async-io/ownership.md",
+      "line": 31,
+      "kind": "capability",
+      "domain": "async-io",
+      "assertions": [
+        "rm.assertion.async-io.ownership@1"
+      ]
+    },
+    {
+      "id": "RM-ASYNC-PROMOTION-0001",
+      "source": "docs/02-capabilities/async-io/promotion-review.md",
+      "line": 27,
+      "kind": "capability",
+      "domain": "async-io",
+      "assertions": [
+        "rm.assertion.async-io.promotion-boundary@1"
+      ]
+    },
+    {
+      "id": "RM-ASYNC-PROMOTION-0002",
+      "source": "docs/02-capabilities/async-io/promotion-review.md",
+      "line": 29,
+      "kind": "capability",
+      "domain": "async-io",
+      "assertions": [
+        "rm.assertion.async-io.promotion-boundary@1"
+      ]
+    },
+    {
+      "id": "RM-ASYNC-PROMOTION-0003",
+      "source": "docs/02-capabilities/async-io/promotion-review.md",
+      "line": 31,
+      "kind": "capability",
+      "domain": "async-io",
+      "assertions": [
+        "rm.assertion.async-io.promotion-boundary@1"
+      ]
     },
     {
       "id": "RM-ASYNC-ENGINE-0001",
@@ -15037,7 +15538,9 @@
       "line": 5,
       "kind": "capability",
       "domain": "async-io",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.async-io.engine@1"
+      ]
     },
     {
       "id": "RM-ASYNC-ENGINE-0002",
@@ -15045,7 +15548,9 @@
       "line": 7,
       "kind": "capability",
       "domain": "async-io",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.async-io.engine@1"
+      ]
     },
     {
       "id": "RM-ASYNC-ENGINE-0003",
@@ -15053,7 +15558,9 @@
       "line": 9,
       "kind": "capability",
       "domain": "async-io",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.async-io.engine@1"
+      ]
     },
     {
       "id": "RM-ASYNC-ENGINE-0004",
@@ -15061,7 +15568,9 @@
       "line": 11,
       "kind": "capability",
       "domain": "async-io",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.async-io.engine@1"
+      ]
     },
     {
       "id": "RM-ASYNC-ENGINE-0005",
@@ -15069,7 +15578,9 @@
       "line": 13,
       "kind": "capability",
       "domain": "async-io",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.async-io.engine@1"
+      ]
     },
     {
       "id": "RM-ASYNC-ENGINE-0006",
@@ -15077,7 +15588,9 @@
       "line": 15,
       "kind": "capability",
       "domain": "async-io",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.async-io.engine@1"
+      ]
     },
     {
       "id": "RM-ASYNC-REG-0001",
@@ -15085,7 +15598,9 @@
       "line": 5,
       "kind": "capability",
       "domain": "async-io",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.async-io.registration@1"
+      ]
     },
     {
       "id": "RM-ASYNC-REG-0002",
@@ -15093,7 +15608,9 @@
       "line": 7,
       "kind": "capability",
       "domain": "async-io",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.async-io.registration@1"
+      ]
     },
     {
       "id": "RM-ASYNC-REG-0003",
@@ -15101,7 +15618,9 @@
       "line": 9,
       "kind": "capability",
       "domain": "async-io",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.async-io.registration@1"
+      ]
     },
     {
       "id": "RM-ASYNC-REG-0004",
@@ -15109,7 +15628,9 @@
       "line": 11,
       "kind": "capability",
       "domain": "async-io",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.async-io.registration@1"
+      ]
     },
     {
       "id": "RM-ASYNC-REG-0005",
@@ -15117,7 +15638,9 @@
       "line": 13,
       "kind": "capability",
       "domain": "async-io",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.async-io.registration@1"
+      ]
     },
     {
       "id": "RM-ASYNC-RUNTIME-0001",
@@ -15125,7 +15648,9 @@
       "line": 5,
       "kind": "capability",
       "domain": "async-io",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.async-io.runtime@1"
+      ]
     },
     {
       "id": "RM-ASYNC-RUNTIME-0002",
@@ -15133,7 +15658,9 @@
       "line": 7,
       "kind": "capability",
       "domain": "async-io",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.async-io.runtime@1"
+      ]
     },
     {
       "id": "RM-ASYNC-RUNTIME-0003",
@@ -15141,7 +15668,9 @@
       "line": 9,
       "kind": "capability",
       "domain": "async-io",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.async-io.runtime@1"
+      ]
     },
     {
       "id": "RM-ASYNC-RUNTIME-0004",
@@ -15149,7 +15678,9 @@
       "line": 11,
       "kind": "capability",
       "domain": "async-io",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.async-io.runtime@1"
+      ]
     },
     {
       "id": "RM-ASYNC-RUNTIME-0005",
@@ -15157,7 +15688,9 @@
       "line": 13,
       "kind": "capability",
       "domain": "async-io",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.async-io.runtime@1"
+      ]
     },
     {
       "id": "RM-ASYNC-RUNTIME-0006",
@@ -15165,7 +15698,89 @@
       "line": 15,
       "kind": "capability",
       "domain": "async-io",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.async-io.runtime@1"
+      ]
+    },
+    {
+      "id": "RM-ASYNC-SOURCE-0001",
+      "source": "docs/02-capabilities/async-io/source-review.md",
+      "line": 18,
+      "kind": "capability",
+      "domain": "async-io",
+      "assertions": [
+        "rm.assertion.async-io.source-review@1"
+      ]
+    },
+    {
+      "id": "RM-ASYNC-SOURCE-0002",
+      "source": "docs/02-capabilities/async-io/source-review.md",
+      "line": 20,
+      "kind": "capability",
+      "domain": "async-io",
+      "assertions": [
+        "rm.assertion.async-io.source-review@1"
+      ]
+    },
+    {
+      "id": "RM-ASYNC-SOURCE-0003",
+      "source": "docs/02-capabilities/async-io/source-review.md",
+      "line": 22,
+      "kind": "capability",
+      "domain": "async-io",
+      "assertions": [
+        "rm.assertion.async-io.source-review@1"
+      ]
+    },
+    {
+      "id": "RM-ASYNC-SOURCE-0004",
+      "source": "docs/02-capabilities/async-io/source-review.md",
+      "line": 24,
+      "kind": "capability",
+      "domain": "async-io",
+      "assertions": [
+        "rm.assertion.async-io.source-review@1"
+      ]
+    },
+    {
+      "id": "RM-ASYNC-TRACE-0001",
+      "source": "docs/02-capabilities/async-io/traceability.md",
+      "line": 34,
+      "kind": "capability",
+      "domain": "async-io",
+      "assertions": [
+        "rm.assertion.async-io.promotion-boundary@1"
+      ]
+    },
+    {
+      "id": "RM-ASYNC-TRACE-0002",
+      "source": "docs/02-capabilities/async-io/traceability.md",
+      "line": 36,
+      "kind": "capability",
+      "domain": "async-io",
+      "assertions": [
+        "rm.assertion.async-io.promotion-boundary@1"
+      ]
+    },
+    {
+      "id": "RM-ASYNC-TRACE-0003",
+      "source": "docs/02-capabilities/async-io/traceability.md",
+      "line": 38,
+      "kind": "capability",
+      "domain": "async-io",
+      "assertions": [
+        "rm.assertion.async-io.promotion-boundary@1"
+      ]
+    },
+    {
+      "id": "RM-ASYNC-TRACE-0004",
+      "source": "docs/02-capabilities/async-io/traceability.md",
+      "line": 40,
+      "kind": "capability",
+      "domain": "async-io",
+      "assertions": [
+        "rm.assertion.async-io.promotion-boundary@1"
+      ]
     },
     {
       "id": "RM-AUDIO-CLOCK-0001",
@@ -49409,28 +50024,28 @@
     {
       "id": "RM-READINESS-CONTRADICTION-0001",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 33,
+      "line": 34,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0002",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 35,
+      "line": 36,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0003",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 37,
+      "line": 38,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0004",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 39,
+      "line": 40,
       "kind": "governance",
       "domain": null
     },
@@ -51385,8 +52000,8 @@
     },
     {
       "source": "docs/01-architecture/architecture-model.md",
-      "sha256": "6eb9db323a362027e1834a695cf297f685583dfde2e9fef2ad0b6dad7c706056",
-      "lines": 627
+      "sha256": "23241376b406d6a52bc5a6dfaeb4d5285d195fa4c98a78313adbe0f948c002cf",
+      "lines": 633
     },
     {
       "source": "docs/01-architecture/behavioral-contracts.md",
@@ -52095,8 +52710,8 @@
     },
     {
       "source": "docs/02-capabilities/async-io/benchmarks.md",
-      "sha256": "6cd78b667ac0f1efbfbda5e2ce7b3c8dd29dc75bdd98d1b05ce79cca787801cf",
-      "lines": 16
+      "sha256": "f2c78d1b39a3e1624da9d4c33b3b8e5c9f420e0718e55e55da51ac87d281bfc2",
+      "lines": 28
     },
     {
       "source": "docs/02-capabilities/async-io/cancellation-lifetime.md",
@@ -52109,6 +52724,16 @@
       "lines": 17
     },
     {
+      "source": "docs/02-capabilities/async-io/cross-cutting.md",
+      "sha256": "fb31214fb529908fd84094dc00749afd7bb5508995090fe21d78f166fa31110a",
+      "lines": 24
+    },
+    {
+      "source": "docs/02-capabilities/async-io/dependencies.md",
+      "sha256": "695c3ed54ccefc3cd18973386f5d2885392f92ed451cc0df980cf8fda49c23b2",
+      "lines": 40
+    },
+    {
       "source": "docs/02-capabilities/async-io/errors-observability.md",
       "sha256": "3f1ad4791397fa9adcae011bd0b5a1f8d061412c6154abf719961eb31dfea9ba",
       "lines": 15
@@ -52119,9 +52744,19 @@
       "lines": 27
     },
     {
+      "source": "docs/02-capabilities/async-io/ownership.md",
+      "sha256": "307ab06ab478b00cc753053d84f12c124750e2e8531d5103c3deccaad2b87486",
+      "lines": 31
+    },
+    {
       "source": "docs/02-capabilities/async-io/platform-research.md",
       "sha256": "408cdc57e9811ed4e89cab8c50b55011a00dbd3cf496ff5df312bb84ec06ee79",
       "lines": 17
+    },
+    {
+      "source": "docs/02-capabilities/async-io/promotion-review.md",
+      "sha256": "5e8c827a916c97006ac008bba47f1aa0739e586fa005870ba65b55c935694e16",
+      "lines": 31
     },
     {
       "source": "docs/02-capabilities/async-io/readiness-completion.md",
@@ -52130,8 +52765,8 @@
     },
     {
       "source": "docs/02-capabilities/async-io/README.md",
-      "sha256": "8cccd8a026b0c1b514713d5fedd5c1b92446f15260fde2ebf49bac0541d98d96",
-      "lines": 43
+      "sha256": "7e5d3a1f193b37bdec5b039704173edc6bf0901cf82120baa6bfa74f87c5959f",
+      "lines": 51
     },
     {
       "source": "docs/02-capabilities/async-io/registration-resources.md",
@@ -52142,6 +52777,16 @@
       "source": "docs/02-capabilities/async-io/runtime-integration.md",
       "sha256": "38662a005df8f633d655e37d1d27e2f50f17a6a6763e9ef992d049835c107b76",
       "lines": 17
+    },
+    {
+      "source": "docs/02-capabilities/async-io/source-review.md",
+      "sha256": "90d949c8f03f3655c7dcb5ccaa1682fe8066309344fd3c3decd619244e8b12c2",
+      "lines": 24
+    },
+    {
+      "source": "docs/02-capabilities/async-io/traceability.md",
+      "sha256": "d6eb240dfd9bf0e5515f42a9536f8785a2a6e7c0fd9699f3aa9fbfc051d8a679",
+      "lines": 40
     },
     {
       "source": "docs/02-capabilities/audio/benchmarks.md",
@@ -55930,7 +56575,7 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/audit-report.md",
-      "sha256": "705ceaf4622f11b66002d39e73272901a0b4958f403674b8b54e3e1599714eda",
+      "sha256": "b10877409cd03b2ed5c85a888d5aca7dd9903ae1830c312cbbc5b7b98310094d",
       "lines": 68
     },
     {
@@ -55945,13 +56590,13 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/closure-backlog.md",
-      "sha256": "0fd2852a495325fcd390e27714ff529670ead9e4e28ab3517032405dcbaa5c69",
+      "sha256": "863a2277ca95f020368726275de60f5e1108cdf09e24dc8f83a22439df7e19b1",
       "lines": 19
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "sha256": "5b061dc8141ca791d01c868210ceb6e698b0f30d01039348b0d7221cb534d10f",
-      "lines": 39
+      "sha256": "8e4ec2c94a8950a6b08e22aace2afe258c93d375e4fbdbb5507ff2ffc18795a6",
+      "lines": 40
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/dependency-graph.md",
@@ -55985,12 +56630,12 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/promotion-scorecards.md",
-      "sha256": "e1c53abdb5daf96e5e3115e868a7b9eb9a10cbb933f3767d52f1df81b3405351",
+      "sha256": "849e30eaa8d586d15df59b19f3b501cbad0fb2e1ddb4063f152a321fc2cc6821",
       "lines": 78
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/quality-matrix.md",
-      "sha256": "a3340cdf6d09eacf69379679097122ea5313de0a0e4d6e0e9185fdd7e2d0dfcd",
+      "sha256": "e790cdeafcb26ac548bea75ad541b132af86a3ff27f08e4b553f8f902226a8d8",
       "lines": 73
     },
     {
@@ -56230,8 +56875,8 @@
     },
     {
       "source": "docs/06-roadmap/roadmap.md",
-      "sha256": "1cbce948e0614160330d14f98b229abd21283b2eab58c5e2df3abbac9cf13a4e",
-      "lines": 237
+      "sha256": "dfc63ad9359d000f860045786ffca42a6278ce54c45f2faa7d67cb89bed0f932",
+      "lines": 241
     },
     {
       "source": "docs/adr/0001-capability-first-platform.md",

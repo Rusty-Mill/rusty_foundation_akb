@@ -16,7 +16,7 @@ The table uses conjunctive gates. It does not calculate a weighted score, and it
 | [application-communications](../../02-capabilities/application-communications/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | absent | **no** |
 | [application-sync](../../02-capabilities/application-sync/README.md) | pass | pass | pass | pass | pass | pass | pass | pass | proposed | **yes** |
 | [archive](../../02-capabilities/archive/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | absent | **no** |
-| [async-io](../../02-capabilities/async-io/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | absent | **no** |
+| [async-io](../../02-capabilities/async-io/README.md) | pass | pass | pass | pass | pass | pass | pass | pass | proposed | **yes** |
 | [audio](../../02-capabilities/audio/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | absent | **no** |
 | [audit-evidence](../../02-capabilities/audit-evidence/README.md) | pass | pass | pass | pass | pass | unknown | unknown | unknown | absent | **no** |
 | [background-services](../../02-capabilities/background-services/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | absent | **no** |
@@ -75,4 +75,4 @@ The table uses conjunctive gates. It does not calculate a weighted score, and it
 - Contract/conformance/benchmark-plan passes prove that structured Draft specifications exist.
 - Assertion and benchmark maps prove planned traceability, not executable evidence.
 - Cross-cutting, source, and owner gates pass only from explicit `Review status` metadata in their authoritative domain artifacts; file presence and keywords are insufficient.
-- 6 domain(s) currently satisfy generated Experimental eligibility evidence: application-sync, filesystem, ipc, process, runtime-time, windowing. Eligibility does not change maturity or authorize implementation; an explicit reviewed promotion record remains required.
+- 7 domain(s) currently satisfy generated Experimental eligibility evidence: application-sync, async-io, filesystem, ipc, process, runtime-time, windowing. Eligibility does not change maturity or authorize implementation; an explicit reviewed promotion record remains required.

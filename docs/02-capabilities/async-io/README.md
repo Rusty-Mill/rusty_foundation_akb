@@ -3,6 +3,8 @@
 | Field | Value |
 |---|---|
 | Status | Draft domain analysis |
+| Domain version | 0.1.1 |
+| Accountable role | Async I/O integration owner |
 | Purpose | Define portable operation submission, completion, cancellation, backpressure, and runtime integration across readiness- and completion-based platforms |
 
 ```mermaid
@@ -41,3 +43,9 @@ flowchart LR
 - [Platform research](platform-research.md)
 - [Conformance](conformance.md)
 - [Benchmarks](benchmarks.md)
+- [Assertion and benchmark traceability](traceability.md)
+- [Dependency and provider composition](dependencies.md)
+- [Cross-cutting review](cross-cutting.md)
+- [Source review](source-review.md)
+- [Ownership and bounded trial plan](ownership.md)
+- [Experimental promotion review](promotion-review.md)

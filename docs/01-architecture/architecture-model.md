@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.86.0
+**Version:** 1.87.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -625,3 +625,9 @@ This evidence does not collapse creation into image confirmation or readiness, P
 IPC foundations 0.1.1 apply the readiness schema to a local anonymous unidirectional byte stream with independently owned endpoints, deny-by-default transfer, partial progress, reference-counted EOF, broken-peer containment, bounded backpressure, scoped write atomicity, sync completeness, Q0–Q3 async quality, and cancellation truth. Stable assertions and benchmark scenarios cover every byte-pipe and benchmark requirement; source, quality, ownership, dependency/profile, and proposed-promotion reviews are explicit. The graph adds only the source-declared optional cancellation edge; process consumption and pipeline composition remain separately modeled.
 
 This evidence does not collapse bytes into messages or text, local anonymity into confidentiality/authentication, write acceptance into peer consumption, observed capacity into a guarantee, Q1 adaptation into native async, or endpoint data flow into a capability dependency. IPC remains Draft: no provider, runtime/reactor, capacity, atomicity bound, public API, crate layout, trial, benchmark budget, or release claim is authorized.
+
+## 23. Async I/O readiness closure
+
+Async I/O foundations 0.1.1 define reusable provider invariants for generation-scoped operations, completion-oriented results, readiness translation, native completion, bounded blocking fallback, cancel/complete arbitration, retained buffers/control state, registration generations, saturation/fairness, executor-independent waking, shutdown/drain, and bounded observability. Stable assertions and benchmark scenarios cover every framework and benchmark requirement; source, quality, ownership, dependency/composition, and proposed-promotion reviews are explicit.
+
+Async I/O remains a provider-integration framework, not a universal application-facing capability or runtime. Consuming capabilities retain their own progress, EOF, message, ordering, side-effect, error, and authority semantics. No graph node is created until an independently selectable capability contract is accepted. The framework remains Draft: no native engine, executor/reactor, provider library, operation enum, public API, crate layout, trial, benchmark budget, power claim, or release claim is authorized.

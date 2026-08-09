@@ -16,7 +16,7 @@
 | [application-communications](../../02-capabilities/application-communications/README.md) | dedicated | yes | yes | yes | yes | yes | yes |
 | [application-sync](../../02-capabilities/application-sync/README.md) | dedicated | yes | yes | yes | yes | yes | yes |
 | [archive](../../02-capabilities/archive/README.md) | dedicated | yes | yes | yes | yes | yes | yes |
-| [async-io](../../02-capabilities/async-io/README.md) | embedded-unreviewed | unknown | yes | unknown | unknown | yes | yes |
+| [async-io](../../02-capabilities/async-io/README.md) | dedicated | yes | yes | yes | yes | yes | yes |
 | [audio](../../02-capabilities/audio/README.md) | embedded-unreviewed | yes | yes | yes | unknown | yes | yes |
 | [audit-evidence](../../02-capabilities/audit-evidence/README.md) | dedicated | yes | yes | yes | yes | yes | yes |
 | [background-services](../../02-capabilities/background-services/README.md) | embedded-unreviewed | yes | yes | yes | yes | yes | yes |
