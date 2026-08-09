@@ -4,11 +4,11 @@
   "authority": "docs/01-architecture/architecture-model.md",
   "generated_from": "Markdown; this index is derived and non-authoritative",
   "summary": {
-    "markdown_documents": 1111,
-    "internal_links": 2011,
-    "requirements": 5160,
+    "markdown_documents": 1114,
+    "internal_links": 2029,
+    "requirements": 5168,
     "domains": 62,
-    "adrs": 158,
+    "adrs": 159,
     "errors": 0,
     "warnings": 0,
     "domains_with_conformance": 62,
@@ -16,10 +16,13 @@
     "domains_with_direct_requirement_assertion_map": 5,
     "domains_with_direct_benchmark_scenario_map": 4,
     "benchmark_scenarios": 27,
-    "external_sources": 628,
+    "external_sources": 629,
+    "external_sources_with_review_record": 12,
     "domains_with_dedicated_cross_cutting_analysis": 26,
     "domains_with_complete_planned_traceability": 4,
     "domains_experimental_eligible": 2,
+    "domains_with_proposed_promotion_review": 2,
+    "domains_with_accepted_promotion_review": 0,
     "declared_graph_nodes": 15,
     "declared_graph_edges": 8,
     "required_graph_acyclic": true
@@ -40,6 +43,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "embedded-unreviewed",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -75,6 +79,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "embedded-unreviewed",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -110,6 +115,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "dedicated",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -145,6 +151,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "dedicated",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -180,6 +187,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "dedicated",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -215,6 +223,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "dedicated",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -250,6 +259,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "dedicated",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -285,6 +295,7 @@
       "direct_requirement_assertion_map": true,
       "direct_benchmark_scenario_map": true,
       "cross_cutting_analysis": "dedicated",
+      "promotion_review": "proposed",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -320,6 +331,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "dedicated",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -355,6 +367,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "embedded-unreviewed",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": false,
         "performance": true,
@@ -390,6 +403,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "embedded-unreviewed",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -425,6 +439,7 @@
       "direct_requirement_assertion_map": true,
       "direct_benchmark_scenario_map": true,
       "cross_cutting_analysis": "dedicated",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -460,6 +475,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "embedded-unreviewed",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -495,6 +511,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "dedicated",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -530,6 +547,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "embedded-unreviewed",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -565,6 +583,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "embedded-unreviewed",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -600,6 +619,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "dedicated",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -635,6 +655,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "dedicated",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -670,6 +691,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "dedicated",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -705,6 +727,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "embedded-unreviewed",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -740,6 +763,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "embedded-unreviewed",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -775,6 +799,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "embedded-unreviewed",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -810,6 +835,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "embedded-unreviewed",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -845,6 +871,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "dedicated",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -880,6 +907,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "embedded-unreviewed",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -915,6 +943,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "dedicated",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -950,6 +979,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "embedded-unreviewed",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -985,6 +1015,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "dedicated",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -1020,6 +1051,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "embedded-unreviewed",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -1055,6 +1087,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "embedded-unreviewed",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -1090,6 +1123,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "embedded-unreviewed",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -1125,6 +1159,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "embedded-unreviewed",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -1160,6 +1195,7 @@
       "direct_requirement_assertion_map": true,
       "direct_benchmark_scenario_map": true,
       "cross_cutting_analysis": "dedicated",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -1195,6 +1231,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "embedded-unreviewed",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -1230,6 +1267,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "embedded-unreviewed",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -1265,6 +1303,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "dedicated",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -1300,6 +1339,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "embedded-unreviewed",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -1335,6 +1375,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "embedded-unreviewed",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -1370,6 +1411,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "dedicated",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -1405,6 +1447,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "embedded-unreviewed",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -1440,6 +1483,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "dedicated",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -1475,6 +1519,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "embedded-unreviewed",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -1510,6 +1555,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "embedded-unreviewed",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -1545,6 +1591,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "dedicated",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -1580,6 +1627,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "embedded-unreviewed",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -1615,6 +1663,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "embedded-unreviewed",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -1650,6 +1699,7 @@
       "direct_requirement_assertion_map": true,
       "direct_benchmark_scenario_map": true,
       "cross_cutting_analysis": "dedicated",
+      "promotion_review": "proposed",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -1685,6 +1735,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "embedded-unreviewed",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -1720,6 +1771,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "dedicated",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -1755,6 +1807,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "dedicated",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -1790,6 +1843,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "embedded-unreviewed",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -1825,6 +1879,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "dedicated",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -1860,6 +1915,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "embedded-unreviewed",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -1895,6 +1951,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "embedded-unreviewed",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -1930,6 +1987,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "embedded-unreviewed",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -1965,6 +2023,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "dedicated",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -2000,6 +2059,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "embedded-unreviewed",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -2035,6 +2095,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "embedded-unreviewed",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -2070,6 +2131,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "embedded-unreviewed",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -2105,6 +2167,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "embedded-unreviewed",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -2140,6 +2203,7 @@
       "direct_requirement_assertion_map": true,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "embedded-unreviewed",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -2175,6 +2239,7 @@
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
       "cross_cutting_analysis": "dedicated",
+      "promotion_review": "absent",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -2914,7 +2979,7 @@
         "docs/02-capabilities/application-sync/platform-research.md",
         "docs/02-capabilities/application-sync/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://developer.apple.com/accessibility/",
@@ -3188,7 +3253,7 @@
         "docs/02-capabilities/application-sync/platform-research.md",
         "docs/02-capabilities/application-sync/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://developer.apple.com/documentation/coregraphics/quartz-event-services",
@@ -3378,9 +3443,10 @@
       "url": "https://developer.apple.com/documentation/kernel/1646199-mach_continuous_time",
       "host": "developer.apple.com",
       "sources": [
-        "docs/02-capabilities/runtime-time/platform-research.md"
+        "docs/02-capabilities/runtime-time/platform-research.md",
+        "docs/02-capabilities/runtime-time/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://developer.apple.com/documentation/kernel/ioservice",
@@ -3984,7 +4050,7 @@
         "docs/02-capabilities/application-sync/platform-research.md",
         "docs/02-capabilities/application-sync/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://docs.github.com/en/actions/concepts/security/artifact-attestations",
@@ -4532,7 +4598,7 @@
         "docs/02-capabilities/application-sync/platform-research.md",
         "docs/02-capabilities/application-sync/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://harfbuzz.github.io/what-is-harfbuzz.html",
@@ -4971,9 +5037,10 @@
       "url": "https://learn.microsoft.com/en-us/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter",
       "host": "learn.microsoft.com",
       "sources": [
-        "docs/02-capabilities/runtime-time/platform-research.md"
+        "docs/02-capabilities/runtime-time/platform-research.md",
+        "docs/02-capabilities/runtime-time/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://learn.microsoft.com/en-us/windows/win32/api/realtimeapiset/nf-realtimeapiset-queryunbiasedinterrupttimeprecise",
@@ -4987,9 +5054,10 @@
       "url": "https://learn.microsoft.com/en-us/windows/win32/api/synchapi/nf-synchapi-setwaitabletimerex",
       "host": "learn.microsoft.com",
       "sources": [
-        "docs/02-capabilities/runtime-time/platform-research.md"
+        "docs/02-capabilities/runtime-time/platform-research.md",
+        "docs/02-capabilities/runtime-time/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://learn.microsoft.com/en-us/windows/win32/api/timezoneapi/",
@@ -5898,6 +5966,14 @@
       "freshness": "unreviewed-by-generator"
     },
     {
+      "url": "https://man7.org/linux/man-pages/man2/clock_gettime.2.html",
+      "host": "man7.org",
+      "sources": [
+        "docs/02-capabilities/runtime-time/source-review.md"
+      ],
+      "freshness": "reviewed-in-domain-source-review"
+    },
+    {
       "url": "https://man7.org/linux/man-pages/man2/close_range.2.html",
       "host": "man7.org",
       "sources": [
@@ -6038,9 +6114,10 @@
       "url": "https://man7.org/linux/man-pages/man2/timerfd_create.2.html",
       "host": "man7.org",
       "sources": [
-        "docs/02-capabilities/runtime-time/platform-research.md"
+        "docs/02-capabilities/runtime-time/platform-research.md",
+        "docs/02-capabilities/runtime-time/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://man7.org/linux/man-pages/man2/umount.2.html",
@@ -7075,7 +7152,7 @@
       "sources": [
         "docs/02-capabilities/application-sync/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://www.rfc-editor.org/info/rfc6902/",
@@ -7083,7 +7160,7 @@
       "sources": [
         "docs/02-capabilities/application-sync/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://www.rfc-editor.org/info/rfc7030/",
@@ -7107,7 +7184,7 @@
       "sources": [
         "docs/02-capabilities/application-sync/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://www.rfc-editor.org/info/rfc8446/",
@@ -47157,28 +47234,28 @@
     {
       "id": "RM-READINESS-CONTRADICTION-0001",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 28,
+      "line": 29,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0002",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 30,
+      "line": 31,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0003",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 32,
+      "line": 33,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0004",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 34,
+      "line": 35,
       "kind": "governance",
       "domain": null
     },
@@ -47207,6 +47284,62 @@
       "id": "RM-READINESS-GRAPH-0004",
       "source": "docs/04-ecosystem/consistency-readiness/dependency-graph.md",
       "line": 61,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-READINESS-REVIEW-0001",
+      "source": "docs/04-ecosystem/consistency-readiness/domain-readiness-schema.md",
+      "line": 46,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-READINESS-REVIEW-0002",
+      "source": "docs/04-ecosystem/consistency-readiness/domain-readiness-schema.md",
+      "line": 48,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-READINESS-REVIEW-0003",
+      "source": "docs/04-ecosystem/consistency-readiness/domain-readiness-schema.md",
+      "line": 50,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-READINESS-REVIEW-0004",
+      "source": "docs/04-ecosystem/consistency-readiness/domain-readiness-schema.md",
+      "line": 52,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-READINESS-REVIEW-0005",
+      "source": "docs/04-ecosystem/consistency-readiness/domain-readiness-schema.md",
+      "line": 54,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-READINESS-REVIEW-0006",
+      "source": "docs/04-ecosystem/consistency-readiness/domain-readiness-schema.md",
+      "line": 56,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-READINESS-REVIEW-0007",
+      "source": "docs/04-ecosystem/consistency-readiness/domain-readiness-schema.md",
+      "line": 58,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-READINESS-REVIEW-0008",
+      "source": "docs/04-ecosystem/consistency-readiness/domain-readiness-schema.md",
+      "line": 60,
       "kind": "governance",
       "domain": null
     },
@@ -49077,8 +49210,8 @@
     },
     {
       "source": "docs/01-architecture/architecture-model.md",
-      "sha256": "9d716c0d279d7885e1635c9bbd19abfc973c9a29fe53afb1bf0ecdac9ef9e9d7",
-      "lines": 605
+      "sha256": "250d02663c886220568a8c281a2fdd2975a660eb284c405b24ba79ae9b00f5e9",
+      "lines": 607
     },
     {
       "source": "docs/01-architecture/behavioral-contracts.md",
@@ -52322,7 +52455,7 @@
     },
     {
       "source": "docs/02-capabilities/runtime-time/source-review.md",
-      "sha256": "01f4a0fd33ba6eeafc03729be8ce7453435eddca72b7e9fb3b593be9e404938a",
+      "sha256": "72ed4df3fdf5b24f8389dfd5b352fcd729cfb4f420ab44eeb5a958e937257f4d",
       "lines": 25
     },
     {
@@ -53507,8 +53640,8 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/audit-report.md",
-      "sha256": "5b25e02d19bf860e742ce22010f219f093f9623f9a53340346753cf22c7ff205",
-      "lines": 66
+      "sha256": "ae5ab1321576b64a1588b3e94d6da4a20cecebf7d84fe4ed00f7b4c8f1dff8fd",
+      "lines": 68
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/audit-rules.md",
@@ -53522,18 +53655,28 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/closure-backlog.md",
-      "sha256": "8de6a4f346f692543bb8bb9f735eee75467a5c36d6aef7c15a26ce32dbf83319",
-      "lines": 18
+      "sha256": "bcdf2c0bf24d5d12f94be80a93a514843d961ca7735560079456424a770afc69",
+      "lines": 19
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "sha256": "1dc4962571fe683cce4f31ada0678bfa182f010b0767f8bd98426a8245e61430",
-      "lines": 34
+      "sha256": "1da87ecc27d75939577dd96c1da002dc9b13cf9704c6ab0aa4a6110f08b5cb2e",
+      "lines": 35
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/dependency-graph.md",
       "sha256": "49a378a4728e2d2c97ea86ab7c249670b3289f2d18562e14d589097dfcdefc13",
       "lines": 68
+    },
+    {
+      "source": "docs/04-ecosystem/consistency-readiness/domain-readiness-schema.md",
+      "sha256": "11c9c8eeb025509c53ab4d8cf8db32111edc442a9bc9e1529c6bece15b822947",
+      "lines": 61
+    },
+    {
+      "source": "docs/04-ecosystem/consistency-readiness/domain-readiness-template.md",
+      "sha256": "74ce4dc82c64f7c1b7ecfb4e9025d107a8520db206b07811566f447bbd8fc7cf",
+      "lines": 73
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/maturity-promotion.md",
@@ -53552,7 +53695,7 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/promotion-scorecards.md",
-      "sha256": "427c259a47d9c1ba4bfcb3dd3cd83db0680f8156f972c43e263d8fdfbc2db2b6",
+      "sha256": "a78e13e7112669a2f9e7d52c1909bd40d5778bc145c8ece639eff759a7f0c041",
       "lines": 78
     },
     {
@@ -53562,8 +53705,8 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/README.md",
-      "sha256": "daab6f962eac45d14560748d0a5fb5dcdbb6fe7f6e5a7cf7058062dda382b219",
-      "lines": 52
+      "sha256": "ec02692bd6f6de2f707fdb90dcdc1cb83aaf46924d9e4150e90b21c7152811ce",
+      "lines": 53
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/source-freshness.md",
@@ -53797,8 +53940,8 @@
     },
     {
       "source": "docs/06-roadmap/roadmap.md",
-      "sha256": "7d0b6e96994710e2224a27b1e4d264e39f343578c1de4fd0bc44a127b9c1dc24",
-      "lines": 217
+      "sha256": "352bad2d70f7132ac33a924943f8b7adf59e333f974b1e478a235ef95d5e372e",
+      "lines": 221
     },
     {
       "source": "docs/adr/0001-capability-first-platform.md",
@@ -54591,9 +54734,14 @@
       "lines": 30
     },
     {
+      "source": "docs/adr/0159-domain-readiness-reviews-use-schema-validated-markdown.md",
+      "sha256": "b86326343006c8f6b0ec9a4479879185cf148c49af8be5a709355c8baea6312d",
+      "lines": 33
+    },
+    {
       "source": "docs/adr/README.md",
-      "sha256": "7336d5d1bd120724bf836cb5b280f6ca4d2d46d7ef5f02b4400e26aec81b4f23",
-      "lines": 164
+      "sha256": "5dd26eb51a71b3c0bccb7b98f4da2f5540ec6b87f8a58565f585cfdfdd0c7bbd",
+      "lines": 165
     },
     {
       "source": "docs/README.md",

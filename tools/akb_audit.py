@@ -14,6 +14,7 @@ import re
 import sys
 import urllib.parse
 from dataclasses import dataclass
+from datetime import date
 from pathlib import Path
 from typing import Iterable
 
@@ -70,21 +71,103 @@ def requirement_kind(source: str) -> str:
     return "governance"
 
 
-def reviewed_gate(path: Path, required_fields: tuple[str, ...]) -> str:
-    """Return an explicit reviewed gate state only when required metadata is present."""
+def table_field(text: str, field: str) -> str | None:
+    match = re.search(rf"^\| {re.escape(field)} \| (?P<value>[^|]+) \|$", text, re.MULTILINE)
+    return match.group("value").strip() if match else None
+
+
+def reviewed_gate(path: Path, kind: str, root: Path) -> tuple[str, list[Finding]]:
+    """Validate one canonical reviewed gate without inferring pass from presence."""
     if not path.exists():
-        return "unknown"
+        return "unknown", []
     text = path.read_text(encoding="utf-8")
     match = REVIEW_STATUS_RE.search(text)
     if not match:
-        return "unknown"
+        return "unknown", []
     status = match.group("status").lower()
-    if status != "pass":
-        return status
+    source = relative(path, root)
+    required_fields = {
+        "cross-cutting": ("Reviewed", "Review frontier", "Accountable owner", "Open blocking findings"),
+        "source": ("Reviewed", "Expires", "Reviewer", "Open blocking findings"),
+        "ownership": ("Reviewed", "Accountable owner", "Architecture reviewer", "Security reviewer", "Evidence reviewer"),
+    }[kind]
+    errors: list[Finding] = []
     for field in required_fields:
-        if not re.search(rf"^\| {re.escape(field)} \| [^|]+ \|$", text, re.MULTILINE):
-            return "unknown"
-    return "pass"
+        if not table_field(text, field):
+            errors.append(Finding("error", "review-schema", source, f"{kind} review missing field {field}"))
+    reviewed = table_field(text, "Reviewed")
+    if reviewed:
+        try:
+            date.fromisoformat(reviewed)
+        except ValueError:
+            errors.append(Finding("error", "review-date", source, f"invalid ISO review date {reviewed}"))
+    findings_value = table_field(text, "Open blocking findings")
+    if status == "pass" and findings_value and not findings_value.lower().startswith("none"):
+        errors.append(Finding("error", "review-blocker", source, "Pass review declares open blocking findings"))
+    if kind == "cross-cutting":
+        for dimension in ("Security/privacy", "Performance", "Accessibility", "Internationalization", "Observability", "Operations"):
+            if not re.search(rf"^\| {re.escape(dimension)} \| [^|]+ \| [^|]+ \| [^|]+ \|$", text, re.MULTILINE):
+                errors.append(Finding("error", "review-dimension", source, f"missing or empty {dimension} review row"))
+    elif kind == "source":
+        expiry = table_field(text, "Expires")
+        expiry_match = re.search(r"\d{4}-\d{2}-\d{2}", expiry or "")
+        if not expiry_match:
+            errors.append(Finding("error", "review-expiry", source, "source review lacks an ISO expiry date"))
+        else:
+            try:
+                expiry_date = date.fromisoformat(expiry_match.group(0))
+                if expiry_date < date.today():
+                    status = "fail"
+                    errors.append(Finding("warning", "review-expired", source, f"source review expired {expiry_date.isoformat()}"))
+            except ValueError:
+                errors.append(Finding("error", "review-expiry", source, f"invalid expiry date {expiry_match.group(0)}"))
+        if not re.search(r"https?://", text):
+            errors.append(Finding("error", "review-source-link", source, "source review has no exact external source link"))
+    elif kind == "ownership":
+        for heading in ("## Ownership duties", "## Bounded trial plan"):
+            if heading not in text:
+                errors.append(Finding("error", "review-section", source, f"missing section {heading}"))
+        if "implementation-trials/trial-template.md" not in text:
+            errors.append(Finding("error", "review-trial-template", source, "bounded plan does not link the trial template"))
+        if not re.search(r"stop conditions", text, re.IGNORECASE):
+            errors.append(Finding("error", "review-stop-conditions", source, "bounded plan lacks stop conditions"))
+    if any(item.severity == "error" for item in errors):
+        return "unknown", errors
+    return status, errors
+
+
+def promotion_review(path: Path, domain_status: str, root: Path) -> tuple[str, list[Finding]]:
+    """Validate that a candidate promotion record cannot self-authorize."""
+    if not path.exists():
+        return "absent", []
+    text = path.read_text(encoding="utf-8")
+    source = relative(path, root)
+    errors: list[Finding] = []
+    fields = {field: table_field(text, field) for field in ("Status", "Subject", "Architecture", "Proposed decision", "Implementation authority")}
+    for field, value in fields.items():
+        if not value:
+            errors.append(Finding("error", "promotion-review-schema", source, f"missing field {field}"))
+    for heading in ("## Gate assessment", "## Decision boundary"):
+        if heading not in text:
+            errors.append(Finding("error", "promotion-review-schema", source, f"missing section {heading}"))
+    review_status = (fields["Status"] or "unknown").lower()
+    if review_status.startswith("proposed"):
+        if (fields["Implementation authority"] or "").lower() != "none":
+            errors.append(Finding("error", "promotion-nonauthority", source, "Proposed review must declare Implementation authority as None"))
+        if not domain_status.lower().startswith("draft"):
+            errors.append(Finding("error", "promotion-maturity", source, "Proposed review requires Draft domain status"))
+        normalized = "proposed"
+    elif review_status.startswith("accepted"):
+        for field in ("Decision date", "Accountable owner", "Reviewers", "Decision"):
+            if not table_field(text, field):
+                errors.append(Finding("error", "promotion-accepted-schema", source, f"Accepted review missing field {field}"))
+        normalized = "accepted"
+    else:
+        errors.append(Finding("error", "promotion-review-status", source, f"unsupported promotion review status {fields['Status']}"))
+        normalized = "unknown"
+    if errors:
+        return "invalid", errors
+    return normalized, []
 
 
 def domain_for(source: str) -> str | None:
@@ -236,18 +319,16 @@ def inspect(root: Path) -> tuple[dict[str, object], list[Finding]]:
         for item in benchmark_requirement_items:
             item["benchmark_scenarios"] = scenario_ids_by_requirement.get(str(item["id"]), [])
         mapped_benchmark_requirements = sum(bool(item["benchmark_scenarios"]) for item in benchmark_requirement_items)
-        cross_cutting_review = reviewed_gate(
-            directory / "cross-cutting.md",
-            ("Reviewed", "Review frontier", "Accountable owner", "Open blocking findings"),
+        cross_cutting_review, cross_findings = reviewed_gate(directory / "cross-cutting.md", "cross-cutting", root)
+        source_freshness_review, source_findings = reviewed_gate(directory / "source-review.md", "source", root)
+        owner_review, owner_findings = reviewed_gate(directory / "ownership.md", "ownership", root)
+        findings.extend(cross_findings + source_findings + owner_findings)
+        promotion_status, promotion_findings = promotion_review(
+            directory / "promotion-review.md",
+            status_match.group("status").strip() if status_match else "unspecified",
+            root,
         )
-        source_freshness_review = reviewed_gate(
-            directory / "source-review.md",
-            ("Reviewed", "Expires", "Reviewer", "Open blocking findings"),
-        )
-        owner_review = reviewed_gate(
-            directory / "ownership.md",
-            ("Reviewed", "Accountable owner", "Architecture reviewer", "Security reviewer", "Evidence reviewer"),
-        )
+        findings.extend(promotion_findings)
         gate_states = (
             "pass",
             "pass" if conformance.exists() else "fail",
@@ -273,6 +354,7 @@ def inspect(root: Path) -> tuple[dict[str, object], list[Finding]]:
             "direct_requirement_assertion_map": capability_requirement_count > 0 and mapped_capability_requirements == capability_requirement_count,
             "direct_benchmark_scenario_map": len(benchmark_requirement_items) > 0 and mapped_benchmark_requirements == len(benchmark_requirement_items),
             "cross_cutting_analysis": "dedicated" if (directory / "cross-cutting.md").exists() else "embedded-unreviewed",
+            "promotion_review": promotion_status,
             "quality_keyword_mentions": quality_mentions,
             "promotion_gates": {
                 "contract_inventory": "pass",
@@ -340,12 +422,21 @@ def inspect(root: Path) -> tuple[dict[str, object], list[Finding]]:
             findings.append(Finding("error", "graph-requires-acyclic", relative(graph_source, root), "required dependency cycle"))
 
     findings.sort(key=lambda item: (item.severity, item.rule, item.source, item.detail))
+    reviewed_source_urls: set[str] = set()
+    for domain in domains:
+        if domain["promotion_gates"]["source_freshness_review"] != "pass":
+            continue
+        source_review = capability_root / str(domain["id"]) / "source-review.md"
+        for match in LINK_RE.finditer(source_review.read_text(encoding="utf-8")):
+            target = match.group(1).strip()
+            if target.startswith(("http://", "https://")):
+                reviewed_source_urls.add(target)
     external_sources = [
         {
             "url": url,
             "host": urllib.parse.urlsplit(url).netloc.lower(),
             "sources": sorted(source_files),
-            "freshness": "unreviewed-by-generator",
+            "freshness": "reviewed-in-domain-source-review" if url in reviewed_source_urls else "unreviewed-by-generator",
         }
         for url, source_files in sorted(external_source_files.items())
     ]
@@ -372,11 +463,14 @@ def inspect(root: Path) -> tuple[dict[str, object], list[Finding]]:
             ),
             "benchmark_scenarios": len(benchmark_scenarios),
             "external_sources": len(external_sources),
+            "external_sources_with_review_record": sum(item["freshness"] == "reviewed-in-domain-source-review" for item in external_sources),
             "domains_with_dedicated_cross_cutting_analysis": sum(item["cross_cutting_analysis"] == "dedicated" for item in domains),
             "domains_with_complete_planned_traceability": sum(
                 item["direct_requirement_assertion_map"] and item["direct_benchmark_scenario_map"] for item in domains
             ),
             "domains_experimental_eligible": sum(item["promotion_gates"]["experimental_eligible"] == "yes" for item in domains),
+            "domains_with_proposed_promotion_review": sum(item["promotion_review"] == "proposed" for item in domains),
+            "domains_with_accepted_promotion_review": sum(item["promotion_review"] == "accepted" for item in domains),
             "declared_graph_nodes": len(graph_nodes),
             "declared_graph_edges": len(graph_edges),
             "required_graph_acyclic": not any(item.rule == "graph-requires-acyclic" for item in findings),
@@ -423,6 +517,7 @@ This report is deterministic and contains no claim that file presence proves sem
 | Capability domains | {summary['domains']:,} |
 | Indexed ADRs | {summary['adrs']:,} |
 | External source URLs inventoried | {summary['external_sources']:,} |
+| External URLs with schema-valid domain review | {summary['external_sources_with_review_record']:,} |
 | Structural errors | {summary['errors']:,} |
 | Structural warnings | {summary['warnings']:,} |
 
@@ -465,6 +560,7 @@ Keyword mentions are discovery hints only. The [quality matrix](quality-matrix.m
 - {summary['domains_with_direct_benchmark_scenario_map']} domain(s) have complete benchmark-requirement-to-scenario maps across {summary['benchmark_scenarios']} stable semantic scenarios; run evidence remains absent by design.
 - {summary['domains_with_complete_planned_traceability']} domain(s) have both complete planned assertion and benchmark traceability.
 - {summary['domains_experimental_eligible']} domain(s) are currently eligible for Experimental promotion; generated scorecards cannot authorize promotion.
+- {summary['domains_with_proposed_promotion_review']} domain(s) have schema-valid Proposed promotion reviews and {summary['domains_with_accepted_promotion_review']} have Accepted reviews.
 - Semantic contradiction review remains human-governed and is tracked in the [closure backlog](closure-backlog.md).
 
 ## Readiness conclusion
@@ -519,13 +615,13 @@ def promotion_report(index: dict[str, object]) -> str:
         "",
         "The table uses conjunctive gates. It does not calculate a weighted score, and it cannot authorize promotion. `unknown` blocks eligibility until reviewed evidence exists.",
         "",
-        "| Domain | Contract | Conformance plan | Benchmark plan | Assertion map | Benchmark map | Cross-cutting review | Source review | Owner review | Experimental eligible |",
-        "|---|---|---|---|---|---|---|---|---|---|",
+        "| Domain | Contract | Conformance plan | Benchmark plan | Assertion map | Benchmark map | Cross-cutting review | Source review | Owner review | Promotion record | Experimental eligible |",
+        "|---|---|---|---|---|---|---|---|---|---|---|",
     ]
     for domain in domains:
         gate = domain["promotion_gates"]
         lines.append(
-            f"| [{domain['id']}](../../02-capabilities/{domain['id']}/README.md) | {gate['contract_inventory']} | {gate['conformance_plan']} | {gate['benchmark_plan']} | {gate['assertion_traceability']} | {gate['benchmark_traceability']} | {gate['cross_cutting_review']} | {gate['source_freshness_review']} | {gate['owner_review']} | **{gate['experimental_eligible']}** |"
+            f"| [{domain['id']}](../../02-capabilities/{domain['id']}/README.md) | {gate['contract_inventory']} | {gate['conformance_plan']} | {gate['benchmark_plan']} | {gate['assertion_traceability']} | {gate['benchmark_traceability']} | {gate['cross_cutting_review']} | {gate['source_freshness_review']} | {gate['owner_review']} | {domain['promotion_review']} | **{gate['experimental_eligible']}** |"
         )
     lines.extend([
         "",

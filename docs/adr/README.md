@@ -160,5 +160,6 @@
 | [0156](0156-unsafe-code-is-a-scoped-proof-obligation.md) | Unsafe code is a scoped proof obligation | Accepted |
 | [0157](0157-implementation-trials-are-bounded-learning-not-precedent.md) | Implementation trials are bounded learning, not precedent | Accepted |
 | [0158](0158-material-drift-suspends-trial-authorization.md) | Material drift suspends trial authorization | Accepted |
+| [0159](0159-domain-readiness-reviews-use-schema-validated-markdown.md) | Domain readiness reviews use schema-validated Markdown | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

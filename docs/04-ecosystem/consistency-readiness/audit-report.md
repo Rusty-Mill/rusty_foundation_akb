@@ -11,12 +11,13 @@ This report is deterministic and contains no claim that file presence proves sem
 
 | Measure | Result |
 |---|---:|
-| Markdown documents | 1,111 |
-| Resolved internal links | 2,011 |
-| Unique normative requirements | 5,160 |
+| Markdown documents | 1,114 |
+| Resolved internal links | 2,029 |
+| Unique normative requirements | 5,168 |
 | Capability domains | 62 |
-| Indexed ADRs | 158 |
-| External source URLs inventoried | 628 |
+| Indexed ADRs | 159 |
+| External source URLs inventoried | 629 |
+| External URLs with schema-valid domain review | 12 |
 | Structural errors | 0 |
 | Structural warnings | 0 |
 
@@ -59,6 +60,7 @@ Keyword mentions are discovery hints only. The [quality matrix](quality-matrix.m
 - 4 domain(s) have complete benchmark-requirement-to-scenario maps across 27 stable semantic scenarios; run evidence remains absent by design.
 - 4 domain(s) have both complete planned assertion and benchmark traceability.
 - 2 domain(s) are currently eligible for Experimental promotion; generated scorecards cannot authorize promotion.
+- 2 domain(s) have schema-valid Proposed promotion reviews and 0 have Accepted reviews.
 - Semantic contradiction review remains human-governed and is tracked in the [closure backlog](closure-backlog.md).
 
 ## Readiness conclusion

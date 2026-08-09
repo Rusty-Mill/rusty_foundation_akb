@@ -37,6 +37,7 @@ flowchart TD
 - [Maturity and promotion gates](maturity-promotion.md)
 - [Domain promotion decision model](promotion-decisions.md)
 - [Generated domain promotion scorecards](promotion-scorecards.md)
+- [Domain readiness review schema](domain-readiness-schema.md) and [template](domain-readiness-template.md)
 - [Benchmark scenario and run traceability](benchmark-traceability.md)
 - [Normative-source freshness and cross-cutting coverage](source-freshness.md)
 - [Generated cross-cutting quality matrix](quality-matrix.md)
