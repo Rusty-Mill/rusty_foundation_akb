@@ -3,8 +3,8 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.16.0 |
-| Extends | [`rm.profile.foundation.server` 1.21.0](foundation-server.md) |
+| Version | 0.17.0 |
+| Extends | [`rm.profile.foundation.server` 1.22.0](foundation-server.md) |
 | Purpose | Operate registration, certificate issuance, renewal, status, and CA lifecycle without claiming a complete public or enterprise CA product |
 
 ## Required composition
@@ -55,8 +55,11 @@
 
 **RM-PROFILE-CA-OPERATOR-0022:** CA content inspection composes Server 1.21.0 for enrollment attachments, attestation/evidence bundles, ceremony media, audit imports, and backups with exact subject/origin generations, recursive bounded inspection, offline/private-provider policy, quarantine, isolated transformations, and no inference that type/no-finding/transform permits key use, issuance, restore, publication, or trust.
 
+**RM-PROFILE-CA-OPERATOR-0023:** CA information protection composes Server 1.22.0 with issuer-qualified classifications for requests/identity evidence/key material/ceremonies/ledgers/audit/backups, compartmented recipients and channels, rights/encryption/markings, quorum downgrade, offline/revocation/recovery, DLP, and no inference that a label grants HSM/key/issuance/status/publication/trust authority.
+
 ## History
 
+- **0.17.0:** Rebases on Server 1.22.0 and constrains CA classification to compartmented immutable evidence, protected channels, quorum downgrade, DLP, offline/revocation, and separated key/issuance/trust authority.
 - **0.16.0:** Rebases on Server 1.21.0 and constrains CA content inspection to private generation-bound evidence, bounded recursion, quarantine, isolated derivation, and separated issuance/key/trust authority.
 - **0.15.0:** Rebases on Server 1.20.0 and constrains CA archives to reproducible evidence, independent cryptographic verification, key separation, safe staged restore, and separated ledger/trust authority.
 - **0.14.0:** Rebases on Server 1.19.0 and constrains CA policy to typed issuance decisions, immutable request/identity/ledger evidence, mandatory trust precedence, quorum/HSM obligations, fail-closed enforcement, and simulation/audit.

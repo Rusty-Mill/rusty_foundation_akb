@@ -123,5 +123,7 @@
 | [0119](0119-extraction-is-a-validated-filesystem-transaction.md) | Extraction is a validated filesystem transaction | Accepted |
 | [0120](0120-content-identification-is-evidence-not-intrinsic-truth-or-use-authority.md) | Content identification is evidence, not intrinsic truth or use authority | Accepted |
 | [0121](0121-safe-transformation-creates-a-new-artifact-generation.md) | Safe transformation creates a new artifact generation with bounded claims | Accepted |
+| [0122](0122-sensitivity-labels-are-scoped-assertions-not-protection-or-authority.md) | Sensitivity labels are scoped assertions, not protection or authority | Accepted |
+| [0123](0123-downgrade-and-declassification-are-authorized-transitions.md) | Downgrade and declassification are authorized transitions | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

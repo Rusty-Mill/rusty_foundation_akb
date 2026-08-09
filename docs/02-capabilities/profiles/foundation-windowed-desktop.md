@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.49.0 |
+| Version | 0.50.0 |
 | Extends | [`rm.profile.foundation.desktop` 1.0.0](foundation-desktop.md) |
 | Purpose | Add native top-level window and graphics-presentation infrastructure without claiming a complete GUI toolkit |
 
@@ -365,6 +365,12 @@
 
 **RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0178:** Evidence covers hostile names/UI mimicry, platform associations and user defaults, polyglots, nested and remote content, downloaded-origin propagation, native scan/reputation/Gatekeeper-like policy, accessible warnings/override, preview crashes/hangs, transform fidelity/loss, offline/cloud/privacy modes, and latency/memory/energy benchmarks.
 
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0179:** Information protection `>=0.1.0,<0.2.0` is conditional for labeled documents/messages/data, managed/unmanaged sharing, rights-protected content, or clipboard/drag/file/removable/print/capture/message/upload/cloud/API/AI DLP. It binds user/session/device/app, subject/lineage, taxonomy/assertions, recipient/channel/purpose, policy/protection/provider generations, offline state, privacy, and interaction.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0180:** Users receive accessible localized label/protection state, recommendations, warnings, structured justification/approval, recipient/destination consequences, stale/offline/unsupported coverage, and safe alternatives. UI cannot fabricate consent, hide partial protection, equate labels with enforcement, or claim prevention of screenshots/retyping/alternate channels.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0181:** Evidence covers manual/default/inherited/automatic labels, cross-application/platform metadata and markings, downgrade/appeal, rights/offline/revocation, managed/unmanaged recipients and apps, every selected interactive channel, background/headless denial, batch/cancellation/partial effects, hostile UI, privacy/accessibility, and latency/energy/task benchmarks.
+
 ## Whole-product gaps
 
 This profile does not supply a rendering command model, widget/UI framework, text editing model, image/audio codecs, media containers/graphs, gestures, or translated product resources. Product-specific semantic roles/actions/content, accepted transfer formats/importers, locale coverage, audio policy/content, and accessible UX still belong to the product/framework. It cannot claim desktop-application completeness.
@@ -377,6 +383,7 @@ Input evidence additionally covers layout/IME diversity, keyboard-only operation
 
 ## History
 
+- **0.50.0:** Adds conditional sensitivity labeling, lineage-aware classification, governed downgrade, independently evidenced markings/rights, cross-channel DLP, accessible user mediation, offline/revocation, conformance, and benchmarks.
 - **0.49.0:** Adds conditional evidence-preserving identification, restricted recursive inspection and previews, origin/quarantine propagation, provider verdicts, explicit transformation loss, accessible mediation, conformance, and benchmarks.
 - **0.48.0:** Adds conditional codec/archive processing with inert accessible preview, bounded hostile input, safe transactional extraction, explicit trust and metadata loss, recovery, conformance, and benchmarks.
 - **0.47.0:** Adds conditional typed policy evaluation, immutable contexts, explicit unknown/default/composition, obligation enforcement, cached/offline validity, accessible reasons, distribution/simulation, conformance, and benchmarks.

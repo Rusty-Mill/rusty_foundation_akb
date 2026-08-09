@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 1.21.0 |
+| Version | 1.22.0 |
 | Purpose | Long-running non-interactive service foundation with bounded shutdown and protected credentials |
 
 ## Workload assumptions
@@ -89,6 +89,9 @@ No interactive desktop session, unattended restart, concurrent I/O, explicit ser
 - **RM-PROFILE-FOUNDATION-SERVER-0071:** Content inspection `>=0.1.0,<0.2.0` is conditional for uploads, imports, artifacts, messages, documents, archives, previews, publication, or executable/configuration intake. It binds immutable subject, purpose, media candidates, provider/rule/model/database/policy generations, graph/budgets, origin/quarantine, disclosure, freshness, and authority.
 - **RM-PROFILE-FOUNDATION-SERVER-0072:** Type declarations/detections, structure, malware/reputation, signatures/trust, quarantine, and use authority remain separate. Restricted preview and transformation providers have no ambient effects; transformations create independently validated generations with lineage, semantic loss, residual-risk, and quarantine evidence.
 - **RM-PROFILE-FOUNDATION-SERVER-0073:** Evidence covers identity registries/declarations, signature/structure boundary and differential corpora, polyglots, recursive graphs and external references, origin/quarantine histories, every provider verdict/freshness/privacy mode, sandbox faults, preview/transform loss, cache invalidation, and adversarial resource benchmarks.
+- **RM-PROFILE-FOUNDATION-SERVER-0074:** Information protection `>=0.1.0,<0.2.0` is conditional for classified application data, regulated records, cross-tenant sharing, protected artifacts/messages, or channel loss-prevention. It binds subject/lineage, issuer taxonomy and assertions, classifier/policy generations, principal/device/application, recipient/channel/purpose, protections, freshness, audit/privacy, and providers.
+- **RM-PROFILE-FOUNDATION-SERVER-0075:** Labels are assertions, not authority or completed protection. Downgrade/declassification/removal requires a generation-bound authorized transition; marking, encryption, rights, retention, DLP decision, user/approval mediation, channel effect, recipient access, revocation, and reconciliation remain independently evidenced.
+- **RM-PROFILE-FOUNDATION-SERVER-0076:** Evidence covers taxonomy orders/mappings/rollouts, classifier corpora and drift, lineage/aggregation/reidentification, downgrade/quorum/transform histories, markings/encryption/rights/offline/revocation, every selected DLP channel and failure, cross-tenant recipients, accessibility/privacy/audit, provider differentials, and adversarial benchmarks.
 
 ## Operational constraints
 
@@ -96,6 +99,7 @@ Deadline timers and cancellation support bounded multi-phase shutdown. Sync path
 
 ## History
 
+- **1.22.0:** Adds conditional issuer-scoped classification assertions, lineage, governed downgrade, independently evidenced protection, channel-bound DLP, accessible mediation, cross-tenant/offline/revocation semantics, conformance, and benchmarks.
 - **1.21.0:** Adds conditional multi-evidence content identification, recursive restricted inspection, quarantine/origin propagation, malware/reputation boundaries, inert previews, generation-producing transformations, conformance, and benchmarks.
 - **1.20.0:** Adds conditional independently negotiated codec/container processing, bounded streaming and metadata, deterministic creation, transactional extraction, encryption/trust separation, recovery, conformance, and benchmarks.
 - **1.19.0:** Adds conditional typed policy evaluation, immutable contexts, explicit unknown/default/composition, obligation enforcement, partial/cache semantics, signed distribution, simulation/audit, conformance, and benchmarks.
