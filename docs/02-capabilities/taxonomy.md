@@ -98,6 +98,7 @@ Each domain will be decomposed into common, optional/advanced, and platform-spec
 - [Account, directory, tenant, and identity-governance foundations](identity-governance/README.md) — Draft
 - [Application authentication, authenticator lifecycle, federation, and session-assurance foundations](application-authentication/README.md) — Draft
 - [Application authorization administration and effective-access foundations](application-authorization/README.md) — Draft
+- [Secrets lifecycle, dynamic credentials, and privileged-access brokerage foundations](secrets-lifecycle/README.md) — Draft
 - [Memory and mapping foundations vertical slice](memory/README.md) — Draft
 - [Plugin and module lifecycle vertical slice](plugins/README.md) — Draft
 - [Threading and synchronization foundations vertical slice](threading/README.md) — Draft

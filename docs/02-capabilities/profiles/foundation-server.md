@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 1.26.0 |
+| Version | 1.27.0 |
 | Purpose | Long-running non-interactive service foundation with bounded shutdown and protected credentials |
 
 ## Workload assumptions
@@ -104,6 +104,9 @@ No interactive desktop session, unattended restart, concurrent I/O, explicit ser
 - **RM-PROFILE-FOUNDATION-SERVER-0086:** Application authorization `>=0.1.0,<0.2.0` is conditional for product resources/actions, roles/attributes/relations, sharing/delegation, policy administration, list/search filtering, effective-access review, or cross-service enforcement. It binds exact subject/actor/delegation, tenant, resource/action/scope, context, policy/data/evaluator/native generations, consistency, authority, and purpose.
 - **RM-PROFILE-FOUNDATION-SERVER-0087:** RBAC/ABAC/ReBAC/ownership/grants/denies compose under explicit policy; decisions are evidence and resource boundaries enforce current effects. Effective access is a versioned derivation; filtering is sound with point checks; caches include every dependency; delegation attenuates; revocation reports propagation frontiers.
 - **RM-PROFILE-FOUNDATION-SERVER-0088:** Evidence covers resource/action/scope lifecycle, role/attribute/relation composition, policy release/distribution, decision/obligation/enforcement races, ownership/sharing/denies, delegation/confused deputies, filter/batch/discovery equivalence, cache/causal/revocation faults, effective-access/explanation/simulation, native drift, privacy/accessibility, and benchmarks.
+- **RM-PROFILE-FOUNDATION-SERVER-0089:** Secrets lifecycle `>=0.1.0,<0.2.0` is conditional for remote vaults/brokers, dynamic database/cloud/API/SSH/certificate credentials, workload bootstrap, secret delivery, rotation, privileged checkout, or leak response. It binds subject/actor/workload, target/audience/purpose, secret/credential/lease/provider generations, protection/exposure, authority, expiry, and policy.
+- **RM-PROFILE-FOUNDATION-SERVER-0090:** Stored items, values, credentials, leases, handles, deliveries, adoption, use, and target authentication remain distinct. Non-reveal requires a named provider-mediated operation; rotation closes only after successor use and predecessor denial; revocation/deletion claims name target/provider/backup residuals.
+- **RM-PROFILE-FOUNDATION-SERVER-0091:** Evidence covers conditional versioning, secret classes, bootstrap/attestation, dynamic issuance/renew/revoke, broker/agent isolation, opaque-use canaries, file/env/argument/descriptor delivery, dependent reload, staged fleet rotation, privileged/JIT/break-glass, scanning/leak response, backup/restore/migration/deletion, privacy/accessibility, faults, and benchmarks.
 
 ## Operational constraints
 
@@ -111,6 +114,7 @@ Deadline timers and cancellation support bounded multi-phase shutdown. Sync path
 
 ## History
 
+- **1.27.0:** Adds conditional secrets lifecycle, dynamic credentials and leases, workload bootstrap/brokers, non-reveal operations, controlled delivery, complete rotation/revocation, privileged access, leak response, recovery, conformance, and benchmarks.
 - **1.26.0:** Adds conditional application authorization administration, composable RBAC/ABAC/ReBAC, resource enforcement, sharing/delegation, sound filtering, effective access, consistency/revocation, native boundaries, conformance, and benchmarks.
 - **1.25.0:** Adds conditional application authentication, authenticator lifecycle/recovery, protocol-qualified phishing resistance, federation and OAuth/token boundaries, session assurance/revocation, conformance, and benchmarks.
 - **1.24.0:** Adds conditional versioned directory and identity governance, loss-aware provisioning mappings, membership evidence, lifecycle and access-governance workflows, privilege/emergency handling, multi-boundary deprovisioning, conformance, and benchmarks.

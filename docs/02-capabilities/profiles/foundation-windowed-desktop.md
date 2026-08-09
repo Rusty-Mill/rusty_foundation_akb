@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.54.0 |
+| Version | 0.55.0 |
 | Extends | [`rm.profile.foundation.desktop` 1.0.0](foundation-desktop.md) |
 | Purpose | Add native top-level window and graphics-presentation infrastructure without claiming a complete GUI toolkit |
 
@@ -395,6 +395,12 @@
 
 **RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0193:** Evidence covers navigation/action races, multi-selection and partial results, sharing/invitation/transfer/revoke, role and relation changes, filter versus point checks, policy rollout, offline caches, effective-access explanations and redaction, tenant/account switching, native denials, confused-deputy routing, localization/accessibility, responsiveness, and energy.
 
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0194:** Secrets lifecycle `>=0.1.0,<0.2.0` is conditional for user/application secret vaults, dynamic credentials, workload brokers, authenticator or account keys, credential injection, rotation status, privileged checkout, or incident response. It binds exact user/app/device/workload, purpose/target, provider/secret/lease generations, interaction, exposure, authority, and expiry.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0195:** Interfaces preserve native brokers and password managers, minimize reveal/copy, identify target/account/scope/expiry, warn for file/environment/clipboard exposure, provide accessible approval/quorum/break-glass and recovery, show successor-adoption/predecessor-denial residuals, and never display secret-derived identifiers.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0196:** Evidence covers locked/unavailable vaults, account/device/app switching, prompts/cancellation, dynamic lease renewal, broker routing, clipboard/file/env/child-process exposure, reload/restart, rotation overlap/failure, privileged session/JIT/emergency flows, leak containment, backup/restore, localization/accessibility, responsiveness, and energy.
+
 ## Whole-product gaps
 
 This profile does not supply a rendering command model, widget/UI framework, text editing model, image/audio codecs, media containers/graphs, gestures, or translated product resources. Product-specific semantic roles/actions/content, accepted transfer formats/importers, locale coverage, audio policy/content, and accessible UX still belong to the product/framework. It cannot claim desktop-application completeness.
@@ -407,6 +413,7 @@ Input evidence additionally covers layout/IME diversity, keyboard-only operation
 
 ## History
 
+- **0.55.0:** Adds conditional secret and credential brokerage, minimized reveal/delivery, dynamic leases, rotation adoption/denial status, privileged checkout/break-glass, incident response, recovery, conformance, and benchmarks.
 - **0.54.0:** Adds conditional permission-aware UI, ownership/sharing and access administration, safe explanations, sound resource filtering, offline/revocation disclosure, point enforcement, conformance, and benchmarks.
 - **0.53.0:** Adds conditional application sign-in, passkey/security-key and fallback UX, broker/federation routing, authenticator management/recovery, step-up, session/logout/revocation, conformance, and benchmarks.
 - **0.52.0:** Adds conditional identity administration, tenant/guest and membership evidence, provisioning/lifecycle/access-review workflows, privileged/emergency mediation, explicit propagation/residuals, conformance, and benchmarks.

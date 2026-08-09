@@ -39,17 +39,17 @@ The table is only a view. Each manifest defines exact contract ranges, predicate
 
 ## Windowed desktop extension
 
-[`rm.profile.foundation.windowed-desktop` 0.54.0](foundation-windowed-desktop.md) extends Desktop 1.0.0 with conditional infrastructure, privacy, identity, authentication, and application-authorization capabilities. Product resource/action schemas, roles/attributes/relations, policy, sharing/delegation, native enforcement, UI/content, and other product choices remain explicit.
+[`rm.profile.foundation.windowed-desktop` 0.55.0](foundation-windowed-desktop.md) extends Desktop 1.0.0 with conditional infrastructure, privacy, identity, authentication, authorization, and secrets-lifecycle capabilities. Product vault/broker, credential types, delivery/rotation, privileged access, incident policy, UI/content, and other choices remain explicit.
 
-[`rm.profile.foundation.server` 1.26.0](foundation-server.md) conditionally selects application authorization administration, RBAC/ABAC/ReBAC composition, resource enforcement, sharing/delegation, filtering, effective access, consistency, and revocation in addition to prior infrastructure and governance domains. Exact schemas, policy language/service, native mappings, consistency/objectives, and legal meaning remain product choices.
+[`rm.profile.foundation.server` 1.27.0](foundation-server.md) conditionally selects secrets lifecycle, workload bootstrap, dynamic credentials, brokers, non-reveal operations, delivery, rotation, privileged access, leak response, and recovery in addition to prior domains. Exact providers, credential classes, namespaces, intervals, delivery forms, target/dependent policy, and objectives remain product choices.
 
 ## Repository operator extension
 
-[`rm.profile.foundation.repository-operator` 0.22.0](foundation-repository-operator.md) extends Server 1.26.0 with repository-specific publication, security-response, identity, authentication, and authorization evidence. Exact roles, relations, policy, delegation, native enforcement, topology, and staffing remain product RFC choices.
+[`rm.profile.foundation.repository-operator` 0.23.0](foundation-repository-operator.md) extends Server 1.27.0 with repository publication, security response, identity/authentication/authorization, and automation/signing-secret lifecycle evidence. Exact providers, roles, signing boundaries, rotation, incident policy, topology, and staffing remain product RFC choices.
 
 ## Certificate-authority operator extension
 
-[`rm.profile.foundation.ca-operator` 0.21.0](foundation-ca-operator.md) extends Server 1.26.0 with issuance, key/status lifecycle, privacy, identity, high-assurance authentication, and CA-specific authorization evidence. Exact issuer/key roles, policy, quorum, native enforcement, trust, legal/audit, and recovery choices remain explicit.
+[`rm.profile.foundation.ca-operator` 0.22.0](foundation-ca-operator.md) extends Server 1.27.0 with issuance, key/status lifecycle, privacy, identity/authentication/authorization, and HSM/brokered-secret lifecycle evidence. Exact provider, ceremony, quorum, rotation, recovery, trust, and legal/audit choices remain explicit.
 
 ## Version transition
 

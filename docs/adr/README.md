@@ -133,5 +133,7 @@
 | [0129](0129-account-recovery-is-an-authenticator-replacement-ceremony.md) | Account recovery is an authenticator replacement ceremony | Accepted |
 | [0130](0130-effective-access-is-a-versioned-derivation.md) | Effective access is a versioned derivation, not stored truth | Accepted |
 | [0131](0131-authorization-filtering-must-be-sound-with-point-enforcement.md) | Authorization filtering must be sound with point enforcement | Accepted |
+| [0132](0132-secret-rotation-completes-at-successor-use-and-predecessor-denial.md) | Secret rotation completes at successor use and predecessor denial | Accepted |
+| [0133](0133-use-without-reveal-is-a-provider-mediated-operation-contract.md) | Use without reveal is a provider-mediated operation contract | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

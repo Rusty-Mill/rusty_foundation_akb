@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.21.0 |
+| Version | 0.22.0 |
 | Extends | [`rm.profile.foundation.server` 1.23.0](foundation-server.md) |
 | Purpose | Operate registration, certificate issuance, renewal, status, and CA lifecycle without claiming a complete public or enterprise CA product |
 
@@ -65,8 +65,11 @@
 
 **RM-PROFILE-CA-OPERATOR-0027:** CA authorization composes Server 1.26.0 with typed issuer/key/profile/request/order/certificate/status/ceremony actions, operator/service/tenant relations, mandatory denies and quorum/SoD obligations, attenuated enrollment/signing/status delegation, sound private-ledger filtering, effective-access review, generation-bound emergency revocation, and final HSM/ledger/native enforcement without deriving key or issuance authority from authentication, role, or policy permit alone.
 
+**RM-PROFILE-CA-OPERATOR-0028:** CA secrets compose Server 1.27.0 with HSM/provider-mediated key use, workload-brokered enrollment/status/transparency credentials, dynamic operator sessions, exact lease/ceremony scopes, staged issuer/service rotation with successor-use and predecessor-denial evidence, dual-control checkout and offline break-glass, leak/compromise response, backup/migration/deletion boundaries, and no plaintext private-key assumption.
+
 ## History
 
+- **0.22.0:** Rebases on Server 1.27.0 and constrains CA secrets to HSM-mediated use, brokered service identity, scoped leases, complete issuer/service rotation, dual-control emergency access, compromise response, and explicit recovery/deletion boundaries.
 - **0.21.0:** Rebases on Server 1.26.0 and constrains CA authorization to typed issuer/key effects, operator/service relations, mandatory deny/quorum, attenuated delegation, private-ledger filtering, effective-access review, and final HSM/ledger enforcement.
 - **0.20.0:** Rebases on Server 1.25.0 and constrains CA authentication to verifier-bound operator ceremonies, exact service audiences, transaction-bound step-up, preserved quorum, and recovery across authenticators/sessions/tokens/key access.
 - **0.19.0:** Rebases on Server 1.24.0 and constrains CA identity governance to immutable operator roles, ceremony/issuance entitlements, quorum/SoD/reviews, emergency access, and complete credential/key/session/resource reconciliation.
