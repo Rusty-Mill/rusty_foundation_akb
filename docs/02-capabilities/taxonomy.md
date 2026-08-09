@@ -91,6 +91,7 @@ Each domain will be decomposed into common, optional/advanced, and platform-spec
 - [Analytical data processing and query foundations](analytics/README.md) — Draft
 - [Structured data interchange and serialization foundations](interchange/README.md) — Draft
 - [Application policy and rules-evaluation foundations](policy/README.md) — Draft
+- [Compression, archive, and package-container foundations](archive/README.md) — Draft
 - [Memory and mapping foundations vertical slice](memory/README.md) — Draft
 - [Plugin and module lifecycle vertical slice](plugins/README.md) — Draft
 - [Threading and synchronization foundations vertical slice](threading/README.md) — Draft

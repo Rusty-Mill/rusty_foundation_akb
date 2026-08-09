@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.57.0
+**Version:** 1.58.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -523,6 +523,8 @@ The [structured data interchange and serialization foundations](../02-capabiliti
 The [service discovery, traffic routing, and load-balancing foundations](../02-capabilities/service-traffic/README.md) compose service/endpoint generations, registration/leases and DNS/native/control-plane discovery, readiness/health/drain/outlier evidence, immutable routing/subset policies, load balancing and affinity, unified retry/hedge/admission budgets, locality/failover/failback, control-plane propagation, security/privacy, conformance, and benchmarks. Health is expiring boundary-scoped evidence rather than success authority, while each route binds an immutable policy generation and endpoint snapshot ([ADR-0114](../adr/0114-health-is-expiring-evidence-not-success-authority.md), [ADR-0115](../adr/0115-routing-binds-a-policy-generation-and-endpoint-snapshot.md)). Exact services/identities/protocols, discovery/control providers, route/balancer/health/affinity algorithms, topology, rollout/failover, objectives, and retry/effect policy remain product RFC choices. Its specifications remain Draft and cannot amend this model.
 
 The [application policy and rules-evaluation foundations](../02-capabilities/policy/README.md) compose typed decision contracts, immutable policy/schema/input/data/function/evaluator generations, pure bounded language evaluation, explicit missing/unknown/error semantics, deterministic composition/conflict rules, obligations/advice with independent enforcement, partial evaluation and generation-bound caching, authenticated coherent distribution, testing/simulation/change analysis, explanation/audit/privacy, conformance, and benchmarks. Policy decisions are evidence rather than effect authority, and each evaluation binds immutable policy and input snapshots ([ADR-0116](../adr/0116-policy-decisions-are-evidence-not-effect-authority.md), [ADR-0117](../adr/0117-policy-evaluation-binds-immutable-policy-and-input-snapshots.md)). Exact product policies, decision schemas, language/engine, data/functions, combining/default rules, obligations, distribution topology, objectives, and legal meaning remain product RFC choices. Its specifications remain Draft and cannot amend this model.
+
+The [compression, archive, and package-container foundations](../02-capabilities/archive/README.md) compose independently identified codecs and containers, bounded streaming/framing/dictionaries/integrity, portable entry graphs and metadata, safe path/link/special-object mapping, sequential/random/multipart reading, deterministic creation, transactional extraction, encryption/trust separation, mutation/repair/recovery, conformance, and benchmarks. Codecs and containers are independently negotiated capabilities, while extraction is an authority-bearing validated filesystem transaction ([ADR-0118](../adr/0118-codecs-and-containers-are-independently-negotiated-capabilities.md), [ADR-0119](../adr/0119-extraction-is-a-validated-filesystem-transaction.md)). Exact product formats/profiles/codecs/parameters/dictionaries, metadata and overwrite policy, encryption/keys, signed views, package semantics, installation behavior, providers, objectives, and legal policy remain product RFC choices. Its specifications remain Draft and cannot amend this model.
 
 ## 18. Deliberately unresolved choices
 

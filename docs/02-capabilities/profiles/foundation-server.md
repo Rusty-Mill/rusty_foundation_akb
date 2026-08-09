@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 1.19.0 |
+| Version | 1.20.0 |
 | Purpose | Long-running non-interactive service foundation with bounded shutdown and protected credentials |
 
 ## Workload assumptions
@@ -83,6 +83,9 @@ No interactive desktop session, unattended restart, concurrent I/O, explicit ser
 - **RM-PROFILE-FOUNDATION-SERVER-0065:** Policy evaluation `>=0.1.0,<0.2.0` is conditional for authorization, admission/routing, validation, configuration, or product rules. It binds typed decision entry points, immutable policy/schema/input/data/function/evaluator generations, combination/default, obligations/enforcement, cache/freshness, distribution, audit/privacy, and provider.
 - **RM-PROFILE-FOUNDATION-SERVER-0066:** Decisions are evidence, not credentials/effects; enforcement revalidates applicability and current authority. Security defaults fail closed on malformed/missing/stale/unknown/indeterminate/error/unsupported obligations. Evaluation is pure and bounded; external data/nondeterminism is explicit; caches include every semantic dependency.
 - **RM-PROFILE-FOUNDATION-SERVER-0067:** Evidence covers language/type/function semantics, decision truth/error tables and conflicts, data/entity graphs, partial/cache invalidation, enforcement/obligation fault histories, coherent signed distribution and mixed generations, simulation/change analysis, explanation/audit redaction, isolation/side channels, provider differentials, and staged benchmarks.
+- **RM-PROFILE-FOUNDATION-SERVER-0068:** Compression/archive service `>=0.1.0,<0.2.0` is conditional for compressed streams, archive/package storage or transfer, backup/export, artifact handling, or extraction. It binds independent codec/framing and container/profile identities, exact parameters/dictionaries, source/destination generations, metadata/path/link policy, limits, integrity/encryption/trust, and provider.
+- **RM-PROFILE-FOUNDATION-SERVER-0069:** Listing is inert evidence; extraction requires an immutable plan, held destination capability, isolated staging, integrity gates, destination revalidation, and atomic or explicitly journaled commit. Package/container parse never grants install, execution, mount, metadata privilege, overwrite, or trust authority.
+- **RM-PROFILE-FOUNDATION-SERVER-0070:** Evidence covers official/differential codec and container corpora, every chunk boundary, dictionaries/frames/indexes/multipart, hostile expansion/path/link/special-object cases, metadata conversion, reproducibility, encryption/tamper/oracles, staged extraction fault histories, recovery/repair, provider differentials, and staged resource benchmarks.
 
 ## Operational constraints
 
@@ -90,6 +93,7 @@ Deadline timers and cancellation support bounded multi-phase shutdown. Sync path
 
 ## History
 
+- **1.20.0:** Adds conditional independently negotiated codec/container processing, bounded streaming and metadata, deterministic creation, transactional extraction, encryption/trust separation, recovery, conformance, and benchmarks.
 - **1.19.0:** Adds conditional typed policy evaluation, immutable contexts, explicit unknown/default/composition, obligation enforcement, partial/cache semantics, signed distribution, simulation/audit, conformance, and benchmarks.
 - **1.18.0:** Adds conditional service discovery, generation-bound routing/balancing, expiring health, affinity, attempt/admission budgets, locality/failover, control propagation, conformance, and benchmarks.
 - **1.17.0:** Adds conditional schema-first interchange, directional evolution, format mappings, canonical signed views, framing/negotiation, bounded parsing, unknown/loss handling, registries, conformance vectors, and benchmarks.
