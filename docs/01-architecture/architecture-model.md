@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.78.0
+**Version:** 1.79.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -565,6 +565,8 @@ External citation presence does not prove authority, currency, applicability, or
 Maturity promotion uses conjunctive gates rather than numeric or weighted readiness scores ([ADR-0154](../adr/0154-maturity-promotion-uses-conjunctive-gates-not-scores.md)). `Unknown` blocks promotion; reviewed non-applicability and governed waivers remain distinct. Generated scorecards assemble decision evidence but cannot change maturity. Only an explicit reviewed record can authorize Experimental trials, and that authorization does not establish Stable precedent, production support, portability, or release eligibility.
 
 The [Rusty Mill software development standards](../05-governance/software-development/README.md) are a separate conjunctive implementation-entry gate ([ADR-0155](../adr/0155-development-standards-are-implementation-entry-gates.md)). They govern design philosophy, Rust/API/errors/async/concurrency/resources, unsafe/FFI, testing/conformance/fuzzing, performance, security/privacy/accessibility/i18n/observability, dependencies/supply chain, review/CI, documentation/releases/maintenance, repository profiles, evidence, and exceptions. Unsafe code is a scoped proof obligation behind safe abstractions rather than a convenience or blanket prohibition ([ADR-0156](../adr/0156-unsafe-code-is-a-scoped-proof-obligation.md)). Standards profiles may strengthen but cannot silently weaken the foundation. Neither standards compliance nor domain promotion alone authorizes implementation; both and an exact bounded trial decision are required.
+
+The [implementation trial governance model](../05-governance/implementation-trials/README.md) defines that bounded decision ([RFC-0002](../rfc/0002-implementation-trial-governance.md)). An authorized trial binds exact questions, hypotheses, nonclaims, architecture/capability/standards/toolchain/provider generations, evidence, limits, reviewers, and closeout duties. Trial implementation and results are learning evidence rather than architectural or Stable precedent ([ADR-0157](../adr/0157-implementation-trials-are-bounded-learning-not-precedent.md)). Material change to relevant inputs suspends affected authorization until reviewed under a new generation; evidence reuse requires explicit validity reasoning ([ADR-0158](../adr/0158-material-drift-suspends-trial-authorization.md)). Success, failure, inconclusive, and terminated outcomes preserve evidence, while adoption, maturity promotion, code reuse, and release remain separate governed decisions.
 
 ## 18. Deliberately unresolved choices
 

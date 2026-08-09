@@ -36,3 +36,5 @@ When architecture changes, the accepted decision and the authoritative model are
 ## Software development governance
 
 The [foundation software development standards](software-development/README.md) govern implementation entry, Rust/API/unsafe practices, testing, performance, cross-cutting qualities, dependencies, review/CI, releases, and exceptions. Domain promotion and an applicable repository standards profile are separate conjunctive gates; neither can substitute for the other.
+
+The [implementation trial governance model](implementation-trials/README.md) adds the third gate: exact authorization for bounded learning. Trial code and results are evidence, not precedent; material input drift suspends affected authorization until re-review.

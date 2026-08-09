@@ -11,6 +11,7 @@ The [authoritative architecture model](docs/01-architecture/architecture-model.m
 - Editorial clarification: ordinary pull request.
 - Durable architecture choice: copy the [ADR template](docs/05-governance/adr-template.md) into `docs/adr/`.
 - Cross-cutting, public, or ecosystem proposal: copy the [RFC template](docs/05-governance/rfc-template.md) into `docs/rfc/`.
+- Bounded implementation experiment: use the [implementation trial template](docs/05-governance/implementation-trials/trial-template.md) only after every trial entry gate passes.
 - Capability addition or change: update its taxonomy entry, dependencies, behavioral contract, profile impact, conformance requirements, and benchmarks together.
 
 ## Review standard

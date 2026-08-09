@@ -1,7 +1,7 @@
 # Cross-domain contradiction ledger
 
 **Status:** Active reviewed evidence  
-**Scope:** Architecture model 1.78.0 and domain sources through audit-evidence 0.1.0
+**Scope:** Architecture model 1.79.0 and domain sources through audit-evidence 0.1.0
 
 The ledger records proposition-level review. “No contradiction found” is bounded to named sources and rules; it is not a repository-wide proof.
 
@@ -19,6 +19,7 @@ The ledger records proposition-level review. “No contradiction found” is bou
 | CL-010 | “Current,” “latest,” and quality-coverage claims remain scoped rather than inferred from URLs or keywords. | [Source freshness](source-freshness.md), [quality matrix](quality-matrix.md), [text Unicode model](../../02-capabilities/text/unicode-model.md), [ADR-0152](../../adr/0152-citation-presence-does-not-prove-source-freshness.md), [ADR-0153](../../adr/0153-cross-cutting-keywords-are-discovery-not-coverage.md) | Consistent with review backlog | Pin source versions at adoption, preserve generated unknowns, and require exact evidence links before promotion. |
 | CL-011 | Repository progress metrics cannot implicitly authorize domain maturity. | [Readiness model](model.md), [promotion decisions](promotion-decisions.md), [scorecards](promotion-scorecards.md), [ADR-0154](../../adr/0154-maturity-promotion-uses-conjunctive-gates-not-scores.md) | Consistent | Keep percentages descriptive, require conjunctive gates, and reserve maturity changes for reviewed decision records. |
 | CL-012 | Unix/composability influences do not collapse capability semantics into files, text, tools, or process-per-feature architecture. | [Development philosophy](../../05-governance/software-development/design-philosophy.md), [capability model](../../02-capabilities/model.md), [development standards](../../05-governance/software-development/README.md), [ADR-0155](../../adr/0155-development-standards-are-implementation-entry-gates.md) | Consistent after qualification | Adopt composition, clarity, explicit policy, and data-driven design; keep text/file/process mechanisms scoped to suitable interfaces and backends. |
+| CL-013 | Experimental maturity, standards compliance, and trial authorization remain separate conjunctive gates. | [Promotion decisions](promotion-decisions.md), [standards evidence](../../05-governance/software-development/compliance-evidence.md), [trial entry gates](../../05-governance/implementation-trials/entry-gates.md), [RFC-0002](../../rfc/0002-implementation-trial-governance.md) | Consistent | Require all three exact decisions; treat trial results as evidence and suspend authority on material drift. |
 
 ## Finding rules
 

@@ -158,5 +158,7 @@
 | [0154](0154-maturity-promotion-uses-conjunctive-gates-not-scores.md) | Maturity promotion uses conjunctive gates, not scores | Accepted |
 | [0155](0155-development-standards-are-implementation-entry-gates.md) | Development standards are implementation entry gates | Accepted |
 | [0156](0156-unsafe-code-is-a-scoped-proof-obligation.md) | Unsafe code is a scoped proof obligation | Accepted |
+| [0157](0157-implementation-trials-are-bounded-learning-not-precedent.md) | Implementation trials are bounded learning, not precedent | Accepted |
+| [0158](0158-material-drift-suspends-trial-authorization.md) | Material drift suspends trial authorization | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

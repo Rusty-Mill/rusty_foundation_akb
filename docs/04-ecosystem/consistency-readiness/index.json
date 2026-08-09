@@ -4,11 +4,11 @@
   "authority": "docs/01-architecture/architecture-model.md",
   "generated_from": "Markdown; this index is derived and non-authoritative",
   "summary": {
-    "markdown_documents": 1090,
-    "internal_links": 1909,
-    "requirements": 5084,
+    "markdown_documents": 1103,
+    "internal_links": 1940,
+    "requirements": 5120,
     "domains": 62,
-    "adrs": 156,
+    "adrs": 158,
     "errors": 0,
     "warnings": 0,
     "domains_with_conformance": 62,
@@ -46576,28 +46576,28 @@
     {
       "id": "RM-READINESS-CONTRADICTION-0001",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 25,
+      "line": 26,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0002",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 27,
+      "line": 28,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0003",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 29,
+      "line": 30,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0004",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 31,
+      "line": 32,
       "kind": "governance",
       "domain": null
     },
@@ -47361,6 +47361,258 @@
       "id": "RM-REPOSITORY-AUTHORITY-0007",
       "source": "docs/04-ecosystem/repository-operations/roles-authority.md",
       "line": 15,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-TRIAL-CHANGE-0001",
+      "source": "docs/05-governance/implementation-trials/change-control.md",
+      "line": 15,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-TRIAL-CHANGE-0002",
+      "source": "docs/05-governance/implementation-trials/change-control.md",
+      "line": 17,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-TRIAL-CHANGE-0003",
+      "source": "docs/05-governance/implementation-trials/change-control.md",
+      "line": 19,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-TRIAL-CHANGE-0004",
+      "source": "docs/05-governance/implementation-trials/change-control.md",
+      "line": 21,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-TRIAL-CLOSE-0001",
+      "source": "docs/05-governance/implementation-trials/closeout.md",
+      "line": 10,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-TRIAL-CLOSE-0002",
+      "source": "docs/05-governance/implementation-trials/closeout.md",
+      "line": 12,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-TRIAL-CLOSE-0003",
+      "source": "docs/05-governance/implementation-trials/closeout.md",
+      "line": 14,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-TRIAL-CLOSE-0004",
+      "source": "docs/05-governance/implementation-trials/closeout.md",
+      "line": 16,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-TRIAL-ENTRY-0001",
+      "source": "docs/05-governance/implementation-trials/entry-gates.md",
+      "line": 16,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-TRIAL-ENTRY-0002",
+      "source": "docs/05-governance/implementation-trials/entry-gates.md",
+      "line": 18,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-TRIAL-ENTRY-0003",
+      "source": "docs/05-governance/implementation-trials/entry-gates.md",
+      "line": 20,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-TRIAL-ENTRY-0004",
+      "source": "docs/05-governance/implementation-trials/entry-gates.md",
+      "line": 22,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-TRIAL-EVIDENCE-0001",
+      "source": "docs/05-governance/implementation-trials/evidence-plan.md",
+      "line": 15,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-TRIAL-EVIDENCE-0002",
+      "source": "docs/05-governance/implementation-trials/evidence-plan.md",
+      "line": 17,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-TRIAL-EVIDENCE-0003",
+      "source": "docs/05-governance/implementation-trials/evidence-plan.md",
+      "line": 19,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-TRIAL-EVIDENCE-0004",
+      "source": "docs/05-governance/implementation-trials/evidence-plan.md",
+      "line": 21,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-TRIAL-PROVIDER-0001",
+      "source": "docs/05-governance/implementation-trials/native-provider-matrix.md",
+      "line": 18,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-TRIAL-PROVIDER-0002",
+      "source": "docs/05-governance/implementation-trials/native-provider-matrix.md",
+      "line": 20,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-TRIAL-PROVIDER-0003",
+      "source": "docs/05-governance/implementation-trials/native-provider-matrix.md",
+      "line": 22,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-TRIAL-PROVIDER-0004",
+      "source": "docs/05-governance/implementation-trials/native-provider-matrix.md",
+      "line": 24,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-TRIAL-MODEL-0001",
+      "source": "docs/05-governance/implementation-trials/README.md",
+      "line": 25,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-TRIAL-MODEL-0002",
+      "source": "docs/05-governance/implementation-trials/README.md",
+      "line": 27,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-TRIAL-MODEL-0003",
+      "source": "docs/05-governance/implementation-trials/README.md",
+      "line": 29,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-TRIAL-MODEL-0004",
+      "source": "docs/05-governance/implementation-trials/README.md",
+      "line": 31,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-TRIAL-REPO-0001",
+      "source": "docs/05-governance/implementation-trials/repository-and-ci.md",
+      "line": 5,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-TRIAL-REPO-0002",
+      "source": "docs/05-governance/implementation-trials/repository-and-ci.md",
+      "line": 7,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-TRIAL-REPO-0003",
+      "source": "docs/05-governance/implementation-trials/repository-and-ci.md",
+      "line": 9,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-TRIAL-REPO-0004",
+      "source": "docs/05-governance/implementation-trials/repository-and-ci.md",
+      "line": 11,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-TRIAL-REPO-0005",
+      "source": "docs/05-governance/implementation-trials/repository-and-ci.md",
+      "line": 13,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-TRIAL-REVIEW-0001",
+      "source": "docs/05-governance/implementation-trials/review-checklist.md",
+      "line": 14,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-TRIAL-REVIEW-0002",
+      "source": "docs/05-governance/implementation-trials/review-checklist.md",
+      "line": 16,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-TRIAL-REVIEW-0003",
+      "source": "docs/05-governance/implementation-trials/review-checklist.md",
+      "line": 18,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-TRIAL-CONTRACT-0001",
+      "source": "docs/05-governance/implementation-trials/trial-contract.md",
+      "line": 16,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-TRIAL-CONTRACT-0002",
+      "source": "docs/05-governance/implementation-trials/trial-contract.md",
+      "line": 18,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-TRIAL-CONTRACT-0003",
+      "source": "docs/05-governance/implementation-trials/trial-contract.md",
+      "line": 20,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-TRIAL-CONTRACT-0004",
+      "source": "docs/05-governance/implementation-trials/trial-contract.md",
+      "line": 22,
       "kind": "governance",
       "domain": null
     },
@@ -48244,8 +48496,8 @@
     },
     {
       "source": "docs/01-architecture/architecture-model.md",
-      "sha256": "fd0e3a8fc06bd5d7879fb3aab206ea556ae2e33954d92db84a996c857aeded99",
-      "lines": 599
+      "sha256": "d05013179df24e7819ce4fa62a46ac3ccf9125dbec5f9613052c444e61aed7d8",
+      "lines": 601
     },
     {
       "source": "docs/01-architecture/behavioral-contracts.md",
@@ -52634,7 +52886,7 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/audit-report.md",
-      "sha256": "df402b410369c9245fde221f3a016a16de6fec826d5053e37a0798755eec56fc",
+      "sha256": "bbe25395db7b448a8b690d1a7683973d2e05b88645419d96892b06982665432c",
       "lines": 66
     },
     {
@@ -52649,13 +52901,13 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/closure-backlog.md",
-      "sha256": "84bbf0d89e81c4ccfa2ad160efacd80f8464055b3aa28c2219071fbe7ab40189",
-      "lines": 17
+      "sha256": "cfc99c4ee80cbca7dd88090c542babf1475aaf32130139f5dc339f2f1adf489f",
+      "lines": 18
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "sha256": "cf6b728fd788fb6b3b5bdf52c3eabb9b6dfaad9da927ee9b465a828d9c6a0436",
-      "lines": 31
+      "sha256": "c5330c8bcf6c861117ad1de8c8845decc5ee601fc1b13a6fc2c594e064adbed1",
+      "lines": 32
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/dependency-graph.md",
@@ -52784,8 +53036,58 @@
     },
     {
       "source": "docs/05-governance/governance.md",
-      "sha256": "f7ac7160abc8a3e0acca4c667090ed5e9dc3946e22d250d204005ca65af61680",
-      "lines": 38
+      "sha256": "abaf1eac8791e67e9bc89b6c93daa62763220de3abc927aa5ee59ad10b774aa3",
+      "lines": 40
+    },
+    {
+      "source": "docs/05-governance/implementation-trials/change-control.md",
+      "sha256": "33967aa904975bf1fc4aa5d11a85435e19d3730a2028fe80222ebf019f440542",
+      "lines": 22
+    },
+    {
+      "source": "docs/05-governance/implementation-trials/closeout.md",
+      "sha256": "17fd1077be8de7489cabbd6b215a26343ed847ac3790b84ab51dc8f271d04ff7",
+      "lines": 17
+    },
+    {
+      "source": "docs/05-governance/implementation-trials/entry-gates.md",
+      "sha256": "63600e73e69955c8b4b76e6a9d8e59b6e61f7445a11a7f2bae01b99cb8587976",
+      "lines": 23
+    },
+    {
+      "source": "docs/05-governance/implementation-trials/evidence-plan.md",
+      "sha256": "50c39efcd1d8606658268c1833946d7d58b5bf276e77edbd5569634f1b84313a",
+      "lines": 22
+    },
+    {
+      "source": "docs/05-governance/implementation-trials/native-provider-matrix.md",
+      "sha256": "f0707a3c854b94e1ae2a120dfd2f885cf0e9036d480489ee5e7ad0193347fdd0",
+      "lines": 25
+    },
+    {
+      "source": "docs/05-governance/implementation-trials/README.md",
+      "sha256": "f5e2875e2e978ab92cef6a40c8d4c9c93cb3a023d4219c8d8eaf65475392e648",
+      "lines": 32
+    },
+    {
+      "source": "docs/05-governance/implementation-trials/repository-and-ci.md",
+      "sha256": "2618c3ccbbf1a0f555fe2c30833f8aa9a766bc413a5aaa6b974ff02d7b3ce73f",
+      "lines": 14
+    },
+    {
+      "source": "docs/05-governance/implementation-trials/review-checklist.md",
+      "sha256": "5a1bc71a8f096e2cfd8c22fa0dab2e31b972c041d91543569313c58977197107",
+      "lines": 19
+    },
+    {
+      "source": "docs/05-governance/implementation-trials/trial-contract.md",
+      "sha256": "e72226e86842983e0ebb0a54a6e7ff43627e24c044085f4bb83d26a351b0215f",
+      "lines": 23
+    },
+    {
+      "source": "docs/05-governance/implementation-trials/trial-template.md",
+      "sha256": "9271a79d3469c8ac8c8643eb53e37bc93a57c45e7371008e6cc48a864f7980f4",
+      "lines": 46
     },
     {
       "source": "docs/05-governance/rfc-template.md",
@@ -52874,8 +53176,8 @@
     },
     {
       "source": "docs/06-roadmap/roadmap.md",
-      "sha256": "49931b10e233ae8d7e7be0d05eb6ecc19a54136c89b0733271881390fd43d9e8",
-      "lines": 207
+      "sha256": "bc2e03d98a71d8d71c93fa44161cc813f33489e05e7cad87b97dbb8fada60143",
+      "lines": 209
     },
     {
       "source": "docs/adr/0001-capability-first-platform.md",
@@ -53658,9 +53960,19 @@
       "lines": 24
     },
     {
+      "source": "docs/adr/0157-implementation-trials-are-bounded-learning-not-precedent.md",
+      "sha256": "723d2671107527544d94ec3bf926d96348faa454341919b9d2d344900d70f96a",
+      "lines": 30
+    },
+    {
+      "source": "docs/adr/0158-material-drift-suspends-trial-authorization.md",
+      "sha256": "67428bc47f8638dc7895e47d57873269f395a4610c3ede069e922b1a7426ee95",
+      "lines": 30
+    },
+    {
       "source": "docs/adr/README.md",
-      "sha256": "dc182c447977dcb62985b2004701ea57e2a59a9aff30e6297a9fa2eca226d564",
-      "lines": 162
+      "sha256": "7336d5d1bd120724bf836cb5b280f6ca4d2d46d7ef5f02b4400e26aec81b4f23",
+      "lines": 164
     },
     {
       "source": "docs/README.md",
@@ -53673,9 +53985,14 @@
       "lines": 115
     },
     {
+      "source": "docs/rfc/0002-implementation-trial-governance.md",
+      "sha256": "6f2933271da10949be64e0f4c86ea4940ee525e0c953f84fcaa1b8e16eeeca58",
+      "lines": 66
+    },
+    {
       "source": "docs/rfc/README.md",
-      "sha256": "883d2f4eaf0127e5e31e742489ace5c1878fea5686332b74b5c610932fb4b3c8",
-      "lines": 7
+      "sha256": "e3ad662af648dcc44c5da9bd2802209a306371a6f8ae18f914211b84075d8290",
+      "lines": 8
     }
   ],
   "findings": []
