@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 1.20.0 |
+| Version | 1.21.0 |
 | Purpose | Long-running non-interactive service foundation with bounded shutdown and protected credentials |
 
 ## Workload assumptions
@@ -86,6 +86,9 @@ No interactive desktop session, unattended restart, concurrent I/O, explicit ser
 - **RM-PROFILE-FOUNDATION-SERVER-0068:** Compression/archive service `>=0.1.0,<0.2.0` is conditional for compressed streams, archive/package storage or transfer, backup/export, artifact handling, or extraction. It binds independent codec/framing and container/profile identities, exact parameters/dictionaries, source/destination generations, metadata/path/link policy, limits, integrity/encryption/trust, and provider.
 - **RM-PROFILE-FOUNDATION-SERVER-0069:** Listing is inert evidence; extraction requires an immutable plan, held destination capability, isolated staging, integrity gates, destination revalidation, and atomic or explicitly journaled commit. Package/container parse never grants install, execution, mount, metadata privilege, overwrite, or trust authority.
 - **RM-PROFILE-FOUNDATION-SERVER-0070:** Evidence covers official/differential codec and container corpora, every chunk boundary, dictionaries/frames/indexes/multipart, hostile expansion/path/link/special-object cases, metadata conversion, reproducibility, encryption/tamper/oracles, staged extraction fault histories, recovery/repair, provider differentials, and staged resource benchmarks.
+- **RM-PROFILE-FOUNDATION-SERVER-0071:** Content inspection `>=0.1.0,<0.2.0` is conditional for uploads, imports, artifacts, messages, documents, archives, previews, publication, or executable/configuration intake. It binds immutable subject, purpose, media candidates, provider/rule/model/database/policy generations, graph/budgets, origin/quarantine, disclosure, freshness, and authority.
+- **RM-PROFILE-FOUNDATION-SERVER-0072:** Type declarations/detections, structure, malware/reputation, signatures/trust, quarantine, and use authority remain separate. Restricted preview and transformation providers have no ambient effects; transformations create independently validated generations with lineage, semantic loss, residual-risk, and quarantine evidence.
+- **RM-PROFILE-FOUNDATION-SERVER-0073:** Evidence covers identity registries/declarations, signature/structure boundary and differential corpora, polyglots, recursive graphs and external references, origin/quarantine histories, every provider verdict/freshness/privacy mode, sandbox faults, preview/transform loss, cache invalidation, and adversarial resource benchmarks.
 
 ## Operational constraints
 
@@ -93,6 +96,7 @@ Deadline timers and cancellation support bounded multi-phase shutdown. Sync path
 
 ## History
 
+- **1.21.0:** Adds conditional multi-evidence content identification, recursive restricted inspection, quarantine/origin propagation, malware/reputation boundaries, inert previews, generation-producing transformations, conformance, and benchmarks.
 - **1.20.0:** Adds conditional independently negotiated codec/container processing, bounded streaming and metadata, deterministic creation, transactional extraction, encryption/trust separation, recovery, conformance, and benchmarks.
 - **1.19.0:** Adds conditional typed policy evaluation, immutable contexts, explicit unknown/default/composition, obligation enforcement, partial/cache semantics, signed distribution, simulation/audit, conformance, and benchmarks.
 - **1.18.0:** Adds conditional service discovery, generation-bound routing/balancing, expiring health, affinity, attempt/admission budgets, locality/failover, control propagation, conformance, and benchmarks.

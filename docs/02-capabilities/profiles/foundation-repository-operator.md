@@ -3,8 +3,8 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.16.0 |
-| Extends | [`rm.profile.foundation.server` 1.20.0](foundation-server.md) |
+| Version | 0.17.0 |
+| Extends | [`rm.profile.foundation.server` 1.21.0](foundation-server.md) |
 | Purpose | Operate software publication, authenticated repository metadata, mirrors, advisories, and emergency response without claiming a complete hosted registry product |
 
 ## Required composition
@@ -61,8 +61,11 @@
 
 **RM-PROFILE-REPOSITORY-OPERATOR-0025:** Repository archives compose Server 1.20.0 with pinned reproducible profiles, exact codec/container/provider generations, immutable source trees and artifact digests, hostile uploaded-archive validation, bounded metadata/path/link policy, staged extraction, signed-view separation, and no inference that container validity or extraction authorizes publication, installation, or execution.
 
+**RM-PROFILE-REPOSITORY-OPERATOR-0026:** Repository inspection composes Server 1.21.0 with digest-pinned candidates, recursive artifact graphs/SBOM links, origin/quarantine, multi-provider findings and expiry, isolated previews/transforms, private-upload disclosure controls, policy/quorum gates, and no inference that type, no-finding, transformation, signature, or publication implies safe installation/execution.
+
 ## History
 
+- **0.17.0:** Rebases on Server 1.21.0 and constrains repository inspection to digest-pinned evidence graphs, provider freshness/privacy, isolated derivation, publication gates, and explicit nonclaims.
 - **0.16.0:** Rebases on Server 1.20.0 and constrains repository archives to reproducible immutable artifacts, hostile validation, safe staging, exact signed views, and separated publication authority.
 - **0.15.0:** Rebases on Server 1.19.0 and constrains repository policy to typed publication decisions, immutable release/principal evidence, mandatory security precedence, quorum obligations, fail-closed enforcement, and simulation/audit.
 - **0.14.0:** Rebases on Server 1.18.0 and constrains repository traffic to authenticated service identity, metadata/artifact generations, mirror freshness, region readiness, bounded attempts, and coherent failover.

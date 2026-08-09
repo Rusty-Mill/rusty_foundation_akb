@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.48.0 |
+| Version | 0.49.0 |
 | Extends | [`rm.profile.foundation.desktop` 1.0.0](foundation-desktop.md) |
 | Purpose | Add native top-level window and graphics-presentation infrastructure without claiming a complete GUI toolkit |
 
@@ -359,6 +359,12 @@
 
 **RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0175:** Evidence covers hostile names and localized display, user cancellation/credential mediation, drag/open/save/download flows, cloud/removable destinations, case/Unicode/platform metadata loss, expansion/storage pressure, suspend/resume, extraction recovery, reproducibility, provider differentials, and latency/memory/energy benchmarks.
 
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0176:** Content inspection `>=0.1.0,<0.2.0` is conditional for downloaded/shared/removable/cloud files, attachments, previews, imports, packages, or active content. It binds subject/origin/quarantine, declared/detected interpretations, purpose, user/admin policy, local/cloud disclosure, restricted provider, freshness, accessible interaction, and budgets.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0177:** Display labels and thumbnails cannot hide type conflicts, active content, incomplete inspection, stale/unavailable scanners, origin, or quarantine. Previews are inert and isolated; transformation produces a new lineage-bearing artifact and cannot clear quarantine, authorize opening/install/execution, or claim universal safety.
+
+**RM-PROFILE-FOUNDATION-WINDOWED-DESKTOP-0178:** Evidence covers hostile names/UI mimicry, platform associations and user defaults, polyglots, nested and remote content, downloaded-origin propagation, native scan/reputation/Gatekeeper-like policy, accessible warnings/override, preview crashes/hangs, transform fidelity/loss, offline/cloud/privacy modes, and latency/memory/energy benchmarks.
+
 ## Whole-product gaps
 
 This profile does not supply a rendering command model, widget/UI framework, text editing model, image/audio codecs, media containers/graphs, gestures, or translated product resources. Product-specific semantic roles/actions/content, accepted transfer formats/importers, locale coverage, audio policy/content, and accessible UX still belong to the product/framework. It cannot claim desktop-application completeness.
@@ -371,6 +377,7 @@ Input evidence additionally covers layout/IME diversity, keyboard-only operation
 
 ## History
 
+- **0.49.0:** Adds conditional evidence-preserving identification, restricted recursive inspection and previews, origin/quarantine propagation, provider verdicts, explicit transformation loss, accessible mediation, conformance, and benchmarks.
 - **0.48.0:** Adds conditional codec/archive processing with inert accessible preview, bounded hostile input, safe transactional extraction, explicit trust and metadata loss, recovery, conformance, and benchmarks.
 - **0.47.0:** Adds conditional typed policy evaluation, immutable contexts, explicit unknown/default/composition, obligation enforcement, cached/offline validity, accessible reasons, distribution/simulation, conformance, and benchmarks.
 - **0.46.0:** Adds conditional service discovery/routing/balancing, expiring health evidence, affinity, unified attempt/admission budgets, network-aware failover, accessible recovery, conformance, and benchmarks.

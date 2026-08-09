@@ -121,5 +121,7 @@
 | [0117](0117-policy-evaluation-binds-immutable-policy-and-input-snapshots.md) | Policy evaluation binds immutable policy and input snapshots | Accepted |
 | [0118](0118-codecs-and-containers-are-independently-negotiated-capabilities.md) | Codecs and containers are independently negotiated capabilities | Accepted |
 | [0119](0119-extraction-is-a-validated-filesystem-transaction.md) | Extraction is a validated filesystem transaction | Accepted |
+| [0120](0120-content-identification-is-evidence-not-intrinsic-truth-or-use-authority.md) | Content identification is evidence, not intrinsic truth or use authority | Accepted |
+| [0121](0121-safe-transformation-creates-a-new-artifact-generation.md) | Safe transformation creates a new artifact generation with bounded claims | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

@@ -3,8 +3,8 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.15.0 |
-| Extends | [`rm.profile.foundation.server` 1.20.0](foundation-server.md) |
+| Version | 0.16.0 |
+| Extends | [`rm.profile.foundation.server` 1.21.0](foundation-server.md) |
 | Purpose | Operate registration, certificate issuance, renewal, status, and CA lifecycle without claiming a complete public or enterprise CA product |
 
 ## Required composition
@@ -53,8 +53,11 @@
 
 **RM-PROFILE-CA-OPERATOR-0021:** CA archives compose Server 1.20.0 with exact reproducible container/codec profiles for ceremony, audit, CRL, evidence, and backup artifacts; independently verified digests/signatures/encryption; strict metadata/path/link policy; staged restore; key separation; and no inference that decode or extraction proves ledger consistency, key authority, status, or trust.
 
+**RM-PROFILE-CA-OPERATOR-0022:** CA content inspection composes Server 1.21.0 for enrollment attachments, attestation/evidence bundles, ceremony media, audit imports, and backups with exact subject/origin generations, recursive bounded inspection, offline/private-provider policy, quarantine, isolated transformations, and no inference that type/no-finding/transform permits key use, issuance, restore, publication, or trust.
+
 ## History
 
+- **0.16.0:** Rebases on Server 1.21.0 and constrains CA content inspection to private generation-bound evidence, bounded recursion, quarantine, isolated derivation, and separated issuance/key/trust authority.
 - **0.15.0:** Rebases on Server 1.20.0 and constrains CA archives to reproducible evidence, independent cryptographic verification, key separation, safe staged restore, and separated ledger/trust authority.
 - **0.14.0:** Rebases on Server 1.19.0 and constrains CA policy to typed issuance decisions, immutable request/identity/ledger evidence, mandatory trust precedence, quorum/HSM obligations, fail-closed enforcement, and simulation/audit.
 - **0.13.0:** Rebases on Server 1.18.0 and constrains CA traffic to authenticated service identity, separated key/ledger/status health, replay-safe attempts, fenced effects, controlled failover, and emergency revocation.
