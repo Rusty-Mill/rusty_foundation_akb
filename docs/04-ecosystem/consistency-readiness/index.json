@@ -21,8 +21,8 @@
     "domains_with_direct_requirement_assertion_map": 9,
     "domains_with_direct_benchmark_scenario_map": 9,
     "benchmark_scenarios": 95,
-    "external_sources": 669,
-    "external_sources_with_review_record": 144,
+    "external_sources": 670,
+    "external_sources_with_review_record": 145,
     "domains_with_dedicated_cross_cutting_analysis": 31,
     "domains_with_complete_planned_traceability": 9,
     "domains_experimental_eligible": 7,
@@ -5268,7 +5268,7 @@
       "freshness": "reviewed-in-domain-source-review"
     },
     {
-      "url": "https://developer.apple.com/documentation/dispatch/dispatch_io",
+      "url": "https://developer.apple.com/documentation/dispatch/dispatchio",
       "host": "developer.apple.com",
       "sources": [
         "docs/02-capabilities/async-io/platform-research.md",
@@ -6149,15 +6149,6 @@
         "docs/02-capabilities/devices/platform-research.md"
       ],
       "freshness": "unreviewed-by-generator"
-    },
-    {
-      "url": "https://docs.kernel.org/io_uring/index.html",
-      "host": "docs.kernel.org",
-      "sources": [
-        "docs/02-capabilities/async-io/platform-research.md",
-        "docs/02-capabilities/async-io/source-review.md"
-      ],
-      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://docs.kernel.org/security/credentials.html",
@@ -7104,11 +7095,29 @@
       "freshness": "reviewed-in-domain-source-review"
     },
     {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-initializeprocthreadattributelist",
+      "host": "learn.microsoft.com",
+      "sources": [
+        "docs/02-capabilities/process/platform-research.md",
+        "docs/02-capabilities/process/source-review.md"
+      ],
+      "freshness": "reviewed-in-domain-source-review"
+    },
+    {
       "url": "https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-terminateprocess",
       "host": "learn.microsoft.com",
       "sources": [
         "docs/02-capabilities/process/platform-research.md",
         "docs/02-capabilities/process/source-review.md"
+      ],
+      "freshness": "reviewed-in-domain-source-review"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-updateprocthreadattribute",
+      "host": "learn.microsoft.com",
+      "sources": [
+        "docs/02-capabilities/process/source-review.md",
+        "docs/02-capabilities/security/restricted-execution-source-review.md"
       ],
       "freshness": "reviewed-in-domain-source-review"
     },
@@ -7472,16 +7481,6 @@
         "docs/02-capabilities/printing/platform-research.md"
       ],
       "freshness": "unreviewed-by-generator"
-    },
-    {
-      "url": "https://learn.microsoft.com/en-us/windows/win32/procthread/attribute-list",
-      "host": "learn.microsoft.com",
-      "sources": [
-        "docs/02-capabilities/process/platform-research.md",
-        "docs/02-capabilities/process/source-review.md",
-        "docs/02-capabilities/security/restricted-execution-source-review.md"
-      ],
-      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://learn.microsoft.com/en-us/windows/win32/procthread/creating-processes",
@@ -8445,6 +8444,15 @@
         "docs/02-capabilities/filesystem/platform-research.md"
       ],
       "freshness": "unreviewed-by-generator"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man7/io_uring.7.html",
+      "host": "man7.org",
+      "sources": [
+        "docs/02-capabilities/async-io/platform-research.md",
+        "docs/02-capabilities/async-io/source-review.md"
+      ],
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://man7.org/linux/man-pages/man7/mount_namespaces.7.html",
@@ -10174,15 +10182,6 @@
       "freshness": "unreviewed-by-generator"
     },
     {
-      "url": "https://www.x.org/releases/current/doc/libX11/libX11/libX11.html",
-      "host": "www.x.org",
-      "sources": [
-        "docs/02-capabilities/windowing/platform-research.md",
-        "docs/02-capabilities/windowing/source-review.md"
-      ],
-      "freshness": "reviewed-in-domain-source-review"
-    },
-    {
       "url": "https://www.x.org/releases/current/doc/xorg-docs/icccm/icccm.html#Peer_to_Peer_Communication_by_Means_of_Selections",
       "host": "www.x.org",
       "sources": [
@@ -10197,6 +10196,15 @@
         "docs/02-capabilities/input/platform-research.md"
       ],
       "freshness": "unreviewed-by-generator"
+    },
+    {
+      "url": "https://xorg.freedesktop.org/archive/current/doc/libX11/libX11/libX11.html",
+      "host": "xorg.freedesktop.org",
+      "sources": [
+        "docs/02-capabilities/windowing/platform-research.md",
+        "docs/02-capabilities/windowing/source-review.md"
+      ],
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://zookeeper.apache.org/doc/current/recipes.html",
@@ -56528,7 +56536,7 @@
     },
     {
       "source": "docs/02-capabilities/async-io/platform-research.md",
-      "sha256": "408cdc57e9811ed4e89cab8c50b55011a00dbd3cf496ff5df312bb84ec06ee79",
+      "sha256": "11b5ee12d586a46124fbed7cba46b472804932cacfff6573d61b8bfd3201d87e",
       "lines": 17
     },
     {
@@ -56553,7 +56561,7 @@
     },
     {
       "source": "docs/02-capabilities/async-io/source-review.md",
-      "sha256": "90d949c8f03f3655c7dcb5ccaa1682fe8066309344fd3c3decd619244e8b12c2",
+      "sha256": "3d73055f86b9508575207ef81a45ff94563babefd43d91cdcc721908efb28f9e",
       "lines": 24
     },
     {
@@ -58923,7 +58931,7 @@
     },
     {
       "source": "docs/02-capabilities/process/platform-research.md",
-      "sha256": "eea83c39112dbe67d3bbc69c9389352ce521cd10fa8b7f3517d5b03c1360255c",
+      "sha256": "1c8c87af8e09bdc1a8265a06dd8e77449ea8de465f9161f08571c12d15803d36",
       "lines": 32
     },
     {
@@ -58933,7 +58941,7 @@
     },
     {
       "source": "docs/02-capabilities/process/source-review.md",
-      "sha256": "faaef6c92174c505f1cde2f42abcc501c2bb14008f62ef952ae5f77425347a50",
+      "sha256": "a4eebf8c23239b398cf53b27dbc4e2d025b14e12b00e5d9950c2e36f7606592d",
       "lines": 25
     },
     {
@@ -59793,7 +59801,7 @@
     },
     {
       "source": "docs/02-capabilities/security/restricted-execution-source-review.md",
-      "sha256": "a5563ca0526aa04dd9030e295d381085e557cb2358f432daa815a4a770d6616b",
+      "sha256": "4893c6edfe46a876182a9bf74b86d3a036e0fbefbc58787ec95c59888f175eec",
       "lines": 25
     },
     {
@@ -60473,7 +60481,7 @@
     },
     {
       "source": "docs/02-capabilities/windowing/platform-research.md",
-      "sha256": "7243ed635ac0d632b0170d64c30b42df0dd525995f1e65dd86817da16ceaa3e8",
+      "sha256": "bc94a7923df5079e8253c13dafd90d6dbdee4f76c1087d5fc9461bdf7c3e4129",
       "lines": 35
     },
     {
@@ -60488,7 +60496,7 @@
     },
     {
       "source": "docs/02-capabilities/windowing/source-review.md",
-      "sha256": "73902e0f8b33660de69e862dc22661ec688a38e6ab6190e7210625c34b7430f8",
+      "sha256": "72a90a7548a04a213fe52a8807e81f4a501ff467875b552629b41edfd0ecafa6",
       "lines": 25
     },
     {
@@ -60598,7 +60606,7 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/audit-report.md",
-      "sha256": "f34ec15a164185efe7d53d9c036b85eb269b186f69eeede39bc98353f059336d",
+      "sha256": "41e412488035085dbf3b599b4b56ef916bf5ab3daf12d6fc9e5c0675d2aab4dc",
       "lines": 73
     },
     {
