@@ -49,6 +49,14 @@ Performance evidence must never weaken source choice, fail-closed behavior, memo
 - **RM-SECURITY-ATTENUATE-BENCH-0004:** Every run **MUST** record provider artifact, OS/kernel/SDK, authority kind, native enforcement/identity/sandbox context, complete claim vector and bypass assumptions, concurrency/topology, samples/statistics, and conformance result without authority material.
 - **RM-SECURITY-ATTENUATE-BENCH-0005:** A faster baseline that drops an incomparable constraint, uses broader ambient credentials, weakens enforcement/alias/revocation semantics, or omits subset/bypass probes **MUST NOT** be treated as equivalent; numeric budgets require reviewed representative runs.
 
+### Authority-unit comparison requirements
+
+- **RM-SECURITY-AUTHORITY-BENCH-0001:** Policy-decision comparisons **MUST** bind identical policy/evaluator versions, subject/resource/environment evidence and generations, authority, requested operation, freshness, obligations, disclosure policy, and decision oracle.
+- **RM-SECURITY-AUTHORITY-BENCH-0002:** Enforcement comparisons **MUST** separate advisory evaluation, native enforcement, operation progress/effect, audit publication, and reconciliation and bind an identical race/fault schedule.
+- **RM-SECURITY-AUTHORITY-BENCH-0003:** Delegation comparisons **MUST** bind identical parent/child constraints, transfer mode, authenticated channel/audience, replay/use/depth bounds, prepare/accept/commit schedule, failure injection, and final authority inventory.
+- **RM-SECURITY-AUTHORITY-BENCH-0004:** Expiry/revocation comparisons **MUST** bind identical authority generations, alias/partition topology, clocks, in-flight phases, committed effects, propagation mechanism, observation oracle, residuals, and cleanup boundary.
+- **RM-SECURITY-AUTHORITY-BENCH-0005:** Every run **MUST** record exact provider artifact, OS/kernel/SDK, authority/resource kinds, native identity/enforcement/sandbox context, policy and evidence generations, ambient inputs, channel topology, claim vector, workload, samples/statistics, conformance result, and sanitized provenance; numeric budgets require reviewed representative runs.
+
 ### Restricted-execution comparison requirements
 
 - **RM-SECURITY-RESTRICTED-BENCH-0001:** Preparation comparisons **MUST** bind the same immutable manifest, authority inputs, provider discovery, validation, attenuation, and rejection semantics without releasing application-controlled code.

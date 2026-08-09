@@ -40,3 +40,24 @@ Derive-and-send is the portable default. The send protocol uses prepare, receive
 
 Revocation is not assumed. Where offered, it has a named mechanism, scope, propagation latency, offline behavior, effect on duplicates, and effect on in-flight operations. Expiry limits future authorization but cannot claw back data already observed or effects already committed.
 
+## Normative requirements
+
+**RM-SECURITY-DELEGATION-0001:** Delegation MUST bind the exact parent authority generation, constraint summary, typed sender and audience, activation/expiry/use bounds, redelegation depth, channel binding, replay identity, provider/contract version, and nonsecret provenance.
+
+**RM-SECURITY-DELEGATION-0002:** An envelope MUST NOT be treated as authority or a bearer credential unless an explicit transfer contract proves protected possession, authenticity, confidentiality where required, audience binding, freshness, replay resistance, and restoration semantics.
+
+**RM-SECURITY-DELEGATION-0003:** Borrow, duplicate, move, and derive-and-send MUST retain distinct ownership, close, cancellation, failure, return, and recovery semantics.
+
+**RM-SECURITY-DELEGATION-0004:** Derive-and-send MUST be the portable default; any broader mode MUST be explicitly selected and MUST NOT increase effective authority or redelegation depth.
+
+**RM-SECURITY-DELEGATION-0005:** Cross-context transfer MUST use authenticated channel binding plus prepare, receiver validation, commit/acknowledgment, and cleanup or document an equally strong atomic native primitive.
+
+**RM-SECURITY-DELEGATION-0006:** Audience mismatch, expiry, replay, unsupported constraint, parent invalidity, channel-binding failure, provider mismatch, or indeterminate validation MUST fail closed before receiver use.
+
+**RM-SECURITY-DELEGATION-0007:** Timeout, cancellation, rejection, sender failure, receiver failure, and lost acknowledgment MUST yield an explicit ownership/authority inventory; the implementation MUST NOT guess whether a move committed.
+
+**RM-SECURITY-DELEGATION-0008:** Redelegation MUST preserve provenance and monotonically reduce both authority and remaining delegation depth.
+
+**RM-SECURITY-DELEGATION-0009:** Revocation claims MUST bind mechanism, target generations and aliases, propagation scope/latency, offline partitions, already-started operations, already-committed effects, observation method, and residual uncertainty.
+
+**RM-SECURITY-DELEGATION-0010:** Delegation metadata, diagnostics, and audit MUST be audience-redacted and MUST NOT expose transferable native authority, bearer material, channel secrets, or sensitive resource details beyond the reviewer’s disclosure authority.

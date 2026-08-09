@@ -54,3 +54,24 @@ Process credentials, environment, current directory, inherited native handles, a
 
 Authority resources have deterministic close/release where the native mechanism supports it, eventual cleanup on drop, explicit duplication rules, and defined behavior across process creation. A closed authority cannot authorize new operations. In-flight operations follow their own terminal-outcome contract.
 
+## Normative requirements
+
+**RM-SECURITY-AUTHORITY-0001:** Principal, claim, security-context, authority, grant, constraint, policy result, native enforcement result, and operation outcome MUST remain distinct typed concepts.
+
+**RM-SECURITY-AUTHORITY-0002:** Principal and resource identifiers MUST bind their namespace, issuer/provider, generation where applicable, and comparison rules; display equality MUST NOT imply identity or authority equality.
+
+**RM-SECURITY-AUTHORITY-0003:** Every authority MUST bind an authority kind and contract version, resource/namespace scope, allowed operations, constraints, validity, delegation/attenuation rules, provenance, lifecycle, and known enforcement limitations.
+
+**RM-SECURITY-AUTHORITY-0004:** Possession, inspection, naming, authentication, membership, entitlement, policy permit, or successful prior use MUST NOT silently grant a different authority.
+
+**RM-SECURITY-AUTHORITY-0005:** Base security-sensitive operations MUST consume explicit authority-bearing resources where the platform permits; any ambient authority use MUST be selected by an explicit profile and observable without exposing credentials.
+
+**RM-SECURITY-AUTHORITY-0006:** A derived, duplicated, delegated, or transferred authority MUST NOT exceed the effective parent authority on any operation, resource, lifetime, audience, delegation, or enforcement dimension.
+
+**RM-SECURITY-AUTHORITY-0007:** Authority serialization or restoration MUST be forbidden unless a separate contract defines authenticity, confidentiality, replay, audience, expiry, provider binding, rollback, revocation, and recovery semantics.
+
+**RM-SECURITY-AUTHORITY-0008:** Close, expiry, revocation request, revocation observation, alias survival, already-started operation, and already-committed effect MUST remain distinct lifecycle evidence.
+
+**RM-SECURITY-AUTHORITY-0009:** Authority inspection, policy explanation, audit, errors, and telemetry MUST apply disclosure authority and MUST NOT expose native credentials, bearer material, secret policy inputs, or unnecessarily precise sensitive resource names.
+
+**RM-SECURITY-AUTHORITY-0010:** Provider success and portable success MUST bind the exact native enforcement point and resulting operation milestone; advisory checks or metadata MUST NOT suppress a later denial, race, partial effect, or indeterminate outcome.

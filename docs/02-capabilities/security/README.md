@@ -62,6 +62,12 @@ flowchart TD
 - [Governed security promotion units](promotion-units.md)
 
 - [Authority model](authority-model.md)
+- [Authority promotion-unit readiness dossier](authority-readiness-review.md)
+- [Authority assertion and benchmark traceability](authority-traceability.md)
+- [Authority dependency and lifecycle composition](authority-dependencies.md)
+- [Authority cross-cutting review](authority-cross-cutting-review.md)
+- [Authority source review](authority-source-review.md)
+- [Authority ownership and bounded trial plan](authority-ownership.md)
 - [`rm.security.attenuate`](attenuation.md)
 - [Authority-attenuation capability readiness dossier](attenuation-readiness-review.md)
 - [Authority-attenuation assertion and benchmark traceability](attenuation-traceability.md)
@@ -144,4 +150,4 @@ flowchart TD
 - [PKI conformance](pki-conformance.md)
 - [PKI benchmarks](pki-benchmarks.md)
 
-The secure-random, restricted-execution, secret-protection, cryptography/key-management, PKI-validation, and PKI-issuance dossiers are promotion-unit-scoped. None constitutes a security-domain promotion review: the broader authority unit retains incomplete readiness evidence, and all units remain Draft.
+All seven security promotion units now have schema-valid unit-scoped dossiers. This inventory is not a security-domain promotion review, does not establish semantic or provider equivalence, and does not authorize trials or implementation; every unit remains Draft.

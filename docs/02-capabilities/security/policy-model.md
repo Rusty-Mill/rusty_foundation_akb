@@ -36,3 +36,20 @@ Filesystem names, credentials, policy, membership, labels, entitlements, and obj
 
 Audit events record action category, decision, policy identity, provider, correlation, and sanitized reason. Secret values, raw credentials, cryptographic material, and excessive resource names are excluded by default. Policy may permit more detail only for a defined audience and retention period.
 
+## Normative requirements
+
+**RM-SECURITY-POLICY-0001:** Every evaluation MUST bind the exact policy identity/version, evaluator/provider, subject and resource evidence with provenance, requested operation, environment/security context, observation time, and evidence freshness.
+
+**RM-SECURITY-POLICY-0002:** Results MUST be typed as `Permit`, `Deny`, `Indeterminate`, or `NotApplicable` and carry applicable reasons, obligations, evidence limitations, expiry/invalidation conditions, and sanitized correlation.
+
+**RM-SECURITY-POLICY-0003:** `Permit` MUST mean only that the evaluated policy allowed the observed request; it MUST NOT promise native access, operation success, future access, or authority transfer.
+
+**RM-SECURITY-POLICY-0004:** `Indeterminate` and unsupported evaluation MUST fail closed at an enforcement boundary unless an explicitly selected higher-level policy owns and records a narrower alternative.
+
+**RM-SECURITY-POLICY-0005:** Independent grants and constraints MUST compose by intersection; one permit MUST NOT bypass provider eligibility, explicit authority, sandbox, discretionary, mandatory, product, or domain controls.
+
+**RM-SECURITY-POLICY-0006:** Cached or reused decisions MUST bind all decision-affecting input generations and expiration conditions and MUST be invalidated on relevant policy, claim, resource, environment, provider, clock, or revocation change.
+
+**RM-SECURITY-POLICY-0007:** A protected operation MUST use its native or otherwise contractually identified enforcement point; a check-then-use sequence MUST NOT claim atomic authorization without an exact primitive and evidence.
+
+**RM-SECURITY-POLICY-0008:** Explanations and audit records MUST distinguish configured policy, observed evidence, derived decision, enforcement result, operation outcome, and disclosure redactions.

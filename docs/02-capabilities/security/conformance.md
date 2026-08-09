@@ -18,6 +18,14 @@ Every report identifies capability/contract version, provider and artifact diges
 | SEC-AUTH-006 | Audit output excludes configured secret and credential canaries |
 | SEC-AUTH-007 | Transfer cancellation and receiver rejection preserve unambiguous ownership |
 | SEC-AUTH-008 | Each claimed attenuation enforcement level survives its documented bypass probes |
+| SEC-AUTH-009 | Policy results bind policy/evaluator and every decision-affecting evidence generation, freshness, obligation, limitation, and invalidation condition |
+| SEC-AUTH-010 | Policy-cache reuse is rejected after each relevant policy, claim, resource, environment, provider, clock, and revocation change |
+| SEC-AUTH-011 | Check/use race probes preserve advisory-versus-native-enforcement distinction and exact operation progress/effect |
+| SEC-AUTH-012 | Ambient credentials, current directory, environment, inherited handles/descriptors, and global stores are absent or match the explicitly selected profile |
+| SEC-AUTH-013 | Borrow, duplicate, move, and derive/send preserve their distinct ownership and close behavior across success, timeout, cancellation, rejection, crash, and lost acknowledgment |
+| SEC-AUTH-014 | Audience, channel, expiry, use-count, replay, provider, parent-generation, and delegation-depth violations fail before receiver use |
+| SEC-AUTH-015 | Close, expiry, revocation request/observation, aliases, offline partitions, in-flight operations, and committed effects match the declared evidence boundaries |
+| SEC-AUTH-016 | Explanations, errors, audit, telemetry, and benchmark artifacts preserve semantic reason codes while excluding bearer/credential/secret-policy and unauthorized sensitive-resource canaries |
 
 ## `rm.security.random` assertions
 

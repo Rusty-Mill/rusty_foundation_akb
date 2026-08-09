@@ -6,7 +6,7 @@
 
 | Unit | Maturity | Accountable role | Primary specification | Readiness dossier | Boundary summary |
 |---|---|---|---|---|---|
-| `rm.promotion.security.authority` | Draft | Authority semantics owner | [Authority model](authority-model.md) | — | Authority/policy context, attenuation, delegation, provenance, enforcement claims, and revocation semantics |
+| `rm.promotion.security.authority` | Draft | Authority semantics owner | [Authority model](authority-model.md) | [Dossier](authority-readiness-review.md) | Authority/policy context, attenuation, delegation, provenance, enforcement claims, and revocation semantics |
 | `rm.promotion.security.restricted-execution` | Draft | Restricted-execution owner | [Restricted execution](restricted-execution.md) | [Dossier](restricted-execution-readiness-review.md) | Pre-execution deny-by-default isolation manifest, process composition, verification, degradation, supervision, and cleanup |
 | `rm.promotion.security.random` | Draft | Secure-random capability owner | [Secure random](random.md) | [Dossier](random-readiness-review.md) | Exact-fill OS cryptographic randomness, readiness/failure, output secrecy, lifecycle, and scoped provider claims |
 | `rm.promotion.security.secrets` | Draft | Secret-protection owner | [Secret store](secret-store.md) | [Dossier](secret-readiness-review.md) | Secret-value ownership, protection vectors, native storage, interaction, scoped reveal/use, update/delete, and lifecycle |
@@ -44,7 +44,7 @@ Arrows are domain composition and evidence order, not automatically capability-g
 | PKI validation | external certificate/trust/revocation/network standards and consumer-qualified validation policy |
 | PKI issuance | privileged CA governance, enrollment protocols, ceremonies, audit, renewal, and higher operational risk |
 
-All units remain Draft. A linked dossier records a reviewable evidence bundle; it does not assert eligibility, change maturity, or authorize a trial or implementation. The attenuation dossier is partial evidence inside the broader authority unit and therefore is not listed as that unit's complete dossier.
+All units remain Draft. A linked dossier records a reviewable evidence bundle; it does not assert eligibility, change maturity, or authorize a trial or implementation. The attenuation dossier remains separately useful capability evidence consumed by the complete authority-unit dossier; it does not create an eighth promotion unit or independently promote authority.
 
 **RM-SECURITY-UNIT-0001:** Security unit maturity MUST be decided independently and MUST NOT inherit from directory status, another unit, or a shared provider/library.
 
