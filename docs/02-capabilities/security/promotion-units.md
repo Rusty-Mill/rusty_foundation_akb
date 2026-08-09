@@ -12,7 +12,7 @@
 | `rm.promotion.security.secrets` | Draft | Secret-protection owner | [Secret store](secret-store.md) | [Dossier](secret-readiness-review.md) | Secret-value ownership, protection vectors, native storage, interaction, scoped reveal/use, update/delete, and lifecycle |
 | `rm.promotion.security.cryptography` | Draft | Cryptography and key-management owner | [Cryptographic foundations](crypto-README.md) | [Dossier](crypto-readiness-review.md) | Policy-selected algorithms, opaque keys, operations, import/export, providers/hardware/attestation, conformance, and performance |
 | `rm.promotion.security.pki-validation` | Draft | PKI validation owner | [PKI validation foundations](pki-README.md) | [Dossier](pki-validation-readiness-review.md) | Certificate parsing, trust stores, path construction/validation, identity matching, revocation/network evidence, and result lifecycle |
-| `rm.promotion.security.pki-issuance` | Draft | Certificate issuance owner | [PKI issuance foundations](pki-issuance-README.md) | — | Issuance authority/policy, requests/enrollment/protocols, CA operations, renewal, security/accessibility, conformance, and performance |
+| `rm.promotion.security.pki-issuance` | Draft | Certificate issuance owner | [PKI issuance foundations](pki-issuance-README.md) | [Dossier](pki-issuance-readiness-review.md) | Issuance authority/policy, requests/enrollment/protocols, CA operations, renewal, security/accessibility, conformance, and performance |
 
 ```mermaid
 flowchart LR

@@ -40,4 +40,9 @@ flowchart LR
 - [Platform and protocol research](pki-issuance-platform-research.md)
 - [Conformance](pki-issuance-conformance.md)
 - [Benchmarks](pki-issuance-benchmarks.md)
-
+- [Assertion and benchmark traceability](pki-issuance-traceability.md)
+- [Dependency and lifecycle composition](pki-issuance-dependencies.md)
+- [Cross-cutting quality review](pki-issuance-cross-cutting-review.md)
+- [Current source review](pki-issuance-source-review.md)
+- [Ownership and bounded trial plan](pki-issuance-ownership.md)
+- [Promotion-unit readiness dossier](pki-issuance-readiness-review.md)

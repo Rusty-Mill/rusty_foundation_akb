@@ -125,6 +125,13 @@ flowchart TD
 - [PKI-validation cross-cutting review](pki-validation-cross-cutting-review.md)
 - [PKI-validation source review](pki-validation-source-review.md)
 - [PKI-validation ownership and bounded trial plan](pki-validation-ownership.md)
+- [Certificate issuance, enrollment, and CA-lifecycle foundations](pki-issuance-README.md)
+- [PKI-issuance promotion-unit readiness dossier](pki-issuance-readiness-review.md)
+- [PKI-issuance assertion and benchmark traceability](pki-issuance-traceability.md)
+- [PKI-issuance dependency and lifecycle composition](pki-issuance-dependencies.md)
+- [PKI-issuance cross-cutting review](pki-issuance-cross-cutting-review.md)
+- [PKI-issuance source review](pki-issuance-source-review.md)
+- [PKI-issuance ownership and bounded trial plan](pki-issuance-ownership.md)
 - [Certificate parsing and evidence](pki-certificates.md)
 - [Trust stores, anchors, and distrust](pki-trust-stores.md)
 - [Path construction](pki-path-construction.md)
@@ -137,4 +144,4 @@ flowchart TD
 - [PKI conformance](pki-conformance.md)
 - [PKI benchmarks](pki-benchmarks.md)
 
-The secure-random, restricted-execution, secret-protection, cryptography/key-management, and PKI-validation dossiers are promotion-unit-scoped. None constitutes a security-domain promotion review: authority and PKI issuance retain independent incomplete readiness evidence, and all units remain Draft.
+The secure-random, restricted-execution, secret-protection, cryptography/key-management, PKI-validation, and PKI-issuance dossiers are promotion-unit-scoped. None constitutes a security-domain promotion review: the broader authority unit retains incomplete readiness evidence, and all units remain Draft.

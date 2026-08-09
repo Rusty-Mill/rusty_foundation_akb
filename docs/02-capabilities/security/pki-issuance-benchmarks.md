@@ -14,3 +14,13 @@
 
 Initial budgets remain RFC-owned after representative Windows, Apple-managed, Linux/portable, ACME, EST/SCEP/CMP, software-key, and hardware/remote-key baselines exist.
 
+## Stable scenario families
+
+| Scenario | Scope | Required separation |
+|---|---|---|
+| `PKI-ISSUANCE-BENCH-001` | one complete issuance transaction | intent, proofing, authorization, POP, request, policy, ledger commit, signing, delivery, install, and activation |
+| `PKI-ISSUANCE-BENCH-002` | workload/provider/protocol matrix | interactive, unattended, device, fleet, code-signing; software, hardware, remote keys; ACME, EST, SCEP, CMP, native, and out-of-band paths |
+| `PKI-ISSUANCE-BENCH-003` | fleet renewal and revocation | scheduling input, randomized selection, retries, deadlines, replacement activation, old-generation retirement, status propagation, and reconciliation |
+| `PKI-ISSUANCE-BENCH-004` | CA durability and recovery | ledger/serial commit, HSM operations, backup/restore, failover, clone prevention, hierarchy/key rotation, issuance halt, and restart |
+
+Each result binds the exact protocol/profile, platform/provider/CA/key context, workload, concurrency, network, clock, policy, installation/activation consumer, measurement method, exclusions, and raw-evidence provenance. Cross-scenario summaries may compare compatible dimensions but never erase different assurance or lifecycle guarantees.

@@ -4,14 +4,14 @@
   "authority": "docs/01-architecture/architecture-model.md",
   "generated_from": "Markdown; this index is derived and non-authoritative",
   "summary": {
-    "markdown_documents": 1186,
-    "internal_links": 2488,
-    "requirements": 5498,
+    "markdown_documents": 1192,
+    "internal_links": 2532,
+    "requirements": 5522,
     "domains": 62,
     "promotion_units": 7,
     "draft_promotion_units": 7,
-    "promotion_units_with_readiness_dossier": 5,
-    "promotion_units_with_schema_valid_readiness_dossier": 5,
+    "promotion_units_with_readiness_dossier": 6,
+    "promotion_units_with_schema_valid_readiness_dossier": 6,
     "adrs": 163,
     "errors": 0,
     "warnings": 0,
@@ -20,7 +20,7 @@
     "domains_with_direct_requirement_assertion_map": 9,
     "domains_with_direct_benchmark_scenario_map": 9,
     "benchmark_scenarios": 62,
-    "external_sources": 655,
+    "external_sources": 664,
     "external_sources_with_review_record": 74,
     "domains_with_dedicated_cross_cutting_analysis": 31,
     "domains_with_complete_planned_traceability": 9,
@@ -1836,8 +1836,8 @@
       "id": "security",
       "source": "docs/02-capabilities/security/README.md",
       "status": "Draft domain analysis",
-      "requirements": 417,
-      "capability_requirements": 397,
+      "requirements": 441,
+      "capability_requirements": 421,
       "conformance_requirements": 0,
       "benchmark_requirements": 20,
       "mapped_benchmark_requirements": 0,
@@ -2325,8 +2325,8 @@
       "maturity": "Draft",
       "owner": "Certificate issuance owner",
       "primary_source": "docs/02-capabilities/security/pki-issuance-README.md",
-      "readiness_dossier": null,
-      "readiness_dossier_schema_valid": false,
+      "readiness_dossier": "docs/02-capabilities/security/pki-issuance-readiness-review.md",
+      "readiness_dossier_schema_valid": true,
       "registry": "docs/02-capabilities/security/promotion-units.md"
     }
   ],
@@ -5820,6 +5820,14 @@
       "freshness": "unreviewed-by-generator"
     },
     {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/api/certenroll/nf-certenroll-ix509enrollment-enroll",
+      "host": "learn.microsoft.com",
+      "sources": [
+        "docs/02-capabilities/security/pki-issuance-source-review.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
       "url": "https://learn.microsoft.com/en-us/windows/win32/api/dpapi/nf-dpapi-cryptprotectdata",
       "host": "learn.microsoft.com",
       "sources": [
@@ -6404,6 +6412,14 @@
       "host": "learn.microsoft.com",
       "sources": [
         "docs/02-capabilities/security/pki-issuance-platform-research.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/seccertenroll/certificate-enrollment-api",
+      "host": "learn.microsoft.com",
+      "sources": [
+        "docs/02-capabilities/security/pki-issuance-source-review.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -7749,10 +7765,26 @@
       "freshness": "unreviewed-by-generator"
     },
     {
+      "url": "https://support.apple.com/guide/deployment/acme-certificate-payload-settings-dep5d180e4bf/web",
+      "host": "support.apple.com",
+      "sources": [
+        "docs/02-capabilities/security/pki-issuance-source-review.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
       "url": "https://support.apple.com/guide/deployment/deploy-managed-device-attestation-dep54e5ac1fd/web",
       "host": "support.apple.com",
       "sources": [
         "docs/02-capabilities/security/pki-issuance-platform-research.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
+      "url": "https://support.apple.com/guide/deployment/managed-device-attestation-dep28afbde6a/web",
+      "host": "support.apple.com",
+      "sources": [
+        "docs/02-capabilities/security/pki-issuance-source-review.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -8319,6 +8351,14 @@
       "freshness": "unreviewed-by-generator"
     },
     {
+      "url": "https://www.rfc-editor.org/rfc/rfc2986",
+      "host": "www.rfc-editor.org",
+      "sources": [
+        "docs/02-capabilities/security/pki-issuance-source-review.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
       "url": "https://www.rfc-editor.org/rfc/rfc3161",
       "host": "www.rfc-editor.org",
       "sources": [
@@ -8429,6 +8469,14 @@
       "host": "www.rfc-editor.org",
       "sources": [
         "docs/02-capabilities/application-authentication/platform-research.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc7030",
+      "host": "www.rfc-editor.org",
+      "sources": [
+        "docs/02-capabilities/security/pki-issuance-source-review.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -8569,6 +8617,14 @@
       "freshness": "unreviewed-by-generator"
     },
     {
+      "url": "https://www.rfc-editor.org/rfc/rfc8555",
+      "host": "www.rfc-editor.org",
+      "sources": [
+        "docs/02-capabilities/security/pki-issuance-source-review.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
       "url": "https://www.rfc-editor.org/rfc/rfc8594.html",
       "host": "www.rfc-editor.org",
       "sources": [
@@ -8604,7 +8660,8 @@
       "url": "https://www.rfc-editor.org/rfc/rfc8894",
       "host": "www.rfc-editor.org",
       "sources": [
-        "docs/02-capabilities/security/pki-issuance-platform-research.md"
+        "docs/02-capabilities/security/pki-issuance-platform-research.md",
+        "docs/02-capabilities/security/pki-issuance-source-review.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -8715,6 +8772,14 @@
       "freshness": "unreviewed-by-generator"
     },
     {
+      "url": "https://www.rfc-editor.org/rfc/rfc9480",
+      "host": "www.rfc-editor.org",
+      "sources": [
+        "docs/02-capabilities/security/pki-issuance-source-review.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
       "url": "https://www.rfc-editor.org/rfc/rfc9480.html",
       "host": "www.rfc-editor.org",
       "sources": [
@@ -8744,6 +8809,14 @@
       "host": "www.rfc-editor.org",
       "sources": [
         "docs/02-capabilities/api-governance/platform-research.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9773",
+      "host": "www.rfc-editor.org",
+      "sources": [
+        "docs/02-capabilities/security/pki-issuance-source-review.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -43786,6 +43859,78 @@
       "assertions": []
     },
     {
+      "id": "RM-PKI-ISSUANCE-QUALITY-0001",
+      "source": "docs/02-capabilities/security/pki-issuance-cross-cutting-review.md",
+      "line": 20,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-ISSUANCE-QUALITY-0002",
+      "source": "docs/02-capabilities/security/pki-issuance-cross-cutting-review.md",
+      "line": 22,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-ISSUANCE-QUALITY-0003",
+      "source": "docs/02-capabilities/security/pki-issuance-cross-cutting-review.md",
+      "line": 24,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-ISSUANCE-QUALITY-0004",
+      "source": "docs/02-capabilities/security/pki-issuance-cross-cutting-review.md",
+      "line": 26,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-ISSUANCE-DEPENDENCY-0001",
+      "source": "docs/02-capabilities/security/pki-issuance-dependencies.md",
+      "line": 34,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-ISSUANCE-DEPENDENCY-0002",
+      "source": "docs/02-capabilities/security/pki-issuance-dependencies.md",
+      "line": 36,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-ISSUANCE-DEPENDENCY-0003",
+      "source": "docs/02-capabilities/security/pki-issuance-dependencies.md",
+      "line": 38,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-ISSUANCE-DEPENDENCY-0004",
+      "source": "docs/02-capabilities/security/pki-issuance-dependencies.md",
+      "line": 40,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-ISSUANCE-DEPENDENCY-0005",
+      "source": "docs/02-capabilities/security/pki-issuance-dependencies.md",
+      "line": 42,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
       "id": "RM-PKI-ENROLLMENT-0001",
       "source": "docs/02-capabilities/security/pki-issuance-enrollment.md",
       "line": 3,
@@ -43845,6 +43990,38 @@
       "id": "RM-PKI-ENROLLMENT-0008",
       "source": "docs/02-capabilities/security/pki-issuance-enrollment.md",
       "line": 17,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-ISSUANCE-OWNER-0001",
+      "source": "docs/02-capabilities/security/pki-issuance-ownership.md",
+      "line": 25,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-ISSUANCE-OWNER-0002",
+      "source": "docs/02-capabilities/security/pki-issuance-ownership.md",
+      "line": 27,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-ISSUANCE-OWNER-0003",
+      "source": "docs/02-capabilities/security/pki-issuance-ownership.md",
+      "line": 29,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-ISSUANCE-OWNER-0004",
+      "source": "docs/02-capabilities/security/pki-issuance-ownership.md",
+      "line": 31,
       "kind": "capability",
       "domain": "security",
       "assertions": []
@@ -43989,6 +44166,30 @@
       "id": "RM-PKI-PROTOCOL-0006",
       "source": "docs/02-capabilities/security/pki-issuance-protocols.md",
       "line": 19,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-ISSUANCE-READINESS-0001",
+      "source": "docs/02-capabilities/security/pki-issuance-readiness-review.md",
+      "line": 24,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-ISSUANCE-READINESS-0002",
+      "source": "docs/02-capabilities/security/pki-issuance-readiness-review.md",
+      "line": 26,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-ISSUANCE-READINESS-0003",
+      "source": "docs/02-capabilities/security/pki-issuance-readiness-review.md",
+      "line": 28,
       "kind": "capability",
       "domain": "security",
       "assertions": []
@@ -44189,6 +44390,70 @@
       "id": "RM-PKI-ISSUANCE-CROSS-0008",
       "source": "docs/02-capabilities/security/pki-issuance-security-accessibility.md",
       "line": 17,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-ISSUANCE-SOURCE-0001",
+      "source": "docs/02-capabilities/security/pki-issuance-source-review.md",
+      "line": 20,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-ISSUANCE-SOURCE-0002",
+      "source": "docs/02-capabilities/security/pki-issuance-source-review.md",
+      "line": 22,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-ISSUANCE-SOURCE-0003",
+      "source": "docs/02-capabilities/security/pki-issuance-source-review.md",
+      "line": 24,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-ISSUANCE-SOURCE-0004",
+      "source": "docs/02-capabilities/security/pki-issuance-source-review.md",
+      "line": 26,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-ISSUANCE-SOURCE-0005",
+      "source": "docs/02-capabilities/security/pki-issuance-source-review.md",
+      "line": 28,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-ISSUANCE-TRACE-0001",
+      "source": "docs/02-capabilities/security/pki-issuance-traceability.md",
+      "line": 32,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-ISSUANCE-TRACE-0002",
+      "source": "docs/02-capabilities/security/pki-issuance-traceability.md",
+      "line": 34,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-PKI-ISSUANCE-TRACE-0003",
+      "source": "docs/02-capabilities/security/pki-issuance-traceability.md",
+      "line": 36,
       "kind": "capability",
       "domain": "security",
       "assertions": []
@@ -51650,28 +51915,28 @@
     {
       "id": "RM-READINESS-CONTRADICTION-0001",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 42,
+      "line": 43,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0002",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 44,
+      "line": 45,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0003",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 46,
+      "line": 47,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0004",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 48,
+      "line": 49,
       "kind": "governance",
       "domain": null
     },
@@ -53696,8 +53961,8 @@
     },
     {
       "source": "docs/01-architecture/architecture-model.md",
-      "sha256": "96c7ece578d6c41dd9bc7cc829472d0b558aabd9095be651f5aa4dff71b57924",
-      "lines": 663
+      "sha256": "f35ad8a55e45856f0574c53b6ca22d2af1ed0f9135759cb81037d0122d58de03",
+      "lines": 665
     },
     {
       "source": "docs/01-architecture/behavioral-contracts.md",
@@ -57456,8 +57721,8 @@
     },
     {
       "source": "docs/02-capabilities/security/pki-issuance-benchmarks.md",
-      "sha256": "be6b00ba29eea26a6087f49258573ec415f614ddc6fc8a3fb0fcc6fd0d619d63",
-      "lines": 16
+      "sha256": "03cf39c8859e7ddcfb13d13a5b4f021f6c4b37f3ad266bb35d2f8e0f4ac67ba3",
+      "lines": 26
     },
     {
       "source": "docs/02-capabilities/security/pki-issuance-ca-operations.md",
@@ -57470,9 +57735,24 @@
       "lines": 22
     },
     {
+      "source": "docs/02-capabilities/security/pki-issuance-cross-cutting-review.md",
+      "sha256": "12b5a571e36624c8129f66d094f57913001c61a8304b3823546e5be61e308b2f",
+      "lines": 26
+    },
+    {
+      "source": "docs/02-capabilities/security/pki-issuance-dependencies.md",
+      "sha256": "24e4794a96a8eaed8b9b0ae240b65278cfe9d6df72c8f2b51f0af71d877eaf8f",
+      "lines": 42
+    },
+    {
       "source": "docs/02-capabilities/security/pki-issuance-enrollment.md",
       "sha256": "f676139c4b9c5b27da8108f00fafe06a3253ba586719de140ae9b0cd40358396",
       "lines": 18
+    },
+    {
+      "source": "docs/02-capabilities/security/pki-issuance-ownership.md",
+      "sha256": "0eb8a2c11c8e114286d0d57d29a0ddae2a0269c6e1f1d1b15188884b53b0e43e",
+      "lines": 31
     },
     {
       "source": "docs/02-capabilities/security/pki-issuance-platform-research.md",
@@ -57490,9 +57770,14 @@
       "lines": 20
     },
     {
+      "source": "docs/02-capabilities/security/pki-issuance-readiness-review.md",
+      "sha256": "12b1bdeaf3483a68be7d09329ba30166804ec833ac56c82002f28cb407a5a898",
+      "lines": 28
+    },
+    {
       "source": "docs/02-capabilities/security/pki-issuance-README.md",
-      "sha256": "afff7765e074e2e97b94f354f699b6f561177142b7b3db08488d82ca920792e3",
-      "lines": 43
+      "sha256": "e58eeb648dd774beca7a7995e666ad8032851f67320af1eb1f3b8c6bd9e69dec",
+      "lines": 48
     },
     {
       "source": "docs/02-capabilities/security/pki-issuance-renewal.md",
@@ -57508,6 +57793,16 @@
       "source": "docs/02-capabilities/security/pki-issuance-security-accessibility.md",
       "sha256": "a2e561112b18cdd207341cb684512005a4c4e782522d46a9a4410b2d1109947a",
       "lines": 18
+    },
+    {
+      "source": "docs/02-capabilities/security/pki-issuance-source-review.md",
+      "sha256": "774750b1c8640a9993347654122a8eeb9f76d455f84950de23807c8c9f158610",
+      "lines": 28
+    },
+    {
+      "source": "docs/02-capabilities/security/pki-issuance-traceability.md",
+      "sha256": "0d9798c2d177a44342bd95548a8fc8fe1907594ab028b754b3a3d638a151e4d4",
+      "lines": 36
     },
     {
       "source": "docs/02-capabilities/security/pki-network-cache.md",
@@ -57591,7 +57886,7 @@
     },
     {
       "source": "docs/02-capabilities/security/promotion-units.md",
-      "sha256": "1fb474217d7c3ff857e2c3542a0c29d4ccb4585eacd3bf1ee9b4720586f794aa",
+      "sha256": "6b16d68fb8002cf01071f20222d5ea3514a4559b1153eba7669bc782f85001b1",
       "lines": 53
     },
     {
@@ -57631,8 +57926,8 @@
     },
     {
       "source": "docs/02-capabilities/security/README.md",
-      "sha256": "a2da8c81bb9efd5de1c46babb0c46547ff23daf76a2c9e18460e67cb702994ba",
-      "lines": 140
+      "sha256": "b32a46a7378926ce105a73f2ea78b44471b1e77369d26f0e20b3204be6c47e2d",
+      "lines": 147
     },
     {
       "source": "docs/02-capabilities/security/restricted-execution-cross-cutting-review.md",
@@ -58456,7 +58751,7 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/audit-report.md",
-      "sha256": "82e3ad8d093ae53af3879dc77212c023a473bf06bb7fff8457cf3a0b46739bad",
+      "sha256": "21120adf842ee8b2014c2bbfed145338e0fa707ecb791e5eee68625f24e310d8",
       "lines": 71
     },
     {
@@ -58471,13 +58766,13 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/closure-backlog.md",
-      "sha256": "2fd4256afebb1ba68f0f1eda87f18c7bf83aa87ac48da47f17a95a00639c7ea6",
+      "sha256": "2a62921b39596c2460a6244a624715e8097c371460e3fcbe4847abae84eb94f1",
       "lines": 23
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "sha256": "8fbdd3f723ccfb1b1701d68346095e3594041469a56b730b6cc456957c2b192d",
-      "lines": 48
+      "sha256": "e36c0246e8590208ad029cd880f0e47077e7947586a4896bcdfa1858c0789cf8",
+      "lines": 49
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/dependency-graph.md",
@@ -58766,8 +59061,8 @@
     },
     {
       "source": "docs/06-roadmap/roadmap.md",
-      "sha256": "4652b6a7763e16b74d5cef8082c6e4d69713d8b9002f3bc5b4b261c7b8ffe785",
-      "lines": 273
+      "sha256": "161a19d84d656a84e6480ff41b105b3c16d365b4ffccb3171f726c2e40195ab1",
+      "lines": 277
     },
     {
       "source": "docs/adr/0001-capability-first-platform.md",
