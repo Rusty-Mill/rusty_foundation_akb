@@ -1,7 +1,7 @@
 # Cross-domain contradiction ledger
 
 **Status:** Active reviewed evidence  
-**Scope:** Architecture model 1.83.0; schema-validated runtime/time, application synchronization, and windowing readiness reviews
+**Scope:** Architecture model 1.84.0; schema-validated runtime/time, application synchronization, windowing, and filesystem readiness reviews
 
 The ledger records proposition-level review. “No contradiction found” is bounded to named sources and rules; it is not a repository-wide proof.
 
@@ -24,6 +24,7 @@ The ledger records proposition-level review. “No contradiction found” is bou
 | CL-015 | A domain-composition dependency is not automatically a stable capability-graph edge. | [Application synchronization composition](../../02-capabilities/application-sync/dependencies.md), [capability graph](../../02-capabilities/graph-model.md), [source-linked graph](dependency-graph.md), [ADR-0148](../../adr/0148-dependency-edges-require-source-declaration.md) | Consistent | Preserve required/conditional/governance domain relationships; add graph edges only after exact capability endpoints and semantic conditions are reviewed. |
 | CL-016 | Schema validation of Markdown evidence does not create a second architecture authority or prematurely select repository-profile serialization. | [Readiness schema](domain-readiness-schema.md), [readiness model](model.md), [standards profile](../../05-governance/software-development/repository-profile.md), [ADR-0146](../../adr/0146-machine-readable-indexes-are-derived-evidence.md), [ADR-0159](../../adr/0159-domain-readiness-reviews-use-schema-validated-markdown.md) | Consistent | Keep Markdown normative and generated indexes derived; defer implementation-repository serialization until its separate evidence gate. |
 | CL-017 | Window state, surface readiness, presentation, focus, accessibility exposure, and capture protection do not collapse into one success milestone. | [Windowing review](../../02-capabilities/windowing/promotion-review.md), [window contract](../../02-capabilities/windowing/window.md), [surface contract](../../02-capabilities/windowing/presentation-surface.md), [graphics](../../02-capabilities/graphics/README.md), [accessibility](../../02-capabilities/accessibility/README.md) | Consistent | Preserve separate typed observations/oracles and qualify provider-specific security/availability claims. |
+| CL-018 | Filesystem names, authority, object identity, namespace visibility, transfer completion, and durability do not collapse into one path- or success-based claim. | [Filesystem review](../../02-capabilities/filesystem/promotion-review.md), [path model](../../02-capabilities/filesystem/path-model.md), [resolution](../../02-capabilities/filesystem/resolve.md), [metadata](../../02-capabilities/filesystem/metadata.md), [replacement](../../02-capabilities/filesystem/atomic-replace.md), [durability](../../02-capabilities/filesystem/durability-model.md) | Consistent | Preserve explicit directory authority, scoped identity, R-level containment, partial progress, atomic-visibility outcomes, and distinct D-level oracles. |
 
 ## Finding rules
 

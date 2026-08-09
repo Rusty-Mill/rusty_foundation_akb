@@ -3,6 +3,8 @@
 | Field | Value |
 |---|---|
 | Status | Draft domain analysis |
+| Domain version | 0.1.1 |
+| Accountable role | Filesystem capability owner |
 | Purpose | Exercise names, resources, authority, races, partial I/O, metadata variance, and atomic namespace change |
 
 ## Domain boundary
@@ -69,4 +71,10 @@ The path model is a semantic type model, not a capability. Resolution is a capab
 - [Provider support matrix](support-matrix.md)
 - [Conformance specification](conformance.md)
 - [Benchmark specification](benchmarks.md)
+- [Assertion and benchmark traceability](traceability.md)
+- [Dependency and profile composition](dependencies.md)
+- [Cross-cutting review](cross-cutting.md)
+- [Source review](source-review.md)
+- [Ownership and bounded trial plan](ownership.md)
+- [Experimental promotion review](promotion-review.md)
 - [Open questions](open-questions.md)

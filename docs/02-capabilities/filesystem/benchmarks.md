@@ -5,6 +5,18 @@
 | Status | Draft |
 | Suite version | 0.1.0 |
 
+## Normative comparison requirements
+
+- **RM-FILESYSTEM-BENCH-0001:** Path measurements **MUST** preserve the same native value, component grammar, capacity policy, and lossless-result requirement across candidates.
+- **RM-FILESYSTEM-BENCH-0002:** Resolution measurements **MUST** bind the same directory authority, path, access, object-kind, creation, traversal, mount-crossing, and R-level policy.
+- **RM-FILESYSTEM-BENCH-0003:** Adversarial resolution measurements **MUST** use a reproducible concurrent mutation schedule and **MUST** fail the run if containment or object-kind correctness is violated.
+- **RM-FILESYSTEM-BENCH-0004:** File-I/O measurements **MUST** bind the same transfer sizes, offsets, queue depth, buffer ownership, cache state, completion boundary, cancellation schedule, and partial-progress oracle.
+- **RM-FILESYSTEM-BENCH-0005:** Metadata measurements **MUST** request the same subject and field set and **MUST NOT** count omission of required fields as a performance success.
+- **RM-FILESYSTEM-BENCH-0006:** Replacement and synchronization measurements **MUST** bind the same metadata policy, backup policy, failure boundary, filesystem relationship, and D-level; weaker atomicity or durability is a separate scenario.
+- **RM-FILESYSTEM-BENCH-0007:** Every run **MUST** record provider artifact, OS/kernel/SDK, filesystem and mount/volume options, storage topology, security context, cache state, warmup, samples, statistics, and correctness results.
+- **RM-FILESYSTEM-BENCH-0008:** Baseline comparison **MUST** preserve portable guarantees; a native path with weaker authority, race resistance, partial-I/O, cancellation, metadata, atomicity, or durability semantics **MUST** be labeled non-equivalent.
+- **RM-FILESYSTEM-BENCH-0009:** Numeric budgets and native-performance claims **MUST** be derived from reviewed representative runs and **MUST NOT** be inferred from structural budgets or unexecuted scenarios.
+
 ## Principles
 
 Compare equivalent guarantees, separate warm-cache and cold-cache behavior, record filesystem/mount/storage details, and report distributions plus throughput. Benchmarks do not weaken correctness, authority, or durability semantics.

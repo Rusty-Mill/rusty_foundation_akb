@@ -9,7 +9,10 @@ This graph records only dependencies explicitly stated by capability specificati
 flowchart LR
   Timer["rm.time.deadline-timer"] -->|"requires"| Clock["rm.time.monotonic-clock"]
   Timer -.->|"optionally-uses"| Cancel["rm.runtime.cancellation"]
+  Resolve["rm.filesystem.resolve"] -->|"requires"| Directory["rm.filesystem.directory"]
   File["rm.filesystem.file"] -.->|"optionally-uses"| Cancel
+  Replace["rm.filesystem.atomic-replace"] -->|"requires"| Directory
+  Replace -->|"requires"| File
   Spawn["rm.process.spawn"] -.->|"optionally-uses"| File
   Spawn -.->|"optionally-uses"| Pipe["rm.ipc.byte-pipe"]
   Spawn -.->|"optionally-uses"| Cancel
@@ -43,7 +46,10 @@ flowchart LR
 |---|---|---|---|---|
 | `rm.time.deadline-timer` | `requires` | `rm.time.monotonic-clock` | [Runtime/time domain](../../02-capabilities/runtime-time/README.md) | Deadline semantics require a compatible monotonic time domain. |
 | `rm.time.deadline-timer` | `optionally-uses` | `rm.runtime.cancellation` | [Runtime/time domain](../../02-capabilities/runtime-time/README.md) | Timers may observe cancellation without strengthening their minimum contract. |
+| `rm.filesystem.resolve` | `requires` | `rm.filesystem.directory` | [Resolution contract](../../02-capabilities/filesystem/resolve.md) | Resolution consumes an explicit directory resource as its authority and namespace root. |
 | `rm.filesystem.file` | `optionally-uses` | `rm.runtime.cancellation` | [Filesystem domain](../../02-capabilities/filesystem/README.md) | File operations may observe portable cancellation. |
+| `rm.filesystem.atomic-replace` | `requires` | `rm.filesystem.directory` | [Atomic replacement contract](../../02-capabilities/filesystem/atomic-replace.md) | Source and destination namespace authority are directory resources. |
+| `rm.filesystem.atomic-replace` | `requires` | `rm.filesystem.file` | [Atomic replacement contract](../../02-capabilities/filesystem/atomic-replace.md) | Replacement consumes a prepared regular-file resource and its synchronization semantics. |
 | `rm.process.spawn` | `optionally-uses` | `rm.filesystem.file` | [Process domain](../../02-capabilities/process/README.md) | Authorized file resources may bind standard I/O or inheritance. |
 | `rm.process.spawn` | `optionally-uses` | `rm.ipc.byte-pipe` | [Process domain](../../02-capabilities/process/README.md) | Pipe endpoints may bind standard I/O. |
 | `rm.process.spawn` | `optionally-uses` | `rm.runtime.cancellation` | [Process domain](../../02-capabilities/process/README.md) | Startup and wait paths may observe cancellation. |

@@ -50,6 +50,10 @@ Resolution consumes a directory resource, a relative path value, requested acces
 
 Providers declare containment through the [resolution quality levels](resolution-quality.md). The base contract requires truthful negotiation; profiles choose the minimum acceptable level.
 
+## Dependencies
+
+`rm.filesystem.resolve` **requires** `rm.filesystem.directory`: resolution consumes an already-authorized directory resource as its namespace and authority root. A path value is semantic input, not a capability dependency.
+
 ## Platform realization
 
 | Platform | Candidate path | Key issue |

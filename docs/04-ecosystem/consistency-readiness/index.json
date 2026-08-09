@@ -4,27 +4,27 @@
   "authority": "docs/01-architecture/architecture-model.md",
   "generated_from": "Markdown; this index is derived and non-authoritative",
   "summary": {
-    "markdown_documents": 1119,
-    "internal_links": 2064,
-    "requirements": 5193,
+    "markdown_documents": 1125,
+    "internal_links": 2107,
+    "requirements": 5224,
     "domains": 62,
     "adrs": 159,
     "errors": 0,
     "warnings": 0,
     "domains_with_conformance": 62,
     "domains_with_benchmarks": 62,
-    "domains_with_direct_requirement_assertion_map": 5,
-    "domains_with_direct_benchmark_scenario_map": 5,
-    "benchmark_scenarios": 33,
-    "external_sources": 630,
-    "external_sources_with_review_record": 21,
-    "domains_with_dedicated_cross_cutting_analysis": 27,
-    "domains_with_complete_planned_traceability": 5,
-    "domains_experimental_eligible": 3,
-    "domains_with_proposed_promotion_review": 3,
+    "domains_with_direct_requirement_assertion_map": 6,
+    "domains_with_direct_benchmark_scenario_map": 6,
+    "benchmark_scenarios": 41,
+    "external_sources": 633,
+    "external_sources_with_review_record": 40,
+    "domains_with_dedicated_cross_cutting_analysis": 28,
+    "domains_with_complete_planned_traceability": 6,
+    "domains_experimental_eligible": 4,
+    "domains_with_proposed_promotion_review": 4,
     "domains_with_accepted_promotion_review": 0,
     "declared_graph_nodes": 15,
-    "declared_graph_edges": 8,
+    "declared_graph_edges": 11,
     "required_graph_acyclic": true
   },
   "domains": [
@@ -788,22 +788,22 @@
       "id": "filesystem",
       "source": "docs/02-capabilities/filesystem/README.md",
       "status": "Draft domain analysis",
-      "requirements": 69,
-      "capability_requirements": 69,
+      "requirements": 100,
+      "capability_requirements": 91,
       "conformance_requirements": 0,
-      "benchmark_requirements": 0,
-      "mapped_benchmark_requirements": 0,
+      "benchmark_requirements": 9,
+      "mapped_benchmark_requirements": 9,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
-      "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false,
-      "direct_benchmark_scenario_map": false,
-      "cross_cutting_analysis": "embedded-unreviewed",
-      "promotion_review": "absent",
+      "mapped_capability_requirements": 91,
+      "direct_requirement_assertion_map": true,
+      "direct_benchmark_scenario_map": true,
+      "cross_cutting_analysis": "dedicated",
+      "promotion_review": "proposed",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
-        "accessibility": false,
+        "accessibility": true,
         "internationalization": true,
         "observability": true,
         "operations": true
@@ -812,12 +812,12 @@
         "contract_inventory": "pass",
         "conformance_plan": "pass",
         "benchmark_plan": "pass",
-        "assertion_traceability": "fail",
-        "benchmark_traceability": "unknown",
-        "cross_cutting_review": "unknown",
-        "source_freshness_review": "unknown",
-        "owner_review": "unknown",
-        "experimental_eligible": "no"
+        "assertion_traceability": "pass",
+        "benchmark_traceability": "pass",
+        "cross_cutting_review": "pass",
+        "source_freshness_review": "pass",
+        "owner_review": "pass",
+        "experimental_eligible": "yes"
       }
     },
     {
@@ -2424,6 +2424,95 @@
       ]
     },
     {
+      "id": "rm.assertion.filesystem.directory@1",
+      "domain": "filesystem",
+      "source": "docs/02-capabilities/filesystem/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/filesystem/directory.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.filesystem.resolve@1",
+      "domain": "filesystem",
+      "source": "docs/02-capabilities/filesystem/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/filesystem/resolve.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.filesystem.file@1",
+      "domain": "filesystem",
+      "source": "docs/02-capabilities/filesystem/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/filesystem/file.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.filesystem.metadata@1",
+      "domain": "filesystem",
+      "source": "docs/02-capabilities/filesystem/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/filesystem/metadata.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.filesystem.atomic-replace@1",
+      "domain": "filesystem",
+      "source": "docs/02-capabilities/filesystem/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/filesystem/atomic-replace.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.filesystem.durability@1",
+      "domain": "filesystem",
+      "source": "docs/02-capabilities/filesystem/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/filesystem/durability-model.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.filesystem.dependencies@1",
+      "domain": "filesystem",
+      "source": "docs/02-capabilities/filesystem/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/filesystem/dependencies.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.filesystem.quality-review@1",
+      "domain": "filesystem",
+      "source": "docs/02-capabilities/filesystem/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/filesystem/cross-cutting.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.filesystem.source-review@1",
+      "domain": "filesystem",
+      "source": "docs/02-capabilities/filesystem/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/filesystem/source-review.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.filesystem.ownership@1",
+      "domain": "filesystem",
+      "source": "docs/02-capabilities/filesystem/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/filesystem/ownership.md"
+      ]
+    },
+    {
+      "id": "rm.assertion.filesystem.promotion-boundary@1",
+      "domain": "filesystem",
+      "source": "docs/02-capabilities/filesystem/traceability.md",
+      "covers_sources": [
+        "docs/02-capabilities/filesystem/promotion-review.md",
+        "docs/02-capabilities/filesystem/traceability.md"
+      ]
+    },
+    {
       "id": "rm.assertion.messaging.schema-envelope@1",
       "domain": "messaging",
       "source": "docs/02-capabilities/messaging/traceability.md",
@@ -2709,6 +2798,86 @@
       "source": "docs/02-capabilities/audit-evidence/traceability.md",
       "requirements": [
         "RM-AUDIT-BENCH-0006"
+      ]
+    },
+    {
+      "id": "rm.benchmark.filesystem.path-operations@1",
+      "domain": "filesystem",
+      "source": "docs/02-capabilities/filesystem/traceability.md",
+      "requirements": [
+        "RM-FILESYSTEM-BENCH-0001",
+        "RM-FILESYSTEM-BENCH-0007",
+        "RM-FILESYSTEM-BENCH-0008"
+      ]
+    },
+    {
+      "id": "rm.benchmark.filesystem.resolve@1",
+      "domain": "filesystem",
+      "source": "docs/02-capabilities/filesystem/traceability.md",
+      "requirements": [
+        "RM-FILESYSTEM-BENCH-0002",
+        "RM-FILESYSTEM-BENCH-0007",
+        "RM-FILESYSTEM-BENCH-0008"
+      ]
+    },
+    {
+      "id": "rm.benchmark.filesystem.adversarial-resolve@1",
+      "domain": "filesystem",
+      "source": "docs/02-capabilities/filesystem/traceability.md",
+      "requirements": [
+        "RM-FILESYSTEM-BENCH-0003",
+        "RM-FILESYSTEM-BENCH-0007",
+        "RM-FILESYSTEM-BENCH-0008"
+      ]
+    },
+    {
+      "id": "rm.benchmark.filesystem.file-io@1",
+      "domain": "filesystem",
+      "source": "docs/02-capabilities/filesystem/traceability.md",
+      "requirements": [
+        "RM-FILESYSTEM-BENCH-0004",
+        "RM-FILESYSTEM-BENCH-0007",
+        "RM-FILESYSTEM-BENCH-0008"
+      ]
+    },
+    {
+      "id": "rm.benchmark.filesystem.metadata@1",
+      "domain": "filesystem",
+      "source": "docs/02-capabilities/filesystem/traceability.md",
+      "requirements": [
+        "RM-FILESYSTEM-BENCH-0005",
+        "RM-FILESYSTEM-BENCH-0007",
+        "RM-FILESYSTEM-BENCH-0008"
+      ]
+    },
+    {
+      "id": "rm.benchmark.filesystem.atomic-replace@1",
+      "domain": "filesystem",
+      "source": "docs/02-capabilities/filesystem/traceability.md",
+      "requirements": [
+        "RM-FILESYSTEM-BENCH-0006",
+        "RM-FILESYSTEM-BENCH-0007",
+        "RM-FILESYSTEM-BENCH-0008"
+      ]
+    },
+    {
+      "id": "rm.benchmark.filesystem.durability@1",
+      "domain": "filesystem",
+      "source": "docs/02-capabilities/filesystem/traceability.md",
+      "requirements": [
+        "RM-FILESYSTEM-BENCH-0006",
+        "RM-FILESYSTEM-BENCH-0007",
+        "RM-FILESYSTEM-BENCH-0008"
+      ]
+    },
+    {
+      "id": "rm.benchmark.filesystem.errors@1",
+      "domain": "filesystem",
+      "source": "docs/02-capabilities/filesystem/traceability.md",
+      "requirements": [
+        "RM-FILESYSTEM-BENCH-0007",
+        "RM-FILESYSTEM-BENCH-0008",
+        "RM-FILESYSTEM-BENCH-0009"
       ]
     },
     {
@@ -3957,18 +4126,20 @@
       "host": "developer.apple.com",
       "sources": [
         "docs/02-capabilities/filesystem/durability-model.md",
-        "docs/02-capabilities/filesystem/platform-research.md"
+        "docs/02-capabilities/filesystem/platform-research.md",
+        "docs/02-capabilities/filesystem/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://developer.apple.com/library/archive/documentation/System/Conceptual/ManPages_iPhoneOS/man2/fsync.2.html",
       "host": "developer.apple.com",
       "sources": [
         "docs/02-capabilities/filesystem/durability-model.md",
-        "docs/02-capabilities/filesystem/platform-research.md"
+        "docs/02-capabilities/filesystem/platform-research.md",
+        "docs/02-capabilities/filesystem/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://developer.apple.com/library/archive/documentation/System/Conceptual/ManPages_iPhoneOS/man2/kqueue.2.html",
@@ -3998,9 +4169,10 @@
       "url": "https://developer.apple.com/library/archive/documentation/System/Conceptual/ManPages_iPhoneOS/man2/rename.2.html",
       "host": "developer.apple.com",
       "sources": [
-        "docs/02-capabilities/filesystem/platform-research.md"
+        "docs/02-capabilities/filesystem/platform-research.md",
+        "docs/02-capabilities/filesystem/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://developer.apple.com/library/archive/documentation/System/Conceptual/ManPages_iPhoneOS/man3/openpty.3.html",
@@ -5070,42 +5242,47 @@
       "url": "https://learn.microsoft.com/en-us/windows/win32/api/fileapi/nf-fileapi-createfilew",
       "host": "learn.microsoft.com",
       "sources": [
-        "docs/02-capabilities/filesystem/platform-research.md"
+        "docs/02-capabilities/filesystem/platform-research.md",
+        "docs/02-capabilities/filesystem/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://learn.microsoft.com/en-us/windows/win32/api/fileapi/nf-fileapi-flushfilebuffers",
       "host": "learn.microsoft.com",
       "sources": [
         "docs/02-capabilities/filesystem/durability-model.md",
-        "docs/02-capabilities/filesystem/platform-research.md"
+        "docs/02-capabilities/filesystem/platform-research.md",
+        "docs/02-capabilities/filesystem/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://learn.microsoft.com/en-us/windows/win32/api/fileapi/nf-fileapi-readfile",
       "host": "learn.microsoft.com",
       "sources": [
-        "docs/02-capabilities/filesystem/platform-research.md"
+        "docs/02-capabilities/filesystem/platform-research.md",
+        "docs/02-capabilities/filesystem/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://learn.microsoft.com/en-us/windows/win32/api/fileapi/nf-fileapi-writefile",
       "host": "learn.microsoft.com",
       "sources": [
-        "docs/02-capabilities/filesystem/platform-research.md"
+        "docs/02-capabilities/filesystem/platform-research.md",
+        "docs/02-capabilities/filesystem/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://learn.microsoft.com/en-us/windows/win32/api/fileapi/ns-fileapi-by_handle_file_information",
       "host": "learn.microsoft.com",
       "sources": [
-        "docs/02-capabilities/filesystem/platform-research.md"
+        "docs/02-capabilities/filesystem/platform-research.md",
+        "docs/02-capabilities/filesystem/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://learn.microsoft.com/en-us/windows/win32/api/namedpipeapi/nf-namedpipeapi-createpipe",
@@ -5177,17 +5354,19 @@
       "url": "https://learn.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-getfileinformationbyhandleex",
       "host": "learn.microsoft.com",
       "sources": [
-        "docs/02-capabilities/filesystem/platform-research.md"
+        "docs/02-capabilities/filesystem/platform-research.md",
+        "docs/02-capabilities/filesystem/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://learn.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-replacefilew",
       "host": "learn.microsoft.com",
       "sources": [
-        "docs/02-capabilities/filesystem/platform-research.md"
+        "docs/02-capabilities/filesystem/platform-research.md",
+        "docs/02-capabilities/filesystem/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://learn.microsoft.com/en-us/windows/win32/api/wincred/nf-wincred-credreadw",
@@ -5347,18 +5526,20 @@
       "host": "learn.microsoft.com",
       "sources": [
         "docs/02-capabilities/filesystem/platform-research.md",
+        "docs/02-capabilities/filesystem/source-review.md",
         "docs/02-capabilities/runtime-time/platform-research.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://learn.microsoft.com/en-us/windows/win32/fileio/file-caching",
       "host": "learn.microsoft.com",
       "sources": [
         "docs/02-capabilities/filesystem/durability-model.md",
-        "docs/02-capabilities/filesystem/platform-research.md"
+        "docs/02-capabilities/filesystem/platform-research.md",
+        "docs/02-capabilities/filesystem/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://learn.microsoft.com/en-us/windows/win32/hidpi/wm-dpichanged",
@@ -6095,9 +6276,10 @@
       "host": "man7.org",
       "sources": [
         "docs/02-capabilities/filesystem/durability-model.md",
-        "docs/02-capabilities/filesystem/platform-research.md"
+        "docs/02-capabilities/filesystem/platform-research.md",
+        "docs/02-capabilities/filesystem/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://man7.org/linux/man-pages/man2/getrandom.2.html",
@@ -6167,9 +6349,18 @@
       "url": "https://man7.org/linux/man-pages/man2/open.2.html",
       "host": "man7.org",
       "sources": [
-        "docs/02-capabilities/filesystem/platform-research.md"
+        "docs/02-capabilities/filesystem/platform-research.md",
+        "docs/02-capabilities/filesystem/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man2/openat2.2.html",
+      "host": "man7.org",
+      "sources": [
+        "docs/02-capabilities/filesystem/source-review.md"
+      ],
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://man7.org/linux/man-pages/man2/pidfd_open.2.html",
@@ -6196,12 +6387,21 @@
       "freshness": "unreviewed-by-generator"
     },
     {
+      "url": "https://man7.org/linux/man-pages/man2/pread.2.html",
+      "host": "man7.org",
+      "sources": [
+        "docs/02-capabilities/filesystem/source-review.md"
+      ],
+      "freshness": "reviewed-in-domain-source-review"
+    },
+    {
       "url": "https://man7.org/linux/man-pages/man2/renameat2.2.html",
       "host": "man7.org",
       "sources": [
-        "docs/02-capabilities/filesystem/platform-research.md"
+        "docs/02-capabilities/filesystem/platform-research.md",
+        "docs/02-capabilities/filesystem/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://man7.org/linux/man-pages/man2/sched_setaffinity.2.html",
@@ -6215,9 +6415,10 @@
       "url": "https://man7.org/linux/man-pages/man2/statx.2.html",
       "host": "man7.org",
       "sources": [
-        "docs/02-capabilities/filesystem/platform-research.md"
+        "docs/02-capabilities/filesystem/platform-research.md",
+        "docs/02-capabilities/filesystem/source-review.md"
       ],
-      "freshness": "unreviewed-by-generator"
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://man7.org/linux/man-pages/man2/timerfd_create.2.html",
@@ -6323,6 +6524,14 @@
         "docs/02-capabilities/storage/platform-research.md"
       ],
       "freshness": "unreviewed-by-generator"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man7/path_resolution.7.html",
+      "host": "man7.org",
+      "sources": [
+        "docs/02-capabilities/filesystem/source-review.md"
+      ],
+      "freshness": "reviewed-in-domain-source-review"
     },
     {
       "url": "https://man7.org/linux/man-pages/man7/pipe.7.html",
@@ -8054,10 +8263,28 @@
         "evidence": "../../02-capabilities/runtime-time/README.md"
       },
       {
+        "source": "rm.filesystem.resolve",
+        "kind": "requires",
+        "target": "rm.filesystem.directory",
+        "evidence": "../../02-capabilities/filesystem/resolve.md"
+      },
+      {
         "source": "rm.filesystem.file",
         "kind": "optionally-uses",
         "target": "rm.runtime.cancellation",
         "evidence": "../../02-capabilities/filesystem/README.md"
+      },
+      {
+        "source": "rm.filesystem.atomic-replace",
+        "kind": "requires",
+        "target": "rm.filesystem.directory",
+        "evidence": "../../02-capabilities/filesystem/atomic-replace.md"
+      },
+      {
+        "source": "rm.filesystem.atomic-replace",
+        "kind": "requires",
+        "target": "rm.filesystem.file",
+        "evidence": "../../02-capabilities/filesystem/atomic-replace.md"
       },
       {
         "source": "rm.process.spawn",
@@ -19851,7 +20078,9 @@
       "line": 25,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.atomic-replace@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-REPLACE-0002",
@@ -19859,7 +20088,9 @@
       "line": 26,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.atomic-replace@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-REPLACE-0003",
@@ -19867,7 +20098,9 @@
       "line": 27,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.atomic-replace@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-REPLACE-0004",
@@ -19875,7 +20108,9 @@
       "line": 28,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.atomic-replace@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-REPLACE-0005",
@@ -19883,7 +20118,9 @@
       "line": 29,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.atomic-replace@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-REPLACE-0006",
@@ -19891,7 +20128,9 @@
       "line": 30,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.atomic-replace@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-REPLACE-0007",
@@ -19899,7 +20138,9 @@
       "line": 31,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.atomic-replace@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-REPLACE-0008",
@@ -19907,7 +20148,9 @@
       "line": 32,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.atomic-replace@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-REPLACE-0009",
@@ -19915,7 +20158,9 @@
       "line": 33,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.atomic-replace@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-REPLACE-0010",
@@ -19923,7 +20168,9 @@
       "line": 34,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.atomic-replace@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-REPLACE-0011",
@@ -19931,7 +20178,9 @@
       "line": 35,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.atomic-replace@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-REPLACE-0012",
@@ -19939,7 +20188,184 @@
       "line": 36,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.atomic-replace@1"
+      ]
+    },
+    {
+      "id": "RM-FILESYSTEM-BENCH-0001",
+      "source": "docs/02-capabilities/filesystem/benchmarks.md",
+      "line": 10,
+      "kind": "benchmark",
+      "domain": "filesystem",
+      "benchmark_scenarios": [
+        "rm.benchmark.filesystem.path-operations@1"
+      ]
+    },
+    {
+      "id": "RM-FILESYSTEM-BENCH-0002",
+      "source": "docs/02-capabilities/filesystem/benchmarks.md",
+      "line": 11,
+      "kind": "benchmark",
+      "domain": "filesystem",
+      "benchmark_scenarios": [
+        "rm.benchmark.filesystem.resolve@1"
+      ]
+    },
+    {
+      "id": "RM-FILESYSTEM-BENCH-0003",
+      "source": "docs/02-capabilities/filesystem/benchmarks.md",
+      "line": 12,
+      "kind": "benchmark",
+      "domain": "filesystem",
+      "benchmark_scenarios": [
+        "rm.benchmark.filesystem.adversarial-resolve@1"
+      ]
+    },
+    {
+      "id": "RM-FILESYSTEM-BENCH-0004",
+      "source": "docs/02-capabilities/filesystem/benchmarks.md",
+      "line": 13,
+      "kind": "benchmark",
+      "domain": "filesystem",
+      "benchmark_scenarios": [
+        "rm.benchmark.filesystem.file-io@1"
+      ]
+    },
+    {
+      "id": "RM-FILESYSTEM-BENCH-0005",
+      "source": "docs/02-capabilities/filesystem/benchmarks.md",
+      "line": 14,
+      "kind": "benchmark",
+      "domain": "filesystem",
+      "benchmark_scenarios": [
+        "rm.benchmark.filesystem.metadata@1"
+      ]
+    },
+    {
+      "id": "RM-FILESYSTEM-BENCH-0006",
+      "source": "docs/02-capabilities/filesystem/benchmarks.md",
+      "line": 15,
+      "kind": "benchmark",
+      "domain": "filesystem",
+      "benchmark_scenarios": [
+        "rm.benchmark.filesystem.atomic-replace@1",
+        "rm.benchmark.filesystem.durability@1"
+      ]
+    },
+    {
+      "id": "RM-FILESYSTEM-BENCH-0007",
+      "source": "docs/02-capabilities/filesystem/benchmarks.md",
+      "line": 16,
+      "kind": "benchmark",
+      "domain": "filesystem",
+      "benchmark_scenarios": [
+        "rm.benchmark.filesystem.path-operations@1",
+        "rm.benchmark.filesystem.resolve@1",
+        "rm.benchmark.filesystem.adversarial-resolve@1",
+        "rm.benchmark.filesystem.file-io@1",
+        "rm.benchmark.filesystem.metadata@1",
+        "rm.benchmark.filesystem.atomic-replace@1",
+        "rm.benchmark.filesystem.durability@1",
+        "rm.benchmark.filesystem.errors@1"
+      ]
+    },
+    {
+      "id": "RM-FILESYSTEM-BENCH-0008",
+      "source": "docs/02-capabilities/filesystem/benchmarks.md",
+      "line": 17,
+      "kind": "benchmark",
+      "domain": "filesystem",
+      "benchmark_scenarios": [
+        "rm.benchmark.filesystem.path-operations@1",
+        "rm.benchmark.filesystem.resolve@1",
+        "rm.benchmark.filesystem.adversarial-resolve@1",
+        "rm.benchmark.filesystem.file-io@1",
+        "rm.benchmark.filesystem.metadata@1",
+        "rm.benchmark.filesystem.atomic-replace@1",
+        "rm.benchmark.filesystem.durability@1",
+        "rm.benchmark.filesystem.errors@1"
+      ]
+    },
+    {
+      "id": "RM-FILESYSTEM-BENCH-0009",
+      "source": "docs/02-capabilities/filesystem/benchmarks.md",
+      "line": 18,
+      "kind": "benchmark",
+      "domain": "filesystem",
+      "benchmark_scenarios": [
+        "rm.benchmark.filesystem.errors@1"
+      ]
+    },
+    {
+      "id": "RM-FILESYSTEM-QUALITY-0001",
+      "source": "docs/02-capabilities/filesystem/cross-cutting.md",
+      "line": 20,
+      "kind": "capability",
+      "domain": "filesystem",
+      "assertions": [
+        "rm.assertion.filesystem.quality-review@1"
+      ]
+    },
+    {
+      "id": "RM-FILESYSTEM-QUALITY-0002",
+      "source": "docs/02-capabilities/filesystem/cross-cutting.md",
+      "line": 22,
+      "kind": "capability",
+      "domain": "filesystem",
+      "assertions": [
+        "rm.assertion.filesystem.quality-review@1"
+      ]
+    },
+    {
+      "id": "RM-FILESYSTEM-QUALITY-0003",
+      "source": "docs/02-capabilities/filesystem/cross-cutting.md",
+      "line": 24,
+      "kind": "capability",
+      "domain": "filesystem",
+      "assertions": [
+        "rm.assertion.filesystem.quality-review@1"
+      ]
+    },
+    {
+      "id": "RM-FILESYSTEM-DEPENDENCY-0001",
+      "source": "docs/02-capabilities/filesystem/dependencies.md",
+      "line": 32,
+      "kind": "capability",
+      "domain": "filesystem",
+      "assertions": [
+        "rm.assertion.filesystem.dependencies@1"
+      ]
+    },
+    {
+      "id": "RM-FILESYSTEM-DEPENDENCY-0002",
+      "source": "docs/02-capabilities/filesystem/dependencies.md",
+      "line": 34,
+      "kind": "capability",
+      "domain": "filesystem",
+      "assertions": [
+        "rm.assertion.filesystem.dependencies@1"
+      ]
+    },
+    {
+      "id": "RM-FILESYSTEM-DEPENDENCY-0003",
+      "source": "docs/02-capabilities/filesystem/dependencies.md",
+      "line": 36,
+      "kind": "capability",
+      "domain": "filesystem",
+      "assertions": [
+        "rm.assertion.filesystem.dependencies@1"
+      ]
+    },
+    {
+      "id": "RM-FILESYSTEM-DEPENDENCY-0004",
+      "source": "docs/02-capabilities/filesystem/dependencies.md",
+      "line": 38,
+      "kind": "capability",
+      "domain": "filesystem",
+      "assertions": [
+        "rm.assertion.filesystem.dependencies@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-DIRECTORY-0001",
@@ -19947,7 +20373,9 @@
       "line": 17,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.directory@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-DIRECTORY-0002",
@@ -19955,7 +20383,9 @@
       "line": 18,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.directory@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-DIRECTORY-0003",
@@ -19963,7 +20393,9 @@
       "line": 19,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.directory@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-DIRECTORY-0004",
@@ -19971,7 +20403,9 @@
       "line": 20,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.directory@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-DIRECTORY-0005",
@@ -19979,7 +20413,9 @@
       "line": 21,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.directory@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-DIRECTORY-0006",
@@ -19987,7 +20423,9 @@
       "line": 22,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.directory@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-DIRECTORY-0007",
@@ -19995,7 +20433,9 @@
       "line": 23,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.directory@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-DIRECTORY-0008",
@@ -20003,7 +20443,9 @@
       "line": 24,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.directory@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-DIRECTORY-0009",
@@ -20011,7 +20453,9 @@
       "line": 25,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.directory@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-DIRECTORY-0010",
@@ -20019,7 +20463,9 @@
       "line": 26,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.directory@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-DURABILITY-0001",
@@ -20027,7 +20473,9 @@
       "line": 44,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.durability@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-DURABILITY-0002",
@@ -20035,7 +20483,9 @@
       "line": 45,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.durability@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-DURABILITY-0003",
@@ -20043,7 +20493,9 @@
       "line": 46,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.durability@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-DURABILITY-0004",
@@ -20051,7 +20503,9 @@
       "line": 47,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.durability@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-DURABILITY-0005",
@@ -20059,7 +20513,9 @@
       "line": 48,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.durability@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-DURABILITY-0006",
@@ -20067,7 +20523,9 @@
       "line": 49,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.durability@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-DURABILITY-0007",
@@ -20075,7 +20533,9 @@
       "line": 50,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.durability@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-DURABILITY-0008",
@@ -20083,7 +20543,9 @@
       "line": 51,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.durability@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-DURABILITY-0009",
@@ -20091,7 +20553,9 @@
       "line": 52,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.durability@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-DURABILITY-0010",
@@ -20099,7 +20563,9 @@
       "line": 53,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.durability@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-FILE-0001",
@@ -20107,7 +20573,9 @@
       "line": 21,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.file@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-FILE-0002",
@@ -20115,7 +20583,9 @@
       "line": 22,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.file@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-FILE-0003",
@@ -20123,7 +20593,9 @@
       "line": 23,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.file@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-FILE-0004",
@@ -20131,7 +20603,9 @@
       "line": 24,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.file@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-FILE-0005",
@@ -20139,7 +20613,9 @@
       "line": 25,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.file@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-FILE-0006",
@@ -20147,7 +20623,9 @@
       "line": 26,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.file@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-FILE-0007",
@@ -20155,7 +20633,9 @@
       "line": 27,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.file@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-FILE-0008",
@@ -20163,7 +20643,9 @@
       "line": 28,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.file@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-FILE-0009",
@@ -20171,7 +20653,9 @@
       "line": 29,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.file@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-FILE-0010",
@@ -20179,7 +20663,9 @@
       "line": 30,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.file@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-FILE-0011",
@@ -20187,7 +20673,9 @@
       "line": 31,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.file@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-FILE-0012",
@@ -20195,7 +20683,9 @@
       "line": 32,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.file@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-FILE-0013",
@@ -20203,7 +20693,9 @@
       "line": 33,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.file@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-FILE-0014",
@@ -20211,7 +20703,9 @@
       "line": 34,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.file@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-METADATA-0001",
@@ -20219,7 +20713,9 @@
       "line": 17,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.metadata@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-METADATA-0002",
@@ -20227,7 +20723,9 @@
       "line": 18,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.metadata@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-METADATA-0003",
@@ -20235,7 +20733,9 @@
       "line": 19,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.metadata@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-METADATA-0004",
@@ -20243,7 +20743,9 @@
       "line": 20,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.metadata@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-METADATA-0005",
@@ -20251,7 +20753,9 @@
       "line": 21,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.metadata@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-METADATA-0006",
@@ -20259,7 +20763,9 @@
       "line": 22,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.metadata@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-METADATA-0007",
@@ -20267,7 +20773,9 @@
       "line": 23,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.metadata@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-METADATA-0008",
@@ -20275,7 +20783,9 @@
       "line": 24,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.metadata@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-METADATA-0009",
@@ -20283,7 +20793,9 @@
       "line": 25,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.metadata@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-METADATA-0010",
@@ -20291,7 +20803,9 @@
       "line": 26,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.metadata@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-METADATA-0011",
@@ -20299,7 +20813,79 @@
       "line": 27,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.metadata@1"
+      ]
+    },
+    {
+      "id": "RM-FILESYSTEM-OWNER-0001",
+      "source": "docs/02-capabilities/filesystem/ownership.md",
+      "line": 25,
+      "kind": "capability",
+      "domain": "filesystem",
+      "assertions": [
+        "rm.assertion.filesystem.ownership@1"
+      ]
+    },
+    {
+      "id": "RM-FILESYSTEM-OWNER-0002",
+      "source": "docs/02-capabilities/filesystem/ownership.md",
+      "line": 27,
+      "kind": "capability",
+      "domain": "filesystem",
+      "assertions": [
+        "rm.assertion.filesystem.ownership@1"
+      ]
+    },
+    {
+      "id": "RM-FILESYSTEM-OWNER-0003",
+      "source": "docs/02-capabilities/filesystem/ownership.md",
+      "line": 29,
+      "kind": "capability",
+      "domain": "filesystem",
+      "assertions": [
+        "rm.assertion.filesystem.ownership@1"
+      ]
+    },
+    {
+      "id": "RM-FILESYSTEM-OWNER-0004",
+      "source": "docs/02-capabilities/filesystem/ownership.md",
+      "line": 31,
+      "kind": "capability",
+      "domain": "filesystem",
+      "assertions": [
+        "rm.assertion.filesystem.ownership@1"
+      ]
+    },
+    {
+      "id": "RM-FILESYSTEM-PROMOTION-0001",
+      "source": "docs/02-capabilities/filesystem/promotion-review.md",
+      "line": 27,
+      "kind": "capability",
+      "domain": "filesystem",
+      "assertions": [
+        "rm.assertion.filesystem.promotion-boundary@1"
+      ]
+    },
+    {
+      "id": "RM-FILESYSTEM-PROMOTION-0002",
+      "source": "docs/02-capabilities/filesystem/promotion-review.md",
+      "line": 29,
+      "kind": "capability",
+      "domain": "filesystem",
+      "assertions": [
+        "rm.assertion.filesystem.promotion-boundary@1"
+      ]
+    },
+    {
+      "id": "RM-FILESYSTEM-PROMOTION-0003",
+      "source": "docs/02-capabilities/filesystem/promotion-review.md",
+      "line": 31,
+      "kind": "capability",
+      "domain": "filesystem",
+      "assertions": [
+        "rm.assertion.filesystem.promotion-boundary@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-RESOLVE-0001",
@@ -20307,7 +20893,9 @@
       "line": 29,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.resolve@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-RESOLVE-0002",
@@ -20315,7 +20903,9 @@
       "line": 30,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.resolve@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-RESOLVE-0003",
@@ -20323,7 +20913,9 @@
       "line": 31,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.resolve@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-RESOLVE-0004",
@@ -20331,7 +20923,9 @@
       "line": 32,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.resolve@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-RESOLVE-0005",
@@ -20339,7 +20933,9 @@
       "line": 33,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.resolve@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-RESOLVE-0006",
@@ -20347,7 +20943,9 @@
       "line": 34,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.resolve@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-RESOLVE-0007",
@@ -20355,7 +20953,9 @@
       "line": 35,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.resolve@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-RESOLVE-0008",
@@ -20363,7 +20963,9 @@
       "line": 36,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.resolve@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-RESOLVE-0009",
@@ -20371,7 +20973,9 @@
       "line": 37,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.resolve@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-RESOLVE-0010",
@@ -20379,7 +20983,9 @@
       "line": 38,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.resolve@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-RESOLVE-0011",
@@ -20387,7 +20993,9 @@
       "line": 39,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.resolve@1"
+      ]
     },
     {
       "id": "RM-FILESYSTEM-RESOLVE-0012",
@@ -20395,7 +21003,89 @@
       "line": 40,
       "kind": "capability",
       "domain": "filesystem",
-      "assertions": []
+      "assertions": [
+        "rm.assertion.filesystem.resolve@1"
+      ]
+    },
+    {
+      "id": "RM-FILESYSTEM-SOURCE-0001",
+      "source": "docs/02-capabilities/filesystem/source-review.md",
+      "line": 20,
+      "kind": "capability",
+      "domain": "filesystem",
+      "assertions": [
+        "rm.assertion.filesystem.source-review@1"
+      ]
+    },
+    {
+      "id": "RM-FILESYSTEM-SOURCE-0002",
+      "source": "docs/02-capabilities/filesystem/source-review.md",
+      "line": 22,
+      "kind": "capability",
+      "domain": "filesystem",
+      "assertions": [
+        "rm.assertion.filesystem.source-review@1"
+      ]
+    },
+    {
+      "id": "RM-FILESYSTEM-SOURCE-0003",
+      "source": "docs/02-capabilities/filesystem/source-review.md",
+      "line": 24,
+      "kind": "capability",
+      "domain": "filesystem",
+      "assertions": [
+        "rm.assertion.filesystem.source-review@1"
+      ]
+    },
+    {
+      "id": "RM-FILESYSTEM-SOURCE-0004",
+      "source": "docs/02-capabilities/filesystem/source-review.md",
+      "line": 26,
+      "kind": "capability",
+      "domain": "filesystem",
+      "assertions": [
+        "rm.assertion.filesystem.source-review@1"
+      ]
+    },
+    {
+      "id": "RM-FILESYSTEM-TRACE-0001",
+      "source": "docs/02-capabilities/filesystem/traceability.md",
+      "line": 35,
+      "kind": "capability",
+      "domain": "filesystem",
+      "assertions": [
+        "rm.assertion.filesystem.promotion-boundary@1"
+      ]
+    },
+    {
+      "id": "RM-FILESYSTEM-TRACE-0002",
+      "source": "docs/02-capabilities/filesystem/traceability.md",
+      "line": 37,
+      "kind": "capability",
+      "domain": "filesystem",
+      "assertions": [
+        "rm.assertion.filesystem.promotion-boundary@1"
+      ]
+    },
+    {
+      "id": "RM-FILESYSTEM-TRACE-0003",
+      "source": "docs/02-capabilities/filesystem/traceability.md",
+      "line": 39,
+      "kind": "capability",
+      "domain": "filesystem",
+      "assertions": [
+        "rm.assertion.filesystem.promotion-boundary@1"
+      ]
+    },
+    {
+      "id": "RM-FILESYSTEM-TRACE-0004",
+      "source": "docs/02-capabilities/filesystem/traceability.md",
+      "line": 41,
+      "kind": "capability",
+      "domain": "filesystem",
+      "assertions": [
+        "rm.assertion.filesystem.promotion-boundary@1"
+      ]
     },
     {
       "id": "RM-GRAPHICS-DEVICE-0001",
@@ -47599,56 +48289,56 @@
     {
       "id": "RM-READINESS-CONTRADICTION-0001",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 30,
+      "line": 31,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0002",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 32,
+      "line": 33,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0003",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 34,
+      "line": 35,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0004",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 36,
+      "line": 37,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-GRAPH-0001",
       "source": "docs/04-ecosystem/consistency-readiness/dependency-graph.md",
-      "line": 55,
+      "line": 61,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-GRAPH-0002",
       "source": "docs/04-ecosystem/consistency-readiness/dependency-graph.md",
-      "line": 57,
+      "line": 63,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-GRAPH-0003",
       "source": "docs/04-ecosystem/consistency-readiness/dependency-graph.md",
-      "line": 59,
+      "line": 65,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-GRAPH-0004",
       "source": "docs/04-ecosystem/consistency-readiness/dependency-graph.md",
-      "line": 61,
+      "line": 67,
       "kind": "governance",
       "domain": null
     },
@@ -49575,8 +50265,8 @@
     },
     {
       "source": "docs/01-architecture/architecture-model.md",
-      "sha256": "3502ad8dee099bee92341af82477b99cf88bbb00e2c9ffef541500481f14ab56",
-      "lines": 609
+      "sha256": "666eb9115448a4f5f60209f8d7c141f7a1f5f2bf7f8a92fd0a0c6aab7bb0b5e4",
+      "lines": 615
     },
     {
       "source": "docs/01-architecture/behavioral-contracts.md",
@@ -51005,18 +51695,28 @@
     },
     {
       "source": "docs/02-capabilities/filesystem/atomic-replace.md",
-      "sha256": "99db830928ca455f570889aab4923b335e8f112cd6c228f37111b4ce53b5e7fe",
-      "lines": 57
+      "sha256": "aa1868cbbe8dd4af0b88e31775de80796b609c993f1f58c52660e8bf28f96029",
+      "lines": 61
     },
     {
       "source": "docs/02-capabilities/filesystem/benchmarks.md",
-      "sha256": "bc4911f43084a6ff2a274dac26b8e14c4a61b3c490f356aa61a9f8b8ce18351d",
-      "lines": 52
+      "sha256": "b4b3eced87f1e38065b4770b42cd1928aebdaf4eb7ab342ae76de11d47c9105d",
+      "lines": 64
     },
     {
       "source": "docs/02-capabilities/filesystem/conformance.md",
       "sha256": "b1b6be59c61ccadf480c3f0ca1c6d91efd42ea2849906ea12ea2b7cc3b5241ef",
       "lines": 127
+    },
+    {
+      "source": "docs/02-capabilities/filesystem/cross-cutting.md",
+      "sha256": "f7d5593a38e7cf43d7a6575b264cba2684490b0c3a2c60da4fe6d1a87afe33d1",
+      "lines": 24
+    },
+    {
+      "source": "docs/02-capabilities/filesystem/dependencies.md",
+      "sha256": "fc66a083345a8a46f6def9ddf6eff919edbb84b33b3c0f381814a48877da854d",
+      "lines": 38
     },
     {
       "source": "docs/02-capabilities/filesystem/directory.md",
@@ -51049,6 +51749,11 @@
       "lines": 18
     },
     {
+      "source": "docs/02-capabilities/filesystem/ownership.md",
+      "sha256": "64b0cba7c416acb477133b7866ff30227b5b5bdd24f7068d228665951d4005b8",
+      "lines": 31
+    },
+    {
       "source": "docs/02-capabilities/filesystem/path-model.md",
       "sha256": "d019b59f6235d1c01450299069b1d581d5086fcc2156b186401f30afc6ff3c51",
       "lines": 55
@@ -51059,9 +51764,14 @@
       "lines": 79
     },
     {
+      "source": "docs/02-capabilities/filesystem/promotion-review.md",
+      "sha256": "866e4a45d0d1abf0d8a1af1ee1388e76afd2c5418e45a29974e97c0a86da7c85",
+      "lines": 31
+    },
+    {
       "source": "docs/02-capabilities/filesystem/README.md",
-      "sha256": "5e2e971623cbd62ac692875a321b08668bdfb5f8ba0fbfb35457cecf56bba8bf",
-      "lines": 72
+      "sha256": "7f4dfa45be4fbef35e25921cf9c83c5de99b8004582914352db909ce18468de0",
+      "lines": 80
     },
     {
       "source": "docs/02-capabilities/filesystem/resolution-quality.md",
@@ -51070,13 +51780,23 @@
     },
     {
       "source": "docs/02-capabilities/filesystem/resolve.md",
-      "sha256": "6c908af62c88d944d73bd759235020d935bf1b2482f20d7f8ccfc1622c84a1a8",
-      "lines": 63
+      "sha256": "cfd8c02595b76520ecf644b06ae12064649ae25b0c4d2d51cb11975ca351ec5f",
+      "lines": 67
+    },
+    {
+      "source": "docs/02-capabilities/filesystem/source-review.md",
+      "sha256": "bf66b39ff001edf45f6d783cfe87b5ff9cd16005e23bd049050f9147704d8c5a",
+      "lines": 26
     },
     {
       "source": "docs/02-capabilities/filesystem/support-matrix.md",
       "sha256": "29235d3aded9d7065e31afb4696a7147c34cc17a56fcff09d88acfd6fd497fc6",
       "lines": 36
+    },
+    {
+      "source": "docs/02-capabilities/filesystem/traceability.md",
+      "sha256": "4e620db15889209623531818dd8ec9696815b9c57bde81edbc523ae257bb9df9",
+      "lines": 41
     },
     {
       "source": "docs/02-capabilities/graph-model.md",
@@ -54030,7 +54750,7 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/audit-report.md",
-      "sha256": "8adc62bb5c9fe1bbb1a58e0a7f9dacd4105a79d38e01e15f71cbdec11a57940d",
+      "sha256": "b3460e25efde2eba5c534dd83ebbdfea88da27829bcaf4412e3310980835c1bf",
       "lines": 68
     },
     {
@@ -54045,18 +54765,18 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/closure-backlog.md",
-      "sha256": "91f980fe9d2c1eb8a02a717dddf2d1fe6c81c2630b586792c09baeea00df5978",
+      "sha256": "37e06599f5cfbb10b2abbe21fc7079d00d71545e458be376f417d87d46d64a42",
       "lines": 19
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "sha256": "c2e0e8507bd1edea92880b04c6ee97545bc6b4f5e813f15c11a14b66ba1bbe3e",
-      "lines": 36
+      "sha256": "ea7cbd0178d380e8ce5046bcd76be03cfe2f5565686162b176a9e15cd27b33bf",
+      "lines": 37
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/dependency-graph.md",
-      "sha256": "49a378a4728e2d2c97ea86ab7c249670b3289f2d18562e14d589097dfcdefc13",
-      "lines": 68
+      "sha256": "9ef721e02543cdc70d97dd382dd87bd55b5672c4c6246ecbd740c67742d48305",
+      "lines": 74
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/domain-readiness-schema.md",
@@ -54085,12 +54805,12 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/promotion-scorecards.md",
-      "sha256": "2cefe8a8984fc67ac4997347aa8760eb3f525f4ddfe559f28aea0be8c8f3d596",
+      "sha256": "fd0a4163259193a425f0126a7e972b9e7705feb5383807ab308be3aabc2e4d43",
       "lines": 78
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/quality-matrix.md",
-      "sha256": "26dff08d6dda3cdcef178f16cba47666fbeb19ae2bae9a43c899ccc5b76ebefb",
+      "sha256": "f8032588ef3112b51c549e9cc7485258f3d354e21e3ef8cd4066ca4f871d4039",
       "lines": 73
     },
     {
@@ -54330,8 +55050,8 @@
     },
     {
       "source": "docs/06-roadmap/roadmap.md",
-      "sha256": "c4d6f88f9edcd2410c2ecd2f872b0a0537ddeb680ae75428c89b7ef490a3260b",
-      "lines": 225
+      "sha256": "05c6223ff9b6142e2770a8b88be7a29cefd342d5dbd7c5dabdc3c8c64d377f7d",
+      "lines": 229
     },
     {
       "source": "docs/adr/0001-capability-first-platform.md",

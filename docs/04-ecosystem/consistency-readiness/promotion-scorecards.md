@@ -28,7 +28,7 @@ The table uses conjunctive gates. It does not calculate a weighted score, and it
 | [data-transfer](../../02-capabilities/data-transfer/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | absent | **no** |
 | [devices](../../02-capabilities/devices/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | absent | **no** |
 | [display-color](../../02-capabilities/display-color/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | absent | **no** |
-| [filesystem](../../02-capabilities/filesystem/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | absent | **no** |
+| [filesystem](../../02-capabilities/filesystem/README.md) | pass | pass | pass | pass | pass | pass | pass | pass | proposed | **yes** |
 | [graphics](../../02-capabilities/graphics/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | absent | **no** |
 | [identity-governance](../../02-capabilities/identity-governance/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | absent | **no** |
 | [identity-session](../../02-capabilities/identity-session/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | absent | **no** |
@@ -75,4 +75,4 @@ The table uses conjunctive gates. It does not calculate a weighted score, and it
 - Contract/conformance/benchmark-plan passes prove that structured Draft specifications exist.
 - Assertion and benchmark maps prove planned traceability, not executable evidence.
 - Cross-cutting, source, and owner gates pass only from explicit `Review status` metadata in their authoritative domain artifacts; file presence and keywords are insufficient.
-- 3 domain(s) currently satisfy generated Experimental eligibility evidence: application-sync, runtime-time, windowing. Eligibility does not change maturity or authorize implementation; an explicit reviewed promotion record remains required.
+- 4 domain(s) currently satisfy generated Experimental eligibility evidence: application-sync, filesystem, runtime-time, windowing. Eligibility does not change maturity or authorize implementation; an explicit reviewed promotion record remains required.

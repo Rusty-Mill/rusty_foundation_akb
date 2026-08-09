@@ -42,6 +42,10 @@ Replace one destination namespace binding with a prepared regular-file resource 
 - Partial/inspect: provider reports a documented intermediate namespace or metadata state.
 - Indeterminate: loss of connection/device/provider state prevents reliable observation; caller must reconcile.
 
+## Dependencies
+
+`rm.filesystem.atomic-replace` **requires** `rm.filesystem.directory` for source/destination namespace authority and **requires** `rm.filesystem.file` for the prepared regular-file resource and its synchronization semantics. These edges do not imply automatic D1–D3 durability; the caller must select and verify the composed durability sequence.
+
 ## Platform realization
 
 | Platform | Candidate mechanism | Key variance |

@@ -28,7 +28,7 @@
 | [data-transfer](../../02-capabilities/data-transfer/README.md) | dedicated | yes | yes | yes | yes | yes | yes |
 | [devices](../../02-capabilities/devices/README.md) | embedded-unreviewed | yes | yes | yes | unknown | yes | yes |
 | [display-color](../../02-capabilities/display-color/README.md) | embedded-unreviewed | yes | yes | yes | unknown | yes | yes |
-| [filesystem](../../02-capabilities/filesystem/README.md) | embedded-unreviewed | yes | yes | unknown | yes | yes | yes |
+| [filesystem](../../02-capabilities/filesystem/README.md) | dedicated | yes | yes | yes | yes | yes | yes |
 | [graphics](../../02-capabilities/graphics/README.md) | embedded-unreviewed | yes | yes | unknown | unknown | yes | yes |
 | [identity-governance](../../02-capabilities/identity-governance/README.md) | dedicated | yes | yes | yes | yes | yes | yes |
 | [identity-session](../../02-capabilities/identity-session/README.md) | embedded-unreviewed | yes | yes | yes | unknown | yes | yes |

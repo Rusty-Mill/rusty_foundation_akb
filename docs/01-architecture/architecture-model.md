@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.83.0
+**Version:** 1.84.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -607,3 +607,9 @@ Those choices require domain evidence and the ADR/RFC process. Deferring them is
 - [Governance](../05-governance/governance.md)
 
 These documents should link to this model and elaborate their subject without independently redefining it.
+
+## 20. Filesystem readiness closure
+
+Filesystem foundations 0.1.1 apply the domain-readiness schema to lossless native paths, explicit directory authority, race-resistant resolution, positioned partial I/O, cancellation truth, metadata variance, atomic namespace replacement, and qualified durability. Stable semantic assertions and benchmark scenarios now cover every filesystem capability and benchmark requirement; source, cross-cutting, ownership, dependency/profile, and proposed-promotion reviews are explicit. The source-linked graph records only the three exact required edges declared by resolution and atomic replacement, alongside the existing optional cancellation edge.
+
+This evidence does not collapse a path into authority, an opened handle into permanent identity, atomic namespace visibility into persistence, or buffered completion into durability. Filesystem remains Draft: no native provider, filesystem family, R/D level, async runtime, public API, crate layout, benchmark budget, implementation trial, or release claim is authorized.
