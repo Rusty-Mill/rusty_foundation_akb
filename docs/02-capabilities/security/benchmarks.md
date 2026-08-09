@@ -31,6 +31,11 @@ Performance evidence must never weaken source choice, fail-closed behavior, memo
 | SEC-BENCH-011 | Concurrent derivation/close | parent fanout, concurrency, close race, successes/failures, contention, tail latency |
 | SEC-BENCH-012 | Transfer and delegation-depth enforcement | hop count, transport boundary, receiver policy, rejection/return path, cleanup latency |
 | SEC-BENCH-013 | Revocation observation | scope, alias set, operation phase, request-to-observation latency, survivors/indeterminate outcomes |
+| SEC-BENCH-014 | Restricted manifest validation and preparation | manifest shape, authority dimensions, provider discovery, validation/preparation latency, allocations/native calls, rejection cause |
+| SEC-BENCH-015 | Restricted creation, enforcement, verification, and release | native stages, restriction set, release boundary, p50/p95/p99, allocations/native calls, verified outcome |
+| SEC-BENCH-016 | Restricted readiness and supervised lifecycle | release-to-ready, ready-to-stop, descendant policy, shutdown/reap latency, terminal accounting |
+| SEC-BENCH-017 | Restricted failure, cancellation, and reconciliation | injection stage, cancellation phase, child execution oracle, authority/resource reconciliation latency and outcome |
+| SEC-BENCH-018 | Restricted abstraction overhead against equivalent native composition | exact mechanisms/constraints, stage deltas and ratios, conformance equivalence, residual assumptions |
 
 ### Authority-attenuation comparison requirements
 
@@ -39,6 +44,14 @@ Performance evidence must never weaken source choice, fail-closed behavior, memo
 - **RM-SECURITY-ATTENUATE-BENCH-0003:** Concurrency/transfer/revocation comparisons **MUST** bind identical alias topology, delegation depth, transport and receiver policy, close/revoke schedule, in-flight operations, terminal outcomes, and cleanup boundary.
 - **RM-SECURITY-ATTENUATE-BENCH-0004:** Every run **MUST** record provider artifact, OS/kernel/SDK, authority kind, native enforcement/identity/sandbox context, complete claim vector and bypass assumptions, concurrency/topology, samples/statistics, and conformance result without authority material.
 - **RM-SECURITY-ATTENUATE-BENCH-0005:** A faster baseline that drops an incomparable constraint, uses broader ambient credentials, weakens enforcement/alias/revocation semantics, or omits subset/bypass probes **MUST NOT** be treated as equivalent; numeric budgets require reviewed representative runs.
+
+### Restricted-execution comparison requirements
+
+- **RM-SECURITY-RESTRICTED-BENCH-0001:** Preparation comparisons **MUST** bind the same immutable manifest, authority inputs, provider discovery, validation, attenuation, and rejection semantics without releasing application-controlled code.
+- **RM-SECURITY-RESTRICTED-BENCH-0002:** Launch comparisons **MUST** report creation, restriction application, verification, release, readiness, supervision, termination, reaping, and cleanup as separate stages; creation alone **MUST NOT** count as success.
+- **RM-SECURITY-RESTRICTED-BENCH-0003:** Failure and cancellation comparisons **MUST** inject at every supported pre-release and post-release boundary and prove whether child code executed, which authority transferred, and how every child and prepared resource was reconciled.
+- **RM-SECURITY-RESTRICTED-BENCH-0004:** Every run **MUST** record exact OS/kernel/SDK, native mechanisms and configuration, manifest digest without sensitive values, enforced/degraded/unsupported constraints, supervision level, hardware/virtualization, toolchain/build, samples/statistics, and conformance outcome.
+- **RM-SECURITY-RESTRICTED-BENCH-0005:** A native baseline is equivalent only when it enforces and verifies the same constraints with the same release, inheritance, readiness, descendant, failure, cancellation, audit, and cleanup semantics; numeric budgets and native-performance claims require reviewed representative runs.
 
 ## Controls
 

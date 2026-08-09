@@ -1,7 +1,7 @@
 # Cross-domain contradiction ledger
 
 **Status:** Active reviewed evidence  
-**Scope:** Architecture model 1.91.0; schema-validated reviews, batch integration, capability dossiers, and governed security promotion units
+**Scope:** Architecture model 1.92.0; schema-validated reviews, batch integration, capability dossiers, and governed security promotion units
 
 The ledger records proposition-level review. “No contradiction found” is bounded to named sources and rules; it is not a repository-wide proof.
 
@@ -32,6 +32,7 @@ The ledger records proposition-level review. “No contradiction found” is bou
 | CL-023 | Secure-random provider provenance and integration evidence cannot be replaced by output uniqueness, statistics, entropy estimates, or cryptographic-looking samples. | [Random dossier](../../02-capabilities/security/random-readiness-review.md), [random contract](../../02-capabilities/security/random.md), [conformance](../../02-capabilities/security/conformance.md), [ADR-0161](../../adr/0161-random-output-tests-do-not-certify-unpredictability.md) | Resolved | Treat statistics only as bounded investigation triggers; retain no output-derived artifacts and bind claims to exact provider/module/configuration/lifecycle evidence. |
 | CL-024 | A0–A3 attenuation labels cannot collapse multidimensional subset, native enforcement, isolation, aliases, bypasses, transfer, and revocation evidence into a scalar security score. | [Attenuation dossier](../../02-capabilities/security/attenuation-readiness-review.md), [attenuation](../../02-capabilities/security/attenuation.md), [restricted execution](../../02-capabilities/security/restricted-execution.md), [ADR-0162](../../adr/0162-attenuation-enforcement-is-a-scoped-claim-vector-not-a-security-score.md) | Resolved | Bind exact authority kinds, constraint dimensions, mechanisms, contexts, claim vectors, aliases/bypasses, lifecycle, and consumer scope. |
 | CL-025 | Documentation-directory boundaries cannot silently define maturity, ownership, compatibility, release, or implementation boundaries for composite domains. | [Promotion-unit model](promotion-unit-model.md), [security registry](../../02-capabilities/security/promotion-units.md), [promotion decisions](promotion-decisions.md), [ADR-0163](../../adr/0163-maturity-promotion-units-follow-evidence-boundaries-not-directory-layout.md) | Resolved | Govern stable units by evidence/ownership/risk; keep shared evidence scoped and filesystem/crate/repository/package topology separate. |
+| CL-026 | Restricted execution cannot both require verified controls before child code and allow a provider to discover or silently apply weaker fallback after release. | [Restricted execution](../../02-capabilities/security/restricted-execution.md), [composition](../../02-capabilities/security/restricted-execution-dependencies.md), [dossier](../../02-capabilities/security/restricted-execution-readiness-review.md) | Resolved | Resolve required controls and any explicitly permitted degraded plan before release; otherwise fail and reconcile without application-controlled execution. |
 
 ## Finding rules
 

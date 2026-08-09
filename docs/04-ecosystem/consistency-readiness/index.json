@@ -4,12 +4,13 @@
   "authority": "docs/01-architecture/architecture-model.md",
   "generated_from": "Markdown; this index is derived and non-authoritative",
   "summary": {
-    "markdown_documents": 1162,
-    "internal_links": 2340,
-    "requirements": 5382,
+    "markdown_documents": 1168,
+    "internal_links": 2369,
+    "requirements": 5410,
     "domains": 62,
     "promotion_units": 7,
     "draft_promotion_units": 7,
+    "promotion_units_with_readiness_dossier": 2,
     "adrs": 163,
     "errors": 0,
     "warnings": 0,
@@ -18,7 +19,7 @@
     "domains_with_direct_requirement_assertion_map": 9,
     "domains_with_direct_benchmark_scenario_map": 9,
     "benchmark_scenarios": 62,
-    "external_sources": 639,
+    "external_sources": 647,
     "external_sources_with_review_record": 74,
     "domains_with_dedicated_cross_cutting_analysis": 31,
     "domains_with_complete_planned_traceability": 9,
@@ -1834,10 +1835,10 @@
       "id": "security",
       "source": "docs/02-capabilities/security/README.md",
       "status": "Draft domain analysis",
-      "requirements": 301,
-      "capability_requirements": 291,
+      "requirements": 329,
+      "capability_requirements": 314,
       "conformance_requirements": 0,
-      "benchmark_requirements": 10,
+      "benchmark_requirements": 15,
       "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
@@ -2269,6 +2270,7 @@
       "maturity": "Draft",
       "owner": "Authority semantics owner",
       "primary_source": "docs/02-capabilities/security/authority-model.md",
+      "readiness_dossier": null,
       "registry": "docs/02-capabilities/security/promotion-units.md"
     },
     {
@@ -2276,6 +2278,7 @@
       "maturity": "Draft",
       "owner": "Restricted-execution owner",
       "primary_source": "docs/02-capabilities/security/restricted-execution.md",
+      "readiness_dossier": "docs/02-capabilities/security/restricted-execution-readiness-review.md",
       "registry": "docs/02-capabilities/security/promotion-units.md"
     },
     {
@@ -2283,6 +2286,7 @@
       "maturity": "Draft",
       "owner": "Secure-random capability owner",
       "primary_source": "docs/02-capabilities/security/random.md",
+      "readiness_dossier": "docs/02-capabilities/security/random-readiness-review.md",
       "registry": "docs/02-capabilities/security/promotion-units.md"
     },
     {
@@ -2290,6 +2294,7 @@
       "maturity": "Draft",
       "owner": "Secret-protection owner",
       "primary_source": "docs/02-capabilities/security/secret-store.md",
+      "readiness_dossier": null,
       "registry": "docs/02-capabilities/security/promotion-units.md"
     },
     {
@@ -2297,6 +2302,7 @@
       "maturity": "Draft",
       "owner": "Cryptography and key-management owner",
       "primary_source": "docs/02-capabilities/security/crypto-README.md",
+      "readiness_dossier": null,
       "registry": "docs/02-capabilities/security/promotion-units.md"
     },
     {
@@ -2304,6 +2310,7 @@
       "maturity": "Draft",
       "owner": "PKI validation owner",
       "primary_source": "docs/02-capabilities/security/pki-README.md",
+      "readiness_dossier": null,
       "registry": "docs/02-capabilities/security/promotion-units.md"
     },
     {
@@ -2311,6 +2318,7 @@
       "maturity": "Draft",
       "owner": "Certificate issuance owner",
       "primary_source": "docs/02-capabilities/security/pki-issuance-README.md",
+      "readiness_dossier": null,
       "registry": "docs/02-capabilities/security/promotion-units.md"
     }
   ],
@@ -4350,7 +4358,8 @@
       "host": "developer.apple.com",
       "sources": [
         "docs/02-capabilities/security/attenuation-source-review.md",
-        "docs/02-capabilities/security/platform-research.md"
+        "docs/02-capabilities/security/platform-research.md",
+        "docs/02-capabilities/security/restricted-execution-source-review.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -4359,7 +4368,8 @@
       "host": "developer.apple.com",
       "sources": [
         "docs/02-capabilities/security/attenuation-source-review.md",
-        "docs/02-capabilities/security/platform-research.md"
+        "docs/02-capabilities/security/platform-research.md",
+        "docs/02-capabilities/security/restricted-execution-source-review.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -4523,6 +4533,14 @@
       "host": "developer.apple.com",
       "sources": [
         "docs/02-capabilities/package-management/platform-research.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
+      "url": "https://developer.apple.com/documentation/xpc",
+      "host": "developer.apple.com",
+      "sources": [
+        "docs/02-capabilities/security/restricted-execution-source-review.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -4869,6 +4887,14 @@
       "host": "docs.kernel.org",
       "sources": [
         "docs/02-capabilities/storage/platform-research.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
+      "url": "https://docs.kernel.org/admin-guide/cgroup-v2.html",
+      "host": "docs.kernel.org",
+      "sources": [
+        "docs/02-capabilities/security/restricted-execution-source-review.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -6197,7 +6223,8 @@
       "host": "learn.microsoft.com",
       "sources": [
         "docs/02-capabilities/process/platform-research.md",
-        "docs/02-capabilities/process/source-review.md"
+        "docs/02-capabilities/process/source-review.md",
+        "docs/02-capabilities/security/restricted-execution-source-review.md"
       ],
       "freshness": "reviewed-in-domain-source-review"
     },
@@ -6215,9 +6242,18 @@
       "host": "learn.microsoft.com",
       "sources": [
         "docs/02-capabilities/process/platform-research.md",
-        "docs/02-capabilities/process/source-review.md"
+        "docs/02-capabilities/process/source-review.md",
+        "docs/02-capabilities/security/restricted-execution-source-review.md"
       ],
       "freshness": "reviewed-in-domain-source-review"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/procthread/process-security-and-access-rights",
+      "host": "learn.microsoft.com",
+      "sources": [
+        "docs/02-capabilities/security/restricted-execution-source-review.md"
+      ],
+      "freshness": "unreviewed-by-generator"
     },
     {
       "url": "https://learn.microsoft.com/en-us/windows/win32/secauthn/creating-a-secure-connection-using-schannel",
@@ -6249,7 +6285,8 @@
       "host": "learn.microsoft.com",
       "sources": [
         "docs/02-capabilities/security/attenuation-source-review.md",
-        "docs/02-capabilities/security/platform-research.md"
+        "docs/02-capabilities/security/platform-research.md",
+        "docs/02-capabilities/security/restricted-execution-source-review.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -6273,7 +6310,8 @@
       "url": "https://learn.microsoft.com/en-us/windows/win32/secauthz/restricted-tokens",
       "host": "learn.microsoft.com",
       "sources": [
-        "docs/02-capabilities/security/platform-research.md"
+        "docs/02-capabilities/security/platform-research.md",
+        "docs/02-capabilities/security/restricted-execution-source-review.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -6823,6 +6861,14 @@
       "freshness": "reviewed-in-domain-source-review"
     },
     {
+      "url": "https://man7.org/linux/man-pages/man2/clone.2.html",
+      "host": "man7.org",
+      "sources": [
+        "docs/02-capabilities/security/restricted-execution-source-review.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
       "url": "https://man7.org/linux/man-pages/man2/close_range.2.html",
       "host": "man7.org",
       "sources": [
@@ -6830,6 +6876,14 @@
         "docs/02-capabilities/process/source-review.md"
       ],
       "freshness": "reviewed-in-domain-source-review"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man2/execve.2.html",
+      "host": "man7.org",
+      "sources": [
+        "docs/02-capabilities/security/restricted-execution-source-review.md"
+      ],
+      "freshness": "unreviewed-by-generator"
     },
     {
       "url": "https://man7.org/linux/man-pages/man2/fsync.2.html",
@@ -6953,6 +7007,14 @@
       "freshness": "reviewed-in-domain-source-review"
     },
     {
+      "url": "https://man7.org/linux/man-pages/man2/prctl.2.html",
+      "host": "man7.org",
+      "sources": [
+        "docs/02-capabilities/security/restricted-execution-source-review.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
       "url": "https://man7.org/linux/man-pages/man2/pread.2.html",
       "host": "man7.org",
       "sources": [
@@ -6974,6 +7036,14 @@
       "host": "man7.org",
       "sources": [
         "docs/02-capabilities/threading/platform-research.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man2/seccomp.2.html",
+      "host": "man7.org",
+      "sources": [
+        "docs/02-capabilities/security/restricted-execution-source-review.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -7064,7 +7134,8 @@
       "host": "man7.org",
       "sources": [
         "docs/02-capabilities/security/attenuation-source-review.md",
-        "docs/02-capabilities/security/platform-research.md"
+        "docs/02-capabilities/security/platform-research.md",
+        "docs/02-capabilities/security/restricted-execution-source-review.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -7098,6 +7169,14 @@
       "host": "man7.org",
       "sources": [
         "docs/02-capabilities/storage/platform-research.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man7/namespaces.7.html",
+      "host": "man7.org",
+      "sources": [
+        "docs/02-capabilities/security/restricted-execution-source-review.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -42353,7 +42432,7 @@
     {
       "id": "RM-SECURITY-ATTENUATE-BENCH-0001",
       "source": "docs/02-capabilities/security/benchmarks.md",
-      "line": 37,
+      "line": 42,
       "kind": "benchmark",
       "domain": "security",
       "benchmark_scenarios": []
@@ -42361,7 +42440,7 @@
     {
       "id": "RM-SECURITY-ATTENUATE-BENCH-0002",
       "source": "docs/02-capabilities/security/benchmarks.md",
-      "line": 38,
+      "line": 43,
       "kind": "benchmark",
       "domain": "security",
       "benchmark_scenarios": []
@@ -42369,7 +42448,7 @@
     {
       "id": "RM-SECURITY-ATTENUATE-BENCH-0003",
       "source": "docs/02-capabilities/security/benchmarks.md",
-      "line": 39,
+      "line": 44,
       "kind": "benchmark",
       "domain": "security",
       "benchmark_scenarios": []
@@ -42377,7 +42456,7 @@
     {
       "id": "RM-SECURITY-ATTENUATE-BENCH-0004",
       "source": "docs/02-capabilities/security/benchmarks.md",
-      "line": 40,
+      "line": 45,
       "kind": "benchmark",
       "domain": "security",
       "benchmark_scenarios": []
@@ -42385,7 +42464,47 @@
     {
       "id": "RM-SECURITY-ATTENUATE-BENCH-0005",
       "source": "docs/02-capabilities/security/benchmarks.md",
-      "line": 41,
+      "line": 46,
+      "kind": "benchmark",
+      "domain": "security",
+      "benchmark_scenarios": []
+    },
+    {
+      "id": "RM-SECURITY-RESTRICTED-BENCH-0001",
+      "source": "docs/02-capabilities/security/benchmarks.md",
+      "line": 50,
+      "kind": "benchmark",
+      "domain": "security",
+      "benchmark_scenarios": []
+    },
+    {
+      "id": "RM-SECURITY-RESTRICTED-BENCH-0002",
+      "source": "docs/02-capabilities/security/benchmarks.md",
+      "line": 51,
+      "kind": "benchmark",
+      "domain": "security",
+      "benchmark_scenarios": []
+    },
+    {
+      "id": "RM-SECURITY-RESTRICTED-BENCH-0003",
+      "source": "docs/02-capabilities/security/benchmarks.md",
+      "line": 52,
+      "kind": "benchmark",
+      "domain": "security",
+      "benchmark_scenarios": []
+    },
+    {
+      "id": "RM-SECURITY-RESTRICTED-BENCH-0004",
+      "source": "docs/02-capabilities/security/benchmarks.md",
+      "line": 53,
+      "kind": "benchmark",
+      "domain": "security",
+      "benchmark_scenarios": []
+    },
+    {
+      "id": "RM-SECURITY-RESTRICTED-BENCH-0005",
+      "source": "docs/02-capabilities/security/benchmarks.md",
+      "line": 54,
       "kind": "benchmark",
       "domain": "security",
       "benchmark_scenarios": []
@@ -44266,6 +44385,190 @@
       "id": "RM-SECURITY-RANDOM-0012",
       "source": "docs/02-capabilities/security/random.md",
       "line": 30,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-RESTRICTED-QUALITY-0001",
+      "source": "docs/02-capabilities/security/restricted-execution-cross-cutting-review.md",
+      "line": 20,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-RESTRICTED-QUALITY-0002",
+      "source": "docs/02-capabilities/security/restricted-execution-cross-cutting-review.md",
+      "line": 22,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-RESTRICTED-QUALITY-0003",
+      "source": "docs/02-capabilities/security/restricted-execution-cross-cutting-review.md",
+      "line": 24,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-RESTRICTED-QUALITY-0004",
+      "source": "docs/02-capabilities/security/restricted-execution-cross-cutting-review.md",
+      "line": 26,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-RESTRICTED-DEPENDENCY-0001",
+      "source": "docs/02-capabilities/security/restricted-execution-dependencies.md",
+      "line": 33,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-RESTRICTED-DEPENDENCY-0002",
+      "source": "docs/02-capabilities/security/restricted-execution-dependencies.md",
+      "line": 35,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-RESTRICTED-DEPENDENCY-0003",
+      "source": "docs/02-capabilities/security/restricted-execution-dependencies.md",
+      "line": 37,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-RESTRICTED-DEPENDENCY-0004",
+      "source": "docs/02-capabilities/security/restricted-execution-dependencies.md",
+      "line": 39,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-RESTRICTED-DEPENDENCY-0005",
+      "source": "docs/02-capabilities/security/restricted-execution-dependencies.md",
+      "line": 41,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-RESTRICTED-OWNER-0001",
+      "source": "docs/02-capabilities/security/restricted-execution-ownership.md",
+      "line": 25,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-RESTRICTED-OWNER-0002",
+      "source": "docs/02-capabilities/security/restricted-execution-ownership.md",
+      "line": 27,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-RESTRICTED-OWNER-0003",
+      "source": "docs/02-capabilities/security/restricted-execution-ownership.md",
+      "line": 29,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-RESTRICTED-OWNER-0004",
+      "source": "docs/02-capabilities/security/restricted-execution-ownership.md",
+      "line": 31,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-RESTRICTED-READINESS-0001",
+      "source": "docs/02-capabilities/security/restricted-execution-readiness-review.md",
+      "line": 23,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-RESTRICTED-READINESS-0002",
+      "source": "docs/02-capabilities/security/restricted-execution-readiness-review.md",
+      "line": 25,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-RESTRICTED-READINESS-0003",
+      "source": "docs/02-capabilities/security/restricted-execution-readiness-review.md",
+      "line": 27,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-RESTRICTED-SOURCE-0001",
+      "source": "docs/02-capabilities/security/restricted-execution-source-review.md",
+      "line": 19,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-RESTRICTED-SOURCE-0002",
+      "source": "docs/02-capabilities/security/restricted-execution-source-review.md",
+      "line": 21,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-RESTRICTED-SOURCE-0003",
+      "source": "docs/02-capabilities/security/restricted-execution-source-review.md",
+      "line": 23,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-RESTRICTED-SOURCE-0004",
+      "source": "docs/02-capabilities/security/restricted-execution-source-review.md",
+      "line": 25,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-RESTRICTED-TRACE-0001",
+      "source": "docs/02-capabilities/security/restricted-execution-traceability.md",
+      "line": 29,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-RESTRICTED-TRACE-0002",
+      "source": "docs/02-capabilities/security/restricted-execution-traceability.md",
+      "line": 31,
+      "kind": "capability",
+      "domain": "security",
+      "assertions": []
+    },
+    {
+      "id": "RM-SECURITY-RESTRICTED-TRACE-0003",
+      "source": "docs/02-capabilities/security/restricted-execution-traceability.md",
+      "line": 33,
       "kind": "capability",
       "domain": "security",
       "assertions": []
@@ -50543,28 +50846,28 @@
     {
       "id": "RM-READINESS-CONTRADICTION-0001",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 38,
+      "line": 39,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0002",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 40,
+      "line": 41,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0003",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 42,
+      "line": 43,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0004",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 44,
+      "line": 45,
       "kind": "governance",
       "domain": null
     },
@@ -52589,8 +52892,8 @@
     },
     {
       "source": "docs/01-architecture/architecture-model.md",
-      "sha256": "3ebdce4053725a70674299952c6f824dd61f28a1e7761bb341d5889451b22ee0",
-      "lines": 655
+      "sha256": "ee1e3529d2c67bf7a5f29ea1821b742ed5a94c53519d769ac90cd791b4fce6e4",
+      "lines": 657
     },
     {
       "source": "docs/01-architecture/behavioral-contracts.md",
@@ -56219,8 +56522,8 @@
     },
     {
       "source": "docs/02-capabilities/security/benchmarks.md",
-      "sha256": "58d39750169f398d71c0550f894d87e63909daf281df0151db09c869821cd509",
-      "lines": 49
+      "sha256": "90f93b5d579de92217bac19e7040612782468f90472c54728d18530b9d9638e8",
+      "lines": 62
     },
     {
       "source": "docs/02-capabilities/security/conformance.md",
@@ -56424,7 +56727,7 @@
     },
     {
       "source": "docs/02-capabilities/security/promotion-units.md",
-      "sha256": "0ff97be046a27b6d86275b7e1740d03e1744ed68c1f3d5046504300ce6858e9b",
+      "sha256": "2cfa48a76ed8bab7f09414b8152bec12aaa03d48cb2b9a0cff987bc696cded6a",
       "lines": 53
     },
     {
@@ -56464,8 +56767,38 @@
     },
     {
       "source": "docs/02-capabilities/security/README.md",
-      "sha256": "7ca1c5aca4990e7173626940d5467517dbd3dd45253b8a2892d20a26b52ced18",
-      "lines": 116
+      "sha256": "2081c6b40d60c9f8b728bce11de9136f3ede7d94326828bc9b5b26de56245aa7",
+      "lines": 122
+    },
+    {
+      "source": "docs/02-capabilities/security/restricted-execution-cross-cutting-review.md",
+      "sha256": "aee13e4f732ddf10795bb098a317469096546504df487e9d8b7a42f44cb9bca8",
+      "lines": 26
+    },
+    {
+      "source": "docs/02-capabilities/security/restricted-execution-dependencies.md",
+      "sha256": "9414357bc3735142ac68a1adb012b5c0fd386a50fa53391b57f76145fa2519f6",
+      "lines": 41
+    },
+    {
+      "source": "docs/02-capabilities/security/restricted-execution-ownership.md",
+      "sha256": "7315ff2737832fcefea9f95366cc485cb24d73f3195d8a5853ecec6fffe3070c",
+      "lines": 31
+    },
+    {
+      "source": "docs/02-capabilities/security/restricted-execution-readiness-review.md",
+      "sha256": "adcd1cffbaf46e03bce68d019983c072a5f9528155f3f7a9153b7584fb25bf5f",
+      "lines": 27
+    },
+    {
+      "source": "docs/02-capabilities/security/restricted-execution-source-review.md",
+      "sha256": "a5563ca0526aa04dd9030e295d381085e557cb2358f432daa815a4a770d6616b",
+      "lines": 25
+    },
+    {
+      "source": "docs/02-capabilities/security/restricted-execution-traceability.md",
+      "sha256": "85803e587c2bac40e5cd48776be83b4c13effe16af3c3c7de97d3176c712326f",
+      "lines": 33
     },
     {
       "source": "docs/02-capabilities/security/restricted-execution.md",
@@ -57229,8 +57562,8 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/audit-report.md",
-      "sha256": "746475df7eb1a8faeebe9e286f3c3ead24a6f58cc0455c96e3c45789476baea4",
-      "lines": 69
+      "sha256": "5c5f77771012ad2de6778d30d7edaada9acd5712e7c30886db487e0118b1c100",
+      "lines": 70
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/audit-rules.md",
@@ -57244,13 +57577,13 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/closure-backlog.md",
-      "sha256": "4466b4a3ef5086264ead3f9e5a2f1a29fe650d927747c738ee3a638695605fbc",
+      "sha256": "0dee765d3046105c49d6b35fff2f531af4705675938575672407b5d93bd1b626",
       "lines": 23
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "sha256": "a001fb2878c11fc4d9130a2c98433877ca3a59d4ed2af7580eaa4af11e074049",
-      "lines": 44
+      "sha256": "b7393749aac84d21af89b02caa106bfba29e2aad6fcf008140c3cf39335f5e28",
+      "lines": 45
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/dependency-graph.md",
@@ -57294,7 +57627,7 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/promotion-unit-model.md",
-      "sha256": "ae16897eb30a285073411fec855b692e5075b4c76a40bfb47ff5624342277506",
+      "sha256": "2990beee3f2afadc4596558088cdeefd47a6281905f099229804e67c106bb9ff",
       "lines": 57
     },
     {
@@ -57539,8 +57872,8 @@
     },
     {
       "source": "docs/06-roadmap/roadmap.md",
-      "sha256": "bcd6a6be4695602e70a525473475c00342203ab597397c6a910b510bb1e9d3a7",
-      "lines": 257
+      "sha256": "5da6a33fdefff48c7f3d3171fb7ad2884e455801c162bfd41232caa794452b28",
+      "lines": 261
     },
     {
       "source": "docs/adr/0001-capability-first-platform.md",

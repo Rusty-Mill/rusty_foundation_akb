@@ -34,11 +34,11 @@ flowchart TD
 
 Composite directories publish `promotion-units.md`. Each machine-indexed row has this exact shape:
 
-| Unit | Maturity | Accountable role | Primary specification | Boundary summary |
-|---|---|---|---|---|
-| `rm.promotion.example.unit` | Draft | Example owner | [Primary](README.md) | Concise governed scope |
+| Unit | Maturity | Accountable role | Primary specification | Readiness dossier | Boundary summary |
+|---|---|---|---|---|---|
+| `rm.promotion.example.unit` | Draft | Example owner | [Primary](README.md) | [Dossier](README.md) | Concise governed scope |
 
-The primary specification must exist. Unit identifiers are repository-unique. Maturity remains governed by explicit decision records; editing a registry row without the required accepted decision is invalid governance even if structurally parseable.
+The primary specification and any linked readiness dossier must exist. Use an em dash when no complete unit dossier exists. Unit identifiers are repository-unique. Dossier presence means only that the evidence bundle is addressable; it does not establish eligibility, maturity, implementation authority, or release authority. Maturity remains governed by explicit decision records; editing a registry row without the required accepted decision is invalid governance even if structurally parseable.
 
 ## Evidence and aggregation
 
@@ -54,4 +54,4 @@ Directory-level reports aggregate unit state conjunctively and expose partial co
 
 **RM-READINESS-UNIT-0004:** Directory reorganization is optional and separately governed. Partitioning maturity units MUST NOT require premature file moves, crate boundaries, repositories, packages, or implementation topology.
 
-**RM-READINESS-UNIT-0005:** Generated indexes validate registry identity and source integrity but MUST NOT change maturity or authorize implementation.
+**RM-READINESS-UNIT-0005:** Generated indexes validate registry identity, primary-source integrity, and optional dossier integrity but MUST NOT infer dossier completeness, change maturity, or authorize implementation.

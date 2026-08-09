@@ -85,6 +85,12 @@ flowchart TD
 - [`rm.security.secret-store`](secret-store.md)
 - [Secret storage platform research](secret-platform-research.md)
 - [Restricted execution platform service](restricted-execution.md)
+- [Restricted-execution promotion-unit readiness dossier](restricted-execution-readiness-review.md)
+- [Restricted-execution assertion and benchmark traceability](restricted-execution-traceability.md)
+- [Restricted-execution dependency and profile composition](restricted-execution-dependencies.md)
+- [Restricted-execution cross-cutting review](restricted-execution-cross-cutting-review.md)
+- [Restricted-execution source review](restricted-execution-source-review.md)
+- [Restricted-execution ownership and bounded trial plan](restricted-execution-ownership.md)
 - [Conformance specification](conformance.md)
 - [Benchmark specification](benchmarks.md)
 - [Cross-domain security review checklist](review-checklist.md)
@@ -113,4 +119,4 @@ flowchart TD
 - [PKI conformance](pki-conformance.md)
 - [PKI benchmarks](pki-benchmarks.md)
 
-The secure-random dossier is capability-scoped. It does not constitute a security-domain promotion review: authority, restricted execution, secrets, cryptography, PKI, and issuance retain independent incomplete readiness evidence.
+The secure-random and restricted-execution dossiers are promotion-unit-scoped. Neither constitutes a security-domain promotion review: authority, secrets, cryptography, PKI, and issuance retain independent incomplete readiness evidence, and all units remain Draft.

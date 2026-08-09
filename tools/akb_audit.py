@@ -36,7 +36,7 @@ BENCHMARK_ROW_RE = re.compile(
     re.MULTILINE,
 )
 PROMOTION_UNIT_ROW_RE = re.compile(
-    r"^\| `(?P<id>rm\.promotion\.[a-z0-9.-]+)` \| (?P<maturity>Draft|Experimental|Stable) \| (?P<owner>[^|]+) \| \[(?P<label>[^]]+)\]\((?P<source>[^)]+)\) \|",
+    r"^\| `(?P<id>rm\.promotion\.[a-z0-9.-]+)` \| (?P<maturity>Draft|Experimental|Stable) \| (?P<owner>[^|]+) \| \[(?P<label>[^]]+)\]\((?P<source>[^)]+)\) \| (?P<dossier>—|\[(?P<dossier_label>[^]]+)\]\((?P<dossier_source>[^)]+)\)) \|",
     re.MULTILINE,
 )
 
@@ -437,12 +437,17 @@ def inspect(root: Path) -> tuple[dict[str, object], list[Finding]]:
             primary = unit_source.parent / match.group("source")
             if not primary.exists():
                 findings.append(Finding("error", "promotion-unit-source-exists", relative(unit_source, root), f"missing primary source {match.group('source')}"))
+            dossier_source = match.group("dossier_source")
+            dossier = unit_source.parent / dossier_source if dossier_source else None
+            if dossier is not None and not dossier.exists():
+                findings.append(Finding("error", "promotion-unit-dossier-exists", relative(unit_source, root), f"missing readiness dossier {dossier_source}"))
             promotion_units.append(
                 {
                     "id": unit_id,
                     "maturity": match.group("maturity"),
                     "owner": match.group("owner").strip(),
                     "primary_source": relative(primary, root) if primary.exists() else match.group("source"),
+                    "readiness_dossier": relative(dossier, root) if dossier is not None and dossier.exists() else dossier_source,
                     "registry": relative(unit_source, root),
                 }
             )
@@ -478,6 +483,7 @@ def inspect(root: Path) -> tuple[dict[str, object], list[Finding]]:
             "domains": len(domains),
             "promotion_units": len(promotion_units),
             "draft_promotion_units": sum(item["maturity"] == "Draft" for item in promotion_units),
+            "promotion_units_with_readiness_dossier": sum(bool(item["readiness_dossier"]) for item in promotion_units),
             "adrs": len(adr_files),
             "errors": sum(item.severity == "error" for item in findings),
             "warnings": sum(item.severity == "warning" for item in findings),
@@ -545,6 +551,7 @@ This report is deterministic and contains no claim that file presence proves sem
 | Unique normative requirements | {summary['requirements']:,} |
 | Capability domains | {summary['domains']:,} |
 | Governed subdomain promotion units | {summary['promotion_units']:,} ({summary['draft_promotion_units']:,} Draft) |
+| Promotion units with linked readiness dossier | {summary['promotion_units_with_readiness_dossier']:,} / {summary['promotion_units']:,} |
 | Indexed ADRs | {summary['adrs']:,} |
 | External source URLs inventoried | {summary['external_sources']:,} |
 | External URLs with schema-valid domain review | {summary['external_sources_with_review_record']:,} |
