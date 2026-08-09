@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.19.0 |
+| Version | 0.20.0 |
 | Extends | [`rm.profile.foundation.server` 1.23.0](foundation-server.md) |
 | Purpose | Operate software publication, authenticated repository metadata, mirrors, advisories, and emergency response without claiming a complete hosted registry product |
 
@@ -67,8 +67,11 @@
 
 **RM-PROFILE-REPOSITORY-OPERATOR-0028:** Repository privacy composes Server 1.23.0 for accounts, maintainers, publishers, download/security telemetry, support, advisories, abuse/fraud, mirrors, recipients/processors, and analytics with explicit purpose plans, minimization, consent/preference where selected, lineage, rights/erasure/holds, secure exports, and no built-in legal/compliance conclusion.
 
+**RM-PROFILE-REPOSITORY-OPERATOR-0029:** Repository identity governance composes Server 1.24.0 with immutable maintainer/publisher/service/tenant generations, organization/team membership evidence, invitations/federation, scoped publication entitlements, approval/SoD/access-review policy, emergency roles, and deprovisioning across sessions, credentials, signing/publishing grants, namespaces, artifacts, advisories, mirrors, and ownership without inferring publication authority from directory membership.
+
 ## History
 
+- **0.20.0:** Rebases on Server 1.24.0 and constrains repository identity governance to generation-bound maintainers, teams, publication entitlements, approvals/reviews, emergency roles, ownership, and complete credential/session/resource reconciliation.
 - **0.19.0:** Rebases on Server 1.23.0 and constrains repository privacy to explicit purposes, minimized account/telemetry data, recipient/processor lineage, rights and scoped erasure, secure exports, and legal-policy separation.
 - **0.18.0:** Rebases on Server 1.22.0 and constrains repository classification to issuer-qualified immutable lineage, private sharing, protected transfer, governed downgrade, publication DLP, and separated release authority.
 - **0.17.0:** Rebases on Server 1.21.0 and constrains repository inspection to digest-pinned evidence graphs, provider freshness/privacy, isolated derivation, publication gates, and explicit nonclaims.

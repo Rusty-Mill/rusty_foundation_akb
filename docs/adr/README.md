@@ -127,5 +127,7 @@
 | [0123](0123-downgrade-and-declassification-are-authorized-transitions.md) | Downgrade and declassification are authorized transitions | Accepted |
 | [0124](0124-consent-is-a-revocable-purpose-scoped-grant.md) | Consent is a revocable purpose-scoped grant, not universal processing authority | Accepted |
 | [0125](0125-erasure-is-a-scoped-lineage-reconciliation-workflow.md) | Erasure is a scoped lineage-reconciliation workflow | Accepted |
+| [0126](0126-directory-membership-is-evidence-not-effective-authority.md) | Directory membership is evidence, not effective authority | Accepted |
+| [0127](0127-deprovisioning-is-multi-boundary-reconciliation.md) | Deprovisioning is multi-boundary reconciliation, not account disablement | Accepted |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

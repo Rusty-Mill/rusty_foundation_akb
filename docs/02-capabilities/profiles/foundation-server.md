@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 1.23.0 |
+| Version | 1.24.0 |
 | Purpose | Long-running non-interactive service foundation with bounded shutdown and protected credentials |
 
 ## Workload assumptions
@@ -95,6 +95,9 @@ No interactive desktop session, unattended restart, concurrent I/O, explicit ser
 - **RM-PROFILE-FOUNDATION-SERVER-0077:** Privacy engineering `>=0.1.0,<0.2.0` is conditional for personal or linkable data, consent/preferences, multiple purposes/recipients/processors/regions, privacy rights, or deidentification. It binds subject/role/data and lineage, purpose/processing plan, product legal-policy evidence, grants, minimization, retention/holds, providers, authority, and audit.
 - **RM-PROFILE-FOUNDATION-SERVER-0078:** Consent is granular revocable purpose evidence, not universal processing authority. Every data action is plan- and policy-bound; rights cases verify identity/agency proportionally; erasure reconciles named live/derived/recipient/log/backup/model boundaries and reports residuals without claiming universal disappearance.
 - **RM-PROFILE-FOUNDATION-SERVER-0079:** Evidence covers subject graphs/verification, all data actions/purpose transitions, consent/refusal/withdrawal/preference histories, minimization projections, lineage/secondary use, processors/transfers/regions, retention/holds, every rights workflow, exports/corrections, deidentification/privacy budgets, restore/no-resurrection, privacy/audit/accessibility, and benchmarks.
+- **RM-PROFILE-FOUNDATION-SERVER-0080:** Identity governance `>=0.1.0,<0.2.0` is conditional for managed users/workloads/accounts/groups/tenants, provisioning, federation/guests, access requests/reviews, or joiner-mover-leaver workflows. It binds sources, immutable identities/generations, schemas/mappings, policy/workflow/provider generations, authority, deadlines, and audit/privacy mode.
+- **RM-PROFILE-FOUNDATION-SERVER-0081:** Directory facts and membership are evidence, not entitlement or effective authority. Provisioning and deprovisioning reconcile desired and observed generations across directory, group, entitlement, session, credential, resource, ownership, and downstream-provider boundaries with explicit partial results and residuals.
+- **RM-PROFILE-FOUNDATION-SERVER-0082:** Evidence covers aliases/correlation/merge/split, tenants/invitations/guests/federation, queries/pages/change recovery, SCIM/LDAP/native mapping loss, static/dynamic/nested groups, lifecycle histories, requests/approvals/reviews/SoD, privilege/emergency access, dormant/orphan accounts, deprovisioning/no-resurrection, privacy/accessibility, provider differentials, and benchmarks.
 
 ## Operational constraints
 
@@ -102,6 +105,7 @@ Deadline timers and cancellation support bounded multi-phase shutdown. Sync path
 
 ## History
 
+- **1.24.0:** Adds conditional versioned directory and identity governance, loss-aware provisioning mappings, membership evidence, lifecycle and access-governance workflows, privilege/emergency handling, multi-boundary deprovisioning, conformance, and benchmarks.
 - **1.23.0:** Adds conditional privacy-purpose plans, granular consent/preferences, minimization, lineage/secondary use, processors/transfers, rights workflows, scoped erasure, deidentification, derived-system recovery, conformance, and benchmarks.
 - **1.22.0:** Adds conditional issuer-scoped classification assertions, lineage, governed downgrade, independently evidenced protection, channel-bound DLP, accessible mediation, cross-tenant/offline/revocation semantics, conformance, and benchmarks.
 - **1.21.0:** Adds conditional multi-evidence content identification, recursive restricted inspection, quarantine/origin propagation, malware/reputation boundaries, inert previews, generation-producing transformations, conformance, and benchmarks.

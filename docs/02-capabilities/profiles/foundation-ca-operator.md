@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Status | Draft |
-| Version | 0.18.0 |
+| Version | 0.19.0 |
 | Extends | [`rm.profile.foundation.server` 1.23.0](foundation-server.md) |
 | Purpose | Operate registration, certificate issuance, renewal, status, and CA lifecycle without claiming a complete public or enterprise CA product |
 
@@ -59,8 +59,11 @@
 
 **RM-PROFILE-CA-OPERATOR-0024:** CA privacy composes Server 1.23.0 for account/identity/validation/attestation/contact/audit/security data with exact issuance/status/security/legal-purpose plans, minimized projections, processor/region routes, retention/holds, subject rights and scoped erasure where policy permits, and no inference that privacy workflow can alter immutable certificate/ledger/trust facts.
 
+**RM-PROFILE-CA-OPERATOR-0025:** CA identity governance composes Server 1.24.0 with immutable operator/approver/auditor/service/tenant generations, ceremony and issuance entitlements, separation of duties, quorum/access reviews, JIT/emergency roles, and deprovisioning across directory, sessions, credentials, HSM/key shares, issuance/status/transparency authority, ledgers, backups, and ownership without inferring key or issuance authority from membership.
+
 ## History
 
+- **0.19.0:** Rebases on Server 1.24.0 and constrains CA identity governance to immutable operator roles, ceremony/issuance entitlements, quorum/SoD/reviews, emergency access, and complete credential/key/session/resource reconciliation.
 - **0.18.0:** Rebases on Server 1.23.0 and constrains CA privacy to explicit issuance/security purposes, minimized identity evidence, processors/regions, rights/holds/scoped erasure, and preservation of immutable certificate/ledger facts.
 - **0.17.0:** Rebases on Server 1.22.0 and constrains CA classification to compartmented immutable evidence, protected channels, quorum downgrade, DLP, offline/revocation, and separated key/issuance/trust authority.
 - **0.16.0:** Rebases on Server 1.21.0 and constrains CA content inspection to private generation-bound evidence, bounded recursion, quarantine, isolated derivation, and separated issuance/key/trust authority.
