@@ -35,6 +35,7 @@ flowchart TD
 - [Consistency and readiness model](model.md)
 - [Audit rules and finding lifecycle](audit-rules.md)
 - [Maturity and promotion gates](maturity-promotion.md)
+- [Benchmark scenario and run traceability](benchmark-traceability.md)
 - [Source-linked typed dependency graph](dependency-graph.md)
 - [Canonical shared semantic vocabulary](vocabulary.md)
 - [Cross-domain contradiction ledger](contradiction-ledger.md)

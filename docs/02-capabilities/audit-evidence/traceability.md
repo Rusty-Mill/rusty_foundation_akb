@@ -28,3 +28,14 @@ Assertion identifiers use `rm.assertion.<domain>.<semantic-scope>@<major>`. Iden
 **RM-AUDIT-TRACE-0003:** A source-set mapping is valid only while each listed file has one coherent verification scope; a requirement that needs a different oracle MUST receive an explicit assertion mapping rather than inherit an unsuitable file mapping.
 
 **RM-AUDIT-TRACE-0004:** The mapping proves planned traceability only. It does not prove executable coverage, a passing provider, cross-platform conformance, or promotion readiness.
+
+## Benchmark scenarios
+
+| Scenario | Benchmark requirements | Comparison contract |
+|---|---|---|
+| `rm.benchmark.audit-evidence.producer-effect@1` | `RM-AUDIT-BENCH-0001` | Measure encode/validation/append receipt and domain-effect impact by schema, class, atomicity, durability, batching, concurrency, and health. |
+| `rm.benchmark.audit-evidence.pipeline@1` | `RM-AUDIT-BENCH-0002` | Measure collection through export with backlog/recovery across source, tenant, rate, cardinality, gap, and failure matrices. |
+| `rm.benchmark.audit-evidence.query-proof-report@1` | `RM-AUDIT-BENCH-0003` | Measure query/investigation, proof, reindex/export, assessment/report, privacy transforms, and retention scans. |
+| `rm.benchmark.audit-evidence.storage-crypto-cost@1` | `RM-AUDIT-BENCH-0004` | Measure amplification, segment/proof/index size, resources, key/anchor/export cost, tiering, restore/reconcile, and energy. |
+| `rm.benchmark.audit-evidence.adversarial-sustained@1` | `RM-AUDIT-BENCH-0005` | Measure drop/duplicate/gap/late detection, fail policy, fairness/isolation, proof coverage, privacy leakage, recovery, and correctness. |
+| `rm.benchmark.audit-evidence.reproducible-report@1` | `RM-AUDIT-BENCH-0006` | Pin corpus, schemas, policies, populations, providers, trust, topology, clocks/faults, statistics, costs, completeness scope, and correctness. |

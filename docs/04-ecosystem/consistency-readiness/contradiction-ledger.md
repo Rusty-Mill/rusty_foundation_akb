@@ -1,7 +1,7 @@
 # Cross-domain contradiction ledger
 
 **Status:** Active reviewed evidence  
-**Scope:** Architecture model 1.74.0 and domain sources through audit-evidence 0.1.0
+**Scope:** Architecture model 1.75.0 and domain sources through audit-evidence 0.1.0
 
 The ledger records proposition-level review. “No contradiction found” is bounded to named sources and rules; it is not a repository-wide proof.
 
@@ -15,6 +15,7 @@ The ledger records proposition-level review. “No contradiction found” is bou
 | CL-006 | Machine-readable representations must not fork Markdown authority during the foundation phase. | [RFC-0001](../../rfc/0001-capability-specification-system.md), [traceability](../traceability.md), [ADR-0146](../../adr/0146-machine-readable-indexes-are-derived-evidence.md) | Consistent | Keep generated records source-linked and fail on staleness. |
 | CL-007 | Profile/version descriptions in the profiles catalog reflect current profile files. | [Profiles catalog](../../02-capabilities/profiles/README.md), [current profiles](../../02-capabilities/profiles/foundation-server.md) | Resolved | Catalog now names desktop 0.61.0, server 1.33.0, repository 0.29.0, and CA 0.28.0 and preserves product-choice nonclaims. |
 | CL-008 | Existing conformance case identities and repository-scale semantic assertion identities can coexist without ambiguous authority. | [Runtime/time conformance](../../02-capabilities/runtime-time/conformance.md), [windowing conformance](../../02-capabilities/windowing/conformance.md), [audit traceability](../../02-capabilities/audit-evidence/traceability.md), [ADR-0150](../../adr/0150-semantic-assertions-and-executable-cases-have-distinct-identities.md) | Resolved | Preserve suite-local cases; map them beneath portable `rm.assertion.*` propositions and record all three identity layers in results. |
+| CL-009 | Benchmark scenario identity and measured-run identity remain distinct across legacy and modern domain specifications. | [Runtime/time benchmarks](../../02-capabilities/runtime-time/benchmarks.md), [messaging traceability](../../02-capabilities/messaging/traceability.md), [benchmark governance](benchmark-traceability.md), [ADR-0151](../../adr/0151-benchmark-scenarios-and-runs-have-distinct-identities.md) | Consistent with migration gap | Preserve legacy suite IDs, use semantic `rm.benchmark.*` scenarios for comparison contracts, and create immutable identities for every measured run. |
 
 ## Finding rules
 

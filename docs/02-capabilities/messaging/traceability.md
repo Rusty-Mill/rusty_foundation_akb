@@ -17,3 +17,14 @@
 **RM-MESSAGING-TRACE-0002:** Executable cases MUST state transport/broker/provider topology, fault schedule, schema generations, delivery/settlement policy, attempt/effect identity, and observation frontier.
 
 **RM-MESSAGING-TRACE-0003:** A case MUST NOT infer exactly-once effects from exactly-once transport, broker settlement, deduplication, or a successful RPC response.
+
+## Benchmark scenarios
+
+| Scenario | Benchmark requirements | Comparison contract |
+|---|---|---|
+| `rm.benchmark.messaging.environment@1` | `RM-MESSAGING-BENCH-0001` | Pin topology, builds, security, persistence, payload distribution, limits, impairment, clocks, samples, variance, and raw artifacts. |
+| `rm.benchmark.messaging.workload-matrix@1` | `RM-MESSAGING-BENCH-0002` | Exercise RPC forms, payload classes, cold/warm paths, publish/consume/fanout, partitions/groups, durability, transactions, acknowledgements, retries, and drain. |
+| `rm.benchmark.messaging.boundary-cost@1` | `RM-MESSAGING-BENCH-0003` | Measure end-to-end and boundary latency, goodput, codec/validation/queue/handler/settlement cost, resource high-water marks, energy, and telemetry. |
+| `rm.benchmark.messaging.saturation-fairness@1` | `RM-MESSAGING-BENCH-0004` | Vary tenants, priorities, sizes, flows, slow/poison consumers, retries, rebalances, failover, and backpressure with rejection/drop accounting. |
+| `rm.benchmark.messaging.durability-recovery@1` | `RM-MESSAGING-BENCH-0005` | Compare fsync/quorum/ack/transaction boundaries under crash, failover, redelivery, dedup, outbox/inbox, ambiguity, reconciliation, and recovery. |
+| `rm.benchmark.messaging.native-equivalence@1` | `RM-MESSAGING-BENCH-0006` | Compare native/provider and Rusty Mill paths only under equivalent schema, security, durability, flow, retry, observability, and completion semantics. |

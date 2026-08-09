@@ -28,6 +28,10 @@ ASSERTION_ROW_RE = re.compile(
 )
 GRAPH_NODE_RE = re.compile(r"^\| `(?P<id>rm\.(?!assertion\.)[a-z0-9.-]+)` \| \[(?P<label>[^]]+)\]\((?P<source>[^)]+)\) \|", re.MULTILINE)
 GRAPH_EDGE_RE = re.compile(r"^\| `(?P<source>rm\.[a-z0-9.-]+)` \| `(?P<kind>requires|optionally-uses|conflicts-with)` \| `(?P<target>rm\.[a-z0-9.-]+)` \| \[(?P<label>[^]]+)\]\((?P<evidence>[^)]+)\) \|", re.MULTILINE)
+BENCHMARK_ROW_RE = re.compile(
+    r"^\| `(?P<id>rm\.benchmark\.[a-z0-9.-]+@\d+)` \| (?P<requirements>(?:`RM-[A-Z0-9-]+`(?:, )?)+) \|",
+    re.MULTILINE,
+)
 
 
 @dataclass(frozen=True)
@@ -131,6 +135,8 @@ def inspect(root: Path) -> tuple[dict[str, object], list[Finding]]:
     domains: list[dict[str, object]] = []
     assertions: list[dict[str, object]] = []
     assertion_ids: set[str] = set()
+    benchmark_scenarios: list[dict[str, object]] = []
+    benchmark_scenario_ids: set[str] = set()
     for directory in sorted(p for p in capability_root.iterdir() if p.is_dir() and p.name != "profiles"):
         readme = directory / "README.md"
         if not readme.exists():
@@ -165,6 +171,15 @@ def inspect(root: Path) -> tuple[dict[str, object], list[Finding]]:
                 )
                 for source_path in source_paths:
                     mapped_sources.setdefault(source_path, []).append(assertion_id)
+            for match in BENCHMARK_ROW_RE.finditer(trace_text):
+                scenario_id = match.group("id")
+                if scenario_id in benchmark_scenario_ids:
+                    findings.append(Finding("error", "benchmark-scenario-unique", relative(traceability, root), f"duplicate scenario {scenario_id}"))
+                benchmark_scenario_ids.add(scenario_id)
+                requirement_ids = re.findall(r"RM-[A-Z0-9-]+", match.group("requirements"))
+                benchmark_scenarios.append(
+                    {"id": scenario_id, "domain": directory.name, "source": relative(traceability, root), "requirements": requirement_ids}
+                )
         mapped_capability_requirements = 0
         for item in domain_requirements:
             if item["kind"] != "capability":
@@ -174,6 +189,20 @@ def inspect(root: Path) -> tuple[dict[str, object], list[Finding]]:
             if mapped:
                 mapped_capability_requirements += 1
         capability_requirement_count = sum(item["kind"] == "capability" for item in domain_requirements)
+        benchmark_requirement_items = [item for item in domain_requirements if item["kind"] == "benchmark"]
+        scenario_ids_by_requirement: dict[str, list[str]] = {}
+        for scenario in benchmark_scenarios:
+            if scenario["domain"] != directory.name:
+                continue
+            for requirement_id in scenario["requirements"]:
+                matched = next((item for item in benchmark_requirement_items if item["id"] == requirement_id), None)
+                if matched is None:
+                    findings.append(Finding("error", "benchmark-requirement-exists", relative(traceability, root), f"{scenario['id']} references non-benchmark requirement {requirement_id}"))
+                    continue
+                scenario_ids_by_requirement.setdefault(requirement_id, []).append(str(scenario["id"]))
+        for item in benchmark_requirement_items:
+            item["benchmark_scenarios"] = scenario_ids_by_requirement.get(str(item["id"]), [])
+        mapped_benchmark_requirements = sum(bool(item["benchmark_scenarios"]) for item in benchmark_requirement_items)
         domain_record = {
             "id": directory.name,
             "source": relative(readme, root),
@@ -182,10 +211,12 @@ def inspect(root: Path) -> tuple[dict[str, object], list[Finding]]:
             "capability_requirements": capability_requirement_count,
             "conformance_requirements": sum(item["kind"] == "conformance" for item in domain_requirements),
             "benchmark_requirements": sum(item["kind"] == "benchmark" for item in domain_requirements),
+            "mapped_benchmark_requirements": mapped_benchmark_requirements,
             "has_conformance_spec": conformance.exists(),
             "has_benchmark_spec": benchmarks.exists(),
             "mapped_capability_requirements": mapped_capability_requirements,
             "direct_requirement_assertion_map": capability_requirement_count > 0 and mapped_capability_requirements == capability_requirement_count,
+            "direct_benchmark_scenario_map": len(benchmark_requirement_items) > 0 and mapped_benchmark_requirements == len(benchmark_requirement_items),
         }
         domains.append(domain_record)
         if not conformance.exists():
@@ -259,12 +290,17 @@ def inspect(root: Path) -> tuple[dict[str, object], list[Finding]]:
             "domains_with_direct_requirement_assertion_map": sum(
                 bool(item["direct_requirement_assertion_map"]) for item in domains
             ),
+            "domains_with_direct_benchmark_scenario_map": sum(
+                bool(item["direct_benchmark_scenario_map"]) for item in domains
+            ),
+            "benchmark_scenarios": len(benchmark_scenarios),
             "declared_graph_nodes": len(graph_nodes),
             "declared_graph_edges": len(graph_edges),
             "required_graph_acyclic": not any(item.rule == "graph-requires-acyclic" for item in findings),
         },
         "domains": domains,
         "assertions": assertions,
+        "benchmark_scenarios": benchmark_scenarios,
         "dependency_graph": {
             "source": relative(graph_source, root) if graph_source.exists() else None,
             "nodes": graph_nodes,
@@ -312,6 +348,7 @@ This report is deterministic and contains no claim that file presence proves sem
 | Conformance specification present | {summary['domains_with_conformance']:,} / {summary['domains']:,} | {summary['domains_with_conformance'] / summary['domains']:.1%} |
 | Benchmark specification present | {summary['domains_with_benchmarks']:,} / {summary['domains']:,} | {summary['domains_with_benchmarks'] / summary['domains']:.1%} |
 | Direct requirement-to-assertion map | {summary['domains_with_direct_requirement_assertion_map']:,} / {summary['domains']:,} | {summary['domains_with_direct_requirement_assertion_map'] / summary['domains']:.1%} |
+| Direct benchmark-requirement-to-scenario map | {summary['domains_with_direct_benchmark_scenario_map']:,} / {summary['domains']:,} | {summary['domains_with_direct_benchmark_scenario_map'] / summary['domains']:.1%} |
 
 ## Declared dependency graph
 
@@ -323,7 +360,7 @@ This report is deterministic and contains no claim that file presence proves sem
 
 Graph counts cover only explicit declarations. Missing nodes or edges are unknown, not proof of independence.
 
-The first two rows prove specification presence only. The third proves complete planned requirement-to-assertion mapping only for the counted domains. None proves executable assertions, passing provider results, or benchmark coverage.
+The first two rows prove specification presence only. The mapping rows prove complete planned links only for counted domains. None proves executable assertions, benchmark runs, passing provider results, or performance budgets.
 
 ## Findings
 
@@ -331,6 +368,7 @@ The first two rows prove specification presence only. The third proves complete 
 - Every capability domain has conformance and benchmark planning artifacts.
 - {len(unspecified)} domain README files lack the canonical table-form status field; this is recorded as a migration-quality issue, not silently interpreted as Stable.
 - {summary['domains_with_direct_requirement_assertion_map']} domain(s) have a complete direct planned requirement-to-assertion map; repository-wide migration remains open.
+- {summary['domains_with_direct_benchmark_scenario_map']} domain(s) have complete benchmark-requirement-to-scenario maps across {summary['benchmark_scenarios']} stable semantic scenarios; run evidence remains absent by design.
 - Semantic contradiction review remains human-governed and is tracked in the [closure backlog](closure-backlog.md).
 
 ## Readiness conclusion

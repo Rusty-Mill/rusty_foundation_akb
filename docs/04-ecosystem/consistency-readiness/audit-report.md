@@ -11,11 +11,11 @@ This report is deterministic and contains no claim that file presence proves sem
 
 | Measure | Result |
 |---|---:|
-| Markdown documents | 1,063 |
-| Resolved internal links | 1,704 |
-| Unique normative requirements | 4,944 |
+| Markdown documents | 1,065 |
+| Resolved internal links | 1,716 |
+| Unique normative requirements | 4,949 |
 | Capability domains | 62 |
-| Indexed ADRs | 150 |
+| Indexed ADRs | 151 |
 | Structural errors | 0 |
 | Structural warnings | 0 |
 
@@ -26,6 +26,7 @@ This report is deterministic and contains no claim that file presence proves sem
 | Conformance specification present | 62 / 62 | 100.0% |
 | Benchmark specification present | 62 / 62 | 100.0% |
 | Direct requirement-to-assertion map | 5 / 62 | 8.1% |
+| Direct benchmark-requirement-to-scenario map | 3 / 62 | 4.8% |
 
 ## Declared dependency graph
 
@@ -37,7 +38,7 @@ This report is deterministic and contains no claim that file presence proves sem
 
 Graph counts cover only explicit declarations. Missing nodes or edges are unknown, not proof of independence.
 
-The first two rows prove specification presence only. The third proves complete planned requirement-to-assertion mapping only for the counted domains. None proves executable assertions, passing provider results, or benchmark coverage.
+The first two rows prove specification presence only. The mapping rows prove complete planned links only for counted domains. None proves executable assertions, benchmark runs, passing provider results, or performance budgets.
 
 ## Findings
 
@@ -45,6 +46,7 @@ The first two rows prove specification presence only. The third proves complete 
 - Every capability domain has conformance and benchmark planning artifacts.
 - 0 domain README files lack the canonical table-form status field; this is recorded as a migration-quality issue, not silently interpreted as Stable.
 - 5 domain(s) have a complete direct planned requirement-to-assertion map; repository-wide migration remains open.
+- 3 domain(s) have complete benchmark-requirement-to-scenario maps across 18 stable semantic scenarios; run evidence remains absent by design.
 - Semantic contradiction review remains human-governed and is tracked in the [closure backlog](closure-backlog.md).
 
 ## Readiness conclusion

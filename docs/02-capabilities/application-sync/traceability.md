@@ -20,3 +20,14 @@
 **RM-SYNC-TRACE-0003:** A convergence assertion MUST quantify eligible replicas and quiescence/fair-delivery assumptions and MUST NOT treat wall-clock equality, arrival order, or silent last-writer-wins as universal conflict authority.
 
 **RM-SYNC-TRACE-0004:** Local durability, upload acceptance, authoritative application, remote observation, and convergence MUST remain distinct case milestones.
+
+## Benchmark scenarios
+
+| Scenario | Benchmark requirements | Comparison contract |
+|---|---|---|
+| `rm.benchmark.application-sync.local-path@1` | `RM-APP-SYNC-BENCH-0001` | Compare read/write, optimistic projection, durable enqueue, UI notification, and backlog overhead with equivalent local persistence. |
+| `rm.benchmark.application-sync.transfer-convergence@1` | `RM-APP-SYNC-BENCH-0002` | Measure snapshot, catch-up, steady state, reconnect/resume/resnapshot, and qualified convergence across object/network/concurrency matrices. |
+| `rm.benchmark.application-sync.causality-conflict@1` | `RM-APP-SYNC-BENCH-0003` | Measure causal metadata and selected CRDT/OT/custom conflict policy under realistic and adversarial histories. |
+| `rm.benchmark.application-sync.feature-cost@1` | `RM-APP-SYNC-BENCH-0004` | Measure selection, closure, tombstones, migration, attachments, encryption, authorization, telemetry, and storage amplification. |
+| `rm.benchmark.application-sync.sustained-resource@1` | `RM-APP-SYNC-BENCH-0005` | Measure bounded backlog, fairness, bytes, energy, storage/CPU/memory/thermal, retry/quota faults, recovery, and correctness. |
+| `rm.benchmark.application-sync.reproducible-report@1` | `RM-APP-SYNC-BENCH-0006` | Pin histories, schemas, topology, providers, devices, faults, statistics, frontiers, conflicts/loss, cost, and equivalent native semantics. |

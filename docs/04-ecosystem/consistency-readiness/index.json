@@ -4,16 +4,18 @@
   "authority": "docs/01-architecture/architecture-model.md",
   "generated_from": "Markdown; this index is derived and non-authoritative",
   "summary": {
-    "markdown_documents": 1063,
-    "internal_links": 1704,
-    "requirements": 4944,
+    "markdown_documents": 1065,
+    "internal_links": 1716,
+    "requirements": 4949,
     "domains": 62,
-    "adrs": 150,
+    "adrs": 151,
     "errors": 0,
     "warnings": 0,
     "domains_with_conformance": 62,
     "domains_with_benchmarks": 62,
     "domains_with_direct_requirement_assertion_map": 5,
+    "domains_with_direct_benchmark_scenario_map": 3,
+    "benchmark_scenarios": 18,
     "declared_graph_nodes": 15,
     "declared_graph_edges": 8,
     "required_graph_acyclic": true
@@ -27,10 +29,12 @@
       "capability_requirements": 43,
       "conformance_requirements": 0,
       "benchmark_requirements": 0,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "activation",
@@ -40,10 +44,12 @@
       "capability_requirements": 60,
       "conformance_requirements": 0,
       "benchmark_requirements": 0,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "analytics",
@@ -53,10 +59,12 @@
       "capability_requirements": 100,
       "conformance_requirements": 9,
       "benchmark_requirements": 7,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "api-governance",
@@ -66,10 +74,12 @@
       "capability_requirements": 46,
       "conformance_requirements": 6,
       "benchmark_requirements": 5,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "application-authentication",
@@ -79,10 +89,12 @@
       "capability_requirements": 73,
       "conformance_requirements": 8,
       "benchmark_requirements": 6,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "application-authorization",
@@ -92,10 +104,12 @@
       "capability_requirements": 72,
       "conformance_requirements": 8,
       "benchmark_requirements": 6,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "application-communications",
@@ -105,10 +119,12 @@
       "capability_requirements": 93,
       "conformance_requirements": 7,
       "benchmark_requirements": 6,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "application-sync",
@@ -118,10 +134,12 @@
       "capability_requirements": 85,
       "conformance_requirements": 7,
       "benchmark_requirements": 6,
+      "mapped_benchmark_requirements": 6,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 85,
-      "direct_requirement_assertion_map": true
+      "direct_requirement_assertion_map": true,
+      "direct_benchmark_scenario_map": true
     },
     {
       "id": "archive",
@@ -131,10 +149,12 @@
       "capability_requirements": 74,
       "conformance_requirements": 8,
       "benchmark_requirements": 6,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "async-io",
@@ -144,10 +164,12 @@
       "capability_requirements": 40,
       "conformance_requirements": 0,
       "benchmark_requirements": 0,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "audio",
@@ -157,10 +179,12 @@
       "capability_requirements": 32,
       "conformance_requirements": 0,
       "benchmark_requirements": 0,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "audit-evidence",
@@ -170,10 +194,12 @@
       "capability_requirements": 96,
       "conformance_requirements": 7,
       "benchmark_requirements": 6,
+      "mapped_benchmark_requirements": 6,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 96,
-      "direct_requirement_assertion_map": true
+      "direct_requirement_assertion_map": true,
+      "direct_benchmark_scenario_map": true
     },
     {
       "id": "background-services",
@@ -183,10 +209,12 @@
       "capability_requirements": 63,
       "conformance_requirements": 0,
       "benchmark_requirements": 0,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "caching",
@@ -196,10 +224,12 @@
       "capability_requirements": 61,
       "conformance_requirements": 8,
       "benchmark_requirements": 7,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "capture",
@@ -209,10 +239,12 @@
       "capability_requirements": 41,
       "conformance_requirements": 0,
       "benchmark_requirements": 0,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "configuration",
@@ -222,10 +254,12 @@
       "capability_requirements": 32,
       "conformance_requirements": 0,
       "benchmark_requirements": 0,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "content-inspection",
@@ -235,10 +269,12 @@
       "capability_requirements": 73,
       "conformance_requirements": 8,
       "benchmark_requirements": 7,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "coordination",
@@ -248,10 +284,12 @@
       "capability_requirements": 68,
       "conformance_requirements": 8,
       "benchmark_requirements": 6,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "data-transfer",
@@ -261,10 +299,12 @@
       "capability_requirements": 35,
       "conformance_requirements": 0,
       "benchmark_requirements": 0,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "devices",
@@ -274,10 +314,12 @@
       "capability_requirements": 30,
       "conformance_requirements": 0,
       "benchmark_requirements": 0,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "display-color",
@@ -287,10 +329,12 @@
       "capability_requirements": 43,
       "conformance_requirements": 0,
       "benchmark_requirements": 0,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "filesystem",
@@ -300,10 +344,12 @@
       "capability_requirements": 69,
       "conformance_requirements": 0,
       "benchmark_requirements": 0,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "graphics",
@@ -313,10 +359,12 @@
       "capability_requirements": 46,
       "conformance_requirements": 0,
       "benchmark_requirements": 0,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "identity-governance",
@@ -326,10 +374,12 @@
       "capability_requirements": 62,
       "conformance_requirements": 8,
       "benchmark_requirements": 6,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "identity-session",
@@ -339,10 +389,12 @@
       "capability_requirements": 45,
       "conformance_requirements": 0,
       "benchmark_requirements": 0,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "information-protection",
@@ -352,10 +404,12 @@
       "capability_requirements": 84,
       "conformance_requirements": 8,
       "benchmark_requirements": 7,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "input",
@@ -365,10 +419,12 @@
       "capability_requirements": 45,
       "conformance_requirements": 0,
       "benchmark_requirements": 0,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "interchange",
@@ -378,10 +434,12 @@
       "capability_requirements": 90,
       "conformance_requirements": 9,
       "benchmark_requirements": 7,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "internationalization",
@@ -391,10 +449,12 @@
       "capability_requirements": 46,
       "conformance_requirements": 0,
       "benchmark_requirements": 0,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "ipc",
@@ -404,10 +464,12 @@
       "capability_requirements": 15,
       "conformance_requirements": 0,
       "benchmark_requirements": 0,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "lifecycle",
@@ -417,10 +479,12 @@
       "capability_requirements": 33,
       "conformance_requirements": 0,
       "benchmark_requirements": 0,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "memory",
@@ -430,10 +494,12 @@
       "capability_requirements": 36,
       "conformance_requirements": 0,
       "benchmark_requirements": 0,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "messaging",
@@ -443,10 +509,12 @@
       "capability_requirements": 64,
       "conformance_requirements": 8,
       "benchmark_requirements": 6,
+      "mapped_benchmark_requirements": 6,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 64,
-      "direct_requirement_assertion_map": true
+      "direct_requirement_assertion_map": true,
+      "direct_benchmark_scenario_map": true
     },
     {
       "id": "networking",
@@ -456,10 +524,12 @@
       "capability_requirements": 256,
       "conformance_requirements": 0,
       "benchmark_requirements": 0,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "notifications",
@@ -469,10 +539,12 @@
       "capability_requirements": 39,
       "conformance_requirements": 0,
       "benchmark_requirements": 0,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "object-storage",
@@ -482,10 +554,12 @@
       "capability_requirements": 83,
       "conformance_requirements": 8,
       "benchmark_requirements": 7,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "observability",
@@ -495,10 +569,12 @@
       "capability_requirements": 49,
       "conformance_requirements": 0,
       "benchmark_requirements": 0,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "package-management",
@@ -508,10 +584,12 @@
       "capability_requirements": 67,
       "conformance_requirements": 9,
       "benchmark_requirements": 6,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "persistence",
@@ -521,10 +599,12 @@
       "capability_requirements": 76,
       "conformance_requirements": 8,
       "benchmark_requirements": 7,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "plugins",
@@ -534,10 +614,12 @@
       "capability_requirements": 36,
       "conformance_requirements": 0,
       "benchmark_requirements": 0,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "policy",
@@ -547,10 +629,12 @@
       "capability_requirements": 96,
       "conformance_requirements": 9,
       "benchmark_requirements": 7,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "power",
@@ -560,10 +644,12 @@
       "capability_requirements": 40,
       "conformance_requirements": 0,
       "benchmark_requirements": 0,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "printing",
@@ -573,10 +659,12 @@
       "capability_requirements": 45,
       "conformance_requirements": 0,
       "benchmark_requirements": 0,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "privacy",
@@ -586,10 +674,12 @@
       "capability_requirements": 91,
       "conformance_requirements": 8,
       "benchmark_requirements": 7,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "process",
@@ -599,10 +689,12 @@
       "capability_requirements": 58,
       "conformance_requirements": 0,
       "benchmark_requirements": 0,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "remote-interaction",
@@ -612,10 +704,12 @@
       "capability_requirements": 54,
       "conformance_requirements": 0,
       "benchmark_requirements": 0,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "runtime-time",
@@ -625,10 +719,12 @@
       "capability_requirements": 44,
       "conformance_requirements": 0,
       "benchmark_requirements": 0,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 44,
-      "direct_requirement_assertion_map": true
+      "direct_requirement_assertion_map": true,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "screen-capture",
@@ -638,10 +734,12 @@
       "capability_requirements": 53,
       "conformance_requirements": 0,
       "benchmark_requirements": 0,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "search",
@@ -651,10 +749,12 @@
       "capability_requirements": 86,
       "conformance_requirements": 9,
       "benchmark_requirements": 9,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "secrets-lifecycle",
@@ -664,10 +764,12 @@
       "capability_requirements": 72,
       "conformance_requirements": 8,
       "benchmark_requirements": 6,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "security",
@@ -677,10 +779,12 @@
       "capability_requirements": 246,
       "conformance_requirements": 0,
       "benchmark_requirements": 0,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "service-traffic",
@@ -690,10 +794,12 @@
       "capability_requirements": 88,
       "conformance_requirements": 9,
       "benchmark_requirements": 7,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "signed-artifacts",
@@ -703,10 +809,12 @@
       "capability_requirements": 49,
       "conformance_requirements": 8,
       "benchmark_requirements": 6,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "still-image",
@@ -716,10 +824,12 @@
       "capability_requirements": 54,
       "conformance_requirements": 0,
       "benchmark_requirements": 0,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "storage",
@@ -729,10 +839,12 @@
       "capability_requirements": 37,
       "conformance_requirements": 0,
       "benchmark_requirements": 0,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "tenant-service-governance",
@@ -742,10 +854,12 @@
       "capability_requirements": 82,
       "conformance_requirements": 7,
       "benchmark_requirements": 6,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "terminal",
@@ -755,10 +869,12 @@
       "capability_requirements": 83,
       "conformance_requirements": 0,
       "benchmark_requirements": 0,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "text",
@@ -768,10 +884,12 @@
       "capability_requirements": 44,
       "conformance_requirements": 0,
       "benchmark_requirements": 0,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "threading",
@@ -781,10 +899,12 @@
       "capability_requirements": 38,
       "conformance_requirements": 0,
       "benchmark_requirements": 0,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "time-media",
@@ -794,10 +914,12 @@
       "capability_requirements": 63,
       "conformance_requirements": 0,
       "benchmark_requirements": 0,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "windowing",
@@ -807,10 +929,12 @@
       "capability_requirements": 40,
       "conformance_requirements": 0,
       "benchmark_requirements": 0,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 40,
-      "direct_requirement_assertion_map": true
+      "direct_requirement_assertion_map": true,
+      "direct_benchmark_scenario_map": false
     },
     {
       "id": "workflow-orchestration",
@@ -820,10 +944,12 @@
       "capability_requirements": 78,
       "conformance_requirements": 8,
       "benchmark_requirements": 6,
+      "mapped_benchmark_requirements": 0,
       "has_conformance_spec": true,
       "has_benchmark_spec": true,
       "mapped_capability_requirements": 0,
-      "direct_requirement_assertion_map": false
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false
     }
   ],
   "assertions": [
@@ -1072,6 +1198,152 @@
       "covers_sources": [
         "docs/02-capabilities/windowing/presentation-surface.md",
         "docs/02-capabilities/windowing/traceability.md"
+      ]
+    }
+  ],
+  "benchmark_scenarios": [
+    {
+      "id": "rm.benchmark.application-sync.local-path@1",
+      "domain": "application-sync",
+      "source": "docs/02-capabilities/application-sync/traceability.md",
+      "requirements": [
+        "RM-APP-SYNC-BENCH-0001"
+      ]
+    },
+    {
+      "id": "rm.benchmark.application-sync.transfer-convergence@1",
+      "domain": "application-sync",
+      "source": "docs/02-capabilities/application-sync/traceability.md",
+      "requirements": [
+        "RM-APP-SYNC-BENCH-0002"
+      ]
+    },
+    {
+      "id": "rm.benchmark.application-sync.causality-conflict@1",
+      "domain": "application-sync",
+      "source": "docs/02-capabilities/application-sync/traceability.md",
+      "requirements": [
+        "RM-APP-SYNC-BENCH-0003"
+      ]
+    },
+    {
+      "id": "rm.benchmark.application-sync.feature-cost@1",
+      "domain": "application-sync",
+      "source": "docs/02-capabilities/application-sync/traceability.md",
+      "requirements": [
+        "RM-APP-SYNC-BENCH-0004"
+      ]
+    },
+    {
+      "id": "rm.benchmark.application-sync.sustained-resource@1",
+      "domain": "application-sync",
+      "source": "docs/02-capabilities/application-sync/traceability.md",
+      "requirements": [
+        "RM-APP-SYNC-BENCH-0005"
+      ]
+    },
+    {
+      "id": "rm.benchmark.application-sync.reproducible-report@1",
+      "domain": "application-sync",
+      "source": "docs/02-capabilities/application-sync/traceability.md",
+      "requirements": [
+        "RM-APP-SYNC-BENCH-0006"
+      ]
+    },
+    {
+      "id": "rm.benchmark.audit-evidence.producer-effect@1",
+      "domain": "audit-evidence",
+      "source": "docs/02-capabilities/audit-evidence/traceability.md",
+      "requirements": [
+        "RM-AUDIT-BENCH-0001"
+      ]
+    },
+    {
+      "id": "rm.benchmark.audit-evidence.pipeline@1",
+      "domain": "audit-evidence",
+      "source": "docs/02-capabilities/audit-evidence/traceability.md",
+      "requirements": [
+        "RM-AUDIT-BENCH-0002"
+      ]
+    },
+    {
+      "id": "rm.benchmark.audit-evidence.query-proof-report@1",
+      "domain": "audit-evidence",
+      "source": "docs/02-capabilities/audit-evidence/traceability.md",
+      "requirements": [
+        "RM-AUDIT-BENCH-0003"
+      ]
+    },
+    {
+      "id": "rm.benchmark.audit-evidence.storage-crypto-cost@1",
+      "domain": "audit-evidence",
+      "source": "docs/02-capabilities/audit-evidence/traceability.md",
+      "requirements": [
+        "RM-AUDIT-BENCH-0004"
+      ]
+    },
+    {
+      "id": "rm.benchmark.audit-evidence.adversarial-sustained@1",
+      "domain": "audit-evidence",
+      "source": "docs/02-capabilities/audit-evidence/traceability.md",
+      "requirements": [
+        "RM-AUDIT-BENCH-0005"
+      ]
+    },
+    {
+      "id": "rm.benchmark.audit-evidence.reproducible-report@1",
+      "domain": "audit-evidence",
+      "source": "docs/02-capabilities/audit-evidence/traceability.md",
+      "requirements": [
+        "RM-AUDIT-BENCH-0006"
+      ]
+    },
+    {
+      "id": "rm.benchmark.messaging.environment@1",
+      "domain": "messaging",
+      "source": "docs/02-capabilities/messaging/traceability.md",
+      "requirements": [
+        "RM-MESSAGING-BENCH-0001"
+      ]
+    },
+    {
+      "id": "rm.benchmark.messaging.workload-matrix@1",
+      "domain": "messaging",
+      "source": "docs/02-capabilities/messaging/traceability.md",
+      "requirements": [
+        "RM-MESSAGING-BENCH-0002"
+      ]
+    },
+    {
+      "id": "rm.benchmark.messaging.boundary-cost@1",
+      "domain": "messaging",
+      "source": "docs/02-capabilities/messaging/traceability.md",
+      "requirements": [
+        "RM-MESSAGING-BENCH-0003"
+      ]
+    },
+    {
+      "id": "rm.benchmark.messaging.saturation-fairness@1",
+      "domain": "messaging",
+      "source": "docs/02-capabilities/messaging/traceability.md",
+      "requirements": [
+        "RM-MESSAGING-BENCH-0004"
+      ]
+    },
+    {
+      "id": "rm.benchmark.messaging.durability-recovery@1",
+      "domain": "messaging",
+      "source": "docs/02-capabilities/messaging/traceability.md",
+      "requirements": [
+        "RM-MESSAGING-BENCH-0005"
+      ]
+    },
+    {
+      "id": "rm.benchmark.messaging.native-equivalence@1",
+      "domain": "messaging",
+      "source": "docs/02-capabilities/messaging/traceability.md",
+      "requirements": [
+        "RM-MESSAGING-BENCH-0006"
       ]
     }
   ],
@@ -2021,49 +2293,56 @@
       "source": "docs/02-capabilities/analytics/benchmarks.md",
       "line": 3,
       "kind": "benchmark",
-      "domain": "analytics"
+      "domain": "analytics",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-ANALYTICS-BENCH-0002",
       "source": "docs/02-capabilities/analytics/benchmarks.md",
       "line": 5,
       "kind": "benchmark",
-      "domain": "analytics"
+      "domain": "analytics",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-ANALYTICS-BENCH-0003",
       "source": "docs/02-capabilities/analytics/benchmarks.md",
       "line": 7,
       "kind": "benchmark",
-      "domain": "analytics"
+      "domain": "analytics",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-ANALYTICS-BENCH-0004",
       "source": "docs/02-capabilities/analytics/benchmarks.md",
       "line": 9,
       "kind": "benchmark",
-      "domain": "analytics"
+      "domain": "analytics",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-ANALYTICS-BENCH-0005",
       "source": "docs/02-capabilities/analytics/benchmarks.md",
       "line": 11,
       "kind": "benchmark",
-      "domain": "analytics"
+      "domain": "analytics",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-ANALYTICS-BENCH-0006",
       "source": "docs/02-capabilities/analytics/benchmarks.md",
       "line": 13,
       "kind": "benchmark",
-      "domain": "analytics"
+      "domain": "analytics",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-ANALYTICS-BENCH-0007",
       "source": "docs/02-capabilities/analytics/benchmarks.md",
       "line": 15,
       "kind": "benchmark",
-      "domain": "analytics"
+      "domain": "analytics",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-ANALYTICS-CATALOG-0001",
@@ -2933,35 +3212,40 @@
       "source": "docs/02-capabilities/api-governance/benchmarks.md",
       "line": 3,
       "kind": "benchmark",
-      "domain": "api-governance"
+      "domain": "api-governance",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-API-GOV-BENCH-0002",
       "source": "docs/02-capabilities/api-governance/benchmarks.md",
       "line": 5,
       "kind": "benchmark",
-      "domain": "api-governance"
+      "domain": "api-governance",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-API-GOV-BENCH-0003",
       "source": "docs/02-capabilities/api-governance/benchmarks.md",
       "line": 7,
       "kind": "benchmark",
-      "domain": "api-governance"
+      "domain": "api-governance",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-API-GOV-BENCH-0004",
       "source": "docs/02-capabilities/api-governance/benchmarks.md",
       "line": 9,
       "kind": "benchmark",
-      "domain": "api-governance"
+      "domain": "api-governance",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-API-GOV-BENCH-0005",
       "source": "docs/02-capabilities/api-governance/benchmarks.md",
       "line": 11,
       "kind": "benchmark",
-      "domain": "api-governance"
+      "domain": "api-governance",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-API-GOV-COMPAT-0001",
@@ -3426,42 +3710,48 @@
       "source": "docs/02-capabilities/application-authentication/benchmarks.md",
       "line": 3,
       "kind": "benchmark",
-      "domain": "application-authentication"
+      "domain": "application-authentication",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-APP-AUTH-BENCH-0002",
       "source": "docs/02-capabilities/application-authentication/benchmarks.md",
       "line": 5,
       "kind": "benchmark",
-      "domain": "application-authentication"
+      "domain": "application-authentication",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-APP-AUTH-BENCH-0003",
       "source": "docs/02-capabilities/application-authentication/benchmarks.md",
       "line": 7,
       "kind": "benchmark",
-      "domain": "application-authentication"
+      "domain": "application-authentication",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-APP-AUTH-BENCH-0004",
       "source": "docs/02-capabilities/application-authentication/benchmarks.md",
       "line": 9,
       "kind": "benchmark",
-      "domain": "application-authentication"
+      "domain": "application-authentication",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-APP-AUTH-BENCH-0005",
       "source": "docs/02-capabilities/application-authentication/benchmarks.md",
       "line": 11,
       "kind": "benchmark",
-      "domain": "application-authentication"
+      "domain": "application-authentication",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-APP-AUTH-BENCH-0006",
       "source": "docs/02-capabilities/application-authentication/benchmarks.md",
       "line": 13,
       "kind": "benchmark",
-      "domain": "application-authentication"
+      "domain": "application-authentication",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-APP-AUTH-CEREMONY-0001",
@@ -4060,42 +4350,48 @@
       "source": "docs/02-capabilities/application-authorization/benchmarks.md",
       "line": 3,
       "kind": "benchmark",
-      "domain": "application-authorization"
+      "domain": "application-authorization",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-APP-AUTHZ-BENCH-0002",
       "source": "docs/02-capabilities/application-authorization/benchmarks.md",
       "line": 5,
       "kind": "benchmark",
-      "domain": "application-authorization"
+      "domain": "application-authorization",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-APP-AUTHZ-BENCH-0003",
       "source": "docs/02-capabilities/application-authorization/benchmarks.md",
       "line": 7,
       "kind": "benchmark",
-      "domain": "application-authorization"
+      "domain": "application-authorization",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-APP-AUTHZ-BENCH-0004",
       "source": "docs/02-capabilities/application-authorization/benchmarks.md",
       "line": 9,
       "kind": "benchmark",
-      "domain": "application-authorization"
+      "domain": "application-authorization",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-APP-AUTHZ-BENCH-0005",
       "source": "docs/02-capabilities/application-authorization/benchmarks.md",
       "line": 11,
       "kind": "benchmark",
-      "domain": "application-authorization"
+      "domain": "application-authorization",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-APP-AUTHZ-BENCH-0006",
       "source": "docs/02-capabilities/application-authorization/benchmarks.md",
       "line": 13,
       "kind": "benchmark",
-      "domain": "application-authorization"
+      "domain": "application-authorization",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-APP-AUTHZ-CACHE-0001",
@@ -4734,42 +5030,48 @@
       "source": "docs/02-capabilities/application-communications/benchmarks.md",
       "line": 3,
       "kind": "benchmark",
-      "domain": "application-communications"
+      "domain": "application-communications",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-COMMS-BENCH-0002",
       "source": "docs/02-capabilities/application-communications/benchmarks.md",
       "line": 5,
       "kind": "benchmark",
-      "domain": "application-communications"
+      "domain": "application-communications",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-COMMS-BENCH-0003",
       "source": "docs/02-capabilities/application-communications/benchmarks.md",
       "line": 7,
       "kind": "benchmark",
-      "domain": "application-communications"
+      "domain": "application-communications",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-COMMS-BENCH-0004",
       "source": "docs/02-capabilities/application-communications/benchmarks.md",
       "line": 9,
       "kind": "benchmark",
-      "domain": "application-communications"
+      "domain": "application-communications",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-COMMS-BENCH-0005",
       "source": "docs/02-capabilities/application-communications/benchmarks.md",
       "line": 11,
       "kind": "benchmark",
-      "domain": "application-communications"
+      "domain": "application-communications",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-COMMS-BENCH-0006",
       "source": "docs/02-capabilities/application-communications/benchmarks.md",
       "line": 13,
       "kind": "benchmark",
-      "domain": "application-communications"
+      "domain": "application-communications",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-COMMS-CONFORMANCE-0001",
@@ -5629,42 +5931,60 @@
       "source": "docs/02-capabilities/application-sync/benchmarks.md",
       "line": 3,
       "kind": "benchmark",
-      "domain": "application-sync"
+      "domain": "application-sync",
+      "benchmark_scenarios": [
+        "rm.benchmark.application-sync.local-path@1"
+      ]
     },
     {
       "id": "RM-APP-SYNC-BENCH-0002",
       "source": "docs/02-capabilities/application-sync/benchmarks.md",
       "line": 5,
       "kind": "benchmark",
-      "domain": "application-sync"
+      "domain": "application-sync",
+      "benchmark_scenarios": [
+        "rm.benchmark.application-sync.transfer-convergence@1"
+      ]
     },
     {
       "id": "RM-APP-SYNC-BENCH-0003",
       "source": "docs/02-capabilities/application-sync/benchmarks.md",
       "line": 7,
       "kind": "benchmark",
-      "domain": "application-sync"
+      "domain": "application-sync",
+      "benchmark_scenarios": [
+        "rm.benchmark.application-sync.causality-conflict@1"
+      ]
     },
     {
       "id": "RM-APP-SYNC-BENCH-0004",
       "source": "docs/02-capabilities/application-sync/benchmarks.md",
       "line": 9,
       "kind": "benchmark",
-      "domain": "application-sync"
+      "domain": "application-sync",
+      "benchmark_scenarios": [
+        "rm.benchmark.application-sync.feature-cost@1"
+      ]
     },
     {
       "id": "RM-APP-SYNC-BENCH-0005",
       "source": "docs/02-capabilities/application-sync/benchmarks.md",
       "line": 11,
       "kind": "benchmark",
-      "domain": "application-sync"
+      "domain": "application-sync",
+      "benchmark_scenarios": [
+        "rm.benchmark.application-sync.sustained-resource@1"
+      ]
     },
     {
       "id": "RM-APP-SYNC-BENCH-0006",
       "source": "docs/02-capabilities/application-sync/benchmarks.md",
       "line": 13,
       "kind": "benchmark",
-      "domain": "application-sync"
+      "domain": "application-sync",
+      "benchmark_scenarios": [
+        "rm.benchmark.application-sync.reproducible-report@1"
+      ]
     },
     {
       "id": "RM-APP-SYNC-CAUSAL-0001",
@@ -6510,42 +6830,48 @@
       "source": "docs/02-capabilities/archive/benchmarks.md",
       "line": 3,
       "kind": "benchmark",
-      "domain": "archive"
+      "domain": "archive",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-ARCHIVE-BENCH-0002",
       "source": "docs/02-capabilities/archive/benchmarks.md",
       "line": 5,
       "kind": "benchmark",
-      "domain": "archive"
+      "domain": "archive",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-ARCHIVE-BENCH-0003",
       "source": "docs/02-capabilities/archive/benchmarks.md",
       "line": 7,
       "kind": "benchmark",
-      "domain": "archive"
+      "domain": "archive",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-ARCHIVE-BENCH-0004",
       "source": "docs/02-capabilities/archive/benchmarks.md",
       "line": 9,
       "kind": "benchmark",
-      "domain": "archive"
+      "domain": "archive",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-ARCHIVE-BENCH-0005",
       "source": "docs/02-capabilities/archive/benchmarks.md",
       "line": 11,
       "kind": "benchmark",
-      "domain": "archive"
+      "domain": "archive",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-ARCHIVE-BENCH-0006",
       "source": "docs/02-capabilities/archive/benchmarks.md",
       "line": 13,
       "kind": "benchmark",
-      "domain": "archive"
+      "domain": "archive",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-ARCHIVE-CODEC-0001",
@@ -7836,42 +8162,60 @@
       "source": "docs/02-capabilities/audit-evidence/benchmarks.md",
       "line": 3,
       "kind": "benchmark",
-      "domain": "audit-evidence"
+      "domain": "audit-evidence",
+      "benchmark_scenarios": [
+        "rm.benchmark.audit-evidence.producer-effect@1"
+      ]
     },
     {
       "id": "RM-AUDIT-BENCH-0002",
       "source": "docs/02-capabilities/audit-evidence/benchmarks.md",
       "line": 5,
       "kind": "benchmark",
-      "domain": "audit-evidence"
+      "domain": "audit-evidence",
+      "benchmark_scenarios": [
+        "rm.benchmark.audit-evidence.pipeline@1"
+      ]
     },
     {
       "id": "RM-AUDIT-BENCH-0003",
       "source": "docs/02-capabilities/audit-evidence/benchmarks.md",
       "line": 7,
       "kind": "benchmark",
-      "domain": "audit-evidence"
+      "domain": "audit-evidence",
+      "benchmark_scenarios": [
+        "rm.benchmark.audit-evidence.query-proof-report@1"
+      ]
     },
     {
       "id": "RM-AUDIT-BENCH-0004",
       "source": "docs/02-capabilities/audit-evidence/benchmarks.md",
       "line": 9,
       "kind": "benchmark",
-      "domain": "audit-evidence"
+      "domain": "audit-evidence",
+      "benchmark_scenarios": [
+        "rm.benchmark.audit-evidence.storage-crypto-cost@1"
+      ]
     },
     {
       "id": "RM-AUDIT-BENCH-0005",
       "source": "docs/02-capabilities/audit-evidence/benchmarks.md",
       "line": 11,
       "kind": "benchmark",
-      "domain": "audit-evidence"
+      "domain": "audit-evidence",
+      "benchmark_scenarios": [
+        "rm.benchmark.audit-evidence.adversarial-sustained@1"
+      ]
     },
     {
       "id": "RM-AUDIT-BENCH-0006",
       "source": "docs/02-capabilities/audit-evidence/benchmarks.md",
       "line": 13,
       "kind": "benchmark",
-      "domain": "audit-evidence"
+      "domain": "audit-evidence",
+      "benchmark_scenarios": [
+        "rm.benchmark.audit-evidence.reproducible-report@1"
+      ]
     },
     {
       "id": "RM-AUDIT-CAPTURE-0001",
@@ -9387,49 +9731,56 @@
       "source": "docs/02-capabilities/caching/benchmarks.md",
       "line": 3,
       "kind": "benchmark",
-      "domain": "caching"
+      "domain": "caching",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-CACHE-BENCH-0002",
       "source": "docs/02-capabilities/caching/benchmarks.md",
       "line": 5,
       "kind": "benchmark",
-      "domain": "caching"
+      "domain": "caching",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-CACHE-BENCH-0003",
       "source": "docs/02-capabilities/caching/benchmarks.md",
       "line": 7,
       "kind": "benchmark",
-      "domain": "caching"
+      "domain": "caching",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-CACHE-BENCH-0004",
       "source": "docs/02-capabilities/caching/benchmarks.md",
       "line": 9,
       "kind": "benchmark",
-      "domain": "caching"
+      "domain": "caching",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-CACHE-BENCH-0005",
       "source": "docs/02-capabilities/caching/benchmarks.md",
       "line": 11,
       "kind": "benchmark",
-      "domain": "caching"
+      "domain": "caching",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-CACHE-BENCH-0006",
       "source": "docs/02-capabilities/caching/benchmarks.md",
       "line": 13,
       "kind": "benchmark",
-      "domain": "caching"
+      "domain": "caching",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-CACHE-BENCH-0007",
       "source": "docs/02-capabilities/caching/benchmarks.md",
       "line": 15,
       "kind": "benchmark",
-      "domain": "caching"
+      "domain": "caching",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-CACHE-CONCURRENCY-0001",
@@ -10522,49 +10873,56 @@
       "source": "docs/02-capabilities/content-inspection/benchmarks.md",
       "line": 3,
       "kind": "benchmark",
-      "domain": "content-inspection"
+      "domain": "content-inspection",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-CONTENT-BENCH-0002",
       "source": "docs/02-capabilities/content-inspection/benchmarks.md",
       "line": 5,
       "kind": "benchmark",
-      "domain": "content-inspection"
+      "domain": "content-inspection",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-CONTENT-BENCH-0003",
       "source": "docs/02-capabilities/content-inspection/benchmarks.md",
       "line": 7,
       "kind": "benchmark",
-      "domain": "content-inspection"
+      "domain": "content-inspection",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-CONTENT-BENCH-0004",
       "source": "docs/02-capabilities/content-inspection/benchmarks.md",
       "line": 9,
       "kind": "benchmark",
-      "domain": "content-inspection"
+      "domain": "content-inspection",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-CONTENT-BENCH-0005",
       "source": "docs/02-capabilities/content-inspection/benchmarks.md",
       "line": 11,
       "kind": "benchmark",
-      "domain": "content-inspection"
+      "domain": "content-inspection",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-CONTENT-BENCH-0006",
       "source": "docs/02-capabilities/content-inspection/benchmarks.md",
       "line": 13,
       "kind": "benchmark",
-      "domain": "content-inspection"
+      "domain": "content-inspection",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-CONTENT-BENCH-0007",
       "source": "docs/02-capabilities/content-inspection/benchmarks.md",
       "line": 15,
       "kind": "benchmark",
-      "domain": "content-inspection"
+      "domain": "content-inspection",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-CONTENT-CACHE-0001",
@@ -11211,42 +11569,48 @@
       "source": "docs/02-capabilities/coordination/benchmarks.md",
       "line": 3,
       "kind": "benchmark",
-      "domain": "coordination"
+      "domain": "coordination",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-COORDINATION-BENCH-0002",
       "source": "docs/02-capabilities/coordination/benchmarks.md",
       "line": 5,
       "kind": "benchmark",
-      "domain": "coordination"
+      "domain": "coordination",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-COORDINATION-BENCH-0003",
       "source": "docs/02-capabilities/coordination/benchmarks.md",
       "line": 7,
       "kind": "benchmark",
-      "domain": "coordination"
+      "domain": "coordination",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-COORDINATION-BENCH-0004",
       "source": "docs/02-capabilities/coordination/benchmarks.md",
       "line": 9,
       "kind": "benchmark",
-      "domain": "coordination"
+      "domain": "coordination",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-COORDINATION-BENCH-0005",
       "source": "docs/02-capabilities/coordination/benchmarks.md",
       "line": 11,
       "kind": "benchmark",
-      "domain": "coordination"
+      "domain": "coordination",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-COORDINATION-BENCH-0006",
       "source": "docs/02-capabilities/coordination/benchmarks.md",
       "line": 13,
       "kind": "benchmark",
-      "domain": "coordination"
+      "domain": "coordination",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-COORDINATION-CONFORMANCE-0001",
@@ -13677,42 +14041,48 @@
       "source": "docs/02-capabilities/identity-governance/benchmarks.md",
       "line": 3,
       "kind": "benchmark",
-      "domain": "identity-governance"
+      "domain": "identity-governance",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-IDENTITY-GOV-BENCH-0002",
       "source": "docs/02-capabilities/identity-governance/benchmarks.md",
       "line": 5,
       "kind": "benchmark",
-      "domain": "identity-governance"
+      "domain": "identity-governance",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-IDENTITY-GOV-BENCH-0003",
       "source": "docs/02-capabilities/identity-governance/benchmarks.md",
       "line": 7,
       "kind": "benchmark",
-      "domain": "identity-governance"
+      "domain": "identity-governance",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-IDENTITY-GOV-BENCH-0004",
       "source": "docs/02-capabilities/identity-governance/benchmarks.md",
       "line": 9,
       "kind": "benchmark",
-      "domain": "identity-governance"
+      "domain": "identity-governance",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-IDENTITY-GOV-BENCH-0005",
       "source": "docs/02-capabilities/identity-governance/benchmarks.md",
       "line": 11,
       "kind": "benchmark",
-      "domain": "identity-governance"
+      "domain": "identity-governance",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-IDENTITY-GOV-BENCH-0006",
       "source": "docs/02-capabilities/identity-governance/benchmarks.md",
       "line": 13,
       "kind": "benchmark",
-      "domain": "identity-governance"
+      "domain": "identity-governance",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-IDENTITY-GOV-CONFORMANCE-0001",
@@ -14647,49 +15017,56 @@
       "source": "docs/02-capabilities/information-protection/benchmarks.md",
       "line": 3,
       "kind": "benchmark",
-      "domain": "information-protection"
+      "domain": "information-protection",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-PROTECTION-BENCH-0002",
       "source": "docs/02-capabilities/information-protection/benchmarks.md",
       "line": 5,
       "kind": "benchmark",
-      "domain": "information-protection"
+      "domain": "information-protection",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-PROTECTION-BENCH-0003",
       "source": "docs/02-capabilities/information-protection/benchmarks.md",
       "line": 7,
       "kind": "benchmark",
-      "domain": "information-protection"
+      "domain": "information-protection",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-PROTECTION-BENCH-0004",
       "source": "docs/02-capabilities/information-protection/benchmarks.md",
       "line": 9,
       "kind": "benchmark",
-      "domain": "information-protection"
+      "domain": "information-protection",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-PROTECTION-BENCH-0005",
       "source": "docs/02-capabilities/information-protection/benchmarks.md",
       "line": 11,
       "kind": "benchmark",
-      "domain": "information-protection"
+      "domain": "information-protection",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-PROTECTION-BENCH-0006",
       "source": "docs/02-capabilities/information-protection/benchmarks.md",
       "line": 13,
       "kind": "benchmark",
-      "domain": "information-protection"
+      "domain": "information-protection",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-PROTECTION-BENCH-0007",
       "source": "docs/02-capabilities/information-protection/benchmarks.md",
       "line": 15,
       "kind": "benchmark",
-      "domain": "information-protection"
+      "domain": "information-protection",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-PROTECTION-CLASSIFY-0001",
@@ -15728,49 +16105,56 @@
       "source": "docs/02-capabilities/interchange/benchmarks.md",
       "line": 3,
       "kind": "benchmark",
-      "domain": "interchange"
+      "domain": "interchange",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-INTERCHANGE-BENCH-0002",
       "source": "docs/02-capabilities/interchange/benchmarks.md",
       "line": 5,
       "kind": "benchmark",
-      "domain": "interchange"
+      "domain": "interchange",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-INTERCHANGE-BENCH-0003",
       "source": "docs/02-capabilities/interchange/benchmarks.md",
       "line": 7,
       "kind": "benchmark",
-      "domain": "interchange"
+      "domain": "interchange",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-INTERCHANGE-BENCH-0004",
       "source": "docs/02-capabilities/interchange/benchmarks.md",
       "line": 9,
       "kind": "benchmark",
-      "domain": "interchange"
+      "domain": "interchange",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-INTERCHANGE-BENCH-0005",
       "source": "docs/02-capabilities/interchange/benchmarks.md",
       "line": 11,
       "kind": "benchmark",
-      "domain": "interchange"
+      "domain": "interchange",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-INTERCHANGE-BENCH-0006",
       "source": "docs/02-capabilities/interchange/benchmarks.md",
       "line": 13,
       "kind": "benchmark",
-      "domain": "interchange"
+      "domain": "interchange",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-INTERCHANGE-BENCH-0007",
       "source": "docs/02-capabilities/interchange/benchmarks.md",
       "line": 15,
       "kind": "benchmark",
-      "domain": "interchange"
+      "domain": "interchange",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-INTERCHANGE-CANON-0001",
@@ -17600,42 +17984,60 @@
       "source": "docs/02-capabilities/messaging/benchmarks.md",
       "line": 3,
       "kind": "benchmark",
-      "domain": "messaging"
+      "domain": "messaging",
+      "benchmark_scenarios": [
+        "rm.benchmark.messaging.environment@1"
+      ]
     },
     {
       "id": "RM-MESSAGING-BENCH-0002",
       "source": "docs/02-capabilities/messaging/benchmarks.md",
       "line": 5,
       "kind": "benchmark",
-      "domain": "messaging"
+      "domain": "messaging",
+      "benchmark_scenarios": [
+        "rm.benchmark.messaging.workload-matrix@1"
+      ]
     },
     {
       "id": "RM-MESSAGING-BENCH-0003",
       "source": "docs/02-capabilities/messaging/benchmarks.md",
       "line": 7,
       "kind": "benchmark",
-      "domain": "messaging"
+      "domain": "messaging",
+      "benchmark_scenarios": [
+        "rm.benchmark.messaging.boundary-cost@1"
+      ]
     },
     {
       "id": "RM-MESSAGING-BENCH-0004",
       "source": "docs/02-capabilities/messaging/benchmarks.md",
       "line": 9,
       "kind": "benchmark",
-      "domain": "messaging"
+      "domain": "messaging",
+      "benchmark_scenarios": [
+        "rm.benchmark.messaging.saturation-fairness@1"
+      ]
     },
     {
       "id": "RM-MESSAGING-BENCH-0005",
       "source": "docs/02-capabilities/messaging/benchmarks.md",
       "line": 11,
       "kind": "benchmark",
-      "domain": "messaging"
+      "domain": "messaging",
+      "benchmark_scenarios": [
+        "rm.benchmark.messaging.durability-recovery@1"
+      ]
     },
     {
       "id": "RM-MESSAGING-BENCH-0006",
       "source": "docs/02-capabilities/messaging/benchmarks.md",
       "line": 13,
       "kind": "benchmark",
-      "domain": "messaging"
+      "domain": "messaging",
+      "benchmark_scenarios": [
+        "rm.benchmark.messaging.native-equivalence@1"
+      ]
     },
     {
       "id": "RM-MESSAGING-CONFORMANCE-0001",
@@ -20698,49 +21100,56 @@
       "source": "docs/02-capabilities/object-storage/benchmarks.md",
       "line": 3,
       "kind": "benchmark",
-      "domain": "object-storage"
+      "domain": "object-storage",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-OBJECT-BENCH-0002",
       "source": "docs/02-capabilities/object-storage/benchmarks.md",
       "line": 5,
       "kind": "benchmark",
-      "domain": "object-storage"
+      "domain": "object-storage",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-OBJECT-BENCH-0003",
       "source": "docs/02-capabilities/object-storage/benchmarks.md",
       "line": 7,
       "kind": "benchmark",
-      "domain": "object-storage"
+      "domain": "object-storage",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-OBJECT-BENCH-0004",
       "source": "docs/02-capabilities/object-storage/benchmarks.md",
       "line": 9,
       "kind": "benchmark",
-      "domain": "object-storage"
+      "domain": "object-storage",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-OBJECT-BENCH-0005",
       "source": "docs/02-capabilities/object-storage/benchmarks.md",
       "line": 11,
       "kind": "benchmark",
-      "domain": "object-storage"
+      "domain": "object-storage",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-OBJECT-BENCH-0006",
       "source": "docs/02-capabilities/object-storage/benchmarks.md",
       "line": 13,
       "kind": "benchmark",
-      "domain": "object-storage"
+      "domain": "object-storage",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-OBJECT-BENCH-0007",
       "source": "docs/02-capabilities/object-storage/benchmarks.md",
       "line": 15,
       "kind": "benchmark",
-      "domain": "object-storage"
+      "domain": "object-storage",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-OBJECT-CONDITION-0001",
@@ -21859,42 +22268,48 @@
       "source": "docs/02-capabilities/package-management/benchmarks.md",
       "line": 3,
       "kind": "benchmark",
-      "domain": "package-management"
+      "domain": "package-management",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-PACKAGE-BENCH-0002",
       "source": "docs/02-capabilities/package-management/benchmarks.md",
       "line": 5,
       "kind": "benchmark",
-      "domain": "package-management"
+      "domain": "package-management",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-PACKAGE-BENCH-0003",
       "source": "docs/02-capabilities/package-management/benchmarks.md",
       "line": 7,
       "kind": "benchmark",
-      "domain": "package-management"
+      "domain": "package-management",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-PACKAGE-BENCH-0004",
       "source": "docs/02-capabilities/package-management/benchmarks.md",
       "line": 9,
       "kind": "benchmark",
-      "domain": "package-management"
+      "domain": "package-management",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-PACKAGE-BENCH-0005",
       "source": "docs/02-capabilities/package-management/benchmarks.md",
       "line": 11,
       "kind": "benchmark",
-      "domain": "package-management"
+      "domain": "package-management",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-PACKAGE-BENCH-0006",
       "source": "docs/02-capabilities/package-management/benchmarks.md",
       "line": 13,
       "kind": "benchmark",
-      "domain": "package-management"
+      "domain": "package-management",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-PACKAGE-CONFORMANCE-0001",
@@ -22564,49 +22979,56 @@
       "source": "docs/02-capabilities/persistence/benchmarks.md",
       "line": 3,
       "kind": "benchmark",
-      "domain": "persistence"
+      "domain": "persistence",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-PERSISTENCE-BENCH-0002",
       "source": "docs/02-capabilities/persistence/benchmarks.md",
       "line": 5,
       "kind": "benchmark",
-      "domain": "persistence"
+      "domain": "persistence",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-PERSISTENCE-BENCH-0003",
       "source": "docs/02-capabilities/persistence/benchmarks.md",
       "line": 7,
       "kind": "benchmark",
-      "domain": "persistence"
+      "domain": "persistence",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-PERSISTENCE-BENCH-0004",
       "source": "docs/02-capabilities/persistence/benchmarks.md",
       "line": 9,
       "kind": "benchmark",
-      "domain": "persistence"
+      "domain": "persistence",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-PERSISTENCE-BENCH-0005",
       "source": "docs/02-capabilities/persistence/benchmarks.md",
       "line": 11,
       "kind": "benchmark",
-      "domain": "persistence"
+      "domain": "persistence",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-PERSISTENCE-BENCH-0006",
       "source": "docs/02-capabilities/persistence/benchmarks.md",
       "line": 13,
       "kind": "benchmark",
-      "domain": "persistence"
+      "domain": "persistence",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-PERSISTENCE-BENCH-0007",
       "source": "docs/02-capabilities/persistence/benchmarks.md",
       "line": 15,
       "kind": "benchmark",
-      "domain": "persistence"
+      "domain": "persistence",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-PERSISTENCE-CHANGE-0001",
@@ -23501,49 +23923,56 @@
       "source": "docs/02-capabilities/policy/benchmarks.md",
       "line": 3,
       "kind": "benchmark",
-      "domain": "policy"
+      "domain": "policy",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-POLICY-BENCH-0002",
       "source": "docs/02-capabilities/policy/benchmarks.md",
       "line": 5,
       "kind": "benchmark",
-      "domain": "policy"
+      "domain": "policy",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-POLICY-BENCH-0003",
       "source": "docs/02-capabilities/policy/benchmarks.md",
       "line": 7,
       "kind": "benchmark",
-      "domain": "policy"
+      "domain": "policy",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-POLICY-BENCH-0004",
       "source": "docs/02-capabilities/policy/benchmarks.md",
       "line": 9,
       "kind": "benchmark",
-      "domain": "policy"
+      "domain": "policy",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-POLICY-BENCH-0005",
       "source": "docs/02-capabilities/policy/benchmarks.md",
       "line": 11,
       "kind": "benchmark",
-      "domain": "policy"
+      "domain": "policy",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-POLICY-BENCH-0006",
       "source": "docs/02-capabilities/policy/benchmarks.md",
       "line": 13,
       "kind": "benchmark",
-      "domain": "policy"
+      "domain": "policy",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-POLICY-BENCH-0007",
       "source": "docs/02-capabilities/policy/benchmarks.md",
       "line": 15,
       "kind": "benchmark",
-      "domain": "policy"
+      "domain": "policy",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-POLICY-COMPOSE-0001",
@@ -25117,49 +25546,56 @@
       "source": "docs/02-capabilities/privacy/benchmarks.md",
       "line": 3,
       "kind": "benchmark",
-      "domain": "privacy"
+      "domain": "privacy",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-PRIVACY-BENCH-0002",
       "source": "docs/02-capabilities/privacy/benchmarks.md",
       "line": 5,
       "kind": "benchmark",
-      "domain": "privacy"
+      "domain": "privacy",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-PRIVACY-BENCH-0003",
       "source": "docs/02-capabilities/privacy/benchmarks.md",
       "line": 7,
       "kind": "benchmark",
-      "domain": "privacy"
+      "domain": "privacy",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-PRIVACY-BENCH-0004",
       "source": "docs/02-capabilities/privacy/benchmarks.md",
       "line": 9,
       "kind": "benchmark",
-      "domain": "privacy"
+      "domain": "privacy",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-PRIVACY-BENCH-0005",
       "source": "docs/02-capabilities/privacy/benchmarks.md",
       "line": 11,
       "kind": "benchmark",
-      "domain": "privacy"
+      "domain": "privacy",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-PRIVACY-BENCH-0006",
       "source": "docs/02-capabilities/privacy/benchmarks.md",
       "line": 13,
       "kind": "benchmark",
-      "domain": "privacy"
+      "domain": "privacy",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-PRIVACY-BENCH-0007",
       "source": "docs/02-capabilities/privacy/benchmarks.md",
       "line": 15,
       "kind": "benchmark",
-      "domain": "privacy"
+      "domain": "privacy",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-PRIVACY-CONFORMANCE-0001",
@@ -30587,63 +31023,72 @@
       "source": "docs/02-capabilities/search/benchmarks.md",
       "line": 3,
       "kind": "benchmark",
-      "domain": "search"
+      "domain": "search",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-SEARCH-BENCH-0002",
       "source": "docs/02-capabilities/search/benchmarks.md",
       "line": 5,
       "kind": "benchmark",
-      "domain": "search"
+      "domain": "search",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-SEARCH-BENCH-0003",
       "source": "docs/02-capabilities/search/benchmarks.md",
       "line": 7,
       "kind": "benchmark",
-      "domain": "search"
+      "domain": "search",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-SEARCH-BENCH-0004",
       "source": "docs/02-capabilities/search/benchmarks.md",
       "line": 9,
       "kind": "benchmark",
-      "domain": "search"
+      "domain": "search",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-SEARCH-EVAL-0001",
       "source": "docs/02-capabilities/search/benchmarks.md",
       "line": 11,
       "kind": "benchmark",
-      "domain": "search"
+      "domain": "search",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-SEARCH-EVAL-0002",
       "source": "docs/02-capabilities/search/benchmarks.md",
       "line": 13,
       "kind": "benchmark",
-      "domain": "search"
+      "domain": "search",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-SEARCH-EVAL-0003",
       "source": "docs/02-capabilities/search/benchmarks.md",
       "line": 15,
       "kind": "benchmark",
-      "domain": "search"
+      "domain": "search",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-SEARCH-BENCH-0005",
       "source": "docs/02-capabilities/search/benchmarks.md",
       "line": 17,
       "kind": "benchmark",
-      "domain": "search"
+      "domain": "search",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-SEARCH-BENCH-0006",
       "source": "docs/02-capabilities/search/benchmarks.md",
       "line": 19,
       "kind": "benchmark",
-      "domain": "search"
+      "domain": "search",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-SEARCH-CONFORMANCE-0001",
@@ -31401,42 +31846,48 @@
       "source": "docs/02-capabilities/secrets-lifecycle/benchmarks.md",
       "line": 3,
       "kind": "benchmark",
-      "domain": "secrets-lifecycle"
+      "domain": "secrets-lifecycle",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-SECRETS-BENCH-0002",
       "source": "docs/02-capabilities/secrets-lifecycle/benchmarks.md",
       "line": 5,
       "kind": "benchmark",
-      "domain": "secrets-lifecycle"
+      "domain": "secrets-lifecycle",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-SECRETS-BENCH-0003",
       "source": "docs/02-capabilities/secrets-lifecycle/benchmarks.md",
       "line": 7,
       "kind": "benchmark",
-      "domain": "secrets-lifecycle"
+      "domain": "secrets-lifecycle",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-SECRETS-BENCH-0004",
       "source": "docs/02-capabilities/secrets-lifecycle/benchmarks.md",
       "line": 9,
       "kind": "benchmark",
-      "domain": "secrets-lifecycle"
+      "domain": "secrets-lifecycle",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-SECRETS-BENCH-0005",
       "source": "docs/02-capabilities/secrets-lifecycle/benchmarks.md",
       "line": 11,
       "kind": "benchmark",
-      "domain": "secrets-lifecycle"
+      "domain": "secrets-lifecycle",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-SECRETS-BENCH-0006",
       "source": "docs/02-capabilities/secrets-lifecycle/benchmarks.md",
       "line": 13,
       "kind": "benchmark",
-      "domain": "secrets-lifecycle"
+      "domain": "secrets-lifecycle",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-SECRETS-BOOTSTRAP-0001",
@@ -34171,49 +34622,56 @@
       "source": "docs/02-capabilities/service-traffic/benchmarks.md",
       "line": 3,
       "kind": "benchmark",
-      "domain": "service-traffic"
+      "domain": "service-traffic",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-TRAFFIC-BENCH-0002",
       "source": "docs/02-capabilities/service-traffic/benchmarks.md",
       "line": 5,
       "kind": "benchmark",
-      "domain": "service-traffic"
+      "domain": "service-traffic",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-TRAFFIC-BENCH-0003",
       "source": "docs/02-capabilities/service-traffic/benchmarks.md",
       "line": 7,
       "kind": "benchmark",
-      "domain": "service-traffic"
+      "domain": "service-traffic",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-TRAFFIC-BENCH-0004",
       "source": "docs/02-capabilities/service-traffic/benchmarks.md",
       "line": 9,
       "kind": "benchmark",
-      "domain": "service-traffic"
+      "domain": "service-traffic",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-TRAFFIC-BENCH-0005",
       "source": "docs/02-capabilities/service-traffic/benchmarks.md",
       "line": 11,
       "kind": "benchmark",
-      "domain": "service-traffic"
+      "domain": "service-traffic",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-TRAFFIC-BENCH-0006",
       "source": "docs/02-capabilities/service-traffic/benchmarks.md",
       "line": 13,
       "kind": "benchmark",
-      "domain": "service-traffic"
+      "domain": "service-traffic",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-TRAFFIC-BENCH-0007",
       "source": "docs/02-capabilities/service-traffic/benchmarks.md",
       "line": 15,
       "kind": "benchmark",
-      "domain": "service-traffic"
+      "domain": "service-traffic",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-TRAFFIC-CONFORMANCE-0001",
@@ -34923,42 +35381,48 @@
       "source": "docs/02-capabilities/signed-artifacts/benchmarks.md",
       "line": 3,
       "kind": "benchmark",
-      "domain": "signed-artifacts"
+      "domain": "signed-artifacts",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-SIGNED-BENCH-0002",
       "source": "docs/02-capabilities/signed-artifacts/benchmarks.md",
       "line": 5,
       "kind": "benchmark",
-      "domain": "signed-artifacts"
+      "domain": "signed-artifacts",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-SIGNED-BENCH-0003",
       "source": "docs/02-capabilities/signed-artifacts/benchmarks.md",
       "line": 7,
       "kind": "benchmark",
-      "domain": "signed-artifacts"
+      "domain": "signed-artifacts",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-SIGNED-BENCH-0004",
       "source": "docs/02-capabilities/signed-artifacts/benchmarks.md",
       "line": 9,
       "kind": "benchmark",
-      "domain": "signed-artifacts"
+      "domain": "signed-artifacts",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-SIGNED-BENCH-0005",
       "source": "docs/02-capabilities/signed-artifacts/benchmarks.md",
       "line": 11,
       "kind": "benchmark",
-      "domain": "signed-artifacts"
+      "domain": "signed-artifacts",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-SIGNED-BENCH-0006",
       "source": "docs/02-capabilities/signed-artifacts/benchmarks.md",
       "line": 13,
       "kind": "benchmark",
-      "domain": "signed-artifacts"
+      "domain": "signed-artifacts",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-SIGNED-CONFORMANCE-0001",
@@ -36125,42 +36589,48 @@
       "source": "docs/02-capabilities/tenant-service-governance/benchmarks.md",
       "line": 3,
       "kind": "benchmark",
-      "domain": "tenant-service-governance"
+      "domain": "tenant-service-governance",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-TENANT-GOV-BENCH-0002",
       "source": "docs/02-capabilities/tenant-service-governance/benchmarks.md",
       "line": 5,
       "kind": "benchmark",
-      "domain": "tenant-service-governance"
+      "domain": "tenant-service-governance",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-TENANT-GOV-BENCH-0003",
       "source": "docs/02-capabilities/tenant-service-governance/benchmarks.md",
       "line": 7,
       "kind": "benchmark",
-      "domain": "tenant-service-governance"
+      "domain": "tenant-service-governance",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-TENANT-GOV-BENCH-0004",
       "source": "docs/02-capabilities/tenant-service-governance/benchmarks.md",
       "line": 9,
       "kind": "benchmark",
-      "domain": "tenant-service-governance"
+      "domain": "tenant-service-governance",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-TENANT-GOV-BENCH-0005",
       "source": "docs/02-capabilities/tenant-service-governance/benchmarks.md",
       "line": 11,
       "kind": "benchmark",
-      "domain": "tenant-service-governance"
+      "domain": "tenant-service-governance",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-TENANT-GOV-BENCH-0006",
       "source": "docs/02-capabilities/tenant-service-governance/benchmarks.md",
       "line": 13,
       "kind": "benchmark",
-      "domain": "tenant-service-governance"
+      "domain": "tenant-service-governance",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-TENANT-GOV-BILL-0001",
@@ -39144,42 +39614,48 @@
       "source": "docs/02-capabilities/workflow-orchestration/benchmarks.md",
       "line": 3,
       "kind": "benchmark",
-      "domain": "workflow-orchestration"
+      "domain": "workflow-orchestration",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-WORKFLOW-BENCH-0002",
       "source": "docs/02-capabilities/workflow-orchestration/benchmarks.md",
       "line": 5,
       "kind": "benchmark",
-      "domain": "workflow-orchestration"
+      "domain": "workflow-orchestration",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-WORKFLOW-BENCH-0003",
       "source": "docs/02-capabilities/workflow-orchestration/benchmarks.md",
       "line": 7,
       "kind": "benchmark",
-      "domain": "workflow-orchestration"
+      "domain": "workflow-orchestration",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-WORKFLOW-BENCH-0004",
       "source": "docs/02-capabilities/workflow-orchestration/benchmarks.md",
       "line": 9,
       "kind": "benchmark",
-      "domain": "workflow-orchestration"
+      "domain": "workflow-orchestration",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-WORKFLOW-BENCH-0005",
       "source": "docs/02-capabilities/workflow-orchestration/benchmarks.md",
       "line": 11,
       "kind": "benchmark",
-      "domain": "workflow-orchestration"
+      "domain": "workflow-orchestration",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-WORKFLOW-BENCH-0006",
       "source": "docs/02-capabilities/workflow-orchestration/benchmarks.md",
       "line": 13,
       "kind": "benchmark",
-      "domain": "workflow-orchestration"
+      "domain": "workflow-orchestration",
+      "benchmark_scenarios": []
     },
     {
       "id": "RM-WORKFLOW-CANCEL-0001",
@@ -39794,30 +40270,65 @@
       "domain": null
     },
     {
+      "id": "RM-READINESS-BENCH-0001",
+      "source": "docs/04-ecosystem/consistency-readiness/benchmark-traceability.md",
+      "line": 28,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-READINESS-BENCH-0002",
+      "source": "docs/04-ecosystem/consistency-readiness/benchmark-traceability.md",
+      "line": 30,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-READINESS-BENCH-0003",
+      "source": "docs/04-ecosystem/consistency-readiness/benchmark-traceability.md",
+      "line": 32,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-READINESS-BENCH-0004",
+      "source": "docs/04-ecosystem/consistency-readiness/benchmark-traceability.md",
+      "line": 34,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-READINESS-BENCH-0005",
+      "source": "docs/04-ecosystem/consistency-readiness/benchmark-traceability.md",
+      "line": 36,
+      "kind": "governance",
+      "domain": null
+    },
+    {
       "id": "RM-READINESS-CONTRADICTION-0001",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 21,
+      "line": 22,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0002",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 23,
+      "line": 24,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0003",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 25,
+      "line": 26,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-READINESS-CONTRADICTION-0004",
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "line": 27,
+      "line": 28,
       "kind": "governance",
       "domain": null
     },
@@ -40519,8 +41030,8 @@
     },
     {
       "source": "docs/01-architecture/architecture-model.md",
-      "sha256": "fab1d1f7f8a5c71040c48ee1c84650667cbe39dc00c2ffd8cb6bf818a8007b75",
-      "lines": 591
+      "sha256": "3a34af810f3eebd61f34ecef4777cb63b62c81d4c3fbf6e368d083cad0e2dfbc",
+      "lines": 593
     },
     {
       "source": "docs/01-architecture/behavioral-contracts.md",
@@ -41124,8 +41635,8 @@
     },
     {
       "source": "docs/02-capabilities/application-sync/traceability.md",
-      "sha256": "d973a6bc2c4cc3f449dfdc03b73d28330baa5880281c6734bbb15ca70e20f6aa",
-      "lines": 22
+      "sha256": "441f429c0d9d6cf725eb15fa4953a4994c2d8132a949123a457eeeeac9dbf814",
+      "lines": 33
     },
     {
       "source": "docs/02-capabilities/archive/benchmarks.md",
@@ -41399,8 +41910,8 @@
     },
     {
       "source": "docs/02-capabilities/audit-evidence/traceability.md",
-      "sha256": "ad739fc51a4b8548f87f9b9f24eb7f74eb19d5b645dfc217ffe451cae852cc71",
-      "lines": 30
+      "sha256": "34838dd338d0dd6fef7152668c8fb179f72997b8a5ea6ac9a13ca19daf387610",
+      "lines": 41
     },
     {
       "source": "docs/02-capabilities/background-services/attempts-retries.md",
@@ -42624,8 +43135,8 @@
     },
     {
       "source": "docs/02-capabilities/messaging/traceability.md",
-      "sha256": "96371e3294b114557669ab5ae02a1fc3be3a0ce631902b46388b47d46e2da9d0",
-      "lines": 19
+      "sha256": "fb1d201d2932416b03ead239d77bd772c039364b01502d94204ab0cc37bcc677",
+      "lines": 30
     },
     {
       "source": "docs/02-capabilities/model.md",
@@ -44909,8 +45420,8 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/audit-report.md",
-      "sha256": "0fb9c2b876ff63cb3b3cd584dac3f8628cbb2d8398e110079d5bc383f3e31238",
-      "lines": 52
+      "sha256": "30426153efdcf61795a3b9e7e7fc3bc59326df53dabcd6387988d9fc3b300872",
+      "lines": 54
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/audit-rules.md",
@@ -44918,14 +45429,19 @@
       "lines": 51
     },
     {
+      "source": "docs/04-ecosystem/consistency-readiness/benchmark-traceability.md",
+      "sha256": "9b5a66717a5f741a2c0f1596d86960de5e91bbbdb3e4e4e7078caf59fe16952b",
+      "lines": 43
+    },
+    {
       "source": "docs/04-ecosystem/consistency-readiness/closure-backlog.md",
-      "sha256": "4442df6fcc03da87e88f903315c5e2af8566f2c8fbda48bd3e291d4177e220b5",
+      "sha256": "92ef4ca1e8030a5e81aceb33fd0814b9cd98357d79a832ce06c92a16159f678e",
       "lines": 16
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/contradiction-ledger.md",
-      "sha256": "8ad44ecd030106cbaa551db63f11801400f496abc008268e5cd895b9b60c98c2",
-      "lines": 27
+      "sha256": "2317f79451f3725de98145b4fdc261d8f64bfbbf91c5bbded1d5003fb01d977a",
+      "lines": 28
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/dependency-graph.md",
@@ -44944,8 +45460,8 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/README.md",
-      "sha256": "9fd9360df00e27a9af8f5fcc3b5d6409272f3fd3b6091d43bed15740dd2e41b8",
-      "lines": 47
+      "sha256": "c6d66724c47ff73e31989c4aa0a6e4f6ad950585eaaed5db324fbc692cf489c7",
+      "lines": 48
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/vocabulary.md",
@@ -45044,8 +45560,8 @@
     },
     {
       "source": "docs/06-roadmap/roadmap.md",
-      "sha256": "e94c94ed3f4014635d6dad7c1739dde4829cdd08f65ee16f55bafcdf4bd9441e",
-      "lines": 199
+      "sha256": "c709aa78cffd6f380fc6f0064c16df46d1d73027b7242557ac3411a5766c7f4d",
+      "lines": 201
     },
     {
       "source": "docs/adr/0001-capability-first-platform.md",
@@ -45798,9 +46314,14 @@
       "lines": 24
     },
     {
+      "source": "docs/adr/0151-benchmark-scenarios-and-runs-have-distinct-identities.md",
+      "sha256": "212d4e7997ebfcd5e2340efba06ec7526268b132bdcda849969adab264c0d6a7",
+      "lines": 24
+    },
+    {
       "source": "docs/adr/README.md",
-      "sha256": "a5a95a07f941847352d746bbb743aefa7ae0b9ec56d49adcdd757845ded9f2e3",
-      "lines": 156
+      "sha256": "9bbc7af4348b52798a03f71e592a6aa0a3ee66c3341982c23e7ab893f52706fc",
+      "lines": 157
     },
     {
       "source": "docs/README.md",

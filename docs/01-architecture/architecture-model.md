@@ -2,7 +2,7 @@
 
 **Status:** Accepted  
 **Authority:** Normative source of truth  
-**Version:** 1.74.0
+**Version:** 1.75.0
 **Last updated:** 2026-08-08  
 **Decision:** [ADR-0004](../adr/0004-authoritative-architecture-model.md)
 
@@ -557,6 +557,8 @@ The [architecture consistency, traceability, and readiness model](../04-ecosyste
 Capability dependency edges enter the derived graph only from explicit source declarations; diagrams, links, profile membership, and composition prose cannot create an inferred minimum dependency ([ADR-0148](../adr/0148-dependency-edges-require-source-declaration.md)). Shared terms use [canonical semantic roles and nonclaims](../04-ecosystem/consistency-readiness/vocabulary.md), while domains retain qualified types and lifecycle refinements rather than sharing a universal object model ([ADR-0149](../adr/0149-shared-terms-have-canonical-roles-not-universal-types.md)). The source-linked graph, vocabulary, and contradiction ledger are review evidence with explicit coverage frontiers, not claims that undeclared edges are absent or every domain has been semantically audited.
 
 Portable semantic assertions and executable conformance cases have distinct stable identities ([ADR-0150](../adr/0150-semantic-assertions-and-executable-cases-have-distinct-identities.md)). Assertions name propositions independent of provider or harness; cases name procedures and may vary by platform, provider, environment, fixture, and fault schedule. Results bind assertion, requirement, and case identities. Existing case identifiers remain reserved, and a passing case cannot establish claims beyond its declared assertion, scope, environment, and oracle.
+
+Benchmark scenarios and measured runs likewise have distinct identities ([ADR-0151](../adr/0151-benchmark-scenarios-and-runs-have-distinct-identities.md)). A scenario defines comparable workload semantics, measured boundaries, guarantees, dimensions, metrics, statistics, baseline equivalence, and correctness gates. Each run is an immutable observation bound to exact artifacts, environment, inputs, samples, and provenance. Regression conclusions bind comparable run sets and versioned budgets; neither planned scenarios nor a fast semantically weaker baseline establish native-performance claims.
 
 ## 18. Deliberately unresolved choices
 
