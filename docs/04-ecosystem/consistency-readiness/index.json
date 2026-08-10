@@ -5,7 +5,7 @@
   "generated_from": "Markdown; this index is derived and non-authoritative",
   "summary": {
     "markdown_documents": 1213,
-    "internal_links": 2589,
+    "internal_links": 2596,
     "requirements": 5631,
     "domains": 63,
     "promotion_units": 7,
@@ -21,13 +21,13 @@
     "domains_with_direct_requirement_assertion_map": 9,
     "domains_with_direct_benchmark_scenario_map": 9,
     "benchmark_scenarios": 95,
-    "external_sources": 675,
+    "external_sources": 676,
     "external_sources_with_review_record": 145,
     "domains_with_dedicated_cross_cutting_analysis": 32,
     "domains_with_complete_planned_traceability": 9,
     "domains_experimental_eligible": 7,
-    "domains_with_proposed_promotion_review": 8,
-    "domains_with_accepted_promotion_review": 0,
+    "domains_with_proposed_promotion_review": 7,
+    "domains_with_accepted_promotion_review": 1,
     "declared_graph_nodes": 15,
     "declared_graph_edges": 17,
     "required_graph_acyclic": true
@@ -804,7 +804,7 @@
       "direct_requirement_assertion_map": true,
       "direct_benchmark_scenario_map": true,
       "cross_cutting_analysis": "dedicated",
-      "promotion_review": "proposed",
+      "promotion_review": "accepted",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
@@ -6532,6 +6532,14 @@
       "host": "github.com",
       "sources": [
         "docs/05-governance/implementation-trials/rustils-trial-proposal.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
+      "url": "https://github.com/baileyrd/rustils/pull/122",
+      "host": "github.com",
+      "sources": [
+        "docs/02-capabilities/filesystem/promotion-review.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -23413,7 +23421,7 @@
     {
       "id": "RM-FILESYSTEM-PROMOTION-0001",
       "source": "docs/02-capabilities/filesystem/promotion-review.md",
-      "line": 27,
+      "line": 80,
       "kind": "capability",
       "domain": "filesystem",
       "assertions": [
@@ -23423,7 +23431,7 @@
     {
       "id": "RM-FILESYSTEM-PROMOTION-0002",
       "source": "docs/02-capabilities/filesystem/promotion-review.md",
-      "line": 29,
+      "line": 82,
       "kind": "capability",
       "domain": "filesystem",
       "assertions": [
@@ -23433,7 +23441,7 @@
     {
       "id": "RM-FILESYSTEM-PROMOTION-0003",
       "source": "docs/02-capabilities/filesystem/promotion-review.md",
-      "line": 31,
+      "line": 84,
       "kind": "capability",
       "domain": "filesystem",
       "assertions": [
@@ -57611,8 +57619,8 @@
     },
     {
       "source": "docs/02-capabilities/filesystem/promotion-review.md",
-      "sha256": "866e4a45d0d1abf0d8a1af1ee1388e76afd2c5418e45a29974e97c0a86da7c85",
-      "lines": 31
+      "sha256": "bf38748abd544719c7311dee0df31a5463eb79e84b3f2138abd66160a83c8f2a",
+      "lines": 84
     },
     {
       "source": "docs/02-capabilities/filesystem/resolution-quality.md",
