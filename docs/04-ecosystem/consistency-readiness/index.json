@@ -4,8 +4,8 @@
   "authority": "docs/01-architecture/architecture-model.md",
   "generated_from": "Markdown; this index is derived and non-authoritative",
   "summary": {
-    "markdown_documents": 1216,
-    "internal_links": 2635,
+    "markdown_documents": 1217,
+    "internal_links": 2642,
     "requirements": 5639,
     "domains": 63,
     "promotion_units": 7,
@@ -23530,7 +23530,7 @@
     {
       "id": "RM-FILESYSTEM-PROMOTION-0001",
       "source": "docs/02-capabilities/filesystem/promotion-review.md",
-      "line": 80,
+      "line": 82,
       "kind": "capability",
       "domain": "filesystem",
       "assertions": [
@@ -23540,7 +23540,7 @@
     {
       "id": "RM-FILESYSTEM-PROMOTION-0002",
       "source": "docs/02-capabilities/filesystem/promotion-review.md",
-      "line": 82,
+      "line": 84,
       "kind": "capability",
       "domain": "filesystem",
       "assertions": [
@@ -23550,7 +23550,7 @@
     {
       "id": "RM-FILESYSTEM-PROMOTION-0003",
       "source": "docs/02-capabilities/filesystem/promotion-review.md",
-      "line": 84,
+      "line": 86,
       "kind": "capability",
       "domain": "filesystem",
       "assertions": [
@@ -55267,28 +55267,28 @@
     {
       "id": "RM-RUSTILS-TRIAL-0001",
       "source": "docs/05-governance/implementation-trials/rustils-trial-proposal.md",
-      "line": 149,
+      "line": 180,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-RUSTILS-TRIAL-0002",
       "source": "docs/05-governance/implementation-trials/rustils-trial-proposal.md",
-      "line": 151,
+      "line": 182,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-RUSTILS-TRIAL-0003",
       "source": "docs/05-governance/implementation-trials/rustils-trial-proposal.md",
-      "line": 153,
+      "line": 184,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-RUSTILS-TRIAL-0004",
       "source": "docs/05-governance/implementation-trials/rustils-trial-proposal.md",
-      "line": 155,
+      "line": 186,
       "kind": "governance",
       "domain": null
     },
@@ -57791,8 +57791,8 @@
     },
     {
       "source": "docs/02-capabilities/filesystem/promotion-review.md",
-      "sha256": "1414ccb93d193807f513c2cac6122b0c4b3c44fc9b3066c11da5ff4883e2508b",
-      "lines": 84
+      "sha256": "6ec71eaefa6184b1251aefdac11b4dcacbd785fa5313d15b1e4d86eb691a3bab",
+      "lines": 86
     },
     {
       "source": "docs/02-capabilities/filesystem/resolution-quality.md",
@@ -57803,6 +57803,11 @@
       "source": "docs/02-capabilities/filesystem/resolve.md",
       "sha256": "cfd8c02595b76520ecf644b06ae12064649ae25b0c4d2d51cb11975ca351ec5f",
       "lines": 67
+    },
+    {
+      "source": "docs/02-capabilities/filesystem/rustils-comparison.md",
+      "sha256": "eb8e449ecf60b3ec7abcb4dc35c82ef4fa1a3ae8c0767906a0295a65fcd746d4",
+      "lines": 52
     },
     {
       "source": "docs/02-capabilities/filesystem/source-review.md",
@@ -61306,7 +61311,7 @@
     },
     {
       "source": "docs/05-governance/implementation-trials/README.md",
-      "sha256": "9040d7ffb8d94d5618f85d73abea1e672b89754ec6f4712f1bca1d320a16d219",
+      "sha256": "cf085b5762bb85e08448125ecb4ae38ac6e7186b3d214dda5463328db523f3a1",
       "lines": 37
     },
     {
@@ -61346,8 +61351,8 @@
     },
     {
       "source": "docs/05-governance/implementation-trials/rustils-trial-proposal.md",
-      "sha256": "a7b7f04bfa0cc95a720d25f0277a543ca0ec32a9c788c3b31de3a8017c042c03",
-      "lines": 155
+      "sha256": "d9976af96f71daf69c9d20f19ca6778aa726745cba25734b24be51e9e7debf86",
+      "lines": 186
     },
     {
       "source": "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md",
