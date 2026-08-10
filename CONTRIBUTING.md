@@ -18,6 +18,10 @@ The [authoritative architecture model](docs/01-architecture/architecture-model.m
 
 Every normative change must be explicit about scope, non-goals, platform variance, security, performance, accessibility, internationalization, observability, compatibility, and verification. Link rather than duplicate shared definitions.
 
+## Merge strategy
+
+This repository merges via merge commit only — squash and rebase are disabled. Merge once a pull request reflects the intended change and review feedback is addressed.
+
 ## Status vocabulary
 
 Documents and decisions use: **Draft**, **Proposed**, **Accepted**, **Deprecated**, or **Superseded**. Draft material is not an implementation commitment.
