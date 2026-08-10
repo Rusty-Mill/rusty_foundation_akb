@@ -5,7 +5,7 @@
   "generated_from": "Markdown; this index is derived and non-authoritative",
   "summary": {
     "markdown_documents": 1215,
-    "internal_links": 2626,
+    "internal_links": 2620,
     "requirements": 5636,
     "domains": 63,
     "promotion_units": 7,
@@ -55147,28 +55147,28 @@
     {
       "id": "RM-RUSTILS-TRIAL-0001",
       "source": "docs/05-governance/implementation-trials/rustils-trial-proposal.md",
-      "line": 118,
+      "line": 132,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-RUSTILS-TRIAL-0002",
       "source": "docs/05-governance/implementation-trials/rustils-trial-proposal.md",
-      "line": 120,
+      "line": 134,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-RUSTILS-TRIAL-0003",
       "source": "docs/05-governance/implementation-trials/rustils-trial-proposal.md",
-      "line": 122,
+      "line": 136,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-RUSTILS-TRIAL-0004",
       "source": "docs/05-governance/implementation-trials/rustils-trial-proposal.md",
-      "line": 124,
+      "line": 138,
       "kind": "governance",
       "domain": null
     },
@@ -61181,7 +61181,7 @@
     },
     {
       "source": "docs/05-governance/implementation-trials/README.md",
-      "sha256": "29be8afbdcdc22ff0ea912719af3fda6837052eb1de67e063b85c50dec22dc2b",
+      "sha256": "52969bcabe28db467d85e52d0c518ec36bdf3455d781887ad07064bc2f6ce8f6",
       "lines": 37
     },
     {
@@ -61221,8 +61221,8 @@
     },
     {
       "source": "docs/05-governance/implementation-trials/rustils-trial-proposal.md",
-      "sha256": "64aa2976c51a4887eeab5186313442bf0378b5184d9d29bb356c69adf064ce9e",
-      "lines": 124
+      "sha256": "12e1ea99a9482ffced52cfc4ebaeaba4003756963a06bbdd3a4947988c604764",
+      "lines": 138
     },
     {
       "source": "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md",
