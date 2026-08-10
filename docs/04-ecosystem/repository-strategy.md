@@ -35,6 +35,8 @@ Organization policy -> foundation AKB -> volume/domain specifications -> capabil
 
 Higher levels define intent and invariants. Lower levels link upward and may add detail but must not silently contradict them.
 
+For cross-cutting engineering process that Rusty Mill has not specified itself, the volume/domain-specifications layer is satisfied by the [Atlas Engineering Standards Library](https://github.com/baileyrd/Atlas_Engineering_Standards_Library) rather than left as an internal placeholder. Version control workflow — branching, commits, pull requests, review, and merge mechanics — is governed by [ATLAS-600](https://github.com/baileyrd/Atlas_Engineering_Standards_Library/blob/main/docs/volumes/ATLAS-600-engineering-toolchain.md); [CONTRIBUTING.md](../../CONTRIBUTING.md) operationalizes it for this repository rather than restating it independently. A future domain (CI/CD, release automation) adopts the same pattern once Atlas or this AKB actually specifies it — this AKB does not get ahead of either.
+
 ## Publication and operations
 
 The [repository publication and security-response foundation](repository-operations/README.md) governs namespace authority, immutable releases, authenticated metadata, promotion, mirrors, retention, advisories, coordinated disclosure, revocation, and emergencies across the organization. Individual repositories and registries may add stricter controls but cannot replace bytes under a published identity or promote a rebuilt artifact as though it were the tested digest.
