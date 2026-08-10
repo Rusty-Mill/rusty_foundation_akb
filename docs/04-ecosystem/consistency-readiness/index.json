@@ -4,9 +4,9 @@
   "authority": "docs/01-architecture/architecture-model.md",
   "generated_from": "Markdown; this index is derived and non-authoritative",
   "summary": {
-    "markdown_documents": 1213,
-    "internal_links": 2597,
-    "requirements": 5631,
+    "markdown_documents": 1214,
+    "internal_links": 2609,
+    "requirements": 5634,
     "domains": 63,
     "promotion_units": 7,
     "draft_promotion_units": 7,
@@ -1117,8 +1117,8 @@
       "id": "knowledge",
       "source": "docs/02-capabilities/knowledge/README.md",
       "status": "Draft domain analysis",
-      "requirements": 20,
-      "capability_requirements": 15,
+      "requirements": 23,
+      "capability_requirements": 18,
       "conformance_requirements": 2,
       "benchmark_requirements": 3,
       "mapped_benchmark_requirements": 0,
@@ -6509,6 +6509,7 @@
         "docs/02-capabilities/knowledge/cross-cutting.md",
         "docs/02-capabilities/knowledge/ownership.md",
         "docs/02-capabilities/knowledge/promotion-review.md",
+        "docs/02-capabilities/knowledge/reviewer-independence-waiver.md",
         "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md"
       ],
       "freshness": "unreviewed-by-generator"
@@ -27962,6 +27963,30 @@
       "id": "RM-KNOWLEDGE-PROMOTION-0003",
       "source": "docs/02-capabilities/knowledge/promotion-review.md",
       "line": 31,
+      "kind": "capability",
+      "domain": "knowledge",
+      "assertions": []
+    },
+    {
+      "id": "RM-KNOWLEDGE-WAIVER-0001",
+      "source": "docs/02-capabilities/knowledge/reviewer-independence-waiver.md",
+      "line": 21,
+      "kind": "capability",
+      "domain": "knowledge",
+      "assertions": []
+    },
+    {
+      "id": "RM-KNOWLEDGE-WAIVER-0002",
+      "source": "docs/02-capabilities/knowledge/reviewer-independence-waiver.md",
+      "line": 23,
+      "kind": "capability",
+      "domain": "knowledge",
+      "assertions": []
+    },
+    {
+      "id": "RM-KNOWLEDGE-WAIVER-0003",
+      "source": "docs/02-capabilities/knowledge/reviewer-independence-waiver.md",
+      "line": 25,
       "kind": "capability",
       "domain": "knowledge",
       "assertions": []
@@ -55134,28 +55159,28 @@
     {
       "id": "RM-KNOWLEDGE-TRIAL-0001",
       "source": "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md",
-      "line": 114,
+      "line": 115,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-KNOWLEDGE-TRIAL-0002",
       "source": "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md",
-      "line": 116,
+      "line": 117,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-KNOWLEDGE-TRIAL-0003",
       "source": "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md",
-      "line": 118,
+      "line": 119,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-KNOWLEDGE-TRIAL-0004",
       "source": "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md",
-      "line": 120,
+      "line": 121,
       "kind": "governance",
       "domain": null
     },
@@ -58155,8 +58180,8 @@
     },
     {
       "source": "docs/02-capabilities/knowledge/README.md",
-      "sha256": "ff87464b00b6f7dd9b62bd28cea8fba8af07f68b546a6bba0af742d21d79ef74",
-      "lines": 56
+      "sha256": "8dd4cd70db2debe2456db4bcdaaf33241bf20b50aa1cba72cf59d01cfd870983",
+      "lines": 57
     },
     {
       "source": "docs/02-capabilities/knowledge/benchmarks.md",
@@ -58170,7 +58195,7 @@
     },
     {
       "source": "docs/02-capabilities/knowledge/cross-cutting.md",
-      "sha256": "04cc55e2c382b8f75462a80bd713d11c106786da4e81ecd0a7fb134fc97c6669",
+      "sha256": "9b312cf2b94383f28ad14e6442f16f846b511332c02e0a83c596746a291e9e54",
       "lines": 24
     },
     {
@@ -58185,7 +58210,7 @@
     },
     {
       "source": "docs/02-capabilities/knowledge/ownership.md",
-      "sha256": "5d382317ee49d987981e731551cdfe688ec8ee21d0dcb2918b851cb6ab05569c",
+      "sha256": "644a53b50ebe90dcb8575462218d97cd6802580697047116356fd314091a0e25",
       "lines": 33
     },
     {
@@ -58195,8 +58220,13 @@
     },
     {
       "source": "docs/02-capabilities/knowledge/promotion-review.md",
-      "sha256": "b028c34149711adc94b6f4a70ab2866342c3cc94f7767248334b28d084cc9a8b",
+      "sha256": "62ab2f94f9b42e83521ddce6d75075c498759b0bf822bb3fef4f5a016a18a554",
       "lines": 31
+    },
+    {
+      "source": "docs/02-capabilities/knowledge/reviewer-independence-waiver.md",
+      "sha256": "88a093018adec89ba166dd274600e6d97c744991e90c1edb3e686c03ab0ccd38",
+      "lines": 25
     },
     {
       "source": "docs/02-capabilities/lifecycle/README.md",
@@ -61180,8 +61210,8 @@
     },
     {
       "source": "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md",
-      "sha256": "4b341038970a53b3360517bbf4401d12b4c06134dbdf4a69ae4bf241b24c7098",
-      "lines": 120
+      "sha256": "b27e01a550896281bdf5ce461996bce049e8e171b753be52ac0b282669b62d7f",
+      "lines": 121
     },
     {
       "source": "docs/05-governance/implementation-trials/security-batch-trial-proposal.md",
