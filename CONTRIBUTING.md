@@ -6,6 +6,14 @@ Implementation repositories and trials additionally follow the [Rusty Mill softw
 
 The [authoritative architecture model](docs/01-architecture/architecture-model.md) governs current architecture. Changes to architectural rules must update the model and their ADR/RFC in the same contribution.
 
+## Branch Protection
+
+`main` is protected:
+
+- Changes land only through pull requests. Direct pushes to `main` are blocked.
+- Force-pushes and branch deletion are blocked on `main`.
+- The `audit` CI check (`.github/workflows/akb-audit.yml`, running `tools/akb_audit.py --check`) runs on every PR and **must pass before a PR can merge**.
+
 ## Change paths
 
 - Editorial clarification: ordinary pull request.
