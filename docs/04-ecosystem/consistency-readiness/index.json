@@ -4,9 +4,9 @@
   "authority": "docs/01-architecture/architecture-model.md",
   "generated_from": "Markdown; this index is derived and non-authoritative",
   "summary": {
-    "markdown_documents": 1214,
-    "internal_links": 2609,
-    "requirements": 5634,
+    "markdown_documents": 1215,
+    "internal_links": 2626,
+    "requirements": 5636,
     "domains": 63,
     "promotion_units": 7,
     "draft_promotion_units": 7,
@@ -1117,8 +1117,8 @@
       "id": "knowledge",
       "source": "docs/02-capabilities/knowledge/README.md",
       "status": "Draft domain analysis",
-      "requirements": 23,
-      "capability_requirements": 18,
+      "requirements": 24,
+      "capability_requirements": 19,
       "conformance_requirements": 2,
       "benchmark_requirements": 3,
       "mapped_benchmark_requirements": 0,
@@ -6510,7 +6510,8 @@
         "docs/02-capabilities/knowledge/ownership.md",
         "docs/02-capabilities/knowledge/promotion-review.md",
         "docs/02-capabilities/knowledge/reviewer-independence-waiver.md",
-        "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md"
+        "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md",
+        "docs/rfc/0004-solo-maintainer-review-sufficiency.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -27968,15 +27969,15 @@
       "assertions": []
     },
     {
-      "id": "RM-KNOWLEDGE-WAIVER-0001",
-      "source": "docs/02-capabilities/knowledge/reviewer-independence-waiver.md",
-      "line": 21,
+      "id": "RM-KNOWLEDGE-PROMOTION-0004",
+      "source": "docs/02-capabilities/knowledge/promotion-review.md",
+      "line": 33,
       "kind": "capability",
       "domain": "knowledge",
       "assertions": []
     },
     {
-      "id": "RM-KNOWLEDGE-WAIVER-0002",
+      "id": "RM-KNOWLEDGE-WAIVER-0001",
       "source": "docs/02-capabilities/knowledge/reviewer-independence-waiver.md",
       "line": 23,
       "kind": "capability",
@@ -27984,9 +27985,17 @@
       "assertions": []
     },
     {
-      "id": "RM-KNOWLEDGE-WAIVER-0003",
+      "id": "RM-KNOWLEDGE-WAIVER-0002",
       "source": "docs/02-capabilities/knowledge/reviewer-independence-waiver.md",
       "line": 25,
+      "kind": "capability",
+      "domain": "knowledge",
+      "assertions": []
+    },
+    {
+      "id": "RM-KNOWLEDGE-WAIVER-0003",
+      "source": "docs/02-capabilities/knowledge/reviewer-independence-waiver.md",
+      "line": 27,
       "kind": "capability",
       "domain": "knowledge",
       "assertions": []
@@ -55129,6 +55138,13 @@
       "domain": null
     },
     {
+      "id": "RM-TRIAL-REVIEW-0004",
+      "source": "docs/05-governance/implementation-trials/review-checklist.md",
+      "line": 20,
+      "kind": "governance",
+      "domain": null
+    },
+    {
       "id": "RM-RUSTILS-TRIAL-0001",
       "source": "docs/05-governance/implementation-trials/rustils-trial-proposal.md",
       "line": 118,
@@ -55159,28 +55175,28 @@
     {
       "id": "RM-KNOWLEDGE-TRIAL-0001",
       "source": "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md",
-      "line": 115,
+      "line": 116,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-KNOWLEDGE-TRIAL-0002",
       "source": "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md",
-      "line": 117,
+      "line": 118,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-KNOWLEDGE-TRIAL-0003",
       "source": "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md",
-      "line": 119,
+      "line": 120,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-KNOWLEDGE-TRIAL-0004",
       "source": "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md",
-      "line": 121,
+      "line": 122,
       "kind": "governance",
       "domain": null
     },
@@ -57655,7 +57671,7 @@
     },
     {
       "source": "docs/02-capabilities/filesystem/promotion-review.md",
-      "sha256": "bf38748abd544719c7311dee0df31a5463eb79e84b3f2138abd66160a83c8f2a",
+      "sha256": "1414ccb93d193807f513c2cac6122b0c4b3c44fc9b3066c11da5ff4883e2508b",
       "lines": 84
     },
     {
@@ -58180,7 +58196,7 @@
     },
     {
       "source": "docs/02-capabilities/knowledge/README.md",
-      "sha256": "8dd4cd70db2debe2456db4bcdaaf33241bf20b50aa1cba72cf59d01cfd870983",
+      "sha256": "3d337f80a5720c2f6e18b6cbe5e478b273e337790ceb7e558afdc3820e74f065",
       "lines": 57
     },
     {
@@ -58195,7 +58211,7 @@
     },
     {
       "source": "docs/02-capabilities/knowledge/cross-cutting.md",
-      "sha256": "9b312cf2b94383f28ad14e6442f16f846b511332c02e0a83c596746a291e9e54",
+      "sha256": "e1fac04deb838b22e107a7c9f48e4eab46b44b1f41f484fd37bfed402b7dd391",
       "lines": 24
     },
     {
@@ -58210,7 +58226,7 @@
     },
     {
       "source": "docs/02-capabilities/knowledge/ownership.md",
-      "sha256": "644a53b50ebe90dcb8575462218d97cd6802580697047116356fd314091a0e25",
+      "sha256": "d1b2851403084fd7a791da9162bc00d4532c0b99e1ac7d7454d17352512bcdf1",
       "lines": 33
     },
     {
@@ -58220,13 +58236,13 @@
     },
     {
       "source": "docs/02-capabilities/knowledge/promotion-review.md",
-      "sha256": "62ab2f94f9b42e83521ddce6d75075c498759b0bf822bb3fef4f5a016a18a554",
-      "lines": 31
+      "sha256": "288fd3903b7618cff795148cadcbc0e3f574ad18822f345dae0b7aa1f60dd2b0",
+      "lines": 33
     },
     {
       "source": "docs/02-capabilities/knowledge/reviewer-independence-waiver.md",
-      "sha256": "88a093018adec89ba166dd274600e6d97c744991e90c1edb3e686c03ab0ccd38",
-      "lines": 25
+      "sha256": "d255e3fc36164c5d6d32f7ab7b4dc9cd912c97f9f6afe4dd4fc1804d7fc88dc3",
+      "lines": 27
     },
     {
       "source": "docs/02-capabilities/lifecycle/README.md",
@@ -61160,8 +61176,8 @@
     },
     {
       "source": "docs/05-governance/governance.md",
-      "sha256": "abaf1eac8791e67e9bc89b6c93daa62763220de3abc927aa5ee59ad10b774aa3",
-      "lines": 40
+      "sha256": "49c3feb60d3c37c4dacdb337ab9f6bb23b0b4aeec66941ac6b723f07efd278d3",
+      "lines": 42
     },
     {
       "source": "docs/05-governance/implementation-trials/README.md",
@@ -61180,8 +61196,8 @@
     },
     {
       "source": "docs/05-governance/implementation-trials/entry-gates.md",
-      "sha256": "63600e73e69955c8b4b76e6a9d8e59b6e61f7445a11a7f2bae01b99cb8587976",
-      "lines": 23
+      "sha256": "6940ce00e990b1d50adc2bf82c598ee340ec88d1953ee510ccb8f47a754e7892",
+      "lines": 25
     },
     {
       "source": "docs/05-governance/implementation-trials/evidence-plan.md",
@@ -61200,22 +61216,22 @@
     },
     {
       "source": "docs/05-governance/implementation-trials/review-checklist.md",
-      "sha256": "5a1bc71a8f096e2cfd8c22fa0dab2e31b972c041d91543569313c58977197107",
-      "lines": 19
+      "sha256": "1f2b320d4df92925885db13b94f32abf974bf9730319c744a84ff236e86297d3",
+      "lines": 21
     },
     {
       "source": "docs/05-governance/implementation-trials/rustils-trial-proposal.md",
-      "sha256": "46f82a8f880e8d47fc7a8b769a1c35b6ad4c6f226e1a0bb3ca2b270ec58a7bbc",
+      "sha256": "64aa2976c51a4887eeab5186313442bf0378b5184d9d29bb356c69adf064ce9e",
       "lines": 124
     },
     {
       "source": "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md",
-      "sha256": "b27e01a550896281bdf5ce461996bce049e8e171b753be52ac0b282669b62d7f",
-      "lines": 121
+      "sha256": "b29bd94d8f4360be6fa59b2daebc526894aeec105cffca5b88ef1e4638cee1b0",
+      "lines": 122
     },
     {
       "source": "docs/05-governance/implementation-trials/security-batch-trial-proposal.md",
-      "sha256": "99f852840c0cab14b76ca350777d1485a8be9660726f9c1062eb44d8cd15c23a",
+      "sha256": "48e94f1e471e98c52f7d4ea67daf42de4c23ac15e5ce829c988fa12a46b9c258",
       "lines": 125
     },
     {
@@ -62169,9 +62185,14 @@
       "lines": 110
     },
     {
+      "source": "docs/rfc/0004-solo-maintainer-review-sufficiency.md",
+      "sha256": "078aa7bff94b20bf3d2bcf8cd551f9bae1bdea86e5900bfb629ef089f4de871a",
+      "lines": 93
+    },
+    {
       "source": "docs/rfc/README.md",
-      "sha256": "ed70e5e1417b5766f47133cc4c5c17ec8562fea3719b8d671fa00d72590e06d0",
-      "lines": 9
+      "sha256": "e1f3c3c9b1593ddd8f83fb91e7dbcf3a6edf1d706d39ae29b1e0a106fafad541",
+      "lines": 10
     }
   ],
   "findings": []

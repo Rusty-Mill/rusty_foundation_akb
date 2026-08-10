@@ -21,3 +21,5 @@ Authorization is conjunctive. `Unknown` blocks entry; a reviewed `not-applicable
 
 **RM-TRIAL-ENTRY-0004:** A trial MUST NOT begin merely because a repository, prototype, funding allocation, or implementation team exists.
 
+The Ownership gate's evidence requirement (trial owner plus architecture, capability, security, and evidence reviewers as applicable) is satisfied by one person, disclosed as such, while [solo-maintainer mode](../governance.md) is active — per [RFC-0004](../../rfc/0004-solo-maintainer-review-sufficiency.md).
+

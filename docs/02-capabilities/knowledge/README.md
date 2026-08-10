@@ -41,7 +41,7 @@ flowchart LR
 - [Cross-cutting review](cross-cutting.md) — Unknown, unresolved
 - [Ownership and trial readiness](ownership.md) — Unknown, unresolved
 - [Experimental promotion review](promotion-review.md) — Proposed; not yet eligible
-- [Reviewer-independence waiver](reviewer-independence-waiver.md) — Active; documentation review only, excludes promotion/trial authorization
+- [Reviewer-independence waiver](reviewer-independence-waiver.md) — Superseded by [RFC-0004](../../rfc/0004-solo-maintainer-review-sufficiency.md); retained for history
 
 ## Decisions
 

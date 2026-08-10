@@ -1,5 +1,7 @@
 # Knowledge domain reviewer-independence waiver
 
+**Superseded by [RFC-0004](../../rfc/0004-solo-maintainer-review-sufficiency.md).** RFC-0004 generalizes this waiver's rationale into a standing, project-wide rule and removes the need for a scoped per-decision waiver. This record is retained for history; do not renew it or treat its expiry date below as live — `ownership.md`, `cross-cutting.md`, `promotion-review.md`, and TRIAL-0003 now cite RFC-0004 directly.
+
 Governed exception record per [RM-DEV-EXC-0001](../../05-governance/software-development/exceptions-evolution.md), addressing the single-reviewer independence gap disclosed in [ownership.md](ownership.md), [cross-cutting.md](cross-cutting.md), [promotion-review.md](promotion-review.md), and [TRIAL-0003](../../05-governance/implementation-trials/rusty-knowledge-trial-proposal.md).
 
 | Field | Value |
