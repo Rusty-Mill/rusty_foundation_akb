@@ -4,9 +4,9 @@
   "authority": "docs/01-architecture/architecture-model.md",
   "generated_from": "Markdown; this index is derived and non-authoritative",
   "summary": {
-    "markdown_documents": 1199,
-    "internal_links": 2484,
-    "requirements": 5603,
+    "markdown_documents": 1200,
+    "internal_links": 2499,
+    "requirements": 5607,
     "domains": 62,
     "promotion_units": 7,
     "draft_promotion_units": 7,
@@ -21,7 +21,7 @@
     "domains_with_direct_requirement_assertion_map": 9,
     "domains_with_direct_benchmark_scenario_map": 9,
     "benchmark_scenarios": 95,
-    "external_sources": 672,
+    "external_sources": 674,
     "external_sources_with_review_record": 145,
     "domains_with_dedicated_cross_cutting_analysis": 31,
     "domains_with_complete_planned_traceability": 9,
@@ -6467,6 +6467,23 @@
       "host": "github.com",
       "sources": [
         "docs/04-ecosystem/repository-strategy.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
+      "url": "https://github.com/baileyrd/rustils",
+      "host": "github.com",
+      "sources": [
+        "docs/05-governance/implementation-trials/README.md",
+        "docs/05-governance/implementation-trials/rustils-trial-proposal.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
+      "url": "https://github.com/baileyrd/rustils/blob/main/docs/rusty-mill-profile.md",
+      "host": "github.com",
+      "sources": [
+        "docs/05-governance/implementation-trials/rustils-trial-proposal.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -54640,28 +54657,28 @@
     {
       "id": "RM-TRIAL-MODEL-0001",
       "source": "docs/05-governance/implementation-trials/README.md",
-      "line": 27,
+      "line": 29,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-TRIAL-MODEL-0002",
       "source": "docs/05-governance/implementation-trials/README.md",
-      "line": 29,
+      "line": 31,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-TRIAL-MODEL-0003",
       "source": "docs/05-governance/implementation-trials/README.md",
-      "line": 31,
+      "line": 33,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-TRIAL-MODEL-0004",
       "source": "docs/05-governance/implementation-trials/README.md",
-      "line": 33,
+      "line": 35,
       "kind": "governance",
       "domain": null
     },
@@ -54858,6 +54875,34 @@
       "id": "RM-TRIAL-REVIEW-0003",
       "source": "docs/05-governance/implementation-trials/review-checklist.md",
       "line": 18,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-RUSTILS-TRIAL-0001",
+      "source": "docs/05-governance/implementation-trials/rustils-trial-proposal.md",
+      "line": 118,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-RUSTILS-TRIAL-0002",
+      "source": "docs/05-governance/implementation-trials/rustils-trial-proposal.md",
+      "line": 120,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-RUSTILS-TRIAL-0003",
+      "source": "docs/05-governance/implementation-trials/rustils-trial-proposal.md",
+      "line": 122,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-RUSTILS-TRIAL-0004",
+      "source": "docs/05-governance/implementation-trials/rustils-trial-proposal.md",
+      "line": 124,
       "kind": "governance",
       "domain": null
     },
@@ -60792,8 +60837,8 @@
     },
     {
       "source": "docs/05-governance/implementation-trials/README.md",
-      "sha256": "9ba5508cdf5a1730b758ad832e6ef5f7c6d2b1f31c1d97480b14d6396d1855fc",
-      "lines": 33
+      "sha256": "6a4d7d3bb1cd9241bc1a8dd018d36cdc0796d095072126036470f1ec2fc3067d",
+      "lines": 35
     },
     {
       "source": "docs/05-governance/implementation-trials/change-control.md",
@@ -60829,6 +60874,11 @@
       "source": "docs/05-governance/implementation-trials/review-checklist.md",
       "sha256": "5a1bc71a8f096e2cfd8c22fa0dab2e31b972c041d91543569313c58977197107",
       "lines": 19
+    },
+    {
+      "source": "docs/05-governance/implementation-trials/rustils-trial-proposal.md",
+      "sha256": "46f82a8f880e8d47fc7a8b769a1c35b6ad4c6f226e1a0bb3ca2b270ec58a7bbc",
+      "lines": 124
     },
     {
       "source": "docs/05-governance/implementation-trials/security-batch-trial-proposal.md",

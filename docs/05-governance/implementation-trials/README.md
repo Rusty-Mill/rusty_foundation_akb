@@ -24,6 +24,8 @@ The lifecycle is defined by the [entry gates](entry-gates.md), [trial contract](
 
 The [security-foundation batch trial proposal](security-batch-trial-proposal.md) is the first full application of this governance model. It is intentionally blocked because its subjects remain Draft and its exact people, platforms, providers, repository, toolchain, limits, and approvals are unselected. Proposal completeness is not authorization.
 
+The [rustils composed evidence trial proposal](rustils-trial-proposal.md) is a second application, citing an existing external repository ([`baileyrd/rustils`](https://github.com/baileyrd/rustils)) as candidate qualified input evidence for filesystem, process, networking, and security-random/restricted-execution domain work. It is equally blocked: all four subject domains remain Draft, and per RFC-0002's rollout rule, an existing prototype cannot claim retroactive authorization regardless of how complete its own independent evidence is.
+
 **RM-TRIAL-MODEL-0001:** A trial MUST bind one exact authorization generation to named questions, scope, inputs, evidence, owners, limits, and closeout conditions.
 
 **RM-TRIAL-MODEL-0002:** Trial work and results MUST NOT establish Stable API, production support, portability, provider preference, release eligibility, or repository topology by implication.
