@@ -38,11 +38,18 @@ flowchart LR
 - [Conformance specification](conformance.md)
 - [Benchmark specification](benchmarks.md)
 - [Open questions](open-questions.md)
+- [Cross-cutting review](cross-cutting.md) — Unknown, unresolved
+- [Ownership and trial readiness](ownership.md) — Unknown, unresolved
+- [Experimental promotion review](promotion-review.md) — Proposed; not yet eligible
 
 ## Decisions
 
 - [ADR-0164: Rusty Knowledge is a domain framework, not a base capability](../../adr/0164-rusty-knowledge-is-a-domain-framework.md)
 - [ADR-0165: Knowledge domain layered authority is a portable requirement, not a Python implementation detail](../../adr/0165-knowledge-layered-authority-carries-over-as-a-requirement.md)
+
+## Trial
+
+- [TRIAL-0003: Rusty Knowledge implementation trial](../../05-governance/implementation-trials/rusty-knowledge-trial-proposal.md) — Proposed; authorization blocked
 
 ## Boundary
 

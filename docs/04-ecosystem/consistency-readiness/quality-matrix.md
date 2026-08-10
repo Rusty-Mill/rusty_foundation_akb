@@ -37,7 +37,7 @@
 | [interchange](../../02-capabilities/interchange/README.md) | dedicated | yes | yes | yes | yes | yes | yes |
 | [internationalization](../../02-capabilities/internationalization/README.md) | embedded-unreviewed | yes | yes | yes | yes | yes | yes |
 | [ipc](../../02-capabilities/ipc/README.md) | dedicated | yes | yes | yes | yes | yes | yes |
-| [knowledge](../../02-capabilities/knowledge/README.md) | embedded-unreviewed | yes | yes | unknown | unknown | yes | unknown |
+| [knowledge](../../02-capabilities/knowledge/README.md) | dedicated | yes | yes | yes | yes | yes | yes |
 | [lifecycle](../../02-capabilities/lifecycle/README.md) | embedded-unreviewed | yes | yes | yes | yes | yes | yes |
 | [memory](../../02-capabilities/memory/README.md) | embedded-unreviewed | yes | yes | yes | unknown | yes | yes |
 | [messaging](../../02-capabilities/messaging/README.md) | dedicated | yes | yes | yes | yes | yes | yes |

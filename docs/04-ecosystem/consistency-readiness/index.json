@@ -4,9 +4,9 @@
   "authority": "docs/01-architecture/architecture-model.md",
   "generated_from": "Markdown; this index is derived and non-authoritative",
   "summary": {
-    "markdown_documents": 1210,
-    "internal_links": 2554,
-    "requirements": 5621,
+    "markdown_documents": 1213,
+    "internal_links": 2589,
+    "requirements": 5631,
     "domains": 63,
     "promotion_units": 7,
     "draft_promotion_units": 7,
@@ -23,10 +23,10 @@
     "benchmark_scenarios": 95,
     "external_sources": 675,
     "external_sources_with_review_record": 145,
-    "domains_with_dedicated_cross_cutting_analysis": 31,
+    "domains_with_dedicated_cross_cutting_analysis": 32,
     "domains_with_complete_planned_traceability": 9,
     "domains_experimental_eligible": 7,
-    "domains_with_proposed_promotion_review": 7,
+    "domains_with_proposed_promotion_review": 8,
     "domains_with_accepted_promotion_review": 0,
     "declared_graph_nodes": 15,
     "declared_graph_edges": 17,
@@ -1117,8 +1117,8 @@
       "id": "knowledge",
       "source": "docs/02-capabilities/knowledge/README.md",
       "status": "Draft domain analysis",
-      "requirements": 10,
-      "capability_requirements": 5,
+      "requirements": 20,
+      "capability_requirements": 15,
       "conformance_requirements": 2,
       "benchmark_requirements": 3,
       "mapped_benchmark_requirements": 0,
@@ -1127,15 +1127,15 @@
       "mapped_capability_requirements": 0,
       "direct_requirement_assertion_map": false,
       "direct_benchmark_scenario_map": false,
-      "cross_cutting_analysis": "embedded-unreviewed",
-      "promotion_review": "absent",
+      "cross_cutting_analysis": "dedicated",
+      "promotion_review": "proposed",
       "quality_keyword_mentions": {
         "security": true,
         "performance": true,
-        "accessibility": false,
-        "internationalization": false,
+        "accessibility": true,
+        "internationalization": true,
         "observability": true,
-        "operations": false
+        "operations": true
       },
       "promotion_gates": {
         "contract_inventory": "pass",
@@ -6494,6 +6494,7 @@
       "url": "https://github.com/Rusty-Mill/rusty_knowledge",
       "host": "github.com",
       "sources": [
+        "docs/02-capabilities/knowledge/ownership.md",
         "docs/05-governance/implementation-trials/README.md",
         "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md",
         "docs/adr/0164-rusty-knowledge-is-a-domain-framework.md",
@@ -27827,6 +27828,30 @@
       "domain": "knowledge"
     },
     {
+      "id": "RM-KNOWLEDGE-QUALITY-0001",
+      "source": "docs/02-capabilities/knowledge/cross-cutting.md",
+      "line": 20,
+      "kind": "capability",
+      "domain": "knowledge",
+      "assertions": []
+    },
+    {
+      "id": "RM-KNOWLEDGE-QUALITY-0002",
+      "source": "docs/02-capabilities/knowledge/cross-cutting.md",
+      "line": 22,
+      "kind": "capability",
+      "domain": "knowledge",
+      "assertions": []
+    },
+    {
+      "id": "RM-KNOWLEDGE-QUALITY-0003",
+      "source": "docs/02-capabilities/knowledge/cross-cutting.md",
+      "line": 24,
+      "kind": "capability",
+      "domain": "knowledge",
+      "assertions": []
+    },
+    {
       "id": "RM-KNOWLEDGE-MODEL-0001",
       "source": "docs/02-capabilities/knowledge/model.md",
       "line": 24,
@@ -27862,6 +27887,62 @@
       "id": "RM-KNOWLEDGE-MODEL-0005",
       "source": "docs/02-capabilities/knowledge/model.md",
       "line": 28,
+      "kind": "capability",
+      "domain": "knowledge",
+      "assertions": []
+    },
+    {
+      "id": "RM-KNOWLEDGE-OWNER-0001",
+      "source": "docs/02-capabilities/knowledge/ownership.md",
+      "line": 25,
+      "kind": "capability",
+      "domain": "knowledge",
+      "assertions": []
+    },
+    {
+      "id": "RM-KNOWLEDGE-OWNER-0002",
+      "source": "docs/02-capabilities/knowledge/ownership.md",
+      "line": 27,
+      "kind": "capability",
+      "domain": "knowledge",
+      "assertions": []
+    },
+    {
+      "id": "RM-KNOWLEDGE-OWNER-0003",
+      "source": "docs/02-capabilities/knowledge/ownership.md",
+      "line": 29,
+      "kind": "capability",
+      "domain": "knowledge",
+      "assertions": []
+    },
+    {
+      "id": "RM-KNOWLEDGE-OWNER-0004",
+      "source": "docs/02-capabilities/knowledge/ownership.md",
+      "line": 31,
+      "kind": "capability",
+      "domain": "knowledge",
+      "assertions": []
+    },
+    {
+      "id": "RM-KNOWLEDGE-PROMOTION-0001",
+      "source": "docs/02-capabilities/knowledge/promotion-review.md",
+      "line": 27,
+      "kind": "capability",
+      "domain": "knowledge",
+      "assertions": []
+    },
+    {
+      "id": "RM-KNOWLEDGE-PROMOTION-0002",
+      "source": "docs/02-capabilities/knowledge/promotion-review.md",
+      "line": 29,
+      "kind": "capability",
+      "domain": "knowledge",
+      "assertions": []
+    },
+    {
+      "id": "RM-KNOWLEDGE-PROMOTION-0003",
+      "source": "docs/02-capabilities/knowledge/promotion-review.md",
+      "line": 31,
       "kind": "capability",
       "domain": "knowledge",
       "assertions": []
@@ -55034,28 +55115,28 @@
     {
       "id": "RM-KNOWLEDGE-TRIAL-0001",
       "source": "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md",
-      "line": 112,
+      "line": 113,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-KNOWLEDGE-TRIAL-0002",
       "source": "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md",
-      "line": 114,
+      "line": 115,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-KNOWLEDGE-TRIAL-0003",
       "source": "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md",
-      "line": 116,
+      "line": 117,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-KNOWLEDGE-TRIAL-0004",
       "source": "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md",
-      "line": 118,
+      "line": 119,
       "kind": "governance",
       "domain": null
     },
@@ -58055,8 +58136,8 @@
     },
     {
       "source": "docs/02-capabilities/knowledge/README.md",
-      "sha256": "786d368a29c5cfcf4bcc84f009861513225bce1728ceaded8b249a446d3c5485",
-      "lines": 49
+      "sha256": "ff87464b00b6f7dd9b62bd28cea8fba8af07f68b546a6bba0af742d21d79ef74",
+      "lines": 56
     },
     {
       "source": "docs/02-capabilities/knowledge/benchmarks.md",
@@ -58069,6 +58150,11 @@
       "lines": 18
     },
     {
+      "source": "docs/02-capabilities/knowledge/cross-cutting.md",
+      "sha256": "78d6d89486d4ab41622227890722b8bb3a6d40b423cb565b5d50d95042723b16",
+      "lines": 24
+    },
+    {
       "source": "docs/02-capabilities/knowledge/model.md",
       "sha256": "db9d8da40f96d3dec01c20883e0f966171e8bfeba52f5dbacf66f7b88ce48c32",
       "lines": 32
@@ -58079,9 +58165,19 @@
       "lines": 9
     },
     {
+      "source": "docs/02-capabilities/knowledge/ownership.md",
+      "sha256": "6853e1f63a92ab9974d25dd1e010dfe695eb9d7e5842de008de25352103d749e",
+      "lines": 31
+    },
+    {
       "source": "docs/02-capabilities/knowledge/platform-research.md",
       "sha256": "75cab0527b2a42213c68c779e3d8a45025c63438f0cd764cdbaa0841a1fee8c1",
       "lines": 23
+    },
+    {
+      "source": "docs/02-capabilities/knowledge/promotion-review.md",
+      "sha256": "b4c18b09791e94bacb54e6da1c410dd5036b1c392171de45cfc1fd01885f6126",
+      "lines": 31
     },
     {
       "source": "docs/02-capabilities/lifecycle/README.md",
@@ -61065,8 +61161,8 @@
     },
     {
       "source": "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md",
-      "sha256": "965bd63d8dc544dc2465dfe1fbe4211fddb0bd73a44f2a9d208ccc1d84aed60b",
-      "lines": 118
+      "sha256": "bc96c8be186da443299f201c4378b1d8a98bd939cfc5fbe236761736d2215ee8",
+      "lines": 119
     },
     {
       "source": "docs/05-governance/implementation-trials/security-batch-trial-proposal.md",
