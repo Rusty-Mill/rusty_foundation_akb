@@ -11,16 +11,16 @@ This report is deterministic and contains no claim that file presence proves sem
 
 | Measure | Result |
 |---|---:|
-| Markdown documents | 1,200 |
-| Resolved internal links | 2,500 |
-| Unique normative requirements | 5,607 |
-| Capability domains | 62 |
+| Markdown documents | 1,209 |
+| Resolved internal links | 2,540 |
+| Unique normative requirements | 5,617 |
+| Capability domains | 63 |
 | Governed subdomain promotion units | 7 (7 Draft) |
 | Promotion units with linked readiness dossier | 7 / 7 |
 | Promotion units with schema-valid readiness dossier | 7 / 7 |
 | Promotion units with validated semantic traceability | 7 / 7 |
-| Indexed ADRs | 163 |
-| External source URLs inventoried | 675 |
+| Indexed ADRs | 165 |
+| External source URLs inventoried | 676 |
 | External URLs with schema-valid domain review | 145 |
 | Structural errors | 0 |
 | Structural warnings | 0 |
@@ -29,10 +29,10 @@ This report is deterministic and contains no claim that file presence proves sem
 
 | Evidence | Domains | Coverage |
 |---|---:|---:|
-| Conformance specification present | 62 / 62 | 100.0% |
-| Benchmark specification present | 62 / 62 | 100.0% |
-| Direct requirement-to-assertion map | 9 / 62 | 14.5% |
-| Direct benchmark-requirement-to-scenario map | 9 / 62 | 14.5% |
+| Conformance specification present | 63 / 63 | 100.0% |
+| Benchmark specification present | 63 / 63 | 100.0% |
+| Direct requirement-to-assertion map | 9 / 63 | 14.3% |
+| Direct benchmark-requirement-to-scenario map | 9 / 63 | 14.3% |
 
 ## Declared dependency graph
 
@@ -50,8 +50,8 @@ The first two rows prove specification presence only. The mapping rows prove com
 
 | Evidence form | Domains | Coverage |
 |---|---:|---:|
-| Dedicated `cross-cutting.md` | 31 / 62 | 50.0% |
-| Embedded/unreviewed | 31 / 62 | 50.0% |
+| Dedicated `cross-cutting.md` | 31 / 63 | 49.2% |
+| Embedded/unreviewed | 32 / 63 | 50.8% |
 
 Keyword mentions are discovery hints only. The [quality matrix](quality-matrix.md) does not treat them as reviewed coverage.
 
