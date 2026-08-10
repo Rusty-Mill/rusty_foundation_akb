@@ -50,6 +50,15 @@ This is an inventory for domain analysis, not an API or crate list.
 
 Each domain will be decomposed into common, optional/advanced, and platform-specific capabilities. Platform-specific features may remain explicit extensions when a truthful common contract is impossible.
 
+## Domain frameworks
+
+Domain frameworks compose base capabilities above into application-oriented behavior; they are not themselves base OS capabilities (see [architecture model, section 5.9](../01-architecture/architecture-model.md)).
+
+| Framework | Composes | Governing decision |
+|---|---|---|
+| Terminal emulation | Terminal, input, accessibility, windowing | [ADR-0019](../adr/0019-terminal-emulation-is-a-domain-framework.md) |
+| Knowledge | Search, persistence, networking/IPC, security, observability | [ADR-0164](../adr/0164-rusty-knowledge-is-a-domain-framework.md), [RFC-0003](../rfc/0003-rusty-knowledge-domain-framework.md) (Draft) |
+
 ## Active domain analyses
 
 - [Runtime and time vertical slice](runtime-time/README.md) — Draft
@@ -64,6 +73,7 @@ Each domain will be decomposed into common, optional/advanced, and platform-spec
 - [Application activation and association foundations vertical slice](activation/README.md) — Draft
 - [IPC foundations vertical slice](ipc/README.md) — Draft
 - [Terminal foundations vertical slice](terminal/README.md) — Draft
+- [Knowledge domain framework](knowledge/README.md) — Draft, pending [RFC-0003](../rfc/0003-rusty-knowledge-domain-framework.md)
 - [Windowing foundations vertical slice](windowing/README.md) — Draft
 - [Graphics and presentation vertical slice](graphics/README.md) — Draft
 - [Display and color-management foundations vertical slice](display-color/README.md) — Draft

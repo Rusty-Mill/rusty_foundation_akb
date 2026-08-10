@@ -4,24 +4,24 @@
   "authority": "docs/01-architecture/architecture-model.md",
   "generated_from": "Markdown; this index is derived and non-authoritative",
   "summary": {
-    "markdown_documents": 1200,
-    "internal_links": 2499,
-    "requirements": 5607,
-    "domains": 62,
+    "markdown_documents": 1209,
+    "internal_links": 2539,
+    "requirements": 5617,
+    "domains": 63,
     "promotion_units": 7,
     "draft_promotion_units": 7,
     "promotion_units_with_readiness_dossier": 7,
     "promotion_units_with_schema_valid_readiness_dossier": 7,
     "promotion_units_with_semantic_traceability": 7,
-    "adrs": 163,
+    "adrs": 165,
     "errors": 0,
     "warnings": 0,
-    "domains_with_conformance": 62,
-    "domains_with_benchmarks": 62,
+    "domains_with_conformance": 63,
+    "domains_with_benchmarks": 63,
     "domains_with_direct_requirement_assertion_map": 9,
     "domains_with_direct_benchmark_scenario_map": 9,
     "benchmark_scenarios": 95,
-    "external_sources": 674,
+    "external_sources": 675,
     "external_sources_with_review_record": 145,
     "domains_with_dedicated_cross_cutting_analysis": 31,
     "domains_with_complete_planned_traceability": 9,
@@ -1111,6 +1111,42 @@
         "source_freshness_review": "pass",
         "owner_review": "pass",
         "experimental_eligible": "yes"
+      }
+    },
+    {
+      "id": "knowledge",
+      "source": "docs/02-capabilities/knowledge/README.md",
+      "status": "Draft domain analysis",
+      "requirements": 10,
+      "capability_requirements": 5,
+      "conformance_requirements": 2,
+      "benchmark_requirements": 3,
+      "mapped_benchmark_requirements": 0,
+      "has_conformance_spec": true,
+      "has_benchmark_spec": true,
+      "mapped_capability_requirements": 0,
+      "direct_requirement_assertion_map": false,
+      "direct_benchmark_scenario_map": false,
+      "cross_cutting_analysis": "embedded-unreviewed",
+      "promotion_review": "absent",
+      "quality_keyword_mentions": {
+        "security": true,
+        "performance": true,
+        "accessibility": false,
+        "internationalization": false,
+        "observability": true,
+        "operations": false
+      },
+      "promotion_gates": {
+        "contract_inventory": "pass",
+        "conformance_plan": "pass",
+        "benchmark_plan": "pass",
+        "assertion_traceability": "fail",
+        "benchmark_traceability": "unknown",
+        "cross_cutting_review": "unknown",
+        "source_freshness_review": "unknown",
+        "owner_review": "unknown",
+        "experimental_eligible": "no"
       }
     },
     {
@@ -6451,6 +6487,15 @@
       "host": "freetype.org",
       "sources": [
         "docs/02-capabilities/text/platform-research.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
+      "url": "https://github.com/Rusty-Mill/rusty_knowledge",
+      "host": "github.com",
+      "sources": [
+        "docs/adr/0164-rusty-knowledge-is-a-domain-framework.md",
+        "docs/rfc/0003-rusty-knowledge-domain-framework.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -27740,6 +27785,84 @@
       "assertions": [
         "rm.assertion.ipc.promotion-boundary@1"
       ]
+    },
+    {
+      "id": "RM-KNOWLEDGE-BENCH-0001",
+      "source": "docs/02-capabilities/knowledge/benchmarks.md",
+      "line": 9,
+      "kind": "benchmark",
+      "domain": "knowledge",
+      "benchmark_scenarios": []
+    },
+    {
+      "id": "RM-KNOWLEDGE-BENCH-0002",
+      "source": "docs/02-capabilities/knowledge/benchmarks.md",
+      "line": 10,
+      "kind": "benchmark",
+      "domain": "knowledge",
+      "benchmark_scenarios": []
+    },
+    {
+      "id": "RM-KNOWLEDGE-BENCH-0003",
+      "source": "docs/02-capabilities/knowledge/benchmarks.md",
+      "line": 11,
+      "kind": "benchmark",
+      "domain": "knowledge",
+      "benchmark_scenarios": []
+    },
+    {
+      "id": "RM-KNOWLEDGE-CONFORMANCE-0001",
+      "source": "docs/02-capabilities/knowledge/conformance.md",
+      "line": 13,
+      "kind": "conformance",
+      "domain": "knowledge"
+    },
+    {
+      "id": "RM-KNOWLEDGE-CONFORMANCE-0002",
+      "source": "docs/02-capabilities/knowledge/conformance.md",
+      "line": 14,
+      "kind": "conformance",
+      "domain": "knowledge"
+    },
+    {
+      "id": "RM-KNOWLEDGE-MODEL-0001",
+      "source": "docs/02-capabilities/knowledge/model.md",
+      "line": 24,
+      "kind": "capability",
+      "domain": "knowledge",
+      "assertions": []
+    },
+    {
+      "id": "RM-KNOWLEDGE-MODEL-0002",
+      "source": "docs/02-capabilities/knowledge/model.md",
+      "line": 25,
+      "kind": "capability",
+      "domain": "knowledge",
+      "assertions": []
+    },
+    {
+      "id": "RM-KNOWLEDGE-MODEL-0003",
+      "source": "docs/02-capabilities/knowledge/model.md",
+      "line": 26,
+      "kind": "capability",
+      "domain": "knowledge",
+      "assertions": []
+    },
+    {
+      "id": "RM-KNOWLEDGE-MODEL-0004",
+      "source": "docs/02-capabilities/knowledge/model.md",
+      "line": 27,
+      "kind": "capability",
+      "domain": "knowledge",
+      "assertions": []
+    },
+    {
+      "id": "RM-KNOWLEDGE-MODEL-0005",
+      "source": "docs/02-capabilities/knowledge/model.md",
+      "line": 28,
+      "kind": "capability",
+      "domain": "knowledge",
+      "assertions": []
     },
     {
       "id": "RM-LIFECYCLE-ACTIVATION-0001",
@@ -57901,6 +58024,36 @@
       "lines": 32
     },
     {
+      "source": "docs/02-capabilities/knowledge/README.md",
+      "sha256": "786d368a29c5cfcf4bcc84f009861513225bce1728ceaded8b249a446d3c5485",
+      "lines": 49
+    },
+    {
+      "source": "docs/02-capabilities/knowledge/benchmarks.md",
+      "sha256": "2e26e7677c939551b35590337f16f33b539dd76699afee8bb20c80aeea2fe17b",
+      "lines": 23
+    },
+    {
+      "source": "docs/02-capabilities/knowledge/conformance.md",
+      "sha256": "12b85344c90a94fd295a3b424198d3da61edaae4f6ce5898555045bdfbd1a3ac",
+      "lines": 18
+    },
+    {
+      "source": "docs/02-capabilities/knowledge/model.md",
+      "sha256": "db9d8da40f96d3dec01c20883e0f966171e8bfeba52f5dbacf66f7b88ce48c32",
+      "lines": 32
+    },
+    {
+      "source": "docs/02-capabilities/knowledge/open-questions.md",
+      "sha256": "95b6eacb843e5d70059b34a69f20b020b603f51f7bcd20063a78d759f650bae9",
+      "lines": 9
+    },
+    {
+      "source": "docs/02-capabilities/knowledge/platform-research.md",
+      "sha256": "75cab0527b2a42213c68c779e3d8a45025c63438f0cd764cdbaa0841a1fee8c1",
+      "lines": 23
+    },
+    {
       "source": "docs/02-capabilities/lifecycle/README.md",
       "sha256": "c2d38c1be63341637ee3250a96d2eaf578e8db49dbedb19994a518f7e049195a",
       "lines": 42
@@ -60177,8 +60330,8 @@
     },
     {
       "source": "docs/02-capabilities/taxonomy.md",
-      "sha256": "2c277ebbda777edef1b774f30101946ddbb9b18bf329c6a3ea133d8f86393295",
-      "lines": 122
+      "sha256": "1dbd04be5239780b4e0bb953d0e459b1ba00f4dab494b036bfae7d76c45e5609",
+      "lines": 132
     },
     {
       "source": "docs/02-capabilities/tenant-service-governance/README.md",
@@ -61806,9 +61959,19 @@
       "lines": 35
     },
     {
+      "source": "docs/adr/0164-rusty-knowledge-is-a-domain-framework.md",
+      "sha256": "f50432fa78fb68c5478c396eb7f70cc06b07cf940b7b36f1e1c3371e12ca4a94",
+      "lines": 45
+    },
+    {
+      "source": "docs/adr/0165-knowledge-layered-authority-carries-over-as-a-requirement.md",
+      "sha256": "b50d3fb60e5439b544042a30dd8af46e9d3087877749963a6ccb0da5162d26d1",
+      "lines": 49
+    },
+    {
       "source": "docs/adr/README.md",
-      "sha256": "5407e4dd4be94454369784939a8f17d30947499d329745b80afc29cfba5f89ef",
-      "lines": 169
+      "sha256": "664af9020d71297288afb70f05701f9a53b0df80fef4205e585f3088fbf8337d",
+      "lines": 171
     },
     {
       "source": "docs/rfc/0001-capability-specification-system.md",
@@ -61821,9 +61984,14 @@
       "lines": 66
     },
     {
+      "source": "docs/rfc/0003-rusty-knowledge-domain-framework.md",
+      "sha256": "b836ce7f86a8fe777c59e22f335ba489297a45b283376adb6e0721ffe94f278f",
+      "lines": 110
+    },
+    {
       "source": "docs/rfc/README.md",
-      "sha256": "e3ad662af648dcc44c5da9bd2802209a306371a6f8ae18f914211b84075d8290",
-      "lines": 8
+      "sha256": "ed70e5e1417b5766f47133cc4c5c17ec8562fea3719b8d671fa00d72590e06d0",
+      "lines": 9
     }
   ],
   "findings": []
