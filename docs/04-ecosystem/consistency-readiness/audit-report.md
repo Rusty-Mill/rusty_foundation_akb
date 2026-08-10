@@ -12,7 +12,7 @@ This report is deterministic and contains no claim that file presence proves sem
 | Measure | Result |
 |---|---:|
 | Markdown documents | 1,209 |
-| Resolved internal links | 2,540 |
+| Resolved internal links | 2,546 |
 | Unique normative requirements | 5,617 |
 | Capability domains | 63 |
 | Governed subdomain promotion units | 7 (7 Draft) |
@@ -65,7 +65,7 @@ Keyword mentions are discovery hints only. The [quality matrix](quality-matrix.m
 - 9 domain(s) have complete benchmark-requirement-to-scenario maps across 95 stable semantic scenarios; run evidence remains absent by design.
 - 9 domain(s) have both complete planned assertion and benchmark traceability.
 - 7 domain(s) are currently eligible for Experimental promotion; generated scorecards cannot authorize promotion.
-- 7 domain(s) have schema-valid Proposed promotion reviews and 0 have Accepted reviews.
+- 6 domain(s) have schema-valid Proposed promotion reviews and 1 have Accepted reviews.
 - Semantic contradiction review remains human-governed and is tracked in the [closure backlog](closure-backlog.md).
 
 ## Readiness conclusion
