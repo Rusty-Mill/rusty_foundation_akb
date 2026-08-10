@@ -2,11 +2,15 @@
 
 | Field | Value |
 |---|---|
-| Status | Proposed; no maturity change |
+| Status | Accepted — Draft to Experimental |
 | Subject | Filesystem foundations 0.1.1; directory, resolution, file, metadata, atomic-replacement, and durability contracts 0.1.x |
 | Architecture | Model 1.99.0 |
-| Proposed decision | Eligible for explicit Experimental promotion review; remain Draft pending disposition |
-| Implementation authority | None |
+| Proposed decision | Superseded — see Decision, below |
+| Implementation authority | None — Experimental clears this domain's Subject entry-gate row for a future trial; it does not itself authorize one |
+| Decision date | 2026-08-10 |
+| Accountable owner | baileyrd |
+| Reviewers | baileyrd (architecture, security, standards, evidence — bootstrap staffing, see Named ownership below) |
+| Decision | Promoted to Experimental, scoped exactly as bound in Accepted decision below — not Stable, not a release, not implementation authority |
 
 ## Gate assessment
 
@@ -34,7 +38,38 @@ Neither backend claims R3: no `RESOLVE_IN_ROOT`/root-constraint request exists o
 
 This evidence is **qualified, not adopted**: it comes from an externally, independently governed repository's own parity suite (strace-verified for the Linux D2 claim; a committed, real-Windows-CI-executed parity test for the Windows R2-link-confinement claim), not from this AKB's own conformance harness, and per `RM-RUSTILS-TRIAL-0003` it must not be represented as Rusty-Mill conformance or promotion by its own existence. It narrows what a future accepted decision would need to independently verify — it does not substitute for that verification.
 
-## Decision boundary
+## Accepted decision
+
+**Decision date:** 2026-08-10. **Decided by:** baileyrd, in every named role (see Named ownership, below — this decision is itself made under that bootstrap staffing, not independently of it).
+
+**Exact contract scope promoted to Experimental:** the behavioral contracts and their existing draft assertion/requirement identifiers already registered in this domain's traceability — [directory](directory.md), [resolution](resolve.md) (`rm.assertion.filesystem.resolve@1` and siblings), [file](file.md), [metadata](metadata.md), [atomic-replacement](atomic-replace.md), [durability](durability-model.md) — as written today, at architecture model 1.99.0. Experimental maturity means these contracts are stable enough to drive a bounded implementation trial's design; it does not mean they are frozen, conformance-proven, or exempt from further ADR/RFC revision.
+
+**Exact R/D-level scope bound (per the Candidate R/D-level evidence, above, now adopted as this decision's binding baseline rather than merely cited):**
+
+| Backend | `open_dir`/`create_dir` | Everything else in scope (`open`, `access`, `metadata`, `read_dir`, `rename`, `symlink`, ...) | `write_atomic` durability |
+|---|---|---|---|
+| Linux | R2 | R1 | D2 |
+| Windows | R2 (link-confinement only — no mount-confinement) | R1 | D1 |
+
+No filesystem, mount, or storage-topology generation is selected (per the existing Platform research gate's own qualification) — this decision binds R/D levels observed against whatever filesystem rustils' own CI exercises (ext4-class on Linux, NTFS on Windows), not a certified provider claim under `support-matrix.md`'s Claim format.
+
+**Excluded from this decision (explicitly open, not silently dropped):**
+
+- R3 (kernel-constrained, root-bound resolution) and D3 (device-stable ordered) on either backend — not requested by rustils, not claimed here.
+- Mount-crossing (`RESOLVE_NO_XDEV`) containment on Linux has no committed test — the R2 claim for that half rests on the `openat2` flag request succeeding, not on an executed crossing-rejection case (see `docs/divergences.md` #013 in rustils, cited in Candidate R/D-level evidence above).
+- macOS and any other BSD-family backend — `platform-bsd` has no filesystem implementation at all (net-only, by rustils' own declared scope).
+- Any non-Core-local filesystem/topology tier (`support-matrix.md`'s Extended/Network/Sandboxed tiers) — untouched.
+- Product filesystem selection, D-level policy choice, security/privacy/accessibility/i18n/observability findings, and native-performance results — all remain open per the existing gate qualifications above; nothing in this decision resolves them.
+- `AnonymousFile`/`memfd_create`-shaped capabilities — not part of this domain's traceability list and not evaluated here.
+
+**Findings and waivers:**
+
+- **RM-FILESYSTEM-PROMOTION-0002** requires binding exact path, authority, resolution, resource, partial-I/O, cancellation, metadata, identity, atomicity, durability, error, platform, filesystem, and profile claims, with omitted qualities remaining unsupported or unknown. This decision binds resolution (R-level) and durability (D-level) exactly, per the table above; every other listed quality (authority, resource, partial-I/O, cancellation, metadata, identity, error, platform, filesystem, profile) is **not bound by this decision** and stays exactly as qualified in the Gate assessment table above — omitted, not silently assumed passing.
+- **Waiver FS-EXP-W001 (Ownership/trial bounds — independent reviewers, disposable environments, fault apparatus):** granted, per `governance.md`'s explicit "one person may hold several roles initially" allowance. Owner: baileyrd. Scope: this Experimental promotion decision only — it does not waive these requirements for a future Stable promotion or for TRIAL-0002 (or any trial)'s own separate Ownership/Repository/Operations gates, which remain independently unmet (see `rustils-trial-proposal.md`'s own gate table). Revisit trigger: before any Stable promotion request for this domain, or when a second accountable person is available, whichever comes first — not a fixed calendar expiry, since this is a bootstrap-stage project with no committed staffing timeline.
+
+**Permitted trial constraints:** this decision clears filesystem's own **Subject** entry-gate row (`entry-gates.md`) for a future implementation trial scoped to the exact contracts and R/D levels bound above. It does **not** authorize `baileyrd/rustils` or any other repository to begin trial work — `TRIAL-0002` (or a narrower successor) still needs every other entry gate (Learning value, Bounds, Ownership, Repository, Verification, Cross-cutting, Operations) independently reviewed and passed before authorization, per `RM-TRIAL-ENTRY-0002`'s conjunctive rule. `TRIAL-0002` itself is not amended by this decision — its own Subject row still reads against all four of its originally-composed domains and needs its own revision to reflect that filesystem alone has cleared.
+
+## Decision boundary (historical — superseded by Accepted decision, above)
 
 The generated scorecard may report planning eligibility. Filesystem remains Draft until an accepted record binds named accountable people, independent reviewers, exact contract/profile/provider/filesystem scope, R/D levels, excluded open questions, findings/waivers, decision date, and permitted trial constraints. A valid repository standards profile and separately accepted trial record remain required before code.
 
