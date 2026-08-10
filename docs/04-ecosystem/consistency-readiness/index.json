@@ -4,9 +4,9 @@
   "authority": "docs/01-architecture/architecture-model.md",
   "generated_from": "Markdown; this index is derived and non-authoritative",
   "summary": {
-    "markdown_documents": 1215,
-    "internal_links": 2620,
-    "requirements": 5636,
+    "markdown_documents": 1216,
+    "internal_links": 2635,
+    "requirements": 5639,
     "domains": 63,
     "promotion_units": 7,
     "draft_promotion_units": 7,
@@ -21,7 +21,7 @@
     "domains_with_direct_requirement_assertion_map": 9,
     "domains_with_direct_benchmark_scenario_map": 9,
     "benchmark_scenarios": 95,
-    "external_sources": 677,
+    "external_sources": 687,
     "external_sources_with_review_record": 145,
     "domains_with_dedicated_cross_cutting_analysis": 32,
     "domains_with_complete_planned_traceability": 9,
@@ -1117,8 +1117,8 @@
       "id": "knowledge",
       "source": "docs/02-capabilities/knowledge/README.md",
       "status": "Draft domain analysis",
-      "requirements": 24,
-      "capability_requirements": 19,
+      "requirements": 27,
+      "capability_requirements": 22,
       "conformance_requirements": 2,
       "benchmark_requirements": 3,
       "mapped_benchmark_requirements": 0,
@@ -4756,6 +4756,14 @@
   ],
   "external_sources": [
     {
+      "url": "https://alexgarcia.xyz/sqlite-vec/rust.html",
+      "host": "alexgarcia.xyz",
+      "sources": [
+        "docs/02-capabilities/knowledge/platform-research.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
       "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
       "host": "aomediacodec.github.io",
       "sources": [
@@ -4832,6 +4840,22 @@
       "host": "component-model.bytecodealliance.org",
       "sources": [
         "docs/02-capabilities/plugins/platform-research.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
+      "url": "https://crates.io/api/v1/crates/rmcp",
+      "host": "crates.io",
+      "sources": [
+        "docs/02-capabilities/knowledge/platform-research.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
+      "url": "https://crates.io/api/v1/crates/sqlite-vec",
+      "host": "crates.io",
+      "sources": [
+        "docs/02-capabilities/knowledge/platform-research.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -6503,6 +6527,14 @@
       "freshness": "unreviewed-by-generator"
     },
     {
+      "url": "https://github.com/asg017/sqlite-vec",
+      "host": "github.com",
+      "sources": [
+        "docs/02-capabilities/knowledge/platform-research.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
       "url": "https://github.com/baileyrd",
       "host": "github.com",
       "sources": [
@@ -6573,6 +6605,22 @@
       "freshness": "unreviewed-by-generator"
     },
     {
+      "url": "https://github.com/modelcontextprotocol/rust-sdk",
+      "host": "github.com",
+      "sources": [
+        "docs/02-capabilities/knowledge/platform-research.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
+      "url": "https://github.com/modelcontextprotocol/rust-sdk/blob/main/crates/rmcp/README.md",
+      "host": "github.com",
+      "sources": [
+        "docs/02-capabilities/knowledge/platform-research.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
       "url": "https://github.com/msgpack/msgpack/blob/master/spec.md",
       "host": "github.com",
       "sources": [
@@ -6593,6 +6641,22 @@
       "host": "github.com",
       "sources": [
         "docs/02-capabilities/object-storage/platform-research.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
+      "url": "https://github.com/rusqlite/rusqlite",
+      "host": "github.com",
+      "sources": [
+        "docs/02-capabilities/knowledge/platform-research.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
+      "url": "https://github.com/rusqlite/rusqlite/blob/master/libsqlite3-sys/build.rs",
+      "host": "github.com",
+      "sources": [
+        "docs/02-capabilities/knowledge/platform-research.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -8874,6 +8938,22 @@
       "host": "raft.github.io",
       "sources": [
         "docs/02-capabilities/coordination/platform-research.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/rusqlite/rusqlite/master/Cargo.toml",
+      "host": "raw.githubusercontent.com",
+      "sources": [
+        "docs/02-capabilities/knowledge/platform-research.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/rusqlite/rusqlite/master/README.md",
+      "host": "raw.githubusercontent.com",
+      "sources": [
+        "docs/02-capabilities/knowledge/platform-research.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -27868,6 +27948,30 @@
       "id": "RM-KNOWLEDGE-QUALITY-0003",
       "source": "docs/02-capabilities/knowledge/cross-cutting.md",
       "line": 24,
+      "kind": "capability",
+      "domain": "knowledge",
+      "assertions": []
+    },
+    {
+      "id": "RM-KNOWLEDGE-DEPENDENCY-0001",
+      "source": "docs/02-capabilities/knowledge/dependencies.md",
+      "line": 36,
+      "kind": "capability",
+      "domain": "knowledge",
+      "assertions": []
+    },
+    {
+      "id": "RM-KNOWLEDGE-DEPENDENCY-0002",
+      "source": "docs/02-capabilities/knowledge/dependencies.md",
+      "line": 38,
+      "kind": "capability",
+      "domain": "knowledge",
+      "assertions": []
+    },
+    {
+      "id": "RM-KNOWLEDGE-DEPENDENCY-0003",
+      "source": "docs/02-capabilities/knowledge/dependencies.md",
+      "line": 40,
       "kind": "capability",
       "domain": "knowledge",
       "assertions": []
@@ -55175,28 +55279,28 @@
     {
       "id": "RM-KNOWLEDGE-TRIAL-0001",
       "source": "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md",
-      "line": 116,
+      "line": 117,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-KNOWLEDGE-TRIAL-0002",
       "source": "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md",
-      "line": 118,
+      "line": 119,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-KNOWLEDGE-TRIAL-0003",
       "source": "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md",
-      "line": 120,
+      "line": 121,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-KNOWLEDGE-TRIAL-0004",
       "source": "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md",
-      "line": 122,
+      "line": 123,
       "kind": "governance",
       "domain": null
     },
@@ -58196,8 +58300,8 @@
     },
     {
       "source": "docs/02-capabilities/knowledge/README.md",
-      "sha256": "3d337f80a5720c2f6e18b6cbe5e478b273e337790ceb7e558afdc3820e74f065",
-      "lines": 57
+      "sha256": "fa4a54bd7e3961f3e9d2c8d664e3381a60028e2f93731f2e41be03edeb297b64",
+      "lines": 58
     },
     {
       "source": "docs/02-capabilities/knowledge/benchmarks.md",
@@ -58213,6 +58317,11 @@
       "source": "docs/02-capabilities/knowledge/cross-cutting.md",
       "sha256": "e1fac04deb838b22e107a7c9f48e4eab46b44b1f41f484fd37bfed402b7dd391",
       "lines": 24
+    },
+    {
+      "source": "docs/02-capabilities/knowledge/dependencies.md",
+      "sha256": "e6b50eaa8defe74e4e846bbd23e29bd69c420ab660a993e45eaeb7158ca4c907",
+      "lines": 40
     },
     {
       "source": "docs/02-capabilities/knowledge/model.md",
@@ -58231,12 +58340,12 @@
     },
     {
       "source": "docs/02-capabilities/knowledge/platform-research.md",
-      "sha256": "75cab0527b2a42213c68c779e3d8a45025c63438f0cd764cdbaa0841a1fee8c1",
-      "lines": 23
+      "sha256": "073b377c6c935cc2560378d3beef92e862433f96faffbcf2215383cf6d99bdfd",
+      "lines": 48
     },
     {
       "source": "docs/02-capabilities/knowledge/promotion-review.md",
-      "sha256": "288fd3903b7618cff795148cadcbc0e3f574ad18822f345dae0b7aa1f60dd2b0",
+      "sha256": "c5ced332f894f14475c3610a90b4142ea8a691589c056a6a049dd936de5a0e52",
       "lines": 33
     },
     {
@@ -61226,8 +61335,8 @@
     },
     {
       "source": "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md",
-      "sha256": "b29bd94d8f4360be6fa59b2daebc526894aeec105cffca5b88ef1e4638cee1b0",
-      "lines": 122
+      "sha256": "cad51b2cebfaf7083e95bbf885edbed26cac1c24c2c7b686f4aea5f41ef58dfb",
+      "lines": 123
     },
     {
       "source": "docs/05-governance/implementation-trials/security-batch-trial-proposal.md",

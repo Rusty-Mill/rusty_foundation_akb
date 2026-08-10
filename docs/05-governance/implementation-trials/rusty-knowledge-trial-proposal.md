@@ -56,12 +56,12 @@ No exact subject currently satisfies the entry gate. The `knowledge` domain is `
 
 | Dimension | Windows | Linux | macOS |
 |---|---|---|---|
-| Storage/query engine | Unevaluated — SQLite embeds cross-platform in Python; Rust binding parity unverified | Unevaluated | Unevaluated |
-| Vector-search extension | Unevaluated — `sqlite-vec` used in Python; Rust equivalent unselected | Unevaluated | Unevaluated |
-| MCP transport | Unevaluated — Streamable HTTP/ASGI in Python; Rust crate unselected | Unevaluated | Unevaluated |
+| Storage/query engine | Researched, not built: `rusqlite` (bundled SQLite, FTS5 via `-DSQLITE_ENABLE_FTS5`) expected cross-platform by construction | Same candidate, same caveat | Same candidate, same caveat |
+| Vector-search extension | Researched, not built: `sqlite-vec` crate (pre-1.0/alpha, disclosed as such), same underlying C extension the Python server already depends on | Same candidate, same caveat | Same candidate, same caveat |
+| MCP transport | Researched, not built: `rmcp`, the official MCP Rust SDK, covers Streamable HTTP; exact current version unresolved (source discrepancy: `0.8.0` vs. `3.1.2`, disclosed in [platform-research.md](../../02-capabilities/knowledge/platform-research.md)) | Same candidate, same caveats | Same candidate, same caveats |
 | Fault, lifecycle, conformance, benchmark support | None yet — no Rust code exists | None yet | None yet |
 
-Every cell is `Unevaluated`, not `Unknown-but-assumed-fine`: this trial has not yet been authorized to evaluate anything, consistent with [platform-research.md](../../02-capabilities/knowledge/platform-research.md)'s own "unverified" framing.
+Every cell moved from `Unevaluated` to "researched, not built" — real, cited candidates now exist ([platform-research.md](../../02-capabilities/knowledge/platform-research.md)), but none has been compiled, linked, or exercised: this trial still has not been authorized to build or run anything. Fault/lifecycle/conformance/benchmark support remains `None yet` regardless — research into candidate crates does not produce test evidence.
 
 ## Evidence plan
 
@@ -108,6 +108,7 @@ The trial owner may pause more conservatively. Only the authorizing authority ma
 | 0 | 2026-08-10 | Named David Bailey ([@baileyrd](https://github.com/baileyrd)) as owner and every reviewer role; disclosed the resulting single-reviewer independence gap per RM-TRIAL-REVIEW-0002 | None; still not authorized — see Decision |
 | 0 | 2026-08-10 | Added a governed reviewer-independence waiver for `knowledge`'s Draft-stage documentation review; waiver explicitly excludes trial authorization and promotion acceptance | None; still not authorized — see Decision |
 | 0 | 2026-08-10 | RFC-0004 (solo-maintainer mode) accepted project-wide, superseding the domain-scoped waiver; gate table updated so independence no longer blocks Ownership/Verification/Cross-cutting — Subject, Repository, Bounds remain the real blockers | None; still not authorized — see Decision |
+| 0 | 2026-08-10 | Real platform/crate research (`platform-research.md`) and a composition register (`dependencies.md`) added, replacing "Unevaluated" provider-matrix cells with researched-not-built candidates; `knowledge`'s promotion-review Dependencies/profile-impact and Platform-research gates moved Fail → Qualified. Subject and Repository remain Fail — research is not an accepted contract or a `rusty_knowledge` commit | None; still not authorized — see Decision |
 
 ## Closeout
 
