@@ -5,7 +5,7 @@
   "generated_from": "Markdown; this index is derived and non-authoritative",
   "summary": {
     "markdown_documents": 1202,
-    "internal_links": 2613,
+    "internal_links": 2614,
     "requirements": 5603,
     "domains": 62,
     "promotion_units": 7,
@@ -21,7 +21,7 @@
     "domains_with_direct_requirement_assertion_map": 9,
     "domains_with_direct_benchmark_scenario_map": 9,
     "benchmark_scenarios": 95,
-    "external_sources": 670,
+    "external_sources": 672,
     "external_sources_with_review_record": 145,
     "domains_with_dedicated_cross_cutting_analysis": 31,
     "domains_with_complete_planned_traceability": 9,
@@ -6451,6 +6451,22 @@
       "host": "freetype.org",
       "sources": [
         "docs/02-capabilities/text/platform-research.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
+      "url": "https://github.com/baileyrd/Atlas_Engineering_Standards_Library",
+      "host": "github.com",
+      "sources": [
+        "docs/04-ecosystem/repository-strategy.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
+      "url": "https://github.com/baileyrd/Atlas_Engineering_Standards_Library/blob/main/docs/volumes/ATLAS-600-engineering-toolchain.md",
+      "host": "github.com",
+      "sources": [
+        "docs/04-ecosystem/repository-strategy.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -60606,7 +60622,7 @@
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/audit-report.md",
-      "sha256": "41e412488035085dbf3b599b4b56ef916bf5ab3daf12d6fc9e5c0675d2aab4dc",
+      "sha256": "6000ad9366723ed24352d44a69f5c22196bf3408a9d1dc2da55f01f7e5d936ba",
       "lines": 73
     },
     {
@@ -60766,8 +60782,8 @@
     },
     {
       "source": "docs/04-ecosystem/repository-strategy.md",
-      "sha256": "e0c1eee6096d6f6710890d87212f3a97a75f4b8dc01131999f7fe927ea7cfdba",
-      "lines": 40
+      "sha256": "be06d06ee8cf3e53d6634d868457adc82f155a5621d6322b33c796bec2d778f6",
+      "lines": 42
     },
     {
       "source": "docs/04-ecosystem/traceability.md",
