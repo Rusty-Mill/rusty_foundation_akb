@@ -165,5 +165,7 @@
 | [0161](0161-random-output-tests-do-not-certify-unpredictability.md) | Random-output tests do not certify unpredictability | Accepted |
 | [0162](0162-attenuation-enforcement-is-a-scoped-claim-vector-not-a-security-score.md) | Attenuation enforcement is a scoped claim vector, not a security score | Accepted |
 | [0163](0163-maturity-promotion-units-follow-evidence-boundaries-not-directory-layout.md) | Maturity promotion units follow evidence boundaries, not directory layout | Accepted |
+| [0164](0164-rusty-knowledge-is-a-domain-framework.md) | Rusty Knowledge is a domain framework, not a base capability | Proposed |
+| [0165](0165-knowledge-layered-authority-carries-over-as-a-requirement.md) | Knowledge domain layered authority is a portable requirement, not a Python implementation detail | Proposed |
 
 Use the [ADR template](../05-governance/adr-template.md) for new decisions.

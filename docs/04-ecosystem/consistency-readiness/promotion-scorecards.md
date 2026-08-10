@@ -37,6 +37,7 @@ The table uses conjunctive gates. It does not calculate a weighted score, and it
 | [interchange](../../02-capabilities/interchange/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | absent | **no** |
 | [internationalization](../../02-capabilities/internationalization/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | absent | **no** |
 | [ipc](../../02-capabilities/ipc/README.md) | pass | pass | pass | pass | pass | pass | pass | pass | proposed | **yes** |
+| [knowledge](../../02-capabilities/knowledge/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | absent | **no** |
 | [lifecycle](../../02-capabilities/lifecycle/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | absent | **no** |
 | [memory](../../02-capabilities/memory/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | absent | **no** |
 | [messaging](../../02-capabilities/messaging/README.md) | pass | pass | pass | pass | pass | unknown | unknown | unknown | absent | **no** |
