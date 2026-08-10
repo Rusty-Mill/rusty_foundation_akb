@@ -38,6 +38,8 @@ Neither backend claims R3: no `RESOLVE_IN_ROOT`/root-constraint request exists o
 
 This evidence is **qualified, not adopted**: it comes from an externally, independently governed repository's own parity suite (strace-verified for the Linux D2 claim; a committed, real-Windows-CI-executed parity test for the Windows R2-link-confinement claim), not from this AKB's own conformance harness, and per `RM-RUSTILS-TRIAL-0003` it must not be represented as Rusty-Mill conformance or promotion by its own existence. It narrows what a future accepted decision would need to independently verify — it does not substitute for that verification.
 
+**TRIAL-0002 closed 2026-08-10** with a published [comparison record](rustils-comparison.md): both `RT-001` (`OsStr` losslessness vs ADR-0006) and `RT-002` (directory-relative resolution vs ADR-0007) disposed **Inconclusive** — `RT-002` substantially supported for the test-verified link-confinement scope, with a specific, named gap (Linux mount-crossing containment requested but not test-verified); `RT-001` has no executable evidence either way in rustils' own suite. Per the comparison record's own follow-on decision and `RM-RUSTILS-TRIAL-0004`, this is an **explicit no-change decision** — neither finding refutes ADR-0006/0007 or this promotion's own bound scope, and a comparison finding cannot change promotion status by itself regardless.
+
 ## Accepted decision
 
 **Decision date:** 2026-08-10. **Decided by:** baileyrd, in every named role (see Named ownership, below — this decision is itself made under that bootstrap staffing, not independently of it).
