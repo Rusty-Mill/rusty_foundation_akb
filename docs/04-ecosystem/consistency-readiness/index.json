@@ -21,7 +21,7 @@
     "domains_with_direct_requirement_assertion_map": 9,
     "domains_with_direct_benchmark_scenario_map": 9,
     "benchmark_scenarios": 95,
-    "external_sources": 687,
+    "external_sources": 689,
     "external_sources_with_review_record": 145,
     "domains_with_dedicated_cross_cutting_analysis": 32,
     "domains_with_complete_planned_traceability": 9,
@@ -6523,6 +6523,22 @@
         "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md",
         "docs/adr/0164-rusty-knowledge-is-a-domain-framework.md",
         "docs/rfc/0003-rusty-knowledge-domain-framework.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
+      "url": "https://github.com/Rusty-Mill/rusty_knowledge/blob/main/docs/rusty-mill-profile.md",
+      "host": "github.com",
+      "sources": [
+        "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
+      "url": "https://github.com/Rusty-Mill/rusty_knowledge/commit/fa230f1",
+      "host": "github.com",
+      "sources": [
+        "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -55279,28 +55295,28 @@
     {
       "id": "RM-KNOWLEDGE-TRIAL-0001",
       "source": "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md",
-      "line": 117,
+      "line": 118,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-KNOWLEDGE-TRIAL-0002",
       "source": "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md",
-      "line": 119,
+      "line": 120,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-KNOWLEDGE-TRIAL-0003",
       "source": "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md",
-      "line": 121,
+      "line": 122,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-KNOWLEDGE-TRIAL-0004",
       "source": "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md",
-      "line": 123,
+      "line": 124,
       "kind": "governance",
       "domain": null
     },
@@ -58335,7 +58351,7 @@
     },
     {
       "source": "docs/02-capabilities/knowledge/ownership.md",
-      "sha256": "d1b2851403084fd7a791da9162bc00d4532c0b99e1ac7d7454d17352512bcdf1",
+      "sha256": "bd2eae22a88b9b79f5502ea2c8fef6f5f7d6bcc112d3845b20332e93e3ba2b0d",
       "lines": 33
     },
     {
@@ -61290,7 +61306,7 @@
     },
     {
       "source": "docs/05-governance/implementation-trials/README.md",
-      "sha256": "52969bcabe28db467d85e52d0c518ec36bdf3455d781887ad07064bc2f6ce8f6",
+      "sha256": "c56c4e86d2a61b5e139c39e084bbaf789716021d825af238a68cd90d13062e88",
       "lines": 37
     },
     {
@@ -61335,8 +61351,8 @@
     },
     {
       "source": "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md",
-      "sha256": "cad51b2cebfaf7083e95bbf885edbed26cac1c24c2c7b686f4aea5f41ef58dfb",
-      "lines": 123
+      "sha256": "b626b0fb795f8acd82f2df9896b11df7f32b13802999022477feec83b771b14d",
+      "lines": 124
     },
     {
       "source": "docs/05-governance/implementation-trials/security-batch-trial-proposal.md",
