@@ -3,9 +3,9 @@
 | Field | Value |
 |---|---|
 | Status | Proposed; authorization blocked |
-| Revision | 1 — narrowed to filesystem only (see Change log) |
-| Owner | rustils trial owner role; named person required before authorization |
-| Reviewers | Filesystem capability owner, independent architecture, standards, evidence, and platform reviewers; named people required |
+| Revision | 2 — Ownership and Bounds staffed/defined (see Change log) |
+| Owner | baileyrd (bootstrap staffing — see Named ownership, below) |
+| Reviewers | baileyrd: architecture, filesystem capability, security, evidence (bootstrap staffing — not independent; see Named ownership) |
 | Created | 2026-08-10 |
 | Authorization expires | No authorization exists; any later authorization expires on bound-input drift or its recorded date |
 | Implementation authority | None |
@@ -55,7 +55,12 @@ Revision 0's `RT-003`–`RT-006` (process launch/search, async-io completion mod
 
 **Excluded:** creating or modifying a rustils repository generation under this trial's authority, any provider call, any credential/secret/random material, any benchmark run, any claim that rustils "is" a Rusty-Mill implementation, any product integration, any release, any change to rustils' own independent governance (`rfc-v2.md`) by this trial's authority, and anything touching process/networking/security (removed from subject by this revision).
 
-**Initial limits:** read-only comparison against rustils' public repository at the bound commit; no execution of rustils' test/parity/fuzz suites under this trial's own infrastructure (their prior CI results are cited as candidate evidence, not re-executed as trial evidence, until an authorized verification plan exists); no named limit on wall time is set here — that is an authorization input, not guessed in a blocked proposal.
+**Initial limits (bound as of revision 2):**
+
+- **Read-only.** Comparison against rustils' public repository at the bound commit only; no execution of rustils' test/parity/fuzz suites under this trial's own infrastructure — their prior CI results are cited as candidate evidence, not re-executed as trial evidence, until a separate authorized verification plan exists (Verification gate, still `Qualified`, not `Pass`).
+- **Resource limit.** No compute, credentials, secrets, or network access beyond fetching rustils' public repository at the bound commit and reading this AKB's own documents — trivial by construction, since no code runs.
+- **Effort/time limit.** Once authorized, this generation's work is exactly: one written comparison-record entry per `RT-001`/`RT-002`, produced and published in a single authorized session. If not completed within **30 days of authorization**, the generation is treated as stale — the owner must either publish the (possibly partial) comparison record with an explicit inconclusive disposition for any hypothesis not reached, or re-review before continuing, per `RM-TRIAL-CHANGE-0002`'s material-drift-suspends-work principle applied to elapsed time rather than input change.
+- **Commit-drift limit.** Authorization binds the exact rustils commit named in Subject and bound generations, above. If rustils' `main` moves in a way that changes `docs/behavior/fs.md`'s R/D-level claims or `docs/divergences.md` #013/#014 before the comparison record is published, that is material drift (`RM-TRIAL-CHANGE-0001`) and pauses the trial for re-review — an unrelated rustils commit (e.g. a `process`/`net` change) is not material to this filesystem-only trial and does not pause it.
 
 **Nonclaims:** conformance, certification, portability, provider preference, production safety, security strength, native performance, maturity, API stability, crate/repository/package topology, or permission to implement. rustils' existing shipped behavior is not thereby endorsed, adopted, or declared Rusty-Mill-conformant by this proposal existing.
 
@@ -91,20 +96,26 @@ Stop immediately on: any drift of rustils' cited commit that changes a hypothesi
 
 The trial owner may pause more conservatively. Only the authorizing authority may approve a revised generation after architecture, capability-owner, and standards review.
 
+## Named ownership (bootstrap staffing)
+
+Per `governance.md`'s explicit allowance ("one person may hold several roles initially"), and consistent with filesystem's own promotion-review staffing: **baileyrd** is named as this trial's owner and as its architecture, filesystem-capability, security, and evidence reviewer roles (`entry-gates.md`'s Ownership row: "trial owner plus architecture, capability, security, and evidence reviewers as applicable" — all four apply to a filesystem-comparison trial, none are inapplicable here).
+
+**Waiver TRIAL-0002-W002 (Ownership — independent reviewers):** granted, same basis as filesystem's `FS-EXP-W001`. Scope: this trial's Ownership gate only. Naming one person across every role means this gate reaches **Qualified** (named, accountable, evidenced), not **Pass** — independence is a real, distinct requirement this waiver does not manufacture. Revisit trigger: before this trial (if authorized) closes with a "success" disposition informing any follow-on ADR/RFC/promotion-review proposal, or when a second accountable person is available, whichever comes first. This is a separate, distinct waiver from `FS-EXP-W001` — that one covers the *promotion review's* Ownership gate, not this trial's; naming baileyrd there does not automatically staff this trial, and vice versa, which is why both had to be granted explicitly rather than one being inferred from the other.
+
 ## Gate review and decision
 
 | Gate | State | Evidence | Reviewer | Expiry/qualification |
 |---|---|---|---|---|
 | Subject | **Pass** (as of revision 1) | filesystem's [promotion review](../../02-capabilities/filesystem/promotion-review.md) is Accepted — Draft to Experimental, 2026-08-10, scoped exactly to the contracts and R/D levels bound there | Filesystem capability owner: baileyrd (bootstrap staffing, see the promotion review's own Named ownership section) | bound to that exact decision generation; any later amendment to the promotion review requires materiality review here too (`RM-TRIAL-CHANGE-0001`) |
 | Learning value | Qualified | `RT-001`/`RT-002` are falsifiable and cite exact rustils source and exact accepted ADRs; `RT-002` specifically now tests the *evidenced* R2 subset against ADR-0007, not a hypothetical one | Architecture and evidence reviewers: unnamed | review required |
-| Bounds | Unknown | scope/nonclaims/exclusions defined and now narrower (filesystem only); numeric time/review-effort limits still unselected | Trial owner and standards reviewer: unnamed | review required |
-| Ownership | Unknown | accountable roles defined; named people, independence, and availability absent for the *trial* (distinct from the promotion review's own bootstrap naming, which does not itself staff this trial) | Authorizing maintainer: unnamed | blocks authorization |
+| Bounds | **Pass** (as of revision 2) | included/excluded behavior, platforms/providers, and nonclaims were already defined; revision 2 adds the previously-missing numeric time/resource limits (Scope, limits, and nonclaims, above: read-only, no compute/credentials, 30-day effort window, commit-drift trigger) — `entry-gates.md`'s Bounds row requires definition, not independent review, so this gate does not carry the same Ownership-style independence ceiling | Trial owner: baileyrd | bound to this exact revision; a materially different limit requires its own materiality review |
+| Ownership | **Qualified** (as of revision 2) | trial owner and every applicable reviewer role (architecture, filesystem capability, security, evidence) named — baileyrd, bootstrap staffing (see Named ownership, below) | Authorizing maintainer: baileyrd | `TRIAL-0002-W002` waives independence explicitly; still not `Pass` — a solo-staffed Ownership gate is evidenced and accountable, not independent, and `RM-TRIAL-ENTRY-0002` treats that honestly rather than rounding up |
 | Repository | Qualified | rustils carries a Draft standards profile (`docs/rusty-mill-profile.md`) disclosing its own gaps; profile is not Accepted and binds no Rusty-Mill generation yet | Standards reviewer: unnamed | blocks authorization |
 | Verification | Qualified | candidate evidence sources identified and cited exactly, including the strace-verified D2 test and the symlink-rejection parity tests; no trial-bound verification protocol, re-execution plan, or independent evidence collection exists | Evidence reviewer: unnamed | blocks authorization |
 | Cross-cutting | Unknown | no named review of security/accessibility/i18n/observability/performance implications of the comparison work itself has occurred | Quality reviewers: unnamed | blocks authorization |
 | Operations | Not applicable | this trial performs no code execution, provider call, or CI activity under its own authority — read/compare only | — | qualifies, does not fail |
 
-**Decision: Not authorized.** Entry is conjunctive; Subject clearing does not clear the rest. Every remaining `Unknown` independently blocks work — Bounds, Ownership, Cross-cutting are unreviewed, and Repository/Verification stay `Qualified`, not `Pass`. A well-cited proposal, an existing external repository, an accepted promotion decision for the *domain*, or informal maintainer overlap between rustils and this AKB cannot override these states (`RM-TRIAL-ENTRY-0002`).
+**Decision: Not authorized.** Entry is conjunctive; Subject and Bounds clearing, and Ownership moving to `Qualified`, do not clear the rest. `Cross-cutting` remains `Unknown` and independently blocks work; `Learning value`, `Repository`, and `Verification` stay `Qualified`, not `Pass`. A well-cited proposal, an existing external repository, an accepted promotion decision for the *domain*, solo bootstrap staffing, or informal maintainer overlap between rustils and this AKB cannot override these states (`RM-TRIAL-ENTRY-0002`).
 
 ## Change log
 
@@ -112,6 +123,7 @@ The trial owner may pause more conservatively. Only the authorizing authority ma
 |---|---|---|---|
 | 0 | 2026-08-10 | Initial evidence-first proposal citing `baileyrd/rustils` as candidate input evidence across four Draft domains | None; authorization blocked |
 | 1 | 2026-08-10 | Materiality review (`RM-TRIAL-CHANGE-0001`): filesystem's promotion review moved from `Proposed` to Accepted — Draft to Experimental, changing the Subject gate's own state for that one domain. Narrowed this trial's subject to filesystem alone; removed process, networking, and security (still Draft, no promotion review) rather than silently carrying gates they'd fail forward. Dropped `RT-003`–`RT-006` (those domains' hypotheses); revised `RT-002` to test the now-evidenced R2 subset. Rebased the candidate repository generation to `cc1c699130c1ed92428e2a9003f81dc0732e0305` (rustils#122, the R2/D2 work). Subject gate moved Fail → Pass; every other gate is unchanged (`Unknown`/`Qualified`) — reusable per `RM-TRIAL-CHANGE-0003`, since none of them depended on the domain count | Subject gate only; still `Not authorized` overall |
+| 2 | 2026-08-10 | Staffed Ownership (trial owner + architecture/filesystem-capability/security/evidence reviewers, baileyrd, bootstrap staffing, `TRIAL-0002-W002`) and fully defined Bounds (added the previously-missing numeric time/resource limits: read-only, no compute/credentials, 30-day effort window, commit-drift materiality trigger). Ownership moved Unknown → Qualified (not Pass — independence explicitly waived, not manufactured); Bounds moved Unknown → Pass (definitional completeness, no independence requirement in that gate's own schema). Every other gate reused unchanged per `RM-TRIAL-CHANGE-0003` | Ownership + Bounds gates only; still `Not authorized` overall — Cross-cutting remains `Unknown`, Learning value/Repository/Verification remain `Qualified` |
 
 ## Closeout
 
