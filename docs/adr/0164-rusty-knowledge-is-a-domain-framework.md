@@ -31,7 +31,7 @@ Rejected. Leaving a running, relied-upon knowledge server outside the architectu
 ## Consequences
 
 - A `knowledge` domain-analysis and capability-template pass (per the [domain-analysis method](../02-capabilities/domain-analysis.md)) becomes a future, separate contribution rather than something this ADR or RFC-0003 completes now.
-- The implementation trial authorized by RFC-0003 must show its composition of `search`, `persistence`, and transport capabilities explicitly rather than reinventing retrieval or storage semantics inside the new repository.
+- The implementation trial authorized by RFC-0003 must show its composition of `search`, `persistence`, and transport capabilities explicitly rather than reinventing retrieval or storage semantics inside [`rusty_knowledge`](https://github.com/Rusty-Mill/rusty_knowledge).
 - Future promotion review for `knowledge` will need framework-level evidence (the composition holds together) in addition to whatever base-capability contracts eventually get carved out of it.
 
 ## Verification

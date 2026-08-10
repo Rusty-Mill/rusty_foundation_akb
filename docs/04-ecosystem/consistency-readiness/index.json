@@ -21,7 +21,7 @@
     "domains_with_direct_requirement_assertion_map": 9,
     "domains_with_direct_benchmark_scenario_map": 9,
     "benchmark_scenarios": 95,
-    "external_sources": 674,
+    "external_sources": 675,
     "external_sources_with_review_record": 145,
     "domains_with_dedicated_cross_cutting_analysis": 31,
     "domains_with_complete_planned_traceability": 9,
@@ -6487,6 +6487,15 @@
       "host": "freetype.org",
       "sources": [
         "docs/02-capabilities/text/platform-research.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
+      "url": "https://github.com/Rusty-Mill/rusty_knowledge",
+      "host": "github.com",
+      "sources": [
+        "docs/adr/0164-rusty-knowledge-is-a-domain-framework.md",
+        "docs/rfc/0003-rusty-knowledge-domain-framework.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -61951,7 +61960,7 @@
     },
     {
       "source": "docs/adr/0164-rusty-knowledge-is-a-domain-framework.md",
-      "sha256": "ae2eb3c723db1b1d2adfe12e6fae335a4a78589f76850118c02f9e01d08a5c00",
+      "sha256": "f50432fa78fb68c5478c396eb7f70cc06b07cf940b7b36f1e1c3371e12ca4a94",
       "lines": 45
     },
     {
@@ -61976,7 +61985,7 @@
     },
     {
       "source": "docs/rfc/0003-rusty-knowledge-domain-framework.md",
-      "sha256": "0f81afe27de26799f3028366f1710f20ffff3cacea13ec456e45a1482561144b",
+      "sha256": "b836ce7f86a8fe777c59e22f335ba489297a45b283376adb6e0721ffe94f278f",
       "lines": 110
     },
     {

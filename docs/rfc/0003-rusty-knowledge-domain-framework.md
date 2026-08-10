@@ -22,7 +22,7 @@ The foundation roadmap places domain frameworks in [Phase 5 — Ecosystem scale-
 - Give the knowledge-serving domain a stable place in the architecture pyramid and capability graph before any Rust code is authorized.
 - Preserve the proven parts of the Python design (layered authority model, per-domain namespacing, hybrid FTS + vector retrieval, conflict registry) as portable semantic requirements, independent of SQLite or Python-specific implementation.
 - Name the rebrand: the delivered software is "Rusty Knowledge" (crate family `rusty-knowledge`); the capability-graph domain identifier is `knowledge` (`rm.knowledge.<capability>`), consistent with existing single-word domain identifiers (`search`, `caching`).
-- Scope an implementation trial, in a **new, separate repository**, that re-implements the Python server's behavior in Rust and reports back as evidence.
+- Scope an implementation trial, in the **separate `rusty-mill/rusty_knowledge` repository**, that re-implements the Python server's behavior in Rust and reports back as evidence.
 
 ### Non-goals
 
@@ -41,7 +41,7 @@ The foundation roadmap places domain frameworks in [Phase 5 — Ecosystem scale-
    - `security` — bearer-token authentication and rate limiting at the transport boundary.
    - `observability` — request/tool-call diagnostics.
 3. A capability specification for `rm.knowledge.*` is out of scope for this RFC; domain analysis and a capability template pass follow the [domain-analysis method](../02-capabilities/domain-analysis.md) as a separate contribution once the trial reports.
-4. Authorize one bounded [implementation trial](../05-governance/implementation-trials/README.md), per RFC-0002, whose subject is: re-implement the 15 MCP tools and layered-authority/conflict-registry semantics of `baileyrd/knowledge-mcp` in Rust, in a new repository, without changing observable tool behavior. The trial is evidence; it does not itself authorize a release or retire the Python server.
+4. Authorize one bounded [implementation trial](../05-governance/implementation-trials/README.md), per RFC-0002, whose subject is: re-implement the 15 MCP tools and layered-authority/conflict-registry semantics of `baileyrd/knowledge-mcp` in Rust, in [`rusty-mill/rusty_knowledge`](https://github.com/Rusty-Mill/rusty_knowledge), without changing observable tool behavior. The trial is evidence; it does not itself authorize a release or retire the Python server. As of this RFC, `rusty_knowledge` is an empty repository — RFC-0002's entry gates, not this RFC by itself, authorize the first commit.
 
 ## Behavioral contract impact
 
@@ -80,9 +80,9 @@ Rejected: it is an opinionated composition of several existing capabilities (sea
 
 Considered and rejected as the default, but only provisionally: the working Python server already exists and is already relied upon, which is a materially different situation from a hypothetical future domain framework with no prior art. If reviewers judge that distinction insufficient, this RFC should be rejected or held rather than accepted by default.
 
-### Skip governance and start the Rust port directly in the new repository
+### Skip governance and start the Rust port directly in `rusty_knowledge`
 
-Rejected: it would repeat exactly the specification-before-implementation violation [RFC-0002](0002-implementation-trial-governance.md) and [ADR-0002](../adr/0002-specification-before-implementation.md) exist to prevent, and would leave the layered-authority/conflict-registry semantics undocumented as architecture.
+Rejected: it would repeat exactly the specification-before-implementation violation [RFC-0002](0002-implementation-trial-governance.md) and [ADR-0002](../adr/0002-specification-before-implementation.md) exist to prevent, and would leave the layered-authority/conflict-registry semantics undocumented as architecture. `rusty_knowledge` remaining empty until entry review passes is a deliberate consequence of this rejection, not an oversight.
 
 ## Drawbacks and risks
 
@@ -101,7 +101,7 @@ Rejected: it would repeat exactly the specification-before-implementation violat
 
 1. Review and accept or reject this RFC, resolving the Phase-1-vs-Phase-5 timing question explicitly in the disposition.
 2. If accepted, record the domain-framework placement decision as an ADR (see companion ADR-0164) before the trial begins.
-3. Open one implementation trial record, in the new repository, scoped to functional parity with `baileyrd/knowledge-mcp`'s 15 tools.
+3. Open one implementation trial record, in [`rusty-mill/rusty_knowledge`](https://github.com/Rusty-Mill/rusty_knowledge), scoped to functional parity with `baileyrd/knowledge-mcp`'s 15 tools.
 4. Report trial evidence back into this RFC's trial-application section per the RFC-0001 pattern; do not begin capability specification work until the trial reports.
 5. A separate future RFC accepts (or declines) the `rm.knowledge.*` capability contract based on trial evidence, and a separate decision addresses retiring the Python server.
 
