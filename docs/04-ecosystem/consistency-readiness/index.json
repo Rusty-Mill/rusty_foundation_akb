@@ -4,8 +4,8 @@
   "authority": "docs/01-architecture/architecture-model.md",
   "generated_from": "Markdown; this index is derived and non-authoritative",
   "summary": {
-    "markdown_documents": 1202,
-    "internal_links": 2614,
+    "markdown_documents": 1199,
+    "internal_links": 2484,
     "requirements": 5603,
     "domains": 62,
     "promotion_units": 7,
@@ -60621,11 +60621,6 @@
       "lines": 60
     },
     {
-      "source": "docs/04-ecosystem/consistency-readiness/audit-report.md",
-      "sha256": "6000ad9366723ed24352d44a69f5c22196bf3408a9d1dc2da55f01f7e5d936ba",
-      "lines": 73
-    },
-    {
       "source": "docs/04-ecosystem/consistency-readiness/audit-rules.md",
       "sha256": "be2efa4c7f964c46cdb92e914b8b47287eb273e92147e2189ea843c0fc62ef3e",
       "lines": 51
@@ -60681,19 +60676,9 @@
       "lines": 46
     },
     {
-      "source": "docs/04-ecosystem/consistency-readiness/promotion-scorecards.md",
-      "sha256": "1f1df34213f93f3a15552ffdb165e134a41fd91b3ca3d1291a8cdda73d979559",
-      "lines": 78
-    },
-    {
       "source": "docs/04-ecosystem/consistency-readiness/promotion-unit-model.md",
       "sha256": "f2dc9288851eed22120faf2f3d43417a49500957d57d4aa05c06419db93a10b0",
       "lines": 57
-    },
-    {
-      "source": "docs/04-ecosystem/consistency-readiness/quality-matrix.md",
-      "sha256": "e790cdeafcb26ac548bea75ad541b132af86a3ff27f08e4b553f8f902226a8d8",
-      "lines": 73
     },
     {
       "source": "docs/04-ecosystem/consistency-readiness/security-batch-benchmarks.md",
