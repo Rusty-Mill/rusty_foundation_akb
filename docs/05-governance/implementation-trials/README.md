@@ -26,6 +26,8 @@ The [security-foundation batch trial proposal](security-batch-trial-proposal.md)
 
 The [rustils composed evidence trial proposal](rustils-trial-proposal.md) is a second application, citing an existing external repository ([`baileyrd/rustils`](https://github.com/baileyrd/rustils)) as candidate qualified input evidence for filesystem, process, networking, and security-random/restricted-execution domain work. It is equally blocked: all four subject domains remain Draft, and per RFC-0002's rollout rule, an existing prototype cannot claim retroactive authorization regardless of how complete its own independent evidence is.
 
+The [Rusty Knowledge implementation trial proposal](rusty-knowledge-trial-proposal.md) (TRIAL-0003) is a third application, entered per [RFC-0003](../../rfc/0003-rusty-knowledge-domain-framework.md) for the [`knowledge` domain framework](../../02-capabilities/knowledge/README.md) and citing `baileyrd/knowledge-mcp` as candidate qualified input evidence. It is equally blocked: the `knowledge` domain remains Draft with no promotion review, and the target repository ([`rusty-mill/rusty_knowledge`](https://github.com/Rusty-Mill/rusty_knowledge)) has no commits or standards profile.
+
 **RM-TRIAL-MODEL-0001:** A trial MUST bind one exact authorization generation to named questions, scope, inputs, evidence, owners, limits, and closeout conditions.
 
 **RM-TRIAL-MODEL-0002:** Trial work and results MUST NOT establish Stable API, production support, portability, provider preference, release eligibility, or repository topology by implication.

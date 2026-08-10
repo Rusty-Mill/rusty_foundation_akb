@@ -4,9 +4,9 @@
   "authority": "docs/01-architecture/architecture-model.md",
   "generated_from": "Markdown; this index is derived and non-authoritative",
   "summary": {
-    "markdown_documents": 1209,
-    "internal_links": 2539,
-    "requirements": 5617,
+    "markdown_documents": 1210,
+    "internal_links": 2554,
+    "requirements": 5621,
     "domains": 63,
     "promotion_units": 7,
     "draft_promotion_units": 7,
@@ -6494,6 +6494,8 @@
       "url": "https://github.com/Rusty-Mill/rusty_knowledge",
       "host": "github.com",
       "sources": [
+        "docs/05-governance/implementation-trials/README.md",
+        "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md",
         "docs/adr/0164-rusty-knowledge-is-a-domain-framework.md",
         "docs/rfc/0003-rusty-knowledge-domain-framework.md"
       ],
@@ -54780,28 +54782,28 @@
     {
       "id": "RM-TRIAL-MODEL-0001",
       "source": "docs/05-governance/implementation-trials/README.md",
-      "line": 29,
+      "line": 31,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-TRIAL-MODEL-0002",
       "source": "docs/05-governance/implementation-trials/README.md",
-      "line": 31,
+      "line": 33,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-TRIAL-MODEL-0003",
       "source": "docs/05-governance/implementation-trials/README.md",
-      "line": 33,
+      "line": 35,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-TRIAL-MODEL-0004",
       "source": "docs/05-governance/implementation-trials/README.md",
-      "line": 35,
+      "line": 37,
       "kind": "governance",
       "domain": null
     },
@@ -55026,6 +55028,34 @@
       "id": "RM-RUSTILS-TRIAL-0004",
       "source": "docs/05-governance/implementation-trials/rustils-trial-proposal.md",
       "line": 124,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-KNOWLEDGE-TRIAL-0001",
+      "source": "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md",
+      "line": 112,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-KNOWLEDGE-TRIAL-0002",
+      "source": "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md",
+      "line": 114,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-KNOWLEDGE-TRIAL-0003",
+      "source": "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md",
+      "line": 116,
+      "kind": "governance",
+      "domain": null
+    },
+    {
+      "id": "RM-KNOWLEDGE-TRIAL-0004",
+      "source": "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md",
+      "line": 118,
       "kind": "governance",
       "domain": null
     },
@@ -60990,8 +61020,8 @@
     },
     {
       "source": "docs/05-governance/implementation-trials/README.md",
-      "sha256": "6a4d7d3bb1cd9241bc1a8dd018d36cdc0796d095072126036470f1ec2fc3067d",
-      "lines": 35
+      "sha256": "29be8afbdcdc22ff0ea912719af3fda6837052eb1de67e063b85c50dec22dc2b",
+      "lines": 37
     },
     {
       "source": "docs/05-governance/implementation-trials/change-control.md",
@@ -61032,6 +61062,11 @@
       "source": "docs/05-governance/implementation-trials/rustils-trial-proposal.md",
       "sha256": "46f82a8f880e8d47fc7a8b769a1c35b6ad4c6f226e1a0bb3ca2b270ec58a7bbc",
       "lines": 124
+    },
+    {
+      "source": "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md",
+      "sha256": "965bd63d8dc544dc2465dfe1fbe4211fddb0bd73a44f2a9d208ccc1d84aed60b",
+      "lines": 118
     },
     {
       "source": "docs/05-governance/implementation-trials/security-batch-trial-proposal.md",
