@@ -17,3 +17,5 @@ The authorization record names the person filling each applicable role; one pers
 
 **RM-TRIAL-REVIEW-0003:** Open blocking findings, expired waivers, or unresolved reviewer qualifications prevent authorization.
 
+**RM-TRIAL-REVIEW-0004:** Per [RFC-0004](../../rfc/0004-solo-maintainer-review-sufficiency.md), while solo-maintainer mode is active for a role, that role's independent-reviewer expectation is satisfied by the sole accountable person's own disclosed self-review; RM-TRIAL-REVIEW-0002's disclosure duty still applies without exception, and this does not substitute for any gate's substantive evidence.
+

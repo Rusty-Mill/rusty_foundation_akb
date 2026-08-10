@@ -12,6 +12,8 @@ The [authoritative architecture model](../01-architecture/architecture-model.md)
 
 One person may hold several roles initially. Decisions and evidence remain public in the repository so governance can scale beyond its founders.
 
+**Solo-maintainer mode**, per [RFC-0004](../rfc/0004-solo-maintainer-review-sufficiency.md): while a role or repository has exactly one accountable person, that person's own disclosed self-review satisfies this project's reviewer-independence expectations for every gate — including implementation-trial authorization and promotion-review decisions — without a separate per-decision waiver. This does not reduce what any gate substantively requires; it removes only the requirement that a second person perform the review. It reactivates automatically, with no calendar expiry, the moment a second distinct person is named for any reviewer role.
+
 ## ADRs
 
 Use an ADR for a durable choice with meaningful alternatives or consequences. Accepted ADRs are immutable except for status and links; a new ADR supersedes an old one.

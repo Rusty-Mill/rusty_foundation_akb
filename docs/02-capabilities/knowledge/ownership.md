@@ -4,11 +4,13 @@
 |---|---|
 | Review status | Unknown |
 | Reviewed | 2026-08-10 |
-| Accountable owner | Unassigned — Rusty Knowledge trial owner role per [TRIAL-0003](../../05-governance/implementation-trials/rusty-knowledge-trial-proposal.md); named person required before authorization |
-| Architecture reviewer | Unassigned |
-| Security reviewer | Unassigned — needed for the layered-authority/conflict-registry threat model recorded as unreviewed in [cross-cutting.md](cross-cutting.md) |
-| Evidence reviewer | Unassigned — needed for the `RK-001`–`RK-005` hypotheses in [TRIAL-0003](../../05-governance/implementation-trials/rusty-knowledge-trial-proposal.md) |
+| Accountable owner | David Bailey ([@baileyrd](https://github.com/baileyrd)) |
+| Architecture reviewer | David Bailey ([@baileyrd](https://github.com/baileyrd)) — same person as accountable owner; see independence note below |
+| Security reviewer | David Bailey ([@baileyrd](https://github.com/baileyrd)) — same person as accountable owner; see independence note below |
+| Evidence reviewer | David Bailey ([@baileyrd](https://github.com/baileyrd)) — same person as accountable owner; see independence note below |
 | Compatibility authority | Foundation architecture review until a dedicated compatibility council exists |
+
+**Independence note, per [RM-TRIAL-REVIEW-0002](../../05-governance/implementation-trials/review-checklist.md) and [RFC-0004](../../rfc/0004-solo-maintainer-review-sufficiency.md):** one person filling every reviewer role is a disclosed independence limitation. Per RFC-0004's solo-maintainer mode, this satisfies the independent-reviewer expectation for every gate this document feeds — including accepting Experimental promotion and authorizing TRIAL-0003 — without a separate scoped waiver. It does not itself perform the architecture, security, or evidence review each role is responsible for, and does not change this document's Review status from Unknown: solo-maintainer mode resolves *who* may review, not *whether the review has happened*. RFC-0004 reactivates the independence requirement automatically, with no calendar expiry, the moment a second distinct person is named for any reviewer role. (This note previously cited a domain-scoped [reviewer-independence waiver](reviewer-independence-waiver.md), now superseded by RFC-0004.)
 
 ## Ownership duties
 
@@ -16,7 +18,7 @@ The domain owner maintains the layered-authority model, conflict-registry semant
 
 ## Bounded trial plan
 
-[TRIAL-0003](../../05-governance/implementation-trials/rusty-knowledge-trial-proposal.md) proposes the bounded trial: re-implement `baileyrd/knowledge-mcp`'s 15 MCP tools and layered-authority/conflict-registry semantics in Rust, in [`rusty-mill/rusty_knowledge`](https://github.com/Rusty-Mill/rusty_knowledge), using the [foundation trial template](../../05-governance/implementation-trials/trial-template.md). The proposal is entry-reviewed and **not authorized**: the Subject and Repository gates both fail (this domain remains Draft; `rusty_knowledge` has no commits or standards profile), and Ownership, Cross-cutting, and Bounds are Unknown pending named people.
+[TRIAL-0003](../../05-governance/implementation-trials/rusty-knowledge-trial-proposal.md) proposes the bounded trial: re-implement `baileyrd/knowledge-mcp`'s 15 MCP tools and layered-authority/conflict-registry semantics in Rust, in [`rusty-mill/rusty_knowledge`](https://github.com/Rusty-Mill/rusty_knowledge), using the [foundation trial template](../../05-governance/implementation-trials/trial-template.md). The proposal is entry-reviewed and **not authorized**: the Subject and Repository gates both fail (this domain remains Draft; `rusty_knowledge` has no commits or standards profile). Named people are no longer a blocker (RFC-0004's solo-maintainer mode); Cross-cutting and Bounds remain Unknown because their substantive content (assessed dimensions, selected time/effort limits) doesn't exist yet, independent of who reviews it.
 
 The trial, once any future revision is authorized, would use a fixed comparison corpus derived from `knowledge-mcp`'s existing test fixtures and UAF 1.3 domain content, read-only comparison against the cited `knowledge-mcp` commit, no production data, and no release publication. It does not select public Rust APIs, crates/workspaces, storage engine, vector-search extension, MCP transport crate, or repository topology — those remain trial-authorization inputs, not decided here.
 

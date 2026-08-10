@@ -4,9 +4,9 @@
   "authority": "docs/01-architecture/architecture-model.md",
   "generated_from": "Markdown; this index is derived and non-authoritative",
   "summary": {
-    "markdown_documents": 1213,
-    "internal_links": 2589,
-    "requirements": 5631,
+    "markdown_documents": 1215,
+    "internal_links": 2620,
+    "requirements": 5636,
     "domains": 63,
     "promotion_units": 7,
     "draft_promotion_units": 7,
@@ -21,7 +21,7 @@
     "domains_with_direct_requirement_assertion_map": 9,
     "domains_with_direct_benchmark_scenario_map": 9,
     "benchmark_scenarios": 95,
-    "external_sources": 676,
+    "external_sources": 677,
     "external_sources_with_review_record": 145,
     "domains_with_dedicated_cross_cutting_analysis": 32,
     "domains_with_complete_planned_traceability": 9,
@@ -1117,8 +1117,8 @@
       "id": "knowledge",
       "source": "docs/02-capabilities/knowledge/README.md",
       "status": "Draft domain analysis",
-      "requirements": 20,
-      "capability_requirements": 15,
+      "requirements": 24,
+      "capability_requirements": 19,
       "conformance_requirements": 2,
       "benchmark_requirements": 3,
       "mapped_benchmark_requirements": 0,
@@ -6499,6 +6499,19 @@
         "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md",
         "docs/adr/0164-rusty-knowledge-is-a-domain-framework.md",
         "docs/rfc/0003-rusty-knowledge-domain-framework.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
+      "url": "https://github.com/baileyrd",
+      "host": "github.com",
+      "sources": [
+        "docs/02-capabilities/knowledge/cross-cutting.md",
+        "docs/02-capabilities/knowledge/ownership.md",
+        "docs/02-capabilities/knowledge/promotion-review.md",
+        "docs/02-capabilities/knowledge/reviewer-independence-waiver.md",
+        "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md",
+        "docs/rfc/0004-solo-maintainer-review-sufficiency.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -27902,7 +27915,7 @@
     {
       "id": "RM-KNOWLEDGE-OWNER-0001",
       "source": "docs/02-capabilities/knowledge/ownership.md",
-      "line": 25,
+      "line": 27,
       "kind": "capability",
       "domain": "knowledge",
       "assertions": []
@@ -27910,7 +27923,7 @@
     {
       "id": "RM-KNOWLEDGE-OWNER-0002",
       "source": "docs/02-capabilities/knowledge/ownership.md",
-      "line": 27,
+      "line": 29,
       "kind": "capability",
       "domain": "knowledge",
       "assertions": []
@@ -27918,7 +27931,7 @@
     {
       "id": "RM-KNOWLEDGE-OWNER-0003",
       "source": "docs/02-capabilities/knowledge/ownership.md",
-      "line": 29,
+      "line": 31,
       "kind": "capability",
       "domain": "knowledge",
       "assertions": []
@@ -27926,7 +27939,7 @@
     {
       "id": "RM-KNOWLEDGE-OWNER-0004",
       "source": "docs/02-capabilities/knowledge/ownership.md",
-      "line": 31,
+      "line": 33,
       "kind": "capability",
       "domain": "knowledge",
       "assertions": []
@@ -27951,6 +27964,38 @@
       "id": "RM-KNOWLEDGE-PROMOTION-0003",
       "source": "docs/02-capabilities/knowledge/promotion-review.md",
       "line": 31,
+      "kind": "capability",
+      "domain": "knowledge",
+      "assertions": []
+    },
+    {
+      "id": "RM-KNOWLEDGE-PROMOTION-0004",
+      "source": "docs/02-capabilities/knowledge/promotion-review.md",
+      "line": 33,
+      "kind": "capability",
+      "domain": "knowledge",
+      "assertions": []
+    },
+    {
+      "id": "RM-KNOWLEDGE-WAIVER-0001",
+      "source": "docs/02-capabilities/knowledge/reviewer-independence-waiver.md",
+      "line": 23,
+      "kind": "capability",
+      "domain": "knowledge",
+      "assertions": []
+    },
+    {
+      "id": "RM-KNOWLEDGE-WAIVER-0002",
+      "source": "docs/02-capabilities/knowledge/reviewer-independence-waiver.md",
+      "line": 25,
+      "kind": "capability",
+      "domain": "knowledge",
+      "assertions": []
+    },
+    {
+      "id": "RM-KNOWLEDGE-WAIVER-0003",
+      "source": "docs/02-capabilities/knowledge/reviewer-independence-waiver.md",
+      "line": 27,
       "kind": "capability",
       "domain": "knowledge",
       "assertions": []
@@ -55093,6 +55138,13 @@
       "domain": null
     },
     {
+      "id": "RM-TRIAL-REVIEW-0004",
+      "source": "docs/05-governance/implementation-trials/review-checklist.md",
+      "line": 20,
+      "kind": "governance",
+      "domain": null
+    },
+    {
       "id": "RM-RUSTILS-TRIAL-0001",
       "source": "docs/05-governance/implementation-trials/rustils-trial-proposal.md",
       "line": 132,
@@ -55123,28 +55175,28 @@
     {
       "id": "RM-KNOWLEDGE-TRIAL-0001",
       "source": "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md",
-      "line": 113,
+      "line": 116,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-KNOWLEDGE-TRIAL-0002",
       "source": "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md",
-      "line": 115,
+      "line": 118,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-KNOWLEDGE-TRIAL-0003",
       "source": "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md",
-      "line": 117,
+      "line": 120,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-KNOWLEDGE-TRIAL-0004",
       "source": "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md",
-      "line": 119,
+      "line": 122,
       "kind": "governance",
       "domain": null
     },
@@ -57619,7 +57671,7 @@
     },
     {
       "source": "docs/02-capabilities/filesystem/promotion-review.md",
-      "sha256": "bf38748abd544719c7311dee0df31a5463eb79e84b3f2138abd66160a83c8f2a",
+      "sha256": "1414ccb93d193807f513c2cac6122b0c4b3c44fc9b3066c11da5ff4883e2508b",
       "lines": 84
     },
     {
@@ -58144,8 +58196,8 @@
     },
     {
       "source": "docs/02-capabilities/knowledge/README.md",
-      "sha256": "ff87464b00b6f7dd9b62bd28cea8fba8af07f68b546a6bba0af742d21d79ef74",
-      "lines": 56
+      "sha256": "3d337f80a5720c2f6e18b6cbe5e478b273e337790ceb7e558afdc3820e74f065",
+      "lines": 57
     },
     {
       "source": "docs/02-capabilities/knowledge/benchmarks.md",
@@ -58159,7 +58211,7 @@
     },
     {
       "source": "docs/02-capabilities/knowledge/cross-cutting.md",
-      "sha256": "78d6d89486d4ab41622227890722b8bb3a6d40b423cb565b5d50d95042723b16",
+      "sha256": "e1fac04deb838b22e107a7c9f48e4eab46b44b1f41f484fd37bfed402b7dd391",
       "lines": 24
     },
     {
@@ -58174,8 +58226,8 @@
     },
     {
       "source": "docs/02-capabilities/knowledge/ownership.md",
-      "sha256": "6853e1f63a92ab9974d25dd1e010dfe695eb9d7e5842de008de25352103d749e",
-      "lines": 31
+      "sha256": "d1b2851403084fd7a791da9162bc00d4532c0b99e1ac7d7454d17352512bcdf1",
+      "lines": 33
     },
     {
       "source": "docs/02-capabilities/knowledge/platform-research.md",
@@ -58184,8 +58236,13 @@
     },
     {
       "source": "docs/02-capabilities/knowledge/promotion-review.md",
-      "sha256": "b4c18b09791e94bacb54e6da1c410dd5036b1c392171de45cfc1fd01885f6126",
-      "lines": 31
+      "sha256": "288fd3903b7618cff795148cadcbc0e3f574ad18822f345dae0b7aa1f60dd2b0",
+      "lines": 33
+    },
+    {
+      "source": "docs/02-capabilities/knowledge/reviewer-independence-waiver.md",
+      "sha256": "d255e3fc36164c5d6d32f7ab7b4dc9cd912c97f9f6afe4dd4fc1804d7fc88dc3",
+      "lines": 27
     },
     {
       "source": "docs/02-capabilities/lifecycle/README.md",
@@ -61119,8 +61176,8 @@
     },
     {
       "source": "docs/05-governance/governance.md",
-      "sha256": "abaf1eac8791e67e9bc89b6c93daa62763220de3abc927aa5ee59ad10b774aa3",
-      "lines": 40
+      "sha256": "49c3feb60d3c37c4dacdb337ab9f6bb23b0b4aeec66941ac6b723f07efd278d3",
+      "lines": 42
     },
     {
       "source": "docs/05-governance/implementation-trials/README.md",
@@ -61139,8 +61196,8 @@
     },
     {
       "source": "docs/05-governance/implementation-trials/entry-gates.md",
-      "sha256": "63600e73e69955c8b4b76e6a9d8e59b6e61f7445a11a7f2bae01b99cb8587976",
-      "lines": 23
+      "sha256": "6940ce00e990b1d50adc2bf82c598ee340ec88d1953ee510ccb8f47a754e7892",
+      "lines": 25
     },
     {
       "source": "docs/05-governance/implementation-trials/evidence-plan.md",
@@ -61159,22 +61216,22 @@
     },
     {
       "source": "docs/05-governance/implementation-trials/review-checklist.md",
-      "sha256": "5a1bc71a8f096e2cfd8c22fa0dab2e31b972c041d91543569313c58977197107",
-      "lines": 19
+      "sha256": "1f2b320d4df92925885db13b94f32abf974bf9730319c744a84ff236e86297d3",
+      "lines": 21
     },
     {
       "source": "docs/05-governance/implementation-trials/rustils-trial-proposal.md",
-      "sha256": "131df4fe9b7f7949aab384ee4be78162b2a83d8c61dcef10aa26844aed019b57",
+      "sha256": "12e1ea99a9482ffced52cfc4ebaeaba4003756963a06bbdd3a4947988c604764",
       "lines": 138
     },
     {
       "source": "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md",
-      "sha256": "bc96c8be186da443299f201c4378b1d8a98bd939cfc5fbe236761736d2215ee8",
-      "lines": 119
+      "sha256": "b29bd94d8f4360be6fa59b2daebc526894aeec105cffca5b88ef1e4638cee1b0",
+      "lines": 122
     },
     {
       "source": "docs/05-governance/implementation-trials/security-batch-trial-proposal.md",
-      "sha256": "99f852840c0cab14b76ca350777d1485a8be9660726f9c1062eb44d8cd15c23a",
+      "sha256": "48e94f1e471e98c52f7d4ea67daf42de4c23ac15e5ce829c988fa12a46b9c258",
       "lines": 125
     },
     {
@@ -62128,9 +62185,14 @@
       "lines": 110
     },
     {
+      "source": "docs/rfc/0004-solo-maintainer-review-sufficiency.md",
+      "sha256": "078aa7bff94b20bf3d2bcf8cd551f9bae1bdea86e5900bfb629ef089f4de871a",
+      "lines": 93
+    },
+    {
       "source": "docs/rfc/README.md",
-      "sha256": "ed70e5e1417b5766f47133cc4c5c17ec8562fea3719b8d671fa00d72590e06d0",
-      "lines": 9
+      "sha256": "e1f3c3c9b1593ddd8f83fb91e7dbcf3a6edf1d706d39ae29b1e0a106fafad541",
+      "lines": 10
     }
   ],
   "findings": []

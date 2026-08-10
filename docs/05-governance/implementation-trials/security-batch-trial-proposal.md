@@ -98,7 +98,7 @@ The trial owner may pause more conservatively. Only the authorizing authority ma
 | Subject | Fail | seven units and batch review remain Draft; no Experimental decision | Capability owners and architecture reviewer: unnamed | blocks authorization |
 | Learning value | Unknown | `STH-001`–`007` are falsifiable, but exact selected subset/providers may change whether implementation is necessary | Architecture and evidence reviewers: unnamed | review required |
 | Bounds | Unknown | scope/nonclaims/stop categories defined; numeric and platform/provider limits unselected | Trial owner and security reviewer: unnamed | review required |
-| Ownership | Unknown | accountable roles defined; people, independence, availability, and approvals absent | Authorizing maintainer: unnamed | blocks authorization |
+| Ownership | Unknown | accountable roles defined; people, availability, and approvals absent (independence itself is no longer a separate blocker once named, per [RFC-0004](../../rfc/0004-solo-maintainer-review-sufficiency.md)'s solo-maintainer mode) | Authorizing maintainer: unnamed | blocks authorization |
 | Repository | Unknown | governance requirements defined; repository/profile/toolchain/dependencies/exceptions absent | Standards reviewer: unnamed | blocks authorization |
 | Verification | Unknown | unit/batch assertion and scenario identities defined; cases, harnesses, environments, artifact locations absent | Evidence reviewer: unnamed | blocks authorization |
 | Cross-cutting | Unknown | required review dimensions defined; named methods/reviewers for selected composition absent | Quality reviewers: unnamed | blocks authorization |
