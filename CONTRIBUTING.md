@@ -8,11 +8,13 @@ The [authoritative architecture model](docs/01-architecture/architecture-model.m
 
 ## Branch Protection
 
-`main` is protected:
+`main` is protected, per the version-control-workflow standard in [Atlas Engineering Standards Library ATLAS-600, Chapters 1-2](https://github.com/baileyrd/Atlas_Engineering_Standards_Library/blob/main/docs/volumes/ATLAS-600-engineering-toolchain.md) (`ATLAS-TOOL-0001` through `0012`):
 
 - Changes land only through pull requests. Direct pushes to `main` are blocked.
 - Force-pushes and branch deletion are blocked on `main`.
 - The `audit` CI check (`.github/workflows/akb-audit.yml`, running `tools/akb_audit.py --check`) runs on every PR and **must pass before a PR can merge**.
+
+This policy is currently written down here but not yet enabled as an actual GitHub branch-protection rule on `main` — that setting still needs to be turned on in Settings -> Branches.
 
 ## Change paths
 
@@ -28,7 +30,7 @@ Every normative change must be explicit about scope, non-goals, platform varianc
 
 ## Merge strategy
 
-This repository merges via merge commit only — squash and rebase are disabled. Merge once a pull request reflects the intended change and review feedback is addressed.
+Per [ATLAS-600 Chapter 5](https://github.com/baileyrd/Atlas_Engineering_Standards_Library/blob/main/docs/volumes/ATLAS-600-engineering-toolchain.md) (`ATLAS-TOOL-0040`), this repository merges via merge commit only — squash and rebase are disabled. Merge once a pull request reflects the intended change and review feedback is addressed.
 
 ## Status vocabulary
 
