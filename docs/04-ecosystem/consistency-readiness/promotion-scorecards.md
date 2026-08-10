@@ -28,7 +28,7 @@ The table uses conjunctive gates. It does not calculate a weighted score, and it
 | [data-transfer](../../02-capabilities/data-transfer/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | absent | **no** |
 | [devices](../../02-capabilities/devices/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | absent | **no** |
 | [display-color](../../02-capabilities/display-color/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | absent | **no** |
-| [filesystem](../../02-capabilities/filesystem/README.md) | pass | pass | pass | pass | pass | pass | pass | pass | proposed | **yes** |
+| [filesystem](../../02-capabilities/filesystem/README.md) | pass | pass | pass | pass | pass | pass | pass | pass | accepted | **yes** |
 | [graphics](../../02-capabilities/graphics/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | absent | **no** |
 | [identity-governance](../../02-capabilities/identity-governance/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | absent | **no** |
 | [identity-session](../../02-capabilities/identity-session/README.md) | pass | pass | pass | fail | unknown | unknown | unknown | unknown | absent | **no** |
