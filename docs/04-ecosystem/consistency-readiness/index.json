@@ -5,7 +5,7 @@
   "generated_from": "Markdown; this index is derived and non-authoritative",
   "summary": {
     "markdown_documents": 1200,
-    "internal_links": 2499,
+    "internal_links": 2500,
     "requirements": 5607,
     "domains": 62,
     "promotion_units": 7,
@@ -21,7 +21,7 @@
     "domains_with_direct_requirement_assertion_map": 9,
     "domains_with_direct_benchmark_scenario_map": 9,
     "benchmark_scenarios": 95,
-    "external_sources": 674,
+    "external_sources": 675,
     "external_sources_with_review_record": 145,
     "domains_with_dedicated_cross_cutting_analysis": 31,
     "domains_with_complete_planned_traceability": 9,
@@ -6484,6 +6484,14 @@
       "host": "github.com",
       "sources": [
         "docs/05-governance/implementation-trials/rustils-trial-proposal.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
+      "url": "https://github.com/baileyrd/rustils/pull/122",
+      "host": "github.com",
+      "sources": [
+        "docs/02-capabilities/filesystem/promotion-review.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -23365,7 +23373,7 @@
     {
       "id": "RM-FILESYSTEM-PROMOTION-0001",
       "source": "docs/02-capabilities/filesystem/promotion-review.md",
-      "line": 27,
+      "line": 45,
       "kind": "capability",
       "domain": "filesystem",
       "assertions": [
@@ -23375,7 +23383,7 @@
     {
       "id": "RM-FILESYSTEM-PROMOTION-0002",
       "source": "docs/02-capabilities/filesystem/promotion-review.md",
-      "line": 29,
+      "line": 47,
       "kind": "capability",
       "domain": "filesystem",
       "assertions": [
@@ -23385,7 +23393,7 @@
     {
       "id": "RM-FILESYSTEM-PROMOTION-0003",
       "source": "docs/02-capabilities/filesystem/promotion-review.md",
-      "line": 31,
+      "line": 49,
       "kind": "capability",
       "domain": "filesystem",
       "assertions": [
@@ -57377,8 +57385,8 @@
     },
     {
       "source": "docs/02-capabilities/filesystem/promotion-review.md",
-      "sha256": "866e4a45d0d1abf0d8a1af1ee1388e76afd2c5418e45a29974e97c0a86da7c85",
-      "lines": 31
+      "sha256": "c9b2034ac4d501d0ec4d45a8ed172a1b7eeaf800c0aaa7d7c9d6fcad21dec339",
+      "lines": 49
     },
     {
       "source": "docs/02-capabilities/filesystem/resolution-quality.md",
