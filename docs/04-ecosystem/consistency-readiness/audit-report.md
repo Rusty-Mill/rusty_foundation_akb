@@ -11,18 +11,18 @@ This report is deterministic and contains no claim that file presence proves sem
 
 | Measure | Result |
 |---|---:|
-| Markdown documents | 1,215 |
-| Resolved internal links | 2,620 |
+| Markdown documents | 1,217 |
+| Resolved internal links | 2,638 |
 | Unique normative requirements | 5,636 |
 | Capability domains | 63 |
 | Governed subdomain promotion units | 7 (7 Draft) |
 | Promotion units with linked readiness dossier | 7 / 7 |
 | Promotion units with schema-valid readiness dossier | 7 / 7 |
 | Promotion units with validated semantic traceability | 7 / 7 |
-| Indexed ADRs | 165 |
+| Indexed ADRs | 166 |
 | External source URLs inventoried | 677 |
 | External URLs with schema-valid domain review | 145 |
-| Structural errors | 0 |
+| Structural errors | 1 |
 | Structural warnings | 0 |
 
 ## Artifact coverage
@@ -57,7 +57,7 @@ Keyword mentions are discovery hints only. The [quality matrix](quality-matrix.m
 
 ## Findings
 
-- Structural validation currently passes with 0 errors.
+- Structural validation currently passes with 1 errors.
 - Every capability domain has conformance and benchmark planning artifacts.
 - 7 / 7 governed promotion unit(s) link all required evidence classes and expose stable assertion and benchmark mappings whose sources and benchmark requirements resolve.
 - 0 domain README files lack the canonical table-form status field; this is recorded as a migration-quality issue, not silently interpreted as Stable.

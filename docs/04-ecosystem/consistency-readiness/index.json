@@ -4,8 +4,8 @@
   "authority": "docs/01-architecture/architecture-model.md",
   "generated_from": "Markdown; this index is derived and non-authoritative",
   "summary": {
-    "markdown_documents": 1215,
-    "internal_links": 2620,
+    "markdown_documents": 1217,
+    "internal_links": 2638,
     "requirements": 5636,
     "domains": 63,
     "promotion_units": 7,
@@ -13,8 +13,8 @@
     "promotion_units_with_readiness_dossier": 7,
     "promotion_units_with_schema_valid_readiness_dossier": 7,
     "promotion_units_with_semantic_traceability": 7,
-    "adrs": 165,
-    "errors": 0,
+    "adrs": 166,
+    "errors": 1,
     "warnings": 0,
     "domains_with_conformance": 63,
     "domains_with_benchmarks": 63,
@@ -6498,6 +6498,7 @@
         "docs/05-governance/implementation-trials/README.md",
         "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md",
         "docs/adr/0164-rusty-knowledge-is-a-domain-framework.md",
+        "docs/adr/0166-knowledge-qualifies-for-fast-lane-entry.md",
         "docs/rfc/0003-rusty-knowledge-domain-framework.md"
       ],
       "freshness": "unreviewed-by-generator"
@@ -6511,7 +6512,9 @@
         "docs/02-capabilities/knowledge/promotion-review.md",
         "docs/02-capabilities/knowledge/reviewer-independence-waiver.md",
         "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md",
-        "docs/rfc/0004-solo-maintainer-review-sufficiency.md"
+        "docs/adr/0166-knowledge-qualifies-for-fast-lane-entry.md",
+        "docs/rfc/0004-solo-maintainer-review-sufficiency.md",
+        "docs/rfc/0005-fast-lane-implementation-entry.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -62165,9 +62168,14 @@
       "lines": 49
     },
     {
+      "source": "docs/adr/0166-knowledge-qualifies-for-fast-lane-entry.md",
+      "sha256": "7b53967eb9d8c0779f3acc69c1c89bba564c2f2928658184622471cc519e6904",
+      "lines": 51
+    },
+    {
       "source": "docs/adr/README.md",
-      "sha256": "664af9020d71297288afb70f05701f9a53b0df80fef4205e585f3088fbf8337d",
-      "lines": 171
+      "sha256": "bd49082f78840138917bad88cd0247d89686d136be280b83028b02f7c2ea2a59",
+      "lines": 172
     },
     {
       "source": "docs/rfc/0001-capability-specification-system.md",
@@ -62190,10 +62198,22 @@
       "lines": 93
     },
     {
+      "source": "docs/rfc/0005-fast-lane-implementation-entry.md",
+      "sha256": "4927b01b2f0ae7ee4b4072aaf9dd91af5993a6b47fca9153f93eeaf7907dd3a8",
+      "lines": 100
+    },
+    {
       "source": "docs/rfc/README.md",
-      "sha256": "e1f3c3c9b1593ddd8f83fb91e7dbcf3a6edf1d706d39ae29b1e0a106fafad541",
-      "lines": 10
+      "sha256": "68b2bf8f1fed34b5efd10dae0da8574bffa535796aa5a2529d2bf336b3da297f",
+      "lines": 11
     }
   ],
-  "findings": []
+  "findings": [
+    {
+      "severity": "error",
+      "rule": "link-resolves",
+      "source": "docs/adr/0166-knowledge-qualifies-for-fast-lane-entry.md",
+      "detail": "missing target ../02-capabilities/knowledge/dependencies.md"
+    }
+  ]
 }
