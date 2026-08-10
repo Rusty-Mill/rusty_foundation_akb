@@ -34,7 +34,8 @@ flowchart LR
 ## Documents
 
 - [Domain model and query surface](model.md)
-- [Platform and ecosystem research](platform-research.md)
+- [Platform and ecosystem research](platform-research.md) — real, cited crate research (rusqlite+FTS5, sqlite-vec, rmcp); not selection
+- [Dependency and composition register](dependencies.md) — draft; edges cannot bind exact generations until composed domains are themselves accepted
 - [Conformance specification](conformance.md)
 - [Benchmark specification](benchmarks.md)
 - [Open questions](open-questions.md)
