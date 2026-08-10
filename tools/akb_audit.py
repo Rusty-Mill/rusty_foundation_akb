@@ -57,8 +57,24 @@ def sha256_text(text: str) -> str:
     return hashlib.sha256(text.encode("utf-8")).hexdigest()
 
 
+# Markdown evidence this same generator writes. Excluded from the indexed
+# corpus so the index never hashes its own prior output - otherwise every
+# doc change needs two generator runs to reach a fixed point, since each
+# run's index embeds a hash of these files' content from *before* that
+# run rewrote them.
+GENERATED_EVIDENCE_FILES = {
+    "docs/04-ecosystem/consistency-readiness/audit-report.md",
+    "docs/04-ecosystem/consistency-readiness/quality-matrix.md",
+    "docs/04-ecosystem/consistency-readiness/promotion-scorecards.md",
+}
+
+
 def markdown_files(root: Path) -> list[Path]:
-    return sorted(root.joinpath("docs").rglob("*.md"))
+    return sorted(
+        path
+        for path in root.joinpath("docs").rglob("*.md")
+        if relative(path, root) not in GENERATED_EVIDENCE_FILES
+    )
 
 
 def requirement_kind(source: str) -> str:
