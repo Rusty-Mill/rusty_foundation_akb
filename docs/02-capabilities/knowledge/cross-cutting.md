@@ -5,8 +5,8 @@
 | Review status | Unknown |
 | Reviewed | 2026-08-10 |
 | Review frontier | Knowledge domain framework, Draft domain analysis; architecture model 1.99.0; RFC-0003 (Draft) |
-| Accountable owner | Unassigned — capability owner role required before this review can resolve to Pass or Fail |
-| Open blocking findings | No named reviewer for any dimension below; RFC-0003's Phase-1-vs-Phase-5 disposition is still pending; TRIAL-0003 is not authorized. This review records planned evidence and known gaps, not a completed assessment. |
+| Accountable owner | David Bailey ([@baileyrd](https://github.com/baileyrd)) |
+| Open blocking findings | Accountable owner is now named, but is the sole reviewer for every dimension below (see [ownership.md](ownership.md)'s independence note) — no independent second reviewer exists; RFC-0003's Phase-1-vs-Phase-5 disposition is still pending; TRIAL-0003 is not authorized. This review records planned evidence and known gaps, not a completed independent assessment. |
 
 | Dimension | Exact requirements | Planned evidence | Findings, limits, or non-applicability |
 |---|---|---|---|

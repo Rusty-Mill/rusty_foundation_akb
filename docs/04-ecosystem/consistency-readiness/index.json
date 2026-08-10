@@ -5,7 +5,7 @@
   "generated_from": "Markdown; this index is derived and non-authoritative",
   "summary": {
     "markdown_documents": 1213,
-    "internal_links": 2596,
+    "internal_links": 2597,
     "requirements": 5631,
     "domains": 63,
     "promotion_units": 7,
@@ -21,7 +21,7 @@
     "domains_with_direct_requirement_assertion_map": 9,
     "domains_with_direct_benchmark_scenario_map": 9,
     "benchmark_scenarios": 95,
-    "external_sources": 676,
+    "external_sources": 677,
     "external_sources_with_review_record": 145,
     "domains_with_dedicated_cross_cutting_analysis": 32,
     "domains_with_complete_planned_traceability": 9,
@@ -6499,6 +6499,17 @@
         "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md",
         "docs/adr/0164-rusty-knowledge-is-a-domain-framework.md",
         "docs/rfc/0003-rusty-knowledge-domain-framework.md"
+      ],
+      "freshness": "unreviewed-by-generator"
+    },
+    {
+      "url": "https://github.com/baileyrd",
+      "host": "github.com",
+      "sources": [
+        "docs/02-capabilities/knowledge/cross-cutting.md",
+        "docs/02-capabilities/knowledge/ownership.md",
+        "docs/02-capabilities/knowledge/promotion-review.md",
+        "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md"
       ],
       "freshness": "unreviewed-by-generator"
     },
@@ -27902,7 +27913,7 @@
     {
       "id": "RM-KNOWLEDGE-OWNER-0001",
       "source": "docs/02-capabilities/knowledge/ownership.md",
-      "line": 25,
+      "line": 27,
       "kind": "capability",
       "domain": "knowledge",
       "assertions": []
@@ -27910,7 +27921,7 @@
     {
       "id": "RM-KNOWLEDGE-OWNER-0002",
       "source": "docs/02-capabilities/knowledge/ownership.md",
-      "line": 27,
+      "line": 29,
       "kind": "capability",
       "domain": "knowledge",
       "assertions": []
@@ -27918,7 +27929,7 @@
     {
       "id": "RM-KNOWLEDGE-OWNER-0003",
       "source": "docs/02-capabilities/knowledge/ownership.md",
-      "line": 29,
+      "line": 31,
       "kind": "capability",
       "domain": "knowledge",
       "assertions": []
@@ -27926,7 +27937,7 @@
     {
       "id": "RM-KNOWLEDGE-OWNER-0004",
       "source": "docs/02-capabilities/knowledge/ownership.md",
-      "line": 31,
+      "line": 33,
       "kind": "capability",
       "domain": "knowledge",
       "assertions": []
@@ -55123,28 +55134,28 @@
     {
       "id": "RM-KNOWLEDGE-TRIAL-0001",
       "source": "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md",
-      "line": 113,
+      "line": 114,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-KNOWLEDGE-TRIAL-0002",
       "source": "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md",
-      "line": 115,
+      "line": 116,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-KNOWLEDGE-TRIAL-0003",
       "source": "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md",
-      "line": 117,
+      "line": 118,
       "kind": "governance",
       "domain": null
     },
     {
       "id": "RM-KNOWLEDGE-TRIAL-0004",
       "source": "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md",
-      "line": 119,
+      "line": 120,
       "kind": "governance",
       "domain": null
     },
@@ -58159,7 +58170,7 @@
     },
     {
       "source": "docs/02-capabilities/knowledge/cross-cutting.md",
-      "sha256": "78d6d89486d4ab41622227890722b8bb3a6d40b423cb565b5d50d95042723b16",
+      "sha256": "04cc55e2c382b8f75462a80bd713d11c106786da4e81ecd0a7fb134fc97c6669",
       "lines": 24
     },
     {
@@ -58174,8 +58185,8 @@
     },
     {
       "source": "docs/02-capabilities/knowledge/ownership.md",
-      "sha256": "6853e1f63a92ab9974d25dd1e010dfe695eb9d7e5842de008de25352103d749e",
-      "lines": 31
+      "sha256": "5d382317ee49d987981e731551cdfe688ec8ee21d0dcb2918b851cb6ab05569c",
+      "lines": 33
     },
     {
       "source": "docs/02-capabilities/knowledge/platform-research.md",
@@ -58184,7 +58195,7 @@
     },
     {
       "source": "docs/02-capabilities/knowledge/promotion-review.md",
-      "sha256": "b4c18b09791e94bacb54e6da1c410dd5036b1c392171de45cfc1fd01885f6126",
+      "sha256": "b028c34149711adc94b6f4a70ab2866342c3cc94f7767248334b28d084cc9a8b",
       "lines": 31
     },
     {
@@ -61169,8 +61180,8 @@
     },
     {
       "source": "docs/05-governance/implementation-trials/rusty-knowledge-trial-proposal.md",
-      "sha256": "bc96c8be186da443299f201c4378b1d8a98bd939cfc5fbe236761736d2215ee8",
-      "lines": 119
+      "sha256": "4b341038970a53b3360517bbf4401d12b4c06134dbdf4a69ae4bf241b24c7098",
+      "lines": 120
     },
     {
       "source": "docs/05-governance/implementation-trials/security-batch-trial-proposal.md",

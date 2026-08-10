@@ -4,8 +4,8 @@
 |---|---|
 | Status | Proposed; authorization blocked |
 | Revision | 0 |
-| Owner | Rusty Knowledge trial owner role; named person required before authorization |
-| Reviewers | Architecture, `knowledge`/`search`/`persistence`/`networking`/`security`/`observability` capability owners, independent standards, security, evidence, and performance reviewers; named people required |
+| Owner | David Bailey ([@baileyrd](https://github.com/baileyrd)) |
+| Reviewers | David Bailey ([@baileyrd](https://github.com/baileyrd)) holds every role below pending independent reviewers — see the Gate review and decision table's independence qualification; architecture, `knowledge`/`search`/`persistence`/`networking`/`security`/`observability` capability owners, independent standards, security, evidence, and performance reviewers still needed |
 | Created | 2026-08-10 |
 | Authorization expires | No authorization exists; any later authorization expires on bound-input drift or its recorded date |
 | Implementation authority | None |
@@ -88,16 +88,16 @@ The trial owner may pause more conservatively. Only the authorizing authority ma
 
 | Gate | State | Evidence | Reviewer | Expiry/qualification |
 |---|---|---|---|---|
-| Subject | Fail | `knowledge` domain is `Draft domain analysis`; [promotion-review.md](../../02-capabilities/knowledge/promotion-review.md) now exists but resolves to "not yet eligible," not an accepted Experimental decision; RFC-0003 itself is Draft | Capability owner and architecture reviewer: unnamed | blocks authorization |
-| Learning value | Qualified | `RK-001`–`RK-005` are falsifiable and cite exact `knowledge-mcp` source and exact ADRs/requirements; exact selected subset may narrow on review | Architecture and evidence reviewers: unnamed | review required |
-| Bounds | Unknown | scope/nonclaims/exclusions defined; numeric time/review-effort limits unselected | Trial owner and standards reviewer: unnamed | review required |
-| Ownership | Unknown | [ownership.md](../../02-capabilities/knowledge/ownership.md) now exists (Review status Unknown); role structure and bounded trial plan defined, but every named-person field is Unassigned | Authorizing maintainer: unnamed | blocks authorization |
-| Repository | Fail | `rusty_knowledge` has no commits and no standards profile | Standards reviewer: unnamed | blocks authorization |
-| Verification | Qualified | candidate evidence sources identified and cited exactly; no trial-bound verification protocol or re-execution plan exists | Evidence reviewer: unnamed | blocks authorization |
-| Cross-cutting | Unknown | [cross-cutting.md](../../02-capabilities/knowledge/cross-cutting.md) now exists (Review status Unknown); dimensions are planned with open blocking findings, not assessed | Quality reviewers: unnamed | blocks authorization |
+| Subject | Fail | `knowledge` domain is `Draft domain analysis`; [promotion-review.md](../../02-capabilities/knowledge/promotion-review.md) now exists but resolves to "not yet eligible," not an accepted Experimental decision; RFC-0003 itself is Draft | David Bailey ([@baileyrd](https://github.com/baileyrd)) — sole reviewer, not independent | blocks authorization |
+| Learning value | Qualified | `RK-001`–`RK-005` are falsifiable and cite exact `knowledge-mcp` source and exact ADRs/requirements; exact selected subset may narrow on review | David Bailey ([@baileyrd](https://github.com/baileyrd)) — sole reviewer, not independent | review required |
+| Bounds | Unknown | scope/nonclaims/exclusions defined; numeric time/review-effort limits unselected | David Bailey ([@baileyrd](https://github.com/baileyrd)) | review required |
+| Ownership | Unknown | [ownership.md](../../02-capabilities/knowledge/ownership.md) now names an accountable owner and every reviewer role (David Bailey, [@baileyrd](https://github.com/baileyrd)), but one person holding every role is a disclosed independence gap per that document's own note, not a resolved review | David Bailey ([@baileyrd](https://github.com/baileyrd)) — self-authorizing single reviewer, blocks Pass on its own | blocks authorization |
+| Repository | Fail | `rusty_knowledge` has no commits and no standards profile | David Bailey ([@baileyrd](https://github.com/baileyrd)) | blocks authorization |
+| Verification | Qualified | candidate evidence sources identified and cited exactly; no trial-bound verification protocol or re-execution plan exists | David Bailey ([@baileyrd](https://github.com/baileyrd)) — sole reviewer, not independent | blocks authorization |
+| Cross-cutting | Unknown | [cross-cutting.md](../../02-capabilities/knowledge/cross-cutting.md) now names an accountable owner (David Bailey, [@baileyrd](https://github.com/baileyrd)) but dimensions remain planned, not independently assessed | David Bailey ([@baileyrd](https://github.com/baileyrd)) — sole reviewer, not independent | blocks authorization |
 | Operations | Not applicable | this trial performs no code execution, provider call, or CI activity under its own authority — read/compare only | — | qualifies, does not fail |
 
-**Decision: Not authorized.** Entry is conjunctive; two `Fail` states and every `Unknown` independently block work. RFC-0003's acceptance into `rusty_foundation_akb`, `knowledge-mcp`'s own test coverage, `rusty_knowledge` existing as a named repository, or the existence of `promotion-review.md`/`cross-cutting.md`/`ownership.md` cannot override these states — those documents structure the review; they do not themselves resolve it to Pass.
+**Decision: Not authorized.** Entry is conjunctive; two `Fail` states and every `Unknown` independently block work. Naming David Bailey ([@baileyrd](https://github.com/baileyrd)) as accountable owner and reviewer for every role resolves the "unnamed" finding but introduces a separate, disclosed blocker: [RM-TRIAL-REVIEW-0002](review-checklist.md) requires disclosing when a reviewer authored the evidence they assess, and one person holding every role here is exactly that case. RFC-0003's acceptance into `rusty_foundation_akb`, `knowledge-mcp`'s own test coverage, `rusty_knowledge` existing as a named repository, or the existence of `promotion-review.md`/`cross-cutting.md`/`ownership.md` cannot override these states — those documents structure the review; they do not themselves resolve it to Pass.
 
 ## Change log
 
@@ -105,6 +105,7 @@ The trial owner may pause more conservatively. Only the authorizing authority ma
 |---|---|---|---|
 | 0 | 2026-08-10 | Initial evidence-first entry review for the RFC-0003 implementation trial | None; authorization blocked |
 | 0 | 2026-08-10 | `knowledge` domain's promotion-review.md, cross-cutting.md, and ownership.md drafted; Subject/Ownership/Cross-cutting rows updated to cite them | None; still not authorized — see Decision |
+| 0 | 2026-08-10 | Named David Bailey ([@baileyrd](https://github.com/baileyrd)) as owner and every reviewer role; disclosed the resulting single-reviewer independence gap per RM-TRIAL-REVIEW-0002 | None; still not authorized — see Decision |
 
 ## Closeout
 

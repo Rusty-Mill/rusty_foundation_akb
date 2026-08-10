@@ -4,11 +4,13 @@
 |---|---|
 | Review status | Unknown |
 | Reviewed | 2026-08-10 |
-| Accountable owner | Unassigned — Rusty Knowledge trial owner role per [TRIAL-0003](../../05-governance/implementation-trials/rusty-knowledge-trial-proposal.md); named person required before authorization |
-| Architecture reviewer | Unassigned |
-| Security reviewer | Unassigned — needed for the layered-authority/conflict-registry threat model recorded as unreviewed in [cross-cutting.md](cross-cutting.md) |
-| Evidence reviewer | Unassigned — needed for the `RK-001`–`RK-005` hypotheses in [TRIAL-0003](../../05-governance/implementation-trials/rusty-knowledge-trial-proposal.md) |
+| Accountable owner | David Bailey ([@baileyrd](https://github.com/baileyrd)) |
+| Architecture reviewer | David Bailey ([@baileyrd](https://github.com/baileyrd)) — same person as accountable owner; see independence note below |
+| Security reviewer | David Bailey ([@baileyrd](https://github.com/baileyrd)) — same person as accountable owner; see independence note below |
+| Evidence reviewer | David Bailey ([@baileyrd](https://github.com/baileyrd)) — same person as accountable owner; see independence note below |
 | Compatibility authority | Foundation architecture review until a dedicated compatibility council exists |
+
+**Independence note, per [RM-TRIAL-REVIEW-0002](../../05-governance/implementation-trials/review-checklist.md):** one person filling every reviewer role is a disclosed independence limitation, not a resolved review. Naming an accountable owner unblocks the "named people absent" finding; it does not itself perform the architecture, security, or evidence review each role is responsible for, and does not change this document's Review status from Unknown. A future promotion decision to Accepted still needs either independent reviewers for at least the security and evidence roles, or an explicit, reviewed waiver accepting single-person review for this domain.
 
 ## Ownership duties
 
